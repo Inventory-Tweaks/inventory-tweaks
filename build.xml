@@ -73,6 +73,7 @@
     </target>
 
     <target name="reobf-invtweaks" depends="jar-invtweaks, build-minecraft-inheritance">
+        <mkdir dir="${build.dir}/out"/>
         <java jar="${specialsource.jar}" fork="true">
             <arg value="--srg-in"/>
             <arg value="${mcp.mappings.dir}"/>
@@ -102,6 +103,7 @@
 
     <target name="build-invtweaks" depends="install-forge">
         <mkdir dir="${class.dir}"/>
+        <depend srcdir="${src.dir}" destdir="${class.dir}" closure="yes"/>
         <javac srcdir="${src.dir}" destdir="${class.dir}" target="1.6" source="1.6"
                 classpathref="invtweaks.classpath" debug="true" debuglevel="lines,source" includeAntRuntime="false"/>
     </target>
