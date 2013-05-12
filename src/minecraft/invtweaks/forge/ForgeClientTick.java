@@ -38,8 +38,8 @@ public class ForgeClientTick implements ITickHandler {
     @Override
     public void tickEnd(EnumSet<TickType> type, Object... tickData) {
         Minecraft mc = FMLClientHandler.instance().getClient();
-        if (mc.theWorld != null) {
-            if (mc.currentScreen != null) {
+        if(mc.theWorld != null) {
+            if(mc.currentScreen != null) {
                 instance.onTickInGUI(mc.currentScreen);
             } else {
                 instance.onTickInGame();

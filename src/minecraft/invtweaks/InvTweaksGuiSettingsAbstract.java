@@ -50,7 +50,8 @@ public abstract class InvTweaksGuiSettingsAbstract extends GuiScreen {
         List<Object> controlList = obf.getControlList(this);
         Point p = new Point();
         moveToButtonCoords(1, p);
-        controlList.add(new GuiButton(ID_DONE, p.getX() + 55, obf.getWindowHeight(this) / 6 + 168, LABEL_DONE)); // GuiButton
+        controlList.add(new GuiButton(ID_DONE, p.getX() + 55, obf.getWindowHeight(this) / 6 + 168,
+                                      LABEL_DONE)); // GuiButton
 
         // Save control list
         obf.setControlList(this, controlList);
@@ -59,18 +60,19 @@ public abstract class InvTweaksGuiSettingsAbstract extends GuiScreen {
 
     public void drawScreen(int i, int j, float f) {
         drawDefaultBackground();
-        drawCenteredString(obf.getFontRenderer(), InvTweaksLocalization.get("invtweaks.settings.title"), obf.getWindowWidth(this) / 2, 20, 0xffffff);
+        drawCenteredString(obf.getFontRenderer(), InvTweaksLocalization.get("invtweaks.settings.title"),
+                           obf.getWindowWidth(this) / 2, 20, 0xffffff);
         super.drawScreen(i, j, f);
     }
 
     protected void actionPerformed(GuiButton guibutton) {
-        if (obf.getId(guibutton) == ID_DONE) {
+        if(obf.getId(guibutton) == ID_DONE) {
             obf.displayGuiScreen(parentScreen);
         }
     }
 
     protected void keyTyped(char c, int keyCode) {
-        if (keyCode == Keyboard.KEY_ESCAPE) {
+        if(keyCode == Keyboard.KEY_ESCAPE) {
             obf.displayGuiScreen(parentScreen);
         }
     }
@@ -88,7 +90,7 @@ public abstract class InvTweaksGuiSettingsAbstract extends GuiScreen {
 
     protected String computeBooleanButtonLabel(String property, String label) {
         String propertyValue = config.getProperty(property);
-        if (propertyValue.equals(InvTweaksConfig.VALUE_CI_COMPATIBILITY)) {
+        if(propertyValue.equals(InvTweaksConfig.VALUE_CI_COMPATIBILITY)) {
             return label + DISABLE_CI;
         } else {
             Boolean enabled = Boolean.valueOf(propertyValue);

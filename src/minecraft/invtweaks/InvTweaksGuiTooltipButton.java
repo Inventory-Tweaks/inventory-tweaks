@@ -43,7 +43,7 @@ public class InvTweaksGuiTooltipButton extends GuiButton {
     public InvTweaksGuiTooltipButton(int id, int x, int y, int w, int h,
                                      String displayString, String tooltip) {
         super(id, x, y, w, h, displayString);
-        if (tooltip != null) {
+        if(tooltip != null) {
             setTooltip(tooltip);
         }
     }
@@ -51,26 +51,27 @@ public class InvTweaksGuiTooltipButton extends GuiButton {
     public InvTweaksGuiTooltipButton(int id, int x, int y, int w, int h,
                                      String displayString, String tooltip, boolean drawBackground) {
         super(id, x, y, w, h, displayString);
-        if (tooltip != null) {
+        if(tooltip != null) {
             setTooltip(tooltip);
         }
         this.drawBackground = drawBackground;
     }
 
     public void drawButton(Minecraft minecraft, int i, int j) {
-        if (this.drawBackground) {
+        if(this.drawBackground) {
             super.drawButton(minecraft, i, j);
         } else {
-            this.drawString(minecraft.fontRenderer, this.displayString, this.xPosition, this.yPosition + (this.height - 8) / 2, 0x999999);
+            this.drawString(minecraft.fontRenderer, this.displayString, this.xPosition,
+                            this.yPosition + (this.height - 8) / 2, 0x999999);
         }
 
         InvTweaksObfuscation obf = new InvTweaksObfuscation(minecraft);
 
-        if (tooltipLines != null) {
+        if(tooltipLines != null) {
             // Compute hover time
-            if (isMouseOverButton(i, j)) {
+            if(isMouseOverButton(i, j)) {
                 long systemTime = System.currentTimeMillis();
-                if (prevSystemTime != 0) {
+                if(prevSystemTime != 0) {
                     hoverTime += systemTime - prevSystemTime;
                 }
                 prevSystemTime = systemTime;
@@ -80,33 +81,33 @@ public class InvTweaksGuiTooltipButton extends GuiButton {
             }
 
             // Draw tooltip if hover time is long enough
-            if (hoverTime > InvTweaksConst.TOOLTIP_DELAY && tooltipLines != null) {
+            if(hoverTime > InvTweaksConst.TOOLTIP_DELAY && tooltipLines != null) {
 
                 FontRenderer fontRenderer = obf.getFontRenderer();
 
                 // Compute tooltip params
                 int x = i + 12, y = j - LINE_HEIGHT * tooltipLines.length;
-                if (tooltipWidth == -1) {
-                    for (String line : tooltipLines) {
+                if(tooltipWidth == -1) {
+                    for(String line : tooltipLines) {
                         tooltipWidth = Math.max(
                                 obf.getStringWidth(fontRenderer, line),
                                 tooltipWidth);
                     }
                 }
-                if (x + tooltipWidth > obf.getWindowWidth(obf.getCurrentScreen())) {
+                if(x + tooltipWidth > obf.getWindowWidth(obf.getCurrentScreen())) {
                     x = obf.getWindowWidth(obf.getCurrentScreen()) - tooltipWidth;
                 }
 
                 // Draw background
                 drawGradientRect(x - 3, y - 3,
-                        x + tooltipWidth + 3, y + LINE_HEIGHT * tooltipLines.length,
-                        0xc0000000, 0xc0000000);
+                                 x + tooltipWidth + 3, y + LINE_HEIGHT * tooltipLines.length,
+                                 0xc0000000, 0xc0000000);
 
                 // Draw lines
                 int lineCount = 0;
-                for (String line : tooltipLines) {
+                for(String line : tooltipLines) {
                     obf.drawStringWithShadow(fontRenderer,
-                            line, x, y + (lineCount++) * LINE_HEIGHT, -1);
+                                             line, x, y + (lineCount++) * LINE_HEIGHT, -1);
                 }
             }
         }
@@ -122,9 +123,9 @@ public class InvTweaksGuiTooltipButton extends GuiButton {
     protected int getTextColor(int i, int j) {
 
         int textColor = 0xffe0e0e0;
-        if (!enabled) {
+        if(!enabled) {
             textColor = 0xffa0a0a0;
-        } else if (isMouseOverButton(i, j)) {
+        } else if(isMouseOverButton(i, j)) {
             textColor = 0xffffffa0;
         }
         return textColor;

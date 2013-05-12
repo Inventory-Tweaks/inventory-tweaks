@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.concurrent.TimeoutException;
 
 /**
- * Allows to perform various operations on a single section of
- * the inventory and/or containers. Works in both single and multiplayer.
+ * Allows to perform various operations on a single section of the inventory and/or containers. Works in both single and
+ * multiplayer.
  *
  * @author Jimeo Wan
  */
@@ -28,10 +28,11 @@ public class InvTweaksContainerSectionManager {
         this.containerMgr.setClickDelay(delay);
     }
 
-    public InvTweaksContainerSectionManager(InvTweaksContainerManager manager, ContainerSection section) throws Exception {
+    public InvTweaksContainerSectionManager(InvTweaksContainerManager manager, ContainerSection section)
+            throws Exception {
         this.containerMgr = manager;
         this.section = section;
-        if (!containerMgr.hasSection(section)) {
+        if(!containerMgr.hasSection(section)) {
             throw new Exception("Section not available");
         }
     }
@@ -89,7 +90,7 @@ public class InvTweaksContainerSectionManager {
     }
 
     public int getSlotIndex(int slotNumber) {
-        if (isSlotInSection(slotNumber)) {
+        if(isSlotInSection(slotNumber)) {
             return containerMgr.getSlotIndex(slotNumber);
         } else {
             return -1;

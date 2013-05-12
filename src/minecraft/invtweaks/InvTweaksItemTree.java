@@ -12,9 +12,8 @@ import java.util.*;
 import java.util.logging.Logger;
 
 /**
- * Contains the whole hierarchy of categories and items, as defined
- * in the XML item tree. Is used to recognize keywords and store
- * item orders.
+ * Contains the whole hierarchy of categories and items, as defined in the XML item tree. Is used to recognize keywords
+ * and store item orders.
  *
  * @author Jimeo Wan
  */
@@ -52,9 +51,10 @@ public class InvTweaksItemTree implements IItemTree {
 
     public void reset() {
 
-        if (defaultItems == null) {
+        if(defaultItems == null) {
             defaultItems = new Vector<IItemTreeItem>();
-            defaultItems.add(new InvTweaksItemTreeItem(UNKNOWN_ITEM, -1, InvTweaksConst.DAMAGE_WILDCARD, Integer.MAX_VALUE));
+            defaultItems.add(new InvTweaksItemTreeItem(UNKNOWN_ITEM, -1, InvTweaksConst.DAMAGE_WILDCARD,
+                                                       Integer.MAX_VALUE));
         }
 
         // Reset tree
@@ -65,8 +65,8 @@ public class InvTweaksItemTree implements IItemTree {
     }
 
     /**
-     * Checks if given item ID matches a given keyword (either the item's name
-     * is the keyword, or it is in the keyword category)
+     * Checks if given item ID matches a given keyword (either the item's name is the keyword, or it is in the keyword
+     * category)
      *
      * @param items
      * @param keyword
@@ -74,21 +74,22 @@ public class InvTweaksItemTree implements IItemTree {
     @Override
     public boolean matches(List<IItemTreeItem> items, String keyword) {
 
-        if (items == null)
+        if(items == null) {
             return false;
+        }
 
         // The keyword is an item
-        for (IItemTreeItem item : items) {
-            if (item.getName() != null && item.getName().equals(keyword)) {
+        for(IItemTreeItem item : items) {
+            if(item.getName() != null && item.getName().equals(keyword)) {
                 return true;
             }
         }
 
         // The keyword is a category
         IItemTreeCategory category = getCategory(keyword);
-        if (category != null) {
-            for (IItemTreeItem item : items) {
-                if (category.contains(item)) {
+        if(category != null) {
+            for(IItemTreeItem item : items) {
+                if(category.contains(item)) {
                     return true;
                 }
             }
@@ -103,7 +104,7 @@ public class InvTweaksItemTree implements IItemTree {
     public int getKeywordDepth(String keyword) {
         try {
             return getRootCategory().findKeywordDepth(keyword);
-        } catch (NullPointerException e) {
+        } catch(NullPointerException e) {
             log.severe("The root category is missing: " + e.getMessage());
             return 0;
         }
@@ -112,12 +113,12 @@ public class InvTweaksItemTree implements IItemTree {
     @Override
     public int getKeywordOrder(String keyword) {
         List<IItemTreeItem> items = getItems(keyword);
-        if (items != null && items.size() != 0) {
+        if(items != null && items.size() != 0) {
             return items.get(0).getOrder();
         } else {
             try {
                 return getRootCategory().findCategoryOrder(keyword);
-            } catch (NullPointerException e) {
+            } catch(NullPointerException e) {
                 log.severe("The root category is missing: " + e.getMessage());
                 return -1;
             }
@@ -125,8 +126,7 @@ public class InvTweaksItemTree implements IItemTree {
     }
 
     /**
-     * Checks if the given keyword is valid (i.e. represents either a registered
-     * item or a registered category)
+     * Checks if the given keyword is valid (i.e. represents either a registered item or a registered category)
      *
      * @param keyword
      */
@@ -134,7 +134,7 @@ public class InvTweaksItemTree implements IItemTree {
     public boolean isKeywordValid(String keyword) {
 
         // Is the keyword an item?
-        if (containsItem(keyword)) {
+        if(containsItem(keyword)) {
             return true;
         }
 
@@ -172,21 +172,21 @@ public class InvTweaksItemTree implements IItemTree {
     public List<IItemTreeItem> getItems(int id, int damage) {
         List<IItemTreeItem> items = itemsById.get(id);
         List<IItemTreeItem> filteredItems = new ArrayList<IItemTreeItem>();
-        if (items != null) {
+        if(items != null) {
             filteredItems.addAll(items);
         }
 
         // Filter items of same ID, but different damage value
-        if (items != null && !items.isEmpty()) {
-            for (IItemTreeItem item : items) {
-                if (item.getDamage() != InvTweaksConst.DAMAGE_WILDCARD && item.getDamage() != damage) {
+        if(items != null && !items.isEmpty()) {
+            for(IItemTreeItem item : items) {
+                if(item.getDamage() != InvTweaksConst.DAMAGE_WILDCARD && item.getDamage() != damage) {
                     filteredItems.remove(item);
                 }
             }
         }
 
         // If there's no matching item, create new ones
-        if (filteredItems.isEmpty()) {
+        if(filteredItems.isEmpty()) {
             IItemTreeItem newItemId = new InvTweaksItemTreeItem(
                     String.format("%d-%d", id, damage),
                     id, damage, 5000 + id * 16 + damage);
@@ -200,8 +200,8 @@ public class InvTweaksItemTree implements IItemTree {
         }
 
         Iterator<IItemTreeItem> it = filteredItems.iterator();
-        while (it.hasNext()) {
-            if (it.next() == null) {
+        while(it.hasNext()) {
+            if(it.next() == null) {
                 it.remove();
             }
         }
@@ -217,7 +217,7 @@ public class InvTweaksItemTree implements IItemTree {
     @Override
     public IItemTreeItem getRandomItem(Random r) {
         return (IItemTreeItem) itemsByName.values()
-                .toArray()[r.nextInt(itemsByName.size())];
+                                          .toArray()[r.nextInt(itemsByName.size())];
     }
 
     @Override
@@ -268,14 +268,14 @@ public class InvTweaksItemTree implements IItemTree {
         categories.get(parentCategory.toLowerCase()).addItem(newItem);
 
         // Register item
-        if (itemsByName.containsKey(newItem.getName())) {
+        if(itemsByName.containsKey(newItem.getName())) {
             itemsByName.get(newItem.getName()).add(newItem);
         } else {
             Vector<IItemTreeItem> list = new Vector<IItemTreeItem>();
             list.add(newItem);
             itemsByName.put(newItem.getName(), list);
         }
-        if (itemsById.containsKey(newItem.getId())) {
+        if(itemsById.containsKey(newItem.getId())) {
             itemsById.get(newItem.getId()).add(newItem);
         } else {
             Vector<IItemTreeItem> list = new Vector<IItemTreeItem>();
@@ -290,19 +290,19 @@ public class InvTweaksItemTree implements IItemTree {
     private void log(IItemTreeCategory category, int indentLevel) {
 
         String logIdent = "";
-        for (int i = 0; i < indentLevel; i++) {
+        for(int i = 0; i < indentLevel; i++) {
             logIdent += "  ";
         }
         log.info(logIdent + category.getName());
 
-        for (IItemTreeCategory subCategory : category.getSubCategories()) {
+        for(IItemTreeCategory subCategory : category.getSubCategories()) {
             log(subCategory, indentLevel + 1);
         }
 
-        for (List<IItemTreeItem> itemList : category.getItems()) {
-            for (IItemTreeItem item : itemList) {
+        for(List<IItemTreeItem> itemList : category.getItems()) {
+            for(IItemTreeItem item : itemList) {
                 log.info(logIdent + "  " + item + " " +
-                        item.getId() + " " + item.getDamage());
+                                 item.getId() + " " + item.getDamage());
             }
         }
 
@@ -325,9 +325,9 @@ public class InvTweaksItemTree implements IItemTree {
 
     @Override
     public void registerOre(String category, String name, String oreName, int order) {
-        for (ItemStack i : OreDictionary.getOres(oreName)) {
+        for(ItemStack i : OreDictionary.getOres(oreName)) {
             addItem(category, new InvTweaksItemTreeItem(name,
-                    i.itemID, i.getItemDamage(), order));
+                                                        i.itemID, i.getItemDamage(), order));
         }
         oresRegistered.add(new OreDictInfo(category, name, oreName, order));
     }
@@ -336,10 +336,10 @@ public class InvTweaksItemTree implements IItemTree {
 
     @ForgeSubscribe
     public void oreRegistered(OreDictionary.OreRegisterEvent ev) {
-        for (OreDictInfo ore : oresRegistered) {
-            if (ore.oreName.equals(ev.Name)) {
+        for(OreDictInfo ore : oresRegistered) {
+            if(ore.oreName.equals(ev.Name)) {
                 addItem(ore.category, new InvTweaksItemTreeItem(ore.name,
-                        ev.Ore.itemID, ev.Ore.getItemDamage(), ore.order));
+                                                                ev.Ore.itemID, ev.Ore.getItemDamage(), ore.order));
             }
         }
     }

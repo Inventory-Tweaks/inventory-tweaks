@@ -29,16 +29,19 @@ public class InvTweaksGuiIconButton extends InvTweaksGuiTooltipButton {
         int k = getHoverState(isMouseOverButton(i, j));
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 
-        if (useCustomTexture) {
+        if(useCustomTexture) {
             minecraft.renderEngine.bindTexture("/gui/button10px.png");
             drawTexturedModalRect(xPosition, yPosition, (k - 1) * 10, 0, width, height);
         } else {
             minecraft.renderEngine.bindTexture("/gui/gui.png");
             drawTexturedModalRect(xPosition, yPosition, 1, 46 + k * 20 + 1, width / 2, height / 2);
-            drawTexturedModalRect(xPosition, yPosition + height / 2, 1, 46 + k * 20 + 20 - height / 2 - 1, width / 2, height / 2);
-            drawTexturedModalRect(xPosition + width / 2, yPosition, 200 - width / 2 - 1, 46 + k * 20 + 1, width / 2, height / 2);
-            drawTexturedModalRect(xPosition + width / 2, yPosition + height / 2, 200 - width / 2 - 1, 46 + k * 20 + 19 - height / 2, width / 2,
-                    height / 2);
+            drawTexturedModalRect(xPosition, yPosition + height / 2, 1, 46 + k * 20 + 20 - height / 2 - 1, width / 2,
+                                  height / 2);
+            drawTexturedModalRect(xPosition + width / 2, yPosition, 200 - width / 2 - 1, 46 + k * 20 + 1, width / 2,
+                                  height / 2);
+            drawTexturedModalRect(xPosition + width / 2, yPosition + height / 2, 200 - width / 2 - 1,
+                                  46 + k * 20 + 19 - height / 2, width / 2,
+                                  height / 2);
         }
 
     }

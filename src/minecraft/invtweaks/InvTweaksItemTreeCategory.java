@@ -31,14 +31,15 @@ public class InvTweaksItemTreeCategory implements IItemTreeCategory {
     @Override
     public boolean contains(IItemTreeItem item) {
         List<IItemTreeItem> storedItems = items.get(item.getId());
-        if (storedItems != null) {
-            for (IItemTreeItem storedItem : storedItems) {
-                if (storedItem.equals(item))
+        if(storedItems != null) {
+            for(IItemTreeItem storedItem : storedItems) {
+                if(storedItem.equals(item)) {
                     return true;
+                }
             }
         }
-        for (IItemTreeCategory category : subCategories) {
-            if (category.contains(item)) {
+        for(IItemTreeCategory category : subCategories) {
+            if(category.contains(item)) {
                 return true;
             }
         }
@@ -54,7 +55,7 @@ public class InvTweaksItemTreeCategory implements IItemTreeCategory {
     public void addItem(IItemTreeItem item) {
 
         // Add item to category
-        if (items.get(item.getId()) == null) {
+        if(items.get(item.getId()) == null) {
             List<IItemTreeItem> itemList = new ArrayList<IItemTreeItem>();
             itemList.add(item);
             items.put(item.getId(), itemList);
@@ -64,21 +65,22 @@ public class InvTweaksItemTreeCategory implements IItemTreeCategory {
         matchingItems.add(item.getName());
 
         // Categorie's order is defined by its lowest item order
-        if (order == -1 || order > item.getOrder()) {
+        if(order == -1 || order > item.getOrder()) {
             order = item.getOrder();
         }
     }
 
     @Override
     public int getCategoryOrder() {
-        if (this.order != -1) {
+        if(this.order != -1) {
             return this.order;
         } else {
             int order;
-            for (IItemTreeCategory category : subCategories) {
+            for(IItemTreeCategory category : subCategories) {
                 order = category.getCategoryOrder();
-                if (order != -1)
+                if(order != -1) {
                     return order;
+                }
             }
             return -1;
         }
@@ -86,13 +88,13 @@ public class InvTweaksItemTreeCategory implements IItemTreeCategory {
 
     @Override
     public int findCategoryOrder(String keyword) {
-        if (keyword.equals(name)) {
+        if(keyword.equals(name)) {
             return getCategoryOrder();
         } else {
             int result;
-            for (IItemTreeCategory category : subCategories) {
+            for(IItemTreeCategory category : subCategories) {
                 result = category.findCategoryOrder(keyword);
-                if (result != -1) {
+                if(result != -1) {
                     return result;
                 }
             }
@@ -102,15 +104,15 @@ public class InvTweaksItemTreeCategory implements IItemTreeCategory {
 
     @Override
     public int findKeywordDepth(String keyword) {
-        if (name.equals(keyword)) {
+        if(name.equals(keyword)) {
             return 0;
-        } else if (matchingItems.contains(keyword)) {
+        } else if(matchingItems.contains(keyword)) {
             return 1;
         } else {
             int result;
-            for (IItemTreeCategory category : subCategories) {
+            for(IItemTreeCategory category : subCategories) {
                 result = category.findKeywordDepth(keyword);
-                if (result != -1) {
+                if(result != -1) {
                     return result + 1;
                 }
             }

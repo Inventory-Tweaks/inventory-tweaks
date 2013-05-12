@@ -43,7 +43,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
         ItemStack candidateStack, replacementStack = null;
         int replacementStackSlot = -1;
         boolean refillBeforeBreak = config.getProperty(InvTweaksConfig.PROP_AUTO_REFILL_BEFORE_BREAK)
-                .equals(InvTweaksConfig.VALUE_TRUE);
+                                          .equals(InvTweaksConfig.VALUE_TRUE);
         boolean hasSubtypes = false;
         if(wantedId > 0 && wantedId < Item.itemsList.length) {
             Item original = Item.itemsList[wantedId];
@@ -57,14 +57,14 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
         InvTweaksItemTree tree = config.getTree();
 
         // Check that the item is in the tree
-        if (!tree.isItemUnknown(wantedId, wantedDamage)) {
+        if(!tree.isItemUnknown(wantedId, wantedDamage)) {
 
             //// Search replacement
 
             List<IItemTreeItem> items = tree.getItems(wantedId, wantedDamage);
 
             // Find rules that match the slot
-            for (IItemTreeItem item : items) {
+            for(IItemTreeItem item : items) {
                 if(!hasSubtypes || (item.getDamage() == wantedDamage)) {
                     // Since we search a matching item using rules,
                     // create a fake one that matches the exact item first
@@ -73,11 +73,11 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
                             InvTweaksConst.INVENTORY_SIZE, InvTweaksConst.INVENTORY_ROW_SIZE));
                 }
             }
-            for (InvTweaksConfigSortingRule rule : rules) {
-                if (rule.getType() == InvTweaksConfigSortingRuleType.SLOT
+            for(InvTweaksConfigSortingRule rule : rules) {
+                if(rule.getType() == InvTweaksConfigSortingRuleType.SLOT
                         || rule.getType() == InvTweaksConfigSortingRuleType.COLUMN) {
-                    for (int preferredSlot : rule.getPreferredSlots()) {
-                        if (slot == preferredSlot) {
+                    for(int preferredSlot : rule.getPreferredSlots()) {
+                        if(slot == preferredSlot) {
                             matchingRules.add(rule);
                             break;
                         }
@@ -88,25 +88,29 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
             // Look only for a matching stack
             // First, look for the same item,
             // else one that matches the slot's rules
-            for (InvTweaksConfigSortingRule rule : matchingRules) {
-                for (int i = 0; i < InvTweaksConst.INVENTORY_SIZE; i++) {
+            for(InvTweaksConfigSortingRule rule : matchingRules) {
+                for(int i = 0; i < InvTweaksConst.INVENTORY_SIZE; i++) {
                     candidateStack = container.getItemStack(i);
-                    if (candidateStack != null) {
+                    if(candidateStack != null) {
                         List<IItemTreeItem> candidateItems = tree.getItems(
                                 getItemID(candidateStack),
                                 getItemDamage(candidateStack));
-                        if (tree.matches(candidateItems, rule.getKeyword())) {
+                        if(tree.matches(candidateItems, rule.getKeyword())) {
                             // Choose tool of highest damage value
-                            if (getMaxStackSize(candidateStack) == 1) {
-                                if ((replacementStack == null || getItemDamage(candidateStack) > getItemDamage(replacementStack)) &&
-                                        (!refillBeforeBreak || getMaxDamage(getItem(candidateStack)) - getItemDamage(candidateStack)
-                                                > config.getIntProperty(InvTweaksConfig.PROP_AUTO_REFILL_DAMAGE_THRESHHOLD))) {
+                            if(getMaxStackSize(candidateStack) == 1) {
+                                if((replacementStack == null ||
+                                        getItemDamage(candidateStack) > getItemDamage(replacementStack)) &&
+                                        (!refillBeforeBreak ||
+                                                getMaxDamage(getItem(candidateStack)) - getItemDamage(candidateStack)
+                                                        > config.getIntProperty(
+                                                        InvTweaksConfig.PROP_AUTO_REFILL_DAMAGE_THRESHHOLD))) {
                                     replacementStack = candidateStack;
                                     replacementStackSlot = i;
                                 }
                             }
                             // Choose stack of lowest size
-                            else if (replacementStack == null || getStackSize(candidateStack) < getStackSize(replacementStack)) {
+                            else if(replacementStack == null ||
+                                    getStackSize(candidateStack) < getStackSize(replacementStack)) {
                                 replacementStack = candidateStack;
                                 replacementStackSlot = i;
                             }
@@ -118,9 +122,9 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
 
         // If item is unknown, look for exact same item
         else {
-            for (int i = 0; i < InvTweaksConst.INVENTORY_SIZE; i++) {
+            for(int i = 0; i < InvTweaksConst.INVENTORY_SIZE; i++) {
                 candidateStack = container.getItemStack(i);
-                if (candidateStack != null &&
+                if(candidateStack != null &&
                         getItemID(candidateStack) == wantedId &&
                         getItemDamage(candidateStack) == wantedDamage) {
                     replacementStack = candidateStack;
@@ -132,7 +136,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
 
         //// Proceed to replacement
 
-        if (replacementStack != null || (refillBeforeBreak && getStack(container.getSlot(slot)) != null)) {
+        if(replacementStack != null || (refillBeforeBreak && getStack(container.getSlot(slot)) != null)) {
 
             log.info("Automatic stack replacement.");
 
@@ -154,7 +158,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
                     this.containerMgr = new InvTweaksContainerSectionManager(
                             mc, ContainerSection.INVENTORY);
                     this.targetedSlot = currentItem;
-                    if (i != -1) {
+                    if(i != -1) {
                         this.i = i;
                         this.expectedItemId = getItemID(containerMgr.getItemStack(i));
                     } else {
@@ -171,31 +175,34 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
                     // slot is now empty
                     int pollingTime = 0;
                     setHasInventoryChanged(false);
-                    while (getThePlayer() != null && !hasInventoryChanged()
+                    while(getThePlayer() != null && !hasInventoryChanged()
                             && pollingTime < InvTweaksConst.POLLING_TIMEOUT) {
                         trySleep(InvTweaksConst.POLLING_DELAY);
                     }
-                    if (getThePlayer() == null) {
+                    if(getThePlayer() == null) {
                         return; // Game closed
                     }
-                    if (pollingTime < InvTweaksConst.AUTO_REFILL_DELAY)
+                    if(pollingTime < InvTweaksConst.AUTO_REFILL_DELAY) {
                         trySleep(InvTweaksConst.AUTO_REFILL_DELAY - pollingTime);
-                    if (pollingTime >= InvTweaksConst.POLLING_TIMEOUT)
+                    }
+                    if(pollingTime >= InvTweaksConst.POLLING_TIMEOUT) {
                         log.warning("Autoreplace timout");
+                    }
 
                     // In POLLING_DELAY ms, things might have changed
                     try {
                         ItemStack stack = containerMgr.getItemStack(i);
-                        if (stack != null && getItemID(stack) == expectedItemId || this.refillBeforeBreak) {
-                            if (containerMgr.move(targetedSlot, i) || containerMgr.move(i, targetedSlot)) {
-                                if (!config.getProperty(InvTweaksConfig.PROP_ENABLE_SOUNDS).equals(InvTweaksConfig.VALUE_FALSE)) {
+                        if(stack != null && getItemID(stack) == expectedItemId || this.refillBeforeBreak) {
+                            if(containerMgr.move(targetedSlot, i) || containerMgr.move(i, targetedSlot)) {
+                                if(!config.getProperty(InvTweaksConfig.PROP_ENABLE_SOUNDS)
+                                          .equals(InvTweaksConfig.VALUE_FALSE)) {
                                     playSound("mob.chickenplop", 1.4F, 0.5F);
                                 }
                                 // If item are swapped (like for mushroom soups),
                                 // put the item back in the inventory if it is in the hotbar
-                                if (containerMgr.getItemStack(i) != null && i >= 27) {
-                                    for (int j = 0; j < InvTweaksConst.INVENTORY_SIZE; j++) {
-                                        if (containerMgr.getItemStack(j) == null) {
+                                if(containerMgr.getItemStack(i) != null && i >= 27) {
+                                    for(int j = 0; j < InvTweaksConst.INVENTORY_SIZE; j++) {
+                                        if(containerMgr.getItemStack(j) == null) {
                                             containerMgr.move(i, j);
                                             break;
                                         }
@@ -205,10 +212,10 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
                                 log.warning("Failed to move stack for autoreplace, despite of prior tests.");
                             }
                         }
-                    } catch (NullPointerException e) {
+                    } catch(NullPointerException e) {
                         // Nothing: Due to multithreading +
                         // unsafe accesses, NPE may (very rarely) occur (?).
-                    } catch (TimeoutException e) {
+                    } catch(TimeoutException e) {
                         log.severe("Failed to trigger autoreplace: " + e.getMessage());
                     }
 
@@ -222,7 +229,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
     private static void trySleep(int delay) {
         try {
             Thread.sleep(delay);
-        } catch (InterruptedException e) {
+        } catch(InterruptedException e) {
             // Do nothing
         }
     }

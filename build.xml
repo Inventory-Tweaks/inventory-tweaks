@@ -49,10 +49,18 @@
         <available file="${minecraft.mcp.jar}"/>
     </condition>
 
+    <condition property="forge.setupComplete">
+        <and>
+            <isset property="forge.installed"/>
+            <uptodate srcfile="${src.orig.dir}/invtweaks_at.cfg"
+                      targetfile="${forge.dir}/accesstransformers/invtweaks_at.cfg"/>
+        </and>
+    </condition>
+
     <path id="invtweaks.classpath">
         <pathelement location="${mcp.dir}/bin/minecraft"/>
         <pathelement location="${mcp.dir}/lib/argo-3.2.jar"/>
-        <pathelement location="${mcp.dir}/lib/asm-all-4.1.jar"/>
+        <pathelement location="${mcp.dir}/lib/asm-debug-all-4.1.jar"/>
         <pathelement location="${mcp.dir}/lib/bcprov-jdk15on-148.jar"/>
         <pathelement location="${mcp.dir}/lib/guava-14.0-rc3.jar"/>
         <pathelement location="${mcp.dir}/jars/bin/jinput.jar"/>
@@ -102,6 +110,10 @@
             <fileset dir="${class.dir}"/>
             <fileset dir="${src.dir}" excludes="**/*.java"/>
             <file file="${temp.dir}/version.properties"/>
+
+            <manifest>
+                <attribute name="FMLCorePlugin" value="invtweaks.forge.asm.FMLPlugin" />
+            </manifest>
         </jar>
     </target>
 
@@ -149,7 +161,7 @@
         </jar>
     </target>
 
-    <target name="install-forge" depends="download-forge" unless="forge.installed">
+    <target name="install-forge" depends="download-forge" unless="forge.setupComplete">
         <delete dir="${forge.dir}" failonerror="no"/>
         <delete file="${minecraft.inheritance}" failonerror="no"/>
         <delete file="${minecraft.mcp.jar}" failonerror="no"/>
@@ -157,6 +169,8 @@
         <unzip src="${temp.dir}/${forge.filename}" dest="${forge.dir}">
             <cutdirsmapper dirs="1"/>
         </unzip>
+
+        <copy file="${src.orig.dir}/invtweaks_at.cfg" todir="${forge.dir}/accesstransformers/"/>
 
         <exec dir="${forge.dir}" executable="${forge.dir}/fml/python/python_fml" osfamily="windows" inputstring="Yes\n">
             <arg value="install.py"/>

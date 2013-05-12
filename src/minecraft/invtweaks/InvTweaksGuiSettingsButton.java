@@ -27,10 +27,10 @@ public class InvTweaksGuiSettingsButton extends InvTweaksGuiIconButton {
         // Display string
         InvTweaksObfuscation obf = new InvTweaksObfuscation(minecraft);
         drawCenteredString(obf.getFontRenderer(),
-                displayString,
-                xPosition + 5,
-                yPosition - 1,
-                getTextColor(i, j));
+                           displayString,
+                           xPosition + 5,
+                           yPosition - 1,
+                           getTextColor(i, j));
     }
 
     /**
@@ -41,27 +41,27 @@ public class InvTweaksGuiSettingsButton extends InvTweaksGuiIconButton {
         InvTweaksObfuscation obf = new InvTweaksObfuscation(minecraft);
         InvTweaksConfig config = cfgManager.getConfig();
 
-        if (super.mousePressed(minecraft, i, j)) {
+        if(super.mousePressed(minecraft, i, j)) {
             // Put hold item down if necessary
             InvTweaksContainerSectionManager containerMgr;
 
             try {
                 containerMgr = new InvTweaksContainerSectionManager(
                         minecraft, ContainerSection.INVENTORY);
-                if (obf.getHeldStack() != null) {
+                if(obf.getHeldStack() != null) {
                     try {
                         // Put hold item down
-                        for (int k = containerMgr.getSize() - 1; k >= 0; k--) {
-                            if (containerMgr.getItemStack(k) == null) {
+                        for(int k = containerMgr.getSize() - 1; k >= 0; k--) {
+                            if(containerMgr.getItemStack(k) == null) {
                                 containerMgr.leftClick(k);
                                 break;
                             }
                         }
-                    } catch (TimeoutException e) {
+                    } catch(TimeoutException e) {
                         InvTweaks.logInGameErrorStatic("invtweaks.sort.releaseitem.error", e);
                     }
                 }
-            } catch (Exception e) {
+            } catch(Exception e) {
                 log.severe(e.getMessage());
             }
 

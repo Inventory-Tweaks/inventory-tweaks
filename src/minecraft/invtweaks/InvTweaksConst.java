@@ -57,16 +57,14 @@ public class InvTweaksConst {
     public static final int DAMAGE_WILDCARD = OreDictionary.WILDCARD_VALUE;
 
     /**
-     * Returns the Minecraft folder ensuring:
-     * - It is an absolute path
-     * - It ends with a folder separator
+     * Returns the Minecraft folder ensuring: - It is an absolute path - It ends with a folder separator
      */
     public static String getMinecraftDir() {
         String absolutePath = Minecraft.getMinecraftDir().getAbsolutePath();
-        if (absolutePath.endsWith(".")) {
+        if(absolutePath.endsWith(".")) {
             return absolutePath.substring(0, absolutePath.length() - 1);
         }
-        if (absolutePath.endsWith(File.separator)) {
+        if(absolutePath.endsWith(File.separator)) {
             return absolutePath;
         } else {
             return absolutePath + File.separatorChar;

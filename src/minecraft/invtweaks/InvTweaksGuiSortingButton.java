@@ -29,10 +29,10 @@ public class InvTweaksGuiSortingButton extends InvTweaksGuiIconButton {
 
         // Display symbol
         int textColor = getTextColor(i, j);
-        if (displayString.equals("h")) {
+        if(displayString.equals("h")) {
             drawRect(xPosition + 3, yPosition + 3, xPosition + width - 3, yPosition + 4, textColor);
             drawRect(xPosition + 3, yPosition + 6, xPosition + width - 3, yPosition + 7, textColor);
-        } else if (displayString.equals("v")) {
+        } else if(displayString.equals("v")) {
             drawRect(xPosition + 3, yPosition + 3, xPosition + 4, yPosition + height - 3, textColor);
             drawRect(xPosition + 6, yPosition + 3, xPosition + 7, yPosition + height - 3, textColor);
         } else {
@@ -47,12 +47,12 @@ public class InvTweaksGuiSortingButton extends InvTweaksGuiIconButton {
      * Sort container
      */
     public boolean mousePressed(Minecraft minecraft, int i, int j) {
-        if (super.mousePressed(minecraft, i, j)) {
+        if(super.mousePressed(minecraft, i, j)) {
             try {
                 new InvTweaksHandlerSorting(
                         minecraft, cfgManager.getConfig(),
                         section, algorithm, rowSize).sort();
-            } catch (Exception e) {
+            } catch(Exception e) {
                 InvTweaks.logInGameErrorStatic("invtweaks.sort.chest.error", e);
                 e.printStackTrace();
             }

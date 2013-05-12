@@ -45,7 +45,8 @@ public class ClientProxy extends CommonProxy implements IPickupNotifier {
 
     @Override
     public void postInit(FMLPostInitializationEvent e) {
-        if (!InvTweaks.getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_ENABLE_FORGE_ITEMTREE).equals(InvTweaksConfig.VALUE_FALSE)) {
+        if(!InvTweaks.getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_ENABLE_FORGE_ITEMTREE)
+                     .equals(InvTweaksConfig.VALUE_FALSE)) {
             InvTweaksItemTreeLoader.addOnLoadListener(new ForgeItemTreeListener());
         }
     }
@@ -58,13 +59,16 @@ public class ClientProxy extends CommonProxy implements IPickupNotifier {
     @Override
     public void setServerAssistEnabled(boolean enabled) {
         serverSupportEnabled = serverSupportDetected && enabled;
-        InvTweaks.log.info("Server has support: " + serverSupportDetected + " support enabled: " + serverSupportEnabled);
+        InvTweaks.log
+                 .info("Server has support: " + serverSupportDetected + " support enabled: " + serverSupportEnabled);
     }
 
     @Override
     public void setServerHasInvTweaks(boolean hasInvTweaks) {
         serverSupportDetected = hasInvTweaks;
-        serverSupportEnabled = hasInvTweaks && !InvTweaks.getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_ENABLE_SERVER_ITEMSWAP).equals(InvTweaksConfig.VALUE_FALSE);
+        serverSupportEnabled = hasInvTweaks &&
+                !InvTweaks.getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_ENABLE_SERVER_ITEMSWAP)
+                          .equals(InvTweaksConfig.VALUE_FALSE);
         InvTweaks.log.info("Server has support: " + hasInvTweaks + " support enabled: " + serverSupportEnabled);
     }
 
@@ -73,7 +77,7 @@ public class ClientProxy extends CommonProxy implements IPickupNotifier {
                           int windowId, int slot, int data,
                           int action, EntityPlayer player) {
         //int modiferKeys = (shiftHold) ? 1 : 0 /* XXX Placeholder */;
-        if (serverSupportEnabled) {
+        if(serverSupportEnabled) {
             player.openContainer.slotClick(slot, data, action, player);
 
             ByteArrayDataOutput packetData = ByteStreams.newDataOutput();
@@ -91,8 +95,9 @@ public class ClientProxy extends CommonProxy implements IPickupNotifier {
 
     @Override
     public void sortComplete() {
-        if (serverSupportEnabled) {
-            Packet250CustomPayload pkt = new Packet250CustomPayload("InventoryTweaks", new byte[]{InvTweaksConst.PACKET_SORTCOMPLETE});
+        if(serverSupportEnabled) {
+            Packet250CustomPayload pkt =
+                    new Packet250CustomPayload("InventoryTweaks", new byte[]{InvTweaksConst.PACKET_SORTCOMPLETE});
             PacketDispatcher.sendPacketToServer(pkt);
         }
     }

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class PacketHandler implements IPacketHandler {
     @Override
     public void onPacketData(INetworkManager manager, Packet250CustomPayload packet, Player player) {
-        switch (packet.data[0]) {
+        switch(packet.data[0]) {
             case InvTweaksConst.PACKET_LOGIN:
                 onLoginPacket(manager, packet.data, player);
                 break;
@@ -29,7 +29,7 @@ public class PacketHandler implements IPacketHandler {
     }
 
     private void onLoginPacket(INetworkManager manager, byte[] data, Player player) {
-        if (data.length == 2 && data[1] == InvTweaksConst.PROTOCOL_VERSION) {
+        if(data.length == 2 && data[1] == InvTweaksConst.PROTOCOL_VERSION) {
             InvTweaksMod.proxy.setServerHasInvTweaks(true);
         }
     }
@@ -50,7 +50,7 @@ public class PacketHandler implements IPacketHandler {
         EntityPlayerMP realPlayer = (EntityPlayerMP) player;
         ArrayList arraylist = new ArrayList();
 
-        for (int i = 0; i < realPlayer.openContainer.inventorySlots.size(); ++i) {
+        for(int i = 0; i < realPlayer.openContainer.inventorySlots.size(); ++i) {
             arraylist.add(((Slot) realPlayer.openContainer.inventorySlots.get(i)).getStack());
         }
 

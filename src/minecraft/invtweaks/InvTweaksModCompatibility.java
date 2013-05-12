@@ -30,8 +30,7 @@ public class InvTweaksModCompatibility {
     }
 
     /**
-     * Returns true if the screen is a chest/dispenser,
-     * despite not being a GuiChest or a GuiDispenser.
+     * Returns true if the screen is a chest/dispenser, despite not being a GuiChest or a GuiDispenser.
      *
      * @param guiScreen
      */
@@ -66,8 +65,7 @@ public class InvTweaksModCompatibility {
     }
 
     /**
-     * Returns a special chest row size.
-     * Given guiContainer must be checked first with isSpecialChest().
+     * Returns a special chest row size. Given guiContainer must be checked first with isSpecialChest().
      *
      * @param guiContainer
      * @param defaultValue
@@ -75,11 +73,12 @@ public class InvTweaksModCompatibility {
     public int getSpecialChestRowSize(GuiContainer guiContainer, Container container, int defaultValue) {
         ChestContainer containerAnnotation = getChestContainerAnnotation(container.getClass());
         if(containerAnnotation != null) {
-            Method m = getAnnotatedMethod(guiContainer.getClass(), new Class[]{ChestContainer.RowSizeCallback.class}, 0, int.class);
-            if (m != null) {
+            Method m = getAnnotatedMethod(guiContainer.getClass(), new Class[]{ChestContainer.RowSizeCallback.class}, 0,
+                                          int.class);
+            if(m != null) {
                 try {
                     return (Integer) m.invoke(guiContainer);
-                } catch (Exception e) {
+                } catch(Exception e) {
                     // TODO: Do something here to tell mod authors they're doing it wrong.
                     return containerAnnotation.rowSize();
                 }
@@ -89,43 +88,44 @@ public class InvTweaksModCompatibility {
         }
 
         ContainerGUI annotation = getContainerGUIAnnotation(guiContainer.getClass());
-        if (annotation != null) {
-            Method m = getAnnotatedMethod(guiContainer.getClass(), new Class[]{ContainerGUI.RowSizeCallback.class}, 0, int.class);
-            if (m != null) {
+        if(annotation != null) {
+            Method m = getAnnotatedMethod(guiContainer.getClass(), new Class[]{ContainerGUI.RowSizeCallback.class}, 0,
+                                          int.class);
+            if(m != null) {
                 try {
                     return (Integer) m.invoke(guiContainer);
-                } catch (Exception e) {
+                } catch(Exception e) {
                     // TODO: Do something here to tell mod authors they're doing it wrong.
                     return annotation.rowSize();
                 }
             } else {
                 return annotation.rowSize();
             }
-        } else if (isExact(guiContainer, "cpw.mods.ironchest.client.GUIChest")) { // Iron chests (formerly IC2)
+        } else if(isExact(guiContainer, "cpw.mods.ironchest.client.GUIChest")) { // Iron chests (formerly IC2)
             try {
                 return (Integer) guiContainer.getClass().getMethod("getRowLength").invoke(guiContainer);
-            } catch (Exception e) {
+            } catch(Exception e) {
                 return defaultValue;
             }
-        } else if (isExact(guiContainer, "cubex2.mods.multipagechest.client.GuiMultiPageChest")) { // Multi Page chest
+        } else if(isExact(guiContainer, "cubex2.mods.multipagechest.client.GuiMultiPageChest")) { // Multi Page chest
             return 13;
-        } else if (isExact(guiContainer, "com.eloraam.redpower.machine.GuiBufferChest")) { // Red Power 2
+        } else if(isExact(guiContainer, "com.eloraam.redpower.machine.GuiBufferChest")) { // Red Power 2
             return 4;
-        } else if (isExact(guiContainer, "com.eloraam.redpower.machine.GuiSorter")) {
+        } else if(isExact(guiContainer, "com.eloraam.redpower.machine.GuiSorter")) {
             return 8;
-        } else if (isExact(guiContainer, "com.eloraam.redpower.machine.GuiRetriever")
+        } else if(isExact(guiContainer, "com.eloraam.redpower.machine.GuiRetriever")
                 || isExact(guiContainer, "com.eloraam.redpower.machine.GuiItemDetect")
                 || isExact(guiContainer, "com.eloraam.redpower.base.GuiAlloyFurnace")
                 || isExact(guiContainer, "com.eloraam.redpower.machine.GuiDeploy")
                 || isExact(guiContainer, "com.eloraam.redpower.machine.GuiFilter")
                 || isExact(guiContainer, "com.eloraam.redpower.machine.GuiEject")) {
             return 3;
-        } else if (isExact(guiContainer, "ic2.core.block.generator.gui.GuiNuclearReactor")) { // IC2
+        } else if(isExact(guiContainer, "ic2.core.block.generator.gui.GuiNuclearReactor")) { // IC2
             return (obf.getSlots(obf.getContainer(guiContainer)).size() - 36) / 6;
-        } else if (isExact(guiContainer, "net.mcft.copy.betterstorage.client.GuiReinforcedChest")) {
+        } else if(isExact(guiContainer, "net.mcft.copy.betterstorage.client.GuiReinforcedChest")) {
             try {
                 return (Integer) guiContainer.getClass().getMethod("getNumColumns").invoke(guiContainer);
-            } catch (Exception e) {
+            } catch(Exception e) {
                 return defaultValue;
             }
         }
@@ -147,20 +147,21 @@ public class InvTweaksModCompatibility {
     public boolean isSpecialInventory(GuiScreen guiScreen) {
         // TODO: Make container an argument
         if(guiScreen instanceof GuiContainer) {
-            InventoryContainer annotation = getInventoryContainerAnnotation(obf.getContainer(obf.asGuiContainer(guiScreen)).getClass());
+            InventoryContainer annotation =
+                    getInventoryContainerAnnotation(obf.getContainer(obf.asGuiContainer(guiScreen)).getClass());
             if(annotation != null && !annotation.showOptions()) {
                 return true;
             }
         }
-        if (getInventoryGUIAnnotation(guiScreen.getClass()) != null) {
+        if(getInventoryGUIAnnotation(guiScreen.getClass()) != null) {
             return true;
-        } else if (isExact(guiScreen, "micdoodle8.mods.galacticraft.core.client.gui.GCCoreGuiTankRefill")) {
+        } else if(isExact(guiScreen, "micdoodle8.mods.galacticraft.core.client.gui.GCCoreGuiTankRefill")) {
             return true;
         }
         try {
             return obf.getSlots(obf.getContainer(obf.asGuiContainer(guiScreen))).size() > InvTweaksConst.INVENTORY_SIZE
                     && !obf.isGuiInventoryCreative(guiScreen);
-        } catch (Exception e) {
+        } catch(Exception e) {
             return false;
         }
     }
@@ -173,12 +174,13 @@ public class InvTweaksModCompatibility {
     public boolean isStandardInventory(GuiScreen guiScreen) {
         // TODO: Make container an argument
         if(guiScreen instanceof GuiContainer) {
-            InventoryContainer annotation = getInventoryContainerAnnotation(obf.getContainer(obf.asGuiContainer(guiScreen)).getClass());
+            InventoryContainer annotation =
+                    getInventoryContainerAnnotation(obf.getContainer(obf.asGuiContainer(guiScreen)).getClass());
             if(annotation != null && annotation.showOptions()) {
                 return true;
             }
         }
-        if (isExact(guiScreen, "micdoodle8.mods.galacticraft.core.client.gui.GCCoreGuiInventory")) {
+        if(isExact(guiScreen, "micdoodle8.mods.galacticraft.core.client.gui.GCCoreGuiInventory")) {
             return true;
         }
         return false;
@@ -188,12 +190,12 @@ public class InvTweaksModCompatibility {
     public Map<ContainerSection, List<Slot>> getSpecialContainerSlots(GuiScreen guiScreen, Container container) {
         if(container != null) {
             Class<? extends Container> clazz = container.getClass();
-            if (isAPIContainer(clazz)) {
+            if(isAPIContainer(clazz)) {
                 Method m = getAnnotatedMethod(clazz, new Class[]{ContainerSectionCallback.class}, 0, Map.class);
-                if (m != null) {
+                if(m != null) {
                     try {
                         return (Map<ContainerSection, List<Slot>>) m.invoke(guiScreen);
-                    } catch (Exception e) {
+                    } catch(Exception e) {
                         // TODO: Do something here to tell mod authors they're doing it wrong.
                     }
                 }
@@ -203,12 +205,14 @@ public class InvTweaksModCompatibility {
         // TODO: Remove with ContainerGUI/InventoryGUI in MC1.6
         if(guiScreen != null) {
             Class<? extends GuiScreen> clazz = guiScreen.getClass();
-            if (isAPIClass(clazz)) {
-                Method m = getAnnotatedMethod(clazz, new Class[]{ContainerGUI.ContainerSectionCallback.class, InventoryGUI.ContainerSectionCallback.class}, 0, Map.class);
-                if (m != null) {
+            if(isAPIClass(clazz)) {
+                Method m = getAnnotatedMethod(clazz, new Class[]{ContainerGUI.ContainerSectionCallback.class,
+                                                                 InventoryGUI.ContainerSectionCallback.class}, 0,
+                                              Map.class);
+                if(m != null) {
                     try {
                         return (Map<ContainerSection, List<Slot>>) m.invoke(guiScreen);
-                    } catch (Exception e) {
+                    } catch(Exception e) {
                         // TODO: Do something here to tell mod authors they're doing it wrong.
                     }
                 }
@@ -218,25 +222,25 @@ public class InvTweaksModCompatibility {
         Map<ContainerSection, List<Slot>> result = new HashMap<ContainerSection, List<Slot>>();
         List<Slot> slots = (List<Slot>) obf.getSlots(container);
 
-        if (isExact(guiScreen, "com.eloraam.redpower.base.GuiAdvBench")) { // RedPower 2
+        if(isExact(guiScreen, "com.eloraam.redpower.base.GuiAdvBench")) { // RedPower 2
             result.put(ContainerSection.CRAFTING_IN_PERSISTENT, slots.subList(0, 9));
             result.put(ContainerSection.CRAFTING_OUT, slots.subList(10, 11));
             result.put(ContainerSection.CHEST, slots.subList(11, 29));
-        } else if (isExact(guiScreen, "thaumcraft.client.gui.GuiArcaneWorkbench")
+        } else if(isExact(guiScreen, "thaumcraft.client.gui.GuiArcaneWorkbench")
                 || isExact(guiScreen, "thaumcraft.client.gui.GuiInfusionWorkbench")) { // Thaumcraft 3
             result.put(ContainerSection.CRAFTING_OUT, slots.subList(0, 1));
             result.put(ContainerSection.CRAFTING_IN_PERSISTENT, slots.subList(2, 11));
-        } else if (isExact(guiScreen, "com.pahimar.ee3.client.gui.inventory.GuiPortableCrafting")) {
+        } else if(isExact(guiScreen, "com.pahimar.ee3.client.gui.inventory.GuiPortableCrafting")) {
             result.put(ContainerSection.CRAFTING_OUT, slots.subList(0, 1));
             result.put(ContainerSection.CRAFTING_IN, slots.subList(1, 10));
-        } else if (isExact(guiScreen, "micdoodle8.mods.galacticraft.core.client.gui.GCCoreGuiTankRefill")) {
+        } else if(isExact(guiScreen, "micdoodle8.mods.galacticraft.core.client.gui.GCCoreGuiTankRefill")) {
             result.put(ContainerSection.CRAFTING_OUT, slots.subList(0, 1));
             result.put(ContainerSection.CRAFTING_IN, slots.subList(1, 5));
             result.put(ContainerSection.ARMOR, slots.subList(5, 9));
             result.put(ContainerSection.INVENTORY, slots.subList(9, 45));
             result.put(ContainerSection.INVENTORY_NOT_HOTBAR, slots.subList(9, 36));
             result.put(ContainerSection.INVENTORY_HOTBAR, slots.subList(36, 45));
-        } else if (isExact(container, "micdoodle8.mods.galacticraft.core.inventory.GCCoreContainerPlayer")) {
+        } else if(isExact(container, "micdoodle8.mods.galacticraft.core.inventory.GCCoreContainerPlayer")) {
             result.put(ContainerSection.CRAFTING_OUT, slots.subList(0, 1));
             result.put(ContainerSection.CRAFTING_IN, slots.subList(1, 5));
             result.put(ContainerSection.ARMOR, slots.subList(5, 9));
@@ -252,7 +256,7 @@ public class InvTweaksModCompatibility {
     private static boolean isExact(Object guiScreen, String className) {
         try {
             return guiScreen.getClass().getName().equals(className);
-        } catch (Exception e) {
+        } catch(Exception e) {
             return false;
         }
     }
@@ -289,10 +293,10 @@ public class InvTweaksModCompatibility {
     @SuppressWarnings("unchecked")
     private static Method getAnnotatedMethod(Class clazz, Class[] annotations, int numParams, Class retClass) {
         Method[] methods = clazz.getMethods();
-        for (Method m : methods) {
-            for (Class annotation : annotations) {
-                if (m.getAnnotation(annotation) != null) {
-                    if (m.getParameterTypes().length == numParams && retClass.isAssignableFrom(m.getReturnType())) {
+        for(Method m : methods) {
+            for(Class annotation : annotations) {
+                if(m.getAnnotation(annotation) != null) {
+                    if(m.getParameterTypes().length == numParams && retClass.isAssignableFrom(m.getReturnType())) {
                         return m;
                     }
                 }

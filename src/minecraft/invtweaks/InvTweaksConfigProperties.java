@@ -3,8 +3,7 @@ package invtweaks;
 import java.util.*;
 
 /**
- * Extension of the default Properties class,
- * that ensures the entries are listed in alphabetical order.
+ * Extension of the default Properties class, that ensures the entries are listed in alphabetical order.
  *
  * @author MARWANE
  */

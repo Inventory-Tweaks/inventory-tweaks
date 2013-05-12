@@ -1,6 +1,9 @@
 package invtweaks.forge;
 
-import invtweaks.*;
+import invtweaks.InvTweaks;
+import invtweaks.InvTweaksConst;
+import invtweaks.InvTweaksItemTreeCategory;
+import invtweaks.InvTweaksItemTreeItem;
 import invtweaks.api.IItemTree;
 import invtweaks.api.IItemTreeListener;
 import net.minecraft.item.Item;
@@ -21,12 +24,12 @@ public class ForgeItemTreeListener implements IItemTreeListener {
             Map<Item, List> toolClasses = (Map<Item, List>) toolClassesField.get(null);
 
             Map<String, Map> toolClassesByName = new HashMap<String, Map>();
-            for (Item i : toolClasses.keySet()) {
+            for(Item i : toolClasses.keySet()) {
                 List entry = toolClasses.get(i);
                 String className = (String) entry.get(0);
                 int level = (Integer) entry.get(1);
 
-                if (!toolClassesByName.containsKey(className)) {
+                if(!toolClassesByName.containsKey(className)) {
                     Map<Item, Integer> map = new HashMap<Item, Integer>();
                     map.put(i, level);
                     toolClassesByName.put(className, map);
@@ -35,18 +38,22 @@ public class ForgeItemTreeListener implements IItemTreeListener {
                 }
             }
 
-            for (String name : toolClassesByName.keySet()) {
-                tree.addCategory(tree.getRootCategory().getName(), new InvTweaksItemTreeCategory("forge_toolClasses_" + name));
+            for(String name : toolClassesByName.keySet()) {
+                tree.addCategory(tree.getRootCategory().getName(),
+                                 new InvTweaksItemTreeCategory("forge_toolClasses_" + name));
 
                 Map itemsByPriority = toolClassesByName.get(name);
                 List<Item> itemList = new ArrayList<Item>(itemsByPriority.keySet());
                 Collections.sort(itemList, new ItemPriorityComparator(itemsByPriority));
 
-                for (Item i : itemList) {
-                    tree.addItem("forge_toolClasses_" + name, new InvTweaksItemTreeItem(Integer.toString(i.itemID), i.itemID, InvTweaksConst.DAMAGE_WILDCARD, (Integer) itemsByPriority.get(i)));
+                for(Item i : itemList) {
+                    tree.addItem("forge_toolClasses_" + name,
+                                 new InvTweaksItemTreeItem(Integer.toString(i.itemID), i.itemID,
+                                                           InvTweaksConst.DAMAGE_WILDCARD,
+                                                           (Integer) itemsByPriority.get(i)));
                 }
             }
-        } catch (Exception e) {
+        } catch(Exception e) {
             StringWriter stringWriter = new StringWriter();
             e.printStackTrace(new PrintWriter(stringWriter));
             stringWriter.flush();

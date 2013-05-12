@@ -48,12 +48,13 @@ public class InvTweaksItemTreeItem implements IItemTreeItem {
     }
 
     /**
-     * Warning: the item equality is not reflective. They are equal if "o"
-     * matches the item constraints (the opposite can be false).
+     * Warning: the item equality is not reflective. They are equal if "o" matches the item constraints (the opposite
+     * can be false).
      */
     public boolean equals(Object o) {
-        if (o == null || !(o instanceof IItemTreeItem))
+        if(o == null || !(o instanceof IItemTreeItem)) {
             return false;
+        }
         IItemTreeItem item = (IItemTreeItem) o;
         return id == item.getId() && (damage == InvTweaksConst.DAMAGE_WILDCARD || damage == item.getDamage());
     }

@@ -14,14 +14,13 @@ import invtweaks.api.InvTweaksAPI;
  *
  * @author Jimeo Wan
  *         <p/>
- *         Contact: jimeo.wan (at) gmail (dot) com
- *         Website: <a href="https://inventory-tweaks.readthedocs.org/">https://inventory-tweaks.readthedocs.org/</a>
- *         Source code: <a href="https://github.com/kobata/inventory-tweaks">GitHub</a>
- *         License: MIT
+ *         Contact: jimeo.wan (at) gmail (dot) com Website: <a href="https://inventory-tweaks.readthedocs.org/">https://inventory-tweaks.readthedocs.org/</a>
+ *         Source code: <a href="https://github.com/kobata/inventory-tweaks">GitHub</a> License: MIT
  */
 @Mod(modid = "inventorytweaks",
-        dependencies = "required-after:FML@[5.0.0,);required-after:Forge@[7.7.0,)")
-@NetworkMod(channels = {"InventoryTweaks"}, packetHandler = PacketHandler.class, connectionHandler = ConnectionHandler.class)
+     dependencies = "required-after:FML@[5.0.0,);required-after:Forge@[7.7.0,)")
+@NetworkMod(channels = {"InventoryTweaks"}, packetHandler = PacketHandler.class,
+            connectionHandler = ConnectionHandler.class)
 public class InvTweaksMod implements InvTweaksAPI {
     @SidedProxy(clientSide = "invtweaks.forge.ClientProxy", serverSide = "invtweaks.forge.CommonProxy")
     public static CommonProxy proxy;

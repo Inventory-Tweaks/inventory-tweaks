@@ -22,12 +22,12 @@ public class InvTweaksLocalization {
     public synchronized static String get(String key) {
 
         String currentLanguage = InvTweaksObfuscation.getCurrentLanguage();
-        if (!currentLanguage.equals(loadedLanguage)) {
+        if(!currentLanguage.equals(loadedLanguage)) {
             loadedLanguage = load(currentLanguage);
         }
 
         return mappings.getProperty(key,
-                defaultMappings.getProperty(key, key));
+                                    defaultMappings.getProperty(key, key));
 
     }
 
@@ -37,17 +37,19 @@ public class InvTweaksLocalization {
         mappings.clear();
 
         try {
-            InputStream langStream = InvTweaksLocalization.class.getResourceAsStream(LANG_RESOURCES_LOCATION + currentLanguage + ".properties");
-            InputStream defaultLangStream = InvTweaksLocalization.class.getResourceAsStream(LANG_RESOURCES_LOCATION + DEFAULT_LANGUAGE + ".properties");
+            InputStream langStream = InvTweaksLocalization.class
+                    .getResourceAsStream(LANG_RESOURCES_LOCATION + currentLanguage + ".properties");
+            InputStream defaultLangStream = InvTweaksLocalization.class
+                    .getResourceAsStream(LANG_RESOURCES_LOCATION + DEFAULT_LANGUAGE + ".properties");
 
             mappings.load((langStream == null) ? defaultLangStream : langStream);
             defaultMappings.load(defaultLangStream);
 
-            if (langStream != null) {
+            if(langStream != null) {
                 langStream.close();
             }
             defaultLangStream.close();
-        } catch (Exception e) {
+        } catch(Exception e) {
             e.printStackTrace();
         }
 
