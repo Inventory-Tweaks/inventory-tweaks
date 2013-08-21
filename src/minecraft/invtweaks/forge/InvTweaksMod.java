@@ -71,6 +71,7 @@ public class InvTweaksMod implements InvTweaksAPI {
 
     // Helper for ASM transform of GuiTextField to disable sorting on focus.
     public static void setTextboxModeStatic(boolean enabled) {
-        instance.setTextboxMode(enabled);
+        if (instance != null)
+            instance.setTextboxMode(enabled);
     }
 }
