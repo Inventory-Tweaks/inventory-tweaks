@@ -70,6 +70,9 @@ public class ContainerTransformer implements IClassTransformer {
                                                                                                 "containerChestDispenserSlots")));
 
         // Mod compatibility
+        // Iron Chests
+        ContainerInfo ironChestsInfo = new ContainerInfo(false, false, true, true);
+        compatibilityClasses.put("cpw.mods.ironchest.ContainerIronChest", ironChestsInfo);
         // Equivalent Exchange 3
         compatibilityClasses.put("com.pahimar.ee3.inventory.ContainerAlchemicalBag",
                                  new ContainerInfo(false, false, true, true, (short) 13));
