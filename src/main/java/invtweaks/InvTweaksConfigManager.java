@@ -146,7 +146,8 @@ public class InvTweaksConfigManager {
             config.load();
             shortcutsHandler.loadShortcuts();
 
-            InvTweaks.logInGameStatic("invtweaks.loadconfig.done");
+            // InvTweaks.logInGameStatic("invtweaks.loadconfig.done"); // Log on World Load to Chat
+            log.info("Configuration Loaded.");
             showConfigErrors(config);
         } catch(FileNotFoundException e) {
             error = "Config file not found";
