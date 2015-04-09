@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 install: ./gradlew setupCI
-script: ./gradlew build curse
+script: ./gradlew build
 sudo: false
 notifications:
   irc:
