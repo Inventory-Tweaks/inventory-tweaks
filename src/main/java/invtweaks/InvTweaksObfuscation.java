@@ -234,7 +234,7 @@ public class InvTweaksObfuscation {
         return itemStack1 != null && itemStack2 != null && itemStack1.isItemEqual(itemStack2) &&
                 && itemStack1.isStackable() && itemStack1 != itemStack2
                 && itemStack1.stackSize < itemStack1.getMaxStackSize()
-                && itemStack2.stackSize < itemStack2.getMaxStackSize()
+                && itemStack2.stackSize < itemStack2.getMaxStackSize() &&
                 (!itemStack1.getHasSubtypes() || itemStack1.getItemDamage() == itemStack2.getItemDamage()) &&
                 ItemStack.areItemStackTagsEqual(itemStack1, itemStack2);
     }
