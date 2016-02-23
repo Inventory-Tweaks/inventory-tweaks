@@ -231,7 +231,7 @@ public class InvTweaksObfuscation {
     }
 
     public static boolean areItemsStackable(ItemStack itemStack1, ItemStack itemStack2) {
-        return itemStack1 != null && itemStack2 != null && itemStack1.isItemEqual(itemStack2) &&
+        return itemStack1 != null && itemStack2 != null && itemStack1.isItemEqual(itemStack2)
                 && itemStack1.isStackable() && itemStack1 != itemStack2
                 && itemStack1.stackSize < itemStack1.getMaxStackSize()
                 && itemStack2.stackSize < itemStack2.getMaxStackSize() &&
