@@ -437,16 +437,18 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
 
                     // Continue if movement succeeded, there is another slot to try, or we're dropping items.
                     // In reverse: fail if movement failed, AND there are no other slots AND we're not dropping.
-                    if(success || (newIndex != toIndex) || (shortcut.action == ShortcutSpecification.Action.DROP)) {
+                    if (newIndex == toIndex) {
+                        break;
+                    } else if (success || shortcut.action == ShortcutSpecification.Action.DROP) {
                         toIndex = newIndex;
                     } else {
                         toIndex = -1;
                     }
                 }
             }
-            if(toIndex == -1) {
-                break;
-            }
+//             if(toIndex == -1) {
+//                 break;
+//             }
         }
     }
 
