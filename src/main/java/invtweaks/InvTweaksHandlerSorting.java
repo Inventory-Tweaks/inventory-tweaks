@@ -113,10 +113,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
 
     private static boolean canMergeStacks(ItemStack from, ItemStack to) {
         if(areItemsStackable(from, to)) {
-            if(from.stackSize > from.getMaxStackSize()) {
-                return false;
-            }
-            if(to.stackSize < to.getMaxStackSize()) {
+            if (from.stackSize < from.getMaxStackSize() && to.stackSize < to.getMaxStackSize()) {
                 return true;
             }
         }
@@ -192,6 +189,9 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
                         int[] preferredSlots = rule.getPreferredSlots();
                         int stackToMove = i;
                         for(int k : preferredSlots) {
+                            if (stackToMove == k) {
+                                continue;
+                            }
                             // Move the stack!
                             int moveResult = move(stackToMove, k, priority);
                             if(moveResult != -1) {
