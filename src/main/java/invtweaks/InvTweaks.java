@@ -1,5 +1,6 @@
 package invtweaks;
 
+import com.google.common.base.Strings;
 import invtweaks.api.IItemTree;
 import invtweaks.api.IItemTreeItem;
 import invtweaks.api.SortingMethod;
@@ -25,6 +26,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.translation.I18n;
 import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.LWJGLException;
@@ -222,7 +224,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             ItemStack currentStack = getFocusedStack();
 
             // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-            storedStackId = (currentStack == null) ? null : Item.itemRegistry.getNameForObject(currentStack.getItem()).toString();
+            storedStackId = (currentStack == null) ? null : currentStack.getItem().getRegistryName().toString();
             storedStackDamage = (currentStack == null) ? 0 : currentStack.getItemDamage();
             if(!wasInGUI) {
                 wasInGUI = true;
@@ -292,7 +294,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                 ItemStack stack = containerMgr.getItemStack(currentSlot);
 
                 // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-                List<IItemTreeItem> items = tree.getItems(Item.itemRegistry.getNameForObject(stack.getItem()).toString(), stack.getItemDamage());
+                List<IItemTreeItem> items = tree.getItems(stack.getItem().getRegistryName().toString(), stack.getItemDamage());
 
                 List<Integer> preferredPositions = config.getRules().stream().filter(rule -> tree.matches(items, rule.getKeyword()))
                         .flatMapToInt(e -> Arrays.stream(e.getPreferredSlots()))
@@ -422,8 +424,8 @@ public class InvTweaks extends InvTweaksObfuscation {
                     }
                 } else {
                     // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-                    return ObjectUtils.compare(Item.itemRegistry.getNameForObject(i.getItem()).toString(),
-                            Item.itemRegistry.getNameForObject(j.getItem()).toString());
+                    return ObjectUtils.compare(i.getItem().getRegistryName().toString(),
+                            j.getItem().getRegistryName().toString());
                 }
             } else {
                 return orderI - orderJ;
@@ -627,8 +629,7 @@ public class InvTweaks extends InvTweaksObfuscation {
         ItemStack currentStack = getFocusedStack();
 
         // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-        String currentStackId = (currentStack == null) ? null : Item.itemRegistry.getNameForObject(
-                currentStack.getItem()).toString();
+        String currentStackId = (currentStack == null) ? null : currentStack.getItem().getRegistryName().toString();
         int currentStackDamage = (currentStack == null) ? 0 : currentStack.getItemDamage();
         int focusedSlot = getFocusedSlot() + 27; // Convert to container slots index
         InvTweaksConfig config = cfgManager.getConfig();
@@ -637,7 +638,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 
             if(storedFocusedSlot != focusedSlot) { // Filter selection change
                 storedFocusedSlot = focusedSlot;
-            } else if(currentStack == null || (currentStack.getItem() == Items.bowl && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
+            } else if(currentStack == null || (currentStack.getItem() == Items.BOWL && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
 
                     // Handle eaten mushroom soup
                     && (getCurrentScreen() == null || // Filter open inventory or other window
@@ -646,7 +647,8 @@ public class InvTweaks extends InvTweaksObfuscation {
 
                 if(config.isAutoRefillEnabled(storedStackId, storedStackDamage)) {
                     try {
-                        cfgManager.getAutoRefillHandler().autoRefillSlot(focusedSlot, storedStackId, storedStackDamage);
+                        if (!Strings.isNullOrEmpty(storedStackId))
+                            cfgManager.getAutoRefillHandler().autoRefillSlot(focusedSlot, storedStackId, storedStackDamage);
                     } catch(Exception e) {
                         logInGameError("invtweaks.sort.autorefill.error", e);
                     }
@@ -661,7 +663,8 @@ public class InvTweaks extends InvTweaksObfuscation {
                         .isAutoRefillEnabled(storedStackId, storedStackDamage)) {
                     // Trigger auto-refill before the tool breaks
                     try {
-                        cfgManager.getAutoRefillHandler().autoRefillSlot(focusedSlot, storedStackId, storedStackDamage);
+                        if (!Strings.isNullOrEmpty(storedStackId))
+                            cfgManager.getAutoRefillHandler().autoRefillSlot(focusedSlot, storedStackId, storedStackDamage);
                     } catch(Exception e) {
                         logInGameError("invtweaks.sort.autorefill.error", e);
                     }
@@ -948,7 +951,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 
     private int getItemOrder(ItemStack itemStack) {
         // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-        List<IItemTreeItem> items = cfgManager.getConfig().getTree().getItems(Item.itemRegistry.getNameForObject(itemStack.getItem()).toString(),
+        List<IItemTreeItem> items = cfgManager.getConfig().getTree().getItems(itemStack.getItem().getRegistryName().toString(),
                 itemStack.getItemDamage());
         return (items != null && items.size() > 0) ? items.get(0).getOrder() : Integer.MAX_VALUE;
     }
@@ -1017,7 +1020,7 @@ public class InvTweaks extends InvTweaksObfuscation {
         if(!cfgManager.getConfig().getProperty(InvTweaksConfig.PROP_ENABLE_SOUNDS)
                 .equals(InvTweaksConfig.VALUE_FALSE)) {
             mc.getSoundHandler()
-                    .playSound(PositionedSoundRecord.getMasterRecord(SoundEvents.ui_button_click, 1.0F));
+                    .playSound(PositionedSoundRecord.getMasterRecord(SoundEvents.UI_BUTTON_CLICK, 1.0F));
         }
     }
 
