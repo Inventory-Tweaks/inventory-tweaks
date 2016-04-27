@@ -696,8 +696,8 @@
                 <mushroomStew id="mushroom_stew"/>
                 <cookedFood>
                     <cookedPorkchop id="cooked_porkchop"/>
-                    <cookedFish id="cooked_fished" damage="0"/>
-                    <cookedSalmon id="cooked_fished" damage="1"/>
+                    <cookedFish id="cooked_fish" damage="0"/>
+                    <cookedSalmon id="cooked_fish" damage="1"/>
                     <steak id="cooked_beef"/>
                     <cookedChicken id="cooked_chicken"/>
                     <bakedPotato id="baked_potato"/>
