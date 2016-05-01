@@ -122,18 +122,16 @@
                 </stone>
                 <cobblestone id="cobblestone"/>
                 <mossStone id="mossy_cobblestone"/>
-				<endStones>
-					<endStone id="end_stone"/>
-					<endStoneBricks id="end_bricks"/>
-					<whiteStone id="end_stone"/>
-				</endStones>
+		<endStones>
+			<endStone id="end_stone"/>
+			<whiteStone id="end_stone"/>
+		</endStones>
                 <prismarine>
                     <rawPrismarine id="prismarine" damage="0"/>
                     <prismarineBricks id="prismarine" damage="1"/>
                     <darkPrismarine id="prismarine" damage="2"/>
                 </prismarine>
-				<purpurBlock id="purpur_block"/>
-				
+		<purpurBlock id="purpur_block"/>
             </stones>
             <oreBlock>
                 <coalOreBlock id="coal_ore"/>
@@ -208,7 +206,7 @@
             <portal id="portal"/>
             <airPortal id="end_portal_frame"/>
             <endPortal id="end_portal"/>
-			<endGateway id="end_gateway"/>
+	    <endGateway id="end_gateway"/>
             <endPortalFrame id="end_portal_frame"/>
             <air id="air"/>
             <fire id="fire"/>
@@ -308,6 +306,7 @@
                         <crackedStoneBrick id="stonebrick" damage="2"/>
                         <circleStoneBrick id="stonebrick" damage="3"/>
                         <chiseledStoneBrick id="stonebrick" damage="3"/>
+						<endStoneBricks id="end_bricks"/>
                     </stoneBricks>
                     <netherBrick id="nether_brick"/>
                 </bricks>
@@ -414,7 +413,7 @@
                     <stoneBrickSlab id="stone_slab" damage="5"/>
                     <netherBrickSlab id="stone_slab" damage="6"/>
                     <quartzSlab id="stone_slab" damage="7"/>
-					<purpurSlab id="purpur_slab"/>
+	   	    <purpurSlab id="purpur_slab"/>
                     <doubleSlab>
                         <woodenDoubleSlabs>
                             <woodenStoneDoubleSlab id="double_stone_slab" damage="2"/>
@@ -433,7 +432,7 @@
                         <smoothStoneDoubleSlab id="double_stone_slab" damage="8"/>
                         <smoothSandstoneDoubleSlab id="double_stone_slab" damage="9"/>
                         <quartzTileDoubleSlab id="double_stone_slab" damage="10"/>
-						<purpurDoubleSlab id="purpur_double_slab"/>
+			<purpurDoubleSlab id="purpur_double_slab"/>
                     </doubleSlab>
                 </slabs>
                 <oreBlock>
@@ -445,11 +444,11 @@
                     <diamondBlock id="diamond_block"/>
                     <emeraldBlock id="emerald_block"/>
                     <quartzBlock id="quartz_block"/>
-					<purpurPillar id="purpur_pillar"/>
                 </oreBlock>
                 <hayBale id="hay_block"/>
                 <stick id="stick"/>
                 <stickDict oreDictName="stickWood"/>
+		<purpurPillar id="purpur_pillar"/>
             </constructionBlock>
             <banner>
                 <itemBanner id="banner"/>
@@ -526,7 +525,7 @@
             <redstoneComparator id="powered_comparator"/>
             <slimeBlock id="slime"/>
             <barrier id="barrier"/>
-			<structureBlock id="structure_block"/>
+	    <structureBlock id="structure_block"/>
         </mechanism>
     </block>
     <resources>
@@ -592,7 +591,7 @@
             <paper id="paper"/>
             <book id="book"/>
             <sugarCane id="reeds"/>
-			<popChorusFruit id="chorus_fruit_popped"/>
+	    <popChorusFruit id="chorus_fruit_popped"/>
         </farmingResources>
         <dye>
             <boneMeal id="dye" damage="15"/>
@@ -624,7 +623,7 @@
     <item>
         <utility>
             <torch id="torch"/>
-			<endRod id="end_rod"/>
+	    <endRod id="end_rod"/>
             <flintAndSteel id="flint_and_steel"/>
             <craftingTable id="crafting_table"/>
             <furnace id="furnace"/>
@@ -709,12 +708,12 @@
             <flowerPotBlock id="flower_pot"/>
             <headBlock id="skull"/>
             <armorStand id="armor_stand"/>
-			<endCrystal id="end_crystal"/>
+	    <endCrystal id="end_crystal"/>
         </decoration>
         <food>
             <edibleFood>
                 <mushroomStew id="mushroom_stew"/>
-				<beetrootSoup id="beetroot_soup"/>
+		<beetrootSoup id="beetroot_soup"/>
                 <cookedFood>
                     <cookedPorkchop id="cooked_porkchop"/>
                     <cookedFish id="cooked_fish" damage="0"/>
@@ -729,8 +728,8 @@
                 <bread id="bread"/>
                 <pumpkinPie id="pumpkin_pie"/>
                 <melonSlice id="melon"/>
-				<chorusFruit id="chorus_fruit"/>
-				<beetroot id="beetroot"/>
+		<chorusFruit id="chorus_fruit"/>
+		<beetroot id="beetroot"/>
                 <carrot>
                     <carrot id="carrot"/>
                     <goldenCarrot id="golden_carrot"/>
@@ -767,7 +766,7 @@
         </food>
         <plant>
             <flower>
-				<flowerChorus id="chorus_flower" />
+		<flowerChorus id="chorus_flower" />
                 <flowerYellow id="yellow_flower"/>
                 <dandelion id="yellow_flower"/>
                 <flowerRed>
@@ -824,7 +823,7 @@
                 <wheatSeed id="wheat_seeds"/>
                 <pumpkinSeed id="pumpkin_seeds"/>
                 <melonSeed id="melon_seeds"/>
-				<beetrootSeeds id="beetroot_seeds"/>
+		<beetrootSeeds id="beetroot_seeds"/>
             </seed>
             <netherWart id="nether_wart"/>
             <netherWart id="nether_wart"/>
@@ -847,16 +846,15 @@
             <potatoBlock id="potatoes"/>
             <potatoesBlock id="potatoes"/>
             <lilyPad id="waterlily"/>
-			<chorusPlant id="chorus_plant"/>
+	    <chorusPlant id="chorus_plant"/>
         </plant>
         <fireworks id="firework_charge"/>
 		<potion id="potion"/>
 		<spalshPotion id="splash_potion"/>
 		<lingeringPotion id="lingering_potion"/>
-		
         <glassBottle id="glass_bottle"/>
         <potionIngredient>
-			<dragonsBreath id="dragon_breath"/>
+	<dragonsBreath id="dragon_breath"/>
             <netherWart id="nether_wart"/>
             <redstone id="redstone"/>
             <glowstoneDust id="glowstone_dust"/>
