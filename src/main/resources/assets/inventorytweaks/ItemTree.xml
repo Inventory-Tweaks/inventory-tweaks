@@ -30,9 +30,12 @@
                 <goldSword id="golden_sword"/>
                 <woodSword id="wooden_sword"/>
             </sword>
+			<shield id="shield"/>
             <munition>
                 <bow id="bow"/>
                 <arrow id="arrow"/>
+				<spectralArrow id="spectral_arrow"/>
+				<tippedArrow id="tipped_arrow"/>
                 <snowball id="snowball"/>
             </munition>
         </weapon>
@@ -83,6 +86,7 @@
                 <ironChestplate id="iron_chestplate"/>
                 <goldChestplate id="golden_chestplate"/>
                 <leatherChestplate id="leather_chestplate"/>
+				<elytra id="elytra"/>
             </chestplate>
             <leggings>
                 <diamondLeggings id="diamond_leggings"/>
@@ -118,13 +122,16 @@
                 </stone>
                 <cobblestone id="cobblestone"/>
                 <mossStone id="mossy_cobblestone"/>
-                <endStone id="end_stone"/>
-                <whiteStone id="end_stone"/>
+		<endStones>
+			<endStone id="end_stone"/>
+			<whiteStone id="end_stone"/>
+		</endStones>
                 <prismarine>
                     <rawPrismarine id="prismarine" damage="0"/>
                     <prismarineBricks id="prismarine" damage="1"/>
                     <darkPrismarine id="prismarine" damage="2"/>
                 </prismarine>
+		<purpurBlock id="purpur_block"/>
             </stones>
             <oreBlock>
                 <coalOreBlock id="coal_ore"/>
@@ -182,11 +189,13 @@
                 <wetSponge id="sponge" damage="1"/>
             </sponge>
             <grass id="grass"/>
+			<grassPath id="grass_path"/>
             <mycelium id="mycelium"/>
             <mushroomGrass id="mycelium"/>
             <farmland id="farmland"/>
             <snow id="snow"/>
             <ice id="ice"/>
+			<frostedIce id="frosted_ice"/>
             <packedIce id="packed_ice"/>
             <liquid>
                 <water id="flowing_water"/>
@@ -197,6 +206,7 @@
             <portal id="portal"/>
             <airPortal id="end_portal_frame"/>
             <endPortal id="end_portal"/>
+	    <endGateway id="end_gateway"/>
             <endPortalFrame id="end_portal_frame"/>
             <air id="air"/>
             <fire id="fire"/>
@@ -296,6 +306,7 @@
                         <crackedStoneBrick id="stonebrick" damage="2"/>
                         <circleStoneBrick id="stonebrick" damage="3"/>
                         <chiseledStoneBrick id="stonebrick" damage="3"/>
+						<endStoneBricks id="end_bricks"/>
                     </stoneBricks>
                     <netherBrick id="nether_brick"/>
                 </bricks>
@@ -384,6 +395,7 @@
                     <netherBrickStairs id="nether_brick_stairs"/>
                     <sandstoneStairs id="sandstone_stairs"/>
                     <quartzStairs id="quartz_stairs"/>
+					<purpurStairs id="purpur_stairs"/>
                 </stairs>
                 <slabs>
                     <woodenSlabs>
@@ -401,6 +413,7 @@
                     <stoneBrickSlab id="stone_slab" damage="5"/>
                     <netherBrickSlab id="stone_slab" damage="6"/>
                     <quartzSlab id="stone_slab" damage="7"/>
+	   	    <purpurSlab id="purpur_slab"/>
                     <doubleSlab>
                         <woodenDoubleSlabs>
                             <woodenStoneDoubleSlab id="double_stone_slab" damage="2"/>
@@ -419,6 +432,7 @@
                         <smoothStoneDoubleSlab id="double_stone_slab" damage="8"/>
                         <smoothSandstoneDoubleSlab id="double_stone_slab" damage="9"/>
                         <quartzTileDoubleSlab id="double_stone_slab" damage="10"/>
+			<purpurDoubleSlab id="purpur_double_slab"/>
                     </doubleSlab>
                 </slabs>
                 <oreBlock>
@@ -434,6 +448,7 @@
                 <hayBale id="hay_block"/>
                 <stick id="stick"/>
                 <stickDict oreDictName="stickWood"/>
+		<purpurPillar id="purpur_pillar"/>
             </constructionBlock>
             <banner>
                 <itemBanner id="banner"/>
@@ -510,6 +525,7 @@
             <redstoneComparator id="powered_comparator"/>
             <slimeBlock id="slime"/>
             <barrier id="barrier"/>
+	    <structureBlock id="structure_block"/>
         </mechanism>
     </block>
     <resources>
@@ -575,6 +591,7 @@
             <paper id="paper"/>
             <book id="book"/>
             <sugarCane id="reeds"/>
+	    <popChorusFruit id="chorus_fruit_popped"/>
         </farmingResources>
         <dye>
             <boneMeal id="dye" damage="15"/>
@@ -606,6 +623,7 @@
     <item>
         <utility>
             <torch id="torch"/>
+	    <endRod id="end_rod"/>
             <flintAndSteel id="flint_and_steel"/>
             <craftingTable id="crafting_table"/>
             <furnace id="furnace"/>
@@ -690,10 +708,12 @@
             <flowerPotBlock id="flower_pot"/>
             <headBlock id="skull"/>
             <armorStand id="armor_stand"/>
+	    <endCrystal id="end_crystal"/>
         </decoration>
         <food>
             <edibleFood>
                 <mushroomStew id="mushroom_stew"/>
+		<beetrootSoup id="beetroot_soup"/>
                 <cookedFood>
                     <cookedPorkchop id="cooked_porkchop"/>
                     <cookedFish id="cooked_fish" damage="0"/>
@@ -708,6 +728,8 @@
                 <bread id="bread"/>
                 <pumpkinPie id="pumpkin_pie"/>
                 <melonSlice id="melon"/>
+		<chorusFruit id="chorus_fruit"/>
+		<beetroot id="beetroot"/>
                 <carrot>
                     <carrot id="carrot"/>
                     <goldenCarrot id="golden_carrot"/>
@@ -744,6 +766,7 @@
         </food>
         <plant>
             <flower>
+		<flowerChorus id="chorus_flower" />
                 <flowerYellow id="yellow_flower"/>
                 <dandelion id="yellow_flower"/>
                 <flowerRed>
@@ -800,6 +823,7 @@
                 <wheatSeed id="wheat_seeds"/>
                 <pumpkinSeed id="pumpkin_seeds"/>
                 <melonSeed id="melon_seeds"/>
+		<beetrootSeeds id="beetroot_seeds"/>
             </seed>
             <netherWart id="nether_wart"/>
             <netherWart id="nether_wart"/>
@@ -822,150 +846,15 @@
             <potatoBlock id="potatoes"/>
             <potatoesBlock id="potatoes"/>
             <lilyPad id="waterlily"/>
+	    <chorusPlant id="chorus_plant"/>
         </plant>
         <fireworks id="firework_charge"/>
-        <potion>
-            <drinkablePotion>
-                <neutralPotion>
-                    <waterBottle id="potion" damage="0"/>
-                    <awkwardPotion id="potion" damage="16"/>
-                    <thickPotion id="potion" damage="32"/>
-                    <mundanePotionExtended id="potion" damage="64"/>
-                    <mundanePotion id="potion" damage="8192"/>
-                </neutralPotion>
-                <positivePotion>
-                    <regenerationPotion>
-                        <potionRegeneration id="potion" damage="8193"/>
-                        <potionRegenerationEx id="potion" damage="8257"/>
-                        <potionRegenerationII id="potion" damage="8225"/>
-                    </regenerationPotion>
-                    <swiftnessPotion>
-                        <potionSwiftness id="potion" damage="8194"/>
-                        <potionSwiftnessEx id="potion" damage="8258"/>
-                        <potionSwiftnessII id="potion" damage="8226"/>
-                    </swiftnessPotion>
-                    <fireResistancePotion>
-                        <potionFireResistance id="potion" damage="8195"/>
-                        <potionFireResistanceEx id="potion" damage="8259"/>
-                        <potionFireResistanceII id="potion" damage="8227"/>
-                    </fireResistancePotion>
-                    <healingPotion>
-                        <potionHealing id="potion" damage="8197"/>
-                        <potionHealingEx id="potion" damage="8261"/>
-                        <potionHealingII id="potion" damage="8229"/>
-                    </healingPotion>
-                    <strengthPotion>
-                        <potionStrength id="potion" damage="8201"/>
-                        <potionStrengthEx id="potion" damage="8265"/>
-                        <potionStrengthII id="potion" damage="8233"/>
-                    </strengthPotion>
-                    <nightVisionPotion>
-                        <potionNightVision id="potion" damage="8230"/>
-                        <potionNightVisionEx id="potion" damage="8262"/>
-                    </nightVisionPotion>
-                    <invisibilityPotion>
-                        <potionInvisibility id="potion" damage="8238"/>
-                        <potionInvisibilityEx id="potion" damage="8270"/>
-                    </invisibilityPotion>
-                    <leapingPotion>
-                        <potionLeaping id="potion" damage="8203"/>
-                        <potionLeapingEx id="potion" damage="8267"/>
-                        <potionLeapingII id="potion" damage="8235"/>
-                    </leapingPotion>
-                </positivePotion>
-                <negativePotion>
-                    <poisonPotion>
-                        <potionPoison id="potion" damage="8196"/>
-                        <potionPoisonEx id="potion" damage="8260"/>
-                        <potionPoisonII id="potion" damage="8228"/>
-                    </poisonPotion>
-                    <weaknessPotion>
-                        <potionWeakness id="potion" damage="8200"/>
-                        <potionWeaknessEx id="potion" damage="8264"/>
-                        <potionWeaknessII id="potion" damage="8232"/>
-                    </weaknessPotion>
-                    <slownessPotion>
-                        <potionSlowness id="potion" damage="8202"/>
-                        <potionSlownessEx id="potion" damage="8266"/>
-                        <potionSlownessII id="potion" damage="8234"/>
-                    </slownessPotion>
-                    <harmingPotion>
-                        <potionHarming id="potion" damage="8204"/>
-                        <potionHarmingEx id="potion" damage="8268"/>
-                        <potionHarmingII id="potion" damage="8236"/>
-                    </harmingPotion>
-                </negativePotion>
-            </drinkablePotion>
-            <splashPotion>
-                <splashMundanePotion id="potion" damage="16384"/>
-                <positiveSplashPotion>
-                    <regenerationSplashPotion>
-                        <splashPotionRegeneration id="potion" damage="16385"/>
-                        <splashPotionRegenerationEx id="potion" damage="16449"/>
-                        <splashPotionRegenerationII id="potion" damage="16417"/>
-                    </regenerationSplashPotion>
-                    <swiftnessSplashPotion>
-                        <splashPotionSwiftness id="potion" damage="16386"/>
-                        <splashPotionSwiftnessEx id="potion" damage="16450"/>
-                        <splashPotionSwiftnessII id="potion" damage="16418"/>
-                    </swiftnessSplashPotion>
-                    <fireResistanceSplashPotion>
-                        <splashPotionFireResistance id="potion" damage="16387"/>
-                        <splashPotionFireResistanceEx id="potion" damage="16451"/>
-                        <splashPotionFireResistanceII id="potion" damage="16419"/>
-                    </fireResistanceSplashPotion>
-                    <healingSplashPotion>
-                        <splashPotionHealing id="potion" damage="16389"/>
-                        <splashPotionHealingEx id="potion" damage="16453"/>
-                        <splashPotionHealingII id="potion" damage="16421"/>
-                    </healingSplashPotion>
-                    <strengthSplashPotion>
-                        <splashPotionStrength id="potion" damage="16393"/>
-                        <splashPotionStrengthEx id="potion" damage="16457"/>
-                        <splashPotionStrengthII id="potion" damage="16425"/>
-                    </strengthSplashPotion>
-                    <nightVisionSplashPotion>
-                        <splashPotionNightVision id="potion" damage="16422"/>
-                        <splashPotionNightVisionEx id="potion" damage="16454"/>
-                    </nightVisionSplashPotion>
-                    <invisibilitySplashPotion>
-                        <splashPotionInvisibility id="potion" damage="16430"/>
-                        <splashPotionInvisibilityEx id="potion" damage="16462"/>
-                    </invisibilitySplashPotion>
-                    <leapingSplashPotion>
-                        <splashPotionLeaping id="potion" damage="16395"/>
-                        <splashPotionLeapingEx id="potion" damage="16459"/>
-                        <splashPotionLeapingII id="potion" damage="16427"/>
-                    </leapingSplashPotion>
-                </positiveSplashPotion>
-                <negativeSplashPotion>
-                    <poisonSplashPotion>
-                        <splashPotionPoison id="potion" damage="16388"/>
-                        <splashPotionPoisonEx id="potion" damage="16452"/>
-                        <splashPotionPoisonII id="potion" damage="16420"/>
-                    </poisonSplashPotion>
-                    <weaknessSplashPotion>
-                        <splashPotionWeakness id="potion" damage="16392"/>
-                        <splashPotionWeaknessEx id="potion" damage="16456"/>
-                        <splashPotionWeaknessII id="potion" damage="16424"/>
-                    </weaknessSplashPotion>
-                    <slownessSplashPotion>
-                        <splashPotionSlowness id="potion" damage="16394"/>
-                        <splashPotionSlownessEx id="potion" damage="16458"/>
-                        <splashPotionSlownessII id="potion" damage="16426"/>
-                    </slownessSplashPotion>
-                    <harmingSplashPotion>
-                        <splashPotionHarming id="potion" damage="16396"/>
-                        <splashPotionHarmingEx id="potion" damage="16460"/>
-                        <splashPotionHarmingII id="potion" damage="16428"/>
-                    </harmingSplashPotion>
-                </negativeSplashPotion>
-            </splashPotion>
-            <bottleOEnchanting id="experience_bottle"/>
-            <bottleEnchanting id="experience_bottle"/>
-        </potion>
+		<potion id="potion"/>
+		<spalshPotion id="splash_potion"/>
+		<lingeringPotion id="lingering_potion"/>
         <glassBottle id="glass_bottle"/>
         <potionIngredient>
+	<dragonsBreath id="dragon_breath"/>
             <netherWart id="nether_wart"/>
             <redstone id="redstone"/>
             <glowstoneDust id="glowstone_dust"/>
