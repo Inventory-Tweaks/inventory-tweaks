@@ -307,4 +307,5 @@ public class InvTweaksObfuscation {
         return true;
     }
 
+    public ItemStack getOffhandStack() {return getInventoryPlayer().offHandInventory[0];}
 }
