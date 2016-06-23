@@ -68,6 +68,7 @@ public class InvTweaks extends InvTweaksObfuscation {
      * Various information concerning the context, stored on each tick to allow for certain features (auto-refill,
      * sorting on pick up...)
      */
+    private ItemStack storedStack = null;
     private String storedStackId = null;
     private int storedStackDamage = InvTweaksConst.DAMAGE_WILDCARD, storedFocusedSlot = -1;
     private ItemStack[] hotbarClone = new ItemStack[InvTweaksConst.INVENTORY_HOTBAR_SIZE];
@@ -637,31 +638,28 @@ public class InvTweaks extends InvTweaksObfuscation {
         String currentStackId = (currentStack == null) ? null : Item.REGISTRY.getNameForObject(
                 currentStack.getItem()).toString();
 
-        String offhandStackId = (offhandStack == null) ? null : Item.REGISTRY.getNameForObject(
-                offhandStack.getItem()).toString();
-
         int currentStackDamage = (currentStack == null) ? 0 : currentStack.getItemDamage();
-        int offhandStackDamage = (offhandStack == null) ? 0 : offhandStack.getItemDamage();
         int focusedSlot = getFocusedSlot() + 27; // Convert to container slots index
         InvTweaksConfig config = cfgManager.getConfig();
 
-        if(!Objects.equals(currentStackId, storedStackId) || currentStackDamage != storedStackDamage) {
-            if(storedFocusedSlot != focusedSlot) { // Filter selection change
-                storedFocusedSlot = focusedSlot;
-            } else if (!Objects.equals(offhandStackId, storedStackId) || offhandStackDamage != storedStackDamage) { // Checks not switched to offhand
-                if(currentStack == null || (currentStack.getItem() == Items.BOWL && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
-                        // Handle eaten mushroom soup
+
+        if(storedFocusedSlot != focusedSlot) { // Filter selection change
+            storedFocusedSlot = focusedSlot;
+        } else if(!ItemStack.areItemsEqual(currentStack, storedStack) && storedStackId != null) {
+            if (!ItemStack.areItemStacksEqual(offhandStack, storedStack)) { // Checks not switched to offhand
+                if (currentStack == null || (currentStack.getItem() == Items.BOWL && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
+                    // Handle eaten mushroom soup
                         && (getCurrentScreen() == null || // Filter open inventory or other window
                         isGuiEditSign(
                                 getCurrentScreen()))) { // TODO: This should be more expandable on 'equivalent' items (API?) and allowed GUIs
 
-                    if(config.isAutoRefillEnabled(storedStackId, storedStackDamage)) {
+                    if (config.isAutoRefillEnabled(storedStackId, storedStackDamage)) {
                         try {
                             cfgManager.getAutoRefillHandler().autoRefillSlot(focusedSlot, storedStackId, storedStackDamage);
                         } catch(Exception e) {
                             logInGameError("invtweaks.sort.autorefill.error", e);
                         }
-                }
+                    }
                 } else {
                     // Item
                     int itemMaxDamage = currentStack.getMaxDamage();
@@ -682,6 +680,7 @@ public class InvTweaks extends InvTweaksObfuscation {
         }
 
         // Copy some info about current selected stack for auto-refill
+        storedStack = currentStack;
         storedStackId = currentStackId;
         storedStackDamage = currentStackDamage;
 
