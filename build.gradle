@@ -19,8 +19,16 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'idea'
 
+repositories {
+    maven {
+        // JEI
+        url "http://dvs1.progwml6.com/files/maven"
+    }
+}
+
 dependencies {
     compile 'org.jetbrains:annotations:13.0'
+    deobfCompile "mezz.jei:jei_${mc_version}:${jei_version}"
 }
 
 if(!hasProperty('mod_version')) {
