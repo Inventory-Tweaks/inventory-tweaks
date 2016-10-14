@@ -7,8 +7,8 @@ import invtweaks.api.container.ContainerSection;
 import invtweaks.container.ContainerSectionManager;
 import invtweaks.container.DirectContainerManager;
 import invtweaks.container.IContainerManager;
-import invtweaks.container.MirroredContainerManager;
 import invtweaks.forge.InvTweaksMod;
+import invtweaks.integration.ItemListChecker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.gui.GuiButton;
@@ -24,7 +24,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.translation.I18n;
-import net.minecraftforge.fml.common.Loader;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.LWJGLException;
@@ -32,8 +31,6 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
@@ -90,11 +87,10 @@ public class InvTweaks extends InvTweaksObfuscation {
 
     private boolean itemPickupPending = false;
     private int itemPickupTimeout = 0;
-    private boolean isNEILoaded;
 
     private List<String> queuedMessages = new ArrayList<>();
-    private boolean wasNEIEnabled = false;
-    private Method neiHidden;
+
+    private final ItemListChecker itemListChecker = new ItemListChecker();
 
     /**
      * Creates an instance of the mod, and loads the configuration from the files, creating them if necessary.
@@ -106,7 +102,6 @@ public class InvTweaks extends InvTweaksObfuscation {
 
         // Store instance
         instance = this;
-        isNEILoaded = Loader.isModLoaded("NotEnoughItems");
 
         // Load config files
         cfgManager = new InvTweaksConfigManager(mc);
@@ -792,10 +787,10 @@ public class InvTweaks extends InvTweaksObfuscation {
         if(showButtons(container)) {
             int w = 10, h = 10;
 
-            // Re-layout when NEI changes states.
-            final boolean isNEIEnabled = isNotEnoughItemsEnabled();
-            boolean relayout = wasNEIEnabled != isNEIEnabled;
-            wasNEIEnabled = isNEIEnabled;
+            // Re-layout when NEI/JEI changes states.
+            final boolean isItemListVisible = itemListChecker.isVisible();
+            final boolean wasItemListVisible = itemListChecker.wasVisible();
+            final boolean relayout = isItemListVisible != wasItemListVisible;
 
             // Look for the mods buttons
             boolean customButtonsAdded = false;
@@ -841,8 +836,8 @@ public class InvTweaks extends InvTweaksObfuscation {
                             y = guiContainer.guiTop + 5;
                     boolean isChestWayTooBig = isLargeChest(guiContainer.inventorySlots);
 
-                    // NotEnoughItems compatibility
-                    if(isChestWayTooBig && isNEIEnabled) {
+                    // NotEnoughItems/JustEnoughItems compatibility
+                    if(isChestWayTooBig && isItemListVisible) {
                         x = guiContainer.guiLeft + guiContainer.xSize - 35;
                         y += 50;
                     }
@@ -905,32 +900,6 @@ public class InvTweaks extends InvTweaksObfuscation {
             }
         }
 
-    }
-
-    @SuppressWarnings("unchecked")
-    private boolean isNotEnoughItemsEnabled() {
-        if(isNEILoaded) {
-            if(neiHidden == null) {
-                try {
-                    Class neiClientConfig = Class.forName("codechicken.nei.NEIClientConfig");
-                    neiHidden = neiClientConfig.getMethod("isHidden");
-                } catch(ClassNotFoundException e) {
-                    return false;
-                } catch(NoSuchMethodException e) {
-                    return false;
-                }
-            }
-
-            try {
-                return !(Boolean) neiHidden.invoke(null);
-            } catch(IllegalAccessException e) {
-                return false;
-            } catch(InvocationTargetException e) {
-                return false;
-            }
-        } else {
-            return false;
-        }
     }
 
     private void handleShortcuts(GuiContainer guiScreen) {
