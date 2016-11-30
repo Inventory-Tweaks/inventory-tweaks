@@ -1,7 +1,6 @@
 package invtweaks.container;
 
 import invtweaks.InvTweaks;
-import invtweaks.InvTweaksHandlerSorting;
 import invtweaks.InvTweaksObfuscation;
 import invtweaks.api.container.ContainerSection;
 import invtweaks.forge.InvTweaksMod;
@@ -160,7 +159,7 @@ public class DirectContainerManager implements IContainerManager {
         }
 
         ItemStack destination = getItemStack(srcSection, srcIndex);
-        int sourceSize = source.stackSize;
+        int sourceSize = source.getCount();
         int movedAmount = Math.min(amount, sourceSize);
 
         if(destination == null || InvTweaksObfuscation.areItemStacksEqual(source, destination)) {

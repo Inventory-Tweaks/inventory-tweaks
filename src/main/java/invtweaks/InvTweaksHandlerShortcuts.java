@@ -470,7 +470,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
             for(Slot slot : container.getSlots(shortcut.toSection)) {
                 if(slot.getHasStack()) {
                     ItemStack stack = slot.getStack();
-                    if(InvTweaksObfuscation.areItemsStackable(current, stack) && stack.stackSize < stack
+                    if (InvTweaksObfuscation.areItemsStackable(current, stack) && stack.getCount() < stack
                             .getMaxStackSize()) {
                         result = i;
                         break;

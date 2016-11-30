@@ -22,6 +22,7 @@ import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.translation.I18n;
 import org.apache.commons.lang3.ObjectUtils;
@@ -281,7 +282,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             for(int i = 0; i < InvTweaksConst.INVENTORY_HOTBAR_SIZE; i++) {
                 ItemStack currentHotbarStack = containerMgr.getItemStack(i + 27);
                 // Don't move already started stacks
-                if(currentHotbarStack != null && currentHotbarStack.animationsToGo > 0 && hotbarClone[i] == null) {
+                if (currentHotbarStack != null && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i] == null) {
                     currentSlot = i + 27;
                 }
             }
@@ -411,7 +412,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                                         return i.getItemDamage() - j.getItemDamage();
                                     }
                                 } else {
-                                    return j.stackSize - i.stackSize;
+                                    return j.getCount() - i.getCount();
                                 }
                             } else {
                                 return jEnchMaxLvl - iEnchMaxLvl;
@@ -599,9 +600,9 @@ public class InvTweaks extends InvTweaksObfuscation {
 
         ItemStack selectedItem = null;
         int focusedSlot = getFocusedSlot();
-        ItemStack[] mainInventory = getMainInventory();
-        if(focusedSlot < mainInventory.length && focusedSlot >= 0) {
-            selectedItem = mainInventory[focusedSlot];
+        NonNullList<ItemStack> mainInventory = getMainInventory();
+        if (focusedSlot < mainInventory.size() && focusedSlot >= 0) {
+            selectedItem = mainInventory.get(focusedSlot);
         }
 
         // Sorting
@@ -615,13 +616,6 @@ public class InvTweaks extends InvTweaksObfuscation {
         }
 
         playClick();
-
-        // This needs to be remembered so that the
-        // auto-refill feature doesn't trigger
-        if(selectedItem != null && mainInventory[focusedSlot] == null) {
-            storedStackId = null;
-        }
-
     }
 
     private void handleAutoRefill() {
@@ -983,13 +977,9 @@ public class InvTweaks extends InvTweaksObfuscation {
      * features).
      */
     private void cloneHotbar() {
-        ItemStack[] mainInventory = getMainInventory();
+        NonNullList<ItemStack> mainInventory = getMainInventory();
         for(int i = 0; i < 9; i++) {
-            if(mainInventory[i] != null) {
-                hotbarClone[i] = mainInventory[i].copy();
-            } else {
-                hotbarClone[i] = null;
-            }
+            hotbarClone[i] = mainInventory.get(i).copy();
         }
     }
 

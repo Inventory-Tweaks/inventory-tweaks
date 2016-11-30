@@ -114,12 +114,12 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
     private static boolean canMergeStacks(ItemStack from, ItemStack to) {
         if(areItemsStackable(from, to)) {
             // We will not merge from a stack that exceeds its maximum size already, as these cannot be normally obtained.
-            if(from.stackSize > from.getMaxStackSize()) {
+            if (from.getCount() > from.getMaxStackSize()) {
                 return false;
             }
 
             // If the destination stack has any room left, we can add to it.
-            if(to.stackSize < to.getMaxStackSize()) {
+            if (to.getCount() < to.getMaxStackSize()) {
                 return true;
             }
         }
@@ -346,10 +346,10 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
                 Pair<String, Integer> item = Pair.of(Item.REGISTRY.getNameForObject(stack.getItem()).toString(), stack.getItemDamage());
                 int[] count = itemCounts.get(item);
                 if(count == null) {
-                    int[] newCount = {stack.stackSize, 1};
+                    int[] newCount = {stack.getCount(), 1};
                     itemCounts.put(item, newCount);
                 } else {
-                    count[0] += stack.stackSize; //amount of item
+                    count[0] += stack.getCount(); //amount of item
                     count[1]++;                      //slots with item
                 }
             }
@@ -373,7 +373,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
                     // TODO: ResourceLocation
                     if(stack != null && Pair.of(Item.REGISTRY.getNameForObject(stack.getItem()).toString(), stack.getItemDamage())
                             .equals(item)) {
-                        int stackSize = stack.stackSize;
+                        int stackSize = stack.getCount();
                         if(stackSize > numPerSlot) {
                             largeStacks.offer(i);
                         } else if(stackSize < numPerSlot) {
@@ -385,15 +385,15 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
                 //move items from stacks with too many to those with too little
                 while((!smallStacks.isEmpty())) {
                     int largeIndex = largeStacks.peek();
-                    int largeSize = containerMgr.getItemStack(largeIndex).stackSize;
+                    int largeSize = containerMgr.getItemStack(largeIndex).getCount();
                     int smallIndex = smallStacks.peek();
-                    int smallSize = containerMgr.getItemStack(smallIndex).stackSize;
+                    int smallSize = containerMgr.getItemStack(smallIndex).getCount();
                     containerMgr
                             .moveSome(largeIndex, smallIndex, Math.min(numPerSlot - smallSize, largeSize - numPerSlot));
 
                     //update stack lists
-                    largeSize = containerMgr.getItemStack(largeIndex).stackSize;
-                    smallSize = containerMgr.getItemStack(smallIndex).stackSize;
+                    largeSize = containerMgr.getItemStack(largeIndex).getCount();
+                    smallSize = containerMgr.getItemStack(smallIndex).getCount();
                     if(largeSize == numPerSlot) {
                         largeStacks.remove();
                     }
@@ -405,7 +405,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
                 //put all leftover into one stack for easy removal
                 while(largeStacks.size() > 1) {
                     int largeIndex = largeStacks.poll();
-                    int largeSize = containerMgr.getItemStack(largeIndex).stackSize;
+                    int largeSize = containerMgr.getItemStack(largeIndex).getCount();
                     containerMgr.moveSome(largeIndex, largeStacks.peek(), largeSize - numPerSlot);
                 }
             }

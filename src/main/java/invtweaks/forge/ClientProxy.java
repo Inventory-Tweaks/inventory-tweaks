@@ -15,10 +15,8 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -58,7 +56,7 @@ public class ClientProxy extends CommonProxy {
     public void onTick(TickEvent.ClientTickEvent tick) {
         if(tick.phase == TickEvent.Phase.START) {
             Minecraft mc = FMLClientHandler.instance().getClient();
-            if(mc.theWorld != null) {
+            if (mc.world != null) {
                 if(mc.currentScreen != null) {
                     instance.onTickInGUI(mc.currentScreen);
                 } else {
@@ -137,7 +135,7 @@ public class ClientProxy extends CommonProxy {
     public void sort(ContainerSection section, SortingMethod method) {
         // TODO: This seems like something useful enough to be a util method somewhere.
         Minecraft mc = FMLClientHandler.instance().getClient();
-        Container currentContainer = mc.thePlayer.inventoryContainer;
+        Container currentContainer = mc.player.inventoryContainer;
         if(InvTweaksObfuscation.isGuiContainer(mc.currentScreen)) {
             currentContainer = ((GuiContainer) mc.currentScreen).inventorySlots;
         }
