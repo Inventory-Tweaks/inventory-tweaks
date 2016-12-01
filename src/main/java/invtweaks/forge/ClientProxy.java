@@ -56,7 +56,7 @@ public class ClientProxy extends CommonProxy {
     public void onTick(TickEvent.ClientTickEvent tick) {
         if(tick.phase == TickEvent.Phase.START) {
             Minecraft mc = FMLClientHandler.instance().getClient();
-            if (mc.world != null) {
+            if(mc.world != null) {
                 if(mc.currentScreen != null) {
                     instance.onTickInGUI(mc.currentScreen);
                 } else {

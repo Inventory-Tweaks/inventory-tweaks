@@ -68,7 +68,7 @@ public class VanillaSlotMaps {
 
         int size = container.inventorySlots.size();
 
-        if (container.theHorse instanceof AbstractChestHorse) { // Chest slots are only added if chest is added. Saddle/armor slots always exist.
+        if (container.theHorse instanceof AbstractChestHorse && ((AbstractChestHorse)container.theHorse).hasChest()) { // Chest slots are only added if chest is added. Saddle/armor slots always exist.
             slotRefs.put(ContainerSection.CHEST, container.inventorySlots.subList(2, size - InvTweaksConst.INVENTORY_SIZE));
         }
         slotRefs.put(ContainerSection.INVENTORY, container.inventorySlots.subList(size - InvTweaksConst.INVENTORY_SIZE, size));
@@ -79,7 +79,7 @@ public class VanillaSlotMaps {
     }
 
     public static boolean containerHorseIsInventory(ContainerHorseInventory container) {
-        return container.theHorse instanceof AbstractChestHorse;
+        return container.theHorse instanceof AbstractChestHorse && ((AbstractChestHorse)container.theHorse).hasChest();
     }
 
     public static Map<ContainerSection, List<Slot>> containerFurnaceSlots(Container container) {

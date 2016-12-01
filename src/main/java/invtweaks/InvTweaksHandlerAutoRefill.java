@@ -113,7 +113,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
                                 }
                             }
                             // Choose stack of lowest size
-                            else if (replacementStack == null || candidateStack.getCount() < replacementStack.getCount()) {
+                            else if(replacementStack == null || candidateStack.getCount() < replacementStack.getCount()) {
                                 replacementStack = candidateStack;
                                 replacementStackSlot = i;
                             }

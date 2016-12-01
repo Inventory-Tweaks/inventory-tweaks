@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.event.*;
 @Mod(modid = "inventorytweaks",
         dependencies = "required-after:forge@[13.19.0.2168,)",
         acceptableRemoteVersions = "*",
-        acceptedMinecraftVersions = "1.11",
+        acceptedMinecraftVersions = "",
         guiFactory = "invtweaks.forge.ModGuiFactory")
 public class InvTweaksMod implements InvTweaksAPI {
     @Mod.Instance

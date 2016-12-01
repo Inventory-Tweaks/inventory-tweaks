@@ -282,7 +282,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             for(int i = 0; i < InvTweaksConst.INVENTORY_HOTBAR_SIZE; i++) {
                 ItemStack currentHotbarStack = containerMgr.getItemStack(i + 27);
                 // Don't move already started stacks
-                if (currentHotbarStack != null && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i] == null) {
+                if(currentHotbarStack != null && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i] == null) {
                     currentSlot = i + 27;
                 }
             }
