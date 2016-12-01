@@ -601,7 +601,7 @@ public class InvTweaks extends InvTweaksObfuscation {
         ItemStack selectedItem = null;
         int focusedSlot = getFocusedSlot();
         NonNullList<ItemStack> mainInventory = getMainInventory();
-        if (focusedSlot < mainInventory.size() && focusedSlot >= 0) {
+        if(focusedSlot < mainInventory.size() && focusedSlot >= 0) {
             selectedItem = mainInventory.get(focusedSlot);
         }
 

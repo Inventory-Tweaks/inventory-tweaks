@@ -223,7 +223,7 @@ public class InvTweaksConfigManager {
             try {
                 FileUtils.copyInputStreamToFile(input, destination);
                 return true;
-            } catch (IOException e) {
+            } catch(IOException e) {
                 InvTweaks.logInGameStatic("[16] The mod won't work, because " + destination + " creation failed!");
                 log.error("Cannot create " + destination + " file: " + e.getMessage());
                 return false;
