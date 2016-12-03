@@ -170,7 +170,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
         container = InvTweaks.getCurrentContainerManager();
         Slot slot = InvTweaksObfuscation.getSlotAtMousePosition((GuiContainer) getCurrentScreen());
         // If a valid and not empty slot is clicked
-        if(shortcut != null && slot != null && (slot.getHasStack() || getHeldStack() != null)) {
+        if(shortcut != null && slot != null && (slot.getHasStack() || !getHeldStack().isEmpty())) {
             int slotNumber = getSlotNumber(slot);
 
             // Set shortcut origin
@@ -309,12 +309,12 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
 
     private void runShortcut(ShortcutConfig shortcut) throws TimeoutException {
         // Try to put held item down
-        if(getHeldStack() != null) {
+        if(!getHeldStack().isEmpty()) {
             Slot slot = InvTweaksObfuscation.getSlotAtMousePosition((GuiContainer) getCurrentScreen());
             if(slot != null) {
                 int slotNumber = getSlotNumber(slot);
                 container.putHoldItemDown(container.getSlotSection(slotNumber), container.getSlotIndex(slotNumber));
-                if(getHeldStack() != null) {
+                if(!getHeldStack().isEmpty()) {
                     return;
                 }
             } else {

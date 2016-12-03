@@ -131,7 +131,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
         IContainerManager globalContainer = InvTweaks.getCurrentContainerManager();
 
         // Put hold item down
-        if(getHeldStack() != null) {
+        if(!getHeldStack().isEmpty()) {
             int emptySlot = globalContainer.getFirstEmptyIndex(ContainerSection.INVENTORY);
             if(emptySlot != -1) {
                 globalContainer.putHoldItemDown(ContainerSection.INVENTORY, emptySlot);
@@ -158,7 +158,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
         }
 
         //// Put hold item down, just in case
-        if(getHeldStack() != null) {
+        if(!getHeldStack().isEmpty()) {
             int emptySlot = globalContainer.getFirstEmptyIndex(ContainerSection.INVENTORY);
             if(emptySlot != -1) {
                 globalContainer.putHoldItemDown(ContainerSection.INVENTORY, emptySlot);
