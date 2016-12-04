@@ -339,7 +339,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
                                 dropAll(shortcut, shortcut.fromStack);
                                 break;
                             case EVERYTHING:
-                                dropAll(shortcut, null);
+                                dropAll(shortcut, ItemStack.EMPTY);
                                 break;
                         }
                     }
@@ -393,10 +393,10 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
                             }
 
                             case EVERYTHING: {
-                                moveAll(shortcut, null);
+                                moveAll(shortcut, ItemStack.EMPTY);
                                 if(shortcut.fromSection == ContainerSection.INVENTORY_HOTBAR && shortcut.toSection == ContainerSection.CHEST) {
                                     shortcut.fromSection = ContainerSection.INVENTORY_HOTBAR;
-                                    moveAll(shortcut, null);
+                                    moveAll(shortcut, ItemStack.EMPTY);
                                 }
                                 break;
                             }

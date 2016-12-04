@@ -45,7 +45,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
 
         ContainerSectionManager container = new ContainerSectionManager(
                 ContainerSection.INVENTORY);
-        ItemStack candidateStack, replacementStack = null;
+        ItemStack candidateStack, replacementStack = ItemStack.EMPTY;
         int replacementStackSlot = -1;
         boolean refillBeforeBreak = config.getProperty(InvTweaksConfig.PROP_AUTO_REFILL_BEFORE_BREAK)
                 .equals(InvTweaksConfig.VALUE_TRUE);
@@ -140,7 +140,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
 
         //// Proceed to replacement
 
-        if(replacementStack != null || (refillBeforeBreak && container.getSlot(slot).getStack() != null)) {
+        if(!replacementStack.isEmpty() || (refillBeforeBreak && !container.getSlot(slot).getStack().isEmpty())) {
 
             log.info("Automatic stack replacement.");
 
