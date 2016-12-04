@@ -104,7 +104,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
                             // Choose tool of highest damage value
                             if(candidateStack.getMaxStackSize() == 1) {
                                 // Item
-                                if((replacementStack == null || candidateStack.getItemDamage() > replacementStack
+                                if((replacementStack.isEmpty() || candidateStack.getItemDamage() > replacementStack
                                         .getItemDamage()) && (!refillBeforeBreak || candidateStack.getMaxDamage() - candidateStack
                                         .getItemDamage() > config
                                         .getIntProperty(InvTweaksConfig.PROP_AUTO_REFILL_DAMAGE_THRESHHOLD))) {
@@ -113,7 +113,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
                                 }
                             }
                             // Choose stack of lowest size
-                            else if(replacementStack == null || candidateStack.getCount() < replacementStack.getCount()) {
+                            else if(replacementStack.isEmpty() || candidateStack.getCount() < replacementStack.getCount()) {
                                 replacementStack = candidateStack;
                                 replacementStackSlot = i;
                             }

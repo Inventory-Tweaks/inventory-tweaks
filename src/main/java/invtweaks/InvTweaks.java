@@ -225,8 +225,8 @@ public class InvTweaks extends InvTweaksObfuscation {
             ItemStack currentStack = getFocusedStack();
 
             // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-            storedStackId = (currentStack == null) ? null : Item.REGISTRY.getNameForObject(currentStack.getItem()).toString();
-            storedStackDamage = (currentStack == null) ? 0 : currentStack.getItemDamage();
+            storedStackId = (currentStack.isEmpty()) ? null : Item.REGISTRY.getNameForObject(currentStack.getItem()).toString();
+            storedStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getItemDamage();
             if(!wasInGUI) {
                 wasInGUI = true;
             }
@@ -282,7 +282,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             for(int i = 0; i < InvTweaksConst.INVENTORY_HOTBAR_SIZE; i++) {
                 ItemStack currentHotbarStack = containerMgr.getItemStack(i + 27);
                 // Don't move already started stacks
-                if(!currentHotbarStack.isEmpty() && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i] == null) {
+                if(!currentHotbarStack.isEmpty() && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i].isEmpty()) {
                     currentSlot = i + 27;
                 }
             }
@@ -350,9 +350,9 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
 
     int compareItems(ItemStack i, ItemStack j, int orderI, int orderJ) {
-        if(j == null) {
+        if(j == null || j.isEmpty()) {
             return -1;
-        } else if(i == null || orderI == -1) {
+        } else if(i == null || i.isEmpty() || orderI == -1) {
             return 1;
         } else {
             if(orderI == orderJ) {
@@ -624,10 +624,10 @@ public class InvTweaks extends InvTweaksObfuscation {
         ItemStack offhandStack = getOffhandStack();
 
         // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-        String currentStackId = (currentStack == null) ? null : Item.REGISTRY.getNameForObject(
+        String currentStackId = (currentStack.isEmpty()) ? null : Item.REGISTRY.getNameForObject(
                 currentStack.getItem()).toString();
 
-        int currentStackDamage = (currentStack == null) ? 0 : currentStack.getItemDamage();
+        int currentStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getItemDamage();
         int focusedSlot = getFocusedSlot() + 27; // Convert to container slots index
         InvTweaksConfig config = cfgManager.getConfig();
 
@@ -636,7 +636,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             storedFocusedSlot = focusedSlot;
         } else if(!ItemStack.areItemsEqual(currentStack, storedStack) && storedStackId != null) {
             if (!ItemStack.areItemStacksEqual(offhandStack, storedStack)) { // Checks not switched to offhand
-                if (currentStack == null || (currentStack.getItem() == Items.BOWL && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
+                if (currentStack.isEmpty() || (currentStack.getItem() == Items.BOWL && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
                     // Handle eaten mushroom soup
                         && (getCurrentScreen() == null || // Filter open inventory or other window
                         isGuiEditSign(

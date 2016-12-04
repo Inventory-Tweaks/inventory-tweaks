@@ -132,7 +132,7 @@ public class MirroredContainerManager implements IContainerManager {
     public int getFirstEmptyIndex(ContainerSection section) {
         int i = 0;
         for(int slot : itemRefs.get(section)) {
-            if(slotItems[slot] == null) {
+            if(slotItems[slot].isEmpty()) {
                 return i;
             }
             i++;
@@ -142,7 +142,8 @@ public class MirroredContainerManager implements IContainerManager {
 
     @Override
     public boolean isSlotEmpty(ContainerSection section, int slot) {
-        return getItemStack(section, slot) == null;
+        return getItemStack(section, slot).isEmpty()
+                ;
     }
 
     @Override

@@ -409,7 +409,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
     }
 
     private void dropAll(ShortcutConfig shortcut, ItemStack stackToMatch) {
-        container.getSlots(shortcut.fromSection).stream().filter(slot -> slot.getHasStack() && (stackToMatch == null || areSameItemType(stackToMatch, slot.getStack()))).forEach(slot -> {
+        container.getSlots(shortcut.fromSection).stream().filter(slot -> slot.getHasStack() && (stackToMatch.isEmpty()|| areSameItemType(stackToMatch, slot.getStack()))).forEach(slot -> {
             int fromIndex = container.getSlotIndex(getSlotNumber(slot));
             while(slot.getHasStack()) {
                 container.drop(shortcut.fromSection, fromIndex);
@@ -424,7 +424,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
         boolean success;
 
         for(Slot slot : container.getSlots(shortcut.fromSection)) {
-            if(slot.getHasStack() && (stackToMatch == null || areSameItemType(stackToMatch, slot.getStack()))) {
+            if(slot.getHasStack() && (stackToMatch.isEmpty() || areSameItemType(stackToMatch, slot.getStack()))) {
                 int fromIndex = container.getSlotIndex(getSlotNumber(slot));
                 toIndex = getNextTargetIndex(shortcut, slot.getStack());
 
