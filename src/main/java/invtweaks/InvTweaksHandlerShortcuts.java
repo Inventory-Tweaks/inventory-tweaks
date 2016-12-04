@@ -170,7 +170,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
         container = InvTweaks.getCurrentContainerManager();
         Slot slot = InvTweaksObfuscation.getSlotAtMousePosition((GuiContainer) getCurrentScreen());
         // If a valid and not empty slot is clicked
-        if(shortcut != null && slot != null && (slot.getHasStack() || getHeldStack() != null)) {
+        if(shortcut != null && slot != null && (slot.getHasStack() || !getHeldStack().isEmpty())) {
             int slotNumber = getSlotNumber(slot);
 
             // Set shortcut origin
@@ -309,12 +309,12 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
 
     private void runShortcut(ShortcutConfig shortcut) throws TimeoutException {
         // Try to put held item down
-        if(getHeldStack() != null) {
+        if(!getHeldStack().isEmpty()) {
             Slot slot = InvTweaksObfuscation.getSlotAtMousePosition((GuiContainer) getCurrentScreen());
             if(slot != null) {
                 int slotNumber = getSlotNumber(slot);
                 container.putHoldItemDown(container.getSlotSection(slotNumber), container.getSlotIndex(slotNumber));
-                if(getHeldStack() != null) {
+                if(!getHeldStack().isEmpty()) {
                     return;
                 }
             } else {
@@ -339,7 +339,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
                                 dropAll(shortcut, shortcut.fromStack);
                                 break;
                             case EVERYTHING:
-                                dropAll(shortcut, null);
+                                dropAll(shortcut, ItemStack.EMPTY);
                                 break;
                         }
                     }
@@ -393,10 +393,10 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
                             }
 
                             case EVERYTHING: {
-                                moveAll(shortcut, null);
+                                moveAll(shortcut, ItemStack.EMPTY);
                                 if(shortcut.fromSection == ContainerSection.INVENTORY_HOTBAR && shortcut.toSection == ContainerSection.CHEST) {
                                     shortcut.fromSection = ContainerSection.INVENTORY_HOTBAR;
-                                    moveAll(shortcut, null);
+                                    moveAll(shortcut, ItemStack.EMPTY);
                                 }
                                 break;
                             }
@@ -409,7 +409,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
     }
 
     private void dropAll(ShortcutConfig shortcut, ItemStack stackToMatch) {
-        container.getSlots(shortcut.fromSection).stream().filter(slot -> slot.getHasStack() && (stackToMatch == null || areSameItemType(stackToMatch, slot.getStack()))).forEach(slot -> {
+        container.getSlots(shortcut.fromSection).stream().filter(slot -> slot.getHasStack() && (stackToMatch.isEmpty()|| areSameItemType(stackToMatch, slot.getStack()))).forEach(slot -> {
             int fromIndex = container.getSlotIndex(getSlotNumber(slot));
             while(slot.getHasStack()) {
                 container.drop(shortcut.fromSection, fromIndex);
@@ -424,7 +424,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
         boolean success;
 
         for(Slot slot : container.getSlots(shortcut.fromSection)) {
-            if(slot.getHasStack() && (stackToMatch == null || areSameItemType(stackToMatch, slot.getStack()))) {
+            if(slot.getHasStack() && (stackToMatch.isEmpty() || areSameItemType(stackToMatch, slot.getStack()))) {
                 int fromIndex = container.getSlotIndex(getSlotNumber(slot));
                 toIndex = getNextTargetIndex(shortcut, slot.getStack());
 
@@ -470,7 +470,7 @@ public class InvTweaksHandlerShortcuts extends InvTweaksObfuscation {
             for(Slot slot : container.getSlots(shortcut.toSection)) {
                 if(slot.getHasStack()) {
                     ItemStack stack = slot.getStack();
-                    if(InvTweaksObfuscation.areItemsStackable(current, stack) && stack.stackSize < stack
+                    if(InvTweaksObfuscation.areItemsStackable(current, stack) && stack.getCount() < stack
                             .getMaxStackSize()) {
                         result = i;
                         break;

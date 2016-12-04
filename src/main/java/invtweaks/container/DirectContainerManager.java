@@ -1,7 +1,6 @@
 package invtweaks.container;
 
 import invtweaks.InvTweaks;
-import invtweaks.InvTweaksHandlerSorting;
 import invtweaks.InvTweaksObfuscation;
 import invtweaks.api.container.ContainerSection;
 import invtweaks.forge.InvTweaksMod;
@@ -57,7 +56,7 @@ public class DirectContainerManager implements IContainerManager {
         ItemStack srcStack = getItemStack(srcSection, srcIndex);
         ItemStack destStack = getItemStack(destSection, destIndex);
 
-        if(srcStack == null && destIndex != DROP_SLOT) {
+        if(srcStack.isEmpty() && destIndex != DROP_SLOT) {
             return false;
         } else if(srcSection == destSection && srcIndex == destIndex) {
             return true;
@@ -84,8 +83,8 @@ public class DirectContainerManager implements IContainerManager {
         }
 
         // Use intermediate slot if we have to swap tools, maps, etc.
-        assert srcStack != null;
-        if(destStack != null && !InvTweaksObfuscation.areItemsStackable(srcStack, destStack)) {
+        assert !srcStack.isEmpty();
+        if(!destStack.isEmpty() && !InvTweaksObfuscation.areItemsStackable(srcStack, destStack)) {
             int intermediateSlot = getFirstEmptyUsableSlotNumber();
             ContainerSection intermediateSection = getSlotSection(intermediateSlot);
             int intermediateIndex = getSlotIndex(intermediateSlot);
@@ -116,7 +115,7 @@ public class DirectContainerManager implements IContainerManager {
         else {
             leftClick(srcSection, srcIndex);
             leftClick(destSection, destIndex);
-            if(InvTweaks.getInstance().getHeldStack() != null) {
+            if(!InvTweaks.getInstance().getHeldStack().isEmpty()) {
                 // Only return to original slot if it can be placed in that slot.
                 // (Ex. crafting/furnace outputs)
                 Slot srcSlot = getSlot(srcSection, srcIndex);
@@ -155,15 +154,15 @@ public class DirectContainerManager implements IContainerManager {
                             int amount) {
 
         ItemStack source = getItemStack(srcSection, srcIndex);
-        if(source == null || srcSection == destSection && srcIndex == destIndex) {
+        if(source.isEmpty() || srcSection == destSection && srcIndex == destIndex) {
             return true;
         }
 
         ItemStack destination = getItemStack(srcSection, srcIndex);
-        int sourceSize = source.stackSize;
+        int sourceSize = source.getCount();
         int movedAmount = Math.min(amount, sourceSize);
 
-        if(destination == null || InvTweaksObfuscation.areItemStacksEqual(source, destination)) {
+        if(destination.isEmpty() || InvTweaksObfuscation.areItemStacksEqual(source, destination)) {
 
             leftClick(srcSection, srcIndex);
             for(int i = 0; i < movedAmount; i++) {
@@ -188,7 +187,7 @@ public class DirectContainerManager implements IContainerManager {
     public boolean putHoldItemDown(ContainerSection destSection, int destIndex) {
         ItemStack heldStack = InvTweaks.getInstance().getHeldStack();
         if(heldStack != null) {
-            if(getItemStack(destSection, destIndex) == null) {
+            if(getItemStack(destSection, destIndex).isEmpty()) {
                 click(destSection, destIndex, false);
                 return true;
             }
@@ -266,7 +265,7 @@ public class DirectContainerManager implements IContainerManager {
      */
     @Override
     public boolean isSlotEmpty(ContainerSection section, int slot) {
-        return hasSection(section) && getItemStack(section, slot) == null;
+        return hasSection(section) && getItemStack(section, slot).isEmpty();
     }
 
     @Override
@@ -324,7 +323,7 @@ public class DirectContainerManager implements IContainerManager {
     /**
      * Returns an ItemStack from the wanted section and slot.
      *
-     * @return An ItemStack or null.
+     * @return An ItemStack or an empty stack.
      */
     @Override
     public ItemStack getItemStack(ContainerSection section, int index) {
@@ -332,7 +331,7 @@ public class DirectContainerManager implements IContainerManager {
         if(slot >= 0 && slot < container.inventorySlots.size()) {
             return InvTweaksObfuscation.getSlotStack(container, slot);
         } else {
-            return null;
+            return ItemStack.EMPTY;
         }
     }
 

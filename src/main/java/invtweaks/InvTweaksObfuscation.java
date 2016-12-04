@@ -17,8 +17,9 @@ import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -64,7 +65,7 @@ public class InvTweaksObfuscation {
     }
 
     public static boolean areItemStacksEqual(ItemStack itemStack1, ItemStack itemStack2) {
-        return itemStack1.isItemEqual(itemStack2) && itemStack1.stackSize == itemStack2.stackSize;
+        return itemStack1.isItemEqual(itemStack2) && itemStack1.getCount() == itemStack2.getCount();
     }
 
     public static ItemStack getSlotStack(Container container, int i) {
@@ -116,7 +117,7 @@ public class InvTweaksObfuscation {
         if(guiContainer != null) {
             x -= guiContainer.guiLeft;
             y -= guiContainer.guiTop;
-            return x >= slot.xDisplayPosition - 1 && x < slot.xDisplayPosition + 16 + 1 && y >= slot.yDisplayPosition - 1 && y < slot.yDisplayPosition + 16 + 1;
+            return x >= slot.xPos - 1 && x < slot.xPos + 16 + 1 && y >= slot.yPos - 1 && y < slot.yPos + 16 + 1;
         } else {
             return false;
         }
@@ -215,7 +216,7 @@ public class InvTweaksObfuscation {
 
     public static Container getCurrentContainer() {
         Minecraft mc = FMLClientHandler.instance().getClient();
-        Container currentContainer = mc.thePlayer.inventoryContainer;
+        Container currentContainer = mc.player.inventoryContainer;
         if(InvTweaksObfuscation.isGuiContainer(mc.currentScreen)) {
             currentContainer = ((GuiContainer) mc.currentScreen).inventorySlots;
         }
@@ -245,7 +246,7 @@ public class InvTweaksObfuscation {
     }
 
     public EntityPlayer getThePlayer() {
-        return mc.thePlayer;
+        return mc.player;
     }
 
     public PlayerControllerMP getPlayerController() {
@@ -282,7 +283,7 @@ public class InvTweaksObfuscation {
         return getThePlayer().inventory;
     }
 
-    public ItemStack[] getMainInventory() {
+    public NonNullList<ItemStack> getMainInventory() {
         return getInventoryPlayer().mainInventory;
     }
 
@@ -307,5 +308,7 @@ public class InvTweaksObfuscation {
         return true;
     }
 
-    public ItemStack getOffhandStack() {return getInventoryPlayer().offHandInventory[0];}
+    public ItemStack getOffhandStack() {
+        return getInventoryPlayer().offHandInventory.get(0);
+    }
 }

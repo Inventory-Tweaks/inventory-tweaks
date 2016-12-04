@@ -22,6 +22,7 @@ import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.translation.I18n;
 import org.apache.commons.lang3.ObjectUtils;
@@ -224,8 +225,8 @@ public class InvTweaks extends InvTweaksObfuscation {
             ItemStack currentStack = getFocusedStack();
 
             // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-            storedStackId = (currentStack == null) ? null : Item.REGISTRY.getNameForObject(currentStack.getItem()).toString();
-            storedStackDamage = (currentStack == null) ? 0 : currentStack.getItemDamage();
+            storedStackId = (currentStack.isEmpty()) ? null : Item.REGISTRY.getNameForObject(currentStack.getItem()).toString();
+            storedStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getItemDamage();
             if(!wasInGUI) {
                 wasInGUI = true;
             }
@@ -281,7 +282,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             for(int i = 0; i < InvTweaksConst.INVENTORY_HOTBAR_SIZE; i++) {
                 ItemStack currentHotbarStack = containerMgr.getItemStack(i + 27);
                 // Don't move already started stacks
-                if(currentHotbarStack != null && currentHotbarStack.animationsToGo > 0 && hotbarClone[i] == null) {
+                if(!currentHotbarStack.isEmpty() && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i].isEmpty()) {
                     currentSlot = i + 27;
                 }
             }
@@ -310,7 +311,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                         break;
                     }
                     // Is the slot available?
-                    else if(containerMgr.getItemStack(newSlot) == null) {
+                    else if(containerMgr.getItemStack(newSlot).isEmpty()) {
                         // TODO: Check rule level before to move
                         if(containerMgr.move(currentSlot, newSlot)) {
                             break;
@@ -321,7 +322,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                 // Else, put the slot anywhere
                 if(hasToBeMoved) {
                     for(int i = 0; i < containerMgr.getSize(); i++) {
-                        if(containerMgr.getItemStack(i) == null) {
+                        if(containerMgr.getItemStack(i).isEmpty()) {
                             if(containerMgr.move(currentSlot, i)) {
                                 break;
                             }
@@ -349,9 +350,9 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
 
     int compareItems(ItemStack i, ItemStack j, int orderI, int orderJ) {
-        if(j == null) {
+        if(j == null || j.isEmpty()) {
             return -1;
-        } else if(i == null || orderI == -1) {
+        } else if(i == null || i.isEmpty() || orderI == -1) {
             return 1;
         } else {
             if(orderI == orderJ) {
@@ -411,7 +412,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                                         return i.getItemDamage() - j.getItemDamage();
                                     }
                                 } else {
-                                    return j.stackSize - i.stackSize;
+                                    return j.getCount() - i.getCount();
                                 }
                             } else {
                                 return jEnchMaxLvl - iEnchMaxLvl;
@@ -599,9 +600,9 @@ public class InvTweaks extends InvTweaksObfuscation {
 
         ItemStack selectedItem = null;
         int focusedSlot = getFocusedSlot();
-        ItemStack[] mainInventory = getMainInventory();
-        if(focusedSlot < mainInventory.length && focusedSlot >= 0) {
-            selectedItem = mainInventory[focusedSlot];
+        NonNullList<ItemStack> mainInventory = getMainInventory();
+        if(focusedSlot < mainInventory.size() && focusedSlot >= 0) {
+            selectedItem = mainInventory.get(focusedSlot);
         }
 
         // Sorting
@@ -615,13 +616,6 @@ public class InvTweaks extends InvTweaksObfuscation {
         }
 
         playClick();
-
-        // This needs to be remembered so that the
-        // auto-refill feature doesn't trigger
-        if(selectedItem != null && mainInventory[focusedSlot] == null) {
-            storedStackId = null;
-        }
-
     }
 
     private void handleAutoRefill() {
@@ -630,10 +624,10 @@ public class InvTweaks extends InvTweaksObfuscation {
         ItemStack offhandStack = getOffhandStack();
 
         // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-        String currentStackId = (currentStack == null) ? null : Item.REGISTRY.getNameForObject(
+        String currentStackId = (currentStack.isEmpty()) ? null : Item.REGISTRY.getNameForObject(
                 currentStack.getItem()).toString();
 
-        int currentStackDamage = (currentStack == null) ? 0 : currentStack.getItemDamage();
+        int currentStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getItemDamage();
         int focusedSlot = getFocusedSlot() + 27; // Convert to container slots index
         InvTweaksConfig config = cfgManager.getConfig();
 
@@ -642,7 +636,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             storedFocusedSlot = focusedSlot;
         } else if(!ItemStack.areItemsEqual(currentStack, storedStack) && storedStackId != null) {
             if (!ItemStack.areItemStacksEqual(offhandStack, storedStack)) { // Checks not switched to offhand
-                if (currentStack == null || (currentStack.getItem() == Items.BOWL && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
+                if (currentStack.isEmpty() || (currentStack.getItem() == Items.BOWL && Objects.equals(storedStackId, "minecraft:mushroom_stew"))
                     // Handle eaten mushroom soup
                         && (getCurrentScreen() == null || // Filter open inventory or other window
                         isGuiEditSign(
@@ -983,13 +977,9 @@ public class InvTweaks extends InvTweaksObfuscation {
      * features).
      */
     private void cloneHotbar() {
-        ItemStack[] mainInventory = getMainInventory();
+        NonNullList<ItemStack> mainInventory = getMainInventory();
         for(int i = 0; i < 9; i++) {
-            if(mainInventory[i] != null) {
-                hotbarClone[i] = mainInventory[i].copy();
-            } else {
-                hotbarClone[i] = null;
-            }
+            hotbarClone[i] = mainInventory.get(i).copy();
         }
     }
 

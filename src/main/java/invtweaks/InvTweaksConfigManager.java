@@ -1,12 +1,14 @@
 package invtweaks;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.translation.I18n;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -215,8 +217,9 @@ public class InvTweaksConfigManager {
         }
     }
 
-    private boolean extractFile(ResourceLocation resource, File destination) {
-        try(InputStream input = mc.getResourceManager().getResource(resource).getInputStream()) {
+    private boolean extractFile(String resourcePath, File destination) {
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        try (InputStream input = classloader.getResourceAsStream(resourcePath)) {
             try {
                 FileUtils.copyInputStreamToFile(input, destination);
                 return true;
@@ -226,8 +229,8 @@ public class InvTweaksConfigManager {
                 return false;
             }
         } catch(IOException e) {
-            InvTweaks.logInGameStatic("[15] The mod won't work, because " + resource + " extraction failed!");
-            log.error("Cannot extract " + resource + " file: " + e.getMessage());
+            InvTweaks.logInGameStatic("[15] The mod won't work, because " + resourcePath + " extraction failed!");
+            log.error("Cannot extract " + resourcePath + " file: " + e.getMessage());
             return false;
         }
     }

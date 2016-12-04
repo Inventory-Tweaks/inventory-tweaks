@@ -20,7 +20,7 @@
 # Thanks to Larandar & Lunaqua for their contributions.
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
-<stuff treeVersion="1.10.0">
+<stuff treeVersion="1.11">
     <equipment>
         <weapon>
             <sword>
@@ -522,6 +522,7 @@
             <dispenser id="dispenser"/>
             <noteBlock id="noteblock"/>
             <commandBlock id="command_block"/>
+            <observer id="observer"/>
             <daylightSensor id="daylight_detector"/>
             <redstoneBlock id="redstone_block"/>
             <hopper id="hopper"/>
@@ -591,6 +592,8 @@
             <prismarineCrystals id="prismarine_crystals"/>
             <prismarineCrystal id="prismarine_crystals"/>
             <prismarineShard id="prismarine_shard"/>
+            <shulkerShell id="shulker_shell"/>
+            <totem id="totem"/>
         </huntingResources>
         <farmingResources>
             <milk id="milk_bucket"/>
@@ -638,6 +641,22 @@
             <chests>
                 <chest id="chest"/>
                 <enderChest id="ender_chest"/>
+                <whiteShulkerBox id="white_shulker_box"/>
+                <blackShulkerBox id="black_shulker_box"/>
+                <redShulkerBox id="red_shulker_box"/>
+                <greenShulkerBox id="green_shulker_box"/>
+                <brownShulkerBox id="brown_shulker_box"/>
+                <blueShulkerBox id="blue_shulker_box"/>
+                <purpleShulkerBox id="purple_shulker_box"/>
+                <cyanShulkerBox id="cyan_shulker_box"/>
+                <silverShulkerBox id="silver_shulker_box"/>
+                <grayShulkerBox id="gray_shulker_box"/>
+                <pinkShulkerBox id="pink_shulker_box"/>
+                <limeShulkerBox id="lime_shulker_box"/>
+                <yellowShulkerBox id="yellow_shulker_box"/>
+                <lightBlueShulkerBox id="light_blue_shulker_box"/>
+                <magentaShulkerBox id="magenta_shulker_box"/>
+                <orangeShulkerBox id="orange_shulker_box"/>
             </chests>
             <beacon id="beacon"/>
             <anvil id="anvil"/>
@@ -676,6 +695,7 @@
             <compass id="compass"/>
             <emptyMap id="map"/>
             <map id="filled_map"/>
+            <filledMap id="filled_map"/>
         </instrument>
         <vehicle>
             <boat id="boat"/>

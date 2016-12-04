@@ -5,6 +5,7 @@ import invtweaks.api.container.ContainerSection;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiContainerCreative;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.passive.AbstractChestHorse;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ContainerHorseInventory;
 import net.minecraft.inventory.Slot;
@@ -67,7 +68,7 @@ public class VanillaSlotMaps {
 
         int size = container.inventorySlots.size();
 
-        if(container.theHorse.isChested()) { // Chest slots are only added if chest is added. Saddle/armor slots always exist.
+        if (container.theHorse instanceof AbstractChestHorse && ((AbstractChestHorse)container.theHorse).hasChest()) { // Chest slots are only added if chest is added. Saddle/armor slots always exist.
             slotRefs.put(ContainerSection.CHEST, container.inventorySlots.subList(2, size - InvTweaksConst.INVENTORY_SIZE));
         }
         slotRefs.put(ContainerSection.INVENTORY, container.inventorySlots.subList(size - InvTweaksConst.INVENTORY_SIZE, size));
@@ -78,7 +79,7 @@ public class VanillaSlotMaps {
     }
 
     public static boolean containerHorseIsInventory(ContainerHorseInventory container) {
-        return container.theHorse.isChested();
+        return container.theHorse instanceof AbstractChestHorse && ((AbstractChestHorse)container.theHorse).hasChest();
     }
 
     public static Map<ContainerSection, List<Slot>> containerFurnaceSlots(Container container) {
