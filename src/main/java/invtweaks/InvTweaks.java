@@ -282,7 +282,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             for(int i = 0; i < InvTweaksConst.INVENTORY_HOTBAR_SIZE; i++) {
                 ItemStack currentHotbarStack = containerMgr.getItemStack(i + 27);
                 // Don't move already started stacks
-                if(currentHotbarStack != null && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i] == null) {
+                if(!currentHotbarStack.isEmpty() && currentHotbarStack.getAnimationsToGo() > 0 && hotbarClone[i] == null) {
                     currentSlot = i + 27;
                 }
             }
@@ -311,7 +311,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                         break;
                     }
                     // Is the slot available?
-                    else if(containerMgr.getItemStack(newSlot) == null) {
+                    else if(containerMgr.getItemStack(newSlot).isEmpty()) {
                         // TODO: Check rule level before to move
                         if(containerMgr.move(currentSlot, newSlot)) {
                             break;
@@ -322,7 +322,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                 // Else, put the slot anywhere
                 if(hasToBeMoved) {
                     for(int i = 0; i < containerMgr.getSize(); i++) {
-                        if(containerMgr.getItemStack(i) == null) {
+                        if(containerMgr.getItemStack(i).isEmpty()) {
                             if(containerMgr.move(currentSlot, i)) {
                                 break;
                             }

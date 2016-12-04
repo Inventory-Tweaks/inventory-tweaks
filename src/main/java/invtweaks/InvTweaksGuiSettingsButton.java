@@ -49,7 +49,7 @@ public class InvTweaksGuiSettingsButton extends InvTweaksGuiIconButton {
                 if(!obf.getHeldStack().isEmpty()) {
                     // Put hold item down
                     for(int k = containerMgr.getSize() - 1; k >= 0; k--) {
-                        if(containerMgr.getItemStack(k) == null) {
+                        if(containerMgr.getItemStack(k).isEmpty()) {
                             containerMgr.leftClick(k);
                             break;
                         }

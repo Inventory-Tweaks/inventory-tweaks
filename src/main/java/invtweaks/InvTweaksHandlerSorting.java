@@ -87,7 +87,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
         for(int i = 0; i < size; i++) {
             rulePriority[i] = -1;
             ItemStack stack = containerMgr.getItemStack(i);
-            if(stack != null) {
+            if(!stack.isEmpty()) {
                 keywordOrder[i] = getItemOrder(stack);
             } else {
                 keywordOrder[i] = -1;
@@ -100,7 +100,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
             int priority = rule.getPriority();
             for(int slot : rule.getPreferredSlots()) {
                 ItemStack stack = containerMgr.getItemStack(slot);
-                if(stack != null) {
+                if(!stack.isEmpty()) {
                     List<IItemTreeItem> items = tree
                             .getItems(Item.REGISTRY.getNameForObject(stack.getItem()).toString(), stack.getItemDamage(), stack.getTagCompound());
                     if(rulePriority[slot] < priority && tree.matches(items, rule.getKeyword())) {
@@ -264,7 +264,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
         log.info("Merging stacks.");
         for(int i = size - 1; i >= 0; i--) {
             ItemStack from = containerMgr.getItemStack(i);
-            if(from != null) {
+            if(!from.isEmpty()) {
                 // Move armor parts
                 // Item
                 Item fromItem = from.getItem();
@@ -284,10 +284,10 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
         for(Integer lockPriority : lockPriorities) {
             if(lockPriority > 0) {
                 ItemStack to = containerMgr.getItemStack(j);
-                if(to != null && areItemsStackable(from, to)) {
+                if(!to.isEmpty() && areItemsStackable(from, to)) {
                     move(i, j, Integer.MAX_VALUE);
                     markAsNotMoved(j);
-                    if(containerMgr.getItemStack(i) == null) {
+                    if(containerMgr.getItemStack(i).isEmpty()) {
                         break;
                     }
                 }
@@ -341,7 +341,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
         HashMap<Pair<String, Integer>, int[]> itemCounts = new HashMap<>();
         for(int i = 0; i < size; i++) {
             ItemStack stack = containerMgr.getItemStack(i);
-            if(stack != null) {
+            if(!stack.isEmpty()) {
                 // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
                 Pair<String, Integer> item = Pair.of(Item.REGISTRY.getNameForObject(stack.getItem()).toString(), stack.getItemDamage());
                 int[] count = itemCounts.get(item);
@@ -371,7 +371,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
                 for(int i = 0; i < size; i++) {
                     ItemStack stack = containerMgr.getItemStack(i);
                     // TODO: ResourceLocation
-                    if(stack != null && Pair.of(Item.REGISTRY.getNameForObject(stack.getItem()).toString(), stack.getItemDamage())
+                    if(!stack.isEmpty() && Pair.of(Item.REGISTRY.getNameForObject(stack.getItem()).toString(), stack.getItemDamage())
                             .equals(item)) {
                         int stackSize = stack.getCount();
                         if(stackSize > numPerSlot) {
@@ -468,7 +468,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
     private int move(int i, int j, int priority) {
         ItemStack from = containerMgr.getItemStack(i), to = containerMgr.getItemStack(j);
 
-        if(from == null || frozenSlots[j] || frozenSlots[i]) {
+        if(from.isEmpty()|| frozenSlots[j] || frozenSlots[i]) {
             return -1;
         }
 
@@ -482,7 +482,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
             }
 
             // Move to empty slot
-            if(to == null && lockPriorities[j] <= priority && !frozenSlots[j]) {
+            if(to.isEmpty() && lockPriorities[j] <= priority && !frozenSlots[j]) {
                 rulePriority[i] = -1;
                 keywordOrder[i] = -1;
                 rulePriority[j] = priority;
@@ -495,7 +495,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
             }
 
             // Try to swap/merge
-            else if(to != null) {
+            else if(!to.isEmpty()) {
                 if(canSwapSlots(i, j, priority) || canMergeStacks(from, to)) {
                     keywordOrder[j] = keywordOrder[i];
                     rulePriority[j] = priority;
@@ -505,11 +505,11 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
                     if(success) {
                         ItemStack remains = containerMgr.getItemStack(i);
 
-                        if(remains != null) {
+                        if(!remains.isEmpty()) {
                             int dropSlot = i;
                             if(lockPriorities[j] > lockPriorities[i]) {
                                 for(int k = 0; k < size; k++) {
-                                    if(containerMgr.getItemStack(k) == null && lockPriorities[k] == 0) {
+                                    if(containerMgr.getItemStack(k).isEmpty()&& lockPriorities[k] == 0) {
                                         dropSlot = k;
                                         break;
                                     }
@@ -547,7 +547,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
     }
 
     private boolean hasToBeMoved(int slot, int priority) {
-        return containerMgr.getItemStack(slot) != null && rulePriority[slot] <= priority;
+        return !containerMgr.getItemStack(slot).isEmpty() && rulePriority[slot] <= priority;
     }
 
     private boolean isOrderedBefore(int i, int j) {
@@ -699,7 +699,7 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
 
         for(int i = 0; i < size; i++) {
             ItemStack stack = containerMgr.getItemStack(i);
-            if(stack != null) {
+            if(!stack.isEmpty()) {
                 // TODO: ID Changes (Leaving as-is for now because WHY)
                 int itemSearchKey = Item.getIdFromItem(stack.getItem()) * 100000 + ((stack
                         .getMaxStackSize() != 1) ? stack.getItemDamage() : 0);
