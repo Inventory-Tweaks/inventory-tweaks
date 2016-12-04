@@ -56,7 +56,7 @@ public class DirectContainerManager implements IContainerManager {
         ItemStack srcStack = getItemStack(srcSection, srcIndex);
         ItemStack destStack = getItemStack(destSection, destIndex);
 
-        if(!srcStack.isEmpty() && destIndex != DROP_SLOT) {
+        if(srcStack.isEmpty() && destIndex != DROP_SLOT) {
             return false;
         } else if(srcSection == destSection && srcIndex == destIndex) {
             return true;

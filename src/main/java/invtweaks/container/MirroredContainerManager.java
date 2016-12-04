@@ -142,8 +142,7 @@ public class MirroredContainerManager implements IContainerManager {
 
     @Override
     public boolean isSlotEmpty(ContainerSection section, int slot) {
-        return getItemStack(section, slot).isEmpty()
-                ;
+        return getItemStack(section, slot).isEmpty();
     }
 
     @Override
