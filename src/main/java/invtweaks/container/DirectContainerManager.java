@@ -115,7 +115,7 @@ public class DirectContainerManager implements IContainerManager {
         else {
             leftClick(srcSection, srcIndex);
             leftClick(destSection, destIndex);
-            if(InvTweaks.getInstance().getHeldStack() != null) {
+            if(!InvTweaks.getInstance().getHeldStack().isEmpty()) {
                 // Only return to original slot if it can be placed in that slot.
                 // (Ex. crafting/furnace outputs)
                 Slot srcSlot = getSlot(srcSection, srcIndex);
@@ -323,7 +323,7 @@ public class DirectContainerManager implements IContainerManager {
     /**
      * Returns an ItemStack from the wanted section and slot.
      *
-     * @return An ItemStack or null.
+     * @return An ItemStack or an empty stack.
      */
     @Override
     public ItemStack getItemStack(ContainerSection section, int index) {
@@ -331,7 +331,7 @@ public class DirectContainerManager implements IContainerManager {
         if(slot >= 0 && slot < container.inventorySlots.size()) {
             return InvTweaksObfuscation.getSlotStack(container, slot);
         } else {
-            return null;
+            return ItemStack.EMPTY;
         }
     }
 
