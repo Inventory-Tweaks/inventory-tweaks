@@ -155,6 +155,7 @@ targetCompatibility = 1.8
 compileJava {
     options.debug = true
     options.debugOptions.debugLevel = 'source,lines,vars'
+    options.compilerArgs << "-Xlint:deprecation"
 }
 
 task apiJar(type: Jar) {

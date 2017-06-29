@@ -5,7 +5,6 @@ import invtweaks.forge.asm.compatibility.CompatibilityConfigLoader;
 import invtweaks.forge.asm.compatibility.ContainerInfo;
 import invtweaks.forge.asm.compatibility.MethodInfo;
 import net.minecraft.launchwrapper.IClassTransformer;
-import net.minecraftforge.fml.relauncher.FMLRelaunchLog;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.objectweb.asm.ClassReader;
@@ -18,6 +17,7 @@ import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.function.Consumer;
 
+import org.apache.logging.log4j.Logger;
 
 public class ContainerTransformer implements IClassTransformer {
     private static final String VALID_INVENTORY_METHOD = "invtweaks$validInventory";
@@ -54,6 +54,8 @@ public class ContainerTransformer implements IClassTransformer {
             "it.unimi.dsi.fastutil."
     );
 
+    private static final Logger logger = org.apache.logging.log4j.LogManager.getLogger();
+    
     @NotNull
     private static Map<String, ContainerInfo> standardClasses = new HashMap<>();
     @NotNull
@@ -62,7 +64,7 @@ public class ContainerTransformer implements IClassTransformer {
     public ContainerTransformer() {
         lateInit();
     }
-
+    
     /**
      * Alter class to contain information contained by ContainerInfo
      *
@@ -195,10 +197,9 @@ public class ContainerTransformer implements IClassTransformer {
                     code.insertBefore(returnNode,
                             new MethodInsnNode(Opcodes.INVOKESTATIC, "invtweaks/forge/InvTweaksMod",
                                     "setTextboxModeStatic", "(Z)V", false));
-
-                    FMLRelaunchLog.info("InvTweaks: successfully transformed setFocused/func_146195_b");
+                    logger.info("InvTweaks: successfully transformed setFocused/func_146195_b");
                 } else {
-                    FMLRelaunchLog.severe("InvTweaks: unable to find return in setFocused/func_146195_b");
+                    logger.fatal("InvTweaks: unable to find return in setFocused/func_146195_b");
                 }
             }
         }

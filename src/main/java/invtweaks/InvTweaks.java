@@ -24,7 +24,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.translation.I18n;
+import net.minecraft.client.resources.I18n;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
@@ -475,7 +475,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 
     public void logInGame(@NotNull String message, boolean alreadyTranslated) {
         @NotNull String formattedMsg = buildLogString(Level.INFO,
-                (alreadyTranslated) ? message : I18n.translateToLocal(message));
+                (alreadyTranslated) ? message : I18n.format(message));
 
         if(mc.ingameGUI == null) {
             queuedMessages.add(formattedMsg);
@@ -487,7 +487,7 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
 
     public void logInGameError(@NotNull String message, @NotNull Exception e) {
-        @NotNull String formattedMsg = buildLogString(Level.SEVERE, I18n.translateToLocal(message), e);
+        @NotNull String formattedMsg = buildLogString(Level.SEVERE, I18n.format(message), e);
         log.error(formattedMsg, e);
 
         if(mc.ingameGUI == null) {
@@ -581,7 +581,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             }
 
             if(newRuleset != null) {
-                logInGame(String.format(I18n.translateToLocal("invtweaks.loadconfig.enabled"), newRuleset),
+                logInGame(String.format(I18n.format("invtweaks.loadconfig.enabled"), newRuleset),
                         true);
                 // Hack to prevent 2nd way to switch configs from being enabled
                 sortingKeyPressedDate = Integer.MAX_VALUE;
@@ -598,7 +598,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                 @Nullable String newRuleset = config.switchConfig();
                 // Log only if there is more than 1 ruleset
                 if(previousRuleset != null && newRuleset != null && !previousRuleset.equals(newRuleset)) {
-                    logInGame(String.format(I18n.translateToLocal("invtweaks.loadconfig.enabled"), newRuleset),
+                    logInGame(String.format(I18n.format("invtweaks.loadconfig.enabled"), newRuleset),
                             true);
                     handleSorting(currentScreen);
                 }
@@ -827,7 +827,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                     controlList.add(new InvTweaksGuiSettingsButton(cfgManager, InvTweaksConst.JIMEOWAN_ID,
                             guiContainer.guiLeft + guiContainer.xSize - 15,
                             guiContainer.guiTop + 5, w, h, "...",
-                            I18n.translateToLocal(
+                            I18n.format(
                                     "invtweaks.button.settings.tooltip"),
                             customTextureAvailable));
                 }
@@ -852,7 +852,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                     controlList
                             .add(new InvTweaksGuiSettingsButton(cfgManager, id++, (isChestWayTooBig) ? x + 22 : x - 1,
                                     (isChestWayTooBig) ? y - 3 : y, w, h, "...",
-                                    I18n.translateToLocal(
+                                    I18n.format(
                                             "invtweaks.button.settings.tooltip"),
                                     customTextureAvailable));
 
@@ -860,8 +860,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                     if(!config.getProperty(InvTweaksConfig.PROP_SHOW_CHEST_BUTTONS).equals("false")) {
                         int rowSize = getContainerRowSize(guiContainer);
                         @NotNull GuiButton button = new InvTweaksGuiSortingButton(cfgManager, id++, (isChestWayTooBig) ? x + 22 : x - 37,
-                                (isChestWayTooBig) ? y + 38 : y, w, h, "s", I18n
-                                .translateToLocal("invtweaks.button.chest1.tooltip"),
+                                (isChestWayTooBig) ? y + 38 : y, w, h, "s", I18n.format("invtweaks.button.chest1.tooltip"),
                                 SortingMethod.DEFAULT, rowSize,
                                 customTextureAvailable);
                         controlList.add(button);
@@ -870,7 +869,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                              button = new InvTweaksGuiSortingButton(cfgManager, id++,
                                     (isChestWayTooBig) ? x + 22 : x - 13,
                                     (isChestWayTooBig) ? y + 12 : y, w, h, "h",
-                                    I18n.translateToLocal(
+                                    I18n.format(
                                             "invtweaks.button.chest3.tooltip"),
                                     SortingMethod.HORIZONTAL,
                                     rowSize, customTextureAvailable);
@@ -878,8 +877,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 
                             //noinspection UnusedAssignment (Using ++ for extensibility)
                             button = new InvTweaksGuiSortingButton(cfgManager, id++, (isChestWayTooBig) ? x + 22 : x - 25,
-                                    (isChestWayTooBig) ? y + 25 : y, w, h, "v", I18n
-                                    .translateToLocal("invtweaks.button.chest2.tooltip"),
+                                    (isChestWayTooBig) ? y + 25 : y, w, h, "v", I18n.format("invtweaks.button.chest2.tooltip"),
                                     SortingMethod.VERTICAL, rowSize,
                                     customTextureAvailable);
                             controlList.add(button);

@@ -3,7 +3,7 @@ package invtweaks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.util.text.translation.I18n;
+import net.minecraft.client.resources.I18n;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.input.Keyboard;
@@ -29,9 +29,9 @@ public abstract class InvTweaksGuiSettingsAbstract extends GuiScreen {
 
     public InvTweaksGuiSettingsAbstract(Minecraft mc_, GuiScreen parentScreen_, InvTweaksConfig config_) {
 
-        LABEL_DONE = I18n.translateToLocal("invtweaks.settings.exit");
-        ON = ": " + I18n.translateToLocal("invtweaks.settings.on");
-        OFF = ": " + I18n.translateToLocal("invtweaks.settings.off");
+        LABEL_DONE = I18n.format("invtweaks.settings.exit");
+        ON = ": " + I18n.format("invtweaks.settings.on");
+        OFF = ": " + I18n.format("invtweaks.settings.off");
 
         mc = mc_;
         obf = new InvTweaksObfuscation(mc_);
@@ -54,7 +54,7 @@ public abstract class InvTweaksGuiSettingsAbstract extends GuiScreen {
     @Override
     public void drawScreen(int i, int j, float f) {
         drawDefaultBackground();
-        drawCenteredString(obf.getFontRenderer(), I18n.translateToLocal("invtweaks.settings.title"),
+        drawCenteredString(obf.getFontRenderer(), I18n.format("invtweaks.settings.title"),
                 width / 2, 20, 0xffffff);
         super.drawScreen(i, j, f);
     }
