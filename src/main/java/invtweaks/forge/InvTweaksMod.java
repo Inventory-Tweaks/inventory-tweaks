@@ -90,6 +90,11 @@ public class InvTweaksMod implements InvTweaksAPI {
     public int compareItems(@NotNull ItemStack i, @NotNull ItemStack j) {
         return proxy.compareItems(i, j);
     }
+    
+    @Override
+    public int compareItems(@NotNull ItemStack i, @NotNull ItemStack j, boolean onlyTreeSort) {
+        return proxy.compareItems(i, j, onlyTreeSort);
+    }
 
     @Override
     public void sort(ContainerSection section, SortingMethod method) {

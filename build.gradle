@@ -262,12 +262,14 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude '**/*.png'
         exclude '**/*_at.cfg'
+        exclude '**/itemtree.xml'
 
         expand version: internal_version, mcversion: minecraft.version
     }
     from(sourceSets.main.resources.srcDirs) {
         include '**/*.png'
         include '**/*_at.cfg'
+        include '**/itemtree.xml'
     }
 }
 

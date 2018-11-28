@@ -68,9 +68,24 @@ public interface InvTweaksAPI {
      * @return A value with a sign representing the relative order of the item stacks
      */
     int compareItems(@Nonnull ItemStack i, @Nonnull ItemStack j);
+    
+    /**
+     * Compare two items using the default (non-rule based) algorithm,
+     * almost suitable for an implementation of Comparator&lt;ItemStack&gt;.
+     * if onlyTreeSort then items not found in the tree will be unsorted after 
+     * tree items for follow-up sorting. 
+     *
+     * @param i
+     * @param j
+     * @param onlyTreeSort
+     * @return A value with a sign representing the relative order of the item stacks
+     */
+    int compareItems(@Nonnull ItemStack i, @Nonnull ItemStack j, boolean onlyTreeSort);
 
     /**
      * Initiate a sort as if the player had clicked on a sorting button or pressed the sort key.
      */
     void sort(ContainerSection section, SortingMethod method);
+    
+    
 }

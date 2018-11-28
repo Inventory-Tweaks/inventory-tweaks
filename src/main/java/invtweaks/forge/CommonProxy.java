@@ -5,6 +5,7 @@ import invtweaks.api.IItemTreeListener;
 import invtweaks.api.InvTweaksAPI;
 import invtweaks.api.SortingMethod;
 import invtweaks.api.container.ContainerSection;
+import invtweaks.integration.ItemListSorter;
 import invtweaks.network.ITMessageToMessageCodec;
 import invtweaks.network.ITPacketHandlerServer;
 import invtweaks.network.packets.ITPacketLogin;
@@ -44,6 +45,7 @@ public class CommonProxy implements InvTweaksAPI {
     }
 
     public void postInit(FMLPostInitializationEvent e) {
+        ItemListSorter.LinkJEITComparator();
     }
 
     public void serverAboutToStart(@NotNull FMLServerAboutToStartEvent e) {
@@ -98,6 +100,11 @@ public class CommonProxy implements InvTweaksAPI {
 
     @Override
     public int compareItems(@NotNull ItemStack i, @NotNull ItemStack j) {
+        return 0;
+    }
+    
+    @Override
+    public int compareItems(@NotNull ItemStack i, @NotNull ItemStack j, boolean onlyTreeSort) {
         return 0;
     }
 
