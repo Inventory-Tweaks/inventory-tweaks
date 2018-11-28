@@ -16,7 +16,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.OreDictionary;
-import scala.Int;
 
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
@@ -454,6 +453,10 @@ public class InvTweaksItemTree implements IItemTree {
     
     public void endFileRead()
     {
+    	//We are done with this, let's release the memory.
+    	allGameItems.clear();
+    	
+    	//Remember where the last entry was placed in the tree for the API to leave these unsorted.
     	lastTreeOrder = highestOrder;
     }
 }

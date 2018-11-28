@@ -5,7 +5,6 @@ import net.minecraft.nbt.JsonToNBT;
 import net.minecraft.nbt.NBTException;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.MinecraftForge;
-import scala.util.parsing.json.JSON;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

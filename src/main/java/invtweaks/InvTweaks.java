@@ -472,10 +472,10 @@ public class InvTweaks extends InvTweaksObfuscation {
                 } else {
                 	//Two different items with the same sort number.  (Dictionary Items, Class Items, mergePrevious, or Unsorted Items.)
 
-                	//Allow external sorting systems to take control of unsorted items not handled by the tree.
+            		//Allow external sorting systems to take control of unsorted items not handled by the tree.
                 	if (orderI == Integer.MAX_VALUE && api == true)
                 		return 0;
-
+                	
                 	Item iItem = i.getItem(), jItem = j.getItem();
                 	if (iItem != null && jItem != null) {
 
@@ -490,28 +490,26 @@ public class InvTweaks extends InvTweaksObfuscation {
                 			return cSword;
                 		
 	                	//Sort By Armor utility:  (More First)
-                    	int cArmor = compareArmor(iItem, jItem);
+                    	int cArmor = compareArmor(i, j, iItem, jItem);
                     	if (cArmor != 0) 
                     		return cArmor;
                 	}
             	}
+
+                //Allow external sorting systems to take control of unsorted items not handled by the tree.
+            	if (orderI == Integer.MAX_VALUE && api == true)
+            		return 0;       		
             		
         		//Use durability to sort, favoring more durable items.
-        		int maxDamage1 = i.getMaxDamage() <= 0 ? Integer.MAX_VALUE : i.getMaxDamage();
-        		int maxDamage2 = j.getMaxDamage() <= 0 ? Integer.MAX_VALUE : j.getMaxDamage();
-        		if (maxDamage2 != maxDamage1)
-        			return maxDamage2 - maxDamage1;  
+        		int maxDamage = CompareMaxDamage(i, j);
+        		if (maxDamage != 0)
+        			return maxDamage;  
 
         		//Use remaining durability to sort, favoring more damaged.
-        		int curDamage1 = i.getItemDamage();
-        		int curDamage2 = j.getItemDamage();
-        		if (curDamage2 != curDamage1) {
-                    if(i.isItemStackDamageable() && !getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_INVERT_TOOL_DAMAGE).equals(InvTweaksConfig.VALUE_TRUE)) {
-                        return curDamage2 - curDamage1;
-                    } else {
-                        return curDamage1 - curDamage2;
-                    }
-        		}
+        		int curDamage = CompareCurDamage(i, j);
+        		if (curDamage != 0)
+        			return curDamage;  
+        		
   
         		//Final catch all:
                 // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
@@ -523,6 +521,25 @@ public class InvTweaks extends InvTweaksObfuscation {
             }
         }
     }
+    
+    private static int CompareMaxDamage(ItemStack i, ItemStack j) {
+		//Use durability to sort, favoring more durable items.
+		int maxDamage1 = i.getMaxDamage() <= 0 ? Integer.MAX_VALUE : i.getMaxDamage();
+		int maxDamage2 = j.getMaxDamage() <= 0 ? Integer.MAX_VALUE : j.getMaxDamage();
+		return maxDamage2 - maxDamage1;      	
+    }
+
+    private static int CompareCurDamage(ItemStack i, ItemStack j) {
+    	//Use remaining durability to sort, favoring more damaged.
+		int curDamage1 = i.getItemDamage();
+		int curDamage2 = j.getItemDamage();
+        if(i.isItemStackDamageable() && !getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_INVERT_TOOL_DAMAGE).equals(InvTweaksConfig.VALUE_TRUE)) {
+            return curDamage2 - curDamage1;
+        } else {
+            return curDamage1 - curDamage2;
+        }
+    }
+
     
     private static String getToolClass(ItemStack itemStack, Item item)
 	{
@@ -561,29 +578,29 @@ public class InvTweaks extends InvTweaksObfuscation {
     
     private int compareTools(ItemStack i, ItemStack j, Item iItem, Item jItem)
     {
-    	String cs1 = getToolClass(i, iItem);
-    	String cs2 = getToolClass(j, jItem);
+    	String toolClass1 = getToolClass(i, iItem);
+    	String toolClass2 = getToolClass(j, jItem);
 
-		//If the two items share any tool classes, use one of them at random and compare. 
-		if (cs1 == cs2 && cs1 != "") {
-			String toolClass = cs1;
-			//Harvest Level Comparison:
-        	int lvlComp = jItem.getHarvestLevel(j, toolClass, null, null) - iItem.getHarvestLevel(i, toolClass, null, null) ;
-   			return lvlComp;
-		}
-		else
-		{
-        	
-			boolean isTool1 = cs1 != "";
-			boolean isTool2 = cs2 != "";
-			if (!isTool1  || !isTool2 ) {
-				//This should catch any instances where one of the stacks is null.
-				return Boolean.compare(isTool2, isTool1);
+    	boolean isTool1 = toolClass1 != "";
+		boolean isTool2 = toolClass2 != "";
+		if (!isTool1  || !isTool2 ) {
+			//This should catch any instances where one of the stacks is null.
+			return Boolean.compare(isTool2, isTool1);
+		} else {
+			int toolClassComparison = toolClass1.compareTo(toolClass2);
+			if (toolClassComparison != 0) {
+				return toolClassComparison;
 			}
-				
-        	return cs1.compareTo(cs2);
-		
+			// If they were the same type, sort with the better harvest level first.
+			int harvestLevel1 = iItem.getHarvestLevel(i, toolClass1, null, null);
+			int harvestLevel2 = jItem.getHarvestLevel(j, toolClass2, null, null);
+			int toolLevelComparison = harvestLevel2 - harvestLevel1;
+			if (toolLevelComparison != 0) {
+				return Integer.compare(harvestLevel2 , harvestLevel1);
+			}
 		}
+		
+		return CompareMaxDamage(i, j);
 		
     }
 
@@ -615,14 +632,19 @@ public class InvTweaks extends InvTweaksObfuscation {
 				Collection<AttributeModifier> speedMap2 = multimap2.get(attackSpeedName);
 				Double speed1 = ((AttributeModifier) speedMap1.toArray()[0]).getAmount();
 				Double speed2 = ((AttributeModifier) speedMap2.toArray()[0]).getAmount();
-				return Double.compare(speed2, speed1);
+				int speedComparison = Double.compare(speed2, speed1);
+				if (speedComparison != 0)
+					return speedComparison;
+
+			} else if (damageComparison != 0) {
+				// Higher damage first.
+				return damageComparison;
 			} 
-			// Higher damage first.
-			return damageComparison;
+			return CompareMaxDamage(itemStack1, itemStack2);
     	}
     }
     
-    private int compareArmor(Item iItem, Item jItem)
+    private int compareArmor(ItemStack i, ItemStack j, Item iItem, Item jItem)
     {
     	int isArmor1 = (iItem instanceof ItemArmor) ? 1 : 0;
 		int isArmor2 = (jItem instanceof ItemArmor) ? 1 : 0;
@@ -639,7 +661,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 			} else if (a1.toughness != a2.toughness) {
 				return a2.toughness > a1.toughness ? -1 : 1;
 			}
-			return 0;
+			return CompareMaxDamage(i, j);
 		}
     }
 
