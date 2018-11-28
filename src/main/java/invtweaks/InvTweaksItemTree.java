@@ -355,40 +355,40 @@ public class InvTweaksItemTree implements IItemTree {
     
     public void registerClass(String category, String name, String className, NBTTagCompound extraData, int order)
     {
-    	if (allGameItems.size() == 0)
-    	{
-    		populateGameItems();
-    	}
-    	
-    	for(ItemStack stack : allGameItems)
-    	{
-    		Item item = stack.getItem();
-    		boolean isClass = InstanceOfClassNameKind(item, className);
-    		if (isClass) {
-    			boolean doIt = true;
-    			if (extraData != null) {
-    				if (doIt && extraData.hasKey("toolclass")) 
-    				{
-    					String tclass = extraData.getString("toolclass");
-    					Set<String> tclasses = item.getToolClasses(stack);
-    					doIt = (tclasses.contains(tclass));
-    				}
-    				if (doIt && extraData.hasKey("armortype") && item instanceof ItemArmor) 
-    				{
-    					ItemArmor armor = (ItemArmor) item;
-    					String keyArmorType = extraData.getString("armortype");
-    					String itemArmorType = armor.armorType.getName().toLowerCase();
-    					doIt = (keyArmorType.equals(itemArmorType));
-    					armor = null;
-    				}
-    			}
-    			if (doIt) {
-    				int dmg = item.isDamageable() ? InvTweaksConst.DAMAGE_WILDCARD : stack.getItemDamage();
-	    			addItem(category,
-	                        new InvTweaksItemTreeItem(name, item.getRegistryName().toString(), dmg, null, order));
-    			}
-    		}
-    	}
+        if (allGameItems.size() == 0)
+        {
+            populateGameItems();
+        }
+        
+        for(ItemStack stack : allGameItems)
+        {
+            Item item = stack.getItem();
+            boolean isClass = InstanceOfClassNameKind(item, className);
+            if (isClass) {
+                boolean doIt = true;
+                if (extraData != null) {
+                    if (doIt && extraData.hasKey("toolclass")) 
+                    {
+                        String tclass = extraData.getString("toolclass");
+                        Set<String> tclasses = item.getToolClasses(stack);
+                        doIt = (tclasses.contains(tclass));
+                    }
+                    if (doIt && extraData.hasKey("armortype") && item instanceof ItemArmor) 
+                    {
+                        ItemArmor armor = (ItemArmor) item;
+                        String keyArmorType = extraData.getString("armortype");
+                        String itemArmorType = armor.armorType.getName().toLowerCase();
+                        doIt = (keyArmorType.equals(itemArmorType));
+                        armor = null;
+                    }
+                }
+                if (doIt) {
+                    int dmg = item.isDamageable() ? InvTweaksConst.DAMAGE_WILDCARD : stack.getItemDamage();
+                    addItem(category,
+                            new InvTweaksItemTreeItem(name, item.getRegistryName().toString(), dmg, null, order));
+                }
+            }
+        }
     }
 
     private static class OreDictInfo {
@@ -407,12 +407,12 @@ public class InvTweaksItemTree implements IItemTree {
     
     private void populateGameItems()
     {
-    	for (Map.Entry<ResourceLocation, Item> entry : ForgeRegistries.ITEMS.getEntries())
+        for (Map.Entry<ResourceLocation, Item> entry : ForgeRegistries.ITEMS.getEntries())
         {
             //getDataForItemSubtypes(itemDump, entry.getValue(), entry.getKey(), includeToolClass, dumpNBT);
-    		Item item = entry.getValue();
-    		
-    		if (item.getHasSubtypes())
+            Item item = entry.getValue();
+            
+            if (item.getHasSubtypes())
             {
                 for (CreativeTabs tab : item.getCreativeTabs())
                 {
@@ -423,7 +423,7 @@ public class InvTweaksItemTree implements IItemTree {
 
                         for (ItemStack stack : stacks)
                         {
-                        	allGameItems.add(stack);
+                            allGameItems.add(stack);
                             // FIXME: Ignore identical duplicate entries from different tabs...
                             //addData(itemDump, item, rl, true, includeToolClass, dumpNBT, stack);
                         }
@@ -432,10 +432,10 @@ public class InvTweaksItemTree implements IItemTree {
             }
             else
             {
-            	allGameItems.add(item.getDefaultInstance());
+                allGameItems.add(item.getDefaultInstance());
                 //addData(itemDump, item, rl, false, includeToolClass, dumpNBT, new ItemStack(item, 1, 0));
-        	}
-    	}
+            }
+        }
     }
     
     private boolean InstanceOfClassNameKind(Object o, String className)
@@ -453,10 +453,10 @@ public class InvTweaksItemTree implements IItemTree {
     
     public void endFileRead()
     {
-    	//We are done with this, let's release the memory.
-    	allGameItems.clear();
-    	
-    	//Remember where the last entry was placed in the tree for the API to leave these unsorted.
-    	lastTreeOrder = highestOrder;
+        //We are done with this, let's release the memory.
+        allGameItems.clear();
+        
+        //Remember where the last entry was placed in the tree for the API to leave these unsorted.
+        lastTreeOrder = highestOrder;
     }
 }

@@ -1,1 +1,2 @@
 *.enc binary
+*.java filter=tabspace

@@ -2,6 +2,7 @@ package invtweaks;
 
 import invtweaks.api.IItemTreeItem;
 import invtweaks.forge.ClientProxy;
+import invtweaks.integration.ItemListSorter;
 import net.minecraftforge.common.MinecraftForge;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
