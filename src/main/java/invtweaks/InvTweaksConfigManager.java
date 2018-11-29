@@ -225,7 +225,7 @@ public class InvTweaksConfigManager {
             }
 
             return false;
-        } else {            
+        } else {
             return true;
         }
     }

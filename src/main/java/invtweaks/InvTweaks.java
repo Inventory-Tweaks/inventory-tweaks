@@ -44,7 +44,14 @@ import org.lwjgl.opengl.Display;
 
 import com.google.common.collect.Multimap;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 
@@ -500,7 +507,6 @@ public class InvTweaks extends InvTweaksObfuscation {
                 int curDamage = CompareCurDamage(i, j);
                 if (curDamage != 0)
                     return curDamage;  
-                
   
                 //Final catch all:
                 // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
