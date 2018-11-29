@@ -401,9 +401,29 @@ public class InvTweaks extends InvTweaksObfuscation {
                 if (orderJ > lastOrder) orderJ = Integer.MAX_VALUE;
             }
             if(orderI == orderJ) {
+                Item iItem = i.getItem(), jItem = j.getItem();
+                //Sort By Harvest Level, (Better first.)
+                int cTool = compareTools(i, j, iItem, jItem);
+                if (cTool != 0)
+                    return cTool;
+                
+                //Sort by main-hand damage capability:  (Higher first, faster first for same damage)
+                int cSword = compareSword(i, j, iItem, jItem);
+                if (cSword != 0)
+                    return cSword;
+                
+                //Sort By Armor utility:  (More First)
+                int cArmor = compareArmor(i, j, iItem, jItem);
+                if (cArmor != 0)
+                    return cArmor;
+                
+                //Allow external sorting systems to take control of unsorted items not handled by the tree.
+                if (orderI == Integer.MAX_VALUE && api == true)
+                    return 0;
+                
                 // Items of same keyword orders can have different IDs,
                 // in the case of categories defined by a range of IDs
-                if(i.getItem() == j.getItem()) {
+                if(iItem == jItem) {
                     boolean iHasName = i.hasDisplayName();
                     boolean jHasName = j.hasDisplayName();
                     if(iHasName || jHasName) {
@@ -469,36 +489,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                         return jEnchs.size() - iEnchs.size();
                     }
 
-                } else {
-                    //Two different items with the same sort number.  (Dictionary Items, Class Items, mergePrevious, or Unsorted Items.)
-
-                    //Allow external sorting systems to take control of unsorted items not handled by the tree.
-                    if (orderI == Integer.MAX_VALUE && api == true)
-                        return 0;
-                    
-                    Item iItem = i.getItem(), jItem = j.getItem();
-                    if (iItem != null && jItem != null) {
-
-                        //Sort By Harvest Level, (Better first.)
-                        int cTool = compareTools(i, j, iItem, jItem);
-                        if (cTool != 0) 
-                            return cTool;
-                        
-                        //Sort by main-hand damage capability:  (Higher first, faster first for same damage)
-                        int cSword = compareSword(i, j, iItem, jItem);
-                        if (cSword != 0) 
-                            return cSword;
-                        
-                        //Sort By Armor utility:  (More First)
-                        int cArmor = compareArmor(i, j, iItem, jItem);
-                        if (cArmor != 0) 
-                            return cArmor;
-                    }
                 }
-
-                //Allow external sorting systems to take control of unsorted items not handled by the tree.
-                if (orderI == Integer.MAX_VALUE && api == true)
-                    return 0;       		
                     
                 //Use durability to sort, favoring more durable items.
                 int maxDamage = CompareMaxDamage(i, j);

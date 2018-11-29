@@ -25,7 +25,6 @@ public class ItemListSorter {
     
     public static class ItemListComparator implements Comparator<ItemStack>
     {
-
         @Override
         public int compare(ItemStack o1, ItemStack o2) {
             if (o1 == null && o2 == null)
@@ -36,9 +35,22 @@ public class ItemListSorter {
                 return -1;
             return InvTweaks.getInstance().compareItems(o1, o2, true);
         }
-        
     }
-    
+
+    public static class ItemListComparator2 implements Comparator<ItemStack>
+    {
+        @Override
+        public int compare(ItemStack o1, ItemStack o2) {
+            if (o1 == null && o2 == null)
+                return 0;
+            else if (o1 == null)
+                return 1;
+            else if (o2 == null)
+                return -1;
+            return InvTweaks.getInstance().compareItems(o1, o2, false);
+        }
+    }
+
     public static void LinkJEITComparator() {
         if (Loader.isModLoaded("jei")) {
             try {
@@ -52,8 +64,14 @@ public class ItemListSorter {
                     Method updateSortOrder = clientConfig.getMethod("updateSortOrder");
                     if (addItemStackComparison != null && updateSortOrder != null) {
                         Object[] oArg = new Object[2];
-                        oArg[0] = "invtweaks";
+                        //The tree-only sorting.
+                        oArg[0] = "invtweakstree";
                         oArg[1] = new ItemListComparator();
+                        addItemStackComparison.invoke(null, oArg);
+
+                        //The aggressive sorting.
+                        oArg[0] = "invtweaksall";
+                        oArg[1] = new ItemListComparator2();
                         addItemStackComparison.invoke(null, oArg);
                         updateSortOrder.invoke(null);
                     }
