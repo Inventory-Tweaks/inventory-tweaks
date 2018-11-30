@@ -24,7 +24,7 @@
     <equipment>
         <weapon>
             <sword>
-            	<sword class="ItemSword"/>
+                <sword class="ItemSword"/>
                 <ironSword id="iron_sword"/>
                 <diamondSword id="diamond_sword"/>
                 <stoneSword id="stone_sword"/>
@@ -32,14 +32,14 @@
                 <woodSword id="wooden_sword"/>
             </sword>
             <shield class="Item" data="{isShield : &quot;true&quot;}">
-            	<shield id="shield" mergePrevious="true" />
+                <shield id="shield" mergePrevious="true" />
             </shield>
             <munition>
                 <bow class="ItemBow" >
-                	<bow id="bow" mergePrevious="true"/>
+                    <bow id="bow" mergePrevious="true"/>
                 </bow>
                 <arrow class="arrow">
-                	<arrow id="arrow"/>
+                    <arrow id="arrow"/>
                 </arrow>
                 <spectralArrow id="spectral_arrow"/>
                 <tippedArrow id="tipped_arrow"/>
@@ -69,7 +69,7 @@
                 <woodAxe id="wooden_axe"/>
             </axe>
             <hoe class="Item" data="{ToolClass : &quot;hoe&quot;}">
-            	<hoe class="ItemHoe"  mergePrevious="true"/>
+                <hoe class="ItemHoe"  mergePrevious="true"/>
                 <goldHoe id="golden_hoe"/>
                 <diamondHoe id="diamond_hoe"/>
                 <ironHoe id="stone_hoe"/>
@@ -77,8 +77,8 @@
                 <woodHoe id="wooden_hoe"/>
             </hoe>
             <shears class="Item" data="{ToolClass : &quot;shears&quot;}">
-            	<ironShears id="minecraft:shears" mergePrevious="true"/>
-            	<shears class="ItemShears" mergePrevious="true"/>
+                <ironShears id="minecraft:shears" mergePrevious="true"/>
+                <shears class="ItemShears" mergePrevious="true"/>
             </shears>
             <fishingRod id="fishing_rod"/>
             <carrotOnAStick id="carrot_on_a_stick"/>
