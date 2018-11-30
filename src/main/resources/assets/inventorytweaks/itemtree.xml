@@ -24,63 +24,74 @@
     <equipment>
         <weapon>
             <sword>
+            	<sword class="ItemSword"/>
                 <ironSword id="iron_sword"/>
                 <diamondSword id="diamond_sword"/>
                 <stoneSword id="stone_sword"/>
                 <goldSword id="golden_sword"/>
                 <woodSword id="wooden_sword"/>
             </sword>
-            <shield id="shield"/>
+            <shield class="Item" data="{isShield : &quot;true&quot;}">
+            	<shield id="shield" mergePrevious="true" />
+            </shield>
             <munition>
-                <bow id="bow"/>
-                <arrow id="arrow"/>
+                <bow class="ItemBow" >
+                	<bow id="bow" mergePrevious="true"/>
+                </bow>
+                <arrow class="arrow">
+                	<arrow id="arrow"/>
+                </arrow>
                 <spectralArrow id="spectral_arrow"/>
                 <tippedArrow id="tipped_arrow"/>
                 <snowball id="snowball"/>
             </munition>
         </weapon>
         <tool>
-            <pickaxe>
+            <pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}">
                 <diamondPickaxe id="diamond_pickaxe"/>
                 <goldPickaxe id="golden_pickaxe"/>
                 <ironPickaxe id="iron_pickaxe"/>
                 <stonePickaxe id="stone_pickaxe"/>
                 <woodPickaxe id="wooden_pickaxe"/>
             </pickaxe>
-            <shovel>
+            <shovel class="Item" data="{ToolClass : &quot;shovel&quot;}">
                 <goldShovel id="golden_shovel"/>
                 <diamondShovel id="diamond_shovel"/>
                 <ironShovel id="iron_shovel"/>
                 <stoneShovel id="stone_shovel"/>
                 <woodShovel id="wooden_shovel"/>
             </shovel>
-            <axe>
+            <axe class="Item" data="{ToolClass : &quot;axe&quot;}">
                 <goldAxe id="golden_axe"/>
                 <diamondAxe id="diamond_axe"/>
                 <ironAxe id="iron_axe"/>
                 <stoneAxe id="stone_axe"/>
                 <woodAxe id="wooden_axe"/>
             </axe>
-            <hoe>
+            <hoe class="Item" data="{ToolClass : &quot;hoe&quot;}">
+            	<hoe class="ItemHoe"  mergePrevious="true"/>
                 <goldHoe id="golden_hoe"/>
                 <diamondHoe id="diamond_hoe"/>
                 <ironHoe id="stone_hoe"/>
                 <stoneHoe id="iron_hoe"/>
                 <woodHoe id="wooden_hoe"/>
             </hoe>
-            <shears id="shears"/>
+            <shears class="Item" data="{ToolClass : &quot;shears&quot;}">
+            	<ironShears id="minecraft:shears" mergePrevious="true"/>
+            	<shears class="ItemShears" mergePrevious="true"/>
+            </shears>
             <fishingRod id="fishing_rod"/>
             <carrotOnAStick id="carrot_on_a_stick"/>
         </tool>
         <armor>
-            <helmet>
+            <helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
                 <diamondHelmet id="diamond_helmet"/>
                 <chainHelmet id="chainmail_helmet"/>
                 <ironHelmet id="iron_helmet"/>
                 <goldHelmet id="golden_helmet"/>
                 <leatherHelmet id="leather_helmet"/>
             </helmet>
-            <chestplate>
+            <chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
                 <diamondChestplate id="diamond_chestplate"/>
                 <chainChestplate id="chainmail_chestplate"/>
                 <ironChestplate id="iron_chestplate"/>
@@ -88,14 +99,14 @@
                 <leatherChestplate id="leather_chestplate"/>
                 <elytra id="elytra"/>
             </chestplate>
-            <leggings>
+            <leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
                 <diamondLeggings id="diamond_leggings"/>
                 <chainLeggings id="chainmail_leggings"/>
                 <ironLeggings id="iron_leggings"/>
                 <goldLeggings id="golden_leggings"/>
                 <leatherLeggings id="leather_leggings"/>
             </leggings>
-            <boots>
+            <boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
                 <diamondBoots id="diamond_boots"/>
                 <chainBoots id="chainmail_boots"/>
                 <ironBoots id="iron_boots"/>
@@ -703,6 +714,7 @@
             <furnaceBurning id="lit_furnace"/>
             <chests>
                 <chest id="chest"/>
+                <chest id="trapped_chest"/>
                 <enderChest id="ender_chest"/>
                 <whiteShulkerBox id="white_shulker_box"/>
                 <blackShulkerBox id="black_shulker_box"/>
