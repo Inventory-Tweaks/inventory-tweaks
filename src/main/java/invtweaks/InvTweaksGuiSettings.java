@@ -26,6 +26,7 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
     private final static int ID_BUG_SORTING = 7;
     private final static int ID_EDITRULES = 100;
     private final static int ID_EDITTREE = 101;
+    private final static int ID_MODDEDTREE = 103;
     private final static int ID_HELP = 102;
 
     private static String labelMiddleClick;
@@ -64,11 +65,17 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
         moveToButtonCoords(1, p);
         controlList.add(new GuiButton(ID_EDITRULES, p.getX() + 55, height / 6 + 96,
                 I18n.format("invtweaks.settings.rulesfile")));
-        controlList.add(new GuiButton(ID_EDITTREE, p.getX() + 55, height / 6 + 120,
-                I18n.format("invtweaks.settings.treefile")));
         controlList.add(new GuiButton(ID_HELP, p.getX() + 55, height / 6 + 144,
                 I18n.format("invtweaks.settings.onlinehelp")));
 
+        moveToButtonCoords(11, p);
+        controlList.add(new GuiButton(ID_EDITTREE, p.getX(), p.getY(), 150, 20,
+                I18n.format("invtweaks.settings.treefile")));
+        moveToButtonCoords(10, p);
+        controlList.add(new GuiButton(ID_MODDEDTREE, p.getX(), p.getY(), 150, 20, 
+                I18n.format("invtweaks.settings.moddedtreefile")));
+
+        
         // Create settings buttons
 
         moveToButtonCoords(i++, p);
@@ -181,7 +188,7 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
                     InvTweaks.logInGameErrorStatic("invtweaks.settings.rulesfile.error", e);
                 }
                 break;
-
+                
             // Open tree configuration in external editor
             case ID_EDITTREE:
                 try {
@@ -191,6 +198,15 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
                 }
                 break;
 
+            //Replace the current tree file with the modded tree file.
+            case ID_MODDEDTREE:
+                try {                    
+                    InvTweaks.getConfigManager().ExtractModdedTreeFile();
+                    InvTweaks.getConfigManager().makeSureConfigurationIsLoaded();
+                } catch (Exception e) {
+                    InvTweaks.logInGameErrorStatic("invtweaks.settings.moddedtreefile.error", e);
+                }
+                break;
             // Open help in browser
             case ID_HELP:
                 try {

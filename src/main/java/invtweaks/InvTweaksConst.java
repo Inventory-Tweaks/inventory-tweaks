@@ -44,6 +44,8 @@ public class InvTweaksConst {
             "defaultconfig.dat");
     public static final ResourceLocation DEFAULT_CONFIG_TREE_FILE = new ResourceLocation(INVTWEAKS_RESOURCE_DOMAIN,
             "itemtree.xml");
+    public static final ResourceLocation MODDED_CONFIG_TREE_FILE = new ResourceLocation(INVTWEAKS_RESOURCE_DOMAIN,
+            "moddeditemtree.xml");
 
     public static final String HELP_URL = "http://inventory-tweaks.readthedocs.org";
 

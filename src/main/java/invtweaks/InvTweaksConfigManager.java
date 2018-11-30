@@ -229,6 +229,11 @@ public class InvTweaksConfigManager {
             return true;
         }
     }
+    
+    public void ExtractModdedTreeFile()
+    {
+        extractFile(InvTweaksConst.MODDED_CONFIG_TREE_FILE, InvTweaksConst.CONFIG_TREE_FILE);
+    }
 
     private boolean extractFile(@NotNull ResourceLocation resource, @NotNull File destination) {
         try(@NotNull InputStream input = mc.getResourceManager().getResource(resource).getInputStream()) {
