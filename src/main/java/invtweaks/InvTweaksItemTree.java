@@ -381,7 +381,12 @@ public class InvTweaksItemTree implements IItemTree {
                         doIt = (keyArmorType.equals(itemArmorType));
                         armor = null;
                     }
+                    if (doIt && extraData.hasKey("isshield")) 
+                    {                        
+                        doIt = item.isShield(stack, null);
+                    }
                 }
+                //Checks out, add it to the tree:
                 if (doIt) {
                     int dmg = item.isDamageable() ? InvTweaksConst.DAMAGE_WILDCARD : stack.getItemDamage();
                     addItem(category,
