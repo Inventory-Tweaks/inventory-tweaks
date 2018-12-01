@@ -80,7 +80,9 @@
                 <ironShears id="minecraft:shears" mergePrevious="true"/>
                 <shears class="ItemShears" mergePrevious="true"/>
             </shears>
-            <fishingRod id="fishing_rod"/>
+            <fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
+            	<fishingRod id="fishing_rod"/>
+            </fishingRod>
             <carrotOnAStick id="carrot_on_a_stick"/>
         </tool>
         <armor>

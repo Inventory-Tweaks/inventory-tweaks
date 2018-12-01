@@ -7,6 +7,8 @@ import invtweaks.api.IItemTreeItem;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemShears;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.JsonToNBT;
 import net.minecraft.nbt.NBTTagCompound;
@@ -370,8 +372,9 @@ public class InvTweaksItemTree implements IItemTree {
                     if (doIt && extraData.hasKey("toolclass")) 
                     {
                         String tclass = extraData.getString("toolclass");
-                        Set<String> tclasses = item.getToolClasses(stack);
-                        doIt = (tclasses.contains(tclass));
+                        //We don't want the set, we want the one we will use during comparisons.
+                        //An empty toolclass will match non-tools.                        
+                        doIt = tclass.equals(InvTweaks.getToolClass(stack, item));                        
                     }
                     if (doIt && extraData.hasKey("armortype") && item instanceof ItemArmor) 
                     {

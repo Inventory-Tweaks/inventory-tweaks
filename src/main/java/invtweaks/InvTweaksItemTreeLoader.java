@@ -19,7 +19,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Loads the item tree by parsing the XML file.

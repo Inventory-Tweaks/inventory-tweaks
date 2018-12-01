@@ -27,6 +27,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemFishingRod;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemShears;
 import net.minecraft.item.ItemStack;
@@ -566,7 +567,7 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
 
     
-    private static String getToolClass(ItemStack itemStack, Item item)
+    public static String getToolClass(ItemStack itemStack, Item item)
     {
         if (itemStack == null || item == null) return "";
         Set<String> toolClassSet = item.getToolClasses(itemStack);
@@ -580,10 +581,11 @@ public class InvTweaks extends InvTweaksObfuscation {
             toolClassSet = newClassSet;
         }
 
-        //Minecraft hoes and shears don't have tool class names.
+        //Minecraft hoes, shears, and fishing rods don't have tool class names.
         if (toolClassSet.isEmpty()) {
             if (item instanceof ItemHoe) return "hoe";
             if (item instanceof ItemShears) return "shears";
+            if (item instanceof ItemFishingRod) return "fishingrod";
             return "";
         }
         
