@@ -452,22 +452,23 @@ public class InvTweaks extends InvTweaksObfuscation {
                     if (debugTree) mostRecentComparison += ", Same Item";
                     boolean iHasName = i.hasDisplayName();
                     boolean jHasName = j.hasDisplayName();
+                    @NotNull String iDisplayName = i.getDisplayName();
+                    @NotNull String jDisplayName = j.getDisplayName();
+
+                    //Custom named items come first.
                     if(iHasName || jHasName) {
                         if(!iHasName) {
-                            if (debugTree) mostRecentComparison += ", J has Name";
+                            if (debugTree) mostRecentComparison += ", J has custom Name";
                             return -1;
                         } else if(!jHasName) {
-                            if (debugTree) mostRecentComparison += ", I has Name";
+                            if (debugTree) mostRecentComparison += ", I has custom Name";
                             return 1;
-                        } else {
-                            @NotNull String iDisplayName = i.getDisplayName();
-                            @NotNull String jDisplayName = j.getDisplayName();
-
-                            if(!iDisplayName.equals(jDisplayName)) {
-                                if (debugTree) mostRecentComparison += ", Name: " + iDisplayName.compareTo(jDisplayName);
-                                return iDisplayName.compareTo(jDisplayName);
-                            }
                         }
+                    }
+                    //Differently named items (either both custom or both default, like bees or resource chickens.) 
+                    if(!iDisplayName.equals(jDisplayName)) {
+                        if (debugTree) mostRecentComparison += ", Name: " + iDisplayName.compareTo(jDisplayName);
+                        return iDisplayName.compareTo(jDisplayName);
                     }
 
                     @NotNull Map<Enchantment, Integer> iEnchs = EnchantmentHelper.getEnchantments(i);
