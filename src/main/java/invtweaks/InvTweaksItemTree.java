@@ -73,7 +73,7 @@ public class InvTweaksItemTree implements IItemTree {
         if(defaultItems == null) {
             defaultItems = new ArrayList<>();
             defaultItems.add(new InvTweaksItemTreeItem(UNKNOWN_ITEM, null, InvTweaksConst.DAMAGE_WILDCARD, null,
-                    Integer.MAX_VALUE));
+                    Integer.MAX_VALUE, getRootCategory().getName()));
         }
 
         // Reset tree
@@ -219,9 +219,9 @@ public class InvTweaksItemTree implements IItemTree {
         if(filteredItems.isEmpty()) {
             int newItemOrder = highestOrder + 1;
             @NotNull IItemTreeItem newItemId = new InvTweaksItemTreeItem(String.format("%s-%d", id, damage), id, damage, null,
-                    newItemOrder);
+                    newItemOrder, getRootCategory().getName() + "\\_uncategorized\\" + String.format("%s-%d", id, damage));
             @NotNull IItemTreeItem newItemDamage = new InvTweaksItemTreeItem(id, id,
-                    InvTweaksConst.DAMAGE_WILDCARD, null, newItemOrder);
+                    InvTweaksConst.DAMAGE_WILDCARD, null, newItemOrder, getRootCategory().getName() + "\\_uncategorized\\" + id);
             addItem(getRootCategory().getName(), newItemId);
             addItem(getRootCategory().getName(), newItemDamage);
             filteredItems.add(newItemId);
@@ -280,7 +280,7 @@ public class InvTweaksItemTree implements IItemTree {
     @Override
     public IItemTreeItem addItem(String parentCategory, String name, String id, int damage, NBTTagCompound extra, int order)
             throws NullPointerException {
-        @NotNull InvTweaksItemTreeItem addedItem = new InvTweaksItemTreeItem(name, id, damage, extra, order);
+        @NotNull InvTweaksItemTreeItem addedItem = new InvTweaksItemTreeItem(name, id, damage, extra, order, getRootCategory().findKeywordPath(parentCategory) + "\\" + name);
         addItem(parentCategory, addedItem);
         return addedItem;
     }
@@ -327,17 +327,17 @@ public class InvTweaksItemTree implements IItemTree {
     }
 
     @Override
-    public void registerOre(String category, String name, String oreName, int order) {
+    public void registerOre(String category, String name, String oreName, int order, String path) {
         for(@Nullable ItemStack i : OreDictionary.getOres(oreName)) {
             if(i != null) {
                 // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
                 addItem(category,
-                        new InvTweaksItemTreeItem(name, i.getItem().getRegistryName().toString(), i.getItemDamage(), null, order));
+                        new InvTweaksItemTreeItem(name, i.getItem().getRegistryName().toString(), i.getItemDamage(), null, order, path));
             } else {
                 log.warn(String.format("An OreDictionary entry for %s is null", oreName));
             }
         }
-        oresRegistered.add(new OreDictInfo(category, name, oreName, order));
+        oresRegistered.add(new OreDictInfo(category, name, oreName, order, path));
     }
 
     @SubscribeEvent
@@ -348,14 +348,14 @@ public class InvTweaksItemTree implements IItemTree {
             if(!evOre.isEmpty()) {
                 // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
                 addItem(ore.category, new InvTweaksItemTreeItem(ore.name, evOre.getItem().getRegistryName().toString(),
-                        evOre.getItemDamage(), null, ore.order));
+                        evOre.getItemDamage(), null, ore.order, ore.orePath));
             } else {
                 log.warn(String.format("An OreDictionary entry for %s is null", ev.getName()));
             }
         });
     }
     
-    public void registerClass(String category, String name, String className, NBTTagCompound extraData, int order)
+    public void registerClass(String category, String name, String className, NBTTagCompound extraData, int order, String path)
     {
         if (allGameItems.size() == 0)
         {
@@ -393,7 +393,7 @@ public class InvTweaksItemTree implements IItemTree {
                 if (doIt) {
                     int dmg = item.isDamageable() ? InvTweaksConst.DAMAGE_WILDCARD : stack.getItemDamage();
                     addItem(category,
-                            new InvTweaksItemTreeItem(name, item.getRegistryName().toString(), dmg, null, order));
+                            new InvTweaksItemTreeItem(name, item.getRegistryName().toString(), dmg, null, order, path));
                 }
             }
         }
@@ -404,12 +404,14 @@ public class InvTweaksItemTree implements IItemTree {
         String name;
         String oreName;
         int order;
+        String orePath;
 
-        OreDictInfo(String category_, String name_, String oreName_, int order_) {
+        OreDictInfo(String category_, String name_, String oreName_, int order_, String orePath_) {
             category = category_;
             name = name_;
             oreName = oreName_;
             order = order_;
+            orePath = orePath_;
         }
     }
     

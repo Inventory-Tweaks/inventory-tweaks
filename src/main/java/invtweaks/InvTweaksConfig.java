@@ -40,6 +40,7 @@ public class InvTweaksConfig {
     public static final String PROP_SHORTCUT_DROP = "shortcutKeyDrop";
     public static final String PROP_SHORTCUT_UP = "shortcutKeyToUpperSection";
     public static final String PROP_SHORTCUT_DOWN = "shortcutKeyToLowerSection";
+    public static final String PROP_TOOLTIP_PATH = "enableToolTipTreePath";
     // Other
     public static final String PROP_ENABLE_SOUNDS = "enableSounds";
     public static final String PROP_ENABLE_SERVER_ITEMSWAP = "enableServerItemSwap";
@@ -365,6 +366,7 @@ public class InvTweaksConfig {
         properties.put(PROP_SHORTCUT_UP, "UP");
         properties.put(PROP_SHORTCUT_DOWN, "DOWN");
         properties.put(PROP_SHORTCUT_DROP, "LALT, RALT");
+        properties.put(PROP_TOOLTIP_PATH, VALUE_FALSE);
 
         properties.put(PROP_VERSION, InvTweaksConst.MOD_VERSION.split(" ")[0]);
 

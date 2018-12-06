@@ -84,3 +84,5 @@ invtweaks.keyboardfix.recover=Ok it's repaired, sorry about that.
 invtweaks.modcompat.ci.error=[13] Failed to manage 'Convenient Inventory' compatibility
 invtweaks.key.category=Inventory Tweaks
 invtweaks.key.sort=Inventory Sorting
+invtweaks.settings.displaytooltip=Display Path Tooltip
+invtweaks.settings.displaytooltip.tooltip=Show the Item Tree XPaths\nthat apply to the item in\nthe tool tip.\n(Handy for JEI filtering.)

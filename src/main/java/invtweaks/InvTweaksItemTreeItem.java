@@ -21,6 +21,7 @@ public class InvTweaksItemTreeItem implements IItemTreeItem {
     private int damage;
     private NBTTagCompound extraData;
     private int order;
+    private String path;
 
     /**
      * @param name_   The item name
@@ -28,12 +29,13 @@ public class InvTweaksItemTreeItem implements IItemTreeItem {
      * @param damage_ The item variant or InvTweaksConst.DAMAGE_WILDCARD
      * @param order_  The item order while sorting
      */
-    public InvTweaksItemTreeItem(String name_, String id_, int damage_, NBTTagCompound extraData_, int order_) {
+    public InvTweaksItemTreeItem(String name_, String id_, int damage_, NBTTagCompound extraData_, int order_, String path_) {
         name = name_;
         id = InvTweaksObfuscation.getNamespacedID(id_);
         damage = damage_;
         extraData = extraData_;
         order = order_;
+        path = path_;
     }
 
     @Override
@@ -60,6 +62,11 @@ public class InvTweaksItemTreeItem implements IItemTreeItem {
     @Override
     public int getOrder() {
         return order;
+    }
+    
+    @Override
+    public String getPath() {
+        return path;
     }
 
     /**

@@ -28,6 +28,7 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
     private final static int ID_EDITTREE = 101;
     private final static int ID_MODDEDTREE = 103;
     private final static int ID_HELP = 102;
+    private final static int ID_DISPLAY_TOOLTIP = 104;
 
     private static String labelMiddleClick;
     private static String labelShortcuts;
@@ -35,6 +36,7 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
     private static String labelAutoRefillBeforeBreak;
     private static String labelMoreOptions;
     private static String labelBugSorting;
+    private static String labelDisplayTooltip;
 
     @SuppressWarnings("unused")
     public InvTweaksGuiSettings(GuiScreen parentScreen_) {
@@ -50,6 +52,7 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
         labelAutoRefillBeforeBreak = I18n.format("invtweaks.settings.beforebreak");
         labelMoreOptions = I18n.format("invtweaks.settings.moreoptions");
         labelBugSorting = I18n.format("invtweaks.help.bugsorting");
+        labelDisplayTooltip = I18n.format("invtweaks.settings.displaytooltip");
     }
 
     @Override
@@ -124,6 +127,15 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
                         "invtweaks.settings.middleclick.tooltip"));
         controlList.add(middleClickBtn);
 
+        moveToButtonCoords(i++, p);
+        @NotNull InvTweaksGuiTooltipButton displayTooltipBtn = new InvTweaksGuiTooltipButton(ID_DISPLAY_TOOLTIP, p.getX(), p.getY(),
+                computeBooleanButtonLabel(
+                        InvTweaksConfig.PROP_TOOLTIP_PATH,
+                        labelDisplayTooltip),
+                I18n.format(
+                        "invtweaks.settings.displaytooltip.tooltip"));
+        controlList.add(displayTooltipBtn);
+
         // Check if links to files are supported, if not disable the buttons
         if(!Desktop.isDesktopSupported()) {
             controlList.stream().filter(InvTweaksObfuscation::isGuiButton).forEach(o -> {
@@ -144,6 +156,10 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
 
         // GuiButton
         switch(guibutton.id) {
+            // Toggle tooltip display.
+            case ID_DISPLAY_TOOLTIP:
+                toggleBooleanButton(guibutton, InvTweaksConfig.PROP_TOOLTIP_PATH, labelDisplayTooltip);
+                break;
             // Toggle middle click shortcut
             case ID_MIDDLE_CLICK:
                 toggleBooleanButton(guibutton, InvTweaksConfig.PROP_ENABLE_MIDDLE_CLICK, labelMiddleClick);

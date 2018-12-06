@@ -44,4 +44,6 @@ public interface IItemTreeCategory {
     int findCategoryOrder(String keyword);
 
     int findKeywordDepth(String keyword);
+    
+    public String findKeywordPath(String keyword);
 }

@@ -114,6 +114,24 @@ public class InvTweaksItemTreeCategory implements IItemTreeCategory {
             return -1;
         }
     }
+    
+    @Override
+    public String findKeywordPath(String keyword) {
+        if(name.equals(keyword)) {
+            return keyword;
+        } else if(matchingItems.contains(keyword)) {
+            return name + "\\" + keyword;
+        } else {
+            String result;
+            for(@NotNull IItemTreeCategory category : subCategories) {
+                result = category.findKeywordPath(keyword);
+                if(result.length() > 0) {
+                    return name + "\\" + result;
+                }
+            }
+            return "";
+        }
+    }
 
     /**
      * @return all categories contained in this one.

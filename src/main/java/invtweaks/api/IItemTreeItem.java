@@ -35,4 +35,6 @@ public interface IItemTreeItem extends Comparable<IItemTreeItem> {
     NBTTagCompound getExtraData();
 
     int getOrder();
+    
+    public String getPath();
 }

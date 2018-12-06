@@ -140,7 +140,7 @@ public class InvTweaksItemTreeLoader extends DefaultHandler {
                 int rangeDMax = Integer.parseInt(attributes.getValue(ATTR_RANGE_DMAX));
                 for(int damage = rangeDMin; damage <= rangeDMax; damage++) {
                     tree.addItem(name, new InvTweaksItemTreeItem((name + id + "-" + damage), id, damage, null,
-                            getNextItemOrder(lastOrder)));
+                            getNextItemOrder(lastOrder), String.join("\\", categoryStack) + "\\" + name));
                 }
             }
 
@@ -163,9 +163,9 @@ public class InvTweaksItemTreeLoader extends DefaultHandler {
                 damage = Integer.parseInt(attributes.getValue(ATTR_DAMAGE));
             }
             tree.addItem(categoryStack.getLast(),
-                    new InvTweaksItemTreeItem(name, id, damage, extraData, getNextItemOrder(lastOrder)));
+                    new InvTweaksItemTreeItem(name, id, damage, extraData, getNextItemOrder(lastOrder), String.join("\\", categoryStack) + "\\" + name));
         } else if(oreDictNameAttr != null) {
-            tree.registerOre(categoryStack.getLast(), name, oreDictNameAttr, getNextItemOrder(lastOrder));
+            tree.registerOre(categoryStack.getLast(), name, oreDictNameAttr, getNextItemOrder(lastOrder), String.join("\\", categoryStack) + "\\" + name);
         } else if(className != null)
         {
             String extraDataAttr = attributes.getValue(ATTR_DATA);
@@ -177,7 +177,7 @@ public class InvTweaksItemTreeLoader extends DefaultHandler {
                     throw new RuntimeException("Data attribute failed for tree entry '" + name + "'", e);
                 }
             }
-            tree.registerClass(categoryStack.getLast(), name, className.toLowerCase(), extraData, getNextItemOrder(lastOrder));
+            tree.registerClass(categoryStack.getLast(), name, className.toLowerCase(), extraData, getNextItemOrder(lastOrder), String.join("\\", categoryStack) + "\\" + name);
         }
     }
 

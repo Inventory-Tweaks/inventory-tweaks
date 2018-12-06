@@ -171,6 +171,8 @@ public class InvTweaks extends InvTweaksObfuscation {
 
     @Nullable
     public static InvTweaksConfigManager getConfigManager() {
+        if (instance == null)
+            return null;
         return instance.cfgManager;
     }
 
