@@ -23,12 +23,14 @@ public class InvTweaksGuiSettingsAdvanced extends InvTweaksGuiSettingsAbstract {
     private final static int ID_CHESTS_BUTTONS = 4;
     private final static int ID_SERVER_ASSIST = 5;
     private final static int ID_EDITSHORTCUTS = 100;
+    private final static int ID_DISPLAY_TOOLTIP = 104;
 
     private static String labelChestButtons;
     private static String labelSortOnPickup;
     private static String labelEquipArmor;
     private static String labelEnableSounds;
     private static String labelServerAssist;
+    private static String labelDisplayTooltip;
 
     public InvTweaksGuiSettingsAdvanced(Minecraft mc_, GuiScreen parentScreen_, InvTweaksConfig config_) {
         super(mc_, parentScreen_, config_);
@@ -38,6 +40,7 @@ public class InvTweaksGuiSettingsAdvanced extends InvTweaksGuiSettingsAbstract {
         labelEnableSounds = I18n.format("invtweaks.settings.advanced.sounds");
         labelChestButtons = I18n.format("invtweaks.settings.chestbuttons");
         labelServerAssist = I18n.format("invtweaks.settings.advanced.serverassist");
+        labelDisplayTooltip = I18n.format("invtweaks.settings.displaytooltip");
     }
 
     @Override
@@ -99,6 +102,15 @@ public class InvTweaksGuiSettingsAdvanced extends InvTweaksGuiSettingsAbstract {
                         "invtweaks.settings.advanced.serverassist.tooltip"));
         controlList.add(serverAssistBtn);
 
+        moveToButtonCoords(i++, p);
+        @NotNull InvTweaksGuiTooltipButton displayTooltipBtn = new InvTweaksGuiTooltipButton(ID_DISPLAY_TOOLTIP, p.getX(), p.getY(),
+                computeBooleanButtonLabel(
+                        InvTweaksConfig.PROP_TOOLTIP_PATH,
+                        labelDisplayTooltip),
+                I18n.format(
+                        "invtweaks.settings.displaytooltip.tooltip"));
+        controlList.add(displayTooltipBtn);
+        
         // Check if links to files are supported, if not disable the buttons
         if(!Desktop.isDesktopSupported()) {
             controlList.stream().forEach(button -> {
@@ -130,6 +142,11 @@ public class InvTweaksGuiSettingsAdvanced extends InvTweaksGuiSettingsAbstract {
         // GuiButton
         switch(guibutton.id) {
 
+            // Toggle tooltip display.
+            case ID_DISPLAY_TOOLTIP:
+                toggleBooleanButton(guibutton, InvTweaksConfig.PROP_TOOLTIP_PATH, labelDisplayTooltip);
+                break;
+        
             // Toggle auto-refill sound
             case ID_SORT_ON_PICKUP:
                 toggleBooleanButton(guibutton, InvTweaksConfig.PROP_ENABLE_SORTING_ON_PICKUP, labelSortOnPickup);
