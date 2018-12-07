@@ -12,6 +12,7 @@ import invtweaks.InvTweaksConfigManager;
 import invtweaks.api.IItemTreeCategory;
 import invtweaks.api.IItemTreeItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
@@ -55,16 +56,16 @@ public class ToolTipEvent {
                 
                 if (path.equals(altPath) || itemOrder > unsortedZone) {
                     if (!paths.contains(path)) {
-                        event.getToolTip().add(path + " (" + item.getOrder() + ")");
+                        event.getToolTip().add(TextFormatting.DARK_GRAY + path + " (" + item.getOrder() + ")");
                         paths.add(path);
                     }                    
                 } else {
                     if (!paths.contains(path)) {
-                        event.getToolTip().add("T:" + path + " (" + item.getOrder() + ")");
+                        event.getToolTip().add(TextFormatting.DARK_GRAY + "T:" + path + " (" + item.getOrder() + ")");
                         paths.add(path);
                     }
                     if (!paths.contains(altPath)) {
-                        event.getToolTip().add("M:" + altPath + " (" + item.getOrder() + ")");
+                        event.getToolTip().add(TextFormatting.DARK_GRAY + "M:" + altPath + " (" + item.getOrder() + ")");
                         paths.add(altPath);
                     }
                 }
