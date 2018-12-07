@@ -405,7 +405,11 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
         
     int compareItems(@NotNull ItemStack i, @NotNull ItemStack j, int orderI, int orderJ, boolean api) {
-        if(j.isEmpty()) {            
+        if (i.isEmpty() && j.isEmpty()) {
+            //Technically, if both are empty, they are equal.
+            if (debugTree) mostRecentComparison = "Both stacks are Empty.";
+            return 0;
+        } else if(j.isEmpty()) {            
             if (debugTree) mostRecentComparison = "J is Empty.";
             return -1;
         } else if(i.isEmpty() || orderI == -1) {
@@ -419,144 +423,116 @@ public class InvTweaks extends InvTweaksObfuscation {
                 if (orderI > lastOrder) orderI = Integer.MAX_VALUE;
                 if (orderJ > lastOrder) orderJ = Integer.MAX_VALUE;
             }
+            
             if (debugTree) mostRecentComparison += "I: " + orderI + ", J: " + orderJ;
-            if(orderI == orderJ) {
-                Item iItem = i.getItem(), jItem = j.getItem();
-                //Sort By Harvest Level, (Better first.)
-                int cTool = compareTools(i, j, iItem, jItem);
-                if (debugTree) mostRecentComparison += ", Tool: " + cTool;
-                if (cTool != 0)
-                    return cTool;
-                
-                //Sort by main-hand damage capability:  (Higher first, faster first for same damage)
-                int cSword = compareSword(i, j, iItem, jItem);
-                if (debugTree) mostRecentComparison += ", Sword: " + cSword;
-                if (cSword != 0)
-                    return cSword;
-                
-                //Sort By Armor utility:  (More First)
-                int cArmor = compareArmor(i, j, iItem, jItem);
-                if (debugTree) mostRecentComparison += ", Armor: " + cArmor;
-                if (cArmor != 0)
-                    return cArmor;
-                
-                //Allow external sorting systems to take control of unsorted items not handled by the tree.
-                if (orderI == Integer.MAX_VALUE && api == true) {
-                    if (debugTree) mostRecentComparison += ", API Bailout.";
-                    return 0;
-                }
-                
-                // Items of same keyword orders can have different IDs,
-                // in the case of categories defined by a range of IDs
-                if(iItem == jItem) {
-                    if (debugTree) mostRecentComparison += ", Same Item";
-                    boolean iHasName = i.hasDisplayName();
-                    boolean jHasName = j.hasDisplayName();
-                    @NotNull String iDisplayName = i.getDisplayName();
-                    @NotNull String jDisplayName = j.getDisplayName();
 
-                    //Custom named items come first.
-                    if(iHasName || jHasName) {
-                        if(!iHasName) {
-                            if (debugTree) mostRecentComparison += ", J has custom Name";
-                            return -1;
-                        } else if(!jHasName) {
-                            if (debugTree) mostRecentComparison += ", I has custom Name";
-                            return 1;
-                        }
-                    }
-                    //Differently named items (either both custom or both default, like bees or resource chickens.) 
-                    if(!iDisplayName.equals(jDisplayName)) {
-                        if (debugTree) mostRecentComparison += ", Name: " + iDisplayName.compareTo(jDisplayName);
-                        return iDisplayName.compareTo(jDisplayName);
-                    }
-
-                    @NotNull Map<Enchantment, Integer> iEnchs = EnchantmentHelper.getEnchantments(i);
-                    @NotNull Map<Enchantment, Integer> jEnchs = EnchantmentHelper.getEnchantments(j);
-                    if(iEnchs.size() == jEnchs.size()) {
-                        int iEnchMaxId = 0, iEnchMaxLvl = 0;
-                        int jEnchMaxId = 0, jEnchMaxLvl = 0;
-
-                        // TODO: This is really arbitrary but there's not really a good way to do this generically.
-                        for(@NotNull Map.Entry<Enchantment, Integer> ench : iEnchs.entrySet()) {
-                            int enchId = Enchantment.getEnchantmentID(ench.getKey());
-                            if(ench.getValue() > iEnchMaxLvl) {
-                                iEnchMaxId = enchId;
-                                iEnchMaxLvl = ench.getValue();
-                            } else if(ench.getValue() == iEnchMaxLvl && enchId > iEnchMaxId) {
-                                iEnchMaxId = enchId;
-                            }
-                        }
-
-                        for(@NotNull Map.Entry<Enchantment, Integer> ench : jEnchs.entrySet()) {
-                            int enchId = Enchantment.getEnchantmentID(ench.getKey());
-                            if(ench.getValue() > jEnchMaxLvl) {
-                                jEnchMaxId = enchId;
-                                jEnchMaxLvl = ench.getValue();
-                            } else if(ench.getValue() == jEnchMaxLvl && enchId > jEnchMaxId) {
-                                jEnchMaxId = enchId;
-                            }
-                        }
-
-                        if (debugTree) mostRecentComparison += ", Damage/Count/Enchantment";
-
-                        if(iEnchMaxId == jEnchMaxId) {
-                            if(iEnchMaxLvl == jEnchMaxLvl) {
-                                if(i.getItemDamage() != j.getItemDamage()) {
-                                    if(i.isItemStackDamageable() && !getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_INVERT_TOOL_DAMAGE).equals(InvTweaksConfig.VALUE_TRUE)) {
-                                        return j.getItemDamage() - i.getItemDamage();
-                                    } else {
-                                        return i.getItemDamage() - j.getItemDamage();
-                                    }
-                                } else {
-                                    return j.getCount() - i.getCount();
-                                }
-                            } else {
-                                return jEnchMaxLvl - iEnchMaxLvl;
-                            }
-                        } else {
-                            return jEnchMaxId - iEnchMaxId;
-                        }
-                    } else {
-                        return jEnchs.size() - iEnchs.size();
-                    }
-
-                }
-                    
-                //Use durability to sort, favoring more durable items.
-                int maxDamage = CompareMaxDamage(i, j);
-                if (debugTree) mostRecentComparison += ", Max Damage: " + maxDamage;
-                if (maxDamage != 0)
-                    return maxDamage;  
-
-                //Use remaining durability to sort, favoring more damaged.
-                int curDamage = CompareCurDamage(i, j);
-                if (debugTree) mostRecentComparison += ", Current Damage: " + curDamage;
-                if (curDamage != 0)
-                    return curDamage;  
-                
-                //Final catch all:
-                if (debugTree) mostRecentComparison += ", Final: " + ObjectUtils.compare(i.getItem().getRegistryName().toString(),
-                        j.getItem().getRegistryName().toString());
-                // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-                return ObjectUtils.compare(i.getItem().getRegistryName().toString(),
-                        j.getItem().getRegistryName().toString());
-                
-            } else {
+            //If items are in different order slots, they are inherently comparator contract friendly.
+            if(orderI != orderJ) {
                 if (debugTree) mostRecentComparison += ", Normal: " + (orderI - orderJ);
                 return orderI - orderJ;
             }
+            
+            //All items in the same sort slot need to be treated the same for the comparator contract.
+
+            //Allow external sorting systems to take control of unsorted items not handled by the tree.
+            if (orderI == Integer.MAX_VALUE && orderJ == Integer.MAX_VALUE && api == true) {
+                if (debugTree) mostRecentComparison += ", API Bailout.";
+                return 0;
+            }
+
+            Item iItem = i.getItem(), jItem = j.getItem();
+            //Sort By Tool type then Harvest Level, (Better first.)
+            int cTool = compareTools(i, j, iItem, jItem);
+            if (debugTree) mostRecentComparison += ", Tool: " + cTool;
+            if (cTool != 0)
+                return cTool;
+            
+            //Sort by main-hand damage capability:  (Higher first, faster first for same damage)
+            //Most tools also do damage, so they were tested as tools first.
+            //If a tool reaches here, it has the same max durabilty, harvest level, and tool class.
+            int cSword = compareSword(i, j, iItem, jItem);
+            if (debugTree) mostRecentComparison += ", Sword: " + cSword;
+            if (cSword != 0)
+                return cSword;
+            
+            //Sort By Armor utility:  (More First)
+            int cArmor = compareArmor(i, j, iItem, jItem);
+            if (debugTree) mostRecentComparison += ", Armor: " + cArmor;
+            if (cArmor != 0)
+                return cArmor;
+                            
+            //Sort my display name:
+            int cName = compareNames(i, j);
+            if (debugTree) mostRecentComparison += ", Name" + cName;
+            if (cName != 0)
+                return cName;
+            
+            //Sort By enchantments:
+            int cEnchant = compareEnchantment(i, j);
+            if (cEnchant != 0)
+                return cEnchant;
+                
+            //Use durability to sort, favoring more durable items.  (Non-Tools, Non-Armor, Non-Weapons.)
+            int maxDamage = compareMaxDamage(i, j);
+            if (debugTree) mostRecentComparison += ", Max Damage: " + maxDamage;
+            if (maxDamage != 0)
+                return maxDamage;  
+
+            //Use remaining durability to sort, favoring config option on damaged.
+            int curDamage = compareCurDamage(i, j);
+            if (debugTree) mostRecentComparison += ", Current Damage: " + curDamage;
+            if (curDamage != 0)
+                return curDamage;  
+
+            //Use stack size to put bigger stacks first.
+            if (j.getCount() != i.getCount()) {
+                 if (debugTree) mostRecentComparison += ", Stack Size";
+                return j.getCount() - i.getCount();
+            }
+            
+            //Final catch all:
+            if (debugTree) mostRecentComparison += ", Final: " + ObjectUtils.compare(i.getItem().getRegistryName().toString(),
+                    j.getItem().getRegistryName().toString());
+            // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
+            return ObjectUtils.compare(i.getItem().getRegistryName().toString(),
+                    j.getItem().getRegistryName().toString());
+            
         }
     }
     
-    private static int CompareMaxDamage(ItemStack i, ItemStack j) {
+    private int compareNames(ItemStack i, ItemStack j) {
+        boolean iHasName = i.hasDisplayName();
+        boolean jHasName = j.hasDisplayName();
+        @NotNull String iDisplayName = i.getDisplayName();
+        @NotNull String jDisplayName = j.getDisplayName();
+
+        //Custom named items come first.
+        if(iHasName || jHasName) {
+            if(!iHasName) {
+                if (debugTree) mostRecentComparison += ", J has custom Name";
+                return -1;
+            } else if(!jHasName) {
+                if (debugTree) mostRecentComparison += ", I has custom Name";
+                return 1;
+            }
+        }
+        //Differently named items (either both custom or both default, like bees or resource chickens.) 
+        if(!iDisplayName.equals(jDisplayName)) {
+            if (debugTree) mostRecentComparison += ", Name: " + iDisplayName.compareTo(jDisplayName);
+            return iDisplayName.compareTo(jDisplayName);
+        }
+        
+        return 0;        
+    }
+    
+    private static int compareMaxDamage(ItemStack i, ItemStack j) {
         //Use durability to sort, favoring more durable items.
         int maxDamage1 = i.getMaxDamage() <= 0 ? Integer.MAX_VALUE : i.getMaxDamage();
         int maxDamage2 = j.getMaxDamage() <= 0 ? Integer.MAX_VALUE : j.getMaxDamage();
         return maxDamage2 - maxDamage1;      	
     }
 
-    private static int CompareCurDamage(ItemStack i, ItemStack j) {
+    private static int compareCurDamage(ItemStack i, ItemStack j) {
         //Use remaining durability to sort, favoring more damaged.
         int curDamage1 = i.getItemDamage();
         int curDamage2 = j.getItemDamage();
@@ -630,7 +606,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             }
         }
         
-        return CompareMaxDamage(i, j);
+        return compareMaxDamage(i, j);
         
     }
 
@@ -672,7 +648,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                 // Higher damage first.
                 return damageComparison;
             } 
-            return CompareMaxDamage(itemStack1, itemStack2);
+            return compareMaxDamage(itemStack1, itemStack2);
         }
     }
     
@@ -693,8 +669,59 @@ public class InvTweaks extends InvTweaksObfuscation {
             } else if (a1.toughness != a2.toughness) {
                 return a2.toughness > a1.toughness ? -1 : 1;
             }
-            return CompareMaxDamage(i, j);
+            return compareMaxDamage(i, j);
         }
+    }
+    
+    private int compareEnchantment(ItemStack i, ItemStack j) {
+        @NotNull Map<Enchantment, Integer> iEnchs = EnchantmentHelper.getEnchantments(i);
+        @NotNull Map<Enchantment, Integer> jEnchs = EnchantmentHelper.getEnchantments(j);
+        
+        //Pick the item with the most enchantments first.
+        if(iEnchs.size() != jEnchs.size()) {
+            if (debugTree) mostRecentComparison += ", Enchantment Count";
+            return jEnchs.size() - iEnchs.size();            
+        }
+        
+        int iEnchMaxId = 0, iEnchMaxLvl = 0;
+        int jEnchMaxId = 0, jEnchMaxLvl = 0;
+
+        // TODO: This is really arbitrary but there's not really a good way to do this generically.
+        for(@NotNull Map.Entry<Enchantment, Integer> ench : iEnchs.entrySet()) {
+            int enchId = Enchantment.getEnchantmentID(ench.getKey());
+            if(ench.getValue() > iEnchMaxLvl) {
+                iEnchMaxId = enchId;
+                iEnchMaxLvl = ench.getValue();
+            } else if(ench.getValue() == iEnchMaxLvl && enchId > iEnchMaxId) {
+                iEnchMaxId = enchId;
+            }
+        }
+
+        for(@NotNull Map.Entry<Enchantment, Integer> ench : jEnchs.entrySet()) {
+            int enchId = Enchantment.getEnchantmentID(ench.getKey());
+            if(ench.getValue() > jEnchMaxLvl) {
+                jEnchMaxId = enchId;
+                jEnchMaxLvl = ench.getValue();
+            } else if(ench.getValue() == jEnchMaxLvl && enchId > jEnchMaxId) {
+                jEnchMaxId = enchId;
+            }
+        }
+
+        //The highest enchantment ID, (random actual enchantment.)
+        if(iEnchMaxId != jEnchMaxId) {
+            if (debugTree) mostRecentComparison += ", Highest Enchantment";
+            return jEnchMaxId - iEnchMaxId;                        
+        }
+        
+        //Highest level if they both have the same coolest enchantment.
+        if(iEnchMaxLvl != jEnchMaxLvl) {
+            if (debugTree) mostRecentComparison += ", Highest Enchantment Level";
+            return jEnchMaxLvl - iEnchMaxLvl;
+        }
+        
+        //Enchantments aren't different.
+        if (debugTree) mostRecentComparison += ", Enchantment Level same";
+        return 0;
     }
 
     public void setItemPickupPending(boolean value) {
