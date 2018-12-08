@@ -3,7 +3,6 @@ package invtweaks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.client.resources.IResource;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
