@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage6>
+							<itemBronzeSword id="ic2:bronze_sword"/>
+						</swordDamage6>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<paxel mergeChildren="true">
+				<miningTool>
+					<diggingTool>
+						<choppingTool>
+							<farmingTool>
+								<itemIridiumDrill id="ic2:iridium_drill"/>
+								<itemDiamondDrill id="ic2:diamond_drill"/>
+								<itemMiningDrill id="ic2:drill"/>
+							</farmingTool>
+						</choppingTool>
+					</diggingTool>
+				</miningTool>
+			</paxel>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<DiamondPickLevel>
+						<itemBronzePickaxe id="ic2:bronze_pickaxe"/>
+					</DiamondPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemBronzeShovel id="ic2:bronze_shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemBronzeAxe id="ic2:bronze_axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemBronzeHoe id="ic2:bronze_hoe"/>
+					<itemElectricHoe id="ic2:electric_hoe"/>
+				</hoe>
+				<otherFarmingTools>
+					<treeTap>
+						<itemElectricTreetap id="ic2:electric_treetap"/>
+						<itemTreetap id="ic2:treetap"/>
+					</treeTap>
+				</otherFarmingTools>
+			</farmingTool>
+		</tool>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<constructionBlock>
+				<constructionUtility>
+					<itemScaffold id="ic2:scaffold"/>
+				</constructionUtility>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<resources>
+		<miningResources>
+			<ingot>
+				<ingotMixedMetalDict oreDictName="ingotMixedMetal">
+					<itemMixedMetalIngot id="ic2:ingot" damage="0"/>
+				</ingotMixedMetalDict>
+			</ingot>
+		</miningResources>
+	</resources>
+	<item>
+		<fluidStorage>
+			<itemIC2Cell id="ic2:fluid_cell"/>
+		</fluidStorage>
+		<vehicle>
+			<boat id="boat">
+				<itemCarbonFiberCanoe id="ic2:boat"/>
+				<itemElectricBoat id="ic2:boat"/>
+				<itemRubberDinghy id="ic2:boat"/>
+				<itemDamagedRubberDinghy id="ic2:boat"/>
+			</boat>
+		</vehicle>
+	</item>
+</stuff>

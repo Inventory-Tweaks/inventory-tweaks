@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<armor>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<armoredJetpacks>
+					<itemCreativeJetpack id="simplyjetpacks:itemjetpack" damage="0"/>
+					<itemDarkSoulariumJetPlate id="simplyjetpacks:itemjetpack" damage="10"/>
+					<itemVibrantJetpackArmored id="simplyjetpacks:itemjetpack" damage="9"/>
+					<itemEnergeticJetpackArmored id="simplyjetpacks:itemjetpack" damage="8"/>
+					<itemElectricalSteelJetpackArmored id="simplyjetpacks:itemjetpack" damage="7"/>
+					<itemConductiveIronJetpackArmored id="simplyjetpacks:itemjetpack" damage="6"/>
+					<itemReinforcedJetpackArmored id="simplyjetpacks:jetpacks" damage="103"/>
+					<itemElectricalSteelJetpackArmored id="simplyjetpacks:jetpackseio" damage="102"/>
+					<itemKineticJetpackArmored id="simplyjetpacks:jetpacksbc" damage="102"/>
+					<itemHardenedJetpackArmored id="simplyjetpacks:jetpacks" damage="102"/>
+					<itemConductiveIronJetpackArmored id="simplyjetpacks:jetpackseio" damage="101"/>
+					<itemLeadstoneJetpackArmored id="simplyjetpacks:jetpacks" damage="101"/>
+					<itemCombustionJetpackArmored id="simplyjetpacks:jetpacksbc" damage="101"/>
+				</armoredJetpacks>
+				<jetpacks>
+					<itemVibrantJetpack id="simplyjetpacks:itemjetpack" damage="5"/>
+					<itemEnergeticJetpack id="simplyjetpacks:itemjetpack" damage="4"/>
+					<itemElectricalSteelJetpack id="simplyjetpacks:itemjetpack" damage="3"/>
+					<itemConductiveIronJetpack id="simplyjetpacks:itemjetpack" damage="2"/>
+					<itemElectricalSteelJetpack id="simplyjetpacks:jetpackseio" damage="2"/>
+					<itemHardenedJetpack id="simplyjetpacks:jetpacks" damage="2"/>
+					<itemKineticJetpack id="simplyjetpacks:jetpacksbc" damage="2"/>
+					<itemConductiveIronJetpack id="simplyjetpacks:jetpackseio" damage="1"/>
+					<itemLeadstoneJetpack id="simplyjetpacks:jetpacks" damage="1"/>
+					<itemCombustionJetpack id="simplyjetpacks:jetpacksbc" damage="1"/>
+				</jetpacks>
+				<powerpack>
+					<itemCreativeFluxPack id="simplyjetpacks:fluxpackscommon" damage="9001"/>
+					<itemOctadicCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="104"/>
+					<itemResonantFluxPackArmored id="simplyjetpacks:fluxpacks" damage="104"/>
+					<itemQuadruple-LayerCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="103"/>
+					<itemRedstoneFluxPackArmored id="simplyjetpacks:fluxpacks" damage="103"/>
+					<itemDouble-LayerCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="102"/>
+					<itemHardenedFluxPackArmored id="simplyjetpacks:fluxpacks" damage="102"/>
+					<itemOctadicCapacitorPack id="simplyjetpacks:fluxpackseio" damage="4"/>
+					<itemResonantFluxPack id="simplyjetpacks:fluxpacks" damage="4"/>
+					<itemQuadruple-LayerCapacitorPack id="simplyjetpacks:fluxpackseio" damage="3"/>
+					<itemRedstoneFluxPack id="simplyjetpacks:fluxpacks" damage="3"/>
+					<itemDouble-LayerCapacitorPack id="simplyjetpacks:fluxpackseio" damage="2"/>
+					<itemHardenedFluxPack id="simplyjetpacks:fluxpacks" damage="2"/>
+					<itemBasicCapacitorPack id="simplyjetpacks:fluxpackseio" damage="1"/>
+					<itemLeadstoneFluxPack id="simplyjetpacks:fluxpacks" damage="1"/>
+				</powerpack>
+				<trappedJetpacks>
+					<itemTuberousJetpack id="simplyjetpacks:itemjetpack" damage="1"/>
+				</trappedJetpacks>
+			</chestplate>
+		</armor>
+	</equipment>
+</stuff>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<paxel mergeChildren="true">
+				<miningTool>
+					<diggingTool>
+						<choppingTool>
+							<farmingTool>
+								<itemInferiumPaxel id="mysticalagradditions:inferium_paxel"/>
+								<itemIntermediumPaxel id="mysticalagradditions:intermedium_paxel"/>
+								<itemPrudentiumPaxel id="mysticalagradditions:prudentium_paxel"/>
+								<itemSuperiumPaxel id="mysticalagradditions:superium_paxel"/>
+								<itemSupremiumPaxel id="mysticalagradditions:supremium_paxel"/>
+							</farmingTool>
+						</choppingTool>
+					</diggingTool>
+				</miningTool>
+			</paxel>
+		</tool>
+	</equipment>
+	<block>
+		<mechanism>
+			<basicCrafting>
+				<tinkerToolCrafting>
+					<itemTinkeringTable id="mysticalagradditions:tinkering_table"/>
+				</tinkerToolCrafting>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<coals>
+				<coalInsanium>
+					<itemInsaniumCoal id="mysticalagradditions:insanium" damage="5"/>
+				</coalInsanium>
+			</coals>
+		</miningResources>
+		<huntingResources>
+			<itemTier6MobChunk id="mysticalagradditions:insanium" damage="4"/>
+		</huntingResources>
+	</resources>
+	<item>
+		<plant>
+			<seed>
+				<itemTier6CraftingSeed id="mysticalagradditions:insanium" damage="1"/>
+				<itemInferiumSeeds id="mysticalagradditions:tier6_inferium_seeds"/>
+			</seed>
+			<seedlings>
+				<mysticalCrops>
+					<itemAwakenedDraconiumCrop id="mysticalagradditions:awakened_draconium_crop"/>
+					<itemDragonEggCrop id="mysticalagradditions:dragon_egg_crop"/>
+					<itemNetherStarCrop id="mysticalagradditions:nether_star_crop"/>
+					<itemTier6InferiumCrop id="mysticalagradditions:tier6_inferium_crop"/>
+				</mysticalCrops>
+			</seedlings>
+		</plant>
+		<magical>
+			<cropEssence>
+				<baseEssence>
+					<itemCreativeEssence id="mysticalagradditions:stuff" damage="69"/>
+				</baseEssence>
+			</cropEssence>
+		</magical>
+	</item>
+</stuff>

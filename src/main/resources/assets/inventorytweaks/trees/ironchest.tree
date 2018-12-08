@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<ironChests id="ironchest:iron_chest"/>
+				</chests>
+				<storageupgrades>
+					<itemIronChest_woodCopperUpgrade id="ironchest:woodcopperupgrade"/>
+					<itemWoodtoCopperChestUpgrade id="ironchest:wood_copper_chest_upgrade"/>
+					<itemIronChest_woodIronUpgrade id="ironchest:woodironupgrade"/>
+					<itemWoodtoIronChestUpgrade id="ironchest:wood_iron_chest_upgrade"/>
+					<itemIronChest_copperIronUpgrade id="ironchest:copperironupgrade"/>
+					<itemCoppertoIronChestUpgrade id="ironchest:copper_iron_chest_upgrade"/>
+					<itemIronChest_copperSilverUpgrade id="ironchest:coppersilverupgrade"/>
+					<itemCoppertoSilverChestUpgrade id="ironchest:copper_silver_chest_upgrade"/>
+					<itemIronChest_silverGoldUpgrade id="ironchest:silvergoldupgrade"/>
+					<itemSilvertoGoldChestUpgrade id="ironchest:silver_gold_chest_upgrade"/>
+					<itemIronChest_ironGoldUpgrade id="ironchest:irongoldupgrade"/>
+					<itemIrontoGoldChestUpgrade id="ironchest:iron_gold_chest_upgrade"/>
+					<itemIronChest_goldDiamondUpgrade id="ironchest:golddiamondupgrade"/>
+					<itemGoldtoDiamondChestUpgrade id="ironchest:gold_diamond_chest_upgrade"/>
+					<itemIronChest_diamondCrystalUpgrade id="ironchest:diamondcrystalupgrade"/>
+					<itemDiamondtoCrystalChestUpgrade id="ironchest:diamond_crystal_chest_upgrade"/>
+					<itemIronChest_diamondObsidianUpgrade id="ironchest:diamondobsidianupgrade"/>
+					<itemDiamondtoObsidianChestUpgrade id="ironchest:diamond_obsidian_chest_upgrade"/>
+					<IronChestShulkerUpgrades>
+						<itemVanillatoCopperShulkerBoxUpgrade id="ironchest:vanilla_copper_shulker_upgrade"/>
+						<itemVanillatoIronShulkerBoxUpgrade id="ironchest:vanilla_iron_shulker_upgrade"/>
+						<itemCoppertoIronShulkerBoxUpgrade id="ironchest:copper_iron_shulker_upgrade"/>
+						<itemCoppertoSilverShulkerBoxUpgrade id="ironchest:copper_silver_shulker_upgrade"/>
+						<itemSilvertoGoldShulkerBoxUpgrade id="ironchest:silver_gold_shulker_upgrade"/>
+						<itemIrontoGoldShulkerBoxUpgrade id="ironchest:iron_gold_shulker_upgrade"/>
+						<itemGoldtoDiamondShulkerBoxUpgrade id="ironchest:gold_diamond_shulker_upgrade"/>
+						<itemDiamondtoCrystalShulkerBoxUpgrade id="ironchest:diamond_crystal_shulker_upgrade"/>
+						<itemDiamondtoObsidianShulkerBoxUpgrade id="ironchest:diamond_obsidian_shulker_upgrade"/>
+						<itemBlackIronShulkerBox id="ironchest:iron_shulker_box_black"/>
+						<itemBlueIronShulkerBox id="ironchest:iron_shulker_box_blue"/>
+						<itemBrownIronShulkerBox id="ironchest:iron_shulker_box_brown"/>
+						<itemCyanIronShulkerBox id="ironchest:iron_shulker_box_cyan"/>
+						<itemGrayIronShulkerBox id="ironchest:iron_shulker_box_gray"/>
+						<itemGreenIronShulkerBox id="ironchest:iron_shulker_box_green"/>
+						<itemLightBlueIronShulkerBox id="ironchest:iron_shulker_box_light_blue"/>
+						<itemLimeIronShulkerBox id="ironchest:iron_shulker_box_lime"/>
+						<itemMagentaIronShulkerBox id="ironchest:iron_shulker_box_magenta"/>
+						<itemOrangeIronShulkerBox id="ironchest:iron_shulker_box_orange"/>
+						<itemPinkIronShulkerBox id="ironchest:iron_shulker_box_pink"/>
+						<itemPurpleIronShulkerBox id="ironchest:iron_shulker_box_purple"/>
+						<itemRedIronShulkerBox id="ironchest:iron_shulker_box_red"/>
+						<itemWhiteIronShulkerBox id="ironchest:iron_shulker_box_white"/>
+						<itemYellowIronShulkerBox id="ironchest:iron_shulker_box_yellow"/>
+						<itemSilverIronShulkerBox id="ironchest:iron_shulker_box_silver"/>
+					</IronChestShulkerUpgrades>
+				</storageupgrades>
+			</storage>
+		</utility>
+	</item>
+</stuff>

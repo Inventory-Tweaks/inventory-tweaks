@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<itemOreSmasher id="excompressum:ore_smasher"/>
+			</miningTool>
+			<farmingTool>
+				<otherFarmingTools>
+					<crook class="Item" data="{ToolClass : &quot;crook&quot;}" mergeChildren="true">
+						<itemCompressedCrook id="excompressum:compressed_crook"/>
+					</crook>
+				</otherFarmingTools>
+			</farmingTool>
+			<wands>
+				<itemBatZapper id="excompressum:bat_zapper"/>
+			</wands>
+			<crushingTools>
+				<itemChickenStick id="excompressum:chicken_stick"/>
+				<crushingHammers mergeChildren="true">
+					<itemCompressedDiamondHammer id="excompressum:compressed_hammer_diamond"/>
+					<itemCompressedGoldHammer id="excompressum:compressed_hammer_gold"/>
+					<itemCompressedIronHammer id="excompressum:compressed_hammer_iron"/>
+					<itemCompressedStoneHammer id="excompressum:compressed_hammer_stone"/>
+					<itemCompressedWoodenHammer id="excompressum:compressed_hammer_wood"/>
+					<itemDoubleCompressedDiamondHammer id="excompressum:double_compressed_diamond_hammer"/>
+					<itemManaHammer id="excompressum:hammer_mana"/>
+				</crushingHammers>
+			</crushingTools>
+		</tool>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<stones>
+				<cobblestone>
+					<compressedCobblestone1xDict oreDictName="compressedCobblestone1x">
+						<itemCompressedCobblestone id="excompressum:compressed_block" damage="1"/>
+					</compressedCobblestone1xDict>
+				</cobblestone>
+				<endStone>
+					<itemCompressedEndStone id="excompressum:compressed_block" damage="10"/>
+					<itemCompressedEnderGravel id="excompressum:compressed_block" damage="7"/>
+				</endStone>
+			</stones>
+			<dirts>
+				<compressedDirt1xDict oreDictName="compressedDirt1x">
+					<itemCompressedDirt id="excompressum:compressed_block" damage="4"/>
+				</compressedDirt1xDict>
+			</dirts>
+			<dustBlock>
+				<itemCompressedDust id="excompressum:compressed_block" damage="0"/>
+			</dustBlock>
+			<sands>
+				<sand id="sand">
+					<compressedSand1xDict oreDictName="compressedSand1x">
+						<itemCompressedSand id="excompressum:compressed_block" damage="3"/>
+					</compressedSand1xDict>
+				</sand>
+			</sands>
+			<gravel>
+				<compressedGravel1xDict oreDictName="compressedGravel1x">
+					<itemCompressedGravel id="excompressum:compressed_block" damage="2"/>
+				</compressedGravel1xDict>
+			</gravel>
+			<netherBlock>
+				<netherrack>
+					<compressedNetherrack>
+						<itemCompressedNetherrack id="excompressum:compressed_block" damage="9"/>
+					</compressedNetherrack>
+					<itemCompressedNetherGravel id="excompressum:compressed_block" damage="6"/>
+				</netherrack>
+				<soulSand>
+					<itemCompressedSoulSand id="excompressum:compressed_block" damage="8"/>
+				</soulSand>
+			</netherBlock>
+		</naturalBlock>
+		<manufacturedBlock>
+			<itemBlock>
+				<itemHeavyOakSieve id="excompressum:heavy_sieve"/>
+				<itemOakCrucible id="excompressum:wooden_crucible"/>
+			</itemBlock>
+			<itemFilter>
+				<itemIronMesh id="excompressum:iron_mesh"/>
+			</itemFilter>
+		</manufacturedBlock>
+		<mechanism>
+			<machines>
+				<randomMachines>
+					<itemAutoSieve id="excompressum:auto_sieve"/>
+					<itemAutoHeavySieve id="excompressum:auto_heavy_sieve"/>
+					<itemAutoHammer id="excompressum:auto_hammer"/>
+					<itemAutoCompressedHammer id="excompressum:auto_compressed_hammer"/>
+					<itemAutoCompressor id="excompressum:auto_compressor"/>
+					<itemAutoCompressorRationing id="excompressum:auto_compressor_rationing"/>
+				</randomMachines>
+			</machines>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<tinyDust>
+				<itemUncompressedCoal id="excompressum:uncompressed_coal"/>
+			</tinyDust>
+			<oreBlock>
+				<itemCompressedFlint id="excompressum:compressed_block" damage="5"/>
+			</oreBlock>
+		</miningResources>
+	</resources>
+	<item>
+		<parts>
+			<mechanicalParts>
+				<plates>
+					<itemUglySteelPlating id="excompressum:ugly_steel_plating"/>
+				</plates>
+			</mechanicalParts>
+		</parts>
+		<food>
+			<hunting>
+				<bait>
+					<itemWolfBait id="excompressum:bait"/>
+				</bait>
+			</hunting>
+		</food>
+		<magical>
+			<botania>
+				<botaniaMisc>
+					<itemManaSieve id="excompressum:mana_sieve"/>
+				</botaniaMisc>
+			</botania>
+		</magical>
+	</item>
+</stuff>

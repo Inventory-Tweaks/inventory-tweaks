@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<fluidMovers>
+				<itemFluiVac id="thermalexpansion:pump"/>
+			</fluidMovers>
+			<energyMovers>
+				<itemFluxTransfuser id="thermalexpansion:transfuser"/>
+			</energyMovers>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemthermalexpansion_tool.battleWrenchInvar id="thermalexpansion:tool.battlewrenchinvar"/>
+				<itemCrescentHammer id="thermalexpansion:wrench"/>
+			</wrench>
+			<multimeters>
+				<itemMultimeter id="thermalexpansion:meter" damage="0"/>
+			</multimeters>
+			<debugTools>
+				<itemDebugger id="thermalexpansion:meter" damage="1"/>
+			</debugTools>
+			<thermalTools>
+				<itemFluxChiller id="thermalexpansion:chiller"/>
+				<itemFluxIgniter id="thermalexpansion:igniter"/>
+			</thermalTools>
+		</tool>
+	</equipment>
+	<block>
+		<mechanism>
+			<lighting>
+				<decorativeLights>
+					<itemGlowstoneIlluminator id="thermalexpansion:light"/>
+					<itemLumiumLamp id="thermalexpansion:light"/>
+					<itemRadiantLumiumLamp id="thermalexpansion:light"/>
+				</decorativeLights>
+			</lighting>
+			<pressurePlates>
+				<itemRedstonePlate id="thermalexpansion:plate" damage="1"/>
+			</pressurePlates>
+			<resourceTransfer>
+				<groundItemCollector>
+					<itemVacuumulatorBasic id="thermalexpansion:device" damage="12"/>
+					<itemInsightfulCondenserBasic id="thermalexpansion:device" damage="8"/>
+					<itemItemAllocatorBasic id="thermalexpansion:device" damage="5"/>
+					<itemFluidAllocatorBasic id="thermalexpansion:device" damage="6"/>
+				</groundItemCollector>
+				<conveyerBelts>
+					<itemImpulsePlate id="thermalexpansion:plate" damage="2"/>
+				</conveyerBelts>
+				<fans>
+					<itemExcursionPlate id="thermalexpansion:plate" damage="5"/>
+				</fans>
+				<transDimensionalTransfer>
+					<itemTesseract id="thermalexpansion:tesseract"/>
+					<itemTesseractFrameEmpty id="thermalexpansion:frame" damage="10"/>
+					<itemTesseractFrameFull id="thermalexpansion:frame" damage="11"/>
+				</transDimensionalTransfer>
+			</resourceTransfer>
+			<basicCrafting>
+				<craftingTables>
+					<itemMachinistsWorkbench id="thermalexpansion:workbench"/>
+				</craftingTables>
+			</basicCrafting>
+			<generators>
+				<fuelGenerators>
+					<itemthermalexpansion_CompressionGenerator id="thermalexpansion:dynamo" damage="2"/>
+				</fuelGenerators>
+				<lavaGenerators>
+					<itemthermalexpansion_MagmaticDynamo_1 id="thermalexpansion:dynamo" damage="1"/>
+				</lavaGenerators>
+				<chemicalGenerators>
+					<itemthermalexpansion_EnervationDynamo_4 id="thermalexpansion:dynamo" damage="4"/>
+					<itemthermalexpansion_ReactantDynamo_3 id="thermalexpansion:dynamo" damage="3"/>
+				</chemicalGenerators>
+				<moneyGenerators>
+					<itemNumismaticDynamoBasic id="thermalexpansion:dynamo" damage="5"/>
+				</moneyGenerators>
+				<steamGenerators>
+					<itemthermalexpansion_SteamDynamo_0 id="thermalexpansion:dynamo" damage="0"/>
+				</steamGenerators>
+			</generators>
+			<machines>
+				<poweredCrafting>
+					<itemSequentialFabricatorBasic id="thermalexpansion:machine" damage="11"/>
+					<itemFactorizerBasic id="thermalexpansion:device" damage="10"/>
+					<itemCompactorBasic id="thermalexpansion:machine" damage="5"/>
+				</poweredCrafting>
+				<poweredFurnaces>
+					<itemInductionSmelterResonant id="thermalexpansion:machine" damage="3"/>
+					<itemRedstoneFurnaceResonant id="thermalexpansion:machine" damage="0"/>
+				</poweredFurnaces>
+				<poweredGrinders>
+					<itemPulverizerResonant id="thermalexpansion:machine" damage="1"/>
+					<itemSawmillResonant id="thermalexpansion:machine" damage="2"/>
+				</poweredGrinders>
+				<poweredFarming>
+					<itemArborealExtractorBasic id="thermalexpansion:device" damage="3"/>
+					<itemPhytogenicInsolatorBasic id="thermalexpansion:machine" damage="4"/>
+				</poweredFarming>
+				<poweredFishing>
+					<itemAquaticEntanglerBasic id="thermalexpansion:device" damage="4"/>
+				</poweredFishing>
+				<mobKillers>
+					<itemCreatureEncaptulatorBasic id="thermalexpansion:device" damage="11"/>
+				</mobKillers>
+				<poweredEnchantment>
+					<itemArcaneEnsorcellatorBasic id="thermalexpansion:machine" damage="13"/>
+				</poweredEnchantment>
+				<poweredBrewing>
+					<itemAlchemicalImbuerBasic id="thermalexpansion:machine" damage="12"/>
+				</poweredBrewing>
+				<dictionaryBlock>
+					<itemLexicalTransmuterBasic id="thermalexpansion:device" damage="7"/>
+				</dictionaryBlock>
+				<cobbleCreators>
+					<itemIgneousExtruderBasic id="thermalexpansion:machine" damage="15"/>
+					<itemAqueousAccumulatorBasic id="thermalexpansion:device" damage="0"/>
+					<itemGlacialPrecipitatorBasic id="thermalexpansion:machine" damage="14"/>
+				</cobbleCreators>
+				<poweredMining>
+					<itemGlacialPrecipitatorBasic id="thermalexpansion:machine" damage="14"/>
+					<itemIgneousExtruderBasic id="thermalexpansion:machine" damage="15"/>
+				</poweredMining>
+				<poweredFluids>
+					<itemAqueousAccumulatorBasic id="thermalexpansion:device" damage="0"/>
+					<itemFluidTransposerBasic id="thermalexpansion:machine" damage="8"/>
+					<itemMagmaCrucibleBasic id="thermalexpansion:machine" damage="6"/>
+					<itemFractionatingStillBasic id="thermalexpansion:machine" damage="7"/>
+					<itemThermalMediatorBasic id="thermalexpansion:device" damage="2"/>
+				</poweredFluids>
+				<poweredDroppers>
+					<itemDecoctiveDiffuserBasic id="thermalexpansion:device" damage="9"/>
+				</poweredDroppers>
+				<randomMachines>
+					<itemCentrifugalSeparatorBasic id="thermalexpansion:machine" damage="10"/>
+				</randomMachines>
+				<remoteAccess>
+					<itemTeleportPlate id="thermalexpansion:plate" damage="6"/>
+					<itemTranslocationPlate id="thermalexpansion:plate" damage="3"/>
+				</remoteAccess>
+			</machines>
+			<machineupgrades>
+				<augments>
+					<itemAugment id="thermalexpansion:augment"/>
+				</augments>
+			</machineupgrades>
+		</mechanism>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<strongBox id="thermalexpansion:strongbox"/>
+					<itemthermalexpansion_Strongbox id="thermalexpansion:strongbox"/>
+				</chests>
+				<barrels>
+					<itemthermalexpansion_Cache id="thermalexpansion:cache"/>
+				</barrels>
+				<portableStorage>
+					<itemSatchel id="thermalexpansion:satchel"/>
+				</portableStorage>
+				<voidStorage>
+					<itemNullifierBasic id="thermalexpansion:device" damage="1"/>
+				</voidStorage>
+				<powerStorage id="enderio:blockcapacitorbank">
+					<itemCreativeEnergyCell id="thermalexpansion:cell"/>
+					<itemCreativeFluxCapacitor id="thermalexpansion:capacitor"/>
+					<itemEnergeticInfuserBasic id="thermalexpansion:machine" damage="9"/>
+					<itemChargePlate id="thermalexpansion:plate" damage="4"/>
+				</powerStorage>
+			</storage>
+			<mobHolder>
+				<itemMorbEmpty id="thermalexpansion:morb"/>
+			</mobHolder>
+		</utility>
+		<fluidStorage>
+			<itemFlorbEmpty id="thermalexpansion:florb" damage="0"/>
+			<itemMagmaticFlorbEmpty id="thermalexpansion:florb" damage="1"/>
+			<itemCreativePortableTank id="thermalexpansion:tank" damage="0"/>
+			<itemPortableTank id="thermalexpansion:tank" damage="1"/>
+			<itemHardenedPortableTank id="thermalexpansion:tank" damage="2"/>
+			<itemReinforcedPortableTank id="thermalexpansion:tank" damage="3"/>
+			<itemResonantPortableTank id="thermalexpansion:tank" damage="4"/>
+			<itemReservoirBasic id="thermalexpansion:reservoir"/>
+		</fluidStorage>
+		<patterns>
+			<itemSchematic id="thermalexpansion:diagram"/>
+		</patterns>
+		<parts>
+			<mechanicalParts>
+				<frames>
+					<itemthermalexpansion_Frame id="thermalexpansion:frame"/>
+					<itemPlateFrame id="thermalexpansion:plate" damage="0"/>
+				</frames>
+			</mechanicalParts>
+		</parts>
+	</item>
+</stuff>

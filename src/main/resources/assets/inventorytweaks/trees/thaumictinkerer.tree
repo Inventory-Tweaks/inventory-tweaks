@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage10>
+							<itemCursedSpiritsBlade id="thaumictinkerer:bloodsword"/>
+						</swordDamage10>
+						<swordDamage9>
+							<itemAwakenedIchoriumSword id="thaumictinkerer:ichorswordgem"/>
+							<itemIchoriumSword id="thaumictinkerer:ichorsword"/>
+						</swordDamage9>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<miningTool>
+				<hammer mergeChildren="true">
+					<itemAwakenedIchoriumPickaxe id="thaumictinkerer:ichorpickgem"/>
+				</hammer>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemIchoriumPickaxe id="thaumictinkerer:ichorpick"/>
+					</CobaltPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemAwakenedIchoriumShovel id="thaumictinkerer:ichorshovelgem"/>
+					<itemIchoriumShovel id="thaumictinkerer:ichorshovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemAwakenedIchoriumAxe id="thaumictinkerer:ichoraxegem"/>
+					<itemIchoriumAxe id="thaumictinkerer:ichoraxe"/>
+				</axe>
+			</choppingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet3>
+					<itemCowloftheAbyssalDepths id="thaumictinkerer:ichorclothhelmgem"/>
+					<itemIchorclothCowl id="thaumictinkerer:ichorclothhelm"/>
+				</helmet3>
+				<helmet2>
+					<itemHelmetofRevealing id="thaumictinkerer:revealinghelm"/>
+				</helmet2>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate6>
+						<itemRobesoftheStratosphere id="thaumictinkerer:ichorclothchestgem"/>
+						<itemIchorclothRobe id="thaumictinkerer:ichorclothchest"/>
+					</chestplate6>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings8>
+					<itemLeggingsoftheBurningMantle id="thaumictinkerer:ichorclothlegsgem"/>
+					<itemIchorclothLeggings id="thaumictinkerer:ichorclothlegs"/>
+				</leggings8>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots3>
+					<itemBootsoftheHorizontalShield id="thaumictinkerer:ichorclothbootsgem"/>
+					<itemIchorclothBoots id="thaumictinkerer:ichorclothboots"/>
+				</boots3>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemSmokeyQuartzStairs id="thaumictinkerer:darkquartzstairs" damage="0"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<utility>
+			<readableBooks>
+				<itemTomeofKnowledgeSharing id="thaumictinkerer:sharebook"/>
+			</readableBooks>
+		</utility>
+		<plant>
+			<seed>
+				<itemThaumicTinkerer_infusedSeeds id="thaumictinkerer:infusedseeds"/>
+			</seed>
+		</plant>
+		<magical>
+			<thaumurgy>
+				<shards>
+					<itemNetherShard id="thaumictinkerer:kamiresource" damage="6"/>
+					<itemEnderShard id="thaumictinkerer:kamiresource" damage="7"/>
+				</shards>
+				<wandFocuses>
+					<itemBottomlessPouch id="thaumictinkerer:ichorpouch"/>
+					<itemWandFocus_CelestialRecall id="thaumictinkerer:focusrecall"/>
+					<itemWandFocus_Dislocation id="thaumictinkerer:focusdislocation"/>
+					<itemWandFocus_Distortion id="thaumictinkerer:focusdeflect"/>
+					<itemWandFocus_EfreetsFlame id="thaumictinkerer:focussmelt"/>
+					<itemWandFocus_EnderRift id="thaumictinkerer:focusenderchest"/>
+					<itemWandFocus_ExperienceDrain id="thaumictinkerer:focusxpdrain"/>
+					<itemWandFocus_Mending id="thaumictinkerer:focusheal"/>
+					<itemWandFocus_Shadowbeam id="thaumictinkerer:focusshadowbeam"/>
+					<itemWandFocus_Telekinesis id="thaumictinkerer:focustelekinesis"/>
+					<itemWandFocus_Uprising id="thaumictinkerer:focusflight"/>
+				</wandFocuses>
+				<wandCaps>
+					<itemIchoriumCap id="thaumictinkerer:kamiresource" damage="4"/>
+				</wandCaps>
+				<wandCore>
+					<itemIchorclothStrappedSilverwoodWandCore id="thaumictinkerer:kamiresource" damage="5"/>
+				</wandCore>
+			</thaumurgy>
+		</magical>
+	</item>
+</stuff>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<munition>
+				<thrownMunitions>
+					<itemArcaneLaserStormCharge id="mountainmobs:arcanelaserstormcharge"/>
+					<itemBoulderBlastCharge id="mountainmobs:boulderblastcharge"/>
+				</thrownMunitions>
+				<scepters>
+					<itemArcaneLaserStormScepter id="mountainmobs:arcanelaserstormscepter"/>
+					<itemBoulderBlastScepter id="mountainmobs:boulderblastscepter"/>
+				</scepters>
+			</munition>
+		</weapon>
+	</equipment>
+	<item>
+		<utility>
+			<spawnerEggs>
+				<itemSpawnBarghest id="mountainmobs:mountainegg" damage="5"/>
+				<itemSpawnBeholder id="mountainmobs:mountainegg" damage="4"/>
+				<itemSpawnGeonach id="mountainmobs:mountainegg" damage="3"/>
+				<itemSpawnJabberwock id="mountainmobs:mountainegg" damage="0"/>
+				<itemSpawnTroll id="mountainmobs:mountainegg" damage="1"/>
+				<itemSpawnYale id="mountainmobs:mountainegg" damage="2"/>
+			</spawnerEggs>
+		</utility>
+		<food>
+			<edibleFood>
+				<cookedFood>
+					<itemmountainmobs_yalemeatcooked id="mountainmobs:yalemeatcooked"/>
+				</cookedFood>
+				<rawFood>
+					<rawMeat>
+						<itemmountainmobs_yalemeatraw id="mountainmobs:yalemeatraw"/>
+					</rawMeat>
+				</rawFood>
+			</edibleFood>
+			<hunting>
+				<taming>
+					<itemBarghestTreat id="mountainmobs:barghesttreat"/>
+				</taming>
+			</hunting>
+		</food>
+	</item>
+</stuff>

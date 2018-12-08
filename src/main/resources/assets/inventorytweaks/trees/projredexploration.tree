@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage7>
+							<itemRubySword id="projred|exploration:projectred.exploration.swordruby"/>
+							<itemSapphireSword id="projred|exploration:projectred.exploration.swordsapphire"/>
+						</swordDamage7>
+						<swordDamage6>
+							<itemPeridotSword id="projred|exploration:projectred.exploration.swordperidot"/>
+						</swordDamage6>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<DiamondPickLevel>
+						<itemPeridotPickaxe id="projred|exploration:projectred.exploration.pickaxeperidot"/>
+						<itemRubyPickaxe id="projred|exploration:projectred.exploration.pickaxeruby"/>
+						<itemSapphirePickaxe id="projred|exploration:projectred.exploration.pickaxesapphire"/>
+					</DiamondPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemPeridotShovel id="projred|exploration:projectred.exploration.shovelperidot"/>
+					<itemRubyShovel id="projred|exploration:projectred.exploration.shovelruby"/>
+					<itemSapphireShovel id="projred|exploration:projectred.exploration.shovelsapphire"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemPeridotAxe id="projred|exploration:projectred.exploration.axeperidot"/>
+					<itemRubyAxe id="projred|exploration:projectred.exploration.axeruby"/>
+					<itemSapphireAxe id="projred|exploration:projectred.exploration.axesapphire"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true">
+					<itemDiamondSickle id="projred|exploration:projectred.exploration.sicklediamond"/>
+					<itemPeridotSickle id="projred|exploration:projectred.exploration.sickleperidot"/>
+					<itemRubySickle id="projred|exploration:projectred.exploration.sickleruby"/>
+					<itemSapphireSickle id="projred|exploration:projectred.exploration.sicklesapphire"/>
+					<itemIronSickle id="projred|exploration:projectred.exploration.sickleiron"/>
+					<itemStoneSickle id="projred|exploration:projectred.exploration.sicklestone"/>
+					<itemGoldenSickle id="projred|exploration:projectred.exploration.sicklegold"/>
+					<itemWoodenSickle id="projred|exploration:projectred.exploration.sicklewood"/>
+				</sickle>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemPeridotHoe id="projred|exploration:projectred.exploration.hoeperidot"/>
+					<itemRubyHoe id="projred|exploration:projectred.exploration.hoeruby"/>
+					<itemSapphireHoe id="projred|exploration:projectred.exploration.hoesapphire"/>
+				</hoe>
+			</farmingTool>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
+				<itemGoldenSaw id="projred|exploration:projectred.exploration.sawgold"/>
+				<itemPeridotSaw id="projred|exploration:projectred.exploration.sawperidot"/>
+				<itemRubySaw id="projred|exploration:projectred.exploration.sawruby"/>
+				<itemSapphireSaw id="projred|exploration:projectred.exploration.sawsapphire"/>
+			</saws>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet3>
+					<itemPeridotHelmet id="projred|exploration:projectred.exploration.peridothelmet"/>
+					<itemRubyHelmet id="projred|exploration:projectred.exploration.rubyhelmet"/>
+					<itemSapphireHelmet id="projred|exploration:projectred.exploration.sapphirehelmet"/>
+				</helmet3>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate8>
+						<itemPeridotChestplate id="projred|exploration:projectred.exploration.peridotchestplate"/>
+						<itemRubyChestplate id="projred|exploration:projectred.exploration.rubychestplate"/>
+						<itemSapphireChestplate id="projred|exploration:projectred.exploration.sapphirechestplate"/>
+					</chestplate8>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings6>
+					<itemPeridotLeggings id="projred|exploration:projectred.exploration.peridotleggings"/>
+					<itemRubyLeggings id="projred|exploration:projectred.exploration.rubyleggings"/>
+					<itemSapphireLeggings id="projred|exploration:projectred.exploration.sapphireleggings"/>
+				</leggings6>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots3>
+					<itemRubyBoots id="projred|exploration:projectred.exploration.rubyboots"/>
+					<itemSapphireBoots id="projred|exploration:projectred.exploration.sapphireboots"/>
+					<itemPeridotBoots id="projred|exploration:projectred.exploration.peridotboots"/>
+				</boots3>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<stoneWall>
+				<itemProjectRedWall id="projred|exploration:projectred.exploration.stonewalls"/>
+			</stoneWall>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<barrels>
+					<itemProjRed_Exploration_projectred_exploration_barrel id="projred|exploration:projectred.exploration.barrel"/>
+				</barrels>
+				<portableStorage>
+					<itemPRBackpack id="projred|exploration:projectred.exploration.backpack"/>
+				</portableStorage>
+			</storage>
+		</utility>
+	</item>
+</stuff>

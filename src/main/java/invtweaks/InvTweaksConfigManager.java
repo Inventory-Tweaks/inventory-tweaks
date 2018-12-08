@@ -3,6 +3,8 @@ package invtweaks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.client.resources.IResource;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
@@ -11,6 +13,16 @@ import org.jetbrains.annotations.Nullable;
 import invtweaks.integration.ItemListSorter;
 
 import java.io.*;
+import java.net.URI;
+import java.net.URL;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -42,7 +54,19 @@ public class InvTweaksConfigManager {
     }
 
     private static long computeConfigLastModified() {
-        return InvTweaksConst.CONFIG_RULES_FILE.lastModified() + InvTweaksConst.CONFIG_TREE_FILE.lastModified();
+        long sum = Long.MIN_VALUE;
+        if (InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists())
+        {
+            File[] treeFiles = InvTweaksConst.INVTWEAKS_CONFIG_DIR.listFiles();
+            
+            for(File tree: treeFiles) {
+                //Make sure it is the type of file we want.
+                if (tree.getName().endsWith(".tree")) {
+                    sum += tree.lastModified();
+                }
+            }
+        }
+        return sum + InvTweaksConst.CONFIG_RULES_FILE.lastModified() + InvTweaksConst.CONFIG_TREE_FILE.lastModified();
     }
 
     private static void backupFile(@NotNull File file) {
@@ -119,7 +143,7 @@ public class InvTweaksConfigManager {
         if(!configDir.exists()) {
             configDir.mkdir();
         }
-
+       
         // Compatibility: Tree version check
         try {
             if(!(InvTweaksItemTreeLoader.isValidVersion(InvTweaksConst.CONFIG_TREE_FILE))) {
@@ -154,6 +178,26 @@ public class InvTweaksConfigManager {
             InvTweaks.logInGameStatic(InvTweaksConst.CONFIG_TREE_FILE + " " +
                     I18n.format("invtweaks.loadconfig.filemissing"));
         }
+        
+        if (InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists()) {
+            try {
+                //mc.getResourceManager().getAllResources(location)
+                List<ResourceLocation> treeFiles = getResourceNames("trees");
+                for(ResourceLocation srcTreeFile: treeFiles) {
+                    //log.info(srcTreeFile.getResourcePath());
+                    String fileName = srcTreeFile.getResourcePath().substring(6);
+                    File realTreeFile = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, fileName);
+                    //log.info(realTreeFile.getAbsolutePath());
+                    if (!realTreeFile.exists()) {
+                        extractFile(srcTreeFile, realTreeFile);
+                    }
+                }
+            } catch (Exception e) {
+                log.error("Error extracting merge tree files: " + e);
+            }
+
+            InvTweaksItemTreeBuilder.buildNewTree();
+        }
 
         storedConfigLastModified = computeConfigLastModified();
 
@@ -166,7 +210,11 @@ public class InvTweaksConfigManager {
 
             // Configuration creation
             if(config == null) {
-                config = new InvTweaksConfig(InvTweaksConst.CONFIG_RULES_FILE, InvTweaksConst.CONFIG_TREE_FILE);
+                if (InvTweaksConst.MERGED_TREE_FILE.exists()) {
+                    config = new InvTweaksConfig(InvTweaksConst.CONFIG_RULES_FILE, InvTweaksConst.MERGED_TREE_FILE);
+                } else {
+                    config = new InvTweaksConfig(InvTweaksConst.CONFIG_RULES_FILE, InvTweaksConst.CONFIG_TREE_FILE);
+                }
                 autoRefillHandler = new InvTweaksHandlerAutoRefill(mc, config);
                 shortcutsHandler = new InvTweaksHandlerShortcuts(mc, config);
             }
@@ -232,6 +280,11 @@ public class InvTweaksConfigManager {
     
     public void ExtractModdedTreeFile()
     {
+        //Create the tree file directory, this enables the merging system.
+        if (!InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists()) {
+            InvTweaksConst.INVTWEAKS_CONFIG_DIR.mkdir();
+        }
+        //This file change will trigger the loader to execute.
         extractFile(InvTweaksConst.MODDED_CONFIG_TREE_FILE, InvTweaksConst.CONFIG_TREE_FILE);
     }
 
@@ -250,6 +303,45 @@ public class InvTweaksConfigManager {
             log.error("Cannot extract " + resource + " file: " + e.getMessage());
             return false;
         }
+    }
+    
+    private List<ResourceLocation> getResourceNames(String inPath) {
+        ArrayList<ResourceLocation> fileList = new ArrayList<>();
+        String workingPath = "/assets/" + InvTweaksConst.INVTWEAKS_RESOURCE_DOMAIN + "/" + inPath;
+        FileSystem filesystem = null;
+        URL url = InvTweaks.class.getResource(workingPath);
+        try
+        {
+            if (url != null)
+            {
+                URI uri = url.toURI();
+                Path path = null;
+
+                if ("file".equals(uri.getScheme()))
+                {
+                    path = Paths.get(InvTweaks.class.getResource(workingPath).toURI());
+                }
+                else
+                {
+                    filesystem = FileSystems.newFileSystem(uri, Collections.emptyMap());
+                    path = filesystem.getPath(workingPath);
+                }
+                
+                Iterator<Path> it = Files.walk(path).iterator();
+                
+                while(it.hasNext()) {
+                    Path instance = it.next();
+                    if (instance.toFile().isFile())
+                        fileList.add(new ResourceLocation(InvTweaksConst.INVTWEAKS_RESOURCE_DOMAIN, inPath + "/" + instance.getFileName()));
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            log.error(e);
+        }
+        
+        return fileList;
     }
 
 }

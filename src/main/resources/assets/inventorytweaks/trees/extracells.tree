@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<item>
+		<utility>
+			<storage>
+				<digitalstorage>
+					<terminals>
+						<itemMEFluidTerminal id="extracells:part.base" damage="3"/>
+						<itemMEGasTerminal id="extracells:part.base" damage="15"/>
+						<itemMEFluidConversionMonitor id="extracells:part.base" damage="11"/>
+						<itemMEGasConversionMonitor id="extracells:part.base" damage="19"/>
+						<itemMEFluidStorageMonitor id="extracells:part.base" damage="10"/>
+						<itemMEGasStorageMonitor id="extracells:part.base" damage="18"/>
+					</terminals>
+					<interfaces>
+						<itemMEDriveFixture id="extracells:part.base" damage="7"/>
+						<itemBlastresistantMEDrive id="extracells:hardmedrive" damage="0"/>
+						<itemMEOreDictionaryExportBus id="extracells:part.base" damage="12"/>
+						<itemMEFluidInterface id="extracells:ecbaseblock" damage="0"/>
+						<itemMEFluidInterface id="extracells:part.base" damage="9"/>
+						<itemMEFluidImportBus id="extracells:part.base" damage="1"/>
+						<itemMEFluidExportBus id="extracells:part.base" damage="0"/>
+						<itemMEFluidStorageBus id="extracells:part.base" damage="2"/>
+						<itemMEFluidAnnihilationPlane id="extracells:part.base" damage="5"/>
+						<itemMEFluidFormationPlane id="extracells:part.base" damage="6"/>
+						<itemMEFluidAutoFiller id="extracells:ecbaseblock" damage="1"/>
+						<itemMEFluidLevelEmitter id="extracells:part.base" damage="4"/>
+						<itemMEGasImportBus id="extracells:part.base" damage="13"/>
+						<itemMEGasExportBus id="extracells:part.base" damage="14"/>
+						<itemMEGasStorageBus id="extracells:part.base" damage="16"/>
+						<itemMEGasLevelEmitter id="extracells:part.base" damage="17"/>
+					</interfaces>
+					<parts>
+						<itemAdvancedStorageHousing id="extracells:storage.casing" damage="0"/>
+						<itemFluidStorageHousing id="extracells:storage.casing" damage="1"/>
+						<itemGasStorageHousing id="extracells:storage.casing" damage="2"/>
+						<item256kMEStorageComponent id="extracells:storage.component" damage="0"/>
+						<item1024kMEStorageComponent id="extracells:storage.component" damage="1"/>
+						<item4096kMEStorageComponent id="extracells:storage.component" damage="2"/>
+						<item16384kMEStorageComponent id="extracells:storage.component" damage="3"/>
+						<item1kMEFluidStorageComponent id="extracells:storage.component" damage="4"/>
+						<item4kMEFluidStorageComponent id="extracells:storage.component" damage="5"/>
+						<item16kMEFluidStorageComponent id="extracells:storage.component" damage="6"/>
+						<item64kMEFluidStorageComponent id="extracells:storage.component" damage="7"/>
+						<item256kMEFluidStorageComponent id="extracells:storage.component" damage="8"/>
+						<item1024kMEFluidStorageComponent id="extracells:storage.component" damage="9"/>
+						<item4096kMEFluidStorageComponent id="extracells:storage.component" damage="10"/>
+						<item1kMEGasStorageComponent id="extracells:storage.component" damage="11"/>
+						<item4kMEGasStorageComponent id="extracells:storage.component" damage="12"/>
+						<item16kMEGasStorageComponent id="extracells:storage.component" damage="13"/>
+						<item64kMEGasStorageComponent id="extracells:storage.component" damage="14"/>
+						<item256kMEGasStorageComponent id="extracells:storage.component" damage="15"/>
+						<item1024kMEGasStorageComponent id="extracells:storage.component" damage="16"/>
+						<item4096kMEGasStorageComponent id="extracells:storage.component" damage="17"/>
+					</parts>
+					<storagecells>
+						<itemME256kStorage id="extracells:storage.physical" damage="0"/>
+						<itemME1024kStorage id="extracells:storage.physical" damage="1"/>
+						<itemME4096kStorage id="extracells:storage.physical" damage="2"/>
+						<itemME16384kStorage id="extracells:storage.physical" damage="3"/>
+						<itemMEBlockContainer-Empty id="extracells:storage.physical" damage="4"/>
+						<itemME1kFluidStorage id="extracells:storage.fluid" damage="0"/>
+						<itemME4kFluidStorage id="extracells:storage.fluid" damage="1"/>
+						<itemME16kFluidStorage id="extracells:storage.fluid" damage="2"/>
+						<itemME64kFluidStorage id="extracells:storage.fluid" damage="3"/>
+						<itemME256kFluidStorage id="extracells:storage.fluid" damage="4"/>
+						<itemME1024kFluidStorage id="extracells:storage.fluid" damage="5"/>
+						<itemME4096kFluidStorage id="extracells:storage.fluid" damage="6"/>
+						<itemME1kGasStorage id="extracells:storage.gas" damage="0"/>
+						<itemME4kGasStorage id="extracells:storage.gas" damage="1"/>
+						<itemME16kGasStorage id="extracells:storage.gas" damage="2"/>
+						<itemME64kGasStorage id="extracells:storage.gas" damage="3"/>
+						<itemME256kGasStorage id="extracells:storage.gas" damage="4"/>
+						<itemME1024kGasStorage id="extracells:storage.gas" damage="5"/>
+						<itemME4096kGasStorage id="extracells:storage.gas" damage="6"/>
+					</storagecells>
+					<machines>
+						<itemFluidVibrationChamber id="extracells:vibrantchamberfluid"/>
+						<itemMEFluidAssembler id="extracells:fluidcrafter"/>
+						<itemMEEnergyCellFixture id="extracells:part.base" damage="8"/>
+					</machines>
+				</digitalstorage>
+				<portableStorage>
+					<itemWirelessUniversalTerminal id="extracells:terminal.universal.wireless" damage="0"/>
+					<itemWirelessFluidTerminal id="extracells:terminal.fluid.wireless" damage="0"/>
+					<itemWirelessGasTerminal id="extracells:terminal.gas.wireless" damage="0"/>
+					<itemMEPortableFluidStorage id="extracells:storage.fluid.portable" damage="0"/>
+					<itemMEPortableGasStorage id="extracells:storage.gas.portable" damage="0"/>
+				</portableStorage>
+			</storage>
+		</utility>
+	</item>
+</stuff>

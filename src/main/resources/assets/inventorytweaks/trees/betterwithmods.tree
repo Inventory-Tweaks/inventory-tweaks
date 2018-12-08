@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemRefinedPickaxe id="betterwithmods:steel_pickaxe"/>
+					</CobaltPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemRefinedShovel id="betterwithmods:steel_shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemRefinedAxe id="betterwithmods:steel_axe"/>
+					<itemRefinedBattleaxe id="betterwithmods:steel_battleaxe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemRefinedHoe id="betterwithmods:steel_hoe"/>
+				</hoe>
+			</farmingTool>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
+				<itemRefinedHacksaw id="betterwithmods:steel_hacksaw"/>
+			</saws>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemPlateArmorHelmet id="betterwithmods:steel_helmet"/>
+					<itemTannedLeatherCap id="betterwithmods:leather_tanned_helmet"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemPlateArmorChest id="betterwithmods:steel_chest"/>
+						<itemTannedLeatherTunic id="betterwithmods:leather_tanned_chest"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemPlateArmorLeggings id="betterwithmods:steel_pants"/>
+					<itemTannedLeatherPants id="betterwithmods:leather_tanned_pants"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemPlateArmorBoots id="betterwithmods:steel_boots"/>
+					<itemTannedLeatherBoots id="betterwithmods:leather_tanned_boots"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<stoneWall>
+				<itemIronWall id="betterwithmods:iron_wall"/>
+			</stoneWall>
+			<constructionBlock>
+				<slabs>
+					<MicroBlockSlabs>
+						<itembwmWoodSidingSiding id="betterwithmods:siding_wood"/>
+						<itembwmRockSiding.nameSiding id="betterwithmods:siding_rock"/>
+						<itembwmIronSiding.nameSiding id="betterwithmods:siding_iron"/>
+						<itemSiding id="betterwithmods:siding_ground"/>
+						<itemSiding id="betterwithmods:siding_clay"/>
+					</MicroBlockSlabs>
+				</slabs>
+				<post>
+					<itembwmWoodMoulding id="betterwithmods:moulding_wood"/>
+					<itembwmRockMoulding id="betterwithmods:moulding_rock"/>
+					<itembwmIronMoulding id="betterwithmods:moulding_iron"/>
+				</post>
+				<corner>
+					<itembwmWoodCorner id="betterwithmods:corner_wood"/>
+					<itembwmRockCorner id="betterwithmods:corner_rock"/>
+					<itembwmIronCorner id="betterwithmods:corner_iron"/>
+				</corner>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<rails>
+				<itemMechanicalBoosterRail id="betterwithmods:booster"/>
+			</rails>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<rawPottery>
+				<itemUnfiredPottery id="betterwithmods:unfired_pottery"/>
+			</rawPottery>
+		</miningResources>
+	</resources>
+</stuff>

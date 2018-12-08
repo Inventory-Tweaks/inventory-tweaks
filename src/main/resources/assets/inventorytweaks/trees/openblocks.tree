@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemBigMetalBar id="openblocks:wrench"/>
+			</wrench>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<eyeGlasses>
+					<itemSonicGlasses id="openblocks:sonicglasses"/>
+					<itemAmazingTechnicolorGlasses id="openblocks:technicolorglasses"/>
+					<itemBadassGlasses id="openblocks:seriousglasses"/>
+					<itemPencilGlasses id="openblocks:pencilglasses"/>
+					<itemBadassGlasses id="openblocks:seriousglasses"/>
+					<itemCrayonGlasses id="openblocks:crayonglasses"/>
+				</eyeGlasses>
+			</helmet>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<ladder>
+				<itemJadedLadder id="openblocks:ladder"/>
+				<itemRopeLadder id="openblocks:ropeladder"/>
+			</ladder>
+			<constructionBlock>
+				<constructionUtility>
+					<itemScaffolding id="openblocks:scaffolding"/>
+				</constructionUtility>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<buttons>
+				<itemBigButton id="openblocks:bigbutton" damage="0"/>
+			</buttons>
+			<resourceTransfer>
+				<groundItemCollector>
+					<itemVacuumHopper id="openblocks:vacuumhopper"/>
+				</groundItemCollector>
+			</resourceTransfer>
+			<basicCrafting>
+				<anvils>
+					<itemAutoAnvil id="openblocks:autoanvil"/>
+				</anvils>
+			</basicCrafting>
+			<machines>
+				<decorationMachines>
+					<itemPaintMixer id="openblocks:paintmixer"/>
+				</decorationMachines>
+				<remoteAccess>
+					<itemElevator id="openblocks:elevator"/>
+					<itemRotatingElevator id="openblocks:elevator_rotating"/>
+				</remoteAccess>
+			</machines>
+		</mechanism>
+	</block>
+	<resources>
+		<paint>
+			<paintbrushes>
+				<itemPaintBrush id="openblocks:paintbrush"/>
+			</paintbrushes>
+			<itemPaintCan id="openblocks:paintcan"/>
+		</paint>
+	</resources>
+	<item>
+		<utility>
+			<storage>
+				<portableStorage>
+					<itemLuggage id="openblocks:luggage"/>
+				</portableStorage>
+				<voidStorage>
+					<itemdevnull id="openblocks:devnull"/>
+				</voidStorage>
+			</storage>
+			<beds>
+				<itemSleepingBag id="openblocks:sleepingbag"/>
+			</beds>
+			<readableBooks>
+				<itemWorldDominationwithOpenBlocks id="openblocks:infobook"/>
+			</readableBooks>
+		</utility>
+		<bucket>
+			<itemOpenBlocks_filledbucket id="openblocks:filledbucket"/>
+		</bucket>
+		<fluidStorage>
+			<itemOpenTank id="openblocks:tank"/>
+		</fluidStorage>
+		<food>
+			<edibleFood>
+				<dessert>
+					<chocolate>
+						<itemTastyClay id="openblocks:tastyclay"/>
+					</chocolate>
+				</dessert>
+			</edibleFood>
+			<hunting>
+				<traps>
+					<itemBearTrap id="openblocks:beartrap"/>
+				</traps>
+			</hunting>
+		</food>
+		<plant>
+			<irrigation>
+				<itemSprinkler id="openblocks:sprinkler"/>
+			</irrigation>
+		</plant>
+	</item>
+</stuff>

@@ -33,9 +33,11 @@ public class InvTweaksConst {
     // File constants
     public static final File MINECRAFT_DIR = Minecraft.getMinecraft().mcDataDir;
     public static final File MINECRAFT_CONFIG_DIR = new File(MINECRAFT_DIR, "config/");
+    public static final File INVTWEAKS_CONFIG_DIR = new File(MINECRAFT_CONFIG_DIR, "InvTweaks/");
     public static final File CONFIG_PROPS_FILE = new File(MINECRAFT_CONFIG_DIR, "InvTweaks.cfg");
     public static final File CONFIG_RULES_FILE = new File(MINECRAFT_CONFIG_DIR, "InvTweaksRules.txt");
     public static final File CONFIG_TREE_FILE = new File(MINECRAFT_CONFIG_DIR, "InvTweaksTree.txt");
+    public static final File MERGED_TREE_FILE = new File(INVTWEAKS_CONFIG_DIR, "InvTweaksTree.txt");
     public static final File OLD_CONFIG_TREE_FILE = new File(MINECRAFT_CONFIG_DIR, "InvTweaksTree.xml");
     public static final File OLDER_CONFIG_RULES_FILE = new File(MINECRAFT_DIR, "InvTweaksRules.txt");
 

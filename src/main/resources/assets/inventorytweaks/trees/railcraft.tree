@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage6>
+							<itemSteelSword id="railcraft:tool.steel.sword"/>
+						</swordDamage6>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<DiamondPickLevel>
+						<itemSteelPickaxe id="railcraft:tool.steel.pickaxe"/>
+					</DiamondPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemSteelShovel id="railcraft:tool.steel.shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemSteelAxe id="railcraft:tool.steel.axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemSteelHoe id="railcraft:tool.steel.hoe"/>
+				</hoe>
+			</farmingTool>
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
+				<itemSteelShears id="railcraft:tool.steel.shears"/>
+			</shears>
+			<crowbars>
+				<itemReinforcedCrowbar id="railcraft:tool.crowbar.reinforced"/>
+				<itemThaumiumCrowbar id="railcraft:tool.crowbar.magic"/>
+				<itemVoidmetalCrowbar id="railcraft:tool.crowbar.void"/>
+			</crowbars>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet2>
+					<itemSteelHelmet id="railcraft:armor.steel.helmet"/>
+				</helmet2>
+				<eyeGlasses>
+					<itemTrackmansGoggles id="railcraft:armor.goggles"/>
+				</eyeGlasses>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate6>
+						<itemSteelChestplate id="railcraft:armor.steel.plate"/>
+					</chestplate6>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings5>
+					<itemSteelLeggings id="railcraft:armor.steel.legs"/>
+				</leggings5>
+				<leggings2>
+					<itemEngineersOveralls id="railcraft:armor.overalls"/>
+				</leggings2>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots2>
+					<itemSteelBoots id="railcraft:armor.steel.boots"/>
+				</boots2>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<bedrock>
+				<itemSaltpeterOreSpawner id="railcraft:worldlogic" damage="0"/>
+			</bedrock>
+			<liquid>
+				<itemCreosote id="railcraft:fluid.creosote"/>
+				<itemSteam id="railcraft:fluid.steam"/>
+			</liquid>
+		</naturalBlock>
+		<manufacturedBlock>
+			<stoneWall>
+				<itemrailcraftWall id="railcraft:wall.alpha"/>
+				<itemrailcraftWall id="railcraft:wall.beta"/>
+			</stoneWall>
+			<constructionBlock>
+				<roads>
+					<itemBlockofConcrete id="railcraft:cube" damage="1"/>
+				</roads>
+				<stairs>
+					<otherStairs>
+						<itemrailcraftStairs id="railcraft:stair"/>
+					</otherStairs>
+				</stairs>
+				<slabs>
+					<railcraftSlab id="railcraft:slab"/>
+				</slabs>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<rails>
+				<woodenRails>
+					<itemWoodenSwitchTrack id="railcraft:track" damage="19986"/>
+					<itemWoodenTrack id="railcraft:track" damage="736"/>
+				</woodenRails>
+				<advancedRails>
+					<itemBufferStopTrack id="railcraft:track" damage="32363"/>
+					<itemControlTrack id="railcraft:track" damage="0"/>
+					<itemCouplerTrack id="railcraft:track" damage="0"/>
+					<itemDirectionalDetectorTrack id="railcraft:track" damage="0"/>
+					<itemDisembarkingTrack id="railcraft:track" damage="23575"/>
+					<itemDisposalTrack id="railcraft:track" damage="2264"/>
+					<itemElectricJunctionTrack id="railcraft:track" damage="0"/>
+					<itemElectricSwitchTrack id="railcraft:track" damage="10488"/>
+					<itemElectricTrack id="railcraft:track" damage="0"/>
+					<itemElectricWyeTrack id="railcraft:track" damage="0"/>
+					<itemEmbarkingTrack id="railcraft:track" damage="0"/>
+					<itemGatedOne-WayTrack id="railcraft:track" damage="0"/>
+					<itemGatedTrack id="railcraft:track" damage="19746"/>
+					<itemH.S.BoosterTrack id="railcraft:track" damage="0"/>
+					<itemH.S.SwitchTrack id="railcraft:track" damage="7916"/>
+					<itemH.S.Track id="railcraft:track" damage="816"/>
+					<itemH.S.TransitionTrack id="railcraft:track" damage="26865"/>
+					<itemH.S.WyeTrack id="railcraft:track" damage="0"/>
+					<itemJunctionTrack id="railcraft:track" damage="0"/>
+					<itemLauncherTrack id="railcraft:track" damage="0"/>
+					<itemLimiterTrack id="railcraft:track" damage="16093"/>
+					<itemLockingTrack id="railcraft:track" damage="20176"/>
+					<itemLocomotiveTrack id="railcraft:track" damage="30516"/>
+					<itemOne-WayTrack id="railcraft:track" damage="30946"/>
+					<itemPrimingTrack id="railcraft:track" damage="8103"/>
+					<itemReinforcedBoosterTrack id="railcraft:track" damage="0"/>
+					<itemReinforcedJunctionTrack id="railcraft:track" damage="764"/>
+					<itemReinforcedSwitchTrack id="railcraft:track" damage="0"/>
+					<itemReinforcedTrack id="railcraft:track" damage="0"/>
+					<itemReinforcedWyeTrack id="railcraft:track" damage="0"/>
+					<itemRoutingTrack id="railcraft:track" damage="0"/>
+					<itemSuspendedTrack id="railcraft:track" damage="0"/>
+					<itemSwitchTrack id="railcraft:track" damage="4767"/>
+					<itemWhistleTrack id="railcraft:track" damage="0"/>
+					<itemWyeTrack id="railcraft:track" damage="2144"/>
+					<itemElevatorTrack id="railcraft:track.elevator" damage="0"/>
+				</advancedRails>
+			</rails>
+			<cartInteraction>
+				<itemAdminFeederUnit id="railcraft:machine.epsilon" damage="1"/>
+				<itemFluxTransformer id="railcraft:machine.epsilon" damage="4"/>
+				<itemForceTrackEmitter id="railcraft:machine.epsilon" damage="3"/>
+				<itemElectricFeederUnit id="railcraft:machine.epsilon" damage="0"/>
+				<itemAdv.ItemLoader id="railcraft:machine.gamma" damage="2"/>
+				<itemAdv.ItemUnloader id="railcraft:machine.gamma" damage="3"/>
+				<itemFluidLoader id="railcraft:machine.gamma" damage="4"/>
+				<itemFluidUnloader id="railcraft:machine.gamma" damage="5"/>
+				<itemItemLoader id="railcraft:machine.gamma" damage="0"/>
+				<itemItemUnloader id="railcraft:machine.gamma" damage="1"/>
+				<itemRedstoneFluxLoader id="railcraft:machine.gamma" damage="10"/>
+				<itemRedstoneFluxUnloader id="railcraft:machine.gamma" damage="11"/>
+				<itemTrainDispenser id="railcraft:machine.gamma" damage="9"/>
+				<itemCartDispenser id="railcraft:machine.gamma" damage="8"/>
+				<itemElectricShuntingWire id="railcraft:machine.delta" damage="0"/>
+			</cartInteraction>
+			<lever>
+				<itemSwitchLever id="railcraft:signal" damage="4"/>
+			</lever>
+			<basicCrafting>
+				<furnaces>
+					<cokeOvens>
+						<itemCokeOvenBrick id="railcraft:machine.alpha" damage="7"/>
+					</cokeOvens>
+					<blastFurnaces>
+						<itemBlastFurnaceBrick id="railcraft:machine.alpha" damage="12"/>
+					</blastFurnaces>
+				</furnaces>
+				<anvils>
+					<itemSteelAnvil id="railcraft:anvil"/>
+				</anvils>
+			</basicCrafting>
+			<generators>
+				<steamGenerators>
+					<itemrailcraft_HobbySteamGenerator id="railcraft:machine.beta" damage="7"/>
+					<itemrailcraft_ComSteamGenerator id="railcraft:machine.beta" damage="8"/>
+					<itemrailcraft_IndustrialSteamGenerator id="railcraft:machine.beta" damage="9"/>
+					<itemSteamTurbineHousing id="railcraft:machine.alpha" damage="1"/>
+				</steamGenerators>
+				<steamProducers>
+					<itemAdminSteamProducer id="railcraft:machine.epsilon" damage="2"/>
+					<itemLowPressureBoilerTank id="railcraft:machine.beta" damage="3"/>
+					<itemHighPressureBoilerTank id="railcraft:machine.beta" damage="4"/>
+					<itemSolidFueledBoilerFirebox id="railcraft:machine.beta" damage="5"/>
+					<itemLiquidFueledBoilerFirebox id="railcraft:machine.beta" damage="6"/>
+				</steamProducers>
+			</generators>
+			<machines>
+				<poweredFurnaces>
+					<itemSteamOven id="railcraft:machine.alpha" damage="3"/>
+				</poweredFurnaces>
+				<poweredGrinders>
+					<itemRockCrusher id="railcraft:machine.alpha" damage="15"/>
+				</poweredGrinders>
+				<poweredRanching>
+					<itemFeedStation id="railcraft:machine.alpha" damage="11"/>
+				</poweredRanching>
+				<mobKillers>
+					<itemAutomatedSteamTrap id="railcraft:machine.alpha" damage="10"/>
+					<itemManualSteamTrap id="railcraft:machine.alpha" damage="9"/>
+				</mobKillers>
+				<chunkLoaders>
+					<itemAdminAnchor id="railcraft:machine.alpha" damage="4"/>
+					<itemPassiveAnchor id="railcraft:machine.alpha" damage="13"/>
+					<itemPersonalAnchor id="railcraft:machine.alpha" damage="2"/>
+					<itemWorldAnchor id="railcraft:machine.alpha" damage="0"/>
+					<itemAnchorSentinel id="railcraft:machine.beta" damage="10"/>
+				</chunkLoaders>
+				<randomMachines>
+					<itemRollingMachine id="railcraft:machine.alpha" damage="8"/>
+					<itemEngravingBench id="railcraft:machine.epsilon" damage="5"/>
+				</randomMachines>
+			</machines>
+		</mechanism>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<itemMetalsChest id="railcraft:machine.beta" damage="12"/>
+				</chests>
+				<voidStorage>
+					<itemVoidChest id="railcraft:machine.beta" damage="11"/>
+				</voidStorage>
+			</storage>
+		</utility>
+		<bucket>
+			<itemrailcraft_fluid.creosote.bucket id="railcraft:fluid.creosote.bucket"/>
+		</bucket>
+		<fluidStorage>
+			<itemIronTankWall id="railcraft:machine.beta" damage="0"/>
+			<itemIronTankGauge id="railcraft:machine.beta" damage="1"/>
+			<itemIronTankValve id="railcraft:machine.beta" damage="2"/>
+			<itemSteelTankWall id="railcraft:machine.beta" damage="13"/>
+			<itemSteelTankGauge id="railcraft:machine.beta" damage="14"/>
+			<itemSteelTankValve id="railcraft:machine.beta" damage="15"/>
+			<itemWaterTankSiding id="railcraft:machine.alpha" damage="14"/>
+		</fluidStorage>
+		<vehicle>
+			<minecarts>
+				<itemPerpetuumLocomotive id="railcraft:cart.loco.creative"/>
+				<itemElectricLocomotive id="railcraft:cart.loco.electric"/>
+				<itemSteamLocomotive id="railcraft:cart.loco.steam.solid"/>
+				<itemTunnelBore id="railcraft:cart.bore"/>
+				<itemAdminAnchorCart id="railcraft:cart.anchor.admin" damage="0"/>
+				<itemAnchorCart id="railcraft:cart.anchor" damage="0"/>
+				<itemCargoCart id="railcraft:cart.cargo" damage="0"/>
+				<itemCartDispenser id="railcraft:machine.gamma" damage="8"/>
+				<itemGiftCart id="railcraft:cart.gift" damage="0"/>
+				<itemPersonalAnchorCart id="railcraft:cart.anchor.personal" damage="0"/>
+				<itemPumpkinCart id="railcraft:cart.pumpkin" damage="0"/>
+				<itemTankCart id="railcraft:cart.tank" damage="0"/>
+				<itemRedstoneFluxCart id="railcraft:cart.redstone.flux"/>
+				<itemTrackLayerCart id="railcraft:cart.track.layer" damage="0"/>
+				<itemTrackRelayerCart id="railcraft:cart.track.relayer" damage="0"/>
+				<itemTrackRemoverCart id="railcraft:cart.track.remover" damage="0"/>
+				<itemUndercutterCart id="railcraft:cart.undercutter" damage="0"/>
+				<itemWoodenTNTCart id="railcraft:cart.tnt.wood" damage="0"/>
+				<itemWorkCart id="railcraft:cart.work" damage="0"/>
+			</minecarts>
+		</vehicle>
+		<parts>
+			<mechanicalParts>
+				<gear>
+					<gearGoldPlateItem id="railcraft:part.gear" damage="0"/>
+					<gearSteelItem id="railcraft:part.gear" damage="2"/>
+				</gear>
+			</mechanicalParts>
+		</parts>
+	</item>
+</stuff>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<block>
+		<naturalBlock>
+			<liquid>
+				<fluids id="enderio:blockfire_water">
+					<itemLiquidSilicon id="extratic:liquidsilicon"/>
+					<itemMoltenAdamantine id="extratic:moltenadamantine."/>
+					<itemMoltenBedrockium id="extratic:moltenbedrockium"/>
+					<itemMoltenBlutonium id="extratic:moltenblutonium"/>
+					<itemMoltenBrass id="extratic:moltenbrass"/>
+					<itemMoltenConductiveIron id="extratic:moltenconductiveiron"/>
+					<itemMoltenDarkSteel id="extratic:moltendarksteel"/>
+					<itemMoltenElectricalSteel id="extratic:moltenelectricalsteel"/>
+					<itemMoltenEnergeticAlloy id="extratic:moltenenergeticalloy"/>
+					<itemMoltenFairy id="extratic:moltenfairy"/>
+					<itemMoltenLudicrite id="extratic:moltenludicrite"/>
+					<itemMoltenPhasedGold id="extratic:moltenphasedgold"/>
+					<itemMoltenPhasedIron id="extratic:moltenphasediron"/>
+					<itemMoltenPokefennium id="extratic:moltenpokefennium"/>
+					<itemMoltenRedAurum id="extratic:moltenredaurum"/>
+					<itemMoltenRedstoneAlloy id="extratic:moltenredstonealloy"/>
+					<itemMoltenSoularium id="extratic:moltensoularium"/>
+					<itemMoltenVoidmetal id="extratic:moltenvoidmetal"/>
+					<itemMoltenZinc id="extratic:moltenzinc"/>
+				</fluids>
+			</liquid>
+		</naturalBlock>
+	</block>
+	<item>
+		<bucket>
+			<itemExtraTiC_extra.bucket id="extratic:extra.bucket"/>
+		</bucket>
+		<parts>
+			<tinkerParts>
+				<itemTICHammerHead id="extratic:hammerhead"/>
+				<itemTICBroadAxeHead id="extratic:lumberaxehead"/>
+				<itemTICExcavatorHead id="extratic:excavatorhead"/>
+				<itemTICScytheHead id="extratic:scythehead"/>
+				<itemTICLargeSwordBlade id="extratic:largeswordblade"/>
+				<itemTICCrossbowBody id="extratic:crossbowbody"/>
+				<itemTICCrossbowLimb id="extratic:crossbowlimb"/>
+				<itemTICPickaxeHead id="extratic:pickaxehead"/>
+				<itemTICShovelHead id="extratic:shovelhead"/>
+				<itemTICAxeHead id="extratic:axehead"/>
+				<itemTICSwordBlade id="extratic:swordblade"/>
+				<itemTICFullGuard id="extratic:fullguard"/>
+				<itemTICLargeGuard id="extratic:largeguard"/>
+				<itemTICMediumGuard id="extratic:mediumguard"/>
+				<itemTICCrossbar id="extratic:crossbar"/>
+				<itemTICKnifeBlade id="extratic:knifeblade"/>
+				<itemTICPanHead id="extratic:frypanhead"/>
+				<itemTICBattleSign id="extratic:battelsign"/>
+				<itemTICChiselHead id="extratic:chiselhead"/>
+				<itemTICBowLimb id="extratic:bowlimb"/>
+				<itemTICArrowhead id="extratic:arrowhead"/>
+				<itemTICBolt id="extratic:blot"/>
+				<itemTICShuriken id="extratic:shuriken"/>
+				<itemTICBinding id="extratic:binding"/>
+				<itemTICToughBinding id="extratic:toughbind"/>
+				<itemTICLargePlate id="extratic:largeplate"/>
+				<itemTICToolRod id="extratic:toolrod"/>
+				<itemTICToughRod id="extratic:toughrod"/>
+				<itemTICChunk id="extratic:chunk"/>
+			</tinkerParts>
+		</parts>
+	</item>
+</stuff>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<block>
+		<manufacturedBlock>
+			<sign>
+				<itemBoPFancySign id="bibliowoodsbop:bibliowoodfancysign"/>
+			</sign>
+		</manufacturedBlock>
+		<mechanism>
+			<basicCrafting>
+				<craftingTables>
+					<itemBoPBiblioWorkbench id="bibliowoodsbop:bibliowoodfancyworkbench"/>
+				</craftingTables>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<item>
+		<decoration>
+			<itemCherryPaintingFrame id="bibliowoodsbop:bibliowoodpaintingt0"/>
+			<itemCherryPaintingFrame id="bibliowoodsbop:bibliowoodpaintingt1"/>
+			<itemCherryPaintingFrame id="bibliowoodsbop:bibliowoodpaintingt2"/>
+			<itemCherryPaintingFrame id="bibliowoodsbop:bibliowoodpaintingt3"/>
+			<itemCherryPaintingFrame id="bibliowoodsbop:bibliowoodpaintingt4"/>
+			<sign>
+				<itemBoPFancySign id="bibliowoodsbop:bibliowoodfancysign"/>
+			</sign>
+			<bookcase>
+				<itemCherryBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="1"/>
+				<itemDarkBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="2"/>
+				<itemEtherealBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="5"/>
+				<itemFirBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="3"/>
+				<itemHellbarkBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="4"/>
+				<itemJacarandaBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="6"/>
+				<itemMagicBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="7"/>
+				<itemMahoganyBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="13"/>
+				<itemMangroveBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="8"/>
+				<itemPalmBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="9"/>
+				<itemPineBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="10"/>
+				<itemRedwoodBoPBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="11"/>
+				<itemSacredOakBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="0"/>
+				<itemWillowBoPBookcase id="bibliowoodsbop:bibliowoodbookcase" damage="12"/>
+			</bookcase>
+			<clocks>
+				<itemCherryClock id="bibliowoodsbop:bibliowoodclock"/>
+			</clocks>
+			<desks>
+				<itemCherryDesk id="bibliowoodsbop:bibliowooddesk"/>
+			</desks>
+			<tables>
+				<itemCherryTable id="bibliowoodsbop:bibliowoodtable"/>
+			</tables>
+			<seating>
+				<seats>
+					<itemCherrySeat id="bibliowoodsbop:bibliowoodseat"/>
+				</seats>
+				<seatbacks>
+					<itemCherrySeatBack id="bibliowoodsbop:seatback1"/>
+					<itemCherrySeatBack id="bibliowoodsbop:seatback2"/>
+					<itemCherrySeatBack id="bibliowoodsbop:seatback3"/>
+					<itemCherrySeatBack id="bibliowoodsbop:seatback4"/>
+					<itemCherrySeatBack id="bibliowoodsbop:seatback5"/>
+				</seatbacks>
+			</seating>
+			<case>
+				<itemCherryMapFrame id="bibliowoodsbop:bibliowoodmapframe"/>
+				<itemBoPLabel id="bibliowoodsbop:bibliowoodlabel"/>
+				<itemCherryCase id="bibliowoodsbop:bibliowoodcase"/>
+				<itemBoPBookcase id="bibliowoodsbop:bibliowoodbookcase"/>
+			</case>
+			<toolRack>
+				<itemBoPToolRack id="bibliowoodsbop:bibliowoodrack"/>
+			</toolRack>
+			<shelf>
+				<itemCherryShelf id="bibliowoodsbop:bibliowoodshelf" damage="1"/>
+				<itemDarkShelf id="bibliowoodsbop:bibliowoodshelf" damage="2"/>
+				<itemEtherealShelf id="bibliowoodsbop:bibliowoodshelf" damage="5"/>
+				<itemFirShelf id="bibliowoodsbop:bibliowoodshelf" damage="3"/>
+				<itemHellbarkShelf id="bibliowoodsbop:bibliowoodshelf" damage="4"/>
+				<itemJacarandaShelf id="bibliowoodsbop:bibliowoodshelf" damage="6"/>
+				<itemMagicShelf id="bibliowoodsbop:bibliowoodshelf" damage="7"/>
+				<itemMahoganyShelf id="bibliowoodsbop:bibliowoodshelf" damage="13"/>
+				<itemMangroveShelf id="bibliowoodsbop:bibliowoodshelf" damage="8"/>
+				<itemPalmShelf id="bibliowoodsbop:bibliowoodshelf" damage="9"/>
+				<itemPineShelf id="bibliowoodsbop:bibliowoodshelf" damage="10"/>
+				<itemRedwoodBoPShelf id="bibliowoodsbop:bibliowoodshelf" damage="11"/>
+				<itemSacredOakShelf id="bibliowoodsbop:bibliowoodshelf" damage="0"/>
+				<itemWillowBoPShelf id="bibliowoodsbop:bibliowoodshelf" damage="12"/>
+			</shelf>
+			<potionShelf>
+				<itemCherryPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="1"/>
+				<itemDarkPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="2"/>
+				<itemEtherealPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="5"/>
+				<itemFirPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="3"/>
+				<itemHellbarkPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="4"/>
+				<itemJacarandaPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="6"/>
+				<itemMagicPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="7"/>
+				<itemMahoganyPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="13"/>
+				<itemMangrovePotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="8"/>
+				<itemPalmPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="9"/>
+				<itemPinePotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="10"/>
+				<itemRedwoodPotionBoPShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="11"/>
+				<itemSacredOakPotionShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="0"/>
+				<itemWillowPotionBoPShelf id="bibliowoodsbop:bibliowoodpotshelf" damage="12"/>
+			</potionShelf>
+		</decoration>
+	</item>
+</stuff>

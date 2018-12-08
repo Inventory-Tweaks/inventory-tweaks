@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
+				<itemDiamondBitSaw id="chiselsandbits:bitsaw_diamond"/>
+			</saws>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemWoodenWrench id="chiselsandbits:wrench_wood"/>
+			</wrench>
+			<chisel>
+				<itemDiamondChisel id="chiselsandbits:chisel_diamond"/>
+				<itemGoldenChisel id="chiselsandbits:chisel_gold"/>
+				<itemIronChisel id="chiselsandbits:chisel_iron"/>
+				<itemStoneChisel id="chiselsandbits:chisel_stone"/>
+			</chisel>
+			<odometers>
+				<itemTapeMeasure id="chiselsandbits:tape_measure"/>
+			</odometers>
+		</tool>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<constructionBlock>
+				<nook>
+					<itemChiseledBit id="chiselsandbits:block_bit"/>
+				</nook>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<portableStorage>
+					<itemChiseledBitBag id="chiselsandbits:bit_bag"/>
+				</portableStorage>
+			</storage>
+		</utility>
+		<fluidStorage>
+			<itemChiseledFluidBitTank id="chiselsandbits:bittank"/>
+		</fluidStorage>
+		<patterns>
+			<itemPositiveChiselDesign id="chiselsandbits:positiveprint"/>
+			<itemNegativeChiselDesign id="chiselsandbits:negativeprint"/>
+			<itemMirrorChiselDesign id="chiselsandbits:mirrorprint"/>
+		</patterns>
+	</item>
+</stuff>

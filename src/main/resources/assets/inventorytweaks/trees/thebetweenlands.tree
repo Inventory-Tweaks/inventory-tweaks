@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<ObsidianLevel>
+						<itemValonitePickaxe id="thebetweenlands:valonite_pickaxe"/>
+					</ObsidianLevel>
+					<DiamondPickLevel>
+						<itemOctinePickaxe id="thebetweenlands:octine_pickaxe"/>
+					</DiamondPickLevel>
+					<IronLevel>
+						<itemBonePickaxe id="thebetweenlands:bone_pickaxe"/>
+					</IronLevel>
+					<StoneLevel>
+						<itemWeedwoodPickaxe id="thebetweenlands:weedwood_pickaxe"/>
+					</StoneLevel>
+					<UnsortedLevel>
+						<itemSwiftPick id="thebetweenlands:swift_pick"/>
+					</UnsortedLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemBoneShovel id="thebetweenlands:bone_shovel"/>
+					<itemOctineShovel id="thebetweenlands:octine_shovel"/>
+					<itemValoniteShovel id="thebetweenlands:valonite_shovel"/>
+					<itemWeedwoodShovel id="thebetweenlands:weedwood_shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemBoneAxe id="thebetweenlands:bone_axe"/>
+					<itemOctineAxe id="thebetweenlands:octine_axe"/>
+					<itemValoniteAxe id="thebetweenlands:valonite_axe"/>
+					<itemWeedwoodAxe id="thebetweenlands:weedwood_axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true">
+					<itemSickle id="thebetweenlands:sickle"/>
+				</sickle>
+			</farmingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemBoneHelmet id="thebetweenlands:bone_helmet"/>
+					<itemLurkerSkinHelmet id="thebetweenlands:lurker_skin_helmet"/>
+					<itemSyrmoriteHelmet id="thebetweenlands:syrmorite_helmet"/>
+					<itemValoniteHelmet id="thebetweenlands:valonite_helmet"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemBoneChestplate id="thebetweenlands:bone_chestplate"/>
+						<itemLurkerSkinChestplate id="thebetweenlands:lurker_skin_chestplate"/>
+						<itemSyrmoriteChestplate id="thebetweenlands:syrmorite_chestplate"/>
+						<itemValoniteChestplate id="thebetweenlands:valonite_chestplate"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemBoneLeggings id="thebetweenlands:bone_leggings"/>
+					<itemLurkerSkinLeggings id="thebetweenlands:lurker_skin_leggings"/>
+					<itemSyrmoriteLeggings id="thebetweenlands:syrmorite_leggings"/>
+					<itemValoniteLeggings id="thebetweenlands:valonite_leggings"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemBoneBoots id="thebetweenlands:bone_boots"/>
+					<itemBootsoftheMarshRunner id="thebetweenlands:marsh_runner_boots"/>
+					<itemLurkerSkinBoots id="thebetweenlands:lurker_skin_boots"/>
+					<itemRubberBoots id="thebetweenlands:rubber_boots"/>
+					<itemSyrmoriteBoots id="thebetweenlands:syrmorite_boots"/>
+					<itemValoniteBoots id="thebetweenlands:valonite_boots"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<stoneWall>
+				<itemBetweenstoneBrickWall id="thebetweenlands:betweenstone_brick_wall"/>
+				<itemBetweenstoneWall id="thebetweenlands:betweenstone_wall"/>
+				<itemCrackedBetweenstoneBrickWall id="thebetweenlands:cracked_betweenstone_brick_wall"/>
+				<itemCragrockBrickWall id="thebetweenlands:cragrock_brick_wall"/>
+				<itemCragrockWall id="thebetweenlands:cragrock_wall"/>
+				<itemLimestoneBrickWall id="thebetweenlands:limestone_brick_wall"/>
+				<itemLimestoneWall id="thebetweenlands:limestone_wall"/>
+				<itemMossyBetweenstoneBrickwall id="thebetweenlands:mossy_betweenstone_brick_wall"/>
+				<itemMossySmoothBetweenstoneWall id="thebetweenlands:mossy_smooth_betweenstone_wall"/>
+				<itemMudBrickWall id="thebetweenlands:mud_brick_wall"/>
+				<itemPitstoneBrickWall id="thebetweenlands:pitstone_brick_wall"/>
+				<itemPitstoneWall id="thebetweenlands:pitstone_wall"/>
+				<itemPolishedLimestoneWall id="thebetweenlands:polished_limestone_wall"/>
+				<itemSmoothBetweenstoneWall id="thebetweenlands:smooth_betweenstone_wall"/>
+				<itemSmoothCragrockWall id="thebetweenlands:smooth_cragrock_wall"/>
+				<itemSmoothPitstoneWall id="thebetweenlands:smooth_pitstone_wall"/>
+				<itemSolidTarWall id="thebetweenlands:tar_solid_wall"/>
+				<itemTempleBrickWall id="thebetweenlands:temple_brick_wall"/>
+				<itemtile.thebetweenlands.wall_weedwood_sign.name id="thebetweenlands:wall_weedwood_sign"/>
+			</stoneWall>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemBetweenstoneBrickStairs id="thebetweenlands:betweenstone_brick_stairs"/>
+						<itemBetweenstoneStairs id="thebetweenlands:betweenstone_stairs"/>
+						<itemCrackedBetweenstoneBrickStairs id="thebetweenlands:cracked_betweenstone_brick_stairs"/>
+						<itemCragrockBrickStairs id="thebetweenlands:cragrock_brick_stairs"/>
+						<itemCragrockStairs id="thebetweenlands:cragrock_stairs"/>
+						<itemGiantRootPlankStairs id="thebetweenlands:giant_root_plank_stairs"/>
+						<itemLimestoneBrickStairs id="thebetweenlands:limestone_brick_stairs"/>
+						<itemLimestoneStairs id="thebetweenlands:limestone_stairs"/>
+						<itemMossyBetweenstoneBrickStairs id="thebetweenlands:mossy_betweenstone_brick_stairs"/>
+						<itemMossySmoothBetweenstoneStairs id="thebetweenlands:mossy_smooth_betweenstone_stairs"/>
+						<itemMudBrickStairs id="thebetweenlands:mud_brick_stairs"/>
+						<itemPitstoneBrickStairs id="thebetweenlands:pitstone_brick_stairs"/>
+						<itemPitstoneStairs id="thebetweenlands:pitstone_stairs"/>
+						<itemPolishedLimestoneStairs id="thebetweenlands:polished_limestone_stairs"/>
+						<itemRubberTreePlankStairs id="thebetweenlands:rubber_tree_plank_stairs"/>
+						<itemSmoothBetweenstoneStairs id="thebetweenlands:smooth_betweenstone_stairs"/>
+						<itemSmoothCragrockStairs id="thebetweenlands:smooth_cragrock_stairs"/>
+						<itemSmoothPitstoneStairs id="thebetweenlands:smooth_pitstone_stairs"/>
+						<itemSolidTarStairs id="thebetweenlands:tar_solid_stairs"/>
+						<itemTempleBrickStairs id="thebetweenlands:temple_brick_stairs"/>
+						<itemWeedwoodPlankStairs id="thebetweenlands:weedwood_plank_stairs"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<utility>
+			<readableBooks>
+				<itemHerbloreBook id="thebetweenlands:manual_hl"/>
+			</readableBooks>
+		</utility>
+		<bucket>
+			<itemPlantTonic id="thebetweenlands:bl_bucket_plant_tonic"/>
+			<itemPlantTonic id="thebetweenlands:bl_bucket_plant_tonic"/>
+			<itemSyrmoriteBucket id="thebetweenlands:bl_bucket"/>
+			<itemSyrmoriteBucketRubber id="thebetweenlands:bl_bucket_rubber"/>
+			<itemSyrmoriteBucketStagnantWater id="thebetweenlands:bl_bucket"/>
+			<itemSyrmoriteBucketSwampWater id="thebetweenlands:bl_bucket"/>
+			<itemSyrmoriteBucketTar id="thebetweenlands:bl_bucket"/>
+			<itemSyrmoriteBucketwithSolidRubber id="thebetweenlands:syrmorite_bucket_solid_rubber"/>
+			<itemWeedwoodBucket id="thebetweenlands:bl_bucket"/>
+			<itemWeedwoodBucketRubber id="thebetweenlands:bl_bucket_rubber"/>
+			<itemWeedwoodBucketStagnantWater id="thebetweenlands:bl_bucket"/>
+			<itemWeedwoodBucketSwampWater id="thebetweenlands:bl_bucket"/>
+			<itemWeedwoodBucketTar id="thebetweenlands:bl_bucket"/>
+		</bucket>
+		<decoration>
+			<itemMudBrickFlowerPot id="thebetweenlands:mud_flower_pot"/>
+		</decoration>
+		<plant>
+			<flower>
+				<flowerDecorative>
+					<itemBladderwortFlower id="thebetweenlands:items_plant_drop" damage="40"/>
+					<itemBladderwortFlower id="thebetweenlands:bladderwort_flower" damage="0"/>
+					<itemBlueEyedGrassFlowers id="thebetweenlands:items_plant_drop" damage="3"/>
+					<itemBogBeanFlower id="thebetweenlands:items_plant_drop" damage="7"/>
+					<itemBogBeanFlower id="thebetweenlands:bog_bean_flower" damage="0"/>
+					<itemBonesetFlowers id="thebetweenlands:items_plant_drop" damage="8"/>
+					<itemButtonBushFlowers id="thebetweenlands:items_plant_drop" damage="11"/>
+					<itemCardinalFlower id="thebetweenlands:cardinal_flower" damage="0"/>
+					<itemCardinalFlowerPetals id="thebetweenlands:items_plant_drop" damage="12"/>
+					<itemFloweredNettle id="thebetweenlands:nettle_flowered" damage="0"/>
+					<itemGoldenClubFlower id="thebetweenlands:golden_club_flower" damage="0"/>
+					<itemGoldenClubFlowers id="thebetweenlands:items_plant_drop" damage="16"/>
+					<itemGroundBladderwortFlower id="thebetweenlands:items_crushed" damage="52"/>
+					<itemGroundCardinalFlower id="thebetweenlands:items_crushed" damage="25"/>
+					<itemMarshHibiscusFlower id="thebetweenlands:items_plant_drop" damage="18"/>
+					<itemMarshMallowFlower id="thebetweenlands:items_plant_drop" damage="19"/>
+					<itemMarshMarigoldFlower id="thebetweenlands:items_plant_drop" damage="20"/>
+					<itemMarshMarigoldFlower id="thebetweenlands:marsh_marigold_flower" damage="0"/>
+					<itemMilkweedFlower id="thebetweenlands:items_plant_drop" damage="31"/>
+					<itemPickerelWeedFlower id="thebetweenlands:items_plant_drop" damage="23"/>
+				</flowerDecorative>
+			</flower>
+		</plant>
+	</item>
+</stuff>

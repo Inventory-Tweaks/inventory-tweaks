@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordUnsorted>
+							<itemBoneSword id="tp:bone_sword"/>
+							<itemDiamondNetherrackSword id="tp:nether_diamond_sword"/>
+							<itemEmeraldSword id="tp:emerald_sword"/>
+							<itemFlintSword id="tp:flint_sword"/>
+							<itemGoldenNetherrackSword id="tp:nether_gold_sword"/>
+							<itemIronNetherrackSword id="tp:nether_iron_sword"/>
+							<itemNetherrackSword id="tp:nether_sword"/>
+							<itemObsidianSword id="tp:obsidian_sword"/>
+							<itemWubSword id="tp:wub_sword"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<farmingTool>
+				<otherFarmingTools>
+					<itemReinforcedWateringCan id="tp:watering_can_upgrade"/>
+					<itemWateringCan id="tp:watering_can"/>
+				</otherFarmingTools>
+			</farmingTool>
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
+				<itemDiamondShears id="tp:diamond_shears"/>
+				<itemEmeraldShears id="tp:emerald_shears"/>
+				<itemFlintShears id="tp:flint_shears"/>
+				<itemGoldenShears id="tp:golden_shears"/>
+				<itemStoneShears id="tp:stone_shears"/>
+				<itemWoodenShears id="tp:wooden_shears"/>
+			</shears>
+		</tool>
+	</equipment>
+	<item>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<pizza>
+						<itemBamsPineapplePizza id="tp:bams_pizza"/>
+					</pizza>
+					<sandwich>
+						<itemBaconandEggSandwich id="tp:bacon_eggs_sandwhich"/>
+						<itemBaconSandwich id="tp:bacon_sandwhich"/>
+						<itemBeefSandwich id="tp:beef_sandwhich"/>
+						<itemChickenSandwich id="tp:chicken_sandwhich"/>
+						<itemRabbitSandwich id="tp:rabbit_sandwhich"/>
+					</sandwich>
+				</preparedFood>
+			</edibleFood>
+		</food>
+	</item>
+</stuff>

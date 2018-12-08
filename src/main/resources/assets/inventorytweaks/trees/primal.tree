@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<DiamondPickLevel>
+						<itemQuartzPickaxe id="primal:quartz_pickaxe"/>
+					</DiamondPickLevel>
+					<IronLevel>
+						<itemFlintPickaxe id="primal:flint_pickaxe"/>
+					</IronLevel>
+					<UnsortedLevel>
+						<itemDiamondPickaxe id="primal:diamond_pickaxe"/>
+						<itemEmeraldPickaxe id="primal:emerald_pickaxe"/>
+						<itemObsidianPickaxe id="primal:obsidian_pickaxe"/>
+						<itemOpalPickaxe id="primal:opal_pickaxe"/>
+					</UnsortedLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemDiamondShovel id="primal:diamond_shovel"/>
+					<itemEmeraldShovel id="primal:emerald_shovel"/>
+					<itemFlintShovel id="primal:flint_shovel"/>
+					<itemObsidianShovel id="primal:obsidian_shovel"/>
+					<itemOpalShovel id="primal:opal_shovel"/>
+					<itemQuartzShovel id="primal:quartz_shovel"/>
+				</shovel>
+			</diggingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemDiamondHoe id="primal:diamond_hoe"/>
+					<itemEmeraldHoe id="primal:emerald_hoe"/>
+					<itemFlintHoe id="primal:flint_hoe"/>
+					<itemObsidianHoe id="primal:obsidian_hoe"/>
+					<itemOpalHoe id="primal:opal_hoe"/>
+					<itemQuartzHoe id="primal:quartz_hoe"/>
+				</hoe>
+			</farmingTool>
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
+				<itemCorphyryFishingRod id="primal:fishing_rod_corypha"/>
+			</fishingRod>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemObsidianHelm id="primal:armor_obsidian_head"/>
+					<itemOvisHead id="primal:armor_ovis_head"/>
+					<itemWolfHood id="primal:armor_wolf_head"/>
+				</helmetUnsorted>
+				<eyeGlasses>
+					<itemObsidianGoggles id="primal:armor_obsidian_goggles"/>
+				</eyeGlasses>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemObsidianChest id="primal:armor_obsidian_body"/>
+						<itemOvisChest id="primal:armor_ovis_body"/>
+						<itemWolfChest id="primal:armor_wolf_body"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemObsidianLeggings id="primal:armor_obsidian_legs"/>
+					<itemOvisLeggings id="primal:armor_ovis_legs"/>
+					<itemWolfLeggings id="primal:armor_wolf_legs"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemObsidianBoots id="primal:armor_obsidian_feet"/>
+					<itemOvisBoots id="primal:armor_ovis_feet"/>
+					<itemWolfBoots id="primal:armor_wolf_feet"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<fence>
+				<woodenFence>
+					<itemIronwoodFence id="primal:fence"/>
+				</woodenFence>
+			</fence>
+			<stoneWall>
+				<itemCommonStoneWall id="primal:wall"/>
+			</stoneWall>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemCorphyryStairs id="primal:stairs_corypha"/>
+						<itemDirtStairs id="primal:stairs_dirt"/>
+						<itemFerrocalciteFlagstoneStairs id="primal:stairs_ferro_flag"/>
+						<itemGrassPathStairs id="primal:stairs_path"/>
+						<itemIronwoodStairs id="primal:stairs_ironwood"/>
+						<itemLacquerStairs id="primal:stairs_lacquer"/>
+						<itemLimestoneFlagstoneStairs id="primal:stairs_carbonate_flag"/>
+						<itemMudStairs id="primal:stairs_mud"/>
+						<itemNetherDirtPathStairs id="primal:stairs_nether_path"/>
+						<itemNetherDirtStairs id="primal:stairs_nether_earth"/>
+						<itemNetherrackStairs id="primal:stairs_netherrack"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<itemOakStorageCrate id="primal:storage_crate"/>
+				</chests>
+			</storage>
+		</utility>
+	</item>
+</stuff>

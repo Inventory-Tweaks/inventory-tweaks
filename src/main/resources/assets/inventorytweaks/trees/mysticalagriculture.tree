@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordUnsorted>
+							<itemInferiumSword id="mysticalagriculture:inferium_sword"/>
+							<itemIntermediumSword id="mysticalagriculture:intermedium_sword"/>
+							<itemPrudentiumSword id="mysticalagriculture:prudentium_sword"/>
+							<itemSuperiumSword id="mysticalagriculture:superium_sword"/>
+							<itemSupremiumSword id="mysticalagriculture:supremium_sword"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<bow mergeChildren="true">
+					<itemInferiumBow id="mysticalagriculture:inferium_bow"/>
+					<itemIntermediumBow id="mysticalagriculture:intermedium_bow"/>
+					<itemPrudentiumBow id="mysticalagriculture:prudentium_bow"/>
+					<itemSuperiumBow id="mysticalagriculture:superium_bow"/>
+					<itemSupremiumBow id="mysticalagriculture:supremium_bow"/>
+				</bow>
+			</munition>
+			<arrow class="arrow">
+				<itemInferiumArrow id="mysticalagriculture:inferium_arrow"/>
+				<itemIntermediumArrow id="mysticalagriculture:intermedium_arrow"/>
+				<itemPrudentiumArrow id="mysticalagriculture:prudentium_arrow"/>
+				<itemSuperiumArrow id="mysticalagriculture:superium_arrow"/>
+				<itemSupremiumArrow id="mysticalagriculture:supremium_arrow"/>
+			</arrow>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<Level5>
+						<itemSupremiumPickaxe id="mysticalagriculture:supremium_pickaxe"/>
+					</Level5>
+					<CobaltPickLevel>
+						<itemSuperiumPickaxe id="mysticalagriculture:superium_pickaxe"/>
+					</CobaltPickLevel>
+					<ObsidianLevel>
+						<itemIntermediumPickaxe id="mysticalagriculture:intermedium_pickaxe"/>
+					</ObsidianLevel>
+					<DiamondPickLevel>
+						<itemInferiumPickaxe id="mysticalagriculture:inferium_pickaxe"/>
+						<itemPrudentiumPickaxe id="mysticalagriculture:prudentium_pickaxe"/>
+					</DiamondPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemInferiumShovel id="mysticalagriculture:inferium_shovel"/>
+					<itemIntermediumShovel id="mysticalagriculture:intermedium_shovel"/>
+					<itemPrudentiumShovel id="mysticalagriculture:prudentium_shovel"/>
+					<itemSuperiumShovel id="mysticalagriculture:superium_shovel"/>
+					<itemSupremiumShovel id="mysticalagriculture:supremium_shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemInferiumAxe id="mysticalagriculture:inferium_axe"/>
+					<itemIntermediumAxe id="mysticalagriculture:intermedium_axe"/>
+					<itemPrudentiumAxe id="mysticalagriculture:prudentium_axe"/>
+					<itemSuperiumAxe id="mysticalagriculture:superium_axe"/>
+					<itemSupremiumAxe id="mysticalagriculture:supremium_axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<scythe class="Item" data="{ToolClass : &quot;scythe&quot;}" mergeChildren="true">
+					<itemInferiumScythe id="mysticalagriculture:inferium_scythe"/>
+					<itemIntermediumScythe id="mysticalagriculture:intermedium_scythe"/>
+					<itemPrudentiumScythe id="mysticalagriculture:prudentium_scythe"/>
+					<itemSuperiumScythe id="mysticalagriculture:superium_scythe"/>
+					<itemSupremiumScythe id="mysticalagriculture:supremium_scythe"/>
+				</scythe>
+				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true">
+					<itemInferiumSickle id="mysticalagriculture:inferium_sickle"/>
+					<itemIntermediumSickle id="mysticalagriculture:intermedium_sickle"/>
+					<itemPrudentiumSickle id="mysticalagriculture:prudentium_sickle"/>
+					<itemSuperiumSickle id="mysticalagriculture:superium_sickle"/>
+					<itemSupremiumSickle id="mysticalagriculture:supremium_sickle"/>
+				</sickle>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemInferiumHoe id="mysticalagriculture:inferium_hoe"/>
+					<itemIntermediumHoe id="mysticalagriculture:intermedium_hoe"/>
+					<itemPrudentiumHoe id="mysticalagriculture:prudentium_hoe"/>
+					<itemSuperiumHoe id="mysticalagriculture:superium_hoe"/>
+					<itemSupremiumHoe id="mysticalagriculture:supremium_hoe"/>
+				</hoe>
+				<otherFarmingTools>
+					<itemInferiumWateringCan id="mysticalagriculture:watering_can"/>
+				</otherFarmingTools>
+			</farmingTool>
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
+				<itemInferiumShears id="mysticalagriculture:inferium_shears"/>
+				<itemIntermediumShears id="mysticalagriculture:intermedium_shears"/>
+				<itemPrudentiumShears id="mysticalagriculture:prudentium_shears"/>
+				<itemSuperiumShears id="mysticalagriculture:superium_shears"/>
+				<itemSupremiumShears id="mysticalagriculture:supremium_shears"/>
+			</shears>
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
+				<itemInferiumFishingRod id="mysticalagriculture:inferium_fishing_rod"/>
+				<itemIntermediumFishingRod id="mysticalagriculture:intermedium_fishing_rod"/>
+				<itemPrudentiumFishingRod id="mysticalagriculture:prudentium_fishing_rod"/>
+				<itemSuperiumFishingRod id="mysticalagriculture:superium_fishing_rod"/>
+				<itemSupremiumFishingRod id="mysticalagriculture:supremium_fishing_rod"/>
+			</fishingRod>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemInferiumHelmet id="mysticalagriculture:inferium_helmet"/>
+					<itemIntermediumHelmet id="mysticalagriculture:intermedium_helmet"/>
+					<itemPrudentiumHelmet id="mysticalagriculture:prudentium_helmet"/>
+					<itemSuperiumHelmet id="mysticalagriculture:superium_helmet"/>
+					<itemSupremiumHelmet id="mysticalagriculture:supremium_helmet"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemInferiumChestplate id="mysticalagriculture:inferium_chestplate"/>
+						<itemIntermediumChestplate id="mysticalagriculture:intermedium_chestplate"/>
+						<itemPrudentiumChestplate id="mysticalagriculture:prudentium_chestplate"/>
+						<itemSuperiumChestplate id="mysticalagriculture:superium_chestplate"/>
+						<itemSupremiumChestplate id="mysticalagriculture:supremium_chestplate"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemInferiumLeggings id="mysticalagriculture:inferium_leggings"/>
+					<itemIntermediumLeggings id="mysticalagriculture:intermedium_leggings"/>
+					<itemPrudentiumLeggings id="mysticalagriculture:prudentium_leggings"/>
+					<itemSuperiumLeggings id="mysticalagriculture:superium_leggings"/>
+					<itemSupremiumLeggings id="mysticalagriculture:supremium_leggings"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemInferiumBoots id="mysticalagriculture:inferium_boots"/>
+					<itemIntermediumBoots id="mysticalagriculture:intermedium_boots"/>
+					<itemPrudentiumBoots id="mysticalagriculture:prudentium_boots"/>
+					<itemSuperiumBoots id="mysticalagriculture:superium_boots"/>
+					<itemSupremiumBoots id="mysticalagriculture:supremium_boots"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<stoneWall>
+				<itemCobbledSoulstoneWall id="mysticalagriculture:cobbled_soulstone_wall"/>
+				<itemSoulstoneBrickWall id="mysticalagriculture:soulstone_brick_wall"/>
+			</stoneWall>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemCobbledSoulstoneStairs id="mysticalagriculture:cobbled_soulstone_stairs"/>
+						<itemSoulstoneBrickStairs id="mysticalagriculture:soulstone_brick_stairs"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<basicCrafting>
+				<tinkerToolCrafting>
+					<itemTinkeringTable id="mysticalagriculture:tinkering_table"/>
+				</tinkerToolCrafting>
+				<furnaces>
+					<itemInferiumFurnace id="mysticalagriculture:inferium_furnace"/>
+					<itemIntermediumFurnace id="mysticalagriculture:intermedium_furnace"/>
+					<itemPrudentiumFurnace id="mysticalagriculture:prudentium_furnace"/>
+					<itemSuperiumFurnace id="mysticalagriculture:superium_furnace"/>
+					<itemSupremiumFurnace id="mysticalagriculture:supremium_furnace"/>
+					<itemUltimateFurnace id="mysticalagriculture:ultimate_furnace"/>
+				</furnaces>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<nugget>
+				<nuggetSoulium>
+					<itemSouliumNugget id="mysticalagriculture:crafting" damage="45"/>
+				</nuggetSoulium>
+			</nugget>
+		</miningResources>
+		<huntingResources>
+			<string id="string">
+				<itemMysticalString id="mysticalagriculture:crafting" damage="23"/>
+			</string>
+			<itemMobChunk id="mysticalagriculture:chunk"/>
+		</huntingResources>
+	</resources>
+	<item>
+		<plant>
+			<seed>
+				<itemBaseCraftingSeed id="mysticalagriculture:crafting" damage="16"/>
+				<itemTier1CraftingSeed id="mysticalagriculture:crafting" damage="17"/>
+				<itemTier2CraftingSeed id="mysticalagriculture:crafting" damage="18"/>
+				<itemTier3CraftingSeed id="mysticalagriculture:crafting" damage="19"/>
+				<itemTier4CraftingSeed id="mysticalagriculture:crafting" damage="20"/>
+				<itemTier5CraftingSeed id="mysticalagriculture:crafting" damage="21"/>
+				<itemInferiumSeeds id="mysticalagriculture:tier1_inferium_seeds"/>
+				<itemInferiumSeeds id="mysticalagriculture:tier2_inferium_seeds"/>
+				<itemInferiumSeeds id="mysticalagriculture:tier3_inferium_seeds"/>
+				<itemInferiumSeeds id="mysticalagriculture:tier4_inferium_seeds"/>
+				<itemInferiumSeeds id="mysticalagriculture:tier5_inferium_seeds"/>
+			</seed>
+			<seedlings>
+				<mysticalCrops>
+					<itemAluminumBrassCrop id="mysticalagriculture:aluminum_brass_crop"/>
+					<itemAluminumCrop id="mysticalagriculture:aluminum_crop"/>
+					<itemAlumiteCrop id="mysticalagriculture:alumite_crop"/>
+					<itemApatiteCrop id="mysticalagriculture:apatite_crop"/>
+					<itemArditeCrop id="mysticalagriculture:ardite_crop"/>
+					<itemBasaltCrop id="mysticalagriculture:basalt_crop"/>
+					<itemBasalzCrop id="mysticalagriculture:basalz_crop"/>
+					<itemBlackQuartzCrop id="mysticalagriculture:black_quartz_crop"/>
+					<itemBlazeCrop id="mysticalagriculture:blaze_crop"/>
+					<itemBlitzCrop id="mysticalagriculture:blitz_crop"/>
+					<itemBlizzCrop id="mysticalagriculture:blizz_crop"/>
+					<itemBronzeCrop id="mysticalagriculture:bronze_crop"/>
+					<itemCertusQuartzCrop id="mysticalagriculture:certus_quartz_crop"/>
+					<itemChickenCrop id="mysticalagriculture:chicken_crop"/>
+					<itemCoalCrop id="mysticalagriculture:coal_crop"/>
+					<itemCobaltCrop id="mysticalagriculture:cobalt_crop"/>
+					<itemConductiveIronCrop id="mysticalagriculture:conductive_iron_crop"/>
+					<itemConstantanCrop id="mysticalagriculture:constantan_crop"/>
+					<itemCopperCrop id="mysticalagriculture:copper_crop"/>
+					<itemCowCrop id="mysticalagriculture:cow_crop"/>
+					<itemCreeperCrop id="mysticalagriculture:creeper_crop"/>
+					<itemDarkGemCrop id="mysticalagriculture:dark_gem_crop"/>
+					<itemDarkSteelCrop id="mysticalagriculture:dark_steel_crop"/>
+					<itemDiamondCrop id="mysticalagriculture:diamond_crop"/>
+					<itemDirtCrop id="mysticalagriculture:dirt_crop"/>
+					<itemDraconiumCrop id="mysticalagriculture:draconium_crop"/>
+					<itemDyeCrop id="mysticalagriculture:dye_crop"/>
+					<itemElectricalSteelCrop id="mysticalagriculture:electrical_steel_crop"/>
+					<itemElectrumCrop id="mysticalagriculture:electrum_crop"/>
+					<itemElementiumCrop id="mysticalagriculture:elementium_crop"/>
+					<itemEmeraldCrop id="mysticalagriculture:emerald_crop"/>
+					<itemEndCrop id="mysticalagriculture:end_crop"/>
+					<itemEndSteelCrop id="mysticalagriculture:end_steel_crop"/>
+					<itemEnderiumCrop id="mysticalagriculture:enderium_crop"/>
+					<itemEndermanCrop id="mysticalagriculture:enderman_crop"/>
+					<itemEnergeticAlloyCrop id="mysticalagriculture:energetic_alloy_crop"/>
+					<itemExperienceCrop id="mysticalagriculture:experience_crop"/>
+					<itemFireCrop id="mysticalagriculture:fire_crop"/>
+					<itemFluixCrop id="mysticalagriculture:fluix_crop"/>
+					<itemFluxedElectrumCrop id="mysticalagriculture:fluxed_electrum_crop"/>
+					<itemGhastCrop id="mysticalagriculture:ghast_crop"/>
+					<itemGlowstoneCrop id="mysticalagriculture:glowstone_crop"/>
+					<itemGlowstoneIngotCrop id="mysticalagriculture:glowstone_ingot_crop"/>
+					<itemGoldCrop id="mysticalagriculture:gold_crop"/>
+					<itemGrainsofInfinityCrop id="mysticalagriculture:grains_of_infinity_crop"/>
+					<itemGraphiteCrop id="mysticalagriculture:graphite_crop"/>
+					<itemGuardianCrop id="mysticalagriculture:guardian_crop"/>
+					<itemHOPGraphiteCrop id="mysticalagriculture:hop_graphite_crop"/>
+					<itemIceCrop id="mysticalagriculture:ice_crop"/>
+					<itemInvarCrop id="mysticalagriculture:invar_crop"/>
+					<itemIridiumCrop id="mysticalagriculture:iridium_crop"/>
+					<itemIridiumOreCrop id="mysticalagriculture:iridium_ore_crop"/>
+					<itemIronCrop id="mysticalagriculture:iron_crop"/>
+					<itemKnightslimeCrop id="mysticalagriculture:knightslime_crop"/>
+					<itemLapisLazuliCrop id="mysticalagriculture:lapis_lazuli_crop"/>
+					<itemLeadCrop id="mysticalagriculture:lead_crop"/>
+					<itemLimestoneCrop id="mysticalagriculture:limestone_crop"/>
+					<itemLumiumCrop id="mysticalagriculture:lumium_crop"/>
+					<itemManasteelCrop id="mysticalagriculture:manasteel_crop"/>
+					<itemManyullynCrop id="mysticalagriculture:manyullyn_crop"/>
+					<itemMarbleCrop id="mysticalagriculture:marble_crop"/>
+					<itemMenrilCrop id="mysticalagriculture:menril_crop"/>
+					<itemMithrilCrop id="mysticalagriculture:mithril_crop"/>
+					<itemMysticalFlowerCrop id="mysticalagriculture:mystical_flower_crop"/>
+					<itemNatureCrop id="mysticalagriculture:nature_crop"/>
+					<itemNetherCrop id="mysticalagriculture:nether_crop"/>
+					<itemNetherQuartzCrop id="mysticalagriculture:nether_quartz_crop"/>
+					<itemNickelCrop id="mysticalagriculture:nickel_crop"/>
+					<itemObsidianCrop id="mysticalagriculture:obsidian_crop"/>
+					<itemOsmiumCrop id="mysticalagriculture:osmium_crop"/>
+					<itemPigCrop id="mysticalagriculture:pig_crop"/>
+					<itemPlatinumCrop id="mysticalagriculture:platinum_crop"/>
+					<itemPulsatingIronCrop id="mysticalagriculture:pulsating_iron_crop"/>
+					<itemQuartzEnrichedIronCrop id="mysticalagriculture:quartz_enriched_iron_crop"/>
+					<itemRabbitCrop id="mysticalagriculture:rabbit_crop"/>
+					<itemRedstoneAlloyCrop id="mysticalagriculture:redstone_alloy_crop"/>
+					<itemRedstoneCrop id="mysticalagriculture:redstone_crop"/>
+					<itemRefinedObsidianCrop id="mysticalagriculture:refined_obsidian_crop"/>
+					<itemRubberCrop id="mysticalagriculture:rubber_crop"/>
+					<itemSaltpeterCrop id="mysticalagriculture:saltpeter_crop"/>
+					<itemSheepCrop id="mysticalagriculture:sheep_crop"/>
+					<itemSignalumCrop id="mysticalagriculture:signalum_crop"/>
+					<itemSiliconCrop id="mysticalagriculture:silicon_crop"/>
+					<itemSilverCrop id="mysticalagriculture:silver_crop"/>
+					<itemSkeletonCrop id="mysticalagriculture:skeleton_crop"/>
+					<itemSkyStoneCrop id="mysticalagriculture:sky_stone_crop"/>
+					<itemSlimeCrop id="mysticalagriculture:slime_crop"/>
+					<itemSoulariumCrop id="mysticalagriculture:soularium_crop"/>
+					<itemSpiderCrop id="mysticalagriculture:spider_crop"/>
+					<itemSteelCrop id="mysticalagriculture:steel_crop"/>
+					<itemStoneCrop id="mysticalagriculture:stone_crop"/>
+					<itemSulfurCrop id="mysticalagriculture:sulfur_crop"/>
+					<itemTerrasteelCrop id="mysticalagriculture:terrasteel_crop"/>
+					<itemTier1InferiumCrop id="mysticalagriculture:tier1_inferium_crop"/>
+					<itemTier2InferiumCrop id="mysticalagriculture:tier2_inferium_crop"/>
+					<itemTier3InferiumCrop id="mysticalagriculture:tier3_inferium_crop"/>
+					<itemTier4InferiumCrop id="mysticalagriculture:tier4_inferium_crop"/>
+					<itemTier5InferiumCrop id="mysticalagriculture:tier5_inferium_crop"/>
+					<itemTinCrop id="mysticalagriculture:tin_crop"/>
+					<itemUranium238Crop id="mysticalagriculture:uranium_238_crop"/>
+					<itemUraniumCrop id="mysticalagriculture:uranium_crop"/>
+					<itemVibrantAlloyCrop id="mysticalagriculture:vibrant_alloy_crop"/>
+					<itemWaterCrop id="mysticalagriculture:water_crop"/>
+					<itemWitherSkeletonCrop id="mysticalagriculture:wither_skeleton_crop"/>
+					<itemWoodCrop id="mysticalagriculture:wood_crop"/>
+					<itemYelloriumCrop id="mysticalagriculture:yellorium_crop"/>
+					<itemZombieCrop id="mysticalagriculture:zombie_crop"/>
+				</mysticalCrops>
+			</seedlings>
+			<fertilizer>
+				<itemFertilizedEssence id="mysticalagriculture:fertilized_essence"/>
+				<itemMysticalFertilizer id="mysticalagriculture:mystical_fertilizer"/>
+			</fertilizer>
+		</plant>
+		<potion>
+			<itemExperienceDroplet id="mysticalagriculture:xp_droplet"/>
+		</potion>
+	</item>
+</stuff>

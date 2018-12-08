@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<block>
+		<manufacturedBlock>
+			<fence>
+				<fenceGate>
+					<itemNetherBrickFenceGate id="quark:nether_brick_fence_gate"/>
+				</fenceGate>
+			</fence>
+			<stoneWall>
+				<itemBiotiteWall id="quark:biotite_wall"/>
+				<itemBrickWall id="quark:brick_wall"/>
+				<itemDuskboundWall id="quark:duskbound_block_wall"/>
+				<itemEndBrickWall id="quark:end_bricks_wall"/>
+				<itemMidoriWall id="quark:midori_block_wall"/>
+				<itemPaperWall id="quark:paper_wall"/>
+				<itemNetherwroughtBrickWall id="quark:polished_netherrack_bricks_wall"/>
+				<itemPrismarineWall id="quark:prismarine_rough_wall"/>
+				<itemPurpurWall id="quark:purpur_block_wall"/>
+				<itemQuartzWall id="quark:quartz_wall"/>
+				<itemRedSandstoneWall id="quark:red_sandstone_wall"/>
+				<itemSandstoneWall id="quark:sandstone_wall"/>
+				<itemAndesiteBrickWall id="quark:stone_andesite_bricks_wall"/>
+				<itemAndesiteWall id="quark:stone_andesite_wall"/>
+				<itemDioriteBrickWall id="quark:stone_diorite_bricks_wall"/>
+				<itemDioriteWall id="quark:stone_diorite_wall"/>
+				<itemGraniteBrickWall id="quark:stone_granite_bricks_wall"/>
+				<itemGraniteWall id="quark:stone_granite_wall"/>
+				<itemStoneWall id="quark:stone_wall"/>
+				<itemStoneBrickWall id="quark:stonebrick_wall"/>
+			</stoneWall>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemAndesiteBrickStairs id="quark:stone_andesite_bricks_stairs"/>
+						<itemAndesiteStairs id="quark:stone_andesite_stairs"/>
+						<itemBiotiteStairs id="quark:biotite_stairs"/>
+						<itemBlackTerracottaShingleStairs id="quark:stained_clay_tiles_black_stairs"/>
+						<itemBlueTerracottaShingleStairs id="quark:stained_clay_tiles_blue_stairs"/>
+						<itemBrownTerracottaShingleStairs id="quark:stained_clay_tiles_brown_stairs"/>
+						<itemCharredNetherBrickStairs id="quark:charred_nether_brick_stairs"/>
+						<itemCyanTerracottaShingleStairs id="quark:stained_clay_tiles_cyan_stairs"/>
+						<itemDarkPrismarineStairs id="quark:prismarine_dark_stairs"/>
+						<itemDioriteBrickStairs id="quark:stone_diorite_bricks_stairs"/>
+						<itemDioriteStairs id="quark:stone_diorite_stairs"/>
+						<itemDuskboundStairs id="quark:duskbound_block_stairs"/>
+						<itemEndBrickStairs id="quark:end_bricks_stairs"/>
+						<itemGraniteBrickStairs id="quark:stone_granite_bricks_stairs"/>
+						<itemGraniteStairs id="quark:stone_granite_stairs"/>
+						<itemGrayTerracottaShingleStairs id="quark:stained_clay_tiles_gray_stairs"/>
+						<itemGreenTerracottaShingleStairs id="quark:stained_clay_tiles_green_stairs"/>
+						<itemLightBlueTerracottaShingleStairs id="quark:stained_clay_tiles_light_blue_stairs"/>
+						<itemLightGrayTerracottaShingleStairs id="quark:stained_clay_tiles_silver_stairs"/>
+						<itemLimeTerracottaShingleStairs id="quark:stained_clay_tiles_lime_stairs"/>
+						<itemMagentaTerracottaShingleStairs id="quark:stained_clay_tiles_magenta_stairs"/>
+						<itemMagmaBrickStairs id="quark:magma_bricks_stairs"/>
+						<itemMidoriStairs id="quark:midori_block_stairs"/>
+						<itemNetherwroughtBrickStairs id="quark:polished_netherrack_bricks_stairs"/>
+						<itemOrangeTerracottaShingleStairs id="quark:stained_clay_tiles_orange_stairs"/>
+						<itemPinkTerracottaShingleStairs id="quark:stained_clay_tiles_pink_stairs"/>
+						<itemPrismarineBrickStairs id="quark:prismarine_bricks_stairs"/>
+						<itemPurpleTerracottaShingleStairs id="quark:stained_clay_tiles_purple_stairs"/>
+						<itemRedNetherBrickStairs id="quark:red_nether_brick_stairs"/>
+						<itemRedTerracottaShingleStairs id="quark:stained_clay_tiles_red_stairs"/>
+						<itemStoneStairs id="quark:stone_stairs"/>
+						<itemTerracottaShingleStairs id="quark:hardened_clay_tiles_stairs"/>
+						<itemWhiteTerracottaShingleStairs id="quark:stained_clay_tiles_white_stairs"/>
+						<itemYellowTerracottaShingleStairs id="quark:stained_clay_tiles_yellow_stairs"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+</stuff>

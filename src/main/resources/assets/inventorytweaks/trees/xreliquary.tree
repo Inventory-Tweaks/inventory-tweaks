@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<munition>
+				<gun>
+					<itemHuntersHandgun id="xreliquary:handgun"/>
+				</gun>
+			</munition>
+			<bullets>
+				<itemXenoMagazine id="xreliquary:magazine"/>
+				<itemXenoRounds id="xreliquary:bullet"/>
+			</bullets>
+		</weapon>
+		<tool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemPhoenixDown id="xreliquary:phoenix_down"/>
+				</hoe>
+			</farmingTool>
+		</tool>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<itemBlock>
+				<itemApothecaryCauldron id="xreliquary:apothecary_cauldron"/>
+			</itemBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<lighting>
+				<torch>
+					<itemInterdictionTorch id="xreliquary:interdiction_torch"/>
+				</torch>
+				<mobWarding id="enderio:blockspawnguard">
+					<itemInterdictionTorch id="xreliquary:interdiction_torch"/>
+				</mobWarding>
+			</lighting>
+		</mechanism>
+	</block>
+	<item>
+		<utility>
+			<readableBooks>
+				<itemTomeofAlkahestry id="xreliquary:alkahest_tome"/>
+			</readableBooks>
+		</utility>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<breads>
+						<glowingBread id="xreliquary:glowing_bread"/>
+					</breads>
+				</preparedFood>
+			</edibleFood>
+		</food>
+		<itemEmptyVial id="xreliquary:condensed_potion" damage="11"/>
+		<potion>
+			<drinkablePotion>
+				<neutralPotion>
+					<itemVialofOrdinaryWater id="xreliquary:condensed_potion" damage="29"/>
+					<itemCondensedSolvent id="xreliquary:condensed_potion" damage="12"/>
+				</neutralPotion>
+				<positivePotion>
+					<regenerationPotion>
+						<itemGrandPanacea id="xreliquary:condensed_potion" damage="27"/>
+						<itemElixirofRegeneration id="xreliquary:condensed_potion" damage="18"/>
+					</regenerationPotion>
+					<swiftnessPotion>
+						<itemAlchemicalCelerity id="xreliquary:condensed_potion" damage="26"/>
+						<itemElixirofSpeed id="xreliquary:condensed_potion" damage="13"/>
+					</swiftnessPotion>
+					<fireResistancePotion>
+						<itemAblativeProtection id="xreliquary:condensed_potion" damage="24"/>
+						<itemElixirofFireWarding id="xreliquary:condensed_potion" damage="20"/>
+					</fireResistancePotion>
+					<healingPotion>
+						<itemGrandPanacea id="xreliquary:condensed_potion" damage="27"/>
+						<itemElixirofHealing id="xreliquary:condensed_potion" damage="16"/>
+					</healingPotion>
+					<strengthPotion>
+						<itemAlchemicalPotency id="xreliquary:condensed_potion" damage="25"/>
+						<itemElixirofStrength id="xreliquary:condensed_potion" damage="15"/>
+					</strengthPotion>
+					<nightVisionPotion>
+						<itemElixirofInfravision id="xreliquary:condensed_potion" damage="23"/>
+					</nightVisionPotion>
+					<invisibilityPotion>
+						<itemElixirofInvisibility id="xreliquary:condensed_potion" damage="22"/>
+					</invisibilityPotion>
+				</positivePotion>
+			</drinkablePotion>
+			<splashPotion>
+				<itemCondensedSplashSerum id="xreliquary:condensed_potion" damage="0"/>
+				<negativeSplashPotion>
+					<poisonSplashPotion>
+						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9"/>
+						<itemSplashPoisonSerum id="xreliquary:condensed_potion" damage="2"/>
+					</poisonSplashPotion>
+					<weaknessSplashPotion>
+						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9"/>
+						<itemSplashWeaknessSerum id="xreliquary:condensed_potion" damage="6"/>
+					</weaknessSplashPotion>
+					<slownessSplashPotion>
+						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9"/>
+						<itemSplashSlowingSerum id="xreliquary:condensed_potion" damage="5"/>
+					</slownessSplashPotion>
+				</negativeSplashPotion>
+			</splashPotion>
+			<otherVials id="xreliquary:condensed_potion"/>
+		</potion>
+	</item>
+</stuff>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage9>
+							<itemFlux-InfusedSword id="redstonearsenal:tool.swordflux"/>
+						</swordDamage9>
+						<swordUnsorted>
+							<itemFlux-InfusedSword id="redstonearsenal:tool.sword_flux"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<bow mergeChildren="true">
+					<itemFlux-InfusedBow id="redstonearsenal:tool.bowflux"/>
+				</bow>
+			</munition>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemFlux-InfusedPickaxe id="redstonearsenal:tool.pickaxeflux"/>
+					</CobaltPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemFlux-InfusedShovel id="redstonearsenal:tool.shovelflux"/>
+					<itemFlux-InfusedShovel id="redstonearsenal:tool.shovelflux"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemFlux-InfusedAxe id="redstonearsenal:tool.axeflux"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true">
+					<itemFlux-InfusedSickle id="redstonearsenal:tool.sickleflux"/>
+				</sickle>
+			</farmingTool>
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
+				<itemFlux-InfusedFishingRod id="redstonearsenal:tool.fishingrodflux"/>
+			</fishingRod>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemRedstoneArsenal_tool.battleWrenchFlux id="redstonearsenal:tool.battlewrenchflux"/>
+				<itemRedstoneArsenal_tool.wrenchFlux id="redstonearsenal:tool.wrenchflux"/>
+			</wrench>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet3>
+					<itemFlux-InfusedHelm id="redstonearsenal:armor.helmetflux"/>
+				</helmet3>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate8>
+						<itemFlux-InfusedChestplate id="redstonearsenal:armor.plateflux"/>
+					</chestplate8>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings6>
+					<itemFlux-InfusedLeggings id="redstonearsenal:armor.legsflux"/>
+				</leggings6>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots3>
+					<itemFlux-InfusedBoots id="redstonearsenal:armor.bootsflux"/>
+				</boots3>
+			</boots>
+		</armor>
+	</equipment>
+</stuff>

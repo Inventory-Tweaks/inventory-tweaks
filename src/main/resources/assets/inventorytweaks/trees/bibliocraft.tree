@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
+				<itemFramingSaw id="bibliocraft:framingsaw"/>
+			</saws>
+			<debugTools>
+				<itemItemStackNameTester id="bibliocraft:testeritem"/>
+			</debugTools>
+			<keys>
+				<itemLockandKey id="bibliocraft:bibliocreativelock"/>
+			</keys>
+			<clipboards>
+				<itemClipboard id="bibliocraft:biblioclipboard"/>
+			</clipboards>
+			<bibliocraftTools>
+				<itemScrewGun id="bibliocraft:bibliodrill"/>
+				<itemHandDrill id="bibliocraft:handdrill"/>
+			</bibliocraftTools>
+			<odometers>
+				<itemTapeMeasure id="bibliocraft:tapemeasure"/>
+				<itemPlumbline id="bibliocraft:plumbline"/>
+			</odometers>
+			<instrument>
+				<compass>
+					<itemDraftingCompass id="bibliocraft:maptool"/>
+					<itemCompass id="bibliocraft:compass"/>
+					<itemEternalCompass id="bibliocraft:deathcompass"/>
+					<itemWaypointCompass id="bibliocraft:bibliowaypointcompass"/>
+				</compass>
+			</instrument>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<eyeGlasses>
+					<itemReadingGlasses id="bibliocraft:biblioglasses"/>
+					<itemTintedGlasses id="bibliocraft:biblioglasses"/>
+				</eyeGlasses>
+			</helmet>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<sign>
+				<itemBiblioFancySign id="bibliocraft:fancysign"/>
+			</sign>
+		</manufacturedBlock>
+		<mechanism>
+			<lighting>
+				<decorativeLights>
+					<itemFancyLamp id="bibliocraft:lampiron"/>
+					<itemFancyLamp id="bibliocraft:lampgold"/>
+					<itemFancyLantern id="bibliocraft:lanterniron"/>
+					<itemFancyLantern id="bibliocraft:lanterngold"/>
+				</decorativeLights>
+			</lighting>
+			<basicCrafting>
+				<craftingTables>
+					<itemBiblioWorkbench id="bibliocraft:workbench"/>
+					<itemOakFancyWorkbench id="bibliocraft:fancyworkbench"/>
+				</craftingTables>
+			</basicCrafting>
+			<machines>
+				<decorationMachines>
+					<itemBiblioFurniturePaneler id="bibliocraft:furniturepaneler"/>
+				</decorationMachines>
+				<documentMachines>
+					<itemPaintingPress id="bibliocraft:bibliopaintpress"/>
+					<itemPaintingPress id="bibliocraft:paintingpress"/>
+					<itemPrintingPress id="bibliocraft:printingpress"/>
+					<itemTypesettingTable id="bibliocraft:typesettingmachine"/>
+					<itemTypesettingTable id="bibliocraft:typesettingtable"/>
+				</documentMachines>
+			</machines>
+		</mechanism>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<itembibliocraft_tile.BiblioFramedChest id="bibliocraft:framedchest"/>
+				</chests>
+				<foodStorage>
+					<itemCookieJar id="bibliocraft:cookiejar"/>
+					<itemDinnerPlate id="bibliocraft:dinnerplate"/>
+				</foodStorage>
+			</storage>
+			<readableBooks>
+				<itemAtlas id="bibliocraft:atlasbook"/>
+				<itemBigWritingBook id="bibliocraft:bigbook"/>
+				<itemEmptyRecipeBook id="bibliocraft:recipebook"/>
+				<itemRedstone_VolumeI id="bibliocraft:biblioredbook"/>
+				<itemSlottedBook id="bibliocraft:slottedbook"/>
+				<itemStockroomCatalog id="bibliocraft:stockroomcatalog"/>
+			</readableBooks>
+		</utility>
+		<instrument>
+			<itemDraftingCompass id="bibliocraft:maptool"/>
+			<itemEternalCompass id="bibliocraft:deathcompass"/>
+			<itemWaypointCompass id="bibliocraft:bibliowaypointcompass"/>
+		</instrument>
+		<patterns>
+			<printingPatterns id="bibliocraft:bibliochase">
+				<itemPrintPressChase id="bibliocraft:bibliochase"/>
+				<itemEnchantedPlate id="bibliocraft:enchantedplate"/>
+				<itemFramingBoard id="bibliocraft:framingboard"/>
+				<itemFramingSheet id="bibliocraft:framingsheet"/>
+				<itemPaintingCanvas id="bibliocraft:paintingcanvas"/>
+				<itemPrintPressPlate id="bibliocraft:printplate"/>
+				<itemAtlasPlate id="bibliocraft:atlasplate"/>
+			</printingPatterns>
+		</patterns>
+		<parts>
+			<mechanicalParts>
+				<coils>
+					<itemTapeMeasureReel id="bibliocraft:tape"/>
+				</coils>
+			</mechanicalParts>
+		</parts>
+		<decoration>
+			<itemBiblioPaintingFrame id="bibliocraft:paintingframeborderless"/>
+			<itemBiblioPaintingFrame id="bibliocraft:paintingframefancy"/>
+			<itemBiblioPaintingFrame id="bibliocraft:paintingframeflat"/>
+			<itemBiblioPaintingFrame id="bibliocraft:paintingframemiddle"/>
+			<itemBiblioPaintingFrame id="bibliocraft:paintingframesimple"/>
+			<sign>
+				<itemBirchFancySign id="bibliocraft:fancysign"/>
+				<itemtile.BiblioClipboard.name id="bibliocraft:biblioclipboard"/>
+			</sign>
+			<bookcase>
+				<itemAcaciaBookcase id="bibliocraft:bookcase" damage="4"/>
+				<itemAcaciaFilledBookcase id="bibliocraft:bookcasefilled" damage="4"/>
+				<itemBirchBookcase id="bibliocraft:bookcase" damage="2"/>
+				<itemBirchFilledBookcase id="bibliocraft:bookcasefilled" damage="2"/>
+				<itemDarkOakBookcase id="bibliocraft:bookcase" damage="5"/>
+				<itemDarkOakFilledBookcase id="bibliocraft:bookcasefilled" damage="5"/>
+				<itemFramedBookcase id="bibliocraft:bookcase" damage="6"/>
+				<itemFramedFilledBookcase id="bibliocraft:bookcasefilled" damage="6"/>
+				<itemJungleBookcase id="bibliocraft:bookcase" damage="3"/>
+				<itemJungleFilledBookcase id="bibliocraft:bookcasefilled" damage="3"/>
+				<itemOakBookcase id="bibliocraft:bookcase" damage="0"/>
+				<itemOakFilledBookcase id="bibliocraft:bookcasefilled" damage="0"/>
+				<itemSpruceBookcase id="bibliocraft:bookcase" damage="1"/>
+				<itemSpruceFilledBookcase id="bibliocraft:bookcasefilled" damage="1"/>
+				<itemOakCreativeBookcase id="bibliocraft:bookcasecreative"/>
+			</bookcase>
+			<itemArmorStand id="bibliocraft:armorstand"/>
+			<itemSwordPedestal id="bibliocraft:swordpedestal"/>
+			<clocks>
+				<itemOakClock id="bibliocraft:clock"/>
+			</clocks>
+			<itemDeskBell id="bibliocraft:bell"/>
+			<itemWhiteTypewriter id="bibliocraft:typewriter"/>
+			<desks>
+				<itemOakDesk id="bibliocraft:desk"/>
+			</desks>
+			<tables>
+				<itemOakTable id="bibliocraft:table"/>
+			</tables>
+			<seating>
+				<seats>
+					<itemOakSeat id="bibliocraft:seat"/>
+				</seats>
+				<seatbacks>
+					<itemOakSeatBack id="bibliocraft:seatback"/>
+					<itemOakSeatBack id="bibliocraft:seatback1"/>
+					<itemOakSeatBack id="bibliocraft:seatback2"/>
+					<itemOakSeatBack id="bibliocraft:seatback3"/>
+					<itemOakSeatBack id="bibliocraft:seatback4"/>
+					<itemOakSeatBack id="bibliocraft:seatback5"/>
+				</seatbacks>
+			</seating>
+			<case>
+				<itemOakMapFrame id="bibliocraft:mapframe"/>
+				<itembibliocraftLabel id="bibliocraft:label"/>
+				<itembibliocraftCase id="bibliocraft:case"/>
+			</case>
+			<toolRack>
+				<itembibliocraftToolRack id="bibliocraft:toolrack"/>
+			</toolRack>
+			<shelf>
+				<itemAcaciaShelf id="bibliocraft:shelf" damage="4"/>
+				<itemBirchShelf id="bibliocraft:shelf" damage="2"/>
+				<itemDarkOakShelf id="bibliocraft:shelf" damage="5"/>
+				<itemFramedShelf id="bibliocraft:shelf" damage="6"/>
+				<itemJungleShelf id="bibliocraft:shelf" damage="3"/>
+				<itemOakShelf id="bibliocraft:shelf" damage="0"/>
+				<itemSpruceShelf id="bibliocraft:shelf" damage="1"/>
+			</shelf>
+			<potionShelf>
+				<itemAcaciaPotionShelf id="bibliocraft:potionshelf" damage="4"/>
+				<itemBirchPotionShelf id="bibliocraft:potionshelf" damage="2"/>
+				<itemDarkOakPotionShelf id="bibliocraft:potionshelf" damage="5"/>
+				<itemFramedPotionShelf id="bibliocraft:potionshelf" damage="6"/>
+				<itemJunglePotionShelf id="bibliocraft:potionshelf" damage="3"/>
+				<itemOakPotionShelf id="bibliocraft:potionshelf" damage="0"/>
+				<itemSprucePotionShelf id="bibliocraft:potionshelf" damage="1"/>
+			</potionShelf>
+			<musicRack id="bibliocraft:discrack" damage="3">
+				<itemDiscRack id="bibliocraft:discrack"/>
+				<itemDiscRack id="bibliocraft:discrack" damage="3"/>
+			</musicRack>
+		</decoration>
+	</item>
+	<nonItems>
+		<itemtile.BiblioCraft_Clipboard.name id="bibliocraft:clipboard"/>
+		<itemtile.BiblioCraft_MarkerPole.name id="bibliocraft:markerpole"/>
+	</nonItems>
+</stuff>

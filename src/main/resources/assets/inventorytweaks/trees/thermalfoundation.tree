@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage8>
+							<itemShinySword id="thermalfoundation:tool.swordplatinum"/>
+						</swordDamage8>
+						<swordDamage7>
+							<itemInvarSword id="thermalfoundation:tool.swordinvar"/>
+						</swordDamage7>
+						<swordDamage6>
+							<itemBronzeSword id="thermalfoundation:tool.swordbronze"/>
+							<itemFerrousSword id="thermalfoundation:tool.swordnickel"/>
+						</swordDamage6>
+						<swordDamage5>
+							<itemSilverSword id="thermalfoundation:tool.swordsilver"/>
+							<itemTinSword id="thermalfoundation:tool.swordtin"/>
+							<itemLeadSword id="thermalfoundation:tool.swordlead"/>
+						</swordDamage5>
+						<swordDamage4>
+							<itemCopperSword id="thermalfoundation:tool.swordcopper"/>
+							<itemElectrumSword id="thermalfoundation:tool.swordelectrum"/>
+						</swordDamage4>
+						<swordUnsorted>
+							<itemAluminumSword id="thermalfoundation:tool.sword_aluminum"/>
+							<itemBronzeSword id="thermalfoundation:tool.sword_bronze"/>
+							<itemConstantanSword id="thermalfoundation:tool.sword_constantan"/>
+							<itemCopperSword id="thermalfoundation:tool.sword_copper"/>
+							<itemElectrumSword id="thermalfoundation:tool.sword_electrum"/>
+							<itemInvarSword id="thermalfoundation:tool.sword_invar"/>
+							<itemLeadSword id="thermalfoundation:tool.sword_lead"/>
+							<itemNickelSword id="thermalfoundation:tool.sword_nickel"/>
+							<itemPlatinumSword id="thermalfoundation:tool.sword_platinum"/>
+							<itemSilverSword id="thermalfoundation:tool.sword_silver"/>
+							<itemSteelSword id="thermalfoundation:tool.sword_steel"/>
+							<itemTinSword id="thermalfoundation:tool.sword_tin"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<bow mergeChildren="true">
+					<itemBronzeReinforcedBow id="thermalfoundation:tool.bowbronze"/>
+					<itemCopperReinforcedBow id="thermalfoundation:tool.bowcopper"/>
+					<itemElectrumReinforcedBow id="thermalfoundation:tool.bowelectrum"/>
+					<itemFerrousReinforcedBow id="thermalfoundation:tool.bownickel"/>
+					<itemInvarReinforcedBow id="thermalfoundation:tool.bowinvar"/>
+					<itemLeadReinforcedBow id="thermalfoundation:tool.bowlead"/>
+					<itemShinyReinforcedBow id="thermalfoundation:tool.bowplatinum"/>
+					<itemSilverReinforcedBow id="thermalfoundation:tool.bowsilver"/>
+					<itemTinReinforcedBow id="thermalfoundation:tool.bowtin"/>
+				</bow>
+			</munition>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemShinyPickaxe id="thermalfoundation:tool.pickaxeplatinum"/>
+					</CobaltPickLevel>
+					<DiamondPickLevel>
+						<itemBronzePickaxe id="thermalfoundation:tool.pickaxebronze"/>
+						<itemFerrousPickaxe id="thermalfoundation:tool.pickaxenickel"/>
+						<itemInvarPickaxe id="thermalfoundation:tool.pickaxeinvar"/>
+						<itemSilverPickaxe id="thermalfoundation:tool.pickaxesilver"/>
+					</DiamondPickLevel>
+					<IronLevel>
+						<itemCopperPickaxe id="thermalfoundation:tool.pickaxecopper"/>
+						<itemElectrumPickaxe id="thermalfoundation:tool.pickaxeelectrum"/>
+					</IronLevel>
+					<StoneLevel>
+						<itemLeadPickaxe id="thermalfoundation:tool.pickaxelead"/>
+						<itemTinPickaxe id="thermalfoundation:tool.pickaxetin"/>
+					</StoneLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemBronzeShovel id="thermalfoundation:tool.shovelbronze"/>
+					<itemCopperShovel id="thermalfoundation:tool.shovelcopper"/>
+					<itemElectrumShovel id="thermalfoundation:tool.shovelelectrum"/>
+					<itemFerrousShovel id="thermalfoundation:tool.shovelnickel"/>
+					<itemInvarShovel id="thermalfoundation:tool.shovelinvar"/>
+					<itemLeadShovel id="thermalfoundation:tool.shovellead"/>
+					<itemShinyShovel id="thermalfoundation:tool.shovelplatinum"/>
+					<itemSilverShovel id="thermalfoundation:tool.shovelsilver"/>
+					<itemTinShovel id="thermalfoundation:tool.shoveltin"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemBronzeAxe id="thermalfoundation:tool.axebronze"/>
+					<itemCopperAxe id="thermalfoundation:tool.axecopper"/>
+					<itemElectrumAxe id="thermalfoundation:tool.axeelectrum"/>
+					<itemFerrousAxe id="thermalfoundation:tool.axenickel"/>
+					<itemInvarAxe id="thermalfoundation:tool.axeinvar"/>
+					<itemLeadAxe id="thermalfoundation:tool.axelead"/>
+					<itemShinyAxe id="thermalfoundation:tool.axeplatinum"/>
+					<itemSilverAxe id="thermalfoundation:tool.axesilver"/>
+					<itemTinAxe id="thermalfoundation:tool.axetin"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true">
+					<itemShinySickle id="thermalfoundation:tool.sickleplatinum"/>
+					<itemDiamondSickle id="thermalfoundation:tool.sicklediamond"/>
+					<itemBronzeSickle id="thermalfoundation:tool.sicklebronze"/>
+					<itemInvarSickle id="thermalfoundation:tool.sickleinvar"/>
+					<itemElectrumSickle id="thermalfoundation:tool.sickleelectrum"/>
+					<itemFerrousSickle id="thermalfoundation:tool.sicklenickel"/>
+					<itemIronSickle id="thermalfoundation:tool.sickleiron"/>
+					<itemLeadSickle id="thermalfoundation:tool.sicklelead"/>
+					<itemCopperSickle id="thermalfoundation:tool.sicklecopper"/>
+					<itemTinSickle id="thermalfoundation:tool.sickletin"/>
+					<itemSilverSickle id="thermalfoundation:tool.sicklesilver"/>
+					<itemStoneSickle id="thermalfoundation:tool.sicklestone"/>
+					<itemGoldSickle id="thermalfoundation:tool.sicklegold"/>
+					<itemWoodSickle id="thermalfoundation:tool.sicklewood"/>
+				</sickle>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemBronzeHoe id="thermalfoundation:tool.hoebronze"/>
+					<itemCopperHoe id="thermalfoundation:tool.hoecopper"/>
+					<itemElectrumHoe id="thermalfoundation:tool.hoeelectrum"/>
+					<itemFerrousHoe id="thermalfoundation:tool.hoenickel"/>
+					<itemInvarHoe id="thermalfoundation:tool.hoeinvar"/>
+					<itemLeadHoe id="thermalfoundation:tool.hoelead"/>
+					<itemShinyHoe id="thermalfoundation:tool.hoeplatinum"/>
+					<itemSilverHoe id="thermalfoundation:tool.hoesilver"/>
+					<itemTinHoe id="thermalfoundation:tool.hoetin"/>
+				</hoe>
+			</farmingTool>
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
+				<itemBronzeShears id="thermalfoundation:tool.shearsbronze"/>
+				<itemCopperShears id="thermalfoundation:tool.shearscopper"/>
+				<itemElectrumShears id="thermalfoundation:tool.shearselectrum"/>
+				<itemFerrousShears id="thermalfoundation:tool.shearsnickel"/>
+				<itemInvarShears id="thermalfoundation:tool.shearsinvar"/>
+				<itemLeadShears id="thermalfoundation:tool.shearslead"/>
+				<itemShinyShears id="thermalfoundation:tool.shearsplatinum"/>
+				<itemSilverShears id="thermalfoundation:tool.shearssilver"/>
+				<itemTinShears id="thermalfoundation:tool.shearstin"/>
+				<itemAluminumShears id="thermalfoundation:tool.shears_aluminum"/>
+				<itemBronzeShears id="thermalfoundation:tool.shears_bronze"/>
+				<itemConstantanShears id="thermalfoundation:tool.shears_constantan"/>
+				<itemCopperShears id="thermalfoundation:tool.shears_copper"/>
+				<itemDiamondShears id="thermalfoundation:tool.shears_diamond"/>
+				<itemElectrumShears id="thermalfoundation:tool.shears_electrum"/>
+				<itemGoldShears id="thermalfoundation:tool.shears_gold"/>
+				<itemInvarShears id="thermalfoundation:tool.shears_invar"/>
+				<itemLeadShears id="thermalfoundation:tool.shears_lead"/>
+				<itemNickelShears id="thermalfoundation:tool.shears_nickel"/>
+				<itemPlatinumShears id="thermalfoundation:tool.shears_platinum"/>
+				<itemSilverShears id="thermalfoundation:tool.shears_silver"/>
+				<itemSteelShears id="thermalfoundation:tool.shears_steel"/>
+				<itemStoneShears id="thermalfoundation:tool.shears_stone"/>
+				<itemTinShears id="thermalfoundation:tool.shears_tin"/>
+				<itemWoodenShears id="thermalfoundation:tool.shears_wood"/>
+			</shears>
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
+				<itemBronzeFishingRod id="thermalfoundation:tool.fishingrodbronze"/>
+				<itemCopperFishingRod id="thermalfoundation:tool.fishingrodcopper"/>
+				<itemElectrumFishingRod id="thermalfoundation:tool.fishingrodelectrum"/>
+				<itemFerrousFishingRod id="thermalfoundation:tool.fishingrodnickel"/>
+				<itemInvarFishingRod id="thermalfoundation:tool.fishingrodinvar"/>
+				<itemLeadFishingRod id="thermalfoundation:tool.fishingrodlead"/>
+				<itemShinyFishingRod id="thermalfoundation:tool.fishingrodplatinum"/>
+				<itemSilverFishingRod id="thermalfoundation:tool.fishingrodsilver"/>
+				<itemTinFishingRod id="thermalfoundation:tool.fishingrodtin"/>
+			</fishingRod>
+			<multimeters>
+				<itemMultimeter id="thermalfoundation:meter"/>
+			</multimeters>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet3>
+					<itemShinyHelmet id="thermalfoundation:armor.helmetplatinum"/>
+					<itemBronzeHelmet id="thermalfoundation:armor.helmetbronze"/>
+				</helmet3>
+				<helmet2>
+					<itemInvarHelmet id="thermalfoundation:armor.helmetinvar"/>
+					<itemFerrousHelmet id="thermalfoundation:armor.helmetnickel"/>
+					<itemLeadHelmet id="thermalfoundation:armor.helmetlead"/>
+					<itemSilverHelmet id="thermalfoundation:armor.helmetsilver"/>
+					<itemElectrumHelmet id="thermalfoundation:armor.helmetelectrum"/>
+				</helmet2>
+				<helmet1>
+					<itemTinHelmet id="thermalfoundation:armor.helmettin"/>
+					<itemCopperHelmet id="thermalfoundation:armor.helmetcopper"/>
+				</helmet1>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate8>
+						<itemShinyChestplate id="thermalfoundation:armor.plateplatinum"/>
+						<itemElectrumChestplate id="thermalfoundation:armor.plateelectrum"/>
+					</chestplate8>
+					<chestplate7>
+						<itemInvarChestplate id="thermalfoundation:armor.plateinvar"/>
+					</chestplate7>
+					<chestplate6>
+						<itemBronzeChestplate id="thermalfoundation:armor.platebronze"/>
+					</chestplate6>
+					<chestplate5>
+						<itemFerrousChestplate id="thermalfoundation:armor.platenickel"/>
+						<itemLeadChestplate id="thermalfoundation:armor.platelead"/>
+					</chestplate5>
+					<chestplate4>
+						<itemSilverChestplate id="thermalfoundation:armor.platesilver"/>
+						<itemTinChestplate id="thermalfoundation:armor.platetin"/>
+					</chestplate4>
+					<chestplate3>
+						<itemCopperChestplate id="thermalfoundation:armor.platecopper"/>
+					</chestplate3>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings6>
+					<itemShinyLeggings id="thermalfoundation:armor.legsplatinum"/>
+					<itemBronzeLeggings id="thermalfoundation:armor.legsbronze"/>
+				</leggings6>
+				<leggings5>
+					<itemInvarLeggings id="thermalfoundation:armor.legsinvar"/>
+					<itemFerrousLeggings id="thermalfoundation:armor.legsnickel"/>
+				</leggings5>
+				<leggings4>
+					<itemLeadLeggings id="thermalfoundation:armor.legslead"/>
+					<itemSilverLeggings id="thermalfoundation:armor.legssilver"/>
+					<itemElectrumLeggings id="thermalfoundation:armor.legselectrum"/>
+				</leggings4>
+				<leggings3>
+					<itemTinLeggings id="thermalfoundation:armor.legstin"/>
+					<itemCopperLeggings id="thermalfoundation:armor.legscopper"/>
+				</leggings3>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots3>
+					<itemShinyBoots id="thermalfoundation:armor.bootsplatinum"/>
+					<itemLeadBoots id="thermalfoundation:armor.bootslead"/>
+				</boots3>
+				<boots2>
+					<itemInvarBoots id="thermalfoundation:armor.bootsinvar"/>
+					<itemBronzeBoots id="thermalfoundation:armor.bootsbronze"/>
+					<itemFerrousBoots id="thermalfoundation:armor.bootsnickel"/>
+					<itemElectrumBoots id="thermalfoundation:armor.bootselectrum"/>
+				</boots2>
+				<boots1>
+					<itemSilverBoots id="thermalfoundation:armor.bootssilver"/>
+					<itemTinBoots id="thermalfoundation:armor.bootstin"/>
+					<itemCopperBoots id="thermalfoundation:armor.bootscopper"/>
+				</boots1>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<oreBlock>
+				<oreEnergizedNetherrack>
+					<itemEnergizedNetherrack id="thermalfoundation:ore_fluid" damage="3"/>
+				</oreEnergizedNetherrack>
+				<itemDestabilizedRedstone id="thermalfoundation:fluidredstone"/>
+				<itemDestabilizedRedstoneOre id="thermalfoundation:ore_fluid" damage="2"/>
+				<oreOil>
+					<itemOilSand id="thermalfoundation:ore_fluid" damage="5"/>
+					<itemOilSand id="thermalfoundation:ore_fluid" damage="0"/>
+					<itemOilShale id="thermalfoundation:ore_fluid" damage="1"/>
+				</oreOil>
+				<oreResonantEndStone>
+					<itemResonantEndStone id="thermalfoundation:ore_fluid" damage="4"/>
+				</oreResonantEndStone>
+			</oreBlock>
+			<liquid>
+				<fluids id="enderio:blockfire_water">
+					<itemZephyreanAerotheum id="thermalfoundation:fluidaerotheum"/>
+					<itemLiquifactedCoal id="thermalfoundation:fluidcoal"/>
+					<itemGelidCryotheum id="thermalfoundation:fluidcryotheum"/>
+					<itemResonantEnder id="thermalfoundation:fluidender"/>
+					<itemEnergizedGlowstone id="thermalfoundation:fluidglowstone"/>
+					<itemPrimalMana id="thermalfoundation:fluidmana"/>
+					<itemTectonicPetrotheum id="thermalfoundation:fluidpetrotheum"/>
+					<itemBlazingPyrotheum id="thermalfoundation:fluidpyrotheum"/>
+					<itemSteam id="thermalfoundation:fluidsteam"/>
+				</fluids>
+				<itemizedFluids>
+					<itemBlazingPyrotheum id="thermalfoundation:fluid_pyrotheum" damage="0"/>
+					<itemCrudeOil id="thermalfoundation:fluid_crude_oil" damage="0"/>
+					<itemDestabilizedRedstone id="thermalfoundation:fluid_redstone" damage="0"/>
+					<itemEnergizedGlowstone id="thermalfoundation:fluid_glowstone" damage="0"/>
+					<itemGelidCryotheum id="thermalfoundation:fluid_cryotheum" damage="0"/>
+					<itemPrimalMana id="thermalfoundation:fluid_mana" damage="0"/>
+					<itemResonantEnder id="thermalfoundation:fluid_ender" damage="0"/>
+					<itemTectonicPetrotheum id="thermalfoundation:fluid_petrotheum" damage="0"/>
+					<itemZephyreanAerotheum id="thermalfoundation:fluid_aerotheum" damage="0"/>
+				</itemizedFluids>
+			</liquid>
+		</naturalBlock>
+		<mechanism>
+			<machineupgrades>
+				<augments>
+					<itemHardenedUpgradeKit id="thermalfoundation:upgrade" damage="0"/>
+					<itemReinforcedUpgradeKit id="thermalfoundation:upgrade" damage="1"/>
+					<itemResonantUpgradeKit id="thermalfoundation:upgrade" damage="3"/>
+					<itemSignalumUpgradeKit id="thermalfoundation:upgrade" damage="2"/>
+					<itemReinforcedConversionKit id="thermalfoundation:upgrade" damage="33"/>
+					<itemResonantConversionKit id="thermalfoundation:upgrade" damage="35"/>
+					<itemSignalumConversionKit id="thermalfoundation:upgrade" damage="34"/>
+					<itemCreativeConversionKit id="thermalfoundation:upgrade" damage="256"/>
+				</augments>
+			</machineupgrades>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<dust>
+				<itemManaDust id="thermalfoundation:material" damage="516"/>
+				<itemCompressedSawdust id="thermalfoundation:material" damage="801"/>
+			</dust>
+		</miningResources>
+		<huntingResources>
+			<itemRosin id="thermalfoundation:material" damage="832"/>
+			<itemTar id="thermalfoundation:material" damage="833"/>
+		</huntingResources>
+	</resources>
+	<item>
+		<utility>
+			<readableBooks>
+				<itemForgeLexicon id="thermalfoundation:lexicon"/>
+				<itemForgeLexicon id="thermalfoundation:tome_lexicon"/>
+			</readableBooks>
+			<experienceBook>
+				<itemTomeofKnowledge id="thermalfoundation:tome_experience"/>
+			</experienceBook>
+			<horseArmor>
+				<itemAluminumHorseArmor id="thermalfoundation:horse_armor_aluminum"/>
+				<itemBronzeHorseArmor id="thermalfoundation:horse_armor_bronze"/>
+				<itemConstantanHorseArmor id="thermalfoundation:horse_armor_constantan"/>
+				<itemCopperHorseArmor id="thermalfoundation:horse_armor_copper"/>
+				<itemElectrumHorseArmor id="thermalfoundation:horse_armor_electrum"/>
+				<itemInvarHorseArmor id="thermalfoundation:horse_armor_invar"/>
+				<itemLeadHorseArmor id="thermalfoundation:horse_armor_lead"/>
+				<itemNickelHorseArmor id="thermalfoundation:horse_armor_nickel"/>
+				<itemPlatinumHorseArmor id="thermalfoundation:horse_armor_platinum"/>
+				<itemSilverHorseArmor id="thermalfoundation:horse_armor_silver"/>
+				<itemSteelHorseArmor id="thermalfoundation:horse_armor_steel"/>
+				<itemTinHorseArmor id="thermalfoundation:horse_armor_tin"/>
+			</horseArmor>
+		</utility>
+		<bucket>
+			<itemthermalfoundation_bucket id="thermalfoundation:bucket"/>
+		</bucket>
+		<patterns>
+			<itemRedprint id="thermalfoundation:diagram_redprint"/>
+		</patterns>
+		<parts>
+			<mechanicalParts>
+				<coils>
+					<itemRedstoneReceptionCoil id="thermalfoundation:material" damage="513"/>
+					<itemRedstoneTransmissionCoil id="thermalfoundation:material" damage="514"/>
+					<itemRedstoneConductanceCoil id="thermalfoundation:material" damage="515"/>
+				</coils>
+				<servos>
+					<itemRedstoneServo id="thermalfoundation:material" damage="512"/>
+				</servos>
+				<otherParts>
+					<itemToolCasing id="thermalfoundation:material" damage="640"/>
+					<itemDrillHead id="thermalfoundation:material" damage="656"/>
+					<itemSawBlade id="thermalfoundation:material" damage="657"/>
+					<itemSignalumSecurityLock id="thermalfoundation:security"/>
+				</otherParts>
+			</mechanicalParts>
+		</parts>
+		<food>
+			<hunting>
+				<bait>
+					<itemAqua-Chow id="thermalfoundation:bait"/>
+				</bait>
+			</hunting>
+		</food>
+		<plant>
+			<fertilizer>
+				<itemPhyto-Gro id="thermalfoundation:fertilizer"/>
+			</fertilizer>
+			<plantMatter>
+				<itemPulpedBioblend id="thermalfoundation:material" damage="818"/>
+				<itemPulpedBiomass id="thermalfoundation:material" damage="816"/>
+				<itemRichBioblend id="thermalfoundation:material" damage="819"/>
+				<itemRichBiomass id="thermalfoundation:material" damage="817"/>
+			</plantMatter>
+		</plant>
+	</item>
+</stuff>

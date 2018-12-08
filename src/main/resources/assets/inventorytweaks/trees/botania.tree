@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordUnsorted>
+							<itemElementiumSword id="botania:elementiumsword"/>
+							<itemManasteelSword id="botania:manasteelsword"/>
+							<itemStarcaller id="botania:starsword"/>
+							<itemTerraBlade id="botania:terrasword"/>
+							<itemThundercaller id="botania:thundersword"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
+				<itemElementiumShears id="botania:elementiumshears"/>
+				<itemManasteelShears id="botania:manasteelshears"/>
+			</shears>
+			<wands>
+				<itemWandoftheForest id="botania:twigwand"/>
+			</wands>
+			<magnets>
+				<itemRingofMagnetization id="botania:magnetring"/>
+				<itemGreaterRingofMagnetization id="botania:magnetringgreater"/>
+			</magnets>
+		</tool>
+		<armor>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate6>
+						<itemTerrasteelChestplate id="botania:terrasteelchest"/>
+					</chestplate6>
+					<chestplate5>
+						<itemManasteelChestplate id="botania:manasteelchest"/>
+						<itemElementiumChestplate id="botania:elementiumchest"/>
+					</chestplate5>
+					<chestplate2>
+						<itemManaweaveRobeTop id="botania:manaweavechest"/>
+					</chestplate2>
+				</chestplateArmor>
+			</chestplate>
+		</armor>
+		<baubles>
+			<rings>
+				<itemBandofAura id="botania:auraring"/>
+				<itemBandofMana id="botania:manaring"/>
+				<itemGreatFairyRing id="botania:pixiering"/>
+				<itemGreaterBandofAura id="botania:auraringgreater"/>
+				<itemGreaterBandofMana id="botania:manaringgreater"/>
+				<itemRingofChordata id="botania:waterring"/>
+				<itemRingofCorrection id="botania:swapring"/>
+				<itemRingofDexterousMotion id="botania:dodgering"/>
+				<itemRingofFarReach id="botania:reachring"/>
+				<itemRingofLoki id="botania:lokiring"/>
+				<itemRingofOdin id="botania:odinring"/>
+				<itemRingoftheMantle id="botania:miningring"/>
+				<itemRingofThor id="botania:thorring"/>
+			</rings>
+		</baubles>
+	</equipment>
+	<resources>
+		<huntingResources>
+			<string id="string">
+				<itemRedString id="botania:manaresource" damage="12"/>
+				<itemManaInfusedString id="botania:manaresource" damage="16"/>
+			</string>
+		</huntingResources>
+	</resources>
+</stuff>

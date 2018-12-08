@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet2>
+					<itemHardenedLeatherHelm id="harvestcraft:hardenedleatherhelmitem"/>
+				</helmet2>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate6>
+						<itemHardenedLeatherChest id="harvestcraft:hardenedleatherchestitem"/>
+					</chestplate6>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings5>
+					<itemHardenedLeatherLeggings id="harvestcraft:hardenedleatherleggingsitem"/>
+				</leggings5>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots2>
+					<itemHardenedLeatherBoots id="harvestcraft:hardenedleatherbootsitem"/>
+				</boots2>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<oreBlock>
+				<oreSalt>
+					<itemSaltOre id="harvestcraft:salt"/>
+				</oreSalt>
+			</oreBlock>
+		</naturalBlock>
+		<mechanism>
+			<lighting>
+				<torch>
+					<itemBlackCandle id="harvestcraft:candledeco16"/>
+					<itemBlueCandle id="harvestcraft:candledeco12"/>
+					<itemBrownCandle id="harvestcraft:candledeco13"/>
+					<itemCyanCandle id="harvestcraft:candledeco10"/>
+					<itemDarkGreyCandle id="harvestcraft:candledeco8"/>
+					<itemGreenCandle id="harvestcraft:candledeco14"/>
+					<itemLightBlueCandle id="harvestcraft:candledeco4"/>
+					<itemLightGreyCandle id="harvestcraft:candledeco9"/>
+					<itemLimeCandle id="harvestcraft:candledeco6"/>
+					<itemMagentaCandle id="harvestcraft:candledeco3"/>
+					<itemOrangeCandle id="harvestcraft:candledeco2"/>
+					<itemPinkCandle id="harvestcraft:candledeco7"/>
+					<itemPurpleCandle id="harvestcraft:candledeco11"/>
+					<itemRedCandle id="harvestcraft:candledeco15"/>
+					<itemWhiteCandle id="harvestcraft:candledeco1"/>
+					<itemYellowCandle id="harvestcraft:candledeco5"/>
+				</torch>
+			</lighting>
+		</mechanism>
+	</block>
+	<resources>
+		<huntingResources>
+			<itemHardenedLeather id="harvestcraft:hardenedleatheritem"/>
+		</huntingResources>
+	</resources>
+	<item>
+		<itemWaterBarrel id="harvestcraft:sink"/>
+		<cookingTool>
+			<itemPot id="harvestcraft:pot"/>
+			<itemCuttingBoard id="harvestcraft:cuttingboard"/>
+			<cookingBlocks>
+				<itemChurn id="harvestcraft:churn"/>
+				<itemMarket id="harvestcraft:market"/>
+				<itemOven id="harvestcraft:oven"/>
+				<itemPresser id="harvestcraft:presser"/>
+				<itemQuern id="harvestcraft:quern"/>
+				<itemtile.quernon.name id="harvestcraft:quernon"/>
+				<itemtile.churnon.name id="harvestcraft:churnon"/>
+				<itemtile.ovenon.name id="harvestcraft:ovenon"/>
+			</cookingBlocks>
+		</cookingTool>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<taco>
+						<itemharvestcraft_randomtacoItem id="harvestcraft:randomtacoitem"/>
+					</taco>
+				</preparedFood>
+				<cookedFood>
+					<cookedPotato>
+						<itemharvestcraft_bakedsweetpotatoItem id="harvestcraft:bakedsweetpotatoitem"/>
+					</cookedPotato>
+				</cookedFood>
+				<fruit>
+					<apple>
+						<itemApple id="harvestcraft:pamapple"/>
+					</apple>
+					<Other>
+						<itemAlmond id="harvestcraft:pamalmond"/>
+						<itemApricot id="harvestcraft:pamapricot"/>
+						<itemAvocado id="harvestcraft:pamavocado"/>
+						<itemBanana id="harvestcraft:pambanana"/>
+						<itemBreadfruit id="harvestcraft:pambreadfruit"/>
+						<itemCashew id="harvestcraft:pamcashew"/>
+						<itemCherry id="harvestcraft:pamcherry"/>
+						<itemChestnut id="harvestcraft:pamchestnut"/>
+						<itemCoconut id="harvestcraft:pamcoconut"/>
+						<itemDate id="harvestcraft:pamdate"/>
+						<itemDragonfruit id="harvestcraft:pamdragonfruit"/>
+						<itemDurian id="harvestcraft:pamdurian"/>
+						<itemFig id="harvestcraft:pamfig"/>
+						<itemGoosberry id="harvestcraft:pamgooseberry"/>
+						<itemGrapefruit id="harvestcraft:pamgrapefruit"/>
+						<itemGuava id="harvestcraft:pamguava"/>
+						<itemHazelnut id="harvestcraft:hazelnutitem"/>
+						<itemHazelnut id="harvestcraft:pamhazelnut"/>
+						<itemJackfruit id="harvestcraft:pamjackfruit"/>
+						<itemLemon id="harvestcraft:pamlemon"/>
+						<itemLime id="harvestcraft:pamlime"/>
+						<itemLychee id="harvestcraft:pamlychee"/>
+						<itemMango id="harvestcraft:pammango"/>
+						<itemNutmeg id="harvestcraft:pamnutmeg"/>
+						<itemOlive id="harvestcraft:pamolive"/>
+						<itemOrange id="harvestcraft:pamorange"/>
+						<itemPapaya id="harvestcraft:pampapaya"/>
+						<itemPassionfruit id="harvestcraft:pampassionfruit"/>
+						<itemPawpaw id="harvestcraft:pampawpaw"/>
+						<itemPeach id="harvestcraft:pampeach"/>
+						<itemPear id="harvestcraft:pampear"/>
+						<itemPecan id="harvestcraft:pampecan"/>
+						<itemPeppercorn id="harvestcraft:pampeppercorn"/>
+						<itemPersimmon id="harvestcraft:pampersimmon"/>
+						<itemPistachio id="harvestcraft:pampistachio"/>
+						<itemPlum id="harvestcraft:pamplum"/>
+						<itemPomegranate id="harvestcraft:pampomegranate"/>
+						<itemRambutan id="harvestcraft:pamrambutan"/>
+						<itemSoursop id="harvestcraft:pamsoursop"/>
+						<itemSpiderWeb id="harvestcraft:pamspiderweb"/>
+						<itemStarfruit id="harvestcraft:pamstarfruit"/>
+						<itemTamarind id="harvestcraft:pamtamarind"/>
+						<itemVanillaBean id="harvestcraft:pamvanillabean"/>
+						<itemWalnut id="harvestcraft:pamwalnut"/>
+					</Other>
+				</fruit>
+			</edibleFood>
+			<unedibleFood>
+				<cakes>
+					<itemharvestcraft_carrotcakeItem id="harvestcraft:carrotcakeitem"/>
+					<itemharvestcraft_pamcarrotCake id="harvestcraft:pamcarrotcake"/>
+					<itemharvestcraft_pamcheeseCake id="harvestcraft:pamcheesecake"/>
+					<itemharvestcraft_cheesecakeItem id="harvestcraft:cheesecakeitem"/>
+					<itemharvestcraft_pamcherrycheeseCake id="harvestcraft:pamcherrycheesecake"/>
+					<itemharvestcraft_cherrycheesecakeItem id="harvestcraft:cherrycheesecakeitem"/>
+					<itemharvestcraft_chocolatesprinklecakeItem id="harvestcraft:chocolatesprinklecakeitem"/>
+					<itemharvestcraft_pamchocolatesprinkleCake id="harvestcraft:pamchocolatesprinklecake"/>
+					<itemharvestcraft_holidaycakeItem id="harvestcraft:holidaycakeitem"/>
+					<itemharvestcraft_pamholidayCake id="harvestcraft:pamholidaycake"/>
+					<itemharvestcraft_lamingtonItem id="harvestcraft:lamingtonitem"/>
+					<itemharvestcraft_pamlamingtonCake id="harvestcraft:pamlamingtoncake"/>
+					<itemharvestcraft_pampineappleupsidedownCake id="harvestcraft:pampineappleupsidedowncake"/>
+					<itemharvestcraft_pineappleupsidedowncakeItem id="harvestcraft:pineappleupsidedowncakeitem"/>
+					<itemharvestcraft_pampavlovaCake id="harvestcraft:pampavlovacake"/>
+					<itemharvestcraft_pavlovaItem id="harvestcraft:pavlovaitem"/>
+					<itemharvestcraft_pampumpkincheeseCake id="harvestcraft:pampumpkincheesecake"/>
+					<itemharvestcraft_pumpkincheesecakeItem id="harvestcraft:pumpkincheesecakeitem"/>
+					<itemharvestcraft_pamredvelvetCake id="harvestcraft:pamredvelvetcake"/>
+					<itemharvestcraft_redvelvetcakeItem id="harvestcraft:redvelvetcakeitem"/>
+				</cakes>
+			</unedibleFood>
+			<hunting>
+				<traps>
+					<itemAnimalTrap id="harvestcraft:animaltrap"/>
+					<itemFishTrap id="harvestcraft:fishtrap"/>
+				</traps>
+				<bait>
+					<itemFishTrapBait id="harvestcraft:fishtrapbaititem"/>
+					<itemFruitBait id="harvestcraft:fruitbaititem"/>
+					<itemGrainBait id="harvestcraft:grainbaititem"/>
+					<itemVeggieBait id="harvestcraft:veggiebaititem"/>
+				</bait>
+			</hunting>
+		</food>
+		<plant>
+			<sapling>
+				<itemAlmondSapling id="harvestcraft:pamalmondsapling"/>
+				<itemAppleSapling id="harvestcraft:pamapplesapling"/>
+				<itemApricotSapling id="harvestcraft:pamapricotsapling"/>
+				<itemAvocadoSapling id="harvestcraft:pamavocadosapling"/>
+				<itemBananaSapling id="harvestcraft:pambananasapling"/>
+				<itemCashewSapling id="harvestcraft:pamcashewsapling"/>
+				<itemCherrySapling id="harvestcraft:pamcherrysapling"/>
+				<itemChestnutSapling id="harvestcraft:pamchestnutsapling"/>
+				<itemCinnamonSapling id="harvestcraft:pamcinnamonsapling"/>
+				<itemCoconutSapling id="harvestcraft:pamcoconutsapling"/>
+				<itemDateSapling id="harvestcraft:pamdatesapling"/>
+				<itemDragonfruitSapling id="harvestcraft:pamdragonfruitsapling"/>
+				<itemDurianSapling id="harvestcraft:pamduriansapling"/>
+				<itemFigSapling id="harvestcraft:pamfigsapling"/>
+				<itemGooseberrySapling id="harvestcraft:pamgooseberrysapling"/>
+				<itemGrapefruitSapling id="harvestcraft:pamgrapefruitsapling"/>
+				<itemLemonSapling id="harvestcraft:pamlemonsapling"/>
+				<itemLimeSapling id="harvestcraft:pamlimesapling"/>
+				<itemMangoSapling id="harvestcraft:pammangosapling"/>
+				<itemMapleSapling id="harvestcraft:pammaplesapling"/>
+				<itemNutmegSapling id="harvestcraft:pamnutmegsapling"/>
+				<itemOliveSapling id="harvestcraft:pamolivesapling"/>
+				<itemOrangeSapling id="harvestcraft:pamorangesapling"/>
+				<itemPapayaSapling id="harvestcraft:pampapayasapling"/>
+				<itemPaperbarkSapling id="harvestcraft:pampaperbarksapling"/>
+				<itemPeachSapling id="harvestcraft:pampeachsapling"/>
+				<itemPearSapling id="harvestcraft:pampearsapling"/>
+				<itemPecanSapling id="harvestcraft:pampecansapling"/>
+				<itemPeppercornSapling id="harvestcraft:pampeppercornsapling"/>
+				<itemPersimmonSapling id="harvestcraft:pampersimmonsapling"/>
+				<itemPistachioSapling id="harvestcraft:pampistachiosapling"/>
+				<itemPlumSapling id="harvestcraft:pamplumsapling"/>
+				<itemPomegranateSapling id="harvestcraft:pampomegranatesapling"/>
+				<itemStarfruitSapling id="harvestcraft:pamstarfruitsapling"/>
+				<itemVanillaSapling id="harvestcraft:pamvanillabeansapling"/>
+				<itemWalnutSapling id="harvestcraft:pamwalnutsapling"/>
+				<itemAvocadoSapling id="harvestcraft:avocado_sapling"/>
+				<itemSpiderWebSapling id="harvestcraft:spiderweb_sapling"/>
+				<itemWalnutSapling id="harvestcraft:walnut_sapling"/>
+			</sapling>
+			<seedlings>
+				<itemArtichokeCrop id="harvestcraft:pamartichokecrop"/>
+				<itemAsparagusCrop id="harvestcraft:pamasparaguscrop"/>
+				<itemBambooCrop id="harvestcraft:pambambooshootcrop"/>
+				<itemBarleyCrop id="harvestcraft:pambarleycrop"/>
+				<itemBeanCrop id="harvestcraft:pambeancrop"/>
+				<itemBeetCrop id="harvestcraft:pambeetcrop"/>
+				<itemBellPepperCrop id="harvestcraft:pambellpeppercrop"/>
+				<itemBlackberryCrop id="harvestcraft:pamblackberrycrop"/>
+				<itemBlueberryCrop id="harvestcraft:pamblueberrycrop"/>
+				<itemBroccoliCrop id="harvestcraft:pambroccolicrop"/>
+				<itemBrusselSproutCrop id="harvestcraft:pambrusselsproutcrop"/>
+				<itemCabbageCrop id="harvestcraft:pamcabbagecrop"/>
+				<itemCactusFruitCrop id="harvestcraft:pamcactusfruitcrop"/>
+				<itemCandleberryCrop id="harvestcraft:pamcandleberrycrop"/>
+				<itemCantaloupeCrop id="harvestcraft:pamcantaloupecrop"/>
+				<itemCauliflowerCrop id="harvestcraft:pamcauliflowercrop"/>
+				<itemCeleryCrop id="harvestcraft:pamcelerycrop"/>
+				<itemChiliPepperCrop id="harvestcraft:pamchilipeppercrop"/>
+				<itemCoffeeBeanCrop id="harvestcraft:pamcoffeebeancrop"/>
+				<itemCornCrop id="harvestcraft:pamcorncrop"/>
+				<itemCottonCrop id="harvestcraft:pamcottoncrop"/>
+				<itemCranberryCrop id="harvestcraft:pamcranberrycrop"/>
+				<itemCucumberCrop id="harvestcraft:pamcucumbercrop"/>
+				<itemCurryLeafCrop id="harvestcraft:pamcurryleafcrop"/>
+				<itemEggplantCrop id="harvestcraft:pameggplantcrop"/>
+				<itemGarlicCrop id="harvestcraft:pamgarliccrop"/>
+				<itemGingerCrop id="harvestcraft:pamgingercrop"/>
+				<itemGrapeCrop id="harvestcraft:pamgrapecrop"/>
+				<itemKiwiCrop id="harvestcraft:pamkiwicrop"/>
+				<itemLeekCrop id="harvestcraft:pamleekcrop"/>
+				<itemLettuceCrop id="harvestcraft:pamlettucecrop"/>
+				<itemMustardSeedsCrop id="harvestcraft:pammustardseedscrop"/>
+				<itemOatsCrop id="harvestcraft:pamoatscrop"/>
+				<itemOkraCrop id="harvestcraft:pamokracrop"/>
+				<itemOnionCrop id="harvestcraft:pamonioncrop"/>
+				<itemParsnipCrop id="harvestcraft:pamparsnipcrop"/>
+				<itemPeanutCrop id="harvestcraft:pampeanutcrop"/>
+				<itemPeasCrop id="harvestcraft:pampeascrop"/>
+				<itemPineappleCrop id="harvestcraft:pampineapplecrop"/>
+				<itemRadishCrop id="harvestcraft:pamradishcrop"/>
+				<itemRaspberryCrop id="harvestcraft:pamraspberrycrop"/>
+				<itemRhubarbCrop id="harvestcraft:pamrhubarbcrop"/>
+				<itemRiceCrop id="harvestcraft:pamricecrop"/>
+				<itemRutabagaCrop id="harvestcraft:pamrutabagacrop"/>
+				<itemRyeCrop id="harvestcraft:pamryecrop"/>
+				<itemScallionCrop id="harvestcraft:pamscallioncrop"/>
+				<itemSeaweedCrop id="harvestcraft:pamseaweedcrop"/>
+				<itemSesameSeedsCrop id="harvestcraft:pamsesameseedscrop"/>
+				<itemSoybeanCrop id="harvestcraft:pamsoybeancrop"/>
+				<itemSpiceLeafCrop id="harvestcraft:pamspiceleafcrop"/>
+				<itemSpinachCrop id="harvestcraft:pamspinachcrop"/>
+				<itemStrawberryCrop id="harvestcraft:pamstrawberrycrop"/>
+				<itemSweetPotatoCrop id="harvestcraft:pamsweetpotatocrop"/>
+				<itemTeaLeafCrop id="harvestcraft:pamtealeafcrop"/>
+				<itemTomatoCrop id="harvestcraft:pamtomatocrop"/>
+				<itemTurnipCrop id="harvestcraft:pamturnipcrop"/>
+				<itemWaterChestnutCrop id="harvestcraft:pamwaterchestnutcrop"/>
+				<itemWhiteMushroomCrop id="harvestcraft:pamwhitemushroomcrop"/>
+				<itemWinterSquashCrop id="harvestcraft:pamwintersquashcrop"/>
+				<itemZucchiniCrop id="harvestcraft:pamzucchinicrop"/>
+			</seedlings>
+			<groundCover>
+				<foodGardens>
+					<itemAridGarden id="harvestcraft:aridgarden"/>
+					<itemBerryGarden id="harvestcraft:berrygarden"/>
+					<itemDesertGarden id="harvestcraft:desertgarden"/>
+					<itemFrostGarden id="harvestcraft:frostgarden"/>
+					<itemGourdGarden id="harvestcraft:gourdgarden"/>
+					<itemGrassGarden id="harvestcraft:grassgarden"/>
+					<itemGroundGarden id="harvestcraft:groundgarden"/>
+					<itemHerbGarden id="harvestcraft:herbgarden"/>
+					<itemLeafyGarden id="harvestcraft:leafygarden"/>
+					<itemMushroomGarden id="harvestcraft:mushroomgarden"/>
+					<itemShadedGarden id="harvestcraft:shadedgarden"/>
+					<itemSoggyGarden id="harvestcraft:soggygarden"/>
+					<itemStalkGarden id="harvestcraft:stalkgarden"/>
+					<itemTextileGarden id="harvestcraft:textilegarden"/>
+					<itemTropicalGarden id="harvestcraft:tropicalgarden"/>
+					<itemWaterGarden id="harvestcraft:watergarden"/>
+					<itemWindyGarden id="harvestcraft:windygarden"/>
+				</foodGardens>
+			</groundCover>
+		</plant>
+		<bees>
+			<beeQueens>
+				<itemQueenBee id="harvestcraft:queenbeeitem" damage="18"/>
+				<itemQueenBee id="harvestcraft:queenbeeitem"/>
+			</beeQueens>
+			<beeCombs>
+				<itemWaxcomb id="harvestcraft:waxcombitem"/>
+				<itemHoneycomb id="harvestcraft:honeycombitem"/>
+				<itemHoneycombBlock id="harvestcraft:honeycomb"/>
+				<itemWaxcombBlock id="harvestcraft:waxcomb"/>
+			</beeCombs>
+			<beeWax>
+				<itemPressedWaxBlock id="harvestcraft:pressedwax"/>
+			</beeWax>
+			<beeHoney>
+				<itemRoyalJelly id="harvestcraft:royaljellyitem"/>
+				<itemHoneyBlock id="harvestcraft:honey"/>
+			</beeHoney>
+			<beeHousing>
+				<itemApiary id="harvestcraft:apiary"/>
+				<itemBeehive id="harvestcraft:beehive"/>
+			</beeHousing>
+		</bees>
+	</item>
+</stuff>

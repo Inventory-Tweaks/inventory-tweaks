@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage7>
+							<itemBloodwoodSword id="natura:natura.sword.bloodwood"/>
+						</swordDamage7>
+						<swordDamage6>
+							<itemFusewoodSword id="natura:natura.sword.fusewood"/>
+						</swordDamage6>
+						<swordDamage5>
+							<itemDarkwoodSword id="natura:natura.sword.darkwood"/>
+							<itemQuartzSword id="natura:natura.sword.netherquartz"/>
+						</swordDamage5>
+						<swordDamage4>
+							<itemGhostwoodSword id="natura:natura.sword.ghostwood"/>
+						</swordDamage4>
+						<swordUnsorted>
+							<itemBloodwoodSword id="natura:bloodwood_sword"/>
+							<itemDarkwoodSword id="natura:darkwood_sword"/>
+							<itemFusewoodSword id="natura:fusewood_sword"/>
+							<itemGhostwoodSword id="natura:ghostwood_sword"/>
+							<itemQuartzSword id="natura:netherquartz_sword"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<bow mergeChildren="true">
+					<itemBloodwoodBow id="natura:natura.bow.bloodwood"/>
+					<itemDarkwoodBow id="natura:natura.bow.darkwood"/>
+					<itemFusewoodBow id="natura:natura.bow.fusewood"/>
+					<itemGhostwoodBow id="natura:natura.bow.ghostwood"/>
+				</bow>
+			</munition>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<DiamondPickLevel>
+						<itemBloodwoodPickaxe id="natura:natura.pickaxe.bloodwood"/>
+						<itemFusewoodPickaxe id="natura:natura.pickaxe.fusewood"/>
+					</DiamondPickLevel>
+					<IronLevel>
+						<itemDarkwoodPickaxe id="natura:natura.pickaxe.darkwood"/>
+						<itemGhostwoodPickaxe id="natura:natura.pickaxe.ghostwood"/>
+					</IronLevel>
+					<StoneLevel>
+						<itemQuartzPickaxe id="natura:natura.pickaxe.netherquartz"/>
+					</StoneLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemBloodwoodShovel id="natura:natura.shovel.bloodwood"/>
+					<itemDarkwoodShovel id="natura:natura.shovel.darkwood"/>
+					<itemFusewoodShovel id="natura:natura.shovel.fusewood"/>
+					<itemGhostwoodShovel id="natura:natura.shovel.ghostwood"/>
+					<itemQuartzShovel id="natura:natura.shovel.netherquartz"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemBloodwoodHatchet id="natura:natura.axe.bloodwood"/>
+					<itemDarkwoodHatchet id="natura:natura.axe.darkwood"/>
+					<itemFusewoodHatchet id="natura:natura.axe.fusewood"/>
+					<itemGhostwoodHatchet id="natura:natura.axe.ghostwood"/>
+					<itemQuartzHatchet id="natura:natura.axe.netherquartz"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<kama mergeChildren="true">
+					<itemBloodwoodKama id="natura:bloodwood_kama"/>
+					<itemDarkwoodKama id="natura:darkwood_kama"/>
+					<itemFusewoodKama id="natura:fusewood_kama"/>
+					<itemGhostwoodKama id="natura:ghostwood_kama"/>
+					<itemQuartzKama id="natura:netherquartz_kama"/>
+				</kama>
+			</farmingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet1>
+					<itemImpskinHelmet id="natura:natura.armor.imphelmet"/>
+				</helmet1>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate3>
+						<itemImpskinJerkin id="natura:impjerkin"/>
+					</chestplate3>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings2>
+					<itemImpskinLeggings id="natura:natura.armor.impleggings"/>
+				</leggings2>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots1>
+					<itemImpskinBoots id="natura:natura.armor.impboots"/>
+				</boots1>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<dirts>
+				<itemNatura1TaintedSoil id="natura:soil.tainted" damage="0"/>
+				<itemNatura2TaintedSoil id="natura:soil.tainted" damage="1"/>
+				<itemNatura3TaintedSoil id="natura:soil.tainted" damage="2"/>
+			</dirts>
+			<wood>
+				<itemBloodwood id="natura:bloodwood"/>
+				<itemRedwoodBark id="natura:redwood" damage="0"/>
+				<itemRedwoodRoot id="natura:redwood" damage="2"/>
+			</wood>
+			<grass>
+				<itemAutumnalGrass id="natura:grassblock" damage="2"/>
+				<itemBluegrass id="natura:grassblock" damage="1"/>
+				<itemTopiaryGrass id="natura:grassblock" damage="0"/>
+			</grass>
+		</naturalBlock>
+		<manufacturedBlock>
+			<fence>
+				<woodenFence>
+					<itemAmaranthFence id="natura:amaranth_fence"/>
+					<itemBloodwoodFence id="natura:bloodwood_fence"/>
+					<itemDarkwoodFence id="natura:darkwood_fence"/>
+					<itemEucalyptusFence id="natura:eucalyptus_fence"/>
+					<itemFusewoodFence id="natura:fusewood_fence"/>
+					<itemGhostwoodFence id="natura:ghostwood_fence"/>
+					<itemHopseedFence id="natura:hopseed_fence"/>
+					<itemMapleFence id="natura:maple_fence"/>
+					<itemRedwoodFence id="natura:redwood_fence"/>
+					<itemSakuraFence id="natura:sakura_fence"/>
+					<itemSilverbellFence id="natura:silverbell_fence"/>
+					<itemTigerFence id="natura:tiger_fence"/>
+					<itemWillowFence id="natura:willow_fence"/>
+				</woodenFence>
+				<itemNaturaFence id="natura:natura.fence"/>
+				<fenceGate>
+					<itemAmaranthFenceGate id="natura:fencegate.amaranth"/>
+					<itemBloodFenceGate id="natura:fencegate.bloodwood"/>
+					<itemDarkwoodFenceGate id="natura:fencegate.darkwood"/>
+					<itemEucalyptusFenceGate id="natura:fencegate.eucalyptus"/>
+					<itemFusewoodFenceGate id="natura:fencegate.fusewood"/>
+					<itemGhostwoodFenceGate id="natura:fencegate.ghostwood"/>
+					<itemHopseedFenceGate id="natura:fencegate.hopseed"/>
+					<itemMapleFenceGate id="natura:fencegate.maple"/>
+					<itemRedwoodFenceGate id="natura:fencegate.redwood"/>
+					<itemSakuraFenceGate id="natura:fencegate.sakura"/>
+					<itemSilverbellFenceGate id="natura:fencegate.silverbell"/>
+					<itemTigerwoodFenceGate id="natura:fencegate.tiger"/>
+					<itemWillowFenceGate id="natura:fencegate.willow"/>
+					<itemAmaranthFenceGate id="natura:amaranth_fence_gate"/>
+					<itemBloodwoodFenceGate id="natura:bloodwood_fence_gate"/>
+					<itemDarkwoodFenceGate id="natura:darkwood_fence_gate"/>
+					<itemEucalyptusFenceGate id="natura:eucalyptus_fence_gate"/>
+					<itemFusewoodFenceGate id="natura:fusewood_fence_gate"/>
+					<itemGhostwoodFenceGate id="natura:ghostwood_fence_gate"/>
+					<itemHopseedFenceGate id="natura:hopseed_fence_gate"/>
+					<itemMapleFenceGate id="natura:maple_fence_gate"/>
+					<itemRedwoodFenceGate id="natura:redwood_fence_gate"/>
+					<itemSakuraFenceGate id="natura:sakura_fence_gate"/>
+					<itemSilverbellFenceGate id="natura:silverbell_fence_gate"/>
+					<itemTigerFenceGate id="natura:tiger_fence_gate"/>
+					<itemWillowFenceGate id="natura:willow_fence_gate"/>
+				</fenceGate>
+			</fence>
+			<constructionBlock>
+				<woodenPlank>
+					<itemFusewoodPlanks id="natura:planks" damage="12"/>
+				</woodenPlank>
+				<decorativeblocks>
+					<skyBlocks>
+						<itemCloud id="natura:cloud"/>
+					</skyBlocks>
+				</decorativeblocks>
+				<stairs>
+					<woodenStairs>
+						<itemAmaranthStairs id="natura:stair.amaranth" damage="0"/>
+						<itemBloodStairs id="natura:stair.bloodwood" damage="0"/>
+						<itemDarkwoodStairs id="natura:stair.darkwood" damage="0"/>
+						<itemEucalyptusStairs id="natura:stair.eucalyptus" damage="0"/>
+						<itemFusewoodStairs id="natura:stair.fusewood" damage="0"/>
+						<itemGhostwoodStairs id="natura:stair.ghostwood" damage="0"/>
+						<itemHopseedStairs id="natura:stair.hopseed" damage="0"/>
+						<itemMapleStairs id="natura:stair.maple" damage="0"/>
+						<itemRedwoodStairs id="natura:stair.redwood" damage="0"/>
+						<itemSakuraStairs id="natura:stair.sakura" damage="0"/>
+						<itemSilverbellStairs id="natura:stair.silverbell" damage="0"/>
+						<itemTigerwoodStairs id="natura:stair.tiger" damage="0"/>
+						<itemWillowStairs id="natura:stair.willow" damage="0"/>
+					</woodenStairs>
+					<otherStairs>
+						<itemAutumnalGrassStairs id="natura:colored_grass_stairs_autumnal"/>
+						<itemBluegrassStairs id="natura:colored_grass_stairs_bluegrass"/>
+						<itemTopiaryGrassStairs id="natura:colored_grass_stairs_topiary"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<rails>
+				<itemBlazeRail id="natura:blaze_rail"/>
+				<itemActivatorBlazeRail id="natura:blaze_rail_activator"/>
+				<itemDetectorBlazeRail id="natura:blaze_rail_detector"/>
+				<itemPoweredBlazeRail id="natura:blaze_rail_golden"/>
+			</rails>
+			<lever>
+				<itemNetherLever id="natura:netherlever" damage="0"/>
+			</lever>
+			<pressurePlates>
+				<itemAmaranthPressurePlate id="natura:pressureplate.amaranth" damage="0"/>
+				<itemBloodPressurePlate id="natura:pressureplate.bloodwood" damage="0"/>
+				<itemDarkwoodPressurePlate id="natura:pressureplate.darkwood" damage="0"/>
+				<itemEucalyptusPressurePlate id="natura:pressureplate.eucalyptus" damage="0"/>
+				<itemFusewoodPressurePlate id="natura:pressureplate.fusewood" damage="0"/>
+				<itemGhostwoodPressurePlate id="natura:pressureplate.ghostwood" damage="0"/>
+				<itemHopseedPressurePlate id="natura:pressureplate.hopseed" damage="0"/>
+				<itemMaplePressurePlate id="natura:pressureplate.maple" damage="0"/>
+				<itemPressurePlate id="natura:netherpressureplate" damage="0"/>
+				<itemRedwoodPressurePlate id="natura:pressureplate.redwood" damage="0"/>
+				<itemSakuraPressurePlate id="natura:pressureplate.sakura" damage="0"/>
+				<itemSilverbellPressurePlate id="natura:pressureplate.silverbell" damage="0"/>
+				<itemTigerwoodPressurePlate id="natura:pressureplate.tiger" damage="0"/>
+				<itemWillowPressurePlate id="natura:pressureplate.willow" damage="0"/>
+			</pressurePlates>
+			<buttons>
+				<itemAmaranthButton id="natura:button.amaranth" damage="0"/>
+				<itemBloodButton id="natura:button.bloodwood" damage="0"/>
+				<itemNetherButton id="natura:netherbutton" damage="0"/>
+				<itemDarkwoodButton id="natura:button.darkwood" damage="0"/>
+				<itemEucalyptusButton id="natura:button.eucalyptus" damage="0"/>
+				<itemFusewoodButton id="natura:button.fusewood" damage="0"/>
+				<itemGhostwoodButton id="natura:button.ghostwood" damage="0"/>
+				<itemHopseedButton id="natura:button.hopseed" damage="0"/>
+				<itemMapleButton id="natura:button.maple" damage="0"/>
+				<itemRedwoodButton id="natura:button.redwood" damage="0"/>
+				<itemSakuraButton id="natura:button.sakura" damage="0"/>
+				<itemSilverbellButton id="natura:button.silverbell" damage="0"/>
+				<itemTigerwoodButton id="natura:button.tiger" damage="0"/>
+				<itemWillowButton id="natura:button.willow" damage="0"/>
+			</buttons>
+			<doors>
+				<woodenDoor>
+					<itemBloodwoodDoor2 id="natura:redwooddooritem" damage="5"/>
+					<itemEucalyptusDoor id="natura:redwooddooritem" damage="1"/>
+					<itemGhostwoodDoor id="natura:redwooddooritem" damage="4"/>
+					<itemHopseedDoor id="natura:redwooddooritem" damage="2"/>
+					<itemRedwoodBarkDoor id="natura:redwooddooritem" damage="6"/>
+					<itemRedwoodDoor id="natura:redwooddooritem" damage="0"/>
+					<itemSakuraDoor id="natura:redwooddooritem" damage="3"/>
+				</woodenDoor>
+				<itemBloodwoodDoor2 id="natura:redwooddooritem" damage="5"/>
+				<itemEucalyptusDoor id="natura:redwooddooritem" damage="1"/>
+				<itemGhostwoodDoor id="natura:redwooddooritem" damage="4"/>
+				<itemHopseedDoor id="natura:redwooddooritem" damage="2"/>
+				<itemRedwoodBarkDoor id="natura:redwooddooritem" damage="6"/>
+				<itemRedwoodDoor id="natura:redwooddooritem" damage="0"/>
+				<itemSakuraDoor id="natura:redwooddooritem" damage="3"/>
+				<itemBloodwoodDoor id="natura:door.bloodwood"/>
+				<itemEucalyptusDoor id="natura:door.eucalyptus"/>
+				<itemGhostwoodDoor id="natura:door.ghostwood"/>
+				<itemHopseedDoor id="natura:door.hopseed"/>
+				<itemRedwoodDoor id="natura:door.redwood"/>
+				<itemRedwoodBarkDoor id="natura:door.redwoodbark"/>
+				<itemSakuraDoor id="natura:door.sakura"/>
+			</doors>
+			<trapdoor>
+				<itemAmaranthTrapdoor id="natura:trapdoor.amaranth"/>
+				<itemBloodTrapdoor id="natura:trapdoor.bloodwood"/>
+				<itemDarkwoodTrapdoor id="natura:trapdoor.darkwood"/>
+				<itemEucalyptusTrapdoor id="natura:trapdoor.eucalyptus"/>
+				<itemFusewoodTrapdoor id="natura:trapdoor.fusewood"/>
+				<itemGhostwoodTrapdoor id="natura:trapdoor.ghostwood"/>
+				<itemHopseedTrapdoor id="natura:trapdoor.hopseed"/>
+				<itemMapleTrapdoor id="natura:trapdoor.maple"/>
+				<itemRedwoodTrapdoor id="natura:trapdoor.redwood"/>
+				<itemSakuraTrapdoor id="natura:trapdoor.sakura"/>
+				<itemSilverbellTrapdoor id="natura:trapdoor.silverbell"/>
+				<itemTigerwoodTrapdoor id="natura:trapdoor.tiger"/>
+				<itemWillowTrapdoor id="natura:trapdoor.willow"/>
+			</trapdoor>
+			<resourceTransfer>
+				<groundItemCollector>
+					<itemBlazeHopper id="natura:blaze_hopper"/>
+				</groundItemCollector>
+			</resourceTransfer>
+			<basicCrafting>
+				<furnaces>
+					<itemNetherFurnace id="natura:netherfurnace"/>
+				</furnaces>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<dust>
+				<itemSulfur id="natura:barleyfood" damage="4"/>
+			</dust>
+		</miningResources>
+		<huntingResources>
+			<itemImpLeather id="natura:barleyfood" damage="6"/>
+			<string id="string">
+				<itemFlamestring id="natura:materials" damage="7"/>
+			</string>
+		</huntingResources>
+	</resources>
+	<item>
+		<utility>
+			<flintAndSteel id="flint_and_steel">
+				<itemFlintandBlaze id="natura:natura.flintandblaze"/>
+				<itemFlintandBlaze id="natura:flint_and_blaze"/>
+			</flintAndSteel>
+			<furnaces>
+				<itemNetherFurnace id="natura:netherfurnace"/>
+			</furnaces>
+			<beds>
+				<obelisk id="natura:obelisk"/>
+			</beds>
+			<bowl>
+				<naturaBowl id="natura:natura.emptybowl"/>
+			</bowl>
+			<spawnerEggs>
+				<itemSpawnBabyHeatscarSpider id="natura:natura.spawnegg" damage="3"/>
+				<itemSpawnHeatscarSpider id="natura:natura.spawnegg" damage="1"/>
+				<itemSpawnImp id="natura:natura.spawnegg" damage="0"/>
+				<itemSpawnNitroCreeper id="natura:natura.spawnegg" damage="2"/>
+			</spawnerEggs>
+		</utility>
+		<parts>
+			<tinkerParts>
+				<itemGhostwoodFletching id="natura:barleyfood" damage="5"/>
+			</tinkerParts>
+		</parts>
+		<decoration>
+			<obelisk id="natura:obelisk"/>
+			<door>
+				<itemBloodwoodDoor2 id="natura:redwooddooritem" damage="5"/>
+				<itemEucalyptusDoor id="natura:redwooddooritem" damage="1"/>
+				<itemGhostwoodDoor id="natura:redwooddooritem" damage="4"/>
+				<itemHopseedDoor id="natura:redwooddooritem" damage="2"/>
+				<itemRedwoodBarkDoor id="natura:redwooddooritem" damage="6"/>
+				<itemRedwoodDoor id="natura:redwooddooritem" damage="0"/>
+				<itemSakuraDoor id="natura:redwooddooritem" damage="3"/>
+			</door>
+			<bookShelf>
+				<itemNaturaBookshelf id="natura:natura.bookshelf"/>
+			</bookShelf>
+		</decoration>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<soup>
+						<itemNatura_natura.stewbowl id="natura:natura.stewbowl"/>
+					</soup>
+					<salad>
+						<itemBerryMedley id="natura:berrymedley"/>
+					</salad>
+				</preparedFood>
+				<cookedFood>
+					<itemNatura_impmeat_1 id="natura:impmeat" damage="1"/>
+				</cookedFood>
+				<fruit>
+					<apple>
+						<applePotAsh id="natura:natura.netherfood"/>
+					</apple>
+					<Other>
+						<itemSaguaroFruit id="natura:saguaro.fruit"/>
+					</Other>
+				</fruit>
+				<drink>
+					<juice>
+						<itemCactusJuice id="natura:waterdrop"/>
+					</juice>
+				</drink>
+				<rawFood>
+					<rawMeat>
+						<itemNatura_impmeat_0 id="natura:impmeat" damage="0"/>
+					</rawMeat>
+					<mushroom>
+						<itemNatura_Glowshroom id="natura:glowshroom"/>
+						<itemBlueGlowshroom id="natura:blueglowshroom"/>
+						<itemGreenGlowshroom id="natura:greenglowshroom"/>
+						<itemPurpleGlowshroom id="natura:purpleglowshroom"/>
+					</mushroom>
+				</rawFood>
+			</edibleFood>
+		</food>
+		<plant>
+			<flower>
+				<flowerBlue>
+					<itemBluebells id="natura:bluebells_flower"/>
+				</flowerBlue>
+			</flower>
+			<seedbag>
+				<itemNatura_barleyBag id="natura:barleybag"/>
+				<itemNatura_boneBag id="natura:bonebag"/>
+				<itemNatura_carrotBag id="natura:carrotbag"/>
+				<itemNatura_cottonBag id="natura:cottonbag"/>
+				<itemNatura_wartBag id="natura:wartbag"/>
+				<itemNatura_potatoBag id="natura:potatobag"/>
+				<itemNatura_wheatBag id="natura:wheatbag"/>
+			</seedbag>
+			<seed>
+				<itemCottonSeeds id="natura:barley.seed" damage="1"/>
+			</seed>
+			<seedlings>
+				<itemCrops id="natura:n crops"/>
+			</seedlings>
+			<itemSaguaroCactus id="natura:saguaro"/>
+			<groundCover>
+				<bushes>
+					<itemBlackberryBush id="natura:berrybush" damage="14"/>
+					<itemBlueberryBush id="natura:berrybush" damage="13"/>
+					<itemMaloberryBush id="natura:berrybush" damage="15"/>
+					<itemRaspberryBush id="natura:berrybush" damage="12"/>
+					<itemBlightberryBush id="natura:netherberrybush" damage="12"/>
+					<itemDuskberryBush id="natura:netherberrybush" damage="13"/>
+					<itemSkyberryBush id="natura:netherberrybush" damage="14"/>
+					<itemStingberryBush id="natura:netherberrybush" damage="15"/>
+				</bushes>
+			</groundCover>
+		</plant>
+	</item>
+</stuff>

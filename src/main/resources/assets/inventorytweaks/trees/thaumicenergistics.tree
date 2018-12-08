@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<item>
+		<utility>
+			<storage>
+				<digitalstorage>
+					<terminals>
+						<itemEssentiaTerminal id="thaumicenergistics:part.base" damage="4"/>
+						<itemArcaneCraftingTerminal id="thaumicenergistics:part.base" damage="5"/>
+						<itemEssentiaConversionMonitor id="thaumicenergistics:part.base" damage="8"/>
+						<itemEssentiaStorageMonitor id="thaumicenergistics:part.base" damage="7"/>
+						<itemDistillationPatternEncoder id="thaumicenergistics:thaumicenergistics.block.distillation.encoder" damage="0"/>
+					</terminals>
+					<interfaces>
+						<itemVisRelayInterface id="thaumicenergistics:part.base" damage="6"/>
+						<itemEssentiaImportBus id="thaumicenergistics:part.base" damage="0"/>
+						<itemEssentiaExportBus id="thaumicenergistics:part.base" damage="3"/>
+						<itemEssentiaStorageBus id="thaumicenergistics:part.base" damage="2"/>
+						<itemEssentiaLevelEmitter id="thaumicenergistics:part.base" damage="1"/>
+						<itemEssentiaProvider id="thaumicenergistics:thaumicenergistics.block.essentia.provider"/>
+						<itemInfusionProvider id="thaumicenergistics:thaumicenergistics.block.infusion.provider"/>
+					</interfaces>
+					<parts>
+						<itemDiffusionCore id="thaumicenergistics:material" damage="0"/>
+						<itemKnowledgeCore id="thaumicenergistics:knowledge.core" damage="0"/>
+						<itemCoalescenceCore id="thaumicenergistics:material" damage="1"/>
+						<itemMEEssentiaStorageHousing id="thaumicenergistics:storage.casing" damage="0"/>
+						<item1kMEEssentiaStorageComponent id="thaumicenergistics:storage.component" damage="0"/>
+						<item4kMEEssentiaStorageComponent id="thaumicenergistics:storage.component" damage="1"/>
+						<item16kMEEssentiaStorageComponent id="thaumicenergistics:storage.component" damage="2"/>
+						<item64kMEEssentiaStorageComponent id="thaumicenergistics:storage.component" damage="3"/>
+					</parts>
+					<storagecells>
+						<item1kMEEssentiaStorageCell id="thaumicenergistics:storage.essentia" damage="0"/>
+						<item4kMEEssentiaStorageCell id="thaumicenergistics:storage.essentia" damage="1"/>
+						<item16kMEEssentiaStorageCell id="thaumicenergistics:storage.essentia" damage="2"/>
+						<item64kMEEssentiaStorageCell id="thaumicenergistics:storage.essentia" damage="3"/>
+						<itemCreativeEssentiaStorageCell id="thaumicenergistics:storage.essentia" damage="4"/>
+					</storagecells>
+					<machines>
+						<itemKnowledgeInscriber id="thaumicenergistics:thaumicenergistics.block.knowledge.inscriber" damage="0"/>
+						<itemEssentiaVibrationChamber id="thaumicenergistics:thaumicenergistics.block.essentia.vibration.chamber" damage="0"/>
+						<itemEssentiaCellWorkbench id="thaumicenergistics:thaumicenergistics.block.essentia.cell.workbench" damage="0"/>
+						<itemArcaneAssembler id="thaumicenergistics:thaumicenergistics.block.arcane.assembler" damage="0"/>
+					</machines>
+				</digitalstorage>
+				<portableStorage>
+					<itemWirelessEssentiaTerminal id="thaumicenergistics:wireless.essentia.terminal"/>
+					<itemWirelessGolemBackpack id="thaumicenergistics:golem.wifi.backpack" damage="0"/>
+				</portableStorage>
+			</storage>
+		</utility>
+		<magical>
+			<thaumurgy>
+				<wandFocuses>
+					<itemWandFocus_AEWrench id="thaumicenergistics:focus.aewrench" damage="0"/>
+				</wandFocuses>
+			</thaumurgy>
+		</magical>
+	</item>
+</stuff>

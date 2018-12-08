@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<Level8>
+						<itemEthaxiumPickaxe id="abyssalcraft:ethaxiumpickaxe"/>
+					</Level8>
+					<Level6>
+						<itemDreadiumPickaxe id="abyssalcraft:dreadiumpickaxe"/>
+					</Level6>
+					<Level5>
+						<itemRefinedCoraliumPickaxe id="abyssalcraft:corpick"/>
+					</Level5>
+					<CobaltPickLevel>
+						<itemAbyssalnitePickaxe id="abyssalcraft:apick"/>
+					</CobaltPickLevel>
+					<IronLevel>
+						<itemDarkstonePickaxe id="abyssalcraft:dpick"/>
+					</IronLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemAbyssalniteShovel id="abyssalcraft:ashovel"/>
+					<itemRefinedCoraliumShovel id="abyssalcraft:corshovel"/>
+					<itemDreadiumShovel id="abyssalcraft:dreadiumshovel"/>
+					<itemDarkstoneShovel id="abyssalcraft:dshovel"/>
+					<itemEthaxiumShovel id="abyssalcraft:ethaxiumshovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemAbyssalniteAxe id="abyssalcraft:aaxe"/>
+					<itemRefinedCoraliumAxe id="abyssalcraft:coraxe"/>
+					<itemDarkstoneAxe id="abyssalcraft:daxe"/>
+					<itemDreadiumAxe id="abyssalcraft:dreadiumaxe"/>
+					<itemEthaxiumAxe id="abyssalcraft:ethaxiumaxe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemAbyssalniteHoe id="abyssalcraft:ahoe"/>
+					<itemRefinedCoraliumHoe id="abyssalcraft:corhoe"/>
+					<itemDarkstoneHoe id="abyssalcraft:dhoe"/>
+					<itemDreadiumHoe id="abyssalcraft:dreadiumhoe"/>
+					<itemEthaxiumHoe id="abyssalcraft:ethaxiumhoe"/>
+				</hoe>
+			</farmingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemAbyssalniteHelmet id="abyssalcraft:ahelmet"/>
+					<itemDreadedAbyssalniteHelmet id="abyssalcraft:dhelmet"/>
+					<itemDreadiumHelmet id="abyssalcraft:dreadiumhelmet"/>
+					<itemDreadiumSamuraiHelmet id="abyssalcraft:dreadiumsamuraihelmet"/>
+					<itemEthaxiumHelmet id="abyssalcraft:ethaxiumhelmet"/>
+					<itemPlatedCoraliumHelmet id="abyssalcraft:corhelmetp"/>
+					<itemRefinedCoraliumHelmet id="abyssalcraft:corhelmet"/>
+					<itemVisageofTheDepths id="abyssalcraft:depthshelmet"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemAbyssalniteChestplate id="abyssalcraft:aplate"/>
+						<itemChestplateofTheDepths id="abyssalcraft:depthsplate"/>
+						<itemDreadedAbyssalniteChestplate id="abyssalcraft:dplate"/>
+						<itemDreadiumChestplate id="abyssalcraft:dreadiumplate"/>
+						<itemDreadiumSamuraiChestplate id="abyssalcraft:dreadiumsamuraiplate"/>
+						<itemEthaxiumChestplate id="abyssalcraft:ethaxiumplate"/>
+						<itemPlatedCoraliumChestplate id="abyssalcraft:corplatep"/>
+						<itemRefinedCoraliumChestplate id="abyssalcraft:corplate"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemAbyssalniteLeggings id="abyssalcraft:alegs"/>
+					<itemDreadedAbyssalniteLeggings id="abyssalcraft:dlegs"/>
+					<itemDreadiumLeggings id="abyssalcraft:dreadiumlegs"/>
+					<itemDreadiumSamuraiLeggings id="abyssalcraft:dreadiumsamurailegs"/>
+					<itemEthaxiumLeggings id="abyssalcraft:ethaxiumlegs"/>
+					<itemPlatedCoraliumLeggings id="abyssalcraft:corlegsp"/>
+					<itemRefinedCoraliumLeggings id="abyssalcraft:corlegs"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemAbyssalniteBoots id="abyssalcraft:aboots"/>
+					<itemBootsofTheDepths id="abyssalcraft:depthsboots"/>
+					<itemDreadedAbyssalniteBoots id="abyssalcraft:dboots"/>
+					<itemDreadiumBoots id="abyssalcraft:dreadiumboots"/>
+					<itemDreadiumSamuraiBoots id="abyssalcraft:dreadiumsamuraiboots"/>
+					<itemEthaxiumBoots id="abyssalcraft:ethaxiumboots"/>
+					<itemPlatedCoraliumBoots id="abyssalcraft:corbootsp"/>
+					<itemRefinedCoraliumBoots id="abyssalcraft:corboots"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<fence>
+				<woodenFence>
+					<itemDarklandsOakWoodFence id="abyssalcraft:dltfence"/>
+					<itemDreadlandsWoodFence id="abyssalcraft:drtfence"/>
+				</woodenFence>
+				<itemAbyssalniteStoneBrickFence id="abyssalcraft:abydreadbrickfence"/>
+				<itemAbyssalStoneBrickFence id="abyssalcraft:abyfence"/>
+				<itemCoraliumBrickFence id="abyssalcraft:cstonebrickfence"/>
+				<itemDarkEthaxiumBrickFence id="abyssalcraft:darkethaxiumbrickfence"/>
+				<itemDreadstoneBrickFence id="abyssalcraft:dreadbrickfence"/>
+				<itemDarkstoneBrickFence id="abyssalcraft:dsbfence"/>
+				<itemEthaxiumBrickFence id="abyssalcraft:ethaxiumfence"/>
+			</fence>
+			<stoneWall>
+				<itemAbyssalCobblestoneWall id="abyssalcraft:abyssalcobblestonewall"/>
+				<itemAbyssalniteCobblestoneWall id="abyssalcraft:abyssalnitecobblestonewall"/>
+				<itemCoraliumCobblestoneWall id="abyssalcraft:coraliumcobblestonewall"/>
+				<itemDreadstoneCobblestoneWall id="abyssalcraft:dreadstonecobblestonewall"/>
+				<itemDarkstoneCobblestoneWall id="abyssalcraft:dscwall"/>
+			</stoneWall>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemAbyssalCobblestoneStairs id="abyssalcraft:abyssalcobblestonestairs"/>
+						<itemAbyssalStoneBrickStairs id="abyssalcraft:abystairs"/>
+						<itemAbyssalniteCobblestoneStairs id="abyssalcraft:abyssalnitecobblestonestairs"/>
+						<itemAbyssalniteStoneBrickStairs id="abyssalcraft:abydreadbrickstairs"/>
+						<itemCoraliumBrickStairs id="abyssalcraft:cstonebrickstairs"/>
+						<itemCoraliumCobblestoneStairs id="abyssalcraft:coraliumcobblestonestairs"/>
+						<itemDarkEthaxiumBrickStairs id="abyssalcraft:darkethaxiumbrickstairs"/>
+						<itemDarkstoneBrickStairs id="abyssalcraft:dbstairs"/>
+						<itemDarkstoneCobblestoneStairs id="abyssalcraft:dcstairs"/>
+						<itemDreadstoneBrickStairs id="abyssalcraft:dreadbrickstairs"/>
+						<itemDreadstoneCobblestoneStairs id="abyssalcraft:dreadstonecobblestonestairs"/>
+						<itemEthaxiumBrickStairs id="abyssalcraft:ethaxiumbrickstairs"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<itemWoodenCrate id="abyssalcraft:crate"/>
+				</chests>
+			</storage>
+		</utility>
+	</item>
+</stuff>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<munition>
+				<thrownMunitions>
+					<itemBlizzardCharge id="arcticmobs:blizzardcharge"/>
+					<itemFrostboltCharge id="arcticmobs:frostboltcharge"/>
+					<itemFrostwebCharge id="arcticmobs:frostwebcharge"/>
+					<itemIcefireCharge id="arcticmobs:icefirecharge"/>
+					<itemTundraCharge id="arcticmobs:tundracharge"/>
+				</thrownMunitions>
+				<scepters>
+					<itemBlizzardScepter id="arcticmobs:blizzardscepter"/>
+					<itemFrostboltScepter id="arcticmobs:frostboltscepter"/>
+					<itemFrostwebScepter id="arcticmobs:frostwebscepter"/>
+					<itemIcefireScepter id="arcticmobs:icefirescepter"/>
+					<itemTundraScepter id="arcticmobs:tundrascepter"/>
+				</scepters>
+			</munition>
+		</weapon>
+	</equipment>
+	<item>
+		<utility>
+			<spawnerEggs>
+				<itemSpawnArix id="arcticmobs:arcticegg" damage="4"/>
+				<itemSpawnFrostweaver id="arcticmobs:arcticegg" damage="1"/>
+				<itemSpawnReiver id="arcticmobs:arcticegg" damage="0"/>
+				<itemSpawnSerpix id="arcticmobs:arcticegg" damage="5"/>
+				<itemSpawnWendigo id="arcticmobs:arcticegg" damage="3"/>
+				<itemSpawnYeti id="arcticmobs:arcticegg" damage="2"/>
+			</spawnerEggs>
+		</utility>
+		<bucket>
+			<itemarcticmobs_bucketooze id="arcticmobs:bucketooze"/>
+		</bucket>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<soup>
+						<itemPaleSoup id="arcticmobs:palesoup"/>
+					</soup>
+				</preparedFood>
+				<cookedFood>
+					<itemarcticmobs_yetimeatcooked id="arcticmobs:yetimeatcooked"/>
+				</cookedFood>
+				<rawFood>
+					<rawMeat>
+						<itemarcticmobs_yetimeatraw id="arcticmobs:yetimeatraw"/>
+					</rawMeat>
+				</rawFood>
+			</edibleFood>
+			<hunting>
+				<taming>
+					<itemArixTreat id="arcticmobs:arixtreat"/>
+					<itemSerpixTreat id="arcticmobs:serpixtreat"/>
+				</taming>
+			</hunting>
+		</food>
+	</item>
+	<nonItems>
+		<itemFrostcloud id="arcticmobs:frostcloud"/>
+		<itemFrostfire id="arcticmobs:frostfire"/>
+		<itemFrostweb id="arcticmobs:frostweb"/>
+		<itemIcefire id="arcticmobs:icefire"/>
+	</nonItems>
+</stuff>

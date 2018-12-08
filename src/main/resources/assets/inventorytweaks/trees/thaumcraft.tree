@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage7>
+							<itemSwordoftheZephyr id="thaumcraft:itemswordelemental"/>
+							<itemCrimsonBlade id="thaumcraft:itemswordcrimson"/>
+							<itemVoidSword id="thaumcraft:itemswordvoid"/>
+						</swordDamage7>
+						<swordDamage6>
+							<itemThaumiumSword id="thaumcraft:itemswordthaumium"/>
+						</swordDamage6>
+					</sword>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<bow mergeChildren="true">
+					<itemBowofBone id="thaumcraft:itembowbone"/>
+				</bow>
+			</munition>
+			<arrow class="arrow">
+				<itemAirArrow id="thaumcraft:primalarrow" damage="0"/>
+				<itemEarthArrow id="thaumcraft:primalarrow" damage="3"/>
+				<itemEntropyArrow id="thaumcraft:primalarrow" damage="5"/>
+				<itemFireArrow id="thaumcraft:primalarrow" damage="1"/>
+				<itemOrderArrow id="thaumcraft:primalarrow" damage="4"/>
+				<itemWaterArrow id="thaumcraft:primalarrow" damage="2"/>
+			</arrow>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemVoidPickaxe id="thaumcraft:itempickvoid"/>
+					</CobaltPickLevel>
+					<ObsidianLevel>
+						<itemPickaxeoftheCore id="thaumcraft:itempickaxeelemental"/>
+						<itemThaumiumPickaxe id="thaumcraft:itempickthaumium"/>
+					</ObsidianLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemShoveloftheEarthmover id="thaumcraft:itemshovelelemental"/>
+					<itemThaumiumShovel id="thaumcraft:itemshovelthaumium"/>
+					<itemVoidShovel id="thaumcraft:itemshovelvoid"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemAxeoftheStream id="thaumcraft:itemaxeelemental"/>
+					<itemPickaxeoftheCore id="thaumcraft:itempickaxeelemental"/>
+					<itemThaumiumAxe id="thaumcraft:itemaxethaumium"/>
+					<itemVoidAxe id="thaumcraft:itemaxevoid"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemHoeofGrowth id="thaumcraft:itemhoeelemental"/>
+					<itemThaumiumHoe id="thaumcraft:itemhoethaumium"/>
+					<itemVoidHoe id="thaumcraft:itemhoevoid"/>
+				</hoe>
+			</farmingTool>
+			<magicaltools>
+				<itemThaumometer id="thaumcraft:itemthaumometer"/>
+				<itemEssentiaResonator id="thaumcraft:itemresonator"/>
+				<itemGolemancersBell id="thaumcraft:golembell"/>
+				<itemMagicHandMirror id="thaumcraft:handmirror"/>
+				<itemPrimalCrusher id="thaumcraft:itemprimalcrusher"/>
+				<itemEldritchObeliskPlacer id="thaumcraft:itemeldritchobject" damage="4"/>
+			</magicaltools>
+			<keys>
+				<itemGoldArcaneKey id="thaumcraft:arcanedoorkey"/>
+			</keys>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet3>
+					<itemCrimsonPraetorHelm id="thaumcraft:itemhelmetcultistleaderplate"/>
+					<itemThaumiumFortressHelm id="thaumcraft:itemhelmetfortress"/>
+					<itemVoidThaumaturgeHood id="thaumcraft:itemhelmetvoidfortress"/>
+				</helmet3>
+				<helmet2>
+					<itemThaumiumHelm id="thaumcraft:itemhelmetthaumium"/>
+					<itemCrimsonCultHelm id="thaumcraft:itemhelmetcultistplate"/>
+					<itemCrimsonCultHood id="thaumcraft:itemhelmetcultistrobe"/>
+					<itemVoidHelm id="thaumcraft:itemhelmetvoid"/>
+				</helmet2>
+				<eyeGlasses>
+					<itemGogglesofRevealing id="thaumcraft:itemgoggles"/>
+				</eyeGlasses>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate7>
+						<itemCrimsonPraetorChestplate id="thaumcraft:itemchestplatecultistleaderplate"/>
+						<itemThaumiumFortressCuirass id="thaumcraft:itemchestplatefortress"/>
+						<itemVoidChestplate id="thaumcraft:itemchestplatevoid"/>
+						<itemVoidThaumaturgeRobe id="thaumcraft:itemchestplatevoidfortress"/>
+					</chestplate7>
+					<chestplate6>
+						<itemThaumiumChestplate id="thaumcraft:itemchestplatethaumium"/>
+						<itemCrimsonCultChestplate id="thaumcraft:itemchestplatecultistplate"/>
+						<itemCrimsonCultRobe id="thaumcraft:itemchestplatecultistrobe"/>
+					</chestplate6>
+					<chestplate3>
+						<itemThaumaturgesRobe id="thaumcraft:itemchestplaterobe"/>
+					</chestplate3>
+				</chestplateArmor>
+				<jetpacks>
+					<itemThaumostaticHarness id="thaumcraft:hoverharness"/>
+				</jetpacks>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings6>
+					<itemCrimsonPraetorGreaves id="thaumcraft:itemleggingscultistleaderplate"/>
+					<itemVoidLeggings id="thaumcraft:itemleggingsvoid"/>
+					<itemVoidThaumaturgeLeggings id="thaumcraft:itemleggingsvoidfortress"/>
+				</leggings6>
+				<leggings5>
+					<itemThaumiumLeggings id="thaumcraft:itemleggingsthaumium"/>
+					<itemCrimsonCultGreaves id="thaumcraft:itemleggingscultistplate"/>
+					<itemCrimsonCultLeggings id="thaumcraft:itemleggingscultistrobe"/>
+				</leggings5>
+				<leggings2>
+					<itemThaumaturgesLeggings id="thaumcraft:itemleggingsrobe"/>
+				</leggings2>
+				<itemThaumiumFortressThighGuards id="thaumcraft:itemleggingsfortress"/>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots3>
+					<itemVoidBoots id="thaumcraft:itembootsvoid"/>
+				</boots3>
+				<boots2>
+					<itemThaumiumBoots id="thaumcraft:itembootsthaumium"/>
+					<itemCrimsonCultBoots id="thaumcraft:itembootscultist"/>
+				</boots2>
+				<boots1>
+					<itemBootsoftheTraveler id="thaumcraft:bootstraveller"/>
+					<itemThaumaturgesBoots id="thaumcraft:itembootsrobe"/>
+				</boots1>
+			</boots>
+		</armor>
+		<baubles>
+			<rings>
+				<itemMundaneRing id="thaumcraft:itembaubleblanks" damage="1"/>
+				<itemRingofProtection id="thaumcraft:itemringrunic"/>
+				<itemApprenticeRing id="thaumcraft:itembaubleblanks" damage="3"/>
+				<itemApprenticeRing id="thaumcraft:itembaubleblanks" damage="4"/>
+				<itemApprenticeRing id="thaumcraft:itembaubleblanks" damage="5"/>
+				<itemApprenticeRing id="thaumcraft:itembaubleblanks" damage="6"/>
+				<itemApprenticeRing id="thaumcraft:itembaubleblanks" damage="7"/>
+				<itemApprenticeRing id="thaumcraft:itembaubleblanks" damage="8"/>
+			</rings>
+			<necklaces>
+				<itemMundaneAmulet id="thaumcraft:itembaubleblanks" damage="0"/>
+				<itemAmuletofRunicShielding id="thaumcraft:itemamuletrunic"/>
+				<itemVisStone id="thaumcraft:itemamuletvis"/>
+			</necklaces>
+			<belts>
+				<itemMundaneBelt id="thaumcraft:itembaubleblanks" damage="2"/>
+				<itemThaumostaticGirdle id="thaumcraft:itemgirdlehover"/>
+				<itemGirdleofRunicShielding id="thaumcraft:itemgirdlerunic"/>
+			</belts>
+		</baubles>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<stones>
+				<stone>
+					<rawStone>
+						<itemAncientRock id="thaumcraft:blockcosmeticsolid" damage="12"/>
+					</rawStone>
+				</stone>
+			</stones>
+			<dirts>
+				<itemThaumicTaintedSoil id="thaumcraft:blocktaint" damage="1"/>
+			</dirts>
+		</naturalBlock>
+		<manufacturedBlock>
+			<constructionBlock>
+				<glass>
+					<itemWardedGlass id="thaumcraft:blockcosmeticopaque" damage="2"/>
+				</glass>
+				<roads>
+					<itemPavingStoneofTravel id="thaumcraft:blockcosmeticsolid" damage="2"/>
+					<itemPavingStoneofWarding id="thaumcraft:blockcosmeticsolid" damage="3"/>
+				</roads>
+				<decorativeblocks>
+					<itemArcaneStoneBlock id="thaumcraft:blockcosmeticsolid" damage="6"/>
+					<itemArcaneStoneBricks id="thaumcraft:blockcosmeticsolid" damage="7"/>
+				</decorativeblocks>
+				<stairs>
+					<woodenStairs>
+						<itemGreatwoodStairs id="thaumcraft:blockstairsgreatwood"/>
+						<itemSilverwoodStairs id="thaumcraft:blockstairssilverwood" damage="0"/>
+					</woodenStairs>
+					<stoneStairs>
+						<itemAncientStoneStairs id="thaumcraft:blockstairseldritch"/>
+						<itemArcaneStoneStairs id="thaumcraft:blockstairsarcanestone"/>
+					</stoneStairs>
+				</stairs>
+				<slabs>
+					<itemArcaneStoneSlab id="thaumcraft:blockcosmeticslabstone" damage="0"/>
+					<itemAncientStoneSlab id="thaumcraft:blockcosmeticslabstone" damage="1"/>
+				</slabs>
+			</constructionBlock>
+			<banner>
+				<itemBanner id="thaumcraft:blockwoodendevice" damage="8"/>
+			</banner>
+			<itemBlock>
+				<itemCrucible id="thaumcraft:blockmetaldevice" damage="0"/>
+			</itemBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<lighting>
+				<torch>
+					<itemTallowCandle id="thaumcraft:blockcandle"/>
+				</torch>
+				<magicLight>
+					<itemNitor id="thaumcraft:itemresource" damage="1"/>
+				</magicLight>
+				<thaumicLamp>
+					<itemArcaneLamp id="thaumcraft:blockmetaldevice" damage="7"/>
+					<itemLampofGrowth id="thaumcraft:blockmetaldevice" damage="8"/>
+					<itemLampofFertility id="thaumcraft:blockmetaldevice" damage="13"/>
+				</thaumicLamp>
+			</lighting>
+			<pressurePlates>
+				<itemArcanePressurePlate id="thaumcraft:blockwoodendevice" damage="2"/>
+			</pressurePlates>
+			<doors>
+				<woodenDoor>
+					<itemArcaneDoor id="thaumcraft:itemarcanedoor" damage="0"/>
+				</woodenDoor>
+				<itemArcaneDoor id="thaumcraft:itemarcanedoor" damage="0"/>
+				<itemArcaneDoor id="thaumcraft:blockarcanedoor"/>
+			</doors>
+			<basicCrafting>
+				<craftingTables>
+					<itemArcaneWorktable id="thaumcraft:blocktable" damage="15"/>
+				</craftingTables>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<coals>
+				<itemAlumentum id="thaumcraft:itemresource" damage="0"/>
+			</coals>
+			<oreBlock>
+				<blockAmberDict oreDictName="blockAmber">
+					<itemAmberBlock id="thaumcraft:blockcosmeticopaque" damage="0"/>
+					<itemAmberBricks id="thaumcraft:blockcosmeticopaque" damage="1"/>
+				</blockAmberDict>
+				<itemChargedObsidianTotem id="thaumcraft:blockcosmeticsolid" damage="8"/>
+				<blockObsidianDict oreDictName="blockObsidian" mergeChildren="true">
+					<itemObsidianTile id="thaumcraft:blockcosmeticsolid" damage="1"/>
+					<itemObsidianTotem id="thaumcraft:blockcosmeticsolid" damage="0"/>
+				</blockObsidianDict>
+				<blockTallow>
+					<itemTallowBlock id="thaumcraft:blockcosmeticsolid" damage="5"/>
+				</blockTallow>
+				<blockThaumium>
+					<itemThaumiumBlock id="thaumcraft:blockcosmeticsolid" damage="4"/>
+				</blockThaumium>
+			</oreBlock>
+			<nugget>
+				<nuggetQuicksilverDrop id="thaumcraft:itemnugget" damage="5"/>
+			</nugget>
+		</miningResources>
+	</resources>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<hungryChest id="thaumcraft:blockchesthungry"/>
+				</chests>
+				<treasureContainers>
+					<itemLootBag id="thaumcraft:itemlootbag"/>
+					<itemAbandonedCrate id="thaumcraft:blocklootcrate"/>
+					<itemOldUrn id="thaumcraft:blocklooturn"/>
+				</treasureContainers>
+			</storage>
+			<readableBooks>
+				<itemCrimsonRites id="thaumcraft:itemeldritchobject" damage="1"/>
+				<itemThaumonomicon id="thaumcraft:itemthaumonomicon"/>
+			</readableBooks>
+			<spawnerEggs>
+				<itemSpawnthaumcraft id="thaumcraft:itemspawneregg"/>
+			</spawnerEggs>
+		</utility>
+		<bucket>
+			<itemthaumcraft_ItemBucketDeath id="thaumcraft:itembucketdeath"/>
+			<itemthaumcraft_ItemBucketPure id="thaumcraft:itembucketpure"/>
+		</bucket>
+		<decoration>
+			<door>
+				<itemArcaneDoor id="thaumcraft:itemarcanedoor" damage="0"/>
+			</door>
+			<itemBanner id="thaumcraft:blockwoodendevice" damage="8"/>
+		</decoration>
+		<food>
+			<edibleFood>
+				<cookedFood>
+					<itemthaumcraft_ItemNuggetBeef id="thaumcraft:itemnuggetbeef"/>
+					<itemthaumcraft_ItemNuggetChicken id="thaumcraft:itemnuggetchicken"/>
+					<itemthaumcraft_ItemNuggetFish id="thaumcraft:itemnuggetfish"/>
+					<itemthaumcraft_ItemNuggetPork id="thaumcraft:itemnuggetpork"/>
+					<itemthaumcraft_TripleMeatTreat id="thaumcraft:triplemeattreat"/>
+				</cookedFood>
+				<rawFood>
+					<mushroom>
+						<itemVishroom id="thaumcraft:blockcustomplant" damage="5"/>
+					</mushroom>
+				</rawFood>
+			</edibleFood>
+			<poisonedFood>
+				<itemZombieBrain id="thaumcraft:itemzombiebrain"/>
+			</poisonedFood>
+		</food>
+		<plant>
+			<flower>
+				<flowerMagical>
+					<itemCinderpearl id="thaumcraft:blockcustomplant" damage="3"/>
+					<itemShimmerleaf id="thaumcraft:blockcustomplant" damage="2"/>
+					<itemEtherealBloom id="thaumcraft:blockcustomplant" damage="4"/>
+				</flowerMagical>
+			</flower>
+			<leaves id="leaves">
+				<itemThaumicLeaves id="thaumcraft:blockmagicalleaves"/>
+			</leaves>
+		</plant>
+		<magical>
+			<thaumurgy>
+				<research>
+					<itemScribingTools id="thaumcraft:iteminkwell"/>
+					<itemResearchNotes id="thaumcraft:itemresearchnotes"/>
+					<itemKnowledgeFragment id="thaumcraft:itemresource" damage="9"/>
+					<itemTable id="thaumcraft:blocktable" damage="0"/>
+					<itemDeconstructionTable id="thaumcraft:blocktable" damage="14"/>
+				</research>
+				<shards>
+					<itemAirShard id="thaumcraft:itemshard" damage="0"/>
+					<itemFireShard id="thaumcraft:itemshard" damage="1"/>
+					<itemWaterShard id="thaumcraft:itemshard" damage="2"/>
+					<itemEarthShard id="thaumcraft:itemshard" damage="3"/>
+					<itemOrderShard id="thaumcraft:itemshard" damage="4"/>
+					<itemEntropyShard id="thaumcraft:itemshard" damage="5"/>
+					<itemBalancedShard id="thaumcraft:itemshard" damage="6"/>
+				</shards>
+				<crystalclusters>
+					<itemCrystalCluster id="thaumcraft:blockcrystal"/>
+				</crystalclusters>
+				<wands>
+					<itemWandCasting id="thaumcraft:wandcasting"/>
+				</wands>
+				<wandFocuses>
+					<itemFocusPouch id="thaumcraft:focuspouch"/>
+					<itemWandFocus_EqualTrade id="thaumcraft:focustrade"/>
+					<itemWandFocus_Excavation id="thaumcraft:focusexcavation"/>
+					<itemWandFocus_Fire id="thaumcraft:focusfire"/>
+					<itemWandFocus_Frost id="thaumcraft:focusfrost"/>
+					<itemWandFocus_NineHells id="thaumcraft:focushellbat"/>
+					<itemWandFocus_PechsCurse id="thaumcraft:focuspech"/>
+					<itemWandFocus_PortableHole id="thaumcraft:focusportablehole"/>
+					<itemWandFocus_Primal id="thaumcraft:focusprimal"/>
+					<itemWandFocus_Shock id="thaumcraft:focusshock"/>
+					<itemWandFocus_Warding id="thaumcraft:focuswarding"/>
+				</wandFocuses>
+				<wandCaps>
+					<itemChargedVoidmetalCap id="thaumcraft:wandcap" damage="7"/>
+					<itemInertVoidmetalCap id="thaumcraft:wandcap" damage="8"/>
+					<itemChargedThaumiumCap id="thaumcraft:wandcap" damage="2"/>
+					<itemInertThaumiumCap id="thaumcraft:wandcap" damage="6"/>
+					<itemChargedSilverCap id="thaumcraft:wandcap" damage="4"/>
+					<itemInertSilverCap id="thaumcraft:wandcap" damage="5"/>
+					<itemGoldCap id="thaumcraft:wandcap" damage="1"/>
+					<itemCopperCap id="thaumcraft:wandcap" damage="3"/>
+					<itemIronCap id="thaumcraft:wandcap" damage="0"/>
+				</wandCaps>
+				<wandCore>
+					<itemSilverwoodRod id="thaumcraft:wandrod" damage="2"/>
+					<itemGreatwoodRod id="thaumcraft:wandrod" damage="0"/>
+					<itemBlazingRod id="thaumcraft:wandrod" damage="6"/>
+					<itemBoneRod id="thaumcraft:wandrod" damage="7"/>
+					<itemIcyRod id="thaumcraft:wandrod" damage="3"/>
+					<itemObsidianRod id="thaumcraft:wandrod" damage="1"/>
+					<itemQuartzRod id="thaumcraft:wandrod" damage="4"/>
+					<itemReedRod id="thaumcraft:wandrod" damage="5"/>
+				</wandCore>
+				<staffCore>
+					<itemStaffCoreofthePrimal id="thaumcraft:wandrod" damage="100"/>
+					<itemSilverwoodStaffCore id="thaumcraft:wandrod" damage="52"/>
+					<itemGreatwoodStaffCore id="thaumcraft:wandrod" damage="50"/>
+					<itemBlazingStaffCore id="thaumcraft:wandrod" damage="56"/>
+					<itemBoneStaffCore id="thaumcraft:wandrod" damage="57"/>
+					<itemIcyStaffCore id="thaumcraft:wandrod" damage="53"/>
+					<itemObsidianStaffCore id="thaumcraft:wandrod" damage="51"/>
+					<itemQuartzStaffCore id="thaumcraft:wandrod" damage="54"/>
+					<itemReedStaffCore id="thaumcraft:wandrod" damage="55"/>
+				</staffCore>
+				<thaumicEssence>
+					<liquidEssence>
+						<itemPhialofEssentia id="thaumcraft:itemessence"/>
+						<essenceJars>
+							<itemJarLabel id="thaumcraft:itemresource" damage="13"/>
+							<itemWardedJar id="thaumcraft:blockjar" damage="0"/>
+							<itemVoidJar id="thaumcraft:blockjar" damage="3"/>
+							<itemJarofEssentia id="thaumcraft:blockjarfilleditem"/>
+							<itemNodeinaJar id="thaumcraft:blockjarnodeitem"/>
+							<itemAuraNode id="thaumcraft:blockairy"/>
+							<itemBraininaJar id="thaumcraft:blockjar" damage="1"/>
+						</essenceJars>
+					</liquidEssence>
+					<solidEssence>
+						<itemCrystallizedEssence id="thaumcraft:itemcrystalessence"/>
+						<itemEtherealEssence id="thaumcraft:itemwispessence"/>
+						<itemManaBean id="thaumcraft:itemmanabean"/>
+					</solidEssence>
+					<EssenciaMachines>
+						<itemAlchemicalFurnace id="thaumcraft:blockstonedevice" damage="0"/>
+						<itemAdvancedAlchemicalFurnace id="thaumcraft:blockalchemyfurnace"/>
+						<itemArcaneAlembic id="thaumcraft:blockmetaldevice" damage="1"/>
+						<itemEssentiaReservoir id="thaumcraft:blockessentiareservoir"/>
+						<itemAlchemicalConstruct id="thaumcraft:blockmetaldevice" damage="9"/>
+						<itemAdvancedAlchemicalConstruct id="thaumcraft:blockmetaldevice" damage="3"/>
+						<itemMnemonicMatrix id="thaumcraft:blockmetaldevice" damage="12"/>
+						<itemVisFilter id="thaumcraft:itemresource" damage="8"/>
+						<itemEssentiaTube id="thaumcraft:blocktube"/>
+					</EssenciaMachines>
+				</thaumicEssence>
+				<thaumicItems>
+					<itemEnchantedFabric id="thaumcraft:itemresource" damage="7"/>
+					<itemMagicTallow id="thaumcraft:itemresource" damage="4"/>
+					<itemMirroredGlass id="thaumcraft:itemresource" damage="10"/>
+					<itemPrimalCharm id="thaumcraft:itemresource" damage="15"/>
+					<itemPrimordialPearl id="thaumcraft:itemeldritchobject" damage="3"/>
+					<itemQuicksilver id="thaumcraft:itemresource" damage="3"/>
+					<itemSalisMundus id="thaumcraft:itemresource" damage="14"/>
+					<itemVoidSeed id="thaumcraft:itemresource" damage="17"/>
+					<itemSinisterLodestone id="thaumcraft:itemcompassstone"/>
+					<itemEldritchEye id="thaumcraft:itemeldritchobject" damage="0"/>
+					<itemRunedTablet id="thaumcraft:itemeldritchobject" damage="2"/>
+					<itemAncientStonePedestal id="thaumcraft:blockcosmeticsolid" damage="15"/>
+					<itemMagicMirror id="thaumcraft:blockmirror"/>
+					<itemEssentiaMirror id="thaumcraft:blockmirror" damage="6"/>
+					<itemAncientStone id="thaumcraft:blockcosmeticsolid" damage="11"/>
+					<itemCrustedStone id="thaumcraft:blockcosmeticsolid" damage="14"/>
+					<itemGlowingCrustedStone id="thaumcraft:blockeldritch" damage="4"/>
+				</thaumicItems>
+				<tainted>
+					<itemTaintTendril id="thaumcraft:itemresource" damage="12"/>
+					<itemTaintedGoo id="thaumcraft:itemresource" damage="11"/>
+					<itemCrustedTaint id="thaumcraft:blocktaint"/>
+					<itemBottledTaint id="thaumcraft:itembottletaint"/>
+					<itemFibrousTaint id="thaumcraft:blocktaintfibres"/>
+				</tainted>
+				<sanity>
+					<itemPurifyingBathSalts id="thaumcraft:itembathsalts"/>
+					<itemSanitizingSoap id="thaumcraft:itemsanitysoap"/>
+					<itemSanityChecker id="thaumcraft:itemsanitychecker"/>
+				</sanity>
+				<thaumicMachines>
+					<itemArcaneBellows id="thaumcraft:blockwoodendevice" damage="0"/>
+					<itemArcaneBore id="thaumcraft:blockwoodendevice" damage="5"/>
+					<itemArcaneBoreBase id="thaumcraft:blockwoodendevice" damage="4"/>
+					<itemArcaneEar id="thaumcraft:blockwoodendevice" damage="1"/>
+					<itemArcaneLevitator id="thaumcraft:blocklifter" damage="0"/>
+					<itemItemGrate id="thaumcraft:blockmetaldevice" damage="5"/>
+					<itemRunicMatrix id="thaumcraft:blockstonedevice" damage="2"/>
+					<itemArcanePedestal id="thaumcraft:blockstonedevice" damage="1"/>
+					<itemArcaneSpa id="thaumcraft:blockstonedevice" damage="12"/>
+					<itemFocalManipulator id="thaumcraft:blockstonedevice" damage="13"/>
+					<itemWandRechargePedestal id="thaumcraft:blockstonedevice" damage="5"/>
+					<itemCompoundRechargeFocus id="thaumcraft:blockstonedevice" damage="8"/>
+					<itemNodeStabilizer id="thaumcraft:blockstonedevice" damage="9"/>
+					<itemAdvancedNodeStabilizer id="thaumcraft:blockstonedevice" damage="10"/>
+					<itemNodeTransducer id="thaumcraft:blockstonedevice" damage="11"/>
+					<itemVisRelay id="thaumcraft:blockmetaldevice" damage="14"/>
+					<itemVisChargeRelay id="thaumcraft:blockmetaldevice" damage="2"/>
+					<itemFocalManipulator id="thaumcraft:blockstonedevice" damage="13"/>
+					<itemFluxScrubber id="thaumcraft:blockstonedevice" damage="14"/>
+				</thaumicMachines>
+			</thaumurgy>
+			<magicalAI>
+				<golems>
+					<itemGolem id="thaumcraft:itemgolemplacer"/>
+				</golems>
+				<golemupgrades>
+					<itemGolemAnimationCore id="thaumcraft:itemgolemcore"/>
+					<itemGolemUpgrade id="thaumcraft:itemgolemupgrade"/>
+					<itemAccessory id="thaumcraft:itemgolemdecoration"/>
+				</golemupgrades>
+				<golemManagement>
+					<itemGolemFetter id="thaumcraft:blockcosmeticsolid" damage="9"/>
+				</golemManagement>
+				<itemTravelingTrunk id="thaumcraft:trunkspawner"/>
+			</magicalAI>
+		</magical>
+	</item>
+</stuff>

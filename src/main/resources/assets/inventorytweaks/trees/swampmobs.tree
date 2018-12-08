@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<munition>
+				<scepters>
+					<itemPoisonRayScepter id="swampmobs:poisonrayscepter"/>
+					<itemVenomShotScepter id="swampmobs:venomshotscepter"/>
+				</scepters>
+			</munition>
+		</weapon>
+	</equipment>
+	<item>
+		<utility>
+			<spawnerEggs>
+				<itemSpawnAspid id="swampmobs:swampegg" damage="5"/>
+				<itemSpawnDweller id="swampmobs:swampegg" damage="1"/>
+				<itemSpawnEttin id="swampmobs:swampegg" damage="2"/>
+				<itemSpawnEyewig id="swampmobs:swampegg" damage="4"/>
+				<itemSpawnGhoulZombie id="swampmobs:swampegg" damage="0"/>
+				<itemSpawnLurker id="swampmobs:swampegg" damage="3"/>
+				<itemSpawnRemobra id="swampmobs:swampegg" damage="6"/>
+			</spawnerEggs>
+		</utility>
+		<food>
+			<edibleFood>
+				<cookedFood>
+					<itemswampmobs_aspidmeatcooked id="swampmobs:aspidmeatcooked"/>
+				</cookedFood>
+				<rawFood>
+					<rawMeat>
+						<itemswampmobs_aspidmeatraw id="swampmobs:aspidmeatraw"/>
+					</rawMeat>
+				</rawFood>
+			</edibleFood>
+			<hunting>
+				<taming>
+					<itemEyewigTreat id="swampmobs:eyewigtreat"/>
+					<itemLurkerTreat id="swampmobs:lurkertreat"/>
+				</taming>
+			</hunting>
+		</food>
+	</item>
+</stuff>

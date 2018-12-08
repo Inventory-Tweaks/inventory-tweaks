@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<block>
+		<manufacturedBlock>
+			<sign>
+				<itemNaturaFancySign id="bibliowoodsnatura:bibliowoodfancysign"/>
+			</sign>
+		</manufacturedBlock>
+		<mechanism>
+			<basicCrafting>
+				<craftingTables>
+					<itemNaturaBiblioWorkbench id="bibliowoodsnatura:bibliowoodfancyworkbench"/>
+				</craftingTables>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<item>
+		<decoration>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt0"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt1"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt2"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt3"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt4"/>
+			<sign>
+				<itemNaturaFancySign id="bibliowoodsnatura:bibliowoodfancysign"/>
+			</sign>
+			<bookcase>
+				<itemAmaranthBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="7"/>
+				<itemBloodwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="0"/>
+				<itemDarkwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="1"/>
+				<itemEucalyptusBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="2"/>
+				<itemFusewoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="3"/>
+				<itemGhostwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="4"/>
+				<itemHopseedBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="5"/>
+				<itemMapleBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="6"/>
+				<itemRedwoodNaturaBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="8"/>
+				<itemSakuraBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="10"/>
+				<itemSilverbellBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="9"/>
+				<itemTigerBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="11"/>
+				<itemWillowNaturaBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="12"/>
+			</bookcase>
+			<clocks>
+				<itemBloodwoodClock id="bibliowoodsnatura:bibliowoodclock"/>
+			</clocks>
+			<desks>
+				<itemAmaranthDesk id="bibliowoodsnatura:bibliowooddesk"/>
+			</desks>
+			<tables>
+				<itemBloodwoodTable id="bibliowoodsnatura:bibliowoodtable"/>
+			</tables>
+			<seating>
+				<seats>
+					<itemBloodwoodSeat id="bibliowoodsnatura:bibliowoodseat"/>
+				</seats>
+				<seatbacks>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback1"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback2"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback3"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback4"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback5"/>
+				</seatbacks>
+			</seating>
+			<case>
+				<itemBloodwoodMapFrame id="bibliowoodsnatura:bibliowoodmapframe"/>
+				<itemNaturaLabel id="bibliowoodsnatura:bibliowoodlabel"/>
+				<itemNaturaCase id="bibliowoodsnatura:bibliowoodcase0"/>
+			</case>
+			<toolRack>
+				<itemNaturaToolRack id="bibliowoodsnatura:bibliowoodrack"/>
+			</toolRack>
+			<shelf>
+				<itemAmaranthShelf id="bibliowoodsnatura:bibliowoodshelf" damage="7"/>
+				<itemBloodwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="0"/>
+				<itemDarkwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="1"/>
+				<itemEucalyptusShelf id="bibliowoodsnatura:bibliowoodshelf" damage="2"/>
+				<itemFusewoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="3"/>
+				<itemGhostwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="4"/>
+				<itemHopseedShelf id="bibliowoodsnatura:bibliowoodshelf" damage="5"/>
+				<itemMapleShelf id="bibliowoodsnatura:bibliowoodshelf" damage="6"/>
+				<itemRedwoodNaturaShelf id="bibliowoodsnatura:bibliowoodshelf" damage="8"/>
+				<itemSakuraShelf id="bibliowoodsnatura:bibliowoodshelf" damage="10"/>
+				<itemSilverbellShelf id="bibliowoodsnatura:bibliowoodshelf" damage="9"/>
+				<itemTigerShelf id="bibliowoodsnatura:bibliowoodshelf" damage="11"/>
+				<itemWillowNaturaShelf id="bibliowoodsnatura:bibliowoodshelf" damage="12"/>
+			</shelf>
+			<potionShelf>
+				<itemAmaranthPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="7"/>
+				<itemBloodwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="0"/>
+				<itemDarkwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="1"/>
+				<itemEucalyptusPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="2"/>
+				<itemFusewoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="3"/>
+				<itemGhostwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="4"/>
+				<itemHopseedPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="5"/>
+				<itemMaplePotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="6"/>
+				<itemRedwoodPotionNaturaShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="8"/>
+				<itemSakuraPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="10"/>
+				<itemSilverbellPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="9"/>
+				<itemTigerPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="11"/>
+				<itemWillowPotionNauraShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="12"/>
+			</potionShelf>
+		</decoration>
+	</item>
+</stuff>

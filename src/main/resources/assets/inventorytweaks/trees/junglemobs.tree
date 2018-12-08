@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<munition>
+				<thrownMunitions>
+					<itemPoop id="junglemobs:poopcharge"/>
+				</thrownMunitions>
+				<scepters>
+					<itemPoopScepter id="junglemobs:poopscepter"/>
+				</scepters>
+			</munition>
+		</weapon>
+	</equipment>
+	<item>
+		<utility>
+			<spawnerEggs>
+				<itemSpawnConba id="junglemobs:jungleegg" damage="5"/>
+				<itemSpawnConcapede id="junglemobs:jungleegg" damage="2"/>
+				<itemSpawnConcapedeSegment id="junglemobs:jungleegg" damage="3"/>
+				<itemSpawnGeken id="junglemobs:jungleegg" damage="0"/>
+				<itemSpawnTarantula id="junglemobs:jungleegg" damage="4"/>
+				<itemSpawnUvaraptor id="junglemobs:jungleegg" damage="1"/>
+				<itemSpawnVespid id="junglemobs:jungleegg" damage="6"/>
+				<itemSpawnVespidQueen id="junglemobs:jungleegg" damage="7"/>
+			</spawnerEggs>
+		</utility>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<curry>
+						<itemjunglemobs_tropicalcurry_0 id="junglemobs:tropicalcurry" damage="0"/>
+					</curry>
+				</preparedFood>
+				<cookedFood>
+					<itemjunglemobs_concapedemeatcooked id="junglemobs:concapedemeatcooked"/>
+				</cookedFood>
+				<rawFood>
+					<rawMeat>
+						<itemjunglemobs_concapedemeatraw id="junglemobs:concapedemeatraw"/>
+					</rawMeat>
+				</rawFood>
+			</edibleFood>
+			<hunting>
+				<taming>
+					<itemUvaraptorTreat id="junglemobs:uvaraptortreat"/>
+				</taming>
+			</hunting>
+		</food>
+	</item>
+</stuff>

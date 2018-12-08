@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemHeavyDutyPickaxe id="galacticraftcore:steel_pickaxe"/>
+					</CobaltPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemHeavyDutyShovel id="galacticraftcore:steel_shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemHeavyDutyAxe id="galacticraftcore:steel_axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemHeavyDutyHoe id="galacticraftcore:steel_hoe"/>
+				</hoe>
+			</farmingTool>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemStandardWrench id="galacticraftcore:standard_wrench"/>
+			</wrench>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemHeavyDutyHelmet id="galacticraftcore:steel_helmet"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemHeavyDutyChestplate id="galacticraftcore:steel_chestplate"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemHeavyDutyLeggings id="galacticraftcore:steel_leggings"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemHeavyDutyBoots id="galacticraftcore:steel_boots"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemMoonDungeonBrickStairs id="galacticraftcore:moon_stairs_brick"/>
+						<itemMoonRockStairs id="galacticraftcore:moon_stairs_stone"/>
+						<itemTinDecorationStairs id="galacticraftcore:tin_stairs_1"/>
+						<itemTinDecorationStairs id="galacticraftcore:tin_stairs_2"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<basicCrafting>
+				<craftingTables>
+					<itemMagneticCraftingTable id="galacticraftcore:magnetic_table"/>
+				</craftingTables>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<item>
+		<bucket>
+			<itemFuelBucket id="galacticraftcore:bucket_fuel"/>
+			<itemOilBucket id="galacticraftcore:bucket_oil"/>
+		</bucket>
+	</item>
+</stuff>

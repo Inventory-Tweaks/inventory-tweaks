@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<cleaver>
+						<itemTinkersCleaver id="tconstruct:cleaver"/>
+					</cleaver>
+					<cutlass>
+						<itemTinkersCutlass id="tconstruct:cutlass"/>
+					</cutlass>
+					<broadsword>
+						<itemTinkersBroadsword id="tconstruct:broadsword"/>
+					</broadsword>
+					<longsword>
+						<itemTinkersLongsword id="tconstruct:longsword"/>
+					</longsword>
+					<battleAxe>
+						<itemTinkersBattleAxe id="tconstruct:battleaxe"/>
+					</battleAxe>
+					<frypan>
+						<itemTinkersFryingPan id="tconstruct:frypan"/>
+					</frypan>
+					<dagger>
+						<itemTinkersDagger id="tconstruct:dagger"/>
+					</dagger>
+					<battleSign>
+						<itemTinkersBattleSign id="tconstruct:battlesign"/>
+					</battleSign>
+					<rapier>
+						<itemTinkersRapier id="tconstruct:rapier"/>
+					</rapier>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<bow mergeChildren="true">
+					<itemTinkersCrossbow id="tconstruct:crossbow"/>
+					<itemTinkersLongbow id="tconstruct:longbow"/>
+					<itemTinkersShortbow id="tconstruct:shortbow"/>
+				</bow>
+				<javelins>
+					<itemTinkersJavelin id="tconstruct:javelin"/>
+				</javelins>
+				<shuriken>
+					<itemTinkersJavelin id="tconstruct:shuriken"/>
+				</shuriken>
+				<throwingKnife>
+					<itemTinkersJavelin id="tconstruct:throwingknife"/>
+				</throwingKnife>
+				<thrownMunitions>
+					<itemGlowball id="tconstruct:throwball" damage="0"/>
+					<itemEFLN id="tconstruct:throwball" damage="1"/>
+				</thrownMunitions>
+				<itemSlimesling id="tconstruct:slimesling"/>
+			</munition>
+			<bolts>
+				<itemTinkersBolts id="tconstruct:boltammo"/>
+			</bolts>
+			<arrow class="arrow">
+				<itemTinkersArrows id="tconstruct:arrowammo"/>
+				<itemArditeArrow id="tconstruct:arrow"/>
+			</arrow>
+		</weapon>
+		<tool>
+			<miningTool>
+				<hammer mergeChildren="true">
+					<itemTinkersHammer id="tconstruct:hammer"/>
+				</hammer>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<itemTinkersPickaxe id="tconstruct:pickaxe"/>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<excavator mergeChildren="true">
+					<itemTinkersExcavator id="tconstruct:excavator"/>
+				</excavator>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemTinkersShovel id="tconstruct:shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<lumberAxe mergeChildren="true">
+					<itemTinkersLumberAxe id="tconstruct:lumberaxe"/>
+				</lumberAxe>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemTinkersHatchet id="tconstruct:hatchet"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<scythe class="Item" data="{ToolClass : &quot;scythe&quot;}" mergeChildren="true">
+					<itemTinkersScythe id="tconstruct:scythe"/>
+				</scythe>
+				<kama mergeChildren="true">
+					<itemKama id="tconstruct:kama"/>
+				</kama>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemTinkersMattock id="tconstruct:mattock"/>
+				</hoe>
+			</farmingTool>
+			<chisel>
+				<itemTinkerChisel id="tconstruct:chisel"/>
+			</chisel>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet1>
+					<woodenHelmet id="tconstruct:helmetwood"/>
+				</helmet1>
+				<eyeGlasses>
+					<itemTravellersGoggles id="tconstruct:travelgoggles"/>
+				</eyeGlasses>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate2>
+						<woodenChestplate id="tconstruct:chestplatewood"/>
+					</chestplate2>
+				</chestplateArmor>
+				<itemTravellersBelt id="tconstruct:travelbelt"/>
+				<itemTravellersVest id="tconstruct:travelvest"/>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings2>
+					<itemTravellersWings id="tconstruct:travelwings"/>
+					<woodenLeggings id="tconstruct:leggingswood"/>
+				</leggings2>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots1>
+					<itemTravellersBoots id="tconstruct:travelboots"/>
+					<woodenBoots id="tconstruct:bootswood"/>
+				</boots1>
+				<boots0>
+					<itemSlimeBoots id="tconstruct:slime_boots"/>
+				</boots0>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<dirts>
+				<itemBlueSlimedirt id="tconstruct:craftedsoil" damage="5"/>
+				<itemConsecratedSoil id="tconstruct:craftedsoil" damage="4"/>
+				<itemGraveyardSoil id="tconstruct:craftedsoil" damage="3"/>
+				<itemGraveyardSoil id="tconstruct:soil" damage="3"/>
+				<itemSlimeSoil id="tconstruct:craftedsoil" damage="6"/>
+			</dirts>
+			<netherBlock>
+				<netherrack>
+					<itemFancyNetherrackBrick id="tconstruct:decoration.multibrickfancy" damage="2"/>
+				</netherrack>
+			</netherBlock>
+			<grass>
+				<itemSlimyGrass id="tconstruct:slime.grass" damage="0"/>
+				<itemSlimyGrass id="tconstruct:slime.grass.tall" damage="0"/>
+			</grass>
+			<liquid>
+				<itemMilk.name id="tconstruct:milk"/>
+				<itemBlood id="tconstruct:blood"/>
+				<itemLiquidBlueSlime id="tconstruct:blueslime"/>
+				<itemMoltenAluminumBrass id="tconstruct:molten_alubrass"/>
+				<itemMoltenAluminum id="tconstruct:molten_aluminum"/>
+				<itemMoltenArdite id="tconstruct:molten_ardite"/>
+				<itemMoltenBrass id="tconstruct:molten_brass"/>
+				<itemMoltenBronze id="tconstruct:molten_bronze"/>
+				<itemMoltenClay id="tconstruct:molten_clay"/>
+				<itemMoltenCobalt id="tconstruct:molten_cobalt"/>
+				<itemMoltenCopper id="tconstruct:molten_copper"/>
+				<itemLiquidDirt id="tconstruct:molten_dirt"/>
+				<itemMoltenElectrum id="tconstruct:molten_electrum"/>
+				<itemMoltenEmerald id="tconstruct:molten_emerald"/>
+				<itemLiquidGlass.name id="tconstruct:molten_glass"/>
+				<itemMoltenGold id="tconstruct:molten_gold"/>
+				<itemMoltenIron id="tconstruct:molten_iron"/>
+				<itemMoltenKnightslime id="tconstruct:molten_knightslime"/>
+				<itemMoltenLead id="tconstruct:molten_lead"/>
+				<itemMoltenManyullyn id="tconstruct:molten_manyullyn"/>
+				<itemMoltenNickel id="tconstruct:molten_nickel"/>
+				<itemMoltenObsidian id="tconstruct:molten_obsidian"/>
+				<itemMoltenPigiron id="tconstruct:molten_pigiron"/>
+				<itemLiquidPurpleSlime id="tconstruct:purpleslime"/>
+				<itemMoltenSilver id="tconstruct:molten_silver"/>
+				<itemMoltenSteel id="tconstruct:molten_steel"/>
+				<itemSearedStone id="tconstruct:molten_stone"/>
+				<itemMoltenTin id="tconstruct:molten_tin"/>
+				<itemMoltenZinc id="tconstruct:molten_zinc"/>
+			</liquid>
+		</naturalBlock>
+		<manufacturedBlock>
+			<ladder>
+				<itemStoneLadder id="tconstruct:stone_ladder"/>
+			</ladder>
+			<constructionBlock>
+				<woodenPlank>
+					<itemLavawood id="tconstruct:firewood"/>
+				</woodenPlank>
+				<bricks>
+					<itemBrownstoneBricks id="tconstruct:brownstone" damage="3"/>
+					<itemCrackedBrownstoneBricks id="tconstruct:brownstone" damage="4"/>
+					<itemFancyBrownstoneBricks id="tconstruct:brownstone" damage="5"/>
+					<itemSmallBrownstoneBricks id="tconstruct:brownstone" damage="10"/>
+					<itemSquareBrownstoneBricks id="tconstruct:brownstone" damage="6"/>
+					<itemTriangleBrownstoneBricks id="tconstruct:brownstone" damage="9"/>
+					<itemMudBricks id="tconstruct:deco_ground" damage="0"/>
+					<itemDriedBricks id="tconstruct:dried_clay" damage="1"/>
+				</bricks>
+				<hardenedClay>
+					<itemDriedClay id="tconstruct:dried_clay" damage="0"/>
+				</hardenedClay>
+				<roads>
+					<itemStoneRoad id="tconstruct:decoration.multibrickfancy" damage="15"/>
+					<itemBrownstoneRoad id="tconstruct:speedblock"/>
+					<itemBrownstoneRoad id="tconstruct:brownstone" damage="7"/>
+				</roads>
+				<decorativeblocks>
+					<itemBrownstoneCreeperface id="tconstruct:brownstone" damage="8"/>
+					<itemBrownstonePaver id="tconstruct:brownstone" damage="2"/>
+					<itemBrownstoneTiles id="tconstruct:brownstone" damage="11"/>
+					<itemRoughBrownstone id="tconstruct:brownstone" damage="1"/>
+					<itemSmoothBrownstone id="tconstruct:brownstone" damage="0"/>
+				</decorativeblocks>
+				<stairs>
+					<otherStairs>
+						<itemBrownstoneBricksStairs id="tconstruct:brownstone_stairs_brick" damage="0"/>
+						<itemCrackedBrownstoneBricksStairs id="tconstruct:brownstone_stairs_brick_cracked" damage="0"/>
+						<itemFancyBrownstoneBricksStairs id="tconstruct:brownstone_stairs_brick_fancy" damage="0"/>
+						<itemSmallBrownstoneBricksStairs id="tconstruct:brownstone_stairs_brick_small" damage="0"/>
+						<itemSquareBrownstoneBricksStairs id="tconstruct:brownstone_stairs_brick_square" damage="0"/>
+						<itemTriangleBrownstoneBricksStairs id="tconstruct:brownstone_stairs_brick_triangle" damage="0"/>
+						<itemBrownstoneCreeperfaceStairs id="tconstruct:brownstone_stairs_creeper" damage="0"/>
+						<itemBrownstonePaverStairs id="tconstruct:brownstone_stairs_paver" damage="0"/>
+						<itemBrownstoneRoadStairs id="tconstruct:brownstone_stairs_road" damage="0"/>
+						<itemRoughBrownstoneStairs id="tconstruct:brownstone_stairs_rough" damage="0"/>
+						<itemSmoothBrownstoneStairs id="tconstruct:brownstone_stairs_smooth" damage="0"/>
+						<itemBrownstoneTileStairs id="tconstruct:brownstone_stairs_tile" damage="0"/>
+						<itemDriedBricksStairs id="tconstruct:dried_brick_stairs" damage="0"/>
+						<itemDriedClayStairs id="tconstruct:dried_clay_stairs" damage="0"/>
+						<itemFirewoodStairs id="tconstruct:firewood_stairs" damage="0"/>
+						<itemLavawoodStairs id="tconstruct:lavawood_stairs" damage="0"/>
+						<itemMudBricksStairs id="tconstruct:mudbrick_stairs" damage="0"/>
+						<itemSearedBricksStairs id="tconstruct:seared_stairs_brick" damage="0"/>
+						<itemCrackedSearedBricksStairs id="tconstruct:seared_stairs_brick_cracked" damage="0"/>
+						<itemFancySearedBricksStairs id="tconstruct:seared_stairs_brick_fancy" damage="0"/>
+						<itemSmallSearedBricksStairs id="tconstruct:seared_stairs_brick_small" damage="0"/>
+						<itemSquareSearedBricksStairs id="tconstruct:seared_stairs_brick_square" damage="0"/>
+						<itemTriangleSearedBricksStairs id="tconstruct:seared_stairs_brick_triangle" damage="0"/>
+						<itemSearedCobblestoneStairs id="tconstruct:seared_stairs_cobble" damage="0"/>
+						<itemSearedCreeperfaceStairs id="tconstruct:seared_stairs_creeper" damage="0"/>
+						<itemSearedPaverStairs id="tconstruct:seared_stairs_paver" damage="0"/>
+						<itemSearedRoadStairs id="tconstruct:seared_stairs_road" damage="0"/>
+						<itemSearedStoneStairs id="tconstruct:seared_stairs_stone" damage="0"/>
+						<itemSearedTileStairs id="tconstruct:seared_stairs_tile" damage="0"/>
+					</otherStairs>
+				</stairs>
+				<slabs>
+					<itemBrownstoneBricksSlab id="tconstruct:brownstone_slab" damage="3"/>
+					<itemBrownstonePaverSlab id="tconstruct:brownstone_slab" damage="2"/>
+					<itemBrownstoneRoadSlab id="tconstruct:brownstone_slab" damage="7"/>
+					<itemCrackedBrownstoneBricksSlab id="tconstruct:brownstone_slab" damage="4"/>
+					<itemFancyBrownstoneBricksSlab id="tconstruct:brownstone_slab" damage="5"/>
+					<itemRoughBrownstoneSlab id="tconstruct:brownstone_slab" damage="1"/>
+					<itemSmoothBrownstoneSlab id="tconstruct:brownstone_slab" damage="0"/>
+					<itemSquareBrownstoneBricksSlab id="tconstruct:brownstone_slab" damage="6"/>
+					<itemBrownstoneCreeperfaceSlab id="tconstruct:brownstone_slab2" damage="0"/>
+					<itemBrownstoneTileSlab id="tconstruct:brownstone_slab2" damage="3"/>
+					<itemSmallBrownstoneBricksSlab id="tconstruct:brownstone_slab2" damage="2"/>
+					<itemTriangleBrownstoneBricksSlab id="tconstruct:brownstone_slab2" damage="1"/>
+					<itemMudBricksSlab id="tconstruct:deco_ground_slab" damage="0"/>
+					<itemDriedBricksSlab id="tconstruct:dried_clay_slab" damage="1"/>
+					<itemDriedClaySlab id="tconstruct:dried_clay_slab" damage="0"/>
+					<itemFirewoodSlab id="tconstruct:firewood_slab" damage="1"/>
+					<itemLavawoodSlab id="tconstruct:firewood_slab" damage="0"/>
+					<itemSearedCreeperfaceSlab id="tconstruct:seared_slab2" damage="0"/>
+					<itemSearedTileSlab id="tconstruct:seared_slab2" damage="3"/>
+					<itemSmallSearedBricksSlab id="tconstruct:seared_slab2" damage="2"/>
+					<itemTriangleSearedBricksSlab id="tconstruct:seared_slab2" damage="1"/>
+					<itemBlackWoolSlab id="tconstruct:woolslab1" damage="7"/>
+					<itemBlueWoolSlab id="tconstruct:woolslab1" damage="3"/>
+					<itemBrownWoolSlab id="tconstruct:woolslab1" damage="4"/>
+					<itemBrownstoneBrickSlab id="tconstruct:speedslab" damage="3"/>
+					<itemBrownstoneRoadSlab id="tconstruct:speedslab" damage="1"/>
+					<itemBrownstoneRoadSlab id="tconstruct:speedslab" damage="4"/>
+					<itemBrownstoneSlab id="tconstruct:speedslab" damage="2"/>
+					<itemChiseledBrownstoneSlab id="tconstruct:speedslab" damage="6"/>
+					<itemChiseledSearedSlab id="tconstruct:seared_slab" damage="6"/>
+					<itemChiseledSearedSlab id="tconstruct:seared_slab" damage="7"/>
+					<itemCraftingStation id="tconstruct:craftingslab" damage="0"/>
+					<itemCyanWoolSlab id="tconstruct:woolslab1" damage="1"/>
+					<itemFancyBrownstoneSlab id="tconstruct:speedslab" damage="5"/>
+					<itemFancySearedSlab id="tconstruct:seared_slab" damage="5"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="0"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="1"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="2"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="3"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="4"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="5"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="6"/>
+					<itemGrayWoolSlab id="tconstruct:woolslab2" damage="7"/>
+					<itemGreenWoolSlab id="tconstruct:woolslab1" damage="5"/>
+					<itemLightGrayWoolSlab id="tconstruct:woolslab1" damage="0"/>
+					<itemPurpleWoolSlab id="tconstruct:woolslab1" damage="2"/>
+					<itemRedWoolSlab id="tconstruct:woolslab1" damage="6"/>
+					<itemRoughBrownstoneSlab id="tconstruct:speedslab" damage="0"/>
+					<itemSearedBrickSlab id="tconstruct:seared_slab" damage="0"/>
+					<itemSearedCobblestoneSlab id="tconstruct:seared_slab" damage="2"/>
+					<itemSearedPaverSlab id="tconstruct:seared_slab" damage="3"/>
+					<itemSearedRoadSlab id="tconstruct:seared_slab" damage="4"/>
+					<itemSearedStoneSlab id="tconstruct:seared_slab" damage="1"/>
+				</slabs>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<rails>
+				<woodenRails>
+					<itemWoodenRail id="tconstruct:wood_rail"/>
+					<itemWoodenRailwithaTrapdoor id="tconstruct:wood_rail_trapdoor"/>
+					<itemWoodenRail id="tconstruct:rail.wood"/>
+				</woodenRails>
+			</rails>
+			<resourceTransfer>
+				<groundItemCollector>
+					<itemWoodenHopper id="tconstruct:wooden_hopper"/>
+				</groundItemCollector>
+				<conveyerBelts>
+					<itemBloodChannel id="tconstruct:slime_channel" damage="3"/>
+					<itemBlueSlimeChannel id="tconstruct:slime_channel" damage="1"/>
+					<itemGreenSlimeChannel id="tconstruct:slime_channel" damage="0"/>
+					<itemPurpleSlimeChannel id="tconstruct:slime_channel" damage="2"/>
+					<itemMagmaSlimeChannel id="tconstruct:slime_channel" damage="4"/>
+				</conveyerBelts>
+			</resourceTransfer>
+			<basicCrafting>
+				<craftingTables>
+					<itemCraftingStation id="tconstruct:craftingstation" damage="0"/>
+				</craftingTables>
+				<tinkerToolCrafting>
+					<itemToolStation id="tconstruct:tooltables" damage="3"/>
+					<itemToolStation id="tconstruct:toolstationblock" damage="0"/>
+					<itemToolStation id="tconstruct:craftingslab" damage="1"/>
+					<itemToolForgeBlock id="tconstruct:toolforgeblock"/>
+					<itemToolForge id="tconstruct:toolforge"/>
+					<itemToolForge id="tconstruct:craftingslab" damage="5"/>
+					<itemPartBuilder id="tconstruct:tooltables" damage="2"/>
+					<itemPartBuilder id="tconstruct:toolstationblock" damage="1"/>
+					<itemPartBuilder id="tconstruct:toolstationblock" damage="2"/>
+					<itemPartBuilder id="tconstruct:toolstationblock" damage="3"/>
+					<itemPartBuilder id="tconstruct:toolstationblock" damage="4"/>
+					<itemPartBuilder id="tconstruct:craftingslab" damage="2"/>
+					<itemStencilTable id="tconstruct:tooltables" damage="1"/>
+					<itemStencilTable id="tconstruct:toolstationblock" damage="10"/>
+					<itemStencilTable id="tconstruct:toolstationblock" damage="11"/>
+					<itemStencilTable id="tconstruct:toolstationblock" damage="12"/>
+					<itemStencilTable id="tconstruct:toolstationblock" damage="13"/>
+					<itemStencilTable id="tconstruct:craftingslab" damage="3"/>
+				</tinkerToolCrafting>
+				<furnaces>
+					<itemSlabFurnace id="tconstruct:furnaceslab" damage="0"/>
+					<tinkerSmeltry>
+						<itemSmelteryController id="tconstruct:smeltery_controller" damage="0"/>
+						<itemSmelteryController id="tconstruct:smeltery" damage="0"/>
+						<itemSmelteryController id="tconstruct:smelterynether" damage="0"/>
+						<itemTinkerTankController id="tconstruct:tinker_tank_controller"/>
+						<itemSearedFurnaceController id="tconstruct:seared_furnace_controller" damage="0"/>
+						<itemSearedTank id="tconstruct:lavatank" damage="0"/>
+						<itemSearedTank id="tconstruct:lavatanknether" damage="0"/>
+						<itemSmelteryDrain id="tconstruct:smeltery_io"/>
+						<itemSmelteryDrain id="tconstruct:smeltery" damage="1"/>
+						<itemSmelteryDrain id="tconstruct:smelterynether" damage="1"/>
+						<itemSearedBricks id="tconstruct:smeltery" damage="2"/>
+						<itemSearedBricks id="tconstruct:smelterynether" damage="2"/>
+						<itemFaucet id="tconstruct:faucet"/>
+						<itemCastingChannel id="tconstruct:channel"/>
+						<itemSearedFaucet id="tconstruct:searedblock" damage="1"/>
+						<itemSearedFaucet id="tconstruct:searedblocknether" damage="1"/>
+						<itemCastingTable id="tconstruct:casting" damage="0"/>
+						<itemCastingTable id="tconstruct:searedblock" damage="0"/>
+						<itemCastingTable id="tconstruct:searedblocknether" damage="0"/>
+						<itemCastingBasin id="tconstruct:casting" damage="1"/>
+						<itemCastingBasin id="tconstruct:searedblock" damage="2"/>
+						<itemCastingBasin id="tconstruct:searedblocknether" damage="2"/>
+						<itemSearedStone id="tconstruct:smeltery" damage="4"/>
+						<itemSearedCobblestone id="tconstruct:smeltery" damage="5"/>
+						<itemSearedPaver id="tconstruct:smeltery" damage="6"/>
+						<itemCrackedSearedBricks id="tconstruct:smeltery" damage="7"/>
+						<itemSearedRoad id="tconstruct:smeltery" damage="8"/>
+						<itemFancySearedBricks id="tconstruct:smeltery" damage="9"/>
+						<itemChiseledSearedBricks id="tconstruct:smeltery" damage="10"/>
+						<itemChiseledSearedBricks id="tconstruct:smeltery" damage="11"/>
+						<itemSearedStone id="tconstruct:smelterynether" damage="4"/>
+						<itemSearedCobblestone id="tconstruct:smelterynether" damage="5"/>
+						<itemSearedPaver id="tconstruct:smelterynether" damage="6"/>
+						<itemCrackedSearedBricks id="tconstruct:smelterynether" damage="7"/>
+						<itemSearedRoad id="tconstruct:smelterynether" damage="8"/>
+						<itemFancySearedBricks id="tconstruct:smelterynether" damage="9"/>
+						<itemChiseledSearedBricks id="tconstruct:smelterynether" damage="10"/>
+						<itemChiseledSearedBricks id="tconstruct:smelterynether" damage="11"/>
+						<itemSearedGlass id="tconstruct:seared_glass" damage="0"/>
+						<itemSearedGauge id="tconstruct:seared_tank" damage="1"/>
+						<itemSearedGlass id="tconstruct:lavatank" damage="1"/>
+						<itemSearedWindow id="tconstruct:seared_tank" damage="2"/>
+						<itemSearedWindow id="tconstruct:lavatank" damage="2"/>
+						<itemSearedGlass id="tconstruct:lavatanknether" damage="1"/>
+						<itemSearedWindow id="tconstruct:lavatanknether" damage="2"/>
+					</tinkerSmeltry>
+				</furnaces>
+			</basicCrafting>
+			<machines>
+				<mobKillers>
+					<itemPunjiStick id="tconstruct:trap.punji"/>
+					<itemPunjiSticks id="tconstruct:punji"/>
+				</mobKillers>
+			</machines>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<oreBlock>
+				<blockSilkyJewel>
+					<itemSilkyBlockofJewel id="tconstruct:metal" damage="6"/>
+				</blockSilkyJewel>
+			</oreBlock>
+			<gem>
+				<gemSlimyMud>
+					<itemBlueSlimyMud id="tconstruct:soil" damage="2"/>
+					<itemGreenSlimyMud id="tconstruct:soil" damage="1"/>
+					<itemSlimyMagmaMud id="tconstruct:soil" damage="5"/>
+				</gemSlimyMud>
+			</gem>
+			<bricks>
+				<itemMudBrick id="tconstruct:materials" damage="1"/>
+				<itemSearedBrick id="tconstruct:materials" damage="37"/>
+				<itemSearedBrick id="tconstruct:materials" damage="2"/>
+			</bricks>
+			<grout>
+				<itemGrout id="tconstruct:craftedsoil" damage="1"/>
+				<itemGrout id="tconstruct:soil" damage="0"/>
+			</grout>
+		</miningResources>
+	</resources>
+	<item>
+		<utility>
+			<torch id="torch">
+				<stoneTorch id="tconstruct:decoration.stonetorch"/>
+			</torch>
+			<storage>
+				<chests>
+					<itemPatternChest id="tconstruct:tooltables" damage="4"/>
+					<itemPartChest id="tconstruct:tooltables" damage="5"/>
+				</chests>
+				<portableStorage>
+					<itemKnapsack id="tconstruct:knapsack"/>
+				</portableStorage>
+			</storage>
+			<furnaces>
+				<itemSlabFurnace id="tconstruct:furnaceslab" damage="0"/>
+			</furnaces>
+			<beds>
+				<itemDryingRack id="tconstruct:rack" damage="1"/>
+			</beds>
+			<readableBooks>
+				<itemMaterialsandYou id="tconstruct:book"/>
+				<itemMaterialsandYou_Volume1 id="tconstruct:manualbook"/>
+			</readableBooks>
+			<spawnerEggs>
+				<itemSpawnBlueSlime id="tconstruct:titleicon" damage="0"/>
+				<itemSpawnKingSlime id="tconstruct:titleicon" damage="1"/>
+			</spawnerEggs>
+			<mobHolder>
+				<itemPiggybackpack id="tconstruct:piggybackpack"/>
+			</mobHolder>
+		</utility>
+		<bucket>
+			<itemtconstruct_buckets id="tconstruct:buckets"/>
+		</bucket>
+		<fluidStorage>
+			<itemSearedTank id="tconstruct:seared_tank" damage="0"/>
+			<itemSearedTank id="tconstruct:lavatanknether" damage="0"/>
+		</fluidStorage>
+		<patterns>
+			<itemPattern id="tconstruct:pattern"/>
+		</patterns>
+		<casts>
+			<itemtconstruct_Cast id="tconstruct:cast"/>
+			<itemtconstruct_Cast id="tconstruct:cast_custom"/>
+			<itemtconstruct_Cast id="tconstruct:clay_cast"/>
+		</casts>
+		<parts>
+			<tinkerParts>
+				<itemTinkerHammerHead id="tconstruct:hammer_head"/>
+				<itemTinkerBroadAxeHead id="tconstruct:broad_axe_head"/>
+				<itemTinkerExcavatorHead id="tconstruct:excavator_head"/>
+				<itemTinkerScytheHead id="tconstruct:scythe_head"/>
+				<itemTinkerLargeSwordBlade id="tconstruct:large_sword_blade"/>
+				<itemTinkerCrossbowBody id="tconstruct:crossbowbodypart"/>
+				<itemTinkerCrossbowLimb id="tconstruct:crossbowlimbpart"/>
+				<itemTinkerPickaxeHead id="tconstruct:pick_head"/>
+				<itemTinkerShovelHead id="tconstruct:shovel_head"/>
+				<itemTinkerAxeHead id="tconstruct:axe_head"/>
+				<itemTinkerSwordBlade id="tconstruct:sword_blade"/>
+				<itemTinkerFullGuard id="tconstruct:full_guard"/>
+				<itemTinkerWideGuard id="tconstruct:wide_guard"/>
+				<itemTinkerHandGuard id="tconstruct:hand_guard"/>
+				<itemTinkerCrossbar id="tconstruct:cross_guard"/>
+				<itemTinkerKnifeBlade id="tconstruct:knife_blade"/>
+				<itemKamaHead id="tconstruct:kama_head"/>
+				<itemTinkerPan id="tconstruct:pan_head"/>
+				<itemTinkerSignHead id="tconstruct:sign_head"/>
+				<itemTinkerChiselHead id="tconstruct:chiselhead"/>
+				<itemTinkerBowLimb id="tconstruct:bowlimbpart"/>
+				<itemTinkerBowlimb id="tconstruct:bow_limb"/>
+				<itemStringBowstring id="tconstruct:bow_string"/>
+				<itemTinkerArrowhead id="tconstruct:arrowhead"/>
+				<itemTinkerArrowHead id="tconstruct:arrow_head"/>
+				<itemTinkerArrowShaft id="tconstruct:arrow_shaft"/>
+				<itemTinkerBolt id="tconstruct:boltpart"/>
+				<itemTinkerBolt id="tconstruct:bolt"/>
+				<itemTinkerBoltCore id="tconstruct:bolt_core"/>
+				<itemTinkerShurikenPart id="tconstruct:shurikenpart"/>
+				<itemTinkerBinding id="tconstruct:binding"/>
+				<itemTinkerToughBinding id="tconstruct:tough_binding"/>
+				<itemTinkerLargePlate id="tconstruct:large_plate"/>
+				<itemTinkerToolRod id="tconstruct:tool_rod"/>
+				<itemTinkerToughRod id="tconstruct:tough_tool_rod"/>
+				<itemFeatherFletching id="tconstruct:fletching"/>
+				<itemTinkerShard id="tconstruct:shard"/>
+				<tinkerUpgrades>
+					<itemWoodenSharpeningKit id="tconstruct:sharpening_kit"/>
+					<itemBallofMoss id="tconstruct:materials" damage="18"/>
+					<itemMendingMoss id="tconstruct:materials" damage="19"/>
+					<itemExpanderHorizontal id="tconstruct:materials" damage="12"/>
+					<itemExpanderVertical id="tconstruct:materials" damage="13"/>
+					<itemReinforcement id="tconstruct:materials" damage="14"/>
+					<itemSilkyCloth id="tconstruct:materials" damage="15"/>
+					<itemSilkyJewel id="tconstruct:materials" damage="16"/>
+					<itemNecroticBone id="tconstruct:materials" damage="17"/>
+					<itemConsecratedSoil id="tconstruct:soil" damage="4"/>
+					<itemCreativeModifier id="tconstruct:materials" damage="50"/>
+				</tinkerUpgrades>
+			</tinkerParts>
+		</parts>
+		<decoration>
+			<case>
+				<itemFancyItemFrame id="tconstruct:fancy_frame"/>
+			</case>
+			<toolRack>
+				<itemItemRack id="tconstruct:rack" damage="0"/>
+			</toolRack>
+		</decoration>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<bacon>
+						<itemBacon id="tconstruct:edible" damage="0"/>
+					</bacon>
+					<spaghetti>
+						<itemMomsSpaghetti id="tconstruct:moms_spaghetti"/>
+					</spaghetti>
+				</preparedFood>
+				<jerky>
+					<tinkerJerky id="tconstruct:jerky"/>
+					<itemBaconJerky id="tconstruct:edible" damage="13"/>
+					<itemBeefJerky id="tconstruct:edible" damage="11"/>
+					<itemChickenJerky id="tconstruct:edible" damage="12"/>
+					<itemClownfishJerky id="tconstruct:edible" damage="22"/>
+					<itemFishJerky id="tconstruct:edible" damage="20"/>
+					<itemFuguJerky id="tconstruct:edible" damage="23"/>
+					<itemMonsterJerky id="tconstruct:edible" damage="10"/>
+					<itemMuttonJerky id="tconstruct:edible" damage="14"/>
+					<itemRabbitJerky id="tconstruct:edible" damage="15"/>
+					<itemSalmonJerky id="tconstruct:edible" damage="21"/>
+					<itemCoagulatedBloodDrop id="tconstruct:edible" damage="33"/>
+					<itemGelatinousSlimeDrop id="tconstruct:edible" damage="34"/>
+					<itemGelatinousSlimeDrop id="tconstruct:edible" damage="32"/>
+					<itemGelatinousSlimeDrop id="tconstruct:edible" damage="31"/>
+					<itemGelatinousSlimeDrop id="tconstruct:edible" damage="30"/>
+				</jerky>
+				<fruit>
+					<apple>
+						<appleDiamond id="tconstruct:diamondapple"/>
+					</apple>
+				</fruit>
+			</edibleFood>
+			<unedibleFood>
+				<dough>
+					<itemitem.tconstruct.spaghetti.name id="tconstruct:spaghetti"/>
+				</dough>
+			</unedibleFood>
+		</food>
+		<plant>
+			<sapling>
+				<itemSlimySapling id="tconstruct:slime.sapling"/>
+			</sapling>
+			<leaves id="leaves">
+				<itemSlimyLeaves id="tconstruct:slime.leaves"/>
+			</leaves>
+			<vines id="vine">
+				<itemBlueSlimyVine id="tconstruct:slime_vine_blue_end" damage="0"/>
+				<itemBlueSlimyVine id="tconstruct:slime_vine_blue_mid" damage="0"/>
+				<itemBlueSlimyVine id="tconstruct:slime_vine_blue" damage="0"/>
+				<itemPurpleSlimyVine id="tconstruct:slime_vine_purple_end" damage="0"/>
+				<itemPurpleSlimyVine id="tconstruct:slime_vine_purple_mid" damage="0"/>
+				<itemPurpleSlimyVine id="tconstruct:slime_vine_purple" damage="0"/>
+			</vines>
+			<groundCover>
+				<itemTallSlimyGrass id="tconstruct:slime_grass_tall" damage="0"/>
+				<itemTallSlimyGrass id="tconstruct:slime_grass_tall" damage="4"/>
+				<itemTallSlimyGrass id="tconstruct:slime_grass_tall" damage="8"/>
+				<ferns>
+					<itemSlimyFern id="tconstruct:slime_grass_tall" damage="1"/>
+					<itemSlimyFern id="tconstruct:slime_grass_tall" damage="5"/>
+					<itemSlimyFern id="tconstruct:slime_grass_tall" damage="9"/>
+				</ferns>
+			</groundCover>
+		</plant>
+	</item>
+</stuff>

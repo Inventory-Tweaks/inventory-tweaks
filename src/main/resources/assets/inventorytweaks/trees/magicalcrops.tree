@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<block>
+		<naturalBlock>
+			<oreBlock>
+				<oreEndMinicioOreItem id="magicalcrops:miniciooreend"/>
+				<oreMinicioOreItem id="magicalcrops:minicioore"/>
+			</oreBlock>
+			<obsidian>
+				<itemWitherProofBlock id="magicalcrops:witherproof"/>
+			</obsidian>
+		</naturalBlock>
+		<mechanism>
+			<basicCrafting>
+				<furnaces>
+					<itemAccioFurnace id="magicalcrops:acciofurnace"/>
+					<itemActiveAccioFurnace id="magicalcrops:acciofurnaceactive"/>
+					<itemCrucioFurnace id="magicalcrops:cruciofurnace"/>
+					<itemActiveCrucioFurnace id="magicalcrops:cruciofurnaceactive"/>
+					<itemImperioFurnace id="magicalcrops:imperiofurnace"/>
+					<itemActiveImperioFurnace id="magicalcrops:imperiofurnaceactive"/>
+					<itemZivicioFurnace id="magicalcrops:ziviciofurnace"/>
+					<itemActiveZivicioFurnace id="magicalcrops:ziviciofurnaceactive"/>
+					<itemUltimateFurnace id="magicalcrops:ultimatefurnace"/>
+					<itemActiveUltimateFurnace id="magicalcrops:ultimatefurnaceactive"/>
+				</furnaces>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<item>
+		<utility>
+			<experienceBook>
+				<itemExperienceBook id="magicalcrops:experiencebook"/>
+			</experienceBook>
+		</utility>
+		<plant>
+			<seedbag>
+				<itemmagicalcrops_SeedBagAccio id="magicalcrops:seedbagaccio"/>
+				<itemmagicalcrops_SeedBagCrucio id="magicalcrops:seedbagcrucio"/>
+				<itemmagicalcrops_SeedBagImperio id="magicalcrops:seedbagimperio"/>
+				<itemmagicalcrops_SeedBagZivicio id="magicalcrops:seedbagzivicio"/>
+			</seedbag>
+			<seed>
+				<itemmagicalcrops_AirSeeds id="magicalcrops:airseeds"/>
+				<itemmagicalcrops_AirshardSeeds id="magicalcrops:airshardseeds"/>
+				<itemmagicalcrops_AluminiumSeeds id="magicalcrops:aluminiumseeds"/>
+				<itemmagicalcrops_AlumiteSeeds id="magicalcrops:alumiteseeds"/>
+				<itemmagicalcrops_AmberSeeds id="magicalcrops:amberseeds"/>
+				<itemmagicalcrops_ArditeSeeds id="magicalcrops:arditeseeds"/>
+				<itemmagicalcrops_BlazeSeeds id="magicalcrops:blazeseeds"/>
+				<itemmagicalcrops_BlizzSeeds id="magicalcrops:blizzseeds"/>
+				<itemmagicalcrops_BronzeSeeds id="magicalcrops:bronzeseeds"/>
+				<itemmagicalcrops_CertusQuartzSeeds id="magicalcrops:certusquartzseeds"/>
+				<itemmagicalcrops_ChickenSeeds id="magicalcrops:chickenseeds"/>
+				<itemmagicalcrops_CoalSeeds id="magicalcrops:coalseeds"/>
+				<itemmagicalcrops_CobaltSeeds id="magicalcrops:cobaltseeds"/>
+				<itemmagicalcrops_ConductiveIronSeeds id="magicalcrops:conductiveironseeds"/>
+				<itemmagicalcrops_CopperSeeds id="magicalcrops:copperseeds"/>
+				<itemmagicalcrops_CowSeeds id="magicalcrops:cowseeds"/>
+				<itemmagicalcrops_CreeperSeeds id="magicalcrops:creeperseeds"/>
+				<itemmagicalcrops_DarkSteelSeeds id="magicalcrops:darksteelseeds"/>
+				<itemmagicalcrops_DiamondSeeds id="magicalcrops:diamondseeds"/>
+				<itemmagicalcrops_DyeSeeds id="magicalcrops:dyeseeds"/>
+				<itemmagicalcrops_EarthSeeds id="magicalcrops:earthseeds"/>
+				<itemmagicalcrops_EarthshardSeeds id="magicalcrops:earthshardseeds"/>
+				<itemmagicalcrops_ElectricalSteelSeeds id="magicalcrops:electricalsteelseeds"/>
+				<itemmagicalcrops_ElectrumSeeds id="magicalcrops:electrumseeds"/>
+				<itemmagicalcrops_EmeraldSeeds id="magicalcrops:emeraldseeds"/>
+				<itemmagicalcrops_EnderiumSeeds id="magicalcrops:enderiumseeds"/>
+				<itemmagicalcrops_EndermanSeeds id="magicalcrops:endermanseeds"/>
+				<itemmagicalcrops_EnergeticAlloySeeds id="magicalcrops:energeticalloyseeds"/>
+				<itemmagicalcrops_EntropyshardSeeds id="magicalcrops:entropyshardseeds"/>
+				<itemmagicalcrops_ExperienceSeeds id="magicalcrops:experienceseeds"/>
+				<itemmagicalcrops_FireSeeds id="magicalcrops:fireseeds"/>
+				<itemmagicalcrops_FireshardSeeds id="magicalcrops:fireshardseeds"/>
+				<itemmagicalcrops_FluixSeeds id="magicalcrops:fluixseeds"/>
+				<itemmagicalcrops_GhastSeeds id="magicalcrops:ghastseeds"/>
+				<itemmagicalcrops_GlowstoneSeeds id="magicalcrops:glowstoneseeds"/>
+				<itemmagicalcrops_GoldSeeds id="magicalcrops:goldseeds"/>
+				<itemmagicalcrops_InvarSeeds id="magicalcrops:invarseeds"/>
+				<itemmagicalcrops_IronSeeds id="magicalcrops:ironseeds"/>
+				<itemmagicalcrops_LapisSeeds id="magicalcrops:lapisseeds"/>
+				<itemmagicalcrops_LeadSeeds id="magicalcrops:leadseeds"/>
+				<itemmagicalcrops_LumiumSeeds id="magicalcrops:lumiumseeds"/>
+				<itemmagicalcrops_ManyullynSeeds id="magicalcrops:manyullynseeds"/>
+				<itemmagicalcrops_MinicioSeeds id="magicalcrops:minicioseeds"/>
+				<itemmagicalcrops_NatureSeeds id="magicalcrops:natureseeds"/>
+				<itemmagicalcrops_NetherSeeds id="magicalcrops:netherseeds"/>
+				<itemmagicalcrops_NickelSeeds id="magicalcrops:nickelseeds"/>
+				<itemmagicalcrops_ObsidianSeeds id="magicalcrops:obsidianseeds"/>
+				<itemmagicalcrops_OrdershardSeeds id="magicalcrops:ordershardseeds"/>
+				<itemmagicalcrops_PeridotSeeds id="magicalcrops:peridotseeds"/>
+				<itemmagicalcrops_PigSeeds id="magicalcrops:pigseeds"/>
+				<itemmagicalcrops_PlatinumSeeds id="magicalcrops:platinumseeds"/>
+				<itemmagicalcrops_PulsatingIronSeeds id="magicalcrops:pulsatingironseeds"/>
+				<itemmagicalcrops_QuartzSeeds id="magicalcrops:quartzseeds"/>
+				<itemmagicalcrops_QuicksilverSeeds id="magicalcrops:quicksilverseeds"/>
+				<itemmagicalcrops_RedstoneAlloySeeds id="magicalcrops:redstonealloyseeds"/>
+				<itemmagicalcrops_RedstoneSeeds id="magicalcrops:redstoneseeds"/>
+				<itemmagicalcrops_RubberSeeds id="magicalcrops:rubberseeds"/>
+				<itemmagicalcrops_RubySeeds id="magicalcrops:rubyseeds"/>
+				<itemmagicalcrops_SaltpeterSeeds id="magicalcrops:saltpeterseeds"/>
+				<itemmagicalcrops_SapphireSeeds id="magicalcrops:sapphireseeds"/>
+				<itemmagicalcrops_SheepSeeds id="magicalcrops:sheepseeds"/>
+				<itemmagicalcrops_SignalumSeeds id="magicalcrops:signalumseeds"/>
+				<itemmagicalcrops_SilverSeeds id="magicalcrops:silverseeds"/>
+				<itemmagicalcrops_SkeletonSeeds id="magicalcrops:skeletonseeds"/>
+				<itemmagicalcrops_SlimeSeeds id="magicalcrops:slimeseeds"/>
+				<itemmagicalcrops_SoulariumSeeds id="magicalcrops:soulariumseeds"/>
+				<itemmagicalcrops_SpiderSeeds id="magicalcrops:spiderseeds"/>
+				<itemmagicalcrops_SteelSeeds id="magicalcrops:steelseeds"/>
+				<itemmagicalcrops_SulfurSeeds id="magicalcrops:sulfurseeds"/>
+				<itemmagicalcrops_ThaumiumSeeds id="magicalcrops:thaumiumseeds"/>
+				<itemmagicalcrops_TinSeeds id="magicalcrops:tinseeds"/>
+				<itemmagicalcrops_VibrantAlloySeeds id="magicalcrops:vibrantalloyseeds"/>
+				<itemmagicalcrops_WaterSeeds id="magicalcrops:waterseeds"/>
+				<itemmagicalcrops_WatershardSeeds id="magicalcrops:watershardseeds"/>
+				<itemmagicalcrops_WitherSeeds id="magicalcrops:witherseeds"/>
+				<itemmagicalcrops_YelloriteSeeds id="magicalcrops:yelloriteseeds"/>
+			</seed>
+			<seedlings>
+				<magicalCrops>
+					<itemAirCrop id="magicalcrops:aircrop"/>
+					<itemAirShardCrop id="magicalcrops:airshardcrop"/>
+					<itemAluminiumCrop id="magicalcrops:aluminiumcrop"/>
+					<itemAlumiteCrop id="magicalcrops:alumitecrop"/>
+					<itemAmberCrop id="magicalcrops:ambercrop"/>
+					<itemArditeCrop id="magicalcrops:arditecrop"/>
+					<itemBlazeCrop id="magicalcrops:blazecrop"/>
+					<itemBlizzCrop id="magicalcrops:blizzcrop"/>
+					<itemBronzeCrop id="magicalcrops:bronzecrop"/>
+					<itemCertusQuartzCrop id="magicalcrops:certusquartzcrop"/>
+					<itemChickenCrop id="magicalcrops:chickencrop"/>
+					<itemCoalCrop id="magicalcrops:coalcrop"/>
+					<itemCobaltCrop id="magicalcrops:cobaltcrop"/>
+					<itemConductiveIronCrop id="magicalcrops:conductiveironcrop"/>
+					<itemCopperCrop id="magicalcrops:coppercrop"/>
+					<itemCowCrop id="magicalcrops:cowcrop"/>
+					<itemCreeperCrop id="magicalcrops:creepercrop"/>
+					<itemDarkSteelCrop id="magicalcrops:darksteelcrop"/>
+					<itemDiamondCrop id="magicalcrops:diamondcrop"/>
+					<itemDyeCrop id="magicalcrops:dyecrop"/>
+					<itemEarthCrop id="magicalcrops:earthcrop"/>
+					<itemEarthShardCrop id="magicalcrops:earthshardcrop"/>
+					<itemElectricalSteelCrop id="magicalcrops:electricalsteelcrop"/>
+					<itemElectrumCrop id="magicalcrops:electrumcrop"/>
+					<itemEmeraldCrop id="magicalcrops:emeraldcrop"/>
+					<itemEnderiumCrop id="magicalcrops:enderiumcrop"/>
+					<itemEndermanCrop id="magicalcrops:endermancrop"/>
+					<itemEnergeticAlloyCrop id="magicalcrops:energeticalloycrop"/>
+					<itemEntropyShardCrop id="magicalcrops:entropyshardcrop"/>
+					<itemExperienceCrop id="magicalcrops:experiencecrop"/>
+					<itemFireCrop id="magicalcrops:firecrop"/>
+					<itemFireShardCrop id="magicalcrops:fireshardcrop"/>
+					<itemFluixCrop id="magicalcrops:fluixcrop"/>
+					<itemGhastCrop id="magicalcrops:ghastcrop"/>
+					<itemGlowstoneCrop id="magicalcrops:glowstonecrop"/>
+					<itemGoldCrop id="magicalcrops:goldcrop"/>
+					<itemInvarCrop id="magicalcrops:invarcrop"/>
+					<itemIronCrop id="magicalcrops:ironcrop"/>
+					<itemLapisLazuliCrop id="magicalcrops:lapiscrop"/>
+					<itemLeadCrop id="magicalcrops:leadcrop"/>
+					<itemLumiumCrop id="magicalcrops:lumiumcrop"/>
+					<itemManyullynCrop id="magicalcrops:manyullyncrop"/>
+					<itemMinicioCrop id="magicalcrops:miniciocrop"/>
+					<itemNetherMinicioOre id="magicalcrops:minicioorenether"/>
+					<itemNatureCrop id="magicalcrops:naturecrop"/>
+					<itemNetherCrop id="magicalcrops:nethercrop"/>
+					<itemNickelCrop id="magicalcrops:nickelcrop"/>
+					<itemObsidianCrop id="magicalcrops:obsidiancrop"/>
+					<itemOrderShardCrop id="magicalcrops:ordershardcrop"/>
+					<itemPeridotCrop id="magicalcrops:peridotcrop"/>
+					<itemPigCrop id="magicalcrops:pigcrop"/>
+					<itemPlatinumCrop id="magicalcrops:platinumcrop"/>
+					<itemPulsatingIronCrop id="magicalcrops:pulsatingironcrop"/>
+					<itemQuartzCrop id="magicalcrops:quartzcrop"/>
+					<itemQuicksilverCrop id="magicalcrops:quicksilvercrop"/>
+					<itemRedstoneAlloyCrop id="magicalcrops:redstonealloycrop"/>
+					<itemRedstoneCrop id="magicalcrops:redstonecrop"/>
+					<itemRubberCrop id="magicalcrops:rubbercrop"/>
+					<itemRubyCrop id="magicalcrops:rubycrop"/>
+					<itemSaltpeterCrop id="magicalcrops:saltpetercrop"/>
+					<itemSapphireCrop id="magicalcrops:sapphirecrop"/>
+					<itemSheepCrop id="magicalcrops:sheepcrop"/>
+					<itemSignalumCrop id="magicalcrops:signalumcrop"/>
+					<itemSilverCrop id="magicalcrops:silvercrop"/>
+					<itemSkeletonCrop id="magicalcrops:skeletoncrop"/>
+					<itemSlimeCrop id="magicalcrops:slimecrop"/>
+					<itemSoulariumCrop id="magicalcrops:soulariumcrop"/>
+					<itemSpiderCrop id="magicalcrops:spidercrop"/>
+					<itemSteelCrop id="magicalcrops:steelcrop"/>
+					<itemSulfurCrop id="magicalcrops:sulfurcrop"/>
+					<itemTaintedEssence id="magicalcrops:taintedessence"/>
+					<itemThaumiumCrop id="magicalcrops:thaumiumcrop"/>
+					<itemTinCrop id="magicalcrops:tincrop"/>
+					<itemVibrantAlloyCrop id="magicalcrops:vibrantalloycrop"/>
+					<itemWaterCrop id="magicalcrops:watercrop"/>
+					<itemWaterShardCrop id="magicalcrops:watershardcrop"/>
+					<itemWitherSkeletonCrop id="magicalcrops:withercrop"/>
+					<itemYelloriteCrop id="magicalcrops:yelloritecrop"/>
+				</magicalCrops>
+			</seedlings>
+			<fertilizer>
+				<itemMagicalFertilizer id="magicalcrops:magicalfertilizer"/>
+			</fertilizer>
+			<irrigation>
+				<itemGrowthPulser id="magicalcrops:cropbooster"/>
+			</irrigation>
+		</plant>
+		<magical>
+			<infusionStones>
+				<itemMasterInfusionStone id="magicalcrops:infusionstonemaster"/>
+				<itemExtremeInfusionStone id="magicalcrops:infusionstoneextreme"/>
+				<itemStrongInfusionStone id="magicalcrops:infusionstonestrong"/>
+				<itemRegularInfusionStone id="magicalcrops:infusionstoneregular"/>
+				<itemWeakInfusionStone id="magicalcrops:infusionstoneweak"/>
+			</infusionStones>
+			<cropEssence>
+				<baseEssence>
+					<itemmagicalcrops_5ZivicioEssence id="magicalcrops:5zivicioessence"/>
+					<itemmagicalcrops_4ImperioEssence id="magicalcrops:4imperioessence"/>
+					<itemmagicalcrops_3CrucioEssence id="magicalcrops:3crucioessence"/>
+					<itemmagicalcrops_2AccioEssence id="magicalcrops:2accioessence"/>
+					<itemmagicalcrops_1MinicioEssence id="magicalcrops:1minicioessence"/>
+				</baseEssence>
+				<itemMinicioBlock id="magicalcrops:essence_storage" damage="0"/>
+				<itemAccioBlock id="magicalcrops:essence_storage" damage="1"/>
+				<itemCrucioBlock id="magicalcrops:essence_storage" damage="2"/>
+				<itemImperioBlock id="magicalcrops:essence_storage" damage="3"/>
+				<itemZivicioBlock id="magicalcrops:essence_storage" damage="4"/>
+				<itemMassZivicioBlock id="magicalcrops:essence_storage" damage="5"/>
+			</cropEssence>
+		</magical>
+	</item>
+</stuff>

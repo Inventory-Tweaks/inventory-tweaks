@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<item>
+		<utility>
+			<storage>
+				<storageupgrades>
+					<itemUpgrade id="bagginses:upgrade"/>
+				</storageupgrades>
+				<portableStorage>
+					<bagginses id="bagginses:black">
+						<itemBlackBag id="bagginses:black"/>
+						<itemBlackBag id="bagginses:blackt2"/>
+						<itemBlackBag id="bagginses:blackt3"/>
+						<itemBlueBag id="bagginses:blue"/>
+						<itemBlueBag id="bagginses:bluet2"/>
+						<itemBlueBag id="bagginses:bluet3"/>
+						<itemBrownBag id="bagginses:brown"/>
+						<itemBrownBag id="bagginses:brownt2"/>
+						<itemBrownBag id="bagginses:brownt3"/>
+						<itemCyanBag id="bagginses:cyan"/>
+						<itemCyanBag id="bagginses:cyant2"/>
+						<itemCyanBag id="bagginses:cyant3"/>
+						<itemGrayBag id="bagginses:gray"/>
+						<itemGrayBag id="bagginses:grayt2"/>
+						<itemGrayBag id="bagginses:grayt3"/>
+						<itemGreenBag id="bagginses:green"/>
+						<itemGreenBag id="bagginses:greent2"/>
+						<itemGreenBag id="bagginses:greent3"/>
+						<itemLightBlueBag id="bagginses:lightblue"/>
+						<itemLightBlueBag id="bagginses:lightbluet2"/>
+						<itemLightBlueBag id="bagginses:lightbluet3"/>
+						<itemLimeBag id="bagginses:lime"/>
+						<itemLimeBag id="bagginses:limet2"/>
+						<itemLimeBag id="bagginses:limet3"/>
+						<itemMagentaBag id="bagginses:magenta"/>
+						<itemMagentaBag id="bagginses:magentat2"/>
+						<itemMagentaBag id="bagginses:magentat3"/>
+						<itemOrangeBag id="bagginses:orange"/>
+						<itemOrangeBag id="bagginses:oranget2"/>
+						<itemOrangeBag id="bagginses:oranget3"/>
+						<itemPinkBag id="bagginses:pink"/>
+						<itemPinkBag id="bagginses:pinkt2"/>
+						<itemPinkBag id="bagginses:pinkt3"/>
+						<itemPurpleBag id="bagginses:purple"/>
+						<itemPurpleBag id="bagginses:purplet2"/>
+						<itemPurpleBag id="bagginses:purplet3"/>
+						<itemRedBag id="bagginses:red"/>
+						<itemRedBag id="bagginses:redt2"/>
+						<itemRedBag id="bagginses:redt3"/>
+						<itemSilverBag id="bagginses:silver"/>
+						<itemSilverBag id="bagginses:silvert2"/>
+						<itemSilverBag id="bagginses:silvert3"/>
+						<itemWhiteBag id="bagginses:white"/>
+						<itemWhiteBag id="bagginses:whitet2"/>
+						<itemWhiteBag id="bagginses:whitet3"/>
+						<itemYellowBag id="bagginses:yellow"/>
+						<itemYellowBag id="bagginses:yellowt2"/>
+						<itemYellowBag id="bagginses:yellowt3"/>
+						<itemEnderBag id="bagginses:ender"/>
+					</bagginses>
+				</portableStorage>
+				<voidStorage>
+					<itemVoidBag id="bagginses:void"/>
+				</voidStorage>
+			</storage>
+		</utility>
+	</item>
+</stuff>

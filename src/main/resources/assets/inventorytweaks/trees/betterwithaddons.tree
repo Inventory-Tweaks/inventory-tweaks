@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<UnsortedLevel>
+						<itemDiamondMasonPick id="betterwithaddons:diamond_masonpick"/>
+						<itemDiamondMatchpick id="betterwithaddons:diamond_matchpick"/>
+						<itemGoldenMasonPick id="betterwithaddons:gold_masonpick"/>
+						<itemGoldenMatchpick id="betterwithaddons:gold_matchpick"/>
+						<itemIronMasonPick id="betterwithaddons:iron_masonpick"/>
+						<itemIronMatchpick id="betterwithaddons:iron_matchpick"/>
+						<itemRefinedMasonPick id="betterwithaddons:steel_masonpick"/>
+						<itemRefinedMatchpick id="betterwithaddons:steel_matchpick"/>
+					</UnsortedLevel>
+				</pickaxe>
+			</miningTool>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
+				<itemDiamondCarpenterSaw id="betterwithaddons:diamond_carpentersaw"/>
+				<itemGoldenCarpenterSaw id="betterwithaddons:gold_carpentersaw"/>
+				<itemIronCarpenterSaw id="betterwithaddons:iron_carpentersaw"/>
+				<itemRefinedCarpenterSaw id="betterwithaddons:steel_carpentersaw"/>
+			</saws>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemPaperHelmet id="betterwithaddons:helmet_paper"/>
+					<itemSamuraiHelmetWIP id="betterwithaddons:helmet_samurai"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemPaperChestplate id="betterwithaddons:chest_paper"/>
+						<itemSamuraiChestplateWIP id="betterwithaddons:chest_samurai"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemPaperLeggings id="betterwithaddons:legs_paper"/>
+					<itemSamuraiLeggingsWIP id="betterwithaddons:legs_samurai"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemPaperBoots id="betterwithaddons:boots_paper"/>
+					<itemSamuraiBootsWIP id="betterwithaddons:boots_samurai"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<stoneWall>
+				<itemPaperWall id="betterwithaddons:paper_wall"/>
+			</stoneWall>
+			<constructionBlock>
+				<bricks>
+					<stoneBricks>
+						<itemStainedBricks id="betterwithaddons:bricks_stained"/>
+					</stoneBricks>
+				</bricks>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<rails>
+				<itemRustedRail id="betterwithaddons:rail_rusted"/>
+			</rails>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<bricks>
+				<itemStainedBrick id="betterwithaddons:brick_stained"/>
+			</bricks>
+		</miningResources>
+	</resources>
+	<item>
+		<plant>
+			<seedbag>
+				<itemBagofSeeds id="betterwithaddons:bag"/>
+			</seedbag>
+		</plant>
+		<crates>
+			<itemCratedCacti id="betterwithaddons:crate" damage="13"/>
+			<itemCratedCookedChicken id="betterwithaddons:crate" damage="2"/>
+			<itemCratedCookedMutton id="betterwithaddons:crate" damage="6"/>
+			<itemCratedCookedPorkchops id="betterwithaddons:crate" damage="0"/>
+			<itemCratedCookedRabbit id="betterwithaddons:crate" damage="8"/>
+			<itemCratedEggs id="betterwithaddons:crate" damage="10"/>
+			<itemCratedEnderpearls id="betterwithaddons:crate" damage="12"/>
+			<itemCratedInkSacs id="betterwithaddons:crate" damage="14"/>
+			<itemCratedRawBeef id="betterwithaddons:crate" damage="5"/>
+			<itemCratedRawChicken id="betterwithaddons:crate" damage="3"/>
+			<itemCratedRawMutton id="betterwithaddons:crate" damage="7"/>
+			<itemCratedRawPorkchops id="betterwithaddons:crate" damage="1"/>
+			<itemCratedRawRabbit id="betterwithaddons:crate" damage="9"/>
+			<itemCratedSlimeballs id="betterwithaddons:crate" damage="11"/>
+			<itemCratedSteak id="betterwithaddons:crate" damage="4"/>
+		</crates>
+	</item>
+</stuff>

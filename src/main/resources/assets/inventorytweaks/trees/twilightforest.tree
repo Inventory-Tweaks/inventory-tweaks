@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<DiamondPickLevel>
+						<itemFieryPick id="twilightforest:fiery_pickaxe"/>
+						<itemIronwoodPick id="twilightforest:ironwood_pickaxe"/>
+						<itemKnightlyPick id="twilightforest:knightmetal_pickaxe"/>
+						<itemMazebreaker id="twilightforest:mazebreaker_pickaxe"/>
+						<itemSteeleafPick id="twilightforest:steeleaf_pickaxe"/>
+					</DiamondPickLevel>
+					<IronLevel>
+						<itemGiantsPickaxe id="twilightforest:giant_pickaxe"/>
+					</IronLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemIronwoodShovel id="twilightforest:ironwood_shovel"/>
+					<itemSteeleafShovel id="twilightforest:steeleaf_shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemIronwoodAxe id="twilightforest:ironwood_axe"/>
+					<itemKnightlyAxe id="twilightforest:knightmetal_axe"/>
+					<itemMinotaurAxe id="twilightforest:minotaur_axe"/>
+					<itemSteeleafAxe id="twilightforest:steeleaf_axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemIronwoodHoe id="twilightforest:ironwood_hoe"/>
+					<itemSteeleafHoe id="twilightforest:steeleaf_hoe"/>
+				</hoe>
+			</farmingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemArcticHood id="twilightforest:arctic_helmet"/>
+					<itemFieryHelm id="twilightforest:fiery_helmet"/>
+					<itemIronwoodHelm id="twilightforest:ironwood_helmet"/>
+					<itemKnightlyHelm id="twilightforest:knightmetal_helmet"/>
+					<itemPhantomHelm id="twilightforest:phantom_helmet"/>
+					<itemSteeleafHelm id="twilightforest:steeleaf_helmet"/>
+					<itemYetiHornedHelm id="twilightforest:yeti_helmet"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemArcticJacket id="twilightforest:arctic_chestplate"/>
+						<itemFieryPlate id="twilightforest:fiery_chestplate"/>
+						<itemIronwoodPlate id="twilightforest:ironwood_chestplate"/>
+						<itemKnightlyPlate id="twilightforest:knightmetal_chestplate"/>
+						<itemNagaScaleTunic id="twilightforest:naga_chestplate"/>
+						<itemPhantomPlate id="twilightforest:phantom_chestplate"/>
+						<itemSteeleafPlate id="twilightforest:steeleaf_chestplate"/>
+						<itemYetiJacket id="twilightforest:yeti_chestplate"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemArcticLeggings id="twilightforest:arctic_leggings"/>
+					<itemFieryLegs id="twilightforest:fiery_leggings"/>
+					<itemIronwoodLegs id="twilightforest:ironwood_leggings"/>
+					<itemKnightlyGreaves id="twilightforest:knightmetal_leggings"/>
+					<itemNagaScaleLeggings id="twilightforest:naga_leggings"/>
+					<itemSteeleafLegs id="twilightforest:steeleaf_leggings"/>
+					<itemYetiLeggings id="twilightforest:yeti_leggings"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemArcticBoots id="twilightforest:arctic_boots"/>
+					<itemFieryBoots id="twilightforest:fiery_boots"/>
+					<itemIronwoodBoots id="twilightforest:ironwood_boots"/>
+					<itemKnightlyBoots id="twilightforest:knightmetal_boots"/>
+					<itemSteeleafBoots id="twilightforest:steeleaf_boots"/>
+					<itemYetiBoots id="twilightforest:yeti_boots"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemBoldCastleBrickStairs id="twilightforest:castle_stairs"/>
+						<itemEncasedCastleBrickStairs id="twilightforest:castle_stairs"/>
+						<itemMossyNagastoneStairsLeft id="twilightforest:nagastone_stairs_mossy"/>
+						<itemMossyNagastoneStairsRight id="twilightforest:nagastone_stairs_mossy"/>
+						<itemNagastoneStairsLeft id="twilightforest:nagastone_stairs"/>
+						<itemNagastoneStairsRight id="twilightforest:nagastone_stairs"/>
+						<itemWeatheredNagastoneStairsLeft id="twilightforest:nagastone_stairs_weathered"/>
+						<itemWeatheredNagastoneStairsRight id="twilightforest:nagastone_stairs_weathered"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<basicCrafting>
+				<craftingTables>
+					<itemUncraftingTable id="twilightforest:uncrafting_table"/>
+				</craftingTables>
+			</basicCrafting>
+		</mechanism>
+	</block>
+</stuff>

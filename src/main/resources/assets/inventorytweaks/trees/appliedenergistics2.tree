@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage6>
+							<itemCertusQuartzSword id="appliedenergistics2:item.toolcertusquartzsword"/>
+							<itemCertusQuartzSword id="appliedenergistics2:certus_quartz_sword"/>
+							<itemNetherQuartzSword id="appliedenergistics2:nether_quartz_sword"/>
+							<itemNetherQuartzSword id="appliedenergistics2:item.toolnetherquartzsword"/>
+						</swordDamage6>
+					</sword>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<gun>
+					<itemMatterCannon id="appliedenergistics2:item.toolmasscannon"/>
+					<itemMatterCannon id="appliedenergistics2:matter_cannon"/>
+				</gun>
+			</munition>
+			<bullets>
+				<itemMatterBall id="appliedenergistics2:item.itemmultimaterial" damage="6"/>
+				<itemMatterBall id="appliedenergistics2:material" damage="6"/>
+				<itemPaintBall id="appliedenergistics2:paint_ball"/>
+				<itemPaintBall- id="appliedenergistics2:item.itempaintball"/>
+			</bullets>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<DiamondPickLevel>
+						<itemCertusQuartzPickaxe id="appliedenergistics2:item.toolcertusquartzpickaxe"/>
+						<itemCertusQuartzPickaxe id="appliedenergistics2:certus_quartz_pickaxe"/>
+						<itemNetherQuartzPickaxe id="appliedenergistics2:item.toolnetherquartzpickaxe"/>
+						<itemNetherQuartzPickaxe id="appliedenergistics2:nether_quartz_pickaxe"/>
+					</DiamondPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemCertusQuartzShovel id="appliedenergistics2:item.toolcertusquartzspade"/>
+					<itemCertusQuartzShovel id="appliedenergistics2:certus_quartz_spade"/>
+					<itemNetherQuartzShovel id="appliedenergistics2:item.toolnetherquartzspade"/>
+					<itemNetherQuartzShovel id="appliedenergistics2:nether_quartz_spade"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemCertusQuartzAxe id="appliedenergistics2:certus_quartz_axe"/>
+					<itemNetherQuartzAxe id="appliedenergistics2:item.toolnetherquartzaxe"/>
+					<itemNetherQuartzAxe id="appliedenergistics2:nether_quartz_axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemCertusQuartzHoe id="appliedenergistics2:item.toolcertusquartzhoe"/>
+					<itemCertusQuartzHoe id="appliedenergistics2:certus_quartz_hoe"/>
+					<itemNetherQuartzHoe id="appliedenergistics2:item.toolnetherquartzhoe"/>
+					<itemNetherQuartzHoe id="appliedenergistics2:nether_quartz_hoe"/>
+				</hoe>
+			</farmingTool>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemNetworkTool id="appliedenergistics2:item.toolnetworktool"/>
+				<itemNetworkTool id="appliedenergistics2:network_tool"/>
+				<itemappliedenergistics2_item.ToolCertusQuartzWrench id="appliedenergistics2:item.toolcertusquartzwrench"/>
+				<itemappliedenergistics2_item.ToolNetherQuartzWrench id="appliedenergistics2:item.toolnetherquartzwrench"/>
+				<itemCertusQuartzWrench id="appliedenergistics2:certus_quartz_wrench"/>
+				<itemNetherQuartzWrench id="appliedenergistics2:nether_quartz_wrench"/>
+			</wrench>
+			<multimeters>
+				<itemMemoryCard id="appliedenergistics2:memory_card"/>
+			</multimeters>
+			<magicaltools>
+				<itemEntropyManipulator id="appliedenergistics2:item.toolentropymanipulator"/>
+				<itemEntropyManipulator id="appliedenergistics2:entropy_manipulator"/>
+				<itemChargedStaff id="appliedenergistics2:item.toolchargedstaff"/>
+				<itemChargedStaff id="appliedenergistics2:charged_staff"/>
+			</magicaltools>
+			<paintingTools>
+				<itemColorApplicator-Empty id="appliedenergistics2:item.toolcolorapplicator"/>
+				<itemColorApplicator-Empty id="appliedenergistics2:color_applicator"/>
+			</paintingTools>
+			<cuttingKnives>
+				<itemCertusQuartzCuttingKnife id="appliedenergistics2:item.toolcertusquartzcuttingknife"/>
+				<itemNetherQuartzCuttingKnife id="appliedenergistics2:item.toolnetherquartzcuttingknife"/>
+				<itemCertusQuartzCuttingKnife id="appliedenergistics2:certus_quartz_cutting_knife"/>
+				<itemNetherQuartzCuttingKnife id="appliedenergistics2:nether_quartz_cutting_knife"/>
+			</cuttingKnives>
+			<instrument>
+				<compass>
+					<itemMeteoriteCompass id="appliedenergistics2:tile.blockskycompass"/>
+				</compass>
+			</instrument>
+		</tool>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<stones>
+				<itemSkyStone id="appliedenergistics2:tile.blockskystone" damage="0"/>
+				<itemSkyStoneBlock id="appliedenergistics2:tile.blockskystone" damage="1"/>
+				<itemSkyStone id="appliedenergistics2:sky_stone_block"/>
+				<itemSkyStoneBlock id="appliedenergistics2:smooth_sky_stone_block"/>
+			</stones>
+		</naturalBlock>
+		<manufacturedBlock>
+			<constructionBlock>
+				<bricks>
+					<itemSkyStoneBrick id="appliedenergistics2:tile.blockskystone" damage="2"/>
+					<itemSkyStoneBrick id="appliedenergistics2:sky_stone_brick"/>
+					<itemSkyStoneSmallBrick id="appliedenergistics2:tile.blockskystone" damage="3"/>
+					<itemSkyStoneSmallBrick id="appliedenergistics2:sky_stone_small_brick"/>
+				</bricks>
+				<glass>
+					<itemQuartzGlass id="appliedenergistics2:quartz_glass"/>
+					<itemVibrantQuartzGlass id="appliedenergistics2:quartz_vibrant_glass"/>
+				</glass>
+				<decorativeblocks>
+					<itemCertusQuartzPillar id="appliedenergistics2:quartz_pillar"/>
+				</decorativeblocks>
+				<stairs>
+					<stoneStairs>
+						<itemSkyStoneBlockStairs id="appliedenergistics2:tile.skystoneblockstairblock"/>
+						<itemSkyStoneBrickStairs id="appliedenergistics2:tile.skystonebrickstairblock"/>
+						<itemSkyStoneSmallBrickStairs id="appliedenergistics2:tile.skystonesmallbrickstairblock"/>
+						<itemSkyStoneStairs id="appliedenergistics2:tile.skystonestairblock"/>
+					</stoneStairs>
+					<otherStairs>
+						<itemCertusQuartzPillarStairs id="appliedenergistics2:tile.quartzpillarstairblock"/>
+						<itemCertusQuartzStairs id="appliedenergistics2:tile.quartzstairblock"/>
+						<itemChiseledCertusQuartzStairs id="appliedenergistics2:tile.chiseledquartzstairblock"/>
+						<itemChiseledCertusQuartzStairs id="appliedenergistics2:chiseled_quartz_stairs"/>
+						<itemFluixStairs id="appliedenergistics2:tile.fluixstairblock"/>
+						<itemFluixStairs id="appliedenergistics2:fluix_stairs"/>
+						<itemCertusQuartzPillarStairs id="appliedenergistics2:quartz_pillar_stairs"/>
+						<itemCertusQuartzStairs id="appliedenergistics2:quartz_stairs"/>
+						<itemSkyStoneBrickStairs id="appliedenergistics2:sky_stone_brick_stairs"/>
+						<itemSkyStoneSmallBrickStairs id="appliedenergistics2:sky_stone_small_brick_stairs"/>
+						<itemSkyStoneStairs id="appliedenergistics2:sky_stone_stairs"/>
+						<itemSkyStoneBlockStairs id="appliedenergistics2:smooth_sky_stone_stairs"/>
+					</otherStairs>
+				</stairs>
+				<slabs>
+					<itemChiseledCertusQuartzSlabs id="appliedenergistics2:chiseled_quartz_slab"/>
+					<itemFluixSlabs id="appliedenergistics2:fluix_slab"/>
+					<itemCertusQuartzPillarSlabs id="appliedenergistics2:quartz_pillar_slab"/>
+					<itemCertusQuartzSlabs id="appliedenergistics2:quartz_slab"/>
+					<itemSkyStoneBrickSlabs id="appliedenergistics2:sky_stone_brick_slab"/>
+					<itemSkyStoneSlabs id="appliedenergistics2:sky_stone_slab"/>
+					<itemSkyStoneSmallBrickSlabs id="appliedenergistics2:sky_stone_small_brick_slab"/>
+					<itemSkyStoneBlockSlabs id="appliedenergistics2:smooth_sky_stone_slab"/>
+				</slabs>
+				<facades>
+					<itemAEFAcade id="appliedenergistics2:facade"/>
+				</facades>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<lighting>
+				<decorativeLights>
+					<itemChargedQuartzFixture id="appliedenergistics2:tile.blockquartztorch"/>
+					<itemChargedQuartzFixture id="appliedenergistics2:quartz_fixture"/>
+				</decorativeLights>
+			</lighting>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<dust>
+				<itemSkyStoneDust id="appliedenergistics2:item.itemmultimaterial" damage="45"/>
+				<itemSkyStoneDust id="appliedenergistics2:material" damage="45"/>
+			</dust>
+			<oreBlock>
+				<itemCertusQuartzBlock id="appliedenergistics2:quartz_block"/>
+				<itemChiseledCertusQuartzBlock id="appliedenergistics2:chiseled_quartz_block"/>
+				<itemFluixBlock id="appliedenergistics2:fluix_block"/>
+			</oreBlock>
+			<gem>
+				<crystalCertusQuartzSeed>
+					<itemCertusQuartzSeed id="appliedenergistics2:item.itemcrystalseed" damage="0"/>
+					<itemCertusQuartzSeed id="appliedenergistics2:crystal_seed" damage="0"/>
+				</crystalCertusQuartzSeed>
+				<crystalChargedCertusQuartzDict oreDictName="crystalChargedCertusQuartz">
+					<itemChargedCertusQuartzCrystal id="appliedenergistics2:material" damage="1"/>
+					<itemChargedCertusQuartzCrystal id="appliedenergistics2:item.itemmultimaterial" damage="1"/>
+				</crystalChargedCertusQuartzDict>
+				<crystalFluixSeed>
+					<itemFluixSeed id="appliedenergistics2:item.itemcrystalseed" damage="1200"/>
+					<itemFluixSeed id="appliedenergistics2:crystal_seed" damage="1200"/>
+				</crystalFluixSeed>
+				<crystalNetherQuartzSeed>
+					<itemNetherQuartzSeed id="appliedenergistics2:item.itemcrystalseed" damage="600"/>
+					<itemNetherQuartzSeed id="appliedenergistics2:crystal_seed" damage="600"/>
+				</crystalNetherQuartzSeed>
+				<crystalPureCertusQuartz>
+					<itemPureCertusQuartzCrystal id="appliedenergistics2:item.itemmultimaterial" damage="10"/>
+					<itemPureCertusQuartzCrystal id="appliedenergistics2:material" damage="10"/>
+				</crystalPureCertusQuartz>
+				<crystalPureNetherQuartz>
+					<itemPureNetherQuartzCrystal id="appliedenergistics2:item.itemmultimaterial" damage="11"/>
+					<itemPureNetherQuartzCrystal id="appliedenergistics2:material" damage="11"/>
+				</crystalPureNetherQuartz>
+			</gem>
+		</miningResources>
+	</resources>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<itemSkyStoneChest id="appliedenergistics2:tile.blockskychest"/>
+					<itemSkyStoneChest id="appliedenergistics2:sky_stone_chest"/>
+					<itemSkyStoneBlockChest id="appliedenergistics2:smooth_sky_stone_chest"/>
+				</chests>
+				<digitalstorage>
+					<cables>
+						<itemCableAnchor id="appliedenergistics2:part" damage="120"/>
+						<itemQuartzFiber id="appliedenergistics2:item.itemmultipart" damage="140"/>
+						<itemQuartzFiber id="appliedenergistics2:part" damage="140"/>
+						<meGlassCable id="appliedenergistics2:part" damage="35">
+							<itemMEGlassCable-Fluix id="appliedenergistics2:part" damage="16"/>
+							<itemMEGlassCable-Black id="appliedenergistics2:part" damage="15"/>
+							<itemMEGlassCable-Blue id="appliedenergistics2:part" damage="11"/>
+							<itemMEGlassCable-Brown id="appliedenergistics2:part" damage="12"/>
+							<itemMEGlassCable-Cyan id="appliedenergistics2:part" damage="9"/>
+							<itemMEGlassCable-Gray id="appliedenergistics2:part" damage="7"/>
+							<itemMEGlassCable-Green id="appliedenergistics2:part" damage="13"/>
+							<itemMEGlassCable-LightBlue id="appliedenergistics2:part" damage="3"/>
+							<itemMEGlassCable-LightGray id="appliedenergistics2:part" damage="8"/>
+							<itemMEGlassCable-Lime id="appliedenergistics2:part" damage="5"/>
+							<itemMEGlassCable-Magenta id="appliedenergistics2:part" damage="2"/>
+							<itemMEGlassCable-Orange id="appliedenergistics2:part" damage="1"/>
+							<itemMEGlassCable-Pink id="appliedenergistics2:part" damage="6"/>
+							<itemMEGlassCable-Purple id="appliedenergistics2:part" damage="10"/>
+							<itemMEGlassCable-Red id="appliedenergistics2:part" damage="14"/>
+							<itemMEGlassCable-White id="appliedenergistics2:part" damage="0"/>
+							<itemMEGlassCable-Yellow id="appliedenergistics2:part" damage="4"/>
+						</meGlassCable>
+						<meSmartCable id="appliedenergistics2:part" damage="35">
+							<itemMESmartCable-Fluix id="appliedenergistics2:part" damage="56"/>
+							<itemMESmartCable-Black id="appliedenergistics2:part" damage="55"/>
+							<itemMESmartCable-Blue id="appliedenergistics2:part" damage="51"/>
+							<itemMESmartCable-Brown id="appliedenergistics2:part" damage="52"/>
+							<itemMESmartCable-Cyan id="appliedenergistics2:part" damage="49"/>
+							<itemMESmartCable-Gray id="appliedenergistics2:part" damage="47"/>
+							<itemMESmartCable-Green id="appliedenergistics2:part" damage="53"/>
+							<itemMESmartCable-LightBlue id="appliedenergistics2:part" damage="43"/>
+							<itemMESmartCable-LightGray id="appliedenergistics2:part" damage="48"/>
+							<itemMESmartCable-Lime id="appliedenergistics2:part" damage="45"/>
+							<itemMESmartCable-Magenta id="appliedenergistics2:part" damage="42"/>
+							<itemMESmartCable-Orange id="appliedenergistics2:part" damage="41"/>
+							<itemMESmartCable-Pink id="appliedenergistics2:part" damage="46"/>
+							<itemMESmartCable-Purple id="appliedenergistics2:part" damage="50"/>
+							<itemMESmartCable-Red id="appliedenergistics2:part" damage="54"/>
+							<itemMESmartCable-White id="appliedenergistics2:part" damage="40"/>
+							<itemMESmartCable-Yellow id="appliedenergistics2:part" damage="44"/>
+						</meSmartCable>
+						<meCoveredCable id="appliedenergistics2:part" damage="35">
+							<itemMECoveredCable-Fluix id="appliedenergistics2:part" damage="36"/>
+							<itemMECoveredCable-Black id="appliedenergistics2:part" damage="35"/>
+							<itemMECoveredCable-Blue id="appliedenergistics2:part" damage="31"/>
+							<itemMECoveredCable-Brown id="appliedenergistics2:part" damage="32"/>
+							<itemMECoveredCable-Cyan id="appliedenergistics2:part" damage="29"/>
+							<itemMECoveredCable-Gray id="appliedenergistics2:part" damage="27"/>
+							<itemMECoveredCable-Green id="appliedenergistics2:part" damage="33"/>
+							<itemMECoveredCable-LightBlue id="appliedenergistics2:part" damage="23"/>
+							<itemMECoveredCable-LightGray id="appliedenergistics2:part" damage="28"/>
+							<itemMECoveredCable-Lime id="appliedenergistics2:part" damage="25"/>
+							<itemMECoveredCable-Magenta id="appliedenergistics2:part" damage="22"/>
+							<itemMECoveredCable-Orange id="appliedenergistics2:part" damage="21"/>
+							<itemMECoveredCable-Pink id="appliedenergistics2:part" damage="26"/>
+							<itemMECoveredCable-Purple id="appliedenergistics2:part" damage="30"/>
+							<itemMECoveredCable-Red id="appliedenergistics2:part" damage="34"/>
+							<itemMECoveredCable-White id="appliedenergistics2:part" damage="20"/>
+							<itemMECoveredCable-Yellow id="appliedenergistics2:part" damage="24"/>
+						</meCoveredCable>
+						<meDenseCable id="appliedenergistics2:part" damage="35">
+							<itemMEDenseCable-Fluix id="appliedenergistics2:part" damage="76"/>
+							<itemMEDenseCable-Black id="appliedenergistics2:part" damage="75"/>
+							<itemMEDenseCable-Blue id="appliedenergistics2:part" damage="71"/>
+							<itemMEDenseCable-Brown id="appliedenergistics2:part" damage="72"/>
+							<itemMEDenseCable-Cyan id="appliedenergistics2:part" damage="69"/>
+							<itemMEDenseCable-Gray id="appliedenergistics2:part" damage="67"/>
+							<itemMEDenseCable-Green id="appliedenergistics2:part" damage="73"/>
+							<itemMEDenseCable-LightBlue id="appliedenergistics2:part" damage="63"/>
+							<itemMEDenseCable-LightGray id="appliedenergistics2:part" damage="68"/>
+							<itemMEDenseCable-Lime id="appliedenergistics2:part" damage="65"/>
+							<itemMEDenseCable-Magenta id="appliedenergistics2:part" damage="62"/>
+							<itemMEDenseCable-Orange id="appliedenergistics2:part" damage="61"/>
+							<itemMEDenseCable-Pink id="appliedenergistics2:part" damage="66"/>
+							<itemMEDenseCable-Purple id="appliedenergistics2:part" damage="70"/>
+							<itemMEDenseCable-Red id="appliedenergistics2:part" damage="74"/>
+							<itemMEDenseCable-White id="appliedenergistics2:part" damage="60"/>
+							<itemMEDenseCable-Yellow id="appliedenergistics2:part" damage="64"/>
+						</meDenseCable>
+					</cables>
+					<terminals>
+						<itemMETerminal id="appliedenergistics2:item.itemmultipart" damage="380"/>
+						<itemMETerminal id="appliedenergistics2:part" damage="380"/>
+						<itemMECraftingTerminal id="appliedenergistics2:item.itemmultipart" damage="360"/>
+						<itemMECraftingTerminal id="appliedenergistics2:part" damage="360"/>
+						<itemIlluminatedPanel id="appliedenergistics2:item.itemmultipart" damage="180"/>
+						<itemIlluminatedPanel id="appliedenergistics2:part" damage="180"/>
+						<itemBrightIlluminatedPanel id="appliedenergistics2:item.itemmultipart" damage="160"/>
+						<itemBrightIlluminatedPanel id="appliedenergistics2:part" damage="160"/>
+						<itemDarkIlluminatedPanel id="appliedenergistics2:item.itemmultipart" damage="200"/>
+						<itemDarkIlluminatedPanel id="appliedenergistics2:part" damage="200"/>
+						<itemMEConversionMonitor id="appliedenergistics2:item.itemmultipart" damage="420"/>
+						<itemMEConversionMonitor id="appliedenergistics2:part" damage="420"/>
+						<itemMEStorageMonitor id="appliedenergistics2:item.itemmultipart" damage="400"/>
+						<itemMEStorageMonitor id="appliedenergistics2:part" damage="400"/>
+						<itemMEPatternTerminal id="appliedenergistics2:item.itemmultipart" damage="340"/>
+						<itemMEPatternTerminal id="appliedenergistics2:part" damage="340"/>
+						<itemMEInterfaceTerminal id="appliedenergistics2:item.itemmultipart" damage="480"/>
+						<itemMEInterfaceTerminal id="appliedenergistics2:part" damage="480"/>
+					</terminals>
+					<interfaces>
+						<itemMEController id="appliedenergistics2:tile.blockcontroller" damage="0"/>
+						<itemMEController id="appliedenergistics2:controller"/>
+						<itemMEDrive id="appliedenergistics2:drive"/>
+						<itemMEDrive id="appliedenergistics2:tile.blockdrive" damage="0"/>
+						<itemMEChest id="appliedenergistics2:tile.blockchest" damage="0"/>
+						<itemMEChest id="appliedenergistics2:chest"/>
+						<itemMEInterfaceBlock id="appliedenergistics2:tile.blockinterface" damage="0"/>
+						<itemMEInterface id="appliedenergistics2:interface"/>
+						<itemMEInterfacePanel id="appliedenergistics2:item.itemmultipart" damage="440"/>
+						<itemMEInterface id="appliedenergistics2:part" damage="440"/>
+						<itemMEImportBus id="appliedenergistics2:item.itemmultipart" damage="240"/>
+						<itemMEImportBus id="appliedenergistics2:part" damage="240"/>
+						<itemMEExportBus id="appliedenergistics2:item.itemmultipart" damage="260"/>
+						<itemMEExportBus id="appliedenergistics2:part" damage="260"/>
+						<itemMEStorageBus id="appliedenergistics2:item.itemmultipart" damage="220"/>
+						<itemMEStorageBus id="appliedenergistics2:part" damage="220"/>
+						<itemMEAnnihilationPlane id="appliedenergistics2:item.itemmultipart" damage="300"/>
+						<itemMEAnnihilationPlane id="appliedenergistics2:part" damage="300"/>
+						<itemMEIdentityAnnihilationPlane id="appliedenergistics2:part" damage="301"/>
+						<itemMEFormationPlane id="appliedenergistics2:item.itemmultipart" damage="320"/>
+						<itemMEFormationPlane id="appliedenergistics2:part" damage="320"/>
+						<itemMELevelEmitter id="appliedenergistics2:item.itemmultipart" damage="280"/>
+						<itemMELevelEmitter id="appliedenergistics2:part" damage="280"/>
+						<itemMEToggleBus id="appliedenergistics2:item.itemmultipart" damage="80"/>
+						<itemMEToggleBus id="appliedenergistics2:part" damage="80"/>
+						<itemMEInvertedToggleBus id="appliedenergistics2:item.itemmultipart" damage="100"/>
+						<itemMEInvertedToggleBus id="appliedenergistics2:part" damage="100"/>
+						<itemP2PTunnel-Item id="appliedenergistics2:item.itemmultipart" damage="462"/>
+						<itemP2PTunnel-Item id="appliedenergistics2:part" damage="462"/>
+						<itemP2PTunnel-Light id="appliedenergistics2:item.itemmultipart" damage="467"/>
+						<itemP2PTunnel-Light id="appliedenergistics2:part" damage="467"/>
+						<itemP2PTunnel-Fluid id="appliedenergistics2:item.itemmultipart" damage="463"/>
+						<itemP2PTunnel-Fluid id="appliedenergistics2:part" damage="463"/>
+						<itemP2PTunnel-ME id="appliedenergistics2:item.itemmultipart" damage="460"/>
+						<itemP2PTunnel-ME id="appliedenergistics2:part" damage="460"/>
+						<itemP2PTunnel-RF id="appliedenergistics2:item.itemmultipart" damage="466"/>
+						<itemP2PTunnel-EU id="appliedenergistics2:part" damage="465"/>
+						<itemP2PTunnel-Redstone id="appliedenergistics2:item.itemmultipart" damage="461"/>
+						<itemP2PTunnel-Redstone id="appliedenergistics2:part" damage="461"/>
+					</interfaces>
+					<upgrades>
+						<itemAccelerationCard id="appliedenergistics2:material" damage="30"/>
+						<itemAdvancedCard id="appliedenergistics2:material" damage="28"/>
+						<itemBasicCard id="appliedenergistics2:material" damage="25"/>
+						<itemCapacityCard id="appliedenergistics2:material" damage="27"/>
+						<itemCraftingCard id="appliedenergistics2:material" damage="53"/>
+						<itemFuzzyCard id="appliedenergistics2:material" damage="29"/>
+						<itemInverterCard id="appliedenergistics2:material" damage="31"/>
+						<itemRedstoneCard id="appliedenergistics2:material" damage="26"/>
+						<itemWirelessBooster id="appliedenergistics2:item.itemmultimaterial" damage="42"/>
+						<itemWirelessBooster id="appliedenergistics2:material" damage="42"/>
+						<itemBiometricCard id="appliedenergistics2:biometric_card" damage="0"/>
+					</upgrades>
+					<parts>
+						<itemBlankPattern id="appliedenergistics2:item.itemmultimaterial" damage="52"/>
+						<itemBlankPattern id="appliedenergistics2:material" damage="52"/>
+						<itemEncodedPattern id="appliedenergistics2:item.itemencodedpattern" damage="0"/>
+						<itemEncodedPattern id="appliedenergistics2:encoded_pattern"/>
+						<itemAnnihilationCore id="appliedenergistics2:item.itemmultimaterial" damage="44"/>
+						<itemAnnihilationCore id="appliedenergistics2:material" damage="44"/>
+						<itemFormationCore id="appliedenergistics2:item.itemmultimaterial" damage="43"/>
+						<itemFormationCore id="appliedenergistics2:material" damage="43"/>
+						<itemFluixPearl id="appliedenergistics2:item.itemmultimaterial" damage="9"/>
+						<itemFluixPearl id="appliedenergistics2:material" damage="9"/>
+						<itemSingularity id="appliedenergistics2:item.itemmultimaterial" damage="47"/>
+						<itemSingularity id="appliedenergistics2:material" damage="47"/>
+						<itemQuantumEntangledSingularity id="appliedenergistics2:item.itemmultimaterial" damage="48"/>
+						<itemQuantumEntangledSingularity id="appliedenergistics2:material" damage="48"/>
+						<itemWirelessReceiver id="appliedenergistics2:item.itemmultimaterial" damage="41"/>
+						<itemWirelessReceiver id="appliedenergistics2:material" damage="41"/>
+						<itemPrintedSilicon id="appliedenergistics2:item.itemmultimaterial" damage="20"/>
+						<itemPrintedSilicon id="appliedenergistics2:material" damage="20"/>
+						<itemPrintedLogicCircuit id="appliedenergistics2:item.itemmultimaterial" damage="18"/>
+						<itemPrintedLogicCircuit id="appliedenergistics2:material" damage="18"/>
+						<itemPrintedCalculationCircuit id="appliedenergistics2:item.itemmultimaterial" damage="16"/>
+						<itemPrintedCalculationCircuit id="appliedenergistics2:material" damage="16"/>
+						<itemPrintedEngineeringCircuit id="appliedenergistics2:item.itemmultimaterial" damage="17"/>
+						<itemPrintedEngineeringCircuit id="appliedenergistics2:material" damage="17"/>
+						<itemLogicProcessor id="appliedenergistics2:item.itemmultimaterial" damage="22"/>
+						<itemLogicProcessor id="appliedenergistics2:material" damage="22"/>
+						<itemCalculationProcessor id="appliedenergistics2:item.itemmultimaterial" damage="23"/>
+						<itemCalculationProcessor id="appliedenergistics2:material" damage="23"/>
+						<itemEngineeringProcessor id="appliedenergistics2:item.itemmultimaterial" damage="24"/>
+						<itemEngineeringProcessor id="appliedenergistics2:material" damage="24"/>
+						<itemInscriberSiliconPress id="appliedenergistics2:item.itemmultimaterial" damage="19"/>
+						<itemInscriberSiliconPress id="appliedenergistics2:material" damage="19"/>
+						<itemInscriberLogicPress id="appliedenergistics2:item.itemmultimaterial" damage="15"/>
+						<itemInscriberLogicPress id="appliedenergistics2:material" damage="15"/>
+						<itemInscriberCalculationPress id="appliedenergistics2:item.itemmultimaterial" damage="13"/>
+						<itemInscriberCalculationPress id="appliedenergistics2:material" damage="13"/>
+						<itemInscriberEngineeringPress id="appliedenergistics2:item.itemmultimaterial" damage="14"/>
+						<itemInscriberEngineeringPress id="appliedenergistics2:material" damage="14"/>
+						<itemInscriberNamePress id="appliedenergistics2:item.itemmultimaterial" damage="21"/>
+						<itemInscriberNamePress id="appliedenergistics2:material" damage="21"/>
+						<itemMEStorageHousing id="appliedenergistics2:item.itemmultimaterial" damage="39"/>
+						<itemMEStorageHousing id="appliedenergistics2:material" damage="39"/>
+						<item1kMEStorageComponent id="appliedenergistics2:item.itemmultimaterial" damage="35"/>
+						<item1kMEStorageComponent id="appliedenergistics2:material" damage="35"/>
+						<item4kMEStorageComponent id="appliedenergistics2:item.itemmultimaterial" damage="36"/>
+						<item4kMEStorageComponent id="appliedenergistics2:material" damage="36"/>
+						<item16kMEStorageComponent id="appliedenergistics2:item.itemmultimaterial" damage="37"/>
+						<item16kMEStorageComponent id="appliedenergistics2:material" damage="37"/>
+						<item64kMEStorageComponent id="appliedenergistics2:item.itemmultimaterial" damage="38"/>
+						<item64kMEStorageComponent id="appliedenergistics2:material" damage="38"/>
+						<item2CubedSpatialComponent id="appliedenergistics2:item.itemmultimaterial" damage="32"/>
+						<item16CubedSpatialComponent id="appliedenergistics2:item.itemmultimaterial" damage="33"/>
+						<item128CubedSpatialComponent id="appliedenergistics2:item.itemmultimaterial" damage="34"/>
+						<item2SpatialComponent id="appliedenergistics2:material" damage="32"/>
+						<item16SpatialComponent id="appliedenergistics2:material" damage="33"/>
+						<item128SpatialComponent id="appliedenergistics2:material" damage="34"/>
+					</parts>
+					<storagecells>
+						<itemCreativeMEStorageCell id="appliedenergistics2:item.itemcreativestoragecell" damage="0"/>
+						<itemCreativeMEStorageCell id="appliedenergistics2:creative_storage_cell"/>
+						<item1kMEStorageCell id="appliedenergistics2:item.itembasicstoragecell.1k" damage="0"/>
+						<item4kMEStorageCell id="appliedenergistics2:item.itembasicstoragecell.4k" damage="0"/>
+						<item16kMEStorageCell id="appliedenergistics2:item.itembasicstoragecell.16k" damage="0"/>
+						<item64kMEStorageCell id="appliedenergistics2:item.itembasicstoragecell.64k" damage="0"/>
+						<item1kMEStorageCell id="appliedenergistics2:storage_cell_1k"/>
+						<item4kMEStorageCell id="appliedenergistics2:storage_cell_4k"/>
+						<item16kMEStorageCell id="appliedenergistics2:storage_cell_16k"/>
+						<item64kMEStorageCell id="appliedenergistics2:storage_cell_64k"/>
+						<item2SpatialStorageCell id="appliedenergistics2:spatial_storage_cell_2_cubed"/>
+						<item16SpatialStorageCell id="appliedenergistics2:spatial_storage_cell_16_cubed"/>
+						<item128SpatialStorageCell id="appliedenergistics2:spatial_storage_cell_128_cubed"/>
+						<item2CubedSpatialStorageCell id="appliedenergistics2:item.itemspatialstoragecell.2cubed" damage="0"/>
+						<item16CubedSpatialStorageCell id="appliedenergistics2:item.itemspatialstoragecell.16cubed" damage="0"/>
+						<item128CubedSpatialStorageCell id="appliedenergistics2:item.itemspatialstoragecell.128cubed" damage="0"/>
+						<itemViewCell id="appliedenergistics2:item.itemviewcell" damage="0"/>
+						<itemViewCell id="appliedenergistics2:view_cell"/>
+					</storagecells>
+					<machines>
+						<itemWoodenCrank id="appliedenergistics2:tile.blockcrank" damage="0"/>
+						<itemWoodenCrank id="appliedenergistics2:crank"/>
+						<itemQuartzGrindstone id="appliedenergistics2:tile.blockgrinder" damage="0"/>
+						<itemQuartzGrindstone id="appliedenergistics2:grindstone"/>
+						<itemInscriber id="appliedenergistics2:tile.blockinscriber" damage="0"/>
+						<itemInscriber id="appliedenergistics2:inscriber"/>
+						<itemCharger id="appliedenergistics2:tile.blockcharger" damage="0"/>
+						<itemCharger id="appliedenergistics2:charger"/>
+						<itemVibrationChamber id="appliedenergistics2:tile.blockvibrationchamber"/>
+						<itemVibrationChamber id="appliedenergistics2:vibration_chamber"/>
+						<itemMatrixFrame id="appliedenergistics2:tile.blockmatrixframe"/>
+						<itemMatrixFrame id="appliedenergistics2:matrix_frame"/>
+						<itemCrystalGrowthAccelerator id="appliedenergistics2:tile.blockquartzgrowthaccelerator" damage="0"/>
+						<itemCrystalGrowthAccelerator id="appliedenergistics2:quartz_growth_accelerator"/>
+						<itemMEWirelessAccessPoint id="appliedenergistics2:tile.blockwireless" damage="0"/>
+						<itemMEWirelessAccessPoint id="appliedenergistics2:wireless_access_point"/>
+						<itemMESecurityTerminal id="appliedenergistics2:tile.blocksecurity" damage="0"/>
+						<itemMESecurityTerminal id="appliedenergistics2:security_station"/>
+						<itemCellWorkbench id="appliedenergistics2:tile.blockcellworkbench" damage="0"/>
+						<itemCellWorkbench id="appliedenergistics2:cell_workbench"/>
+						<itemMolecularAssembler id="appliedenergistics2:tile.blockmolecularassembler"/>
+						<itemMolecularAssembler id="appliedenergistics2:molecular_assembler"/>
+						<itemCraftingUnit id="appliedenergistics2:tile.blockcraftingunit" damage="0"/>
+						<itemCraftingUnit id="appliedenergistics2:crafting_unit"/>
+						<itemCraftingCo-ProcessingUnit id="appliedenergistics2:tile.blockcraftingunit" damage="1"/>
+						<itemCraftingCo-ProcessingUnit id="appliedenergistics2:crafting_accelerator"/>
+						<item1kCraftingStorage id="appliedenergistics2:tile.blockcraftingstorage" damage="0"/>
+						<item1kCraftingStorage id="appliedenergistics2:crafting_storage_1k"/>
+						<item4kCraftingStorage id="appliedenergistics2:crafting_storage_4k"/>
+						<item4kCraftingStorage id="appliedenergistics2:tile.blockcraftingstorage" damage="1"/>
+						<item16kCraftingStorage id="appliedenergistics2:crafting_storage_16k"/>
+						<item16kCraftingStorage id="appliedenergistics2:tile.blockcraftingstorage" damage="2"/>
+						<item64kCraftingStorage id="appliedenergistics2:crafting_storage_64k"/>
+						<item64kCraftingStorage id="appliedenergistics2:tile.blockcraftingstorage" damage="3"/>
+						<itemCraftingMonitor id="appliedenergistics2:tile.blockcraftingmonitor" damage="0"/>
+						<itemCraftingMonitor id="appliedenergistics2:crafting_monitor"/>
+						<itemMEQuantumRing id="appliedenergistics2:tile.blockquantumring" damage="0"/>
+						<itemMEQuantumRing id="appliedenergistics2:quantum_ring"/>
+						<itemMEQuantumLinkChamber id="appliedenergistics2:tile.blockquantumlinkchamber" damage="0"/>
+						<itemMEQuantumLinkChamber id="appliedenergistics2:quantum_link"/>
+						<itemLightDetectingFixture id="appliedenergistics2:tile.blocklightdetector" damage="0"/>
+						<itemLightDetectingFixture id="appliedenergistics2:light_detector"/>
+						<itemMEIOPort id="appliedenergistics2:tile.blockioport" damage="0"/>
+						<itemMEIOPort id="appliedenergistics2:io_port"/>
+						<itemMatterCondenser id="appliedenergistics2:tile.blockcondenser" damage="0"/>
+						<itemMatterCondenser id="appliedenergistics2:condenser"/>
+						<itemEnergyAcceptor id="appliedenergistics2:tile.blockenergyacceptor" damage="0"/>
+						<itemEnergyAcceptor id="appliedenergistics2:energy_acceptor"/>
+						<itemEnergyCell id="appliedenergistics2:tile.blockenergycell" damage="0"/>
+						<itemEnergyCell id="appliedenergistics2:energy_cell"/>
+						<itemDenseEnergyCell id="appliedenergistics2:tile.blockdenseenergycell" damage="0"/>
+						<itemDenseEnergyCell id="appliedenergistics2:dense_energy_cell"/>
+						<itemCreativeEnergyCell id="appliedenergistics2:tile.blockcreativeenergycell" damage="0"/>
+						<itemCreativeEnergyCell id="appliedenergistics2:creative_energy_cell"/>
+						<itemSpatialPylon id="appliedenergistics2:tile.blockspatialpylon" damage="0"/>
+						<itemSpatialPylon id="appliedenergistics2:spatial_pylon"/>
+						<itemSpatialIOPort id="appliedenergistics2:tile.blockspatialioport" damage="0"/>
+						<itemSpatialIOPort id="appliedenergistics2:spatial_io_port"/>
+					</machines>
+				</digitalstorage>
+				<portableStorage>
+					<itemWirelessTerminal id="appliedenergistics2:item.toolwirelessterminal" damage="0"/>
+					<itemWirelessTerminal id="appliedenergistics2:wireless_terminal"/>
+					<itemPortableCell id="appliedenergistics2:item.toolportablecell" damage="0"/>
+					<itemPortableCell id="appliedenergistics2:portable_cell"/>
+				</portableStorage>
+			</storage>
+			<tnts>
+				<itemTinyTNT id="appliedenergistics2:tile.blocktinytnt" damage="0"/>
+				<itemTinyTNT id="appliedenergistics2:tiny_tnt"/>
+			</tnts>
+		</utility>
+		<instrument>
+			<itemMeteoriteCompass id="appliedenergistics2:tile.blockskycompass"/>
+			<itemMeteoriteCompass id="appliedenergistics2:sky_compass"/>
+		</instrument>
+	</item>
+	<nonItems>
+		<itemAE2CableandorBus id="appliedenergistics2:cable_bus"/>
+		<itemtile.appliedenergistics2.paint.name id="appliedenergistics2:paint"/>
+		<itemtile.appliedenergistics2.BlockPaint.name id="appliedenergistics2:tile.blockpaint"/>
+	</nonItems>
+</stuff>

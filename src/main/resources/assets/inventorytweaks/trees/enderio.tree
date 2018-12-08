@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage6>
+							<itemTheEnder id="enderio:darksteel_sword"/>
+						</swordDamage6>
+						<swordUnsorted>
+							<itemTheEnder id="enderio:item_dark_steel_sword"/>
+							<itemTheEnderMk2 id="enderio:item_end_steel_sword"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+			<munition>
+				<bow mergeChildren="true">
+					<itemDarkBow id="enderio:darksteelbow"/>
+					<itemDarkBow id="enderio:item_dark_steel_bow"/>
+				</bow>
+			</munition>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemDarkPick id="enderio:darksteel_pickaxe"/>
+					</CobaltPickLevel>
+				</pickaxe>
+			</miningTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemDarkAxe id="enderio:darksteel_axe"/>
+				</axe>
+			</choppingTool>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemenderio_itemYetaWrench id="enderio:itemyetawrench"/>
+				<itemYetaWrench id="enderio:item_yeta_wrench"/>
+			</wrench>
+			<multimeters>
+				<itemConduitProbe id="enderio:itemconduitprobe"/>
+				<itemConduitProbe id="enderio:item_conduit_probe"/>
+				<itemCoordinateSelector id="enderio:item_coord_selector"/>
+			</multimeters>
+			<magnets>
+				<itemElectromagnet id="enderio:item_magnet"/>
+				<itemElectromagnet id="enderio:itemmagnet"/>
+			</magnets>
+			<teleport>
+				<itemStaffofTraveling id="enderio:item_travel_staff"/>
+				<itemStaffofTraveling id="enderio:itemtravelstaff"/>
+				<itemRodofReturn id="enderio:item_rod_of_return"/>
+				<itemStaffofLevity id="enderio:item_staff_of_levity"/>
+			</teleport>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet3>
+					<itemDarkHelm id="enderio:darksteel_helmet"/>
+				</helmet3>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate8>
+						<itemDarkPlate id="enderio:darksteel_chestplate"/>
+					</chestplate8>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings6>
+					<itemDarkLeggings id="enderio:darksteel_leggings"/>
+				</leggings6>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots3>
+					<itemDarkBoots id="enderio:darksteel_boots"/>
+				</boots3>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<monsterSpawners>
+				<itemBrokenSpawner id="enderio:itembrokenspawner"/>
+				<itemBrokenSpawner id="enderio:item_broken_spawner"/>
+			</monsterSpawners>
+			<sponge>
+				<itemIndustrialInsulation id="enderio:block_industrial_insulation"/>
+			</sponge>
+			<liquid>
+				<fluids id="enderio:blockfire_water">
+					<itemFireWater id="enderio:blockfire_water"/>
+					<itemHootch id="enderio:blockhootch"/>
+					<itemNutrientDistillation id="enderio:blocknutrient_distillation"/>
+					<itemRocketFuel id="enderio:blockrocket_fuel"/>
+				</fluids>
+			</liquid>
+			<obsidian>
+				<itemReinforcedObsidian id="enderio:blockreinforcedobsidian"/>
+				<itemReinforcedObsidian id="enderio:block_reinforced_obsidian"/>
+			</obsidian>
+		</naturalBlock>
+		<manufacturedBlock>
+			<ladder>
+				<itemDarkSteelLadder id="enderio:blockdarksteelladder"/>
+				<itemDarkSteelLadder id="enderio:block_dark_steel_ladder"/>
+			</ladder>
+			<constructionBlock>
+				<ironBars>
+					<itemDarkIronBars id="enderio:blockdarkironbars"/>
+					<itemDarkIronBars id="enderio:block_dark_iron_bars"/>
+					<itemEndSteelBars id="enderio:block_end_iron_bars"/>
+				</ironBars>
+				<facades>
+					<itemConduitFacade id="enderio:itemconduitfacade"/>
+					<itemConduitFacade id="enderio:item_conduit_facade"/>
+					<itemBlankMachinedecorationblock id="enderio:block_decoration1"/>
+					<itemAlloySmelterdecorationblock id="enderio:block_decoration2"/>
+					<itemSimpleAlloySmelterdecorationblock id="enderio:block_decoration3"/>
+				</facades>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<rails>
+				<itemEnderRail id="enderio:blockenderrail"/>
+				<itemExitRail id="enderio:block_exit_rail"/>
+			</rails>
+			<lighting>
+				<enderioLights id="enderio:blockelectriclight">
+					<itemLight id="enderio:blockelectriclight"/>
+					<itemElectricLight id="enderio:block_electric_light"/>
+				</enderioLights>
+				<mobWarding id="enderio:blockspawnguard">
+					<itemAversionObelisk id="enderio:blockspawnguard"/>
+					<itemAversionObelisk id="enderio:block_aversion_obelisk"/>
+					<itemInhibitorObelisk id="enderio:block_inhibitor_obelisk"/>
+				</mobWarding>
+			</lighting>
+			<lever>
+				<itemSelf-resettingLever5seconds id="enderio:block_self_resetting_lever5"/>
+				<itemSelf-resettingLever10seconds id="enderio:block_self_resetting_lever10"/>
+				<itemSelf-resettingLever30seconds id="enderio:block_self_resetting_lever30"/>
+				<itemSelf-resettingLever1Minute id="enderio:block_self_resetting_lever60"/>
+				<itemSelf-resettingLever5Minutes id="enderio:block_self_resetting_lever300"/>
+			</lever>
+			<pressurePlates>
+				<itemDarkPressurePlate0 id="enderio:blockdarksteelpressureplate" damage="0"/>
+				<itemDarkPressurePlate1 id="enderio:blockdarksteelpressureplate" damage="1"/>
+				<itemDarkPressurePlate id="enderio:block_painted_pressure_plate" damage="8"/>
+				<itemDarkPressurePlateSilent id="enderio:block_painted_pressure_plate" damage="9"/>
+				<itemWeightedPressurePlateLightSilent id="enderio:block_painted_pressure_plate"/>
+			</pressurePlates>
+			<doors>
+				<itemPaintedWoodenDoor id="enderio:block_painted_wooden_door"/>
+				<itemDarkSteelDoor id="enderio:block_dark_steel_door"/>
+				<itemPaintedDarkSteelDoor id="enderio:block_painted_dark_steel_door"/>
+				<itemPaintedIronDoor id="enderio:block_painted_iron_door"/>
+			</doors>
+			<trapdoor>
+				<itemDarkSteelTrapdoor id="enderio:block_dark_steel_trapdoor"/>
+			</trapdoor>
+			<itemBlockDetector id="enderio:block_detector_block"/>
+			<itemBlockDetectorSilent id="enderio:block_detector_block_silent"/>
+			<resourceTransfer>
+				<groundItemCollector>
+					<itemImpulseHopper id="enderio:block_impulse_hopper"/>
+					<itemVacuumChest id="enderio:blockvacuumchest"/>
+					<itemVacuumChest id="enderio:block_vacuum_chest"/>
+					<itemXPVacuum id="enderio:block_xp_vacuum"/>
+				</groundItemCollector>
+				<eioPipes>
+					<itemBinderComposite id="enderio:itemmaterial" damage="2"/>
+					<itemConduitBinder id="enderio:itemmaterial" damage="1"/>
+					<itemRedstoneConduit id="enderio:itemredstoneconduit"/>
+					<itemRedstoneConduit id="enderio:item_redstone_conduit"/>
+					<itemInsulatedRedstoneConduit id="enderio:itemredstoneconduit"/>
+					<itemItemConduit id="enderio:itemitemconduit"/>
+					<itemItemConduit id="enderio:item_item_conduit"/>
+					<itemFluidConduit id="enderio:itemliquidconduit"/>
+					<itemFluidConduit id="enderio:item_liquid_conduit"/>
+					<itemEnergyConduit id="enderio:itempowerconduit"/>
+					<itemEnergyConduit id="enderio:item_power_conduit"/>
+					<itemMEConduit id="enderio:itemmeconduit"/>
+					<itemMEConduit id="enderio:item_me_conduit"/>
+					<itemRefinedStorageConduit id="enderio:item_refined_storage_conduit"/>
+					<itemItemBuffer id="enderio:block_buffer"/>
+				</eioPipes>
+				<fans>
+					<itemRelocatorObelisk id="enderio:block_relocator_obelisk"/>
+				</fans>
+				<transDimensionalTransfer>
+					<itemDimensionalTransceiver id="enderio:blocktransceiver"/>
+					<itemDimensionalTransceiver id="enderio:block_transceiver"/>
+				</transDimensionalTransfer>
+			</resourceTransfer>
+			<basicCrafting>
+				<anvils>
+					<itemDarkSteelAnvil id="enderio:blockdarksteelanvil"/>
+					<itemDarkSteelAnvil id="enderio:block_dark_steel_anvil"/>
+				</anvils>
+			</basicCrafting>
+			<generators>
+				<fuelGenerators>
+					<itemenderio_blockCombustionGenerator_0 id="enderio:blockcombustiongenerator" damage="0"/>
+					<itemCombustionGenerator id="enderio:block_combustion_generator"/>
+					<itemEnhancedCombustionGenerator id="enderio:block_enhanced_combustion_generator"/>
+					<itemenderio_blockStirlingGenerator_0 id="enderio:blockstirlinggenerator" damage="0"/>
+					<itemSimpleStirlingGenerator id="enderio:block_simple_stirling_generator"/>
+					<itemStirlingGenerator id="enderio:block_stirling_generator"/>
+				</fuelGenerators>
+				<lavaGenerators>
+					<itemLavaHeatExchanger id="enderio:block_lava_generator"/>
+				</lavaGenerators>
+				<liquidFuelGenerators>
+					<itemZombieGenerator id="enderio:block_zombie_generator"/>
+					<itemFranknZombieGenerator id="enderio:block_franken_zombie_generator"/>
+				</liquidFuelGenerators>
+				<enderGenerators>
+					<itemEnderGenerator id="enderio:block_ender_generator"/>
+				</enderGenerators>
+				<weirdGenerators>
+					<itemenderio_blockZombieGenerator_0 id="enderio:blockzombiegenerator" damage="0"/>
+				</weirdGenerators>
+				<solarGenerators>
+					<itemPhotovoltaicCell id="enderio:blocksolarpanel"/>
+					<itemPhotovoltaicCell id="enderio:block_solar_panel"/>
+				</solarGenerators>
+			</generators>
+			<machines>
+				<poweredCrafting>
+					<itemSimpleCrafter id="enderio:block_simple_crafter"/>
+					<itemCrafter id="enderio:blockcrafter" damage="0"/>
+					<itemCrafter id="enderio:block_crafter"/>
+				</poweredCrafting>
+				<poweredFurnaces>
+					<itemAlloySmelter id="enderio:blockalloysmelter"/>
+					<itemSimplePoweredFurnace id="enderio:block_simple_furnace"/>
+					<itemSimpleAlloySmelter id="enderio:block_simple_alloy_smelter"/>
+					<itemAlloySmelter id="enderio:block_alloy_smelter"/>
+					<itemEnhancedAlloySmelter id="enderio:block_enhanced_alloy_smelter"/>
+				</poweredFurnaces>
+				<poweredGrinders>
+					<itemSAGMill id="enderio:block_sag_mill"/>
+					<itemSimpleSAGMill id="enderio:block_simple_sag_mill"/>
+					<itemSAGMill id="enderio:blocksagmill"/>
+					<itemEnhancedSAGMill id="enderio:block_enhanced_sag_mill"/>
+				</poweredGrinders>
+				<poweredFarming>
+					<itemFarmingStation id="enderio:block_farm_station"/>
+					<itemFarmingStation id="enderio:blockfarmstation"/>
+				</poweredFarming>
+				<poweredRanching>
+					<itemAttractorObelisk id="enderio:blockattractor" damage="0"/>
+					<itemAttractorObelisk id="enderio:block_attractor_obelisk"/>
+				</poweredRanching>
+				<poweredSpawners>
+					<itemPoweredSpawner id="enderio:blockpoweredspawner"/>
+					<itemPoweredSpawner id="enderio:block_powered_spawner"/>
+					<itemCreativeSpawner id="enderio:block_creative_spawner"/>
+				</poweredSpawners>
+				<mobKillers>
+					<itemKillerJoe id="enderio:blockkillerjoe"/>
+					<itemKillerJoe id="enderio:block_killer_joe"/>
+				</mobKillers>
+				<poweredEnchantment>
+					<itemEnchanter id="enderio:blockenchanter" damage="0"/>
+					<itemEnchanter id="enderio:block_enchanter"/>
+				</poweredEnchantment>
+				<poweredFluids>
+					<itemReservoir id="enderio:blockreservoir"/>
+					<itemTheVat id="enderio:blockvat"/>
+					<itemTheVat id="enderio:block_vat"/>
+					<itemTheEnhancedVat id="enderio:block_enhanced_vat"/>
+				</poweredFluids>
+				<poweredTransport>
+					<itemOmniBuffer id="enderio:blockbuffer"/>
+				</poweredTransport>
+				<decorationMachines>
+					<itemPaintingMachine id="enderio:blockpainter" damage="0"/>
+					<itemPaintingMachine id="enderio:block_painter"/>
+				</decorationMachines>
+				<randomMachines>
+					<itemSliceNSplice id="enderio:blocksliceandsplice"/>
+					<itemSoulBinder id="enderio:blocksoulbinder"/>
+					<itemSliceNSplice id="enderio:block_slice_and_splice"/>
+					<itemSoulBinder id="enderio:block_soul_binder"/>
+					<itemWeatherObelisk id="enderio:block_weather_obelisk"/>
+				</randomMachines>
+				<remoteAccess>
+					<itemTravelAnchor id="enderio:blocktravelanchor"/>
+					<itemTravelAnchor id="enderio:block_travel_anchor"/>
+					<itemenderio id="enderio:blockenderio"/>
+					<itemDialingDevice id="enderio:block_dialing_device"/>
+					<itemTelepadBlock id="enderio:block_tele_pad"/>
+				</remoteAccess>
+			</machines>
+			<machineupgrades>
+				<transportUpgrades>
+					<eioPipeUpgrades>
+						<itemItemFilter id="enderio:itembasicfilterupgrade"/>
+						<itemExistingItemFilter id="enderio:itemexistingitemfilter"/>
+						<itemModItemFilter id="enderio:itemmoditemfilter"/>
+						<itemChargeableItemFilter id="enderio:itempoweritemfilter"/>
+						<itemItemConduitSpeedDowngrade id="enderio:itemextractspeedupgrade"/>
+						<itemAdvancedBigItemFilter id="enderio:item_big_advanced_item_filter"/>
+						<itemAdvancedItemFilter id="enderio:item_advanced_item_filter"/>
+						<itemBasicItemFilter id="enderio:item_basic_item_filter"/>
+						<itemBigItemFilter id="enderio:item_big_item_filter"/>
+						<itemExistingItemFilter id="enderio:item_existing_item_filter"/>
+						<itemFluidFilter id="enderio:item_fluid_filter"/>
+						<itemLimitedItemFilter id="enderio:item_limited_item_filter"/>
+						<itemModItemFilter id="enderio:item_mod_item_filter"/>
+						<itemPowerItemFilter id="enderio:item_power_item_filter"/>
+						<itemSpeciesItemFilter id="enderio:item_species_item_filter"/>
+						<itemExtractSpeedDowngrade id="enderio:item_extract_speed_downgrade"/>
+						<itemExtractSpeedUpgrade id="enderio:item_extract_speed_upgrade"/>
+						<itemRefinedStorageCraftingSpeedDowngrade id="enderio:item_rs_crafting_speed_downgrade"/>
+						<itemRefinedStorageCraftingSpeedUpgrade id="enderio:item_rs_crafting_speed_upgrade"/>
+						<itemRefinedStorageCraftingUpgrade id="enderio:item_rs_crafting_upgrade"/>
+					</eioPipeUpgrades>
+				</transportUpgrades>
+				<augments>
+					<itemBasicCapacitor id="enderio:item_basic_capacitor"/>
+				</augments>
+			</machineupgrades>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<dustSpecial>
+				<itemInfinityDust id="enderio:block_infinity_fog" damage="0"/>
+			</dustSpecial>
+		</miningResources>
+	</resources>
+	<item>
+		<utility>
+			<flintAndSteel id="flint_and_steel">
+				<itemColdFireIgniter id="enderio:item_cold_fire_igniter"/>
+			</flintAndSteel>
+			<storage>
+				<powerStorage id="enderio:blockcapacitorbank">
+					<itemCapacitorBankDeprecated id="enderio:blockcapacitorbank"/>
+					<itemCapacitorBank id="enderio:blockcapbank"/>
+					<itemCapacitorBank id="enderio:block_cap_bank"/>
+					<itemBasicInventoryCharger id="enderio:item_inventory_charger_basic"/>
+					<itemSimpleInventoryCharger id="enderio:item_inventory_charger_simple"/>
+					<itemInventoryCharger id="enderio:item_inventory_charger"/>
+					<itemVibrantInventoryCharger id="enderio:item_inventory_charger_vibrant"/>
+					<itemSimpleWiredCharger id="enderio:block_simple_wired_charger"/>
+					<itemWiredCharger id="enderio:block_wired_charger"/>
+					<itemEnhancedWiredCharger id="enderio:block_enhanced_wired_charger"/>
+					<itemPowerMonitor id="enderio:blockpowermonitor"/>
+					<itemPowerMonitor id="enderio:block_power_monitor"/>
+					<itemGraphicalPowerMonitor id="enderio:block_advanced_power_monitor"/>
+					<itemWirelessCharger id="enderio:blockwirelesscharger"/>
+					<itemWirelessCharger id="enderio:block_wireless_charger"/>
+					<itemWirelessChargingAntenna id="enderio:block_normal_wireless_charger"/>
+					<itemEnhancedWirelessChargingAntenna id="enderio:block_enhanced_wireless_charger"/>
+					<itemWirelessChargingAntennaExtension id="enderio:block_wireless_charger_extension"/>
+					<itemEnergyGauge id="enderio:block_gauge"/>
+				</powerStorage>
+			</storage>
+			<mobHolder>
+				<itemSoulVial id="enderio:itemsoulvessel"/>
+				<itemSoulVial id="enderio:item_soul_vial"/>
+			</mobHolder>
+		</utility>
+		<bucket>
+			<itemenderio_bucketFire_water id="enderio:bucketfire_water"/>
+			<itemenderio_bucketHootch id="enderio:buckethootch"/>
+			<itemenderio_bucketNutrient_distillation id="enderio:bucketnutrient_distillation"/>
+			<itemenderio_bucketRocket_fuel id="enderio:bucketrocket_fuel"/>
+		</bucket>
+		<fluidStorage>
+			<itemFluidTank id="enderio:blocktank" damage="0"/>
+			<itemPressurizedFluidTank id="enderio:blocktank" damage="1"/>
+			<itemEndervoir id="enderio:block_reservoir"/>
+			<itemOmnivoir id="enderio:block_omni_reservoir"/>
+			<itemFluidTank id="enderio:block_tank"/>
+			<itemPressurizedFluidTank id="enderio:block_tank"/>
+		</fluidStorage>
+		<experienceStorage>
+			<itemExperienceObelisk id="enderio:block_experience_obelisk"/>
+			<itemExperienceRod id="enderio:item_xp_transfer"/>
+		</experienceStorage>
+		<parts>
+			<mechanicalParts>
+				<chip>
+					<itemEnderResonator id="enderio:itemfrankenskull" damage="3"/>
+					<itemFrankNZombie id="enderio:itemfrankenskull" damage="2"/>
+					<itemZ-LogicController id="enderio:itemfrankenskull" damage="1"/>
+					<itemZombieElectrode id="enderio:itemfrankenskull" damage="0"/>
+					<itemDarkSteelBall id="enderio:itemmaterial" damage="7"/>
+					<itemEnderCrystal id="enderio:itemmaterial" damage="8"/>
+					<itemEnticingCrystal id="enderio:itemmaterial" damage="9"/>
+					<itemPulsatingCrystal id="enderio:itemmaterial" damage="5"/>
+					<itemVibrantCrystal id="enderio:itemmaterial" damage="6"/>
+				</chip>
+				<frames>
+					<itemenderio_itemMachinePart_0 id="enderio:itemmachinepart" damage="0"/>
+					<itemFusedQuartzFrame id="enderio:itemfusedquartzframe"/>
+				</frames>
+				<itemGliderWing id="enderio:itemgliderwing" damage="0"/>
+				<itemGliderWings id="enderio:itemgliderwing" damage="1"/>
+			</mechanicalParts>
+		</parts>
+		<decoration>
+			<head>
+				<itemEIOEndermanHead id="enderio:blockendermanskull" damage="0"/>
+				<itemTormentedEndermanHead id="enderio:blockendermanskull" damage="2"/>
+				<itemTormentedEndermanHead id="enderio:block_enderman_skull" damage="2"/>
+			</head>
+		</decoration>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<itemEnderios id="enderio:item_ender_food" damage="0"/>
+				</preparedFood>
+			</edibleFood>
+		</food>
+		<potion>
+			<itemExperienceRod id="enderio:itemxptransfer"/>
+		</potion>
+	</item>
+	<nonItems>
+		<itemConduitBundle id="enderio:blockconduitbundle"/>
+		<itemtile.blockLightNode.name id="enderio:blocklightnode"/>
+		<itemConduitConnector id="enderio:blockconduitbundle"/>
+	</nonItems>
+</stuff>

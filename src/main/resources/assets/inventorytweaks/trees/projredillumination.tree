@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<block>
+		<mechanism>
+			<buttons>
+				<itemBlackIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="15"/>
+				<itemBlackIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="15"/>
+				<itemBlueIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="11"/>
+				<itemBlueIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="11"/>
+				<itemBrownIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="12"/>
+				<itemBrownIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="12"/>
+				<itemCyanIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="9"/>
+				<itemCyanIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="9"/>
+				<itemGreenIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="13"/>
+				<itemGreenIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="13"/>
+				<itemGreyIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="7"/>
+				<itemGreyIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="7"/>
+				<itemLightBlueIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="3"/>
+				<itemLightBlueIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="3"/>
+				<itemLightGreyIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="8"/>
+				<itemLightGreyIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="8"/>
+				<itemLimeIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="5"/>
+				<itemLimeIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="5"/>
+				<itemMagentaIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="2"/>
+				<itemMagentaIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="2"/>
+				<itemOrangeIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="1"/>
+				<itemOrangeIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="1"/>
+				<itemPinkIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="6"/>
+				<itemPinkIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="6"/>
+				<itemPurpleIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="10"/>
+				<itemPurpleIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="10"/>
+				<itemRedIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="14"/>
+				<itemRedIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="14"/>
+				<itemWhiteIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="0"/>
+				<itemWhiteIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="0"/>
+				<itemYellowIllumarButton id="projred|illumination:projectred.illumination.lightbutton" damage="4"/>
+				<itemYellowIllumarFeedbackButton id="projred|illumination:projectred.illumination.flightbutton" damage="4"/>
+			</buttons>
+		</mechanism>
+	</block>
+</stuff>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<keys>
+				<itemDrawerKey id="storagedrawers:drawer_key"/>
+				<itemPersonalKey id="storagedrawers:personalkey"/>
+				<itemPersonalKey id="storagedrawers:personal_key"/>
+				<itemConcealmentKey id="storagedrawers:shroudkey"/>
+				<itemConcealmentKey id="storagedrawers:shroud_key"/>
+				<itemQuantifyKey id="storagedrawers:quantify_key"/>
+			</keys>
+		</tool>
+	</equipment>
+	<item>
+		<utility>
+			<storage>
+				<drawers>
+					<itemFramedDrawer id="storagedrawers:fullcustom1"/>
+					<itemFramedDrawers1x2 id="storagedrawers:fullcustom2"/>
+					<itemFramedDrawers2x2 id="storagedrawers:fullcustom4"/>
+					<itemFramedDrawers1x2 id="storagedrawers:halfcustom2"/>
+					<itemFramedDrawers2x2 id="storagedrawers:halfcustom4"/>
+					<itemFramedDrawer id="storagedrawers:customdrawers"/>
+					<itemCompactingDrawer id="storagedrawers:compdrawers"/>
+					<itemDrawerController id="storagedrawers:controller"/>
+					<itemControllerSlave id="storagedrawers:controllerslave"/>
+					<drawerTrim>
+						<itemFramingTable id="storagedrawers:framingtable"/>
+						<itemOakTrim id="storagedrawers:trim"/>
+						<itemFramedTrim id="storagedrawers:trimcustom"/>
+						<itemFramedTrim id="storagedrawers:customtrim"/>
+					</drawerTrim>
+				</drawers>
+				<storageupgrades>
+					<itemStorageDowngrade id="storagedrawers:upgrade_one_stack"/>
+					<itemStorageDrawers_upgrade id="storagedrawers:upgrade"/>
+					<itemStorageUpgradeI id="storagedrawers:upgrade_storage"/>
+					<itemStorageDrawers_upgradeCreative id="storagedrawers:upgradecreative"/>
+					<itemCreativeStorageUpgrade id="storagedrawers:upgrade_creative"/>
+					<itemStorageDrawers_upgradeLock id="storagedrawers:upgradelock"/>
+					<itemStorageDrawers_upgradeStatus id="storagedrawers:upgradestatus"/>
+					<itemStatusUpgradeI id="storagedrawers:upgrade_status"/>
+					<itemStorageDrawers_upgradeTemplate id="storagedrawers:upgradetemplate"/>
+					<itemUpgradeTemplate id="storagedrawers:upgrade_template"/>
+					<itemStorageDrawers_upgradeVoid id="storagedrawers:upgradevoid"/>
+					<itemVoidUpgrade id="storagedrawers:upgrade_void"/>
+					<itemRedstoneUpgrade id="storagedrawers:upgraderedstone"/>
+					<itemRedstoneUpgrade id="storagedrawers:upgrade_redstone"/>
+					<itemConversionUpgrade id="storagedrawers:upgrade_conversion"/>
+					<itemPackingTape id="storagedrawers:tape"/>
+					<itemDrawerKeyButton id="storagedrawers:keybutton"/>
+				</storageupgrades>
+			</storage>
+		</utility>
+	</item>
+</stuff>

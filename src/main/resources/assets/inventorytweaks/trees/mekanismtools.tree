@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage14>
+							<itemObsidianSword id="mekanismtools:obsidiansword"/>
+						</swordDamage14>
+						<swordDamage9>
+							<itemGlowstoneSword id="mekanismtools:glowstonesword"/>
+						</swordDamage9>
+						<swordDamage8>
+							<itemOsmiumSword id="mekanismtools:osmiumsword"/>
+							<itemSteelSword id="mekanismtools:steelsword"/>
+						</swordDamage8>
+						<swordDamage6>
+							<itemBronzeSword id="mekanismtools:bronzesword"/>
+							<itemLapisLazuliSword id="mekanismtools:lapislazulisword"/>
+						</swordDamage6>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<paxel mergeChildren="true">
+				<miningTool>
+					<diggingTool>
+						<choppingTool>
+							<farmingTool>
+								<itemBronzePaxel id="mekanismtools:bronzepaxel"/>
+								<itemDiamondPaxel id="mekanismtools:diamondpaxel"/>
+								<itemGlowstonePaxel id="mekanismtools:glowstonepaxel"/>
+								<itemGoldPaxel id="mekanismtools:goldpaxel"/>
+								<itemIronPaxel id="mekanismtools:ironpaxel"/>
+								<itemLapisLazuliPaxel id="mekanismtools:lapislazulipaxel"/>
+								<itemObsidianPaxel id="mekanismtools:obsidianpaxel"/>
+								<itemOsmiumPaxel id="mekanismtools:osmiumpaxel"/>
+								<itemSteelPaxel id="mekanismtools:steelpaxel"/>
+								<itemStonePaxel id="mekanismtools:stonepaxel"/>
+								<itemWoodPaxel id="mekanismtools:woodpaxel"/>
+							</farmingTool>
+						</choppingTool>
+					</diggingTool>
+				</miningTool>
+			</paxel>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<ObsidianLevel>
+						<itemObsidianPickaxe id="mekanismtools:obsidianpickaxe"/>
+						<itemSteelPickaxe id="mekanismtools:steelpickaxe"/>
+					</ObsidianLevel>
+					<DiamondPickLevel>
+						<itemGlowstonePickaxe id="mekanismtools:glowstonepickaxe"/>
+						<itemLapisLazuliPickaxe id="mekanismtools:lapislazulipickaxe"/>
+						<itemOsmiumPickaxe id="mekanismtools:osmiumpickaxe"/>
+					</DiamondPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemBronzeShovel id="mekanismtools:bronzeshovel"/>
+					<itemGlowstoneShovel id="mekanismtools:glowstoneshovel"/>
+					<itemitem.LapisLazuliShovel.name id="mekanismtools:lapislazulishovel"/>
+					<itemObsidianShovel id="mekanismtools:obsidianshovel"/>
+					<itemOsmiumShovel id="mekanismtools:osmiumshovel"/>
+					<itemSteelShovel id="mekanismtools:steelshovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemBronzeAxe id="mekanismtools:bronzeaxe"/>
+					<itemGlowstoneAxe id="mekanismtools:glowstoneaxe"/>
+					<itemLapisLazuliAxe id="mekanismtools:lapislazuliaxe"/>
+					<itemObsidianAxe id="mekanismtools:obsidianaxe"/>
+					<itemOsmiumAxe id="mekanismtools:osmiumaxe"/>
+					<itemSteelAxe id="mekanismtools:steelaxe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemBronzeHoe id="mekanismtools:bronzehoe"/>
+					<itemGlowstoneHoe id="mekanismtools:glowstonehoe"/>
+					<itemLapisLazuliHoe id="mekanismtools:lapislazulihoe"/>
+					<itemObsidianHoe id="mekanismtools:obsidianhoe"/>
+					<itemOsmiumHoe id="mekanismtools:osmiumhoe"/>
+					<itemSteelHoe id="mekanismtools:steelhoe"/>
+				</hoe>
+			</farmingTool>
+		</tool>
+	</equipment>
+</stuff>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<StoneLevel>
+						<itemGoldenBonePickaxe id="nex:tool_pickaxe_bone"/>
+					</StoneLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemGoldenBoneShovel id="nex:tool_shovel_bone"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemGoldenBoneAxe id="nex:tool_axe_bone"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemGoldenBoneHoe id="nex:tool_hoe_bone"/>
+				</hoe>
+			</farmingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemBoneHelmet id="nex:armor_helmet_bone"/>
+					<itemSalamanderHideHelmet id="nex:armor_helmet_hide_salamander"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemBoneChestplate id="nex:armor_chestplate_bone"/>
+						<itemSalamanderHideChestplate id="nex:armor_chestplate_hide_salamander"/>
+						<itemSalamanderHideLeggings id="nex:armor_leggings_hide_salamander"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemBoneLeggings id="nex:armor_leggings_bone"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemBoneBoots id="nex:armor_boots_bone"/>
+					<itemSalamanderHideBoots id="nex:armor_boots_hide_salamander"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<fence>
+				<itemBasaltFence id="nex:fence_basalt"/>
+				<itemFieryNetherBrickFence id="nex:fence_brick_nether"/>
+				<itemQuartzFence id="nex:fence_vanilla"/>
+				<fenceGate>
+					<itemBasaltBrickFenceGate id="nex:fence_gate_basalt_brick"/>
+					<itemBasaltFenceGate id="nex:fence_gate_basalt_normal"/>
+					<itemBasaltPillarFenceGate id="nex:fence_gate_basalt_pillar"/>
+					<itemSmoothBasaltFenceGate id="nex:fence_gate_basalt_smooth"/>
+					<itemNetherBrickFenceGate id="nex:fence_gate_brick_nether"/>
+					<itemFieryNetherBrickFenceGate id="nex:fence_gate_brick_nether_fiery"/>
+					<itemGloomyNetherBrickFenceGate id="nex:fence_gate_brick_nether_gloomy"/>
+					<itemIcyNetherBrickFenceGate id="nex:fence_gate_brick_nether_icy"/>
+					<itemLivelyNetherBrickFenceGate id="nex:fence_gate_brick_nether_lively"/>
+					<itemRedNetherBrickFenceGate id="nex:fence_gate_brick_nether_red"/>
+					<itemQuartzFenceGate id="nex:fence_gate_quartz"/>
+				</fenceGate>
+			</fence>
+			<stoneWall>
+				<itemBasaltWall id="nex:wall_basalt"/>
+				<itemFieryNetherBrickWall id="nex:wall_brick_nether"/>
+				<itemQuartzWall id="nex:wall_vanilla"/>
+			</stoneWall>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemBasaltBrickStairs id="nex:stairs_basalt_brick"/>
+						<itemBasaltPillarStairs id="nex:stairs_basalt_pillar"/>
+						<itemBasaltStairs id="nex:stairs_basalt_normal"/>
+						<itemFieryNetherBrickStairs id="nex:stairs_brick_nether_fiery"/>
+						<itemGloomyNetherBrickStairs id="nex:stairs_brick_nether_gloomy"/>
+						<itemIcyNetherBrickStairs id="nex:stairs_brick_nether_icy"/>
+						<itemLivelyNetherBrickStairs id="nex:stairs_brick_nether_lively"/>
+						<itemRedNetherBrickStairs id="nex:stairs_brick_nether_red"/>
+						<itemSmoothBasaltStairs id="nex:stairs_basalt_smooth"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+</stuff>

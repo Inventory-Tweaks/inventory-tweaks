@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage6>
+							<itemEthericSword id="extrautils2:ethericsword"/>
+						</swordDamage6>
+					</sword>
+					<cursedSword>
+						<itemKikoku id="extrautils2:lawsword"/>
+					</cursedSword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<ObsidianLevel>
+						<itemDestructionPickaxe id="extrautils2:destructionpickaxe"/>
+					</ObsidianLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemErosionShovel id="extrautils2:erosionshovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemHealingAxe id="extrautils2:defoliageaxe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true">
+					<itemDiamondSickle id="extrautils2:sickle_diamond"/>
+					<itemGoldenSickle id="extrautils2:sickle_gold"/>
+					<itemIronSickle id="extrautils2:sickle_iron"/>
+					<itemStoneSickle id="extrautils2:sickle_stone"/>
+					<itemWoodenSickle id="extrautils2:sickle_wood"/>
+				</sickle>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemReversingHoe id="extrautils2:temporalhoe"/>
+				</hoe>
+				<otherFarmingTools>
+					<itemWateringCanEmpty id="extrautils2:watering_can" damage="1"/>
+					<itemWateringCan id="extrautils2:wateringcan"/>
+				</otherFarmingTools>
+			</farmingTool>
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
+				<itemPrecisionShears id="extrautils2:shears"/>
+			</shears>
+			<wands>
+				<itemSuperBuildersWand id="extrautils2:creativebuilderswand"/>
+				<itemBuildersWand id="extrautils2:itembuilderswand"/>
+				<itemCreativeBuildersWand id="extrautils2:itemcreativebuilderswand"/>
+				<itemDestructionWand id="extrautils2:itemdestructionwand"/>
+				<itemCreativeDestructionWand id="extrautils2:itemcreativedestructionwand"/>
+			</wands>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet2>
+					<itemSonarGoggles id="extrautils2:sonargoggles"/>
+				</helmet2>
+			</helmet>
+		</armor>
+		<baubles>
+			<rings>
+				<itemChickenWingRing id="extrautils2:chickenring" damage="0"/>
+				<itemRingoftheFlyingSquid id="extrautils2:chickenring" damage="1"/>
+				<itemAngelRing id="extrautils2:angelring"/>
+			</rings>
+		</baubles>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<stones>
+				<stone>
+					<rawStone>
+						<itemColoredStone id="extrautils2:colorstone"/>
+					</rawStone>
+				</stone>
+				<cobblestone>
+					<compressedCobblestone1xDict oreDictName="compressedCobblestone1x">
+						<itemCompressedCobblestone id="extrautils2:compressedcobblestone" damage="0"/>
+					</compressedCobblestone1xDict>
+					<compressedCobblestone2xDict oreDictName="compressedCobblestone2x">
+						<itemDoubleCompressedCobblestone id="extrautils2:compressedcobblestone" damage="1"/>
+					</compressedCobblestone2xDict>
+					<compressedCobblestone3xDict oreDictName="compressedCobblestone3x">
+						<itemTripleCompressedCobblestone id="extrautils2:compressedcobblestone" damage="2"/>
+					</compressedCobblestone3xDict>
+					<compressedCobblestone4xDict oreDictName="compressedCobblestone4x">
+						<itemQuadrupleCompressedCobblestone id="extrautils2:compressedcobblestone" damage="3"/>
+					</compressedCobblestone4xDict>
+					<compressedCobblestone5xDict oreDictName="compressedCobblestone5x">
+						<itemQuintupleCompressedCobblestone id="extrautils2:compressedcobblestone" damage="4"/>
+					</compressedCobblestone5xDict>
+					<compressedCobblestone6xDict oreDictName="compressedCobblestone6x">
+						<itemSextupleCompressedCobblestone id="extrautils2:compressedcobblestone" damage="5"/>
+					</compressedCobblestone6xDict>
+					<compressedCobblestone7xDict oreDictName="compressedCobblestone7x">
+						<itemSeptupleCompressedCobblestone id="extrautils2:compressedcobblestone" damage="6"/>
+					</compressedCobblestone7xDict>
+					<compressedCobblestone8xDict oreDictName="compressedCobblestone8x">
+						<itemOctupleCompressedCobblestone id="extrautils2:compressedcobblestone" damage="7"/>
+					</compressedCobblestone8xDict>
+					<itemColoredCobblestone id="extrautils2:color_stonebrick"/>
+				</cobblestone>
+			</stones>
+			<dirts>
+				<compressedDirt1xDict oreDictName="compressedDirt1x">
+					<itemCompressedDirt id="extrautils2:compresseddirt" damage="0"/>
+				</compressedDirt1xDict>
+				<compressedDirt2xDict oreDictName="compressedDirt2x">
+					<itemDoubleCompressedDirt id="extrautils2:compresseddirt" damage="1"/>
+				</compressedDirt2xDict>
+				<compressedDirt3xDict oreDictName="compressedDirt3x">
+					<itemTripleCompressedDirt id="extrautils2:compresseddirt" damage="2"/>
+				</compressedDirt3xDict>
+				<compressedDirt4xDict oreDictName="compressedDirt4x">
+					<itemQuadrupleCompressedDirt id="extrautils2:compresseddirt" damage="3"/>
+				</compressedDirt4xDict>
+			</dirts>
+			<sands>
+				<sand id="sand">
+					<compressedSand1xDict oreDictName="compressedSand1x">
+						<itemCompressedSand id="extrautils2:compressedsand" damage="0"/>
+					</compressedSand1xDict>
+					<compressedSand2xDict oreDictName="compressedSand2x">
+						<itemDoubleCompressedSand id="extrautils2:compressedsand" damage="1"/>
+					</compressedSand2xDict>
+				</sand>
+			</sands>
+			<gravel>
+				<compressedGravel1xDict oreDictName="compressedGravel1x">
+					<itemCompressedGravel id="extrautils2:compressedgravel" damage="0"/>
+				</compressedGravel1xDict>
+				<compressedGravel2xDict oreDictName="compressedGravel2x">
+					<itemDoubleCompressedGravel id="extrautils2:compressedgravel" damage="1"/>
+				</compressedGravel2xDict>
+			</gravel>
+			<netherBlock>
+				<glowstoneBlock>
+					<itemColoredGlowstone id="extrautils2:colorlight"/>
+				</glowstoneBlock>
+				<netherrack>
+					<compressedNetherrack>
+						<itemCompressedNetherrack id="extrautils2:compressednetherrack" damage="0"/>
+					</compressedNetherrack>
+					<doubleCompressedNetherrack>
+						<itemDoubleCompressedNetherrack id="extrautils2:compressednetherrack" damage="1"/>
+					</doubleCompressedNetherrack>
+					<tripleCompressedNetherrack>
+						<itemTripleCompressedNetherrack id="extrautils2:compressednetherrack" damage="2"/>
+					</tripleCompressedNetherrack>
+					<quadrupleCompressedNetherrack>
+						<itemQuadrupleCompressedNetherrack id="extrautils2:compressednetherrack" damage="3"/>
+					</quadrupleCompressedNetherrack>
+					<quintupleCompressedNetherrack>
+						<itemQuintupleCompressedNetherrack id="extrautils2:compressednetherrack" damage="4"/>
+					</quintupleCompressedNetherrack>
+					<sextupleCompressedNetherrack>
+						<itemSextupleCompressedNetherrack id="extrautils2:compressednetherrack" damage="5"/>
+					</sextupleCompressedNetherrack>
+				</netherrack>
+				<soulSand>
+					<itemColoredSoulSand id="extrautils2:color_hellsand"/>
+				</soulSand>
+			</netherBlock>
+			<grass>
+				<itemCursedEarth id="extrautils2:cursedearth" damage="0"/>
+			</grass>
+			<obsidian>
+				<itemColoredObsidian id="extrautils2:color_obsidian"/>
+			</obsidian>
+		</naturalBlock>
+		<manufacturedBlock>
+			<fence>
+				<itemMicroblockFence id="extrautils2:microblocks" damage="1"/>
+			</fence>
+			<stoneWall>
+				<itemMicroblockWall id="extrautils2:microblocks" damage="2"/>
+			</stoneWall>
+			<constructionBlock>
+				<bricks>
+					<stoneBricks>
+						<itemColoredBricks id="extrautils2:colorstonebrick"/>
+					</stoneBricks>
+				</bricks>
+				<glass>
+					<itemHeartGlass id="extrautils2:decorativeblock2" damage="8"/>
+				</glass>
+				<notch>
+					<itemPipeJacket id="extrautils2:microblocks" damage="0"/>
+				</notch>
+				<sphere>
+					<itemImpossibleObject id="extrautils2:microblocks" damage="3"/>
+				</sphere>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<lighting>
+				<torch>
+					<itemMagnumTorch id="extrautils2:magnumtorch"/>
+				</torch>
+				<redstoneLamp>
+					<itemColoredRedstoneLampWhiteFrequency id="extrautils2:color_redstonelight" damage="0"/>
+					<itemColoredRedstoneLampOrangeFrequency id="extrautils2:color_redstonelight" damage="1"/>
+					<itemColoredRedstoneLampMagentaFrequency id="extrautils2:color_redstonelight" damage="2"/>
+					<itemColoredRedstoneLampLightBlueFrequency id="extrautils2:color_redstonelight" damage="3"/>
+					<itemColoredRedstoneLampYellowFrequency id="extrautils2:color_redstonelight" damage="4"/>
+					<itemColoredRedstoneLampLimeFrequency id="extrautils2:color_redstonelight" damage="5"/>
+					<itemColoredRedstoneLampPinkFrequency id="extrautils2:color_redstonelight" damage="6"/>
+					<itemColoredRedstoneLampGrayFrequency id="extrautils2:color_redstonelight" damage="7"/>
+					<itemColoredRedstoneLampLightGrayFrequency id="extrautils2:color_redstonelight" damage="8"/>
+					<itemColoredRedstoneLampCyanFrequency id="extrautils2:color_redstonelight" damage="9"/>
+					<itemColoredRedstoneLampPurpleFrequency id="extrautils2:color_redstonelight" damage="10"/>
+					<itemColoredRedstoneLampBlueFrequency id="extrautils2:color_redstonelight" damage="11"/>
+					<itemColoredRedstoneLampBrownFrequency id="extrautils2:color_redstonelight" damage="12"/>
+					<itemColoredRedstoneLampGreenFrequency id="extrautils2:color_redstonelight" damage="13"/>
+					<itemColoredRedstoneLampRedFrequency id="extrautils2:color_redstonelight" damage="14"/>
+					<itemColoredRedstoneLampBlackFrequency id="extrautils2:color_redstonelight" damage="15"/>
+				</redstoneLamp>
+				<mobWarding id="enderio:blockspawnguard">
+					<itemMagnumTorch id="extrautils2:magnumtorch"/>
+				</mobWarding>
+			</lighting>
+			<itemRedstoneClock id="extrautils2:timer"/>
+			<resourceTransfer>
+				<groundItemCollector>
+					<itemEnderCollector id="extrautils2:endercollector"/>
+				</groundItemCollector>
+				<euPipes>
+					<itemTransferPipe id="extrautils2:pipe"/>
+					<itemTransferNodeItems id="extrautils2:grocket" damage="0"/>
+					<itemRetrievalNodeItems id="extrautils2:grocket" damage="3"/>
+					<itemTransferNodeFluids id="extrautils2:grocket" damage="2"/>
+					<itemRetrievalNodeFluids id="extrautils2:grocket" damage="4"/>
+				</euPipes>
+				<conveyerBelts>
+					<itemConveyorBelt id="extrautils2:conveyor"/>
+				</conveyerBelts>
+			</resourceTransfer>
+			<generators>
+				<fuelGenerators>
+					<itemextrautils2_Survgenerator_0 id="extrautils2:generator" damage="0"/>
+					<itemextrautils2_Survgenerator.8_0 id="extrautils2:generator.8" damage="0"/>
+					<itemextrautils2_Survgenerator.64_0 id="extrautils2:generator.64" damage="0"/>
+					<itemextrautils2_Fuelgenerator_1 id="extrautils2:generator" damage="1"/>
+					<itemextrautils2_Fuelgenerator.8_1 id="extrautils2:generator.8" damage="1"/>
+					<itemextrautils2_Fuelgenerator.64_1 id="extrautils2:generator.64" damage="1"/>
+					<itemextrautils2_Fuel2generator_10 id="extrautils2:generator" damage="10"/>
+					<itemextrautils2_Fuel2generator.8_10 id="extrautils2:generator.8" damage="10"/>
+					<itemextrautils2_Fuel2generator.64_10 id="extrautils2:generator.64" damage="10"/>
+				</fuelGenerators>
+				<lavaGenerators>
+					<itemextrautils2_Lavagenerator_2 id="extrautils2:generator" damage="2"/>
+					<itemextrautils2_Lavagenerator.8_2 id="extrautils2:generator.8" damage="2"/>
+					<itemextrautils2_Lavagenerator.64_2 id="extrautils2:generator.64" damage="2"/>
+				</lavaGenerators>
+				<foodGenerators>
+					<itemextrautils2_Foodgenerator_5 id="extrautils2:generator" damage="5"/>
+					<itemextrautils2_Foodgenerator.8_5 id="extrautils2:generator.8" damage="5"/>
+					<itemextrautils2_Foodgenerator.64_5 id="extrautils2:generator.64" damage="5"/>
+				</foodGenerators>
+				<enderGenerators>
+					<itemextrautils2_Endergenerator_3 id="extrautils2:generator" damage="3"/>
+					<itemextrautils2_Endergenerator.8_3 id="extrautils2:generator.8" damage="3"/>
+					<itemextrautils2_Endergenerator.64_3 id="extrautils2:generator.64" damage="3"/>
+				</enderGenerators>
+				<weirdGenerators>
+					<itemextrautils2_Heatgenerator_4 id="extrautils2:generator" damage="4"/>
+					<itemextrautils2_Heatgenerator.8_4 id="extrautils2:generator.8" damage="4"/>
+					<itemextrautils2_Heatgenerator.64_4 id="extrautils2:generator.64" damage="4"/>
+					<itemextrautils2_Stargenerator_11 id="extrautils2:generator" damage="11"/>
+					<itemextrautils2_Stargenerator.8_11 id="extrautils2:generator.8" damage="11"/>
+					<itemextrautils2_Stargenerator.64_11 id="extrautils2:generator.64" damage="11"/>
+					<itemextrautils2_Pinkgenerator_9 id="extrautils2:generator" damage="9"/>
+					<itemextrautils2_Pinkgenerator.8_9 id="extrautils2:generator.8" damage="9"/>
+					<itemextrautils2_Pinkgenerator.64_9 id="extrautils2:generator.64" damage="9"/>
+					<itemextrautils2_Potiongenerator_6 id="extrautils2:generator" damage="6"/>
+					<itemextrautils2_Potiongenerator.8_6 id="extrautils2:generator.8" damage="6"/>
+					<itemextrautils2_Potiongenerator.64_6 id="extrautils2:generator.64" damage="6"/>
+					<itemextrautils2_TNTgenerator_8 id="extrautils2:generator" damage="8"/>
+					<itemextrautils2_TNTgenerator.8_8 id="extrautils2:generator.8" damage="8"/>
+					<itemextrautils2_TNTgenerator.64_8 id="extrautils2:generator.64" damage="8"/>
+				</weirdGenerators>
+				<solarGenerators>
+					<itemextrautils2_Solargenerator_7 id="extrautils2:generator" damage="7"/>
+					<itemextrautils2_Solargenerator.8_7 id="extrautils2:generator.8" damage="7"/>
+					<itemextrautils2_Solargenerator.64_7 id="extrautils2:generator.64" damage="7"/>
+				</solarGenerators>
+			</generators>
+			<machines>
+				<poweredCrafting>
+					<itemQEDQuantumEnrichmentDevice id="extrautils2:endconstructor" damage="0"/>
+					<itemEnder-FluxCrystal id="extrautils2:endconstructor" damage="2"/>
+				</poweredCrafting>
+				<mobKillers>
+					<itemWoodenSpike id="extrautils2:spike_base_wood"/>
+					<itemIronSpike id="extrautils2:spike_base"/>
+					<itemGoldenSpike id="extrautils2:spike_base_gold"/>
+					<itemDiamondSpike id="extrautils2:spike_base_diamond"/>
+					<itemPeacefulTable id="extrautils2:peaceful_table_top"/>
+				</mobKillers>
+				<poweredMining>
+					<itemEnderQuarry id="extrautils2:enderquarry"/>
+				</poweredMining>
+				<poweredFluids>
+					<itemEnder-ThermicPump id="extrautils2:enderthermicpump"/>
+				</poweredFluids>
+			</machines>
+			<machineupgrades>
+				<transportUpgrades>
+					<euPipeUpgrades>
+						<itemUpgradeBase id="extrautils2:ingredients" damage="9"/>
+						<itemUpgradeSpeed id="extrautils2:ingredients" damage="6"/>
+						<itemUpgradeSpeedMagical id="extrautils2:ingredients" damage="15"/>
+						<itemUpgradeSpeedUltimate id="extrautils2:ingredients" damage="16"/>
+						<itemUpgradeMining id="extrautils2:ingredients" damage="8"/>
+						<itemUpgradeStack id="extrautils2:ingredients" damage="7"/>
+					</euPipeUpgrades>
+				</transportUpgrades>
+				<quarryUpgrades>
+					<itemEnder-Marker id="extrautils2:endmarker" damage="0"/>
+					<itemEnderQuarryFortuneIUpgrade id="extrautils2:enderquarryupgrade" damage="3"/>
+					<itemEnderQuarryFortuneIIUpgrade id="extrautils2:enderquarryupgrade" damage="4"/>
+					<itemEnderQuarryFortuneIIIUpgrade id="extrautils2:enderquarryupgrade" damage="5"/>
+					<itemEnderQuarryPumpUpgrade id="extrautils2:enderquarryupgrade" damage="9"/>
+					<itemEnderQuarrySilkTouchUpgrade id="extrautils2:enderquarryupgrade" damage="2"/>
+					<itemEnderQuarrySpeedIUpgrade id="extrautils2:enderquarryupgrade" damage="6"/>
+					<itemEnderQuarrySpeedIIUpgrade id="extrautils2:enderquarryupgrade" damage="7"/>
+					<itemEnderQuarrySpeedIIIUpgrade id="extrautils2:enderquarryupgrade" damage="8"/>
+					<itemEnderQuarryUpgradeBase id="extrautils2:enderquarryupgrade" damage="0"/>
+					<itemEnderQuarryWorldHoleUpgrade id="extrautils2:enderquarryupgrade" damage="1"/>
+				</quarryUpgrades>
+			</machineupgrades>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<ingot>
+				<ingotBedrockium id="extrautils2:bedrockiumingot"/>
+			</ingot>
+		</miningResources>
+		<paint>
+			<paintbrushes>
+				<itemPaintbrush id="extrautils2:paintbrush"/>
+			</paintbrushes>
+		</paint>
+	</resources>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<bigChest id="extrautils2:chestfull"/>
+					<miniChest id="extrautils2:chestmini"/>
+				</chests>
+				<cabinets>
+					<itemFilingCabinet id="extrautils2:filing"/>
+				</cabinets>
+				<portableStorage>
+					<itemGoldenBagofHolding id="extrautils2:bagofholding"/>
+				</portableStorage>
+				<voidStorage>
+					<itemTrashCan id="extrautils2:trashcan"/>
+				</voidStorage>
+			</storage>
+			<readableBooks>
+				<itemextrautils22Manual id="extrautils2:book"/>
+			</readableBooks>
+			<mobHolder>
+				<itemGoldenLasso id="extrautils2:golden_lasso"/>
+			</mobHolder>
+		</utility>
+		<fluidStorage>
+			<itemStoneDrum id="extrautils2:drum" damage="0"/>
+			<itemIronDrum id="extrautils2:drum" damage="1"/>
+			<itemReinforcedDrum id="extrautils2:drum" damage="2"/>
+			<itemDemonDrum id="extrautils2:drum" damage="3"/>
+			<itemCreativeDrum id="extrautils2:drum" damage="4"/>
+		</fluidStorage>
+		<parts>
+			<mechanicalParts>
+				<coils>
+					<itemHeatingCoil id="extrautils2:heatingelement" damage="0"/>
+				</coils>
+			</mechanicalParts>
+		</parts>
+		<decoration>
+			<bookShelf>
+				<itemMagicalWood id="extrautils2:decorativesolidwood" damage="1"/>
+			</bookShelf>
+		</decoration>
+		<plant>
+			<seed>
+				<itemEnder-LilySeeds id="extrautils2:enderlilly"/>
+			</seed>
+		</plant>
+	</item>
+</stuff>

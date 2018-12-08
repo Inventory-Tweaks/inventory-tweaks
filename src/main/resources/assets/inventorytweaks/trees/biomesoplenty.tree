@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage9>
+							<itemAmethystSword id="biomesoplenty:swordamethyst"/>
+						</swordDamage9>
+						<swordDamage4>
+							<itemMuddySword id="biomesoplenty:swordmud"/>
+						</swordDamage4>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemAmethystPickaxe id="biomesoplenty:pickaxeamethyst"/>
+					</CobaltPickLevel>
+					<StoneLevel>
+						<itemMuddyPickaxe id="biomesoplenty:pickaxemud"/>
+					</StoneLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemAmethystShovel id="biomesoplenty:shovelamethyst"/>
+					<itemMuddyShovel id="biomesoplenty:shovelmud"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemAmethystAxe id="biomesoplenty:axeamethyst"/>
+					<itemMuddyAxe id="biomesoplenty:axemud"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<scythe class="Item" data="{ToolClass : &quot;scythe&quot;}" mergeChildren="true">
+					<itemAmethystScythe id="biomesoplenty:scytheamethyst"/>
+					<itemDiamondScythe id="biomesoplenty:scythediamond"/>
+					<itemGoldenScythe id="biomesoplenty:scythegold"/>
+					<itemIronScythe id="biomesoplenty:scytheiron"/>
+					<itemMudScythe id="biomesoplenty:scythemud"/>
+					<itemStoneScythe id="biomesoplenty:scythestone"/>
+					<itemWoodenScythe id="biomesoplenty:scythewood"/>
+				</scythe>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemAmethystHoe id="biomesoplenty:hoeamethyst"/>
+					<itemMuddyHoe id="biomesoplenty:hoemud"/>
+				</hoe>
+			</farmingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmet3>
+					<itemAmethystHelmet id="biomesoplenty:helmetamethyst"/>
+				</helmet3>
+				<helmet1>
+					<itemMuddyHelmet id="biomesoplenty:helmetmud"/>
+				</helmet1>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate8>
+						<itemAmethystChestplate id="biomesoplenty:chestplateamethyst"/>
+					</chestplate8>
+					<chestplate1>
+						<itemMuddyChestplate id="biomesoplenty:chestplatemud"/>
+					</chestplate1>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggings8>
+					<itemAmethystLeggings id="biomesoplenty:leggingsamethyst"/>
+				</leggings8>
+				<leggings1>
+					<itemMuddyLeggings id="biomesoplenty:leggingsmud"/>
+				</leggings1>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<boots3>
+					<itemAmethystBoots id="biomesoplenty:bootsamethyst"/>
+				</boots3>
+				<boots1>
+					<itemMuddyBoots id="biomesoplenty:bootsmud"/>
+				</boots1>
+				<boots0>
+					<itemWadingBoots id="biomesoplenty:wadingboots"/>
+				</boots0>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<dirts>
+				<itemBoPDirt id="biomesoplenty:newbopdirt"/>
+				<itemDriedDirt id="biomesoplenty:drieddirt" damage="0"/>
+				<itemHardenedDirt id="biomesoplenty:harddirt" damage="0"/>
+			</dirts>
+			<netherBlock>
+				<netherrack>
+					<itemOvergrownNetherrack id="biomesoplenty:overgrownnetherrack"/>
+				</netherrack>
+			</netherBlock>
+			<oreBlock>
+				<oreBiomeEssenceOre>
+					<oreBiomeEssenceOreItem id="biomesoplenty:biomeblock" damage="0"/>
+				</oreBiomeEssenceOre>
+				<oreEnderAmethystOreItem id="biomesoplenty:gemore" damage="0"/>
+			</oreBlock>
+			<grass>
+				<itemLoamyGrassBlock id="biomesoplenty:newbopgrass" damage="0"/>
+				<itemLongGrassBlock id="biomesoplenty:longgrass" damage="0"/>
+				<itemOriginGrassBlock id="biomesoplenty:origingrass" damage="0"/>
+				<itemSandyGrassBlock id="biomesoplenty:newbopgrass" damage="1"/>
+				<itemSiltyGrassBlock id="biomesoplenty:newbopgrass" damage="2"/>
+				<itemSpectralMoss id="biomesoplenty:bopgrass" damage="0"/>
+				<itemSmolderingGrassBlock id="biomesoplenty:bopgrass" damage="1"/>
+			</grass>
+		</naturalBlock>
+		<manufacturedBlock>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemMudBricksStairs id="biomesoplenty:mudbricksstairs"/>
+					</otherStairs>
+				</stairs>
+				<slabs>
+					<doubleSlab>
+						<woodenDoubleSlabs>
+							<itemCherryWoodSlab id="biomesoplenty:woodendoubleslab1"/>
+							<itemHellbarkWoodSlab id="biomesoplenty:woodendoubleslab2"/>
+						</woodenDoubleSlabs>
+					</doubleSlab>
+				</slabs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<resources>
+		<miningResources>
+			<oreBlock>
+				<blockAmethystDict oreDictName="blockAmethyst">
+					<itemBlockofAmethyst id="biomesoplenty:gemore" damage="1"/>
+				</blockAmethystDict>
+			</oreBlock>
+			<gem>
+				<gemEnderAmethyst>
+					<itemEnderAmethyst id="biomesoplenty:gems" damage="0"/>
+				</gemEnderAmethyst>
+			</gem>
+		</miningResources>
+	</resources>
+	<item>
+		<bucket>
+			<itemBiomesOPlenty_bopBucket id="biomesoplenty:bopbucket"/>
+		</bucket>
+		<decoration>
+			<musicDisc>
+				<itemMusicDisc id="biomesoplenty:record_corruption"/>
+				<itemMusicDisc id="biomesoplenty:record_wanderer"/>
+			</musicDisc>
+			<musicDisc>
+				<itemMusicDisc id="biomesoplenty:record_corruption"/>
+				<itemMusicDisc id="biomesoplenty:record_wanderer"/>
+			</musicDisc>
+		</decoration>
+		<food>
+			<edibleFood>
+				<fruit>
+					<berry>
+						<itemBerry id="biomesoplenty:food" damage="0"/>
+					</berry>
+				</fruit>
+				<rawFood>
+					<mushroom>
+						<itemBiomesOPlenty_mushrooms id="biomesoplenty:mushrooms"/>
+					</mushroom>
+				</rawFood>
+			</edibleFood>
+		</food>
+		<plant>
+			<flower>
+				<flowerWhite>
+					<itemLilyoftheValley id="biomesoplenty:flowers2" damage="1"/>
+					<itemWhiteAnemone id="biomesoplenty:flowers" damage="9"/>
+				</flowerWhite>
+				<flowerOrange>
+					<itemBurningBlossom id="biomesoplenty:flowers2" damage="2"/>
+					<itemOrangeCosmos id="biomesoplenty:flowers" damage="5"/>
+				</flowerOrange>
+				<flowerMagenta>
+					<itemWildflower id="biomesoplenty:flowers" damage="7"/>
+				</flowerMagenta>
+				<flowerLightBlue>
+					<itemIcyIris id="biomesoplenty:flowers2" damage="7"/>
+				</flowerLightBlue>
+				<flowerYellow>
+					<itemGoldenrod id="biomesoplenty:flowers2" damage="4"/>
+				</flowerYellow>
+				<flowerPink>
+					<itemPinkDaffodil id="biomesoplenty:flowers" damage="6"/>
+					<itemPinkHibiscus id="biomesoplenty:flowers2" damage="0"/>
+				</flowerPink>
+				<flowerLightGray>
+					<itemDandelionPuff id="biomesoplenty:flowers" damage="15"/>
+				</flowerLightGray>
+				<flowerCyan>
+					<itemSwampflower id="biomesoplenty:flowers" damage="1"/>
+				</flowerCyan>
+				<flowerPurple>
+					<itemLavender id="biomesoplenty:flowers2" damage="3"/>
+					<itemViolet id="biomesoplenty:flowers" damage="8"/>
+				</flowerPurple>
+				<flowerBlue>
+					<itemBluebells id="biomesoplenty:flowers2" damage="5"/>
+				</flowerBlue>
+				<flowerRed>
+					<itemRose id="biomesoplenty:flowers2" damage="8"/>
+				</flowerRed>
+				<flowerBlack>
+					<itemDeathbloom id="biomesoplenty:flowers" damage="2"/>
+				</flowerBlack>
+				<flowerDecorative>
+					<itemClover id="biomesoplenty:flowers" damage="0"/>
+					<itemGlowflower id="biomesoplenty:flowers" damage="3"/>
+					<itemWaterlily id="biomesoplenty:flowers" damage="10"/>
+					<itemEnderlotus id="biomesoplenty:flowers" damage="11"/>
+					<itemBromeliad id="biomesoplenty:flowers" damage="12"/>
+					<itemEyebulb id="biomesoplenty:flowers" damage="13"/>
+					<itemMinersDelight id="biomesoplenty:flowers2" damage="6"/>
+				</flowerDecorative>
+			</flower>
+		</plant>
+	</item>
+</stuff>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<tool>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<Level6>
+						<itemBlueDiamondPickaxe id="extraplanets:blue_diamond_pickaxe"/>
+						<itemGreenDiamondPickaxe id="extraplanets:green_diamond_pickaxe"/>
+						<itemPurpleDiamondPickaxe id="extraplanets:purple_diamond_pickaxe"/>
+						<itemRedDiamondPickaxe id="extraplanets:red_diamond_pickaxe"/>
+						<itemYellowDiamondPickaxe id="extraplanets:yellow_diamond_pickaxe"/>
+					</Level6>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemBlueDiamondShovel id="extraplanets:blue_diamond_shovel"/>
+					<itemGreenDiamondShovel id="extraplanets:green_diamond_shovel"/>
+					<itemPurpleDiamondShovel id="extraplanets:purple_diamond_shovel"/>
+					<itemRedDiamondShovel id="extraplanets:red_diamond_shovel"/>
+					<itemYellowDiamondShovel id="extraplanets:yellow_diamond_shovel"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemBlueDiamondAxe id="extraplanets:blue_diamond_axe"/>
+					<itemGreenDiamondAxe id="extraplanets:green_diamond_axe"/>
+					<itemPurpleDiamondAxe id="extraplanets:purple_diamond_axe"/>
+					<itemRedDiamondAxe id="extraplanets:red_diamond_axe"/>
+					<itemYellowDiamondAxe id="extraplanets:yellow_diamond_axe"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemBlueDiamondHoe id="extraplanets:blue_diamond_hoe"/>
+					<itemGreenDiamondHoe id="extraplanets:green_diamond_hoe"/>
+					<itemPurpleDiamondHoe id="extraplanets:purple_diamond_hoe"/>
+					<itemRedDiamondHoe id="extraplanets:red_diamond_hoe"/>
+					<itemYellowDiamondHoe id="extraplanets:yellow_diamond_hoe"/>
+				</hoe>
+			</farmingTool>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemBlueDiamondHelmet id="extraplanets:blue_diamond_helmet"/>
+					<itemGreenDiamondHelmet id="extraplanets:green_diamond_helmet"/>
+					<itemPurpleDiamondHelmet id="extraplanets:purple_diamond_helmet"/>
+					<itemRedDiamondHelmet id="extraplanets:red_diamond_helmet"/>
+					<itemTier1SpaceSuitHelmet id="extraplanets:tier1_space_suit_helmet"/>
+					<itemTier1Un-PreparedSpaceSuitHelmet id="extraplanets:tier1_un_prepared_space_suit_helmet"/>
+					<itemTier2SpaceSuitHelmet id="extraplanets:tier2_space_suit_helmet"/>
+					<itemTier2Un-PreparedSpaceSuitHelmet id="extraplanets:tier2_un_prepared_space_suit_helmet"/>
+					<itemTier3SpaceSuitHelmet id="extraplanets:tier3_space_suit_helmet"/>
+					<itemTier3Un-PreparedSpaceSuitHelmet id="extraplanets:tier3_un_prepared_space_suit_helmet"/>
+					<itemTier4SpaceSuitHelmet id="extraplanets:tier4_space_suit_helmet"/>
+					<itemTier4Un-PreparedSpaceSuitHelmet id="extraplanets:tier4_un_prepared_space_suit_helmet"/>
+					<itemYellowDiamondHelmet id="extraplanets:yellow_diamond_helmet"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplateUnsorted>
+						<itemBlueDiamondChestplate id="extraplanets:blue_diamond_chest"/>
+						<itemGreenDiamondChestplate id="extraplanets:green_diamond_chest"/>
+						<itemPurpleDiamondChestplate id="extraplanets:purple_diamond_chest"/>
+						<itemRedDiamondChestplate id="extraplanets:red_diamond_chest"/>
+						<itemTier1SpaceSuitChestplate id="extraplanets:tier1_space_suit_chest"/>
+						<itemTier1SpaceSuitJetpackChestplate id="extraplanets:tier1_space_suit_jetpack_chest"/>
+						<itemTier1Un-PreparedSpaceSuitChestplate id="extraplanets:tier1_un_prepared_space_suit_chest"/>
+						<itemTier2SpaceSuitChestplate id="extraplanets:tier2_space_suit_chest"/>
+						<itemTier2SpaceSuitJetpackChestplate id="extraplanets:tier2_space_suit_jetpack_chest"/>
+						<itemTier2Un-PreparedSpaceSuitChestplate id="extraplanets:tier2_un_prepared_space_suit_chest"/>
+						<itemTier3SpaceSuitChestplate id="extraplanets:tier3_space_suit_chest"/>
+						<itemTier3SpaceSuitJetpackChestplate id="extraplanets:tier3_space_suit_jetpack_chest"/>
+						<itemTier3Un-PreparedSpaceSuitChestplate id="extraplanets:tier3_un_prepared_space_suit_chest"/>
+						<itemTier4SpaceSuitChestplate id="extraplanets:tier4_space_suit_chest"/>
+						<itemTier4SpaceSuitJetpackChestplate id="extraplanets:tier4_space_suit_jetpack_chest"/>
+						<itemTier4Un-PreparedSpaceSuitChestplate id="extraplanets:tier4_un_prepared_space_suit_chest"/>
+						<itemYellowDiamondChestplate id="extraplanets:yellow_diamond_chest"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemBlueDiamondLeggings id="extraplanets:blue_diamond_legings"/>
+					<itemGreenDiamondLeggings id="extraplanets:green_diamond_legings"/>
+					<itemPurpleDiamondLeggings id="extraplanets:purple_diamond_legings"/>
+					<itemRedDiamondLeggings id="extraplanets:red_diamond_legings"/>
+					<itemTier1SpaceSuitLeggings id="extraplanets:tier1_space_suit_legings"/>
+					<itemTier1Un-PreparedSpaceSuitLeggings id="extraplanets:tier1_un_prepared_space_suit_legings"/>
+					<itemTier2SpaceSuitLeggings id="extraplanets:tier2_space_suit_legings"/>
+					<itemTier2Un-PreparedSpaceSuitLeggings id="extraplanets:tier2_un_prepared_space_suit_legings"/>
+					<itemTier3SpaceSuitLeggings id="extraplanets:tier3_space_suit_legings"/>
+					<itemTier3Un-PreparedSpaceSuitLeggings id="extraplanets:tier3_un_prepared_space_suit_legings"/>
+					<itemTier4SpaceSuitLeggings id="extraplanets:tier4_space_suit_legings"/>
+					<itemTier4Un-PreparedSpaceSuitLeggings id="extraplanets:tier4_un_prepared_space_suit_legings"/>
+					<itemYellowDiamondLeggings id="extraplanets:yellow_diamond_legings"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemBlueDiamondBoots id="extraplanets:blue_diamond_boots"/>
+					<itemGreenDiamondBoots id="extraplanets:green_diamond_boots"/>
+					<itemPurpleDiamondBoots id="extraplanets:purple_diamond_boots"/>
+					<itemRedDiamondBoots id="extraplanets:red_diamond_boots"/>
+					<itemTier1SpaceSuitBoots id="extraplanets:tier1_space_suit_boots"/>
+					<itemTier1SpaceSuitGravityBoots id="extraplanets:tier1_space_suit_gravity_boots"/>
+					<itemTier1Un-PreparedSpaceSuitBoots id="extraplanets:tier1_un_prepared_space_suit_boots"/>
+					<itemTier2SpaceSuitBoots id="extraplanets:tier2_space_suit_boots"/>
+					<itemTier2SpaceSuitGravityBoots id="extraplanets:tier2_space_suit_gravity_boots"/>
+					<itemTier2Un-PreparedSpaceSuitBoots id="extraplanets:tier2_un_prepared_space_suit_boots"/>
+					<itemTier3SpaceSuitBoots id="extraplanets:tier3_space_suit_boots"/>
+					<itemTier3SpaceSuitGravityBoots id="extraplanets:tier3_space_suit_gravity_boots"/>
+					<itemTier3Un-PreparedSpaceSuitBoots id="extraplanets:tier3_un_prepared_space_suit_boots"/>
+					<itemTier4SpaceSuitBoots id="extraplanets:tier4_space_suit_boots"/>
+					<itemTier4SpaceSuitGravityBoots id="extraplanets:tier4_space_suit_gravity_boots"/>
+					<itemTier4Un-PreparedSpaceSuitBoots id="extraplanets:tier4_un_prepared_space_suit_boots"/>
+					<itemYellowDiamondBoots id="extraplanets:yellow_diamond_boots"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemCeresStoneBricksStairs id="extraplanets:ceres_stairs_stone_bricks"/>
+						<itemCeresStoneStairs id="extraplanets:ceres_stairs_stone"/>
+						<itemCeresSubSurfaceStairs id="extraplanets:ceres_stairs_sub_surface"/>
+						<itemCeresSurfaceStairs id="extraplanets:ceres_stairs_surface"/>
+						<itemErisStoneBricksStairs id="extraplanets:eris_stairs_stone_bricks"/>
+						<itemErisStoneStairs id="extraplanets:eris_stairs_stone"/>
+						<itemErisSubSurfaceStairs id="extraplanets:eris_stairs_sub_surface"/>
+						<itemErisSurfaceStairs id="extraplanets:eris_stairs_surface"/>
+						<itemJupiterStoneBricksStairs id="extraplanets:jupiter_stairs_stone_bricks"/>
+						<itemJupiterStoneStairs id="extraplanets:jupiter_stairs_stone"/>
+						<itemJupiterSubSurfaceStairs id="extraplanets:jupiter_stairs_sub_surface"/>
+						<itemJupiterSurfaceStairs id="extraplanets:jupiter_stairs_surface"/>
+						<itemMercuryStoneBricksStairs id="extraplanets:mercury_stairs_stone_bricks"/>
+						<itemMercuryStoneStairs id="extraplanets:mercury_stairs_stone"/>
+						<itemMercurySubSurfaceStairs id="extraplanets:mercury_stairs_sub_surface"/>
+						<itemMercurySurfaceStairs id="extraplanets:mercury_stairs_surface"/>
+						<itemNeptuneStoneBricksStairs id="extraplanets:neptune_stairs_stone_bricks"/>
+						<itemNeptuneStoneStairs id="extraplanets:neptune_stairs_stone"/>
+						<itemNeptuneSubSurfaceStairs id="extraplanets:neptune_stairs_sub_surface"/>
+						<itemNeptuneSurfaceStairs id="extraplanets:neptune_stairs_surface"/>
+						<itemPlutoStoneBricksStairs id="extraplanets:pluto_stairs_stone_bricks"/>
+						<itemPlutoStoneStairs id="extraplanets:pluto_stairs_stone"/>
+						<itemPlutoSubSurfaceStairs id="extraplanets:pluto_stairs_sub_surface"/>
+						<itemPlutoSurfaceStairs id="extraplanets:pluto_stairs_surface"/>
+						<itemSaturnStoneBricksStairs id="extraplanets:saturn_stairs_stone_bricks"/>
+						<itemSaturnStoneStairs id="extraplanets:saturn_stairs_stone"/>
+						<itemSaturnSubSurfaceStairs id="extraplanets:saturn_stairs_sub_surface"/>
+						<itemSaturnSurfaceStairs id="extraplanets:saturn_stairs_surface"/>
+						<itemUranusStoneBricksStairs id="extraplanets:uranus_stairs_stone_bricks"/>
+						<itemUranusStoneStairs id="extraplanets:uranus_stairs_stone"/>
+						<itemUranusSubSurfaceStairs id="extraplanets:uranus_stairs_sub_surface"/>
+						<itemUranusSurfaceStairs id="extraplanets:uranus_stairs_surface"/>
+					</otherStairs>
+				</stairs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<plant>
+			<groundCover>
+				<itemKepler22bBlueShortGrass id="extraplanets:kepler22b_flowers"/>
+			</groundCover>
+		</plant>
+	</item>
+</stuff>

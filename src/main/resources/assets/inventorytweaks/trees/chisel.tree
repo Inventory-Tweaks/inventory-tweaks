@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<munition>
+				<itemBallOMoss id="chisel:ballomoss"/>
+				<itemCloudInABottle id="chisel:cloudinabottle"/>
+				<itemSmashingRock id="chisel:smashingrock"/>
+			</munition>
+		</weapon>
+		<tool>
+			<wands>
+				<itemEnderOffsetWand id="chisel:offsettool"/>
+			</wands>
+			<chisel>
+				<itemiChisel id="chisel:chisel_hitech"/>
+				<itemDiamondChisel id="chisel:chisel_diamond"/>
+				<itemDiamondChisel id="chisel:diamondchisel"/>
+				<itemObsidianChisel id="chisel:obsidianchisel"/>
+				<itemObsidianChisel id="chisel:chisel_obsidian"/>
+				<itemChisel id="chisel:chisel"/>
+				<itemChisel id="chisel:chisel_iron"/>
+			</chisel>
+		</tool>
+	</equipment>
+	<block>
+		<naturalBlock>
+			<stones>
+				<stone>
+					<rawStone>
+						<itemStoneSnakestone id="chisel:stone_snakestone"/>
+						<itemLimestone id="chisel:limestone"/>
+						<itemMarble id="chisel:marble"/>
+					</rawStone>
+				</stone>
+				<cobblestone>
+					<itemCobblestone id="chisel:cobblestone"/>
+				</cobblestone>
+				<mossStone>
+					<itemMossyCobblestone id="chisel:mossy_cobblestone"/>
+				</mossStone>
+				<endStone>
+					<itemEndStone id="chisel:end_stone"/>
+					<itemPurpurBlock id="chisel:purpur"/>
+					<itemPurpurBlock id="chisel:purpur1"/>
+					<itemPurpurBlock id="chisel:purpur2"/>
+				</endStone>
+			</stones>
+			<dirts>
+				<itemDirt id="chisel:dirt"/>
+			</dirts>
+			<sands>
+				<sandstone>
+					<itemSandstone id="chisel:sandstone"/>
+					<itemSandstone2 id="chisel:sandstone2"/>
+					<itemSandstoneScribbles id="chisel:sandstone_scribbles"/>
+					<itemSandSnakestone id="chisel:sand_snakestone"/>
+				</sandstone>
+			</sands>
+			<netherBlock>
+				<glowstoneBlock>
+					<itemGlowstone id="chisel:glowstone"/>
+				</glowstoneBlock>
+				<netherrack>
+					<itemNetherrack id="chisel:netherrack"/>
+				</netherrack>
+			</netherBlock>
+			<ice>
+				<itemIce id="chisel:ice"/>
+				<itemIcePillar id="chisel:ice_pillar"/>
+				<itemPackedIce id="chisel:packedice"/>
+				<itemPackedIcePillar id="chisel:packedice_pillar"/>
+			</ice>
+			<obsidian>
+				<itemObsidian id="chisel:obsidian"/>
+			</obsidian>
+		</naturalBlock>
+		<itemWoolenClay id="chisel:woolen_clay"/>
+		<manufacturedBlock>
+			<carpet>
+				<itemFloorCarpetWhite id="chisel:carpet" damage="0"/>
+				<itemFloorCarpetOrange id="chisel:carpet" damage="1"/>
+				<itemFloorCarpetMagenta id="chisel:carpet" damage="2"/>
+				<itemFloorCarpetLightBlue id="chisel:carpet" damage="3"/>
+				<itemFloorCarpetYellow id="chisel:carpet" damage="4"/>
+				<itemFloorCarpetLime id="chisel:carpet" damage="5"/>
+				<itemFloorCarpetPink id="chisel:carpet" damage="6"/>
+				<itemFloorCarpetGray id="chisel:carpet" damage="7"/>
+				<itemFloorCarpetLightGray id="chisel:carpet" damage="8"/>
+				<itemFloorCarpetCyan id="chisel:carpet" damage="9"/>
+				<itemFloorCarpetPurple id="chisel:carpet" damage="10"/>
+				<itemFloorCarpetBlue id="chisel:carpet" damage="11"/>
+				<itemFloorCarpetBrown id="chisel:carpet" damage="12"/>
+				<itemFloorCarpetDarkGreen id="chisel:carpet" damage="13"/>
+				<itemFloorCarpetRed id="chisel:carpet" damage="14"/>
+				<itemFloorCarpetBlack id="chisel:carpet" damage="15"/>
+				<itemCarpet0 id="chisel:carpet_block" damage="0"/>
+				<itemCarpet1 id="chisel:carpet_block" damage="1"/>
+				<itemCarpet2 id="chisel:carpet_block" damage="2"/>
+				<itemCarpet3 id="chisel:carpet_block" damage="3"/>
+				<itemCarpet4 id="chisel:carpet_block" damage="4"/>
+				<itemCarpet5 id="chisel:carpet_block" damage="5"/>
+				<itemCarpet6 id="chisel:carpet_block" damage="6"/>
+				<itemCarpet7 id="chisel:carpet_block" damage="7"/>
+				<itemCarpet8 id="chisel:carpet_block" damage="8"/>
+				<itemCarpet9 id="chisel:carpet_block" damage="9"/>
+				<itemCarpet10 id="chisel:carpet_block" damage="10"/>
+				<itemCarpet11 id="chisel:carpet_block" damage="11"/>
+				<itemCarpet12 id="chisel:carpet_block" damage="12"/>
+				<itemCarpet13 id="chisel:carpet_block" damage="13"/>
+				<itemCarpet14 id="chisel:carpet_block" damage="14"/>
+				<itemCarpet15 id="chisel:carpet_block" damage="15"/>
+				<itemBlackWool id="chisel:carpet_black"/>
+				<itemBlueWool id="chisel:carpet_blue"/>
+				<itemBrownWool id="chisel:carpet_brown"/>
+				<itemCyanWool id="chisel:carpet_cyan"/>
+				<itemGrayWool id="chisel:carpet_gray"/>
+				<itemGreenWool id="chisel:carpet_green"/>
+				<itemLightBlueWool id="chisel:carpet_lightblue"/>
+				<itemLightGrayWool id="chisel:carpet_lightgray"/>
+				<itemLimeWool id="chisel:carpet_lime"/>
+				<itemMagentaWool id="chisel:carpet_magenta"/>
+				<itemOrangeWool id="chisel:carpet_orange"/>
+				<itemPinkWool id="chisel:carpet_pink"/>
+				<itemPurpleWool id="chisel:carpet_purple"/>
+				<itemRedWool id="chisel:carpet_red"/>
+				<itemWool id="chisel:carpet_white"/>
+				<itemYellowWool id="chisel:carpet_yellow"/>
+			</carpet>
+			<jackOLantern>
+				<itemJackoLantern1 id="chisel:jackolantern1"/>
+				<itemJackoLantern2 id="chisel:jackolantern2"/>
+				<itemJackoLantern3 id="chisel:jackolantern3"/>
+				<itemJackoLantern4 id="chisel:jackolantern4"/>
+				<itemJackoLantern5 id="chisel:jackolantern5"/>
+				<itemJackoLantern6 id="chisel:jackolantern6"/>
+				<itemJackoLantern7 id="chisel:jackolantern7"/>
+				<itemJackoLantern8 id="chisel:jackolantern8"/>
+				<itemJackoLantern9 id="chisel:jackolantern9"/>
+				<itemJackoLantern10 id="chisel:jackolantern10"/>
+				<itemJackoLantern11 id="chisel:jackolantern11"/>
+				<itemJackoLantern12 id="chisel:jackolantern12"/>
+				<itemJackoLantern13 id="chisel:jackolantern13"/>
+				<itemJackoLantern14 id="chisel:jackolantern14"/>
+				<itemJackoLantern15 id="chisel:jackolantern15"/>
+				<itemJackoLantern16 id="chisel:jackolantern16"/>
+			</jackOLantern>
+			<constructionBlock>
+				<woodenPlank>
+					<itemOakWoodPlanks id="chisel:oak_planks"/>
+					<itemSpruceWoodPlanks id="chisel:spruce_planks"/>
+					<itemBirchWoodPlanks id="chisel:birch_planks"/>
+					<itemJungleWoodPlanks id="chisel:jungle_planks"/>
+					<itemAcaciaWoodPlanks id="chisel:acacia_planks"/>
+					<itemDarkOakWoodPlanks id="chisel:dark_oak_planks"/>
+				</woodenPlank>
+				<bricks>
+					<itemBrickBlock id="chisel:brickcustom" damage="1"/>
+					<itemBrickBlock id="chisel:brickcustom" damage="2"/>
+					<itemBrickBlock id="chisel:brickcustom" damage="3"/>
+					<itemBrickBlock id="chisel:brickcustom" damage="5"/>
+					<itemBrickBlock id="chisel:brickcustom" damage="6"/>
+					<itemBricks id="chisel:bricks"/>
+					<itemBricks id="chisel:bricks1"/>
+					<itemBricks id="chisel:bricks2"/>
+					<stoneBricks>
+						<itemStoneBricks id="chisel:stonebricksmooth"/>
+					</stoneBricks>
+					<itemNetherBrick id="chisel:nether_brick"/>
+					<itemNetherBricks id="chisel:netherbrick"/>
+				</bricks>
+				<glass>
+					<itemGlass id="chisel:glass"/>
+					<itemGlass id="chisel:glass2"/>
+					<itemGlassPane id="chisel:glass_pane"/>
+				</glass>
+				<stainedGlass>
+					<stainedGlassBlock id="stained_glass">
+						<itemStainedGlass id="chisel:stained_glass_white"/>
+						<itemStainedGlassForestryWhite id="chisel:stained_glass_forestry" damage="0"/>
+						<itemStainedGlassForestryOrange id="chisel:stained_glass_forestry" damage="1"/>
+						<itemStainedGlassForestryMagenta id="chisel:stained_glass_forestry" damage="2"/>
+						<itemStainedGlassForestryLBlue id="chisel:stained_glass_forestry" damage="3"/>
+						<itemStainedGlass id="chisel:stained_glass_yellow"/>
+						<itemStainedGlassForestryYellow id="chisel:stained_glass_forestry" damage="4"/>
+						<itemStainedGlassForestryLime id="chisel:stained_glass_forestry" damage="5"/>
+						<itemStainedGlassForestryPink id="chisel:stained_glass_forestry" damage="6"/>
+						<itemStainedGlassForestryGray id="chisel:stained_glass_forestry" damage="7"/>
+						<itemStainedGlass id="chisel:stained_glass_lightgray"/>
+						<itemStainedGlassForestryLGray id="chisel:stained_glass_forestry" damage="8"/>
+						<itemStainedGlassForestryCyan id="chisel:stained_glass_forestry" damage="9"/>
+						<itemStainedGlassForestryPurple id="chisel:stained_glass_forestry" damage="10"/>
+						<itemStainedGlassForestryBlue id="chisel:stained_glass_forestry" damage="11"/>
+						<itemStainedGlass id="chisel:stained_glass_brown"/>
+						<itemStainedGlassForestryBrown id="chisel:stained_glass_forestry" damage="12"/>
+						<itemStainedGlassForestryGreen id="chisel:stained_glass_forestry" damage="13"/>
+						<itemStainedGlassForestryRed id="chisel:stained_glass_forestry" damage="14"/>
+						<itemStainedGlassForestryBlack id="chisel:stained_glass_forestry" damage="15"/>
+					</stainedGlassBlock>
+					<stainedGlassPane id="stained_glass_pane">
+						<itemStainedGlassPane id="chisel:stained_glass_pane_brown"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_white"/>
+						<itemStainedGlass id="chisel:stained_glass_lightgray"/>
+						<itemStainedGlass id="chisel:stained_glass_white"/>
+						<itemStainedGlass id="chisel:stained_glass_yellow"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_brown"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_lightgray"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_magenta"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_pink"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_purple"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_red"/>
+						<itemStainedGlassPane id="chisel:stained_glass_pane_yellow"/>
+					</stainedGlassPane>
+				</stainedGlass>
+				<ironBars>
+					<itemIronBars id="chisel:iron_bars"/>
+					<itemIronBars id="chisel:ironpane"/>
+				</ironBars>
+				<roads>
+					<itemRoadLines id="chisel:road_line"/>
+				</roads>
+				<decorativeblocks>
+					<concrete>
+						<itemConcrete id="chisel:concrete"/>
+					</concrete>
+					<itemHolystone id="chisel:holystone"/>
+					<itemGrimstone id="chisel:grimstone"/>
+					<itemAntiBlock id="chisel:antiblock"/>
+					<hexplating>
+						<itemLargeHexPlating id="chisel:hexlargeplating"/>
+						<itemHexPlating id="chisel:hexplating"/>
+					</hexplating>
+					<itemLaboratoryBlock id="chisel:laboratoryblock"/>
+					<itemLaboratoryBlock id="chisel:laboratory"/>
+					<itemLavastone id="chisel:lavastone"/>
+					<itemLavastone id="chisel:lavastone1"/>
+					<itemLavastone id="chisel:lavastone2"/>
+					<itemWaterstone id="chisel:waterstone"/>
+					<itemWaterstone id="chisel:waterstone1"/>
+					<itemWaterstone id="chisel:waterstone2"/>
+					<itemFactoryBlock id="chisel:factory"/>
+					<itemFactoryBlock id="chisel:factory1"/>
+					<itemFactoryBlock id="chisel:technicalnew"/>
+					<itemFactoryBlock id="chisel:technical1"/>
+					<itemFactoryBlock id="chisel:factoryblock2"/>
+					<marble>
+						<itemMarble id="chisel:marble"/>
+						<itemMarblePillar id="chisel:marble_pillar"/>
+					</marble>
+					<itemImperialisticBlock id="chisel:nation"/>
+					<itemRebelliousBlock id="chisel:rebel"/>
+					<itemPaperwall id="chisel:paperwall"/>
+					<itemPaperWall id="chisel:paper"/>
+					<itemPaperwallBlock id="chisel:paperwall_block"/>
+					<itemTechnicalBlock id="chisel:technical"/>
+					<itemTechnicalBlock id="chisel:technical4"/>
+					<itemTransparentTechnicalBlock id="chisel:technical2"/>
+					<itemIndustrialTechnicalBlock id="chisel:technical3"/>
+					<itemTempleBlock id="chisel:templeblock"/>
+					<itemTempleBlock id="chisel:temple"/>
+					<itemMossyTempleBlock id="chisel:mossy_templeblock"/>
+					<itemMossyTempleBlock id="chisel:templemossy"/>
+					<itemTyrian id="chisel:tyrian"/>
+					<itemFantasyBlock id="chisel:fantasyblock2"/>
+					<itemPurpledFantasyBlock id="chisel:fantasyblock"/>
+					<itemFuturaBlock id="chisel:futura"/>
+					<itemFuturaCircuit id="chisel:futuracircuit"/>
+					<itemValentinesBlock id="chisel:valentines"/>
+					<itemVoidstone id="chisel:voidstone"/>
+					<itemRunicVoidstone id="chisel:voidstonerunic"/>
+					<itemEnergisedVoidstone id="chisel:voidstone2"/>
+					<itemVoidstonePillar id="chisel:voidstonepillar"/>
+					<itemEnergisedVoidstonePillar id="chisel:voidstonepillar2"/>
+					<itemPrimalVoidstone id="chisel:energizedvoidstone"/>
+					<itemWarningSign id="chisel:warningsign"/>
+					<itemArcaneStoneBlock id="chisel:arcane"/>
+					<itemBrownstone id="chisel:brownstone"/>
+					<skyBlocks>
+						<itemCloud id="chisel:cloud"/>
+					</skyBlocks>
+				</decorativeblocks>
+				<stairs>
+					<stoneStairs>
+						<itemMarbleStairs id="chisel:marble_stairs.0"/>
+						<itemMarbleStairs id="chisel:marble_stairs.1"/>
+						<itemMarbleStairs id="chisel:marble_stairs.2"/>
+						<itemMarbleStairs id="chisel:marble_stairs.3"/>
+						<itemMarbleStairs id="chisel:marble_stairs.4"/>
+						<itemMarbleStairs id="chisel:marble_stairs.5"/>
+						<itemMarbleStairs id="chisel:marble_stairs.6"/>
+						<itemMarbleStairs id="chisel:marble_stairs.7"/>
+						<itemLimestoneStairs0 id="chisel:limestone_stairs.0"/>
+						<itemLimestoneStairs1 id="chisel:limestone_stairs.1"/>
+						<itemLimestoneStairs2 id="chisel:limestone_stairs.2"/>
+						<itemLimestoneStairs3 id="chisel:limestone_stairs.3"/>
+						<itemLimestoneStairs4 id="chisel:limestone_stairs.4"/>
+						<itemLimestoneStairs5 id="chisel:limestone_stairs.5"/>
+						<itemLimestoneStairs6 id="chisel:limestone_stairs.6"/>
+						<itemLimestoneStairs7 id="chisel:limestone_stairs.7"/>
+					</stoneStairs>
+					<otherStairs>
+						<itemtile.chisel.aluminum_stairs.0.name id="chisel:aluminum_stairs.0"/>
+						<itemtile.chisel.aluminum_stairs.1.name id="chisel:aluminum_stairs.1"/>
+						<itemtile.chisel.aluminum_stairs.2.name id="chisel:aluminum_stairs.2"/>
+						<itemtile.chisel.aluminum_stairs.3.name id="chisel:aluminum_stairs.3"/>
+						<itemtile.chisel.aluminum_stairs.4.name id="chisel:aluminum_stairs.4"/>
+						<itemtile.chisel.aluminum_stairs.5.name id="chisel:aluminum_stairs.5"/>
+						<itemtile.chisel.aluminum_stairs.6.name id="chisel:aluminum_stairs.6"/>
+						<itemtile.chisel.aluminum_stairs.7.name id="chisel:aluminum_stairs.7"/>
+					</otherStairs>
+					<iceStairs>
+						<itemIceStairs0 id="chisel:ice_stairs.0"/>
+						<itemIceStairs1 id="chisel:ice_stairs.1"/>
+						<itemIceStairs2 id="chisel:ice_stairs.2"/>
+						<itemIceStairs3 id="chisel:ice_stairs.3"/>
+						<itemIceStairs4 id="chisel:ice_stairs.4"/>
+						<itemIceStairs5 id="chisel:ice_stairs.5"/>
+						<itemIceStairs6 id="chisel:ice_stairs.6"/>
+						<itemIceStairs7 id="chisel:ice_stairs.7"/>
+						<itemPackedIceStairs0 id="chisel:packedice_stairs.0"/>
+						<itemPackedIceStairs1 id="chisel:packedice_stairs.1"/>
+						<itemPackedIceStairs2 id="chisel:packedice_stairs.2"/>
+						<itemPackedIceStairs3 id="chisel:packedice_stairs.3"/>
+						<itemPackedIceStairs4 id="chisel:packedice_stairs.4"/>
+						<itemPackedIceStairs5 id="chisel:packedice_stairs.5"/>
+						<itemPackedIceStairs6 id="chisel:packedice_stairs.6"/>
+						<itemPackedIceStairs7 id="chisel:packedice_stairs.7"/>
+					</iceStairs>
+				</stairs>
+				<slabs>
+					<itemLimestoneSlab id="chisel:limestone_slab"/>
+					<itemLimestoneSlabTop id="chisel:limestone_slab_top"/>
+					<itemMarbleSlab id="chisel:marble_slab"/>
+					<itemMarbleSlabTop id="chisel:marble_slab_top"/>
+					<itemMarblePillarSlab id="chisel:marble_pillar_slab"/>
+					<itemMarblePillarSlabTop id="chisel:marble_pillar_slab_top"/>
+				</slabs>
+			</constructionBlock>
+		</manufacturedBlock>
+		<mechanism>
+			<lighting>
+				<torch>
+					<itemTorch id="chisel:torch1"/>
+					<itemTorch id="chisel:torch2"/>
+					<itemTorch id="chisel:torch3"/>
+					<itemTorch id="chisel:torch4"/>
+					<itemTorch id="chisel:torch5"/>
+					<itemTorch id="chisel:torch6"/>
+					<itemTorch id="chisel:torch7"/>
+					<itemTorch id="chisel:torch8"/>
+					<itemTorch id="chisel:torch9"/>
+					<itemTorch id="chisel:torch10"/>
+				</torch>
+				<jackOLantern>
+					<itemJackoLantern1 id="chisel:jackolantern1"/>
+					<itemJackoLantern2 id="chisel:jackolantern2"/>
+					<itemJackoLantern3 id="chisel:jackolantern3"/>
+					<itemJackoLantern4 id="chisel:jackolantern4"/>
+					<itemJackoLantern5 id="chisel:jackolantern5"/>
+					<itemJackoLantern6 id="chisel:jackolantern6"/>
+					<itemJackoLantern7 id="chisel:jackolantern7"/>
+					<itemJackoLantern8 id="chisel:jackolantern8"/>
+					<itemJackoLantern9 id="chisel:jackolantern9"/>
+					<itemJackoLantern10 id="chisel:jackolantern10"/>
+					<itemJackoLantern11 id="chisel:jackolantern11"/>
+					<itemJackoLantern12 id="chisel:jackolantern12"/>
+					<itemJackoLantern13 id="chisel:jackolantern13"/>
+					<itemJackoLantern14 id="chisel:jackolantern14"/>
+					<itemJackoLantern15 id="chisel:jackolantern15"/>
+					<itemJackoLantern16 id="chisel:jackolantern16"/>
+				</jackOLantern>
+			</lighting>
+			<itemRedstoneBlock id="chisel:redstone_block"/>
+			<machines>
+				<decorationMachines>
+					<itemAutoChisel id="chisel:autochisel"/>
+					<itemAutoChisel id="chisel:auto_chisel"/>
+				</decorationMachines>
+			</machines>
+			<machineupgrades>
+				<itemChiselUpgrades id="chisel:upgrade"/>
+			</machineupgrades>
+		</mechanism>
+	</block>
+	<resources>
+		<miningResources>
+			<oreBlock>
+				<itemEmeraldBlock id="chisel:emerald_block"/>
+				<blockGoldDict oreDictName="blockGold">
+					<itemGoldBlock id="chisel:gold_block"/>
+					<itemBlockofGold id="chisel:gold2"/>
+				</blockGoldDict>
+				<blockIronDict oreDictName="blockIron">
+					<itemIronBlock id="chisel:iron_block"/>
+					<itemBlockofIron id="chisel:iron2"/>
+				</blockIronDict>
+				<itemLapisBlock id="chisel:lapis_block"/>
+				<blockLeadDict oreDictName="blockLead">
+					<itemBlockofLead id="chisel:leadblock"/>
+				</blockLeadDict>
+				<blockObsidianDict oreDictName="blockObsidian" mergeChildren="true">
+					<itemObsidian id="chisel:obsidian"/>
+					<itemObsidianSnakestone id="chisel:obsidian_snakestone"/>
+				</blockObsidianDict>
+				<blockSilverDict oreDictName="blockSilver">
+					<itemBlockofSilver id="chisel:silverblock"/>
+				</blockSilverDict>
+				<blockSteelDict oreDictName="blockSteel">
+					<itemBlockofSteel id="chisel:steelblock"/>
+				</blockSteelDict>
+				<blockTallow>
+					<itemBlockofTallow id="chisel:tallow"/>
+				</blockTallow>
+				<blockThaumium>
+					<itemThaumiumBlock id="chisel:thaumium"/>
+				</blockThaumium>
+				<blockTinDict oreDictName="blockTin">
+					<itemBlockofTin id="chisel:tinblock"/>
+				</blockTinDict>
+				<blockUraniumDict oreDictName="blockUranium">
+					<itemBlockofUranium id="chisel:uraniumblock"/>
+				</blockUraniumDict>
+			</oreBlock>
+		</miningResources>
+	</resources>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<present id="chisel:present"/>
+				</chests>
+			</storage>
+			<beacons>
+				<itemBeacon id="chisel:beacon"/>
+			</beacons>
+		</utility>
+		<decoration>
+			<bookShelf>
+				<itemChiselBookshelf id="chisel:bookshelf"/>
+			</bookShelf>
+		</decoration>
+		<food>
+			<edibleFood>
+				<rawFood>
+					<veggie>
+						<itemPumpkin id="chisel:pumpkin1"/>
+						<itemPumpkin id="chisel:pumpkin2"/>
+						<itemPumpkin id="chisel:pumpkin3"/>
+						<itemPumpkin id="chisel:pumpkin4"/>
+						<itemPumpkin id="chisel:pumpkin5"/>
+						<itemPumpkin id="chisel:pumpkin6"/>
+						<itemPumpkin id="chisel:pumpkin7"/>
+						<itemPumpkin id="chisel:pumpkin8"/>
+						<itemPumpkin id="chisel:pumpkin9"/>
+						<itemPumpkin id="chisel:pumpkin10"/>
+						<itemPumpkin id="chisel:pumpkin11"/>
+						<itemPumpkin id="chisel:pumpkin12"/>
+						<itemPumpkin id="chisel:pumpkin13"/>
+						<itemPumpkin id="chisel:pumpkin14"/>
+						<itemPumpkin id="chisel:pumpkin15"/>
+						<itemPumpkin id="chisel:pumpkin16"/>
+					</veggie>
+				</rawFood>
+			</edibleFood>
+		</food>
+		<plant>
+			<leaves id="leaves">
+				<itemChiselLeaves id="chisel:leaves"/>
+			</leaves>
+		</plant>
+	</item>
+</stuff>

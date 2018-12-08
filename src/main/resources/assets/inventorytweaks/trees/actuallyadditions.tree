@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<equipment>
+		<weapon>
+			<meleeWeapon>
+				<sword>
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
+						<swordDamage9>
+							<itemEmeradicCrystalSword id="actuallyadditions:itemswordcrystalgreen"/>
+							<itemEmeraldSword id="actuallyadditions:itemswordemerald"/>
+						</swordDamage9>
+						<swordDamage8>
+							<itemDiamatineCrystalSword id="actuallyadditions:itemswordcrystallightblue"/>
+						</swordDamage8>
+						<swordDamage6>
+							<itemVoidCrystalSword id="actuallyadditions:itemswordcrystalblack"/>
+							<itemPalisCrystalSword id="actuallyadditions:itemswordcrystalblue"/>
+							<itemRestoniaCrystalSword id="actuallyadditions:itemswordcrystalred"/>
+							<itemEnoriCrystalSword id="actuallyadditions:itemswordcrystalwhite"/>
+							<itemObsidianSword id="actuallyadditions:itemswordobsidian"/>
+							<itemBlackQuartzSword id="actuallyadditions:itemswordquartz"/>
+						</swordDamage6>
+						<swordUnsorted>
+							<itemBlackQuartzSword id="actuallyadditions:item_sword_quartz"/>
+							<itemDiamatineCrystalSword id="actuallyadditions:item_sword_crystal_light_blue"/>
+							<itemEmeradicCrystalSword id="actuallyadditions:item_sword_crystal_green"/>
+							<itemEmeraldSword id="actuallyadditions:item_sword_emerald"/>
+							<itemEnoriCrystalSword id="actuallyadditions:item_sword_crystal_white"/>
+							<itemObsidianSword id="actuallyadditions:item_sword_obsidian"/>
+							<itemPalisCrystalSword id="actuallyadditions:item_sword_crystal_blue"/>
+							<itemRestoniaCrystalSword id="actuallyadditions:item_sword_crystal_red"/>
+							<itemVoidCrystalSword id="actuallyadditions:item_sword_crystal_black"/>
+						</swordUnsorted>
+					</sword>
+				</sword>
+			</meleeWeapon>
+		</weapon>
+		<tool>
+			<paxel mergeChildren="true">
+				<miningTool>
+					<diggingTool>
+						<choppingTool>
+							<farmingTool>
+								<itemDrill id="actuallyadditions:item_drill"/>
+								<itemBlackQuartzAIOT id="actuallyadditions:quartzpaxel"/>
+								<itemDiamatineCrystalAIOT id="actuallyadditions:itempaxelcrystallightblue"/>
+								<itemDiamondAIOT id="actuallyadditions:diamondpaxel"/>
+								<itemEmeradicCrystalAIOT id="actuallyadditions:itempaxelcrystalgreen"/>
+								<itemEmeraldAIOT id="actuallyadditions:emeraldpaxel"/>
+								<itemEnoriCrystalAIOT id="actuallyadditions:itempaxelcrystalwhite"/>
+								<itemGoldenAIOT id="actuallyadditions:goldpaxel"/>
+								<itemIronAIOT id="actuallyadditions:ironpaxel"/>
+								<itemObsidianAIOT id="actuallyadditions:obsidianpaxel"/>
+								<itemPalisCrystalAIOT id="actuallyadditions:itempaxelcrystalblue"/>
+								<itemRestoniaCrystalAIOT id="actuallyadditions:itempaxelcrystalred"/>
+								<itemStoneAIOT id="actuallyadditions:stonepaxel"/>
+								<itemVoidCrystalAIOT id="actuallyadditions:itempaxelcrystalblack"/>
+								<itemWoodenAIOT id="actuallyadditions:woodenpaxel"/>
+								<itemDiamondAIOT id="actuallyadditions:diamond_paxel"/>
+								<itemEmeraldAIOT id="actuallyadditions:emerald_paxel"/>
+								<itemGoldenAIOT id="actuallyadditions:gold_paxel"/>
+								<itemIronAIOT id="actuallyadditions:iron_paxel"/>
+								<itemVoidCrystalAIOT id="actuallyadditions:item_paxel_crystal_black"/>
+								<itemPalisCrystalAIOT id="actuallyadditions:item_paxel_crystal_blue"/>
+								<itemEmeradicCrystalAIOT id="actuallyadditions:item_paxel_crystal_green"/>
+								<itemDiamatineCrystalAIOT id="actuallyadditions:item_paxel_crystal_light_blue"/>
+								<itemRestoniaCrystalAIOT id="actuallyadditions:item_paxel_crystal_red"/>
+								<itemEnoriCrystalAIOT id="actuallyadditions:item_paxel_crystal_white"/>
+								<itemObsidianAIOT id="actuallyadditions:obsidian_paxel"/>
+								<itemBlackQuartzAIOT id="actuallyadditions:quartz_paxel"/>
+								<itemStoneAIOT id="actuallyadditions:stone_paxel"/>
+								<itemWoodenAIOT id="actuallyadditions:wooden_paxel"/>
+							</farmingTool>
+						</choppingTool>
+					</diggingTool>
+				</miningTool>
+			</paxel>
+			<miningTool>
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
+					<CobaltPickLevel>
+						<itemEmeradicCrystalPickaxe id="actuallyadditions:itempickaxecrystalgreen"/>
+						<itemEmeradicCrystalPickaxe id="actuallyadditions:item_pickaxe_crystal_green"/>
+					</CobaltPickLevel>
+					<ObsidianLevel>
+						<itemDiamatineCrystalPickaxe id="actuallyadditions:itempickaxecrystallightblue"/>
+						<itemDiamatineCrystalPickaxe id="actuallyadditions:item_pickaxe_crystal_light_blue"/>
+						<itemEmeraldPickaxe id="actuallyadditions:itempickaxeemerald"/>
+						<itemEmeraldPickaxe id="actuallyadditions:item_pickaxe_emerald"/>
+						<itemObsidianPickaxe id="actuallyadditions:itempickaxeobsidian"/>
+						<itemObsidianPickaxe id="actuallyadditions:item_pickaxe_obsidian"/>
+					</ObsidianLevel>
+					<DiamondPickLevel>
+						<itemBlackQuartzPickaxe id="actuallyadditions:item_pickaxe_quartz"/>
+						<itemBlackQuartzPickaxe id="actuallyadditions:itempickaxequartz"/>
+						<itemEnoriCrystalPickaxe id="actuallyadditions:item_pickaxe_crystal_white"/>
+						<itemEnoriCrystalPickaxe id="actuallyadditions:itempickaxecrystalwhite"/>
+						<itemPalisCrystalPickaxe id="actuallyadditions:item_pickaxe_crystal_blue"/>
+						<itemPalisCrystalPickaxe id="actuallyadditions:itempickaxecrystalblue"/>
+						<itemRestoniaCrystalPickaxe id="actuallyadditions:item_pickaxe_crystal_red"/>
+						<itemRestoniaCrystalPickaxe id="actuallyadditions:itempickaxecrystalred"/>
+						<itemVoidCrystalPickaxe id="actuallyadditions:item_pickaxe_crystal_black"/>
+						<itemVoidCrystalPickaxe id="actuallyadditions:itempickaxecrystalblack"/>
+					</DiamondPickLevel>
+				</pickaxe>
+			</miningTool>
+			<diggingTool>
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
+					<itemBlackQuartzShovel id="actuallyadditions:itemshovelquartz"/>
+					<itemDiamatineCrystalShovel id="actuallyadditions:itemshovelcrystallightblue"/>
+					<itemEmeradicCrystalShovel id="actuallyadditions:itemshovelcrystalgreen"/>
+					<itemEmeraldShovel id="actuallyadditions:itemshovelemerald"/>
+					<itemEnoriCrystalShovel id="actuallyadditions:itemshovelcrystalwhite"/>
+					<itemObsidianShovel id="actuallyadditions:itemshovelobsidian"/>
+					<itemPalisCrystalShovel id="actuallyadditions:itemshovelcrystalblue"/>
+					<itemRestoniaCrystalShovel id="actuallyadditions:itemshovelcrystalred"/>
+					<itemVoidCrystalShovel id="actuallyadditions:itemshovelcrystalblack"/>
+					<itemVoidCrystalShovel id="actuallyadditions:item_shovel_crystal_black"/>
+					<itemPalisCrystalShovel id="actuallyadditions:item_shovel_crystal_blue"/>
+					<itemEmeradicCrystalShovel id="actuallyadditions:item_shovel_crystal_green"/>
+					<itemDiamatineCrystalShovel id="actuallyadditions:item_shovel_crystal_light_blue"/>
+					<itemRestoniaCrystalShovel id="actuallyadditions:item_shovel_crystal_red"/>
+					<itemEnoriCrystalShovel id="actuallyadditions:item_shovel_crystal_white"/>
+					<itemEmeraldShovel id="actuallyadditions:item_shovel_emerald"/>
+					<itemObsidianShovel id="actuallyadditions:item_shovel_obsidian"/>
+					<itemBlackQuartzShovel id="actuallyadditions:item_shovel_quartz"/>
+				</shovel>
+			</diggingTool>
+			<choppingTool>
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
+					<itemBlackQuartzAxe id="actuallyadditions:itemaxequartz"/>
+					<itemDiamatineCrystalAxe id="actuallyadditions:itemaxecrystallightblue"/>
+					<itemEmeradicCrystalAxe id="actuallyadditions:itemaxecrystalgreen"/>
+					<itemEmeraldAxe id="actuallyadditions:itemaxeemerald"/>
+					<itemEnoriCrystalAxe id="actuallyadditions:itemaxecrystalwhite"/>
+					<itemObsidianAxe id="actuallyadditions:itemaxeobsidian"/>
+					<itemPalisCrystalAxe id="actuallyadditions:itemaxecrystalblue"/>
+					<itemRestoniaCrystalAxe id="actuallyadditions:itemaxecrystalred"/>
+					<itemVoidCrystalAxe id="actuallyadditions:itemaxecrystalblack"/>
+					<itemVoidCrystalAxe id="actuallyadditions:item_axe_crystal_black"/>
+					<itemPalisCrystalAxe id="actuallyadditions:item_axe_crystal_blue"/>
+					<itemEmeradicCrystalAxe id="actuallyadditions:item_axe_crystal_green"/>
+					<itemDiamatineCrystalAxe id="actuallyadditions:item_axe_crystal_light_blue"/>
+					<itemRestoniaCrystalAxe id="actuallyadditions:item_axe_crystal_red"/>
+					<itemEnoriCrystalAxe id="actuallyadditions:item_axe_crystal_white"/>
+					<itemEmeraldAxe id="actuallyadditions:item_axe_emerald"/>
+					<itemObsidianAxe id="actuallyadditions:item_axe_obsidian"/>
+					<itemBlackQuartzAxe id="actuallyadditions:item_axe_quartz"/>
+				</axe>
+			</choppingTool>
+			<farmingTool>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
+					<itemBlackQuartzHoe id="actuallyadditions:itemhoequartz"/>
+					<itemDiamatineCrystalHoe id="actuallyadditions:itemhoecrystallightblue"/>
+					<itemEmeradicCrystalHoe id="actuallyadditions:itemhoecrystalgreen"/>
+					<itemEmeraldHoe id="actuallyadditions:itemhoeemerald"/>
+					<itemEnoriCrystalHoe id="actuallyadditions:itemhoecrystalwhite"/>
+					<itemObsidianHoe id="actuallyadditions:itemhoeobsidian"/>
+					<itemPalisCrystalHoe id="actuallyadditions:itemhoecrystalblue"/>
+					<itemRestoniaCrystalHoe id="actuallyadditions:itemhoecrystalred"/>
+					<itemVoidCrystalHoe id="actuallyadditions:itemhoecrystalblack"/>
+					<itemVoidCrystalHoe id="actuallyadditions:item_hoe_crystal_black"/>
+					<itemPalisCrystalHoe id="actuallyadditions:item_hoe_crystal_blue"/>
+					<itemEmeradicCrystalHoe id="actuallyadditions:item_hoe_crystal_green"/>
+					<itemDiamatineCrystalHoe id="actuallyadditions:item_hoe_crystal_light_blue"/>
+					<itemRestoniaCrystalHoe id="actuallyadditions:item_hoe_crystal_red"/>
+					<itemEnoriCrystalHoe id="actuallyadditions:item_hoe_crystal_white"/>
+					<itemEmeraldHoe id="actuallyadditions:item_hoe_emerald"/>
+					<itemObsidianHoe id="actuallyadditions:item_hoe_obsidian"/>
+					<itemBlackQuartzHoe id="actuallyadditions:item_hoe_quartz"/>
+				</hoe>
+			</farmingTool>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
+				<itemLaserWrench id="actuallyadditions:item_laser_wrench"/>
+			</wrench>
+			<wands>
+				<itemHandheldFiller id="actuallyadditions:item_filling_wand"/>
+				<itemHandheldFiller id="actuallyadditions:item_filling_wand"/>
+			</wands>
+			<magnets>
+				<itemRingofMagnetizing id="actuallyadditions:item_suction_ring"/>
+				<itemRingofMagnetizing id="actuallyadditions:magnet_ring_bauble"/>
+			</magnets>
+			<portableCrafting>
+				<itemCraftingTableOnAStick id="actuallyadditions:item_crafter_on_a_stick"/>
+			</portableCrafting>
+		</tool>
+		<armor>
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
+				<helmetUnsorted>
+					<itemBlackQuartzHelmet id="actuallyadditions:item_helm_quartz"/>
+					<itemDiamatineCrystalHelmet id="actuallyadditions:item_helm_crystal_light_blue"/>
+					<itemEmeradicCrystalHelmet id="actuallyadditions:item_helm_crystal_green"/>
+					<itemEmeraldHelmet id="actuallyadditions:item_helm_emerald"/>
+					<itemEnoriCrystalHelmet id="actuallyadditions:item_helm_crystal_white"/>
+					<itemObsidianHelmet id="actuallyadditions:item_helm_obsidian"/>
+					<itemPalisCrystalHelmet id="actuallyadditions:item_helm_crystal_blue"/>
+					<itemRestoniaCrystalHelmet id="actuallyadditions:item_helm_crystal_red"/>
+					<itemVoidCrystalHelmet id="actuallyadditions:item_helm_crystal_black"/>
+				</helmetUnsorted>
+			</helmet>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
+				<chestplateArmor>
+					<chestplate9>
+						<itemEmeradicCrystalChest id="actuallyadditions:itemchestcrystalgreen"/>
+						<itemEmeraldChestplate id="actuallyadditions:itemchestemerald"/>
+					</chestplate9>
+					<chestplate8>
+						<itemDiamatineCrystalChestplate id="actuallyadditions:itemchestcrystallightblue"/>
+					</chestplate8>
+					<chestplate7>
+						<itemPalisCrystalChestplate id="actuallyadditions:itemchestcrystalblue"/>
+						<itemRestoniaCrystalChestplate id="actuallyadditions:itemchestcrystalred"/>
+					</chestplate7>
+					<chestplate6>
+						<itemEnoriCrystalChest id="actuallyadditions:itemchestcrystalwhite"/>
+						<itemBlackQuartzChestplate id="actuallyadditions:itemchestquartz"/>
+					</chestplate6>
+					<chestplate4>
+						<itemVoidCrystalChestplate id="actuallyadditions:itemchestcrystalblack"/>
+						<itemObsidianChestplate id="actuallyadditions:itemchestobsidian"/>
+					</chestplate4>
+					<chestplateUnsorted>
+						<itemBlackQuartzChestplate id="actuallyadditions:item_chest_quartz"/>
+						<itemDiamatineCrystalChestplate id="actuallyadditions:item_chest_crystal_light_blue"/>
+						<itemEmeraldChestplate id="actuallyadditions:item_chest_emerald"/>
+						<itemObsidianChestplate id="actuallyadditions:item_chest_obsidian"/>
+						<itemPalisCrystalChestplate id="actuallyadditions:item_chest_crystal_blue"/>
+						<itemRestoniaCrystalChestplate id="actuallyadditions:item_chest_crystal_red"/>
+						<itemVoidCrystalChestplate id="actuallyadditions:item_chest_crystal_black"/>
+					</chestplateUnsorted>
+				</chestplateArmor>
+			</chestplate>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
+				<leggingsUnsorted>
+					<itemBlackQuartzPants id="actuallyadditions:item_pants_quartz"/>
+					<itemDiamatineCrystalPants id="actuallyadditions:item_pants_crystal_light_blue"/>
+					<itemEmeradicCrystalPants id="actuallyadditions:item_pants_crystal_green"/>
+					<itemEmeraldPants id="actuallyadditions:item_pants_emerald"/>
+					<itemEnoriCrystalPants id="actuallyadditions:item_pants_crystal_white"/>
+					<itemObsidianPants id="actuallyadditions:item_pants_obsidian"/>
+					<itemPalisCrystalPants id="actuallyadditions:item_pants_crystal_blue"/>
+					<itemRestoniaCrystalPants id="actuallyadditions:item_pants_crystal_red"/>
+					<itemVoidCrystalPants id="actuallyadditions:item_pants_crystal_black"/>
+				</leggingsUnsorted>
+			</leggings>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
+				<bootsUnsorted>
+					<itemBlackQuartzBoots id="actuallyadditions:item_boots_quartz"/>
+					<itemDiamatineCrystalBoots id="actuallyadditions:item_boots_crystal_light_blue"/>
+					<itemEmeradicCrystalBoots id="actuallyadditions:item_boots_crystal_green"/>
+					<itemEmeraldBoots id="actuallyadditions:item_boots_emerald"/>
+					<itemEnoriCrystalBoots id="actuallyadditions:item_boots_crystal_white"/>
+					<itemObsidianBoots id="actuallyadditions:item_boots_obsidian"/>
+					<itemPalisCrystalBoots id="actuallyadditions:item_boots_crystal_blue"/>
+					<itemRestoniaCrystalBoots id="actuallyadditions:item_boots_crystal_red"/>
+					<itemVoidCrystalBoots id="actuallyadditions:item_boots_crystal_black"/>
+				</bootsUnsorted>
+			</boots>
+		</armor>
+		<baubles>
+			<rings>
+				<itemRing id="actuallyadditions:item_misc" damage="6"/>
+				<itemRingofGrowth id="actuallyadditions:item_growth_ring"/>
+				<itemRingofHaste id="actuallyadditions:item_potion_ring"/>
+				<itemRingofLiquidBanning id="actuallyadditions:item_water_removal_ring"/>
+				<itemAdvancedRingBauble id="actuallyadditions:potion_ring_advanced_bauble"/>
+				<itemAdvancedRingItem id="actuallyadditions:item_potion_ring_advanced"/>
+			</rings>
+		</baubles>
+	</equipment>
+	<block>
+		<manufacturedBlock>
+			<fence>
+				<itemEtheticGreenWall id="actuallyadditions:block_testifi_bucks_green_fence"/>
+				<itemEtheticQuartzWall id="actuallyadditions:block_testifi_bucks_white_fence"/>
+			</fence>
+			<stoneWall>
+				<itemChiseledBlackQuartzWall id="actuallyadditions:block_chiseled_quartz_wall"/>
+				<itemBlackQuartzPillarWall id="actuallyadditions:block_pillar_quartz_wall"/>
+				<itemBlackQuartzWall id="actuallyadditions:block_quartz_wall"/>
+				<itemEtheticGreenBlock id="actuallyadditions:block_testifi_bucks_green_wall"/>
+				<itemEtheticQuartz id="actuallyadditions:block_testifi_bucks_white_wall"/>
+			</stoneWall>
+			<constructionBlock>
+				<stairs>
+					<otherStairs>
+						<itemBlackQuartzPillarStairs id="actuallyadditions:block_pillar_quartz_stair"/>
+						<itemBlackQuartzStairs id="actuallyadditions:block_quartz_stair"/>
+						<itemChiseledBlackQuartzStairs id="actuallyadditions:block_chiseled_quartz_stair"/>
+						<itemEtheticGreenStairs id="actuallyadditions:block_testifi_bucks_green_stairs"/>
+						<itemEtheticQuartzStairs id="actuallyadditions:block_testifi_bucks_white_stairs"/>
+					</otherStairs>
+				</stairs>
+				<slabs>
+					<itemChiseledBlackQuartzSlab id="actuallyadditions:blockchiseledquartzslab"/>
+					<itemBlackQuartzPillarSlab id="actuallyadditions:blockpillarquartzslab"/>
+					<itemBlackQuartzSlab id="actuallyadditions:blockquartzslab"/>
+					<itemEtheticGreenSlab id="actuallyadditions:blocktestifibucksgreenslab"/>
+					<itemEtheticQuartzSlab id="actuallyadditions:blocktestifibuckswhiteslab"/>
+				</slabs>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<item>
+		<utility>
+			<storage>
+				<chests>
+					<itemSmallStorageCrate id="actuallyadditions:block_giant_chest"/>
+					<itemMediumStorageCrate id="actuallyadditions:block_giant_chest_medium"/>
+					<itemLargeStorageCrate id="actuallyadditions:block_giant_chest_large"/>
+				</chests>
+				<storageupgrades>
+					<itemChestToStorageCrateUpgrade id="actuallyadditions:item_chest_to_crate_upgrade"/>
+					<itemSmallToMediumStorageCrateUpgrade id="actuallyadditions:item_small_to_medium_crate_upgrade"/>
+					<itemMediumToLargeStorageCrateUpgrade id="actuallyadditions:item_medium_to_large_crate_upgrade"/>
+					<itemStorageCrateKeeper id="actuallyadditions:item_crate_keeper"/>
+				</storageupgrades>
+			</storage>
+			<readableBooks>
+				<itemActuallyAdditionsManual id="actuallyadditions:item_booklet"/>
+			</readableBooks>
+		</utility>
+		<experienceStorage>
+			<itemExperienceSolidifier id="actuallyadditions:block_xp_solidifier"/>
+		</experienceStorage>
+		<food>
+			<edibleFood>
+				<preparedFood>
+					<bacon>
+						<itemBacon id="actuallyadditions:item_food" damage="20"/>
+					</bacon>
+					<preppedfish>
+						<itemFishNChips id="actuallyadditions:item_food" damage="3"/>
+					</preppedfish>
+					<burgers>
+						<itemHamburger id="actuallyadditions:item_food" damage="13"/>
+					</burgers>
+					<pizza>
+						<itemPizza id="actuallyadditions:item_food" damage="14"/>
+					</pizza>
+					<soup>
+						<itemPumpkinStew id="actuallyadditions:item_food" damage="1"/>
+					</soup>
+					<toasts>
+						<itemToast id="actuallyadditions:item_food" damage="10"/>
+						<itemToastoChocolate id="actuallyadditions:item_food" damage="19"/>
+					</toasts>
+					<breads>
+						<itemBaguette id="actuallyadditions:item_food" damage="15"/>
+						<itemRiceBread id="actuallyadditions:item_food" damage="17"/>
+					</breads>
+					<sandwich>
+						<itemSubmarineSandwich id="actuallyadditions:item_food" damage="11"/>
+					</sandwich>
+					<spaghetti>
+						<itemSpaghetti id="actuallyadditions:item_food" damage="6"/>
+					</spaghetti>
+				</preparedFood>
+				<cookedFood>
+					<cookedPotato>
+						<itemFrenchFries id="actuallyadditions:item_food" damage="4"/>
+						<itemFrenchFry id="actuallyadditions:item_food" damage="5"/>
+					</cookedPotato>
+				</cookedFood>
+				<foodIntermediate>
+					<condiments>
+						<itemCheese id="actuallyadditions:item_food" damage="0"/>
+					</condiments>
+				</foodIntermediate>
+				<dessert>
+					<cookies>
+						<itemBigCookie id="actuallyadditions:item_food" damage="12"/>
+					</cookies>
+					<donut>
+						<itemDoughnut id="actuallyadditions:item_food" damage="18"/>
+					</donut>
+					<chocolate>
+						<itemChocolate id="actuallyadditions:item_food" damage="9"/>
+					</chocolate>
+				</dessert>
+				<drink>
+					<juice>
+						<itemCarrotJuice id="actuallyadditions:item_food" damage="2"/>
+					</juice>
+				</drink>
+			</edibleFood>
+			<unedibleFood>
+				<dough>
+					<itemNoodle id="actuallyadditions:item_food" damage="7"/>
+				</dough>
+				<cakes>
+					<itemChocolateCake id="actuallyadditions:item_food" damage="8"/>
+				</cakes>
+			</unedibleFood>
+		</food>
+		<plant>
+			<flower>
+				<flowerBlack>
+					<itemBlackLotus id="actuallyadditions:block_black_lotus"/>
+				</flowerBlack>
+			</flower>
+		</plant>
+		<potion>
+			<itemSolidifiedExperience id="actuallyadditions:item_solidified_experience"/>
+		</potion>
+	</item>
+</stuff>
