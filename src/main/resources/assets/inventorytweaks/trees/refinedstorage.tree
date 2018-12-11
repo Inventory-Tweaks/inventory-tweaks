@@ -26,11 +26,210 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemWrench id="refinedstorage:wrench"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemWrench id="refinedstorage:wrench" treeOrder="300"/>
 			</wrench>
+			<cuttingKnives treeOrder="230">
+				<itemCuttingTool id="refinedstorage:cutting_tool" treeOrder="50"/>
+			</cuttingKnives>
 		</tool>
 	</equipment>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<panels treeOrder="120">
+					<itemCover id="refinedstorage:cover" treeOrder="160"/>
+					<itemHollowCover id="refinedstorage:hollow_cover" treeOrder="170"/>
+				</panels>
+			</constructionBlock>
+		</manufacturedBlock>
+	</block>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<oreBlock treeOrder="110">
+				<blockQuartzEnrichedIron treeOrder="1730">
+					<itemBlockofQuartzEnrichedIron id="refinedstorage:quartz_enriched_iron_block" treeOrder="10"/>
+				</blockQuartzEnrichedIron>
+			</oreBlock>
+			<ingot treeOrder="120">
+				<ingotQuartzEnrichedIron treeOrder="1730">
+					<itemQuartzEnrichedIron id="refinedstorage:quartz_enriched_iron" treeOrder="10"/>
+					<itemWirelessTransmitter id="refinedstorage:wireless_transmitter" treeOrder="20"/>
+				</ingotQuartzEnrichedIron>
+			</ingot>
+		</miningResources>
+		<huntingResources treeOrder="20">
+			<slimyItems treeOrder="160">
+				<itemProcessorBinding id="refinedstorage:processor_binding" treeOrder="50"/>
+			</slimyItems>
+		</huntingResources>
+	</resources>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<digitalstorage treeOrder="70">
+					<cables treeOrder="10">
+						<meCoveredCable treeOrder="40">
+							<itemCable id="refinedstorage:cable" treeOrder="10"/>
+						</meCoveredCable>
+					</cables>
+					<terminals treeOrder="20">
+						<base treeOrder="10">
+							<itemGrid id="refinedstorage:grid" damage="0" treeOrder="60"/>
+							<itemCraftingGrid id="refinedstorage:grid" damage="1" treeOrder="70"/>
+							<itemFluidGrid id="refinedstorage:grid" damage="3" treeOrder="80"/>
+						</base>
+						<storageMonitor treeOrder="50">
+							<itemStorageMonitor id="refinedstorage:storage_monitor" treeOrder="50"/>
+						</storageMonitor>
+						<patternTerminal treeOrder="60">
+							<itemPatternGrid id="refinedstorage:grid" damage="2" treeOrder="50"/>
+						</patternTerminal>
+						<interfaceTerminal treeOrder="70">
+							<itemCrafterManager id="refinedstorage:crafter_manager" treeOrder="30"/>
+						</interfaceTerminal>
+					</terminals>
+					<interfaces treeOrder="30">
+						<storageController treeOrder="10">
+							<itemController id="refinedstorage:controller" treeOrder="30"/>
+						</storageController>
+						<storageDrives treeOrder="20">
+							<itemDiskDrive id="refinedstorage:disk_drive" treeOrder="70"/>
+						</storageDrives>
+						<storageInterfaces treeOrder="30">
+							<interface treeOrder="10">
+								<itemInterface id="refinedstorage:interface" treeOrder="30"/>
+								<itemFluidInterface id="refinedstorage:fluid_interface" treeOrder="40"/>
+							</interface>
+							<importBus treeOrder="20">
+								<itemImporter id="refinedstorage:importer" treeOrder="30"/>
+							</importBus>
+							<exportBus treeOrder="30">
+								<itemExporter id="refinedstorage:exporter" treeOrder="30"/>
+							</exportBus>
+							<storageBus treeOrder="40">
+								<itemExternalStorage id="refinedstorage:external_storage" treeOrder="30"/>
+							</storageBus>
+						</storageInterfaces>
+						<digitalizationPlane treeOrder="40">
+							<itemDestructor id="refinedstorage:destructor" treeOrder="30"/>
+						</digitalizationPlane>
+						<placingPlane treeOrder="50">
+							<itemConstructor id="refinedstorage:constructor" treeOrder="30"/>
+						</placingPlane>
+						<storageEmitters treeOrder="60">
+							<itemDetector id="refinedstorage:detector" treeOrder="50"/>
+						</storageEmitters>
+						<storageToggles treeOrder="70">
+							<itemRelay id="refinedstorage:relay" treeOrder="50"/>
+						</storageToggles>
+						<storageTunnels treeOrder="80">
+							<itemReader id="refinedstorage:reader" treeOrder="140"/>
+							<itemWriter id="refinedstorage:writer" treeOrder="150"/>
+						</storageTunnels>
+					</interfaces>
+					<upgrades treeOrder="40">
+						<rsUpgrades treeOrder="20">
+							<itemUpgrade id="refinedstorage:upgrade" treeOrder="10"/>
+							<itemFilter id="refinedstorage:filter" treeOrder="20"/>
+							<itemNetworkCard id="refinedstorage:network_card" treeOrder="30"/>
+							<itemSecurityCard id="refinedstorage:security_card" treeOrder="40"/>
+						</rsUpgrades>
+					</upgrades>
+					<parts treeOrder="50">
+						<mePatterns treeOrder="10">
+							<itemPattern id="refinedstorage:pattern" treeOrder="50"/>
+						</mePatterns>
+						<meCores treeOrder="20">
+							<itemConstructionCore id="refinedstorage:core" damage="0" treeOrder="50"/>
+							<itemDestructionCore id="refinedstorage:core" damage="1" treeOrder="60"/>
+						</meCores>
+						<meGeneral treeOrder="30">
+							<itemRawBasicProcessor id="refinedstorage:processor" damage="0" treeOrder="230"/>
+							<itemRawImprovedProcessor id="refinedstorage:processor" damage="1" treeOrder="240"/>
+							<itemRawAdvancedProcessor id="refinedstorage:processor" damage="2" treeOrder="250"/>
+							<itemBasicProcessor id="refinedstorage:processor" damage="3" treeOrder="260"/>
+							<itemImprovedProcessor id="refinedstorage:processor" damage="4" treeOrder="270"/>
+							<itemAdvancedProcessor id="refinedstorage:processor" damage="5" treeOrder="280"/>
+						</meGeneral>
+						<meStorageHousing treeOrder="50">
+							<itemStorageHousing id="refinedstorage:storage_housing" treeOrder="60"/>
+						</meStorageHousing>
+						<meStorageComponents treeOrder="60">
+							<refinedStorage treeOrder="30">
+								<item1kStoragePart id="refinedstorage:storage_part" damage="0" treeOrder="10"/>
+								<item4kStoragePart id="refinedstorage:storage_part" damage="1" treeOrder="20"/>
+								<item64kStoragePart id="refinedstorage:storage_part" damage="3" treeOrder="30"/>
+								<item16kStoragePart id="refinedstorage:storage_part" damage="2" treeOrder="40"/>
+							</refinedStorage>
+						</meStorageComponents>
+						<meFluidStorageComponents treeOrder="70">
+							<refinedStorage treeOrder="30">
+								<item256kFluidStoragePart id="refinedstorage:fluid_storage_part" damage="1" treeOrder="10"/>
+								<item4096kFluidStoragePart id="refinedstorage:fluid_storage_part" damage="3" treeOrder="20"/>
+								<item64kFluidStoragePart id="refinedstorage:fluid_storage_part" damage="0" treeOrder="30"/>
+								<item1024kFluidStoragePart id="refinedstorage:fluid_storage_part" damage="2" treeOrder="40"/>
+							</refinedStorage>
+						</meFluidStorageComponents>
+					</parts>
+					<storagecells treeOrder="60">
+						<meStorageCells treeOrder="10">
+							<refinedStorage treeOrder="30">
+								<item1kStorageDisk id="refinedstorage:storage_disk" damage="0" treeOrder="10"/>
+								<item4kStorageDisk id="refinedstorage:storage_disk" damage="1" treeOrder="20"/>
+								<item16kStorageDisk id="refinedstorage:storage_disk" damage="2" treeOrder="30"/>
+								<item64kStorageDisk id="refinedstorage:storage_disk" damage="3" treeOrder="40"/>
+								<itemCreativeStorageDisk id="refinedstorage:storage_disk" damage="4" treeOrder="50"/>
+								<item1kStorageBlock id="refinedstorage:storage" damage="0" treeOrder="60"/>
+								<item4kStorageBlock id="refinedstorage:storage" damage="1" treeOrder="70"/>
+								<item64kStorageBlock id="refinedstorage:storage" damage="3" treeOrder="80"/>
+								<item16kStorageBlock id="refinedstorage:storage" damage="2" treeOrder="90"/>
+								<itemCreativeStorageBlock id="refinedstorage:storage" damage="4" treeOrder="100"/>
+							</refinedStorage>
+						</meStorageCells>
+						<meFluidStorageCells treeOrder="20">
+							<refinedStorage treeOrder="30">
+								<item64kFluidStorageDisk id="refinedstorage:fluid_storage_disk" damage="0" treeOrder="10"/>
+								<item256kFluidStorageDisk id="refinedstorage:fluid_storage_disk" damage="1" treeOrder="20"/>
+								<item1024kFluidStorageDisk id="refinedstorage:fluid_storage_disk" damage="2" treeOrder="30"/>
+								<item4096kFluidStorageDisk id="refinedstorage:fluid_storage_disk" damage="3" treeOrder="40"/>
+								<itemCreativeFluidStorageDisk id="refinedstorage:fluid_storage_disk" damage="4" treeOrder="50"/>
+								<item64kFluidStorageBlock id="refinedstorage:fluid_storage" damage="0" treeOrder="60"/>
+								<item256kFluidStorageBlock id="refinedstorage:fluid_storage" damage="1" treeOrder="70"/>
+								<item4096kFluidStorageBlock id="refinedstorage:fluid_storage" damage="3" treeOrder="80"/>
+								<item1024kFluidStorageBlock id="refinedstorage:fluid_storage" damage="2" treeOrder="90"/>
+								<itemCreativeFluidStorageBlock id="refinedstorage:fluid_storage" damage="4" treeOrder="100"/>
+							</refinedStorage>
+						</meFluidStorageCells>
+					</storagecells>
+					<machines treeOrder="70">
+						<itemCrafter id="refinedstorage:crafter" treeOrder="680"/>
+						<itemCraftingMonitor id="refinedstorage:crafting_monitor" treeOrder="690"/>
+						<itemDiskManipulator id="refinedstorage:disk_manipulator" treeOrder="700"/>
+						<itemNetworkReceiver id="refinedstorage:network_receiver" treeOrder="710"/>
+						<itemNetworkTransmitter id="refinedstorage:network_transmitter" treeOrder="720"/>
+						<itemSecurityManager id="refinedstorage:security_manager" treeOrder="730"/>
+					</machines>
+				</digitalstorage>
+				<portableStorage treeOrder="90">
+					<itemWirelessGrid id="refinedstorage:wireless_grid" damage="0" treeOrder="430"/>
+					<itemPortableGrid id="refinedstorage:portable_grid" damage="0" treeOrder="440"/>
+					<itemWirelessFluidGrid id="refinedstorage:wireless_fluid_grid" damage="0" treeOrder="460"/>
+					<itemWirelessCraftingMonitor id="refinedstorage:wireless_crafting_monitor" treeOrder="470"/>
+					<itemCreativeWirelessGrid id="refinedstorage:wireless_grid" damage="1" treeOrder="480"/>
+					<itemCreativePortableGrid id="refinedstorage:portable_grid" damage="1" treeOrder="500"/>
+					<itemCreativeWirelessFluidGrid id="refinedstorage:wireless_fluid_grid" damage="1" treeOrder="510"/>
+				</portableStorage>
+			</storage>
+		</utility>
+		<parts treeOrder="110">
+			<mechanicalParts treeOrder="10">
+				<frames treeOrder="110">
+					<itemMachineCasing id="refinedstorage:machine_casing" treeOrder="200"/>
+				</frames>
+			</mechanicalParts>
+		</parts>
+	</item>
 </stuff>

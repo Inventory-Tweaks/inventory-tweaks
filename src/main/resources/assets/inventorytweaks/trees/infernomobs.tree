@@ -26,60 +26,62 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage7>
-							<itemVerdantCinderfallSword id="infernomobs:cinderfallswordverdant"/>
-							<itemAzureCinderfallSword id="infernomobs:cinderfallswordazure"/>
-							<itemCinderfallSword id="infernomobs:cinderfallsword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage7 treeOrder="100">
+							<itemVerdantCinderfallSword id="infernomobs:cinderfallswordverdant" treeOrder="10"/>
+							<itemAzureCinderfallSword id="infernomobs:cinderfallswordazure" treeOrder="20"/>
+							<itemCinderfallSword id="infernomobs:cinderfallsword" treeOrder="30"/>
 						</swordDamage7>
 					</sword>
 				</sword>
 			</meleeWeapon>
-			<munition>
-				<thrownMunitions>
-					<itemEmberCharge id="infernomobs:embercharge"/>
-					<itemMagmaCharge id="infernomobs:magmacharge"/>
-					<itemScorchfireCharge id="infernomobs:scorchfirecharge"/>
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemEmberCharge id="infernomobs:embercharge" treeOrder="150"/>
+					<itemMagmaCharge id="infernomobs:magmacharge" treeOrder="160"/>
+					<itemScorchfireCharge id="infernomobs:scorchfirecharge" treeOrder="170"/>
 				</thrownMunitions>
-				<scepters>
-					<itemEmberScepter id="infernomobs:emberscepter"/>
-					<itemMagmaScepter id="infernomobs:magmascepter"/>
-					<itemScorchfireScepter id="infernomobs:scorchfirescepter"/>
+				<scepters treeOrder="120">
+					<itemEmberScepter id="infernomobs:emberscepter" treeOrder="130"/>
+					<itemMagmaScepter id="infernomobs:magmascepter" treeOrder="140"/>
+					<itemScorchfireScepter id="infernomobs:scorchfirescepter" treeOrder="150"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnAfrit id="infernomobs:infernoegg" damage="3"/>
-				<itemSpawnCephignis id="infernomobs:infernoegg" damage="2"/>
-				<itemSpawnCinder id="infernomobs:infernoegg" damage="0"/>
-				<itemSpawnKhalk id="infernomobs:infernoegg" damage="4"/>
-				<itemSpawnLobber id="infernomobs:infernoegg" damage="1"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnAfrit id="infernomobs:infernoegg" damage="3" treeOrder="350"/>
+				<itemSpawnCephignis id="infernomobs:infernoegg" damage="2" treeOrder="360"/>
+				<itemSpawnCinder id="infernomobs:infernoegg" damage="0" treeOrder="370"/>
+				<itemSpawnKhalk id="infernomobs:infernoegg" damage="4" treeOrder="380"/>
+				<itemSpawnLobber id="infernomobs:infernoegg" damage="1" treeOrder="390"/>
 			</spawnerEggs>
 		</utility>
-		<bucket>
-			<iteminfernomobs_bucketpurelava id="infernomobs:bucketpurelava"/>
-		</bucket>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<taco>
-						<iteminfernomobs_searingtaco id="infernomobs:searingtaco"/>
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<iteminfernomobs_bucketpurelava id="infernomobs:bucketpurelava" treeOrder="340"/>
+			</bucket>
+		</fluidPortableStorage>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<taco treeOrder="210">
+						<iteminfernomobs_searingtaco id="infernomobs:searingtaco" treeOrder="30"/>
 					</taco>
 				</preparedFood>
-				<cookedFood>
-					<iteminfernomobs_cephignismeatcooked id="infernomobs:cephignismeatcooked"/>
+				<cookedFood treeOrder="50">
+					<iteminfernomobs_cephignismeatcooked id="infernomobs:cephignismeatcooked" treeOrder="210"/>
 				</cookedFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemAfritTreat id="infernomobs:afrittreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemAfritTreat id="infernomobs:afrittreat" treeOrder="100"/>
 				</taming>
 			</hunting>
 		</food>

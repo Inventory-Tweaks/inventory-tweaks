@@ -26,9 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<bucket>
-			<itemForgeBucket id="forge:bucketfilled"/>
-		</bucket>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemForgeBucket id="forge:bucketfilled" treeOrder="410"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

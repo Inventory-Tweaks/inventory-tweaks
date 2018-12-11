@@ -26,21 +26,21 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<quiver>
-				<itemAlchemicalQuiverBasic id="thermalinnovation:quiver"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<quiver treeOrder="50">
+				<itemAlchemicalQuiverBasic id="thermalinnovation:quiver" treeOrder="10"/>
 			</quiver>
 		</weapon>
-		<tool>
-			<magnets>
-				<itemFluxomagnetBasic id="thermalinnovation:magnet"/>
+		<tool treeOrder="20">
+			<magnets treeOrder="280">
+				<itemFluxomagnetBasic id="thermalinnovation:magnet" treeOrder="30"/>
 			</magnets>
 		</tool>
 	</equipment>
-	<item>
-		<syringes>
-			<itemHypoinfuserBasic id="thermalinnovation:injector"/>
+	<item treeOrder="40">
+		<syringes treeOrder="270">
+			<itemHypoinfuserBasic id="thermalinnovation:injector" treeOrder="70"/>
 		</syringes>
 	</item>
 </stuff>

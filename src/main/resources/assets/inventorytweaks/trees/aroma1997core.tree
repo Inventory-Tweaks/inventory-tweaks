@@ -26,14 +26,14 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemAromicHammer id="aroma1997core:wrench"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemAromicHammer id="aroma1997core:wrench" treeOrder="130"/>
 			</wrench>
 		</tool>
 	</equipment>
-	<nonItems>
-		<itemUnnamed id="aroma1997core:wrenched"/>
+	<nonItems treeOrder="50">
+		<itemUnnamed id="aroma1997core:wrenched" treeOrder="140"/>
 	</nonItems>
 </stuff>

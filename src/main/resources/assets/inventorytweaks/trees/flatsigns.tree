@@ -26,17 +26,17 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<sign>
-				<itemFlatSign id="flatsigns:blockflatsign"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<sign treeOrder="50">
+				<itemFlatSign id="flatsigns:blockflatsign" treeOrder="60"/>
 			</sign>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<decoration>
-			<sign>
-				<itemFlatSign id="flatsigns:blockflatsign"/>
+	<item treeOrder="40">
+		<decoration treeOrder="120">
+			<sign treeOrder="210">
+				<itemFlatSign id="flatsigns:blockflatsign" treeOrder="60"/>
 			</sign>
 		</decoration>
 	</item>

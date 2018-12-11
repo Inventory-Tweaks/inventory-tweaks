@@ -26,7 +26,7 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<nonItems>
-		<itemtile.customPortal.name id="dimensionalcontrol:customportal"/>
+	<nonItems treeOrder="50">
+		<itemtile.customPortal.name id="dimensionalcontrol:customportal" treeOrder="160"/>
 	</nonItems>
 </stuff>

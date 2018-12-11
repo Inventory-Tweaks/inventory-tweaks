@@ -26,16 +26,16 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<readableBooks>
-				<itemFoodJournal id="spiceoflife:bookfoodjournal"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemFoodJournal id="spiceoflife:bookfoodjournal" treeOrder="110"/>
 			</readableBooks>
 		</utility>
-		<food>
-			<edibleFood>
-				<itemLunchBox id="spiceoflife:lunchbox"/>
-				<itemLunchBag id="spiceoflife:lunchbag"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<itemLunchBox id="spiceoflife:lunchbox" treeOrder="10"/>
+				<itemLunchBag id="spiceoflife:lunchbag" treeOrder="20"/>
 			</edibleFood>
 		</food>
 	</item>

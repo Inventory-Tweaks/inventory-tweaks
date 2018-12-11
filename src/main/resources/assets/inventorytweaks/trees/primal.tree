@@ -26,118 +26,118 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<DiamondPickLevel>
-						<itemQuartzPickaxe id="primal:quartz_pickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<DiamondPickLevel treeOrder="100">
+						<itemQuartzPickaxe id="primal:quartz_pickaxe" treeOrder="320"/>
 					</DiamondPickLevel>
-					<IronLevel>
-						<itemFlintPickaxe id="primal:flint_pickaxe"/>
+					<IronLevel treeOrder="110">
+						<itemFlintPickaxe id="primal:flint_pickaxe" treeOrder="90"/>
 					</IronLevel>
-					<UnsortedLevel>
-						<itemDiamondPickaxe id="primal:diamond_pickaxe"/>
-						<itemEmeraldPickaxe id="primal:emerald_pickaxe"/>
-						<itemObsidianPickaxe id="primal:obsidian_pickaxe"/>
-						<itemOpalPickaxe id="primal:opal_pickaxe"/>
+					<UnsortedLevel treeOrder="130">
+						<itemDiamondPickaxe id="primal:diamond_pickaxe" treeOrder="120"/>
+						<itemEmeraldPickaxe id="primal:emerald_pickaxe" treeOrder="130"/>
+						<itemObsidianPickaxe id="primal:obsidian_pickaxe" treeOrder="140"/>
+						<itemOpalPickaxe id="primal:opal_pickaxe" treeOrder="150"/>
 					</UnsortedLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemDiamondShovel id="primal:diamond_shovel"/>
-					<itemEmeraldShovel id="primal:emerald_shovel"/>
-					<itemFlintShovel id="primal:flint_shovel"/>
-					<itemObsidianShovel id="primal:obsidian_shovel"/>
-					<itemOpalShovel id="primal:opal_shovel"/>
-					<itemQuartzShovel id="primal:quartz_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemDiamondShovel id="primal:diamond_shovel" treeOrder="1080"/>
+					<itemEmeraldShovel id="primal:emerald_shovel" treeOrder="1090"/>
+					<itemFlintShovel id="primal:flint_shovel" treeOrder="1100"/>
+					<itemObsidianShovel id="primal:obsidian_shovel" treeOrder="1110"/>
+					<itemOpalShovel id="primal:opal_shovel" treeOrder="1120"/>
+					<itemQuartzShovel id="primal:quartz_shovel" treeOrder="1130"/>
 				</shovel>
 			</diggingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemDiamondHoe id="primal:diamond_hoe"/>
-					<itemEmeraldHoe id="primal:emerald_hoe"/>
-					<itemFlintHoe id="primal:flint_hoe"/>
-					<itemObsidianHoe id="primal:obsidian_hoe"/>
-					<itemOpalHoe id="primal:opal_hoe"/>
-					<itemQuartzHoe id="primal:quartz_hoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemDiamondHoe id="primal:diamond_hoe" treeOrder="960"/>
+					<itemEmeraldHoe id="primal:emerald_hoe" treeOrder="970"/>
+					<itemFlintHoe id="primal:flint_hoe" treeOrder="980"/>
+					<itemObsidianHoe id="primal:obsidian_hoe" treeOrder="990"/>
+					<itemOpalHoe id="primal:opal_hoe" treeOrder="1000"/>
+					<itemQuartzHoe id="primal:quartz_hoe" treeOrder="1010"/>
 				</hoe>
 			</farmingTool>
-			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
-				<itemCorphyryFishingRod id="primal:fishing_rod_corypha"/>
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}" treeOrder="70">
+				<itemCorphyryFishingRod id="primal:fishing_rod_corypha" treeOrder="220"/>
 			</fishingRod>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemObsidianHelm id="primal:armor_obsidian_head"/>
-					<itemOvisHead id="primal:armor_ovis_head"/>
-					<itemWolfHood id="primal:armor_wolf_head"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemObsidianHelm id="primal:armor_obsidian_head" treeOrder="330"/>
+					<itemOvisHead id="primal:armor_ovis_head" treeOrder="350"/>
+					<itemWolfHood id="primal:armor_wolf_head" treeOrder="690"/>
 				</helmetUnsorted>
-				<eyeGlasses>
-					<itemObsidianGoggles id="primal:armor_obsidian_goggles"/>
+				<eyeGlasses treeOrder="90">
+					<itemObsidianGoggles id="primal:armor_obsidian_goggles" treeOrder="130"/>
 				</eyeGlasses>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemObsidianChest id="primal:armor_obsidian_body"/>
-						<itemOvisChest id="primal:armor_ovis_body"/>
-						<itemWolfChest id="primal:armor_wolf_body"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemObsidianChest id="primal:armor_obsidian_body" treeOrder="340"/>
+						<itemOvisChest id="primal:armor_ovis_body" treeOrder="360"/>
+						<itemWolfChest id="primal:armor_wolf_body" treeOrder="720"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemObsidianLeggings id="primal:armor_obsidian_legs"/>
-					<itemOvisLeggings id="primal:armor_ovis_legs"/>
-					<itemWolfLeggings id="primal:armor_wolf_legs"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemObsidianLeggings id="primal:armor_obsidian_legs" treeOrder="340"/>
+					<itemOvisLeggings id="primal:armor_ovis_legs" treeOrder="360"/>
+					<itemWolfLeggings id="primal:armor_wolf_legs" treeOrder="650"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemObsidianBoots id="primal:armor_obsidian_feet"/>
-					<itemOvisBoots id="primal:armor_ovis_feet"/>
-					<itemWolfBoots id="primal:armor_wolf_feet"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemObsidianBoots id="primal:armor_obsidian_feet" treeOrder="360"/>
+					<itemOvisBoots id="primal:armor_ovis_feet" treeOrder="380"/>
+					<itemWolfBoots id="primal:armor_wolf_feet" treeOrder="740"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<fence>
-				<woodenFence>
-					<itemIronwoodFence id="primal:fence"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<fence treeOrder="20">
+				<woodenFence treeOrder="20">
+					<itemIronwoodFence id="primal:fence" treeOrder="240"/>
 				</woodenFence>
 			</fence>
-			<stoneWall>
-				<itemCommonStoneWall id="primal:wall"/>
+			<stoneWall treeOrder="40">
+				<itemCommonStoneWall id="primal:wall" treeOrder="240"/>
 			</stoneWall>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemCorphyryStairs id="primal:stairs_corypha"/>
-						<itemDirtStairs id="primal:stairs_dirt"/>
-						<itemFerrocalciteFlagstoneStairs id="primal:stairs_ferro_flag"/>
-						<itemGrassPathStairs id="primal:stairs_path"/>
-						<itemIronwoodStairs id="primal:stairs_ironwood"/>
-						<itemLacquerStairs id="primal:stairs_lacquer"/>
-						<itemLimestoneFlagstoneStairs id="primal:stairs_carbonate_flag"/>
-						<itemMudStairs id="primal:stairs_mud"/>
-						<itemNetherDirtPathStairs id="primal:stairs_nether_path"/>
-						<itemNetherDirtStairs id="primal:stairs_nether_earth"/>
-						<itemNetherrackStairs id="primal:stairs_netherrack"/>
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemCorphyryStairs id="primal:stairs_corypha" treeOrder="2380"/>
+						<itemDirtStairs id="primal:stairs_dirt" treeOrder="2390"/>
+						<itemFerrocalciteFlagstoneStairs id="primal:stairs_ferro_flag" treeOrder="2400"/>
+						<itemGrassPathStairs id="primal:stairs_path" treeOrder="2410"/>
+						<itemIronwoodStairs id="primal:stairs_ironwood" treeOrder="2420"/>
+						<itemLacquerStairs id="primal:stairs_lacquer" treeOrder="2430"/>
+						<itemLimestoneFlagstoneStairs id="primal:stairs_carbonate_flag" treeOrder="2440"/>
+						<itemMudStairs id="primal:stairs_mud" treeOrder="2450"/>
+						<itemNetherDirtPathStairs id="primal:stairs_nether_path" treeOrder="2460"/>
+						<itemNetherDirtStairs id="primal:stairs_nether_earth" treeOrder="2470"/>
+						<itemNetherrackStairs id="primal:stairs_netherrack" treeOrder="2480"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<itemOakStorageCrate id="primal:storage_crate"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<itemOakStorageCrate id="primal:storage_crate" treeOrder="440"/>
 				</chests>
 			</storage>
 		</utility>

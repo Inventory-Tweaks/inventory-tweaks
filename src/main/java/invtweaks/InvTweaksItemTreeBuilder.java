@@ -134,22 +134,59 @@ public class InvTweaksItemTreeBuilder {
         return false;
     }
     
+    private int getTreeOrder(Element element) {
+        String treeOrder = element.getAttribute(InvTweaksItemTreeLoader.ATTR_TREE_ORDER);
+        if (treeOrder.length() == 0) {
+            return Integer.MAX_VALUE;
+        }
+        else {
+            try {
+                return Integer.parseInt(treeOrder);
+            } catch (NumberFormatException e) {
+                //It really isn't the end of the world, just move on.
+                return Integer.MAX_VALUE;
+            }
+        }
+    }
+    
+    //The assumed point is that existing and other are the same logical node.
     private void combine(Element existing, Element other) {
         for (Node otherChildNode = other.getFirstChild(); otherChildNode != null; otherChildNode = otherChildNode.getNextSibling()) {
             @Nullable Element newChild = null;
-            if (otherChildNode.getNodeType() == Node.ELEMENT_NODE) {
-                Element otherChildElement = (Element)otherChildNode;
+            if (otherChildNode.getNodeType() == Node.ELEMENT_NODE) {                
+                Element otherChildElement = (Element)otherChildNode;                
+                int otherChildOrder = getTreeOrder(otherChildElement);
+                
                 List<Element> matches = getChildrenByTagName(existing, otherChildElement.getTagName());
                 for(Element candidate: matches) {
                     if (matchingAttributes(candidate, otherChildElement)) {
                         newChild = candidate;
                         break;
                     }                    
-                }
+                }                
+                
                 //We failed to find an existing option, so we need a new one.
                 if (newChild == null) {
                     newChild = (Element)newDoc.importNode(otherChildElement, true);
-                    existing.appendChild(newChild);
+
+                    @Nullable Node addBeforeNode = null;
+                    //Try to find where this node should go.
+                    for (Node mainChildNode = existing.getFirstChild(); mainChildNode != null; mainChildNode = mainChildNode.getNextSibling()) {
+                        //Comments and other Non-Elements will be ignored.
+                        //We are of course, assuming the main file does not have anything out of order.
+                        //All other files will happen to get fixed though.
+                        int mainChildOrder = 0;  
+                        if (mainChildNode.getNodeType() == Node.ELEMENT_NODE) {
+                            mainChildOrder = getTreeOrder((Element)mainChildNode); 
+                            if (mainChildOrder > otherChildOrder) {
+                                addBeforeNode = mainChildNode;
+                                break;
+                            }
+                        }
+                    }
+                    //If null, insertBefore appends to the end.
+                    existing.insertBefore(newChild, addBeforeNode);
+
                     //We don't need to recurse because we got that for free.
                 }
                 else 

@@ -26,55 +26,55 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<armor>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<armoredJetpacks>
-					<itemCreativeJetpack id="simplyjetpacks:itemjetpack" damage="0"/>
-					<itemDarkSoulariumJetPlate id="simplyjetpacks:itemjetpack" damage="10"/>
-					<itemVibrantJetpackArmored id="simplyjetpacks:itemjetpack" damage="9"/>
-					<itemEnergeticJetpackArmored id="simplyjetpacks:itemjetpack" damage="8"/>
-					<itemElectricalSteelJetpackArmored id="simplyjetpacks:itemjetpack" damage="7"/>
-					<itemConductiveIronJetpackArmored id="simplyjetpacks:itemjetpack" damage="6"/>
-					<itemReinforcedJetpackArmored id="simplyjetpacks:jetpacks" damage="103"/>
-					<itemElectricalSteelJetpackArmored id="simplyjetpacks:jetpackseio" damage="102"/>
-					<itemKineticJetpackArmored id="simplyjetpacks:jetpacksbc" damage="102"/>
-					<itemHardenedJetpackArmored id="simplyjetpacks:jetpacks" damage="102"/>
-					<itemConductiveIronJetpackArmored id="simplyjetpacks:jetpackseio" damage="101"/>
-					<itemLeadstoneJetpackArmored id="simplyjetpacks:jetpacks" damage="101"/>
-					<itemCombustionJetpackArmored id="simplyjetpacks:jetpacksbc" damage="101"/>
+	<equipment treeOrder="10">
+		<armor treeOrder="30">
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<armoredJetpacks treeOrder="10">
+					<itemCreativeJetpack id="simplyjetpacks:itemjetpack" damage="0" treeOrder="10"/>
+					<itemDarkSoulariumJetPlate id="simplyjetpacks:itemjetpack" damage="10" treeOrder="30"/>
+					<itemVibrantJetpackArmored id="simplyjetpacks:itemjetpack" damage="9" treeOrder="40"/>
+					<itemEnergeticJetpackArmored id="simplyjetpacks:itemjetpack" damage="8" treeOrder="50"/>
+					<itemElectricalSteelJetpackArmored id="simplyjetpacks:itemjetpack" damage="7" treeOrder="60"/>
+					<itemConductiveIronJetpackArmored id="simplyjetpacks:itemjetpack" damage="6" treeOrder="70"/>
+					<itemReinforcedJetpackArmored id="simplyjetpacks:jetpacks" damage="103" treeOrder="80"/>
+					<itemElectricalSteelJetpackArmored id="simplyjetpacks:jetpackseio" damage="102" treeOrder="90"/>
+					<itemKineticJetpackArmored id="simplyjetpacks:jetpacksbc" damage="102" treeOrder="100"/>
+					<itemHardenedJetpackArmored id="simplyjetpacks:jetpacks" damage="102" treeOrder="110"/>
+					<itemConductiveIronJetpackArmored id="simplyjetpacks:jetpackseio" damage="101" treeOrder="120"/>
+					<itemLeadstoneJetpackArmored id="simplyjetpacks:jetpacks" damage="101" treeOrder="130"/>
+					<itemCombustionJetpackArmored id="simplyjetpacks:jetpacksbc" damage="101" treeOrder="140"/>
 				</armoredJetpacks>
-				<jetpacks>
-					<itemVibrantJetpack id="simplyjetpacks:itemjetpack" damage="5"/>
-					<itemEnergeticJetpack id="simplyjetpacks:itemjetpack" damage="4"/>
-					<itemElectricalSteelJetpack id="simplyjetpacks:itemjetpack" damage="3"/>
-					<itemConductiveIronJetpack id="simplyjetpacks:itemjetpack" damage="2"/>
-					<itemElectricalSteelJetpack id="simplyjetpacks:jetpackseio" damage="2"/>
-					<itemHardenedJetpack id="simplyjetpacks:jetpacks" damage="2"/>
-					<itemKineticJetpack id="simplyjetpacks:jetpacksbc" damage="2"/>
-					<itemConductiveIronJetpack id="simplyjetpacks:jetpackseio" damage="1"/>
-					<itemLeadstoneJetpack id="simplyjetpacks:jetpacks" damage="1"/>
-					<itemCombustionJetpack id="simplyjetpacks:jetpacksbc" damage="1"/>
+				<jetpacks treeOrder="30">
+					<itemVibrantJetpack id="simplyjetpacks:itemjetpack" damage="5" treeOrder="10"/>
+					<itemEnergeticJetpack id="simplyjetpacks:itemjetpack" damage="4" treeOrder="20"/>
+					<itemElectricalSteelJetpack id="simplyjetpacks:itemjetpack" damage="3" treeOrder="30"/>
+					<itemConductiveIronJetpack id="simplyjetpacks:itemjetpack" damage="2" treeOrder="40"/>
+					<itemElectricalSteelJetpack id="simplyjetpacks:jetpackseio" damage="2" treeOrder="50"/>
+					<itemHardenedJetpack id="simplyjetpacks:jetpacks" damage="2" treeOrder="60"/>
+					<itemKineticJetpack id="simplyjetpacks:jetpacksbc" damage="2" treeOrder="70"/>
+					<itemConductiveIronJetpack id="simplyjetpacks:jetpackseio" damage="1" treeOrder="80"/>
+					<itemLeadstoneJetpack id="simplyjetpacks:jetpacks" damage="1" treeOrder="90"/>
+					<itemCombustionJetpack id="simplyjetpacks:jetpacksbc" damage="1" treeOrder="100"/>
 				</jetpacks>
-				<powerpack>
-					<itemCreativeFluxPack id="simplyjetpacks:fluxpackscommon" damage="9001"/>
-					<itemOctadicCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="104"/>
-					<itemResonantFluxPackArmored id="simplyjetpacks:fluxpacks" damage="104"/>
-					<itemQuadruple-LayerCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="103"/>
-					<itemRedstoneFluxPackArmored id="simplyjetpacks:fluxpacks" damage="103"/>
-					<itemDouble-LayerCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="102"/>
-					<itemHardenedFluxPackArmored id="simplyjetpacks:fluxpacks" damage="102"/>
-					<itemOctadicCapacitorPack id="simplyjetpacks:fluxpackseio" damage="4"/>
-					<itemResonantFluxPack id="simplyjetpacks:fluxpacks" damage="4"/>
-					<itemQuadruple-LayerCapacitorPack id="simplyjetpacks:fluxpackseio" damage="3"/>
-					<itemRedstoneFluxPack id="simplyjetpacks:fluxpacks" damage="3"/>
-					<itemDouble-LayerCapacitorPack id="simplyjetpacks:fluxpackseio" damage="2"/>
-					<itemHardenedFluxPack id="simplyjetpacks:fluxpacks" damage="2"/>
-					<itemBasicCapacitorPack id="simplyjetpacks:fluxpackseio" damage="1"/>
-					<itemLeadstoneFluxPack id="simplyjetpacks:fluxpacks" damage="1"/>
+				<powerpack treeOrder="40">
+					<itemCreativeFluxPack id="simplyjetpacks:fluxpackscommon" damage="9001" treeOrder="10"/>
+					<itemOctadicCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="104" treeOrder="20"/>
+					<itemResonantFluxPackArmored id="simplyjetpacks:fluxpacks" damage="104" treeOrder="30"/>
+					<itemQuadruple-LayerCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="103" treeOrder="40"/>
+					<itemRedstoneFluxPackArmored id="simplyjetpacks:fluxpacks" damage="103" treeOrder="50"/>
+					<itemDouble-LayerCapacitorPackArmored id="simplyjetpacks:fluxpackseio" damage="102" treeOrder="60"/>
+					<itemHardenedFluxPackArmored id="simplyjetpacks:fluxpacks" damage="102" treeOrder="70"/>
+					<itemOctadicCapacitorPack id="simplyjetpacks:fluxpackseio" damage="4" treeOrder="80"/>
+					<itemResonantFluxPack id="simplyjetpacks:fluxpacks" damage="4" treeOrder="90"/>
+					<itemQuadruple-LayerCapacitorPack id="simplyjetpacks:fluxpackseio" damage="3" treeOrder="100"/>
+					<itemRedstoneFluxPack id="simplyjetpacks:fluxpacks" damage="3" treeOrder="110"/>
+					<itemDouble-LayerCapacitorPack id="simplyjetpacks:fluxpackseio" damage="2" treeOrder="120"/>
+					<itemHardenedFluxPack id="simplyjetpacks:fluxpacks" damage="2" treeOrder="130"/>
+					<itemBasicCapacitorPack id="simplyjetpacks:fluxpackseio" damage="1" treeOrder="140"/>
+					<itemLeadstoneFluxPack id="simplyjetpacks:fluxpacks" damage="1" treeOrder="150"/>
 				</powerpack>
-				<trappedJetpacks>
-					<itemTuberousJetpack id="simplyjetpacks:itemjetpack" damage="1"/>
+				<trappedJetpacks treeOrder="50">
+					<itemTuberousJetpack id="simplyjetpacks:itemjetpack" damage="1" treeOrder="10"/>
 				</trappedJetpacks>
 			</chestplate>
 		</armor>

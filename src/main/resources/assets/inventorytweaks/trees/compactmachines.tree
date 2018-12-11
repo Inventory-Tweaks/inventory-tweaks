@@ -26,37 +26,37 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<reductionTool>
-				<itemPersonalShrinkingDevice id="compactmachines:psd"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<reductionTool treeOrder="150">
+				<itemPersonalShrinkingDevice id="compactmachines:psd" treeOrder="10"/>
 			</reductionTool>
 		</tool>
 	</equipment>
-	<block>
-		<mechanism>
-			<machines>
-				<compactMachines>
-					<itemcompactmachines_machine id="compactmachines:machine"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<compactMachines treeOrder="210">
+					<itemcompactmachines_machine id="compactmachines:machine" treeOrder="10"/>
 				</compactMachines>
 			</machines>
 		</mechanism>
 	</block>
-	<item>
-		<parts>
-			<mechanicalParts>
-				<compactMachineParts>
-					<itemAtomEnlargingModule id="compactmachines:enlarger" damage="0"/>
-					<itemCompactMachineWall id="compactmachines:innerwall" damage="0"/>
-					<itemCompactMachineWall id="compactmachines:innerwallcreative" damage="0"/>
-					<itemCompactMachineWallDecorative id="compactmachines:innerwalldecor" damage="0"/>
-					<itemCompactMachineInterface id="compactmachines:interface" damage="0"/>
-					<itemCompactMachineInterface id="compactmachines:interfacecreative" damage="0"/>
-					<itemCompactMachineInterfaceDecorative id="compactmachines:interfacedecor" damage="0"/>
-					<itemWorldResizingInterface id="compactmachines:interfaceitem" damage="0"/>
-					<itemQuantumEntangler id="compactmachines:quantumentangler" damage="0"/>
-					<itemWorldResizingCube id="compactmachines:resizingcube" damage="0"/>
-					<itemAtomShrinkingModule id="compactmachines:shrinker" damage="0"/>
+	<item treeOrder="40">
+		<parts treeOrder="110">
+			<mechanicalParts treeOrder="10">
+				<compactMachineParts treeOrder="120">
+					<itemAtomEnlargingModule id="compactmachines:enlarger" damage="0" treeOrder="10"/>
+					<itemCompactMachineWall id="compactmachines:innerwall" damage="0" treeOrder="20"/>
+					<itemCompactMachineWall id="compactmachines:innerwallcreative" damage="0" treeOrder="30"/>
+					<itemCompactMachineWallDecorative id="compactmachines:innerwalldecor" damage="0" treeOrder="40"/>
+					<itemCompactMachineInterface id="compactmachines:interface" damage="0" treeOrder="50"/>
+					<itemCompactMachineInterface id="compactmachines:interfacecreative" damage="0" treeOrder="60"/>
+					<itemCompactMachineInterfaceDecorative id="compactmachines:interfacedecor" damage="0" treeOrder="70"/>
+					<itemWorldResizingInterface id="compactmachines:interfaceitem" damage="0" treeOrder="80"/>
+					<itemQuantumEntangler id="compactmachines:quantumentangler" damage="0" treeOrder="90"/>
+					<itemWorldResizingCube id="compactmachines:resizingcube" damage="0" treeOrder="100"/>
+					<itemAtomShrinkingModule id="compactmachines:shrinker" damage="0" treeOrder="110"/>
 				</compactMachineParts>
 			</mechanicalParts>
 		</parts>

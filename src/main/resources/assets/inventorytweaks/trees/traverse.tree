@@ -26,24 +26,24 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<fence>
-				<fenceGate>
-					<itemFirFenceGate id="traverse:fir_fence_gate"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<fence treeOrder="20">
+				<fenceGate treeOrder="250">
+					<itemFirFenceGate id="traverse:fir_fence_gate" treeOrder="500"/>
 				</fenceGate>
 			</fence>
-			<stoneWall>
-				<itemCragRockCobblestoneWall id="traverse:blue_rock_cobblestone_wall"/>
-				<itemRedRockCobblestoneWall id="traverse:red_rock_cobblestone_wall"/>
+			<stoneWall treeOrder="40">
+				<itemCragRockCobblestoneWall id="traverse:blue_rock_cobblestone_wall" treeOrder="670"/>
+				<itemRedRockCobblestoneWall id="traverse:red_rock_cobblestone_wall" treeOrder="680"/>
 			</stoneWall>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemCragRockBrickStairs id="traverse:blue_rock_bricks_stairs"/>
-						<itemCragRockCobblestoneStairs id="traverse:blue_rock_cobblestone_stairs"/>
-						<itemRedRockBrickStairs id="traverse:red_rock_bricks_stairs"/>
-						<itemRedRockCobblestoneStairs id="traverse:red_rock_cobblestone_stairs"/>
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemCragRockBrickStairs id="traverse:blue_rock_bricks_stairs" treeOrder="1120"/>
+						<itemCragRockCobblestoneStairs id="traverse:blue_rock_cobblestone_stairs" treeOrder="1130"/>
+						<itemRedRockBrickStairs id="traverse:red_rock_bricks_stairs" treeOrder="1140"/>
+						<itemRedRockCobblestoneStairs id="traverse:red_rock_cobblestone_stairs" treeOrder="1150"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>

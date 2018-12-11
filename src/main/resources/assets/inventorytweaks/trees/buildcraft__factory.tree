@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+|=================================================================|
+| INVENTORY TWEAKS Mod - https://inventory-tweaks.readthedocs.org |
+| Tree configuration                                              |
+|=================================================================|
+
+# Q: WHAT IS THIS?
+# A: This file is used to store all the keywords you can use to create item rules, but also to define the items order.
+# You can move/change all that you want, but it's recommended not to delete any default item.
+
+# Q: MY CUSTOM FILE WAS REPLACED =(
+# A: Since a new major version of Minecraft appeared, I silently updated the tree... BUT!
+# I kept a backup of your version in the same directory. Sorry for the trouble, feel free to import your changes in the new file.
+
+# Q: THE FILE IS BROKEN AND I DON'T KNOW WHAT TO DO =(
+# A: Just delete this file, the default tree will be reloaded next time you sort something!
+
+# This is the modded minecraft tree.  There may be a newer version available at
+# https://github.com/IMarvinTPA/inventory-tweaks/tree/develop/src/main/resources/assets/inventorytweaks
+# Help on maintaining and expanding the tree is welcomed, please contact IMarvinTPA.
+
+# CREDITS
+# Thanks to Larandar & Lunaqua for their contributions.
+# IMarvinTPA for the modded tree.
+-->
+<!-- Note: 'stuff' matches everything, even items that don't appear here -->
+<stuff treeVersion="1.12.2">
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<resourceTransfer treeOrder="300">
+				<groundItemCollector treeOrder="10">
+					<itemChute id="buildcraft|factory:blockhopper" treeOrder="50"/>
+				</groundItemCollector>
+			</resourceTransfer>
+			<basicCrafting treeOrder="360">
+				<craftingTables treeOrder="10">
+					<itemAutoWorkbench id="buildcraft|factory:autoworkbenchblock" damage="0" treeOrder="60"/>
+				</craftingTables>
+			</basicCrafting>
+			<machines treeOrder="380">
+				<poweredMining treeOrder="130">
+					<itemMiningWell id="buildcraft|factory:miningwellblock" treeOrder="100"/>
+				</poweredMining>
+				<poweredFluids treeOrder="140">
+					<itemPump id="buildcraft|factory:pumpblock" treeOrder="170"/>
+					<itemRefinery id="buildcraft|factory:refineryblock" treeOrder="180"/>
+				</poweredFluids>
+				<poweredDroppers treeOrder="150">
+					<itemFloodGate id="buildcraft|factory:floodgateblock" treeOrder="60"/>
+				</poweredDroppers>
+			</machines>
+			<machineupgrades treeOrder="390">
+				<quarryUpgrades treeOrder="40">
+					<itemMiningPipe id="buildcraft|factory:plainpipeblock" treeOrder="130"/>
+				</quarryUpgrades>
+			</machineupgrades>
+		</mechanism>
+	</block>
+	<item treeOrder="40">
+		<fluidStorage treeOrder="50">
+			<fluidTanks treeOrder="30">
+				<itemTank id="buildcraft|factory:tankblock" damage="0" treeOrder="90"/>
+			</fluidTanks>
+		</fluidStorage>
+	</item>
+</stuff>

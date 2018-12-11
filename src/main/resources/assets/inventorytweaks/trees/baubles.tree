@@ -26,10 +26,10 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<baubles>
-			<rings>
-				<itemMinersRing id="baubles:ring"/>
+	<equipment treeOrder="10">
+		<baubles treeOrder="40">
+			<rings treeOrder="10">
+				<itemMinersRing id="baubles:ring" treeOrder="20"/>
 			</rings>
 		</baubles>
 	</equipment>

@@ -26,16 +26,16 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<itemEnderStorage_enderChest id="enderstorage:enderchest"/>
-					<itemEnderChest id="enderstorage:ender_storage"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<itemEnderStorage_enderChest id="enderstorage:enderchest" treeOrder="320"/>
+					<itemEnderChest id="enderstorage:ender_storage" treeOrder="330"/>
 				</chests>
-				<portableStorage>
-					<itemEnderPouch id="enderstorage:enderpouch"/>
-					<itemEnderPouch id="enderstorage:ender_pouch"/>
+				<portableStorage treeOrder="90">
+					<itemEnderPouch id="enderstorage:enderpouch" treeOrder="30"/>
+					<itemEnderPouch id="enderstorage:ender_pouch" treeOrder="40"/>
 				</portableStorage>
 			</storage>
 		</utility>

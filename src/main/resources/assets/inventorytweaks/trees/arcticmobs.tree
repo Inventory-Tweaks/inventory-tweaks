@@ -26,68 +26,70 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<thrownMunitions>
-					<itemBlizzardCharge id="arcticmobs:blizzardcharge"/>
-					<itemFrostboltCharge id="arcticmobs:frostboltcharge"/>
-					<itemFrostwebCharge id="arcticmobs:frostwebcharge"/>
-					<itemIcefireCharge id="arcticmobs:icefirecharge"/>
-					<itemTundraCharge id="arcticmobs:tundracharge"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemBlizzardCharge id="arcticmobs:blizzardcharge" treeOrder="30"/>
+					<itemFrostboltCharge id="arcticmobs:frostboltcharge" treeOrder="40"/>
+					<itemFrostwebCharge id="arcticmobs:frostwebcharge" treeOrder="50"/>
+					<itemIcefireCharge id="arcticmobs:icefirecharge" treeOrder="60"/>
+					<itemTundraCharge id="arcticmobs:tundracharge" treeOrder="70"/>
 				</thrownMunitions>
-				<scepters>
-					<itemBlizzardScepter id="arcticmobs:blizzardscepter"/>
-					<itemFrostboltScepter id="arcticmobs:frostboltscepter"/>
-					<itemFrostwebScepter id="arcticmobs:frostwebscepter"/>
-					<itemIcefireScepter id="arcticmobs:icefirescepter"/>
-					<itemTundraScepter id="arcticmobs:tundrascepter"/>
+				<scepters treeOrder="120">
+					<itemBlizzardScepter id="arcticmobs:blizzardscepter" treeOrder="10"/>
+					<itemFrostboltScepter id="arcticmobs:frostboltscepter" treeOrder="20"/>
+					<itemFrostwebScepter id="arcticmobs:frostwebscepter" treeOrder="30"/>
+					<itemIcefireScepter id="arcticmobs:icefirescepter" treeOrder="40"/>
+					<itemTundraScepter id="arcticmobs:tundrascepter" treeOrder="50"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnArix id="arcticmobs:arcticegg" damage="4"/>
-				<itemSpawnFrostweaver id="arcticmobs:arcticegg" damage="1"/>
-				<itemSpawnReiver id="arcticmobs:arcticegg" damage="0"/>
-				<itemSpawnSerpix id="arcticmobs:arcticegg" damage="5"/>
-				<itemSpawnWendigo id="arcticmobs:arcticegg" damage="3"/>
-				<itemSpawnYeti id="arcticmobs:arcticegg" damage="2"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnArix id="arcticmobs:arcticegg" damage="4" treeOrder="30"/>
+				<itemSpawnFrostweaver id="arcticmobs:arcticegg" damage="1" treeOrder="40"/>
+				<itemSpawnReiver id="arcticmobs:arcticegg" damage="0" treeOrder="50"/>
+				<itemSpawnSerpix id="arcticmobs:arcticegg" damage="5" treeOrder="60"/>
+				<itemSpawnWendigo id="arcticmobs:arcticegg" damage="3" treeOrder="70"/>
+				<itemSpawnYeti id="arcticmobs:arcticegg" damage="2" treeOrder="80"/>
 			</spawnerEggs>
 		</utility>
-		<bucket>
-			<itemarcticmobs_bucketooze id="arcticmobs:bucketooze"/>
-		</bucket>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<soup>
-						<itemPaleSoup id="arcticmobs:palesoup"/>
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemarcticmobs_bucketooze id="arcticmobs:bucketooze" treeOrder="320"/>
+			</bucket>
+		</fluidPortableStorage>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<soup treeOrder="150">
+						<itemPaleSoup id="arcticmobs:palesoup" treeOrder="230"/>
 					</soup>
 				</preparedFood>
-				<cookedFood>
-					<itemarcticmobs_yetimeatcooked id="arcticmobs:yetimeatcooked"/>
+				<cookedFood treeOrder="50">
+					<itemarcticmobs_yetimeatcooked id="arcticmobs:yetimeatcooked" treeOrder="300"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemarcticmobs_yetimeatraw id="arcticmobs:yetimeatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemarcticmobs_yetimeatraw id="arcticmobs:yetimeatraw" treeOrder="250"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemArixTreat id="arcticmobs:arixtreat"/>
-					<itemSerpixTreat id="arcticmobs:serpixtreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemArixTreat id="arcticmobs:arixtreat" treeOrder="10"/>
+					<itemSerpixTreat id="arcticmobs:serpixtreat" treeOrder="20"/>
 				</taming>
 			</hunting>
 		</food>
 	</item>
-	<nonItems>
-		<itemFrostcloud id="arcticmobs:frostcloud"/>
-		<itemFrostfire id="arcticmobs:frostfire"/>
-		<itemFrostweb id="arcticmobs:frostweb"/>
-		<itemIcefire id="arcticmobs:icefire"/>
+	<nonItems treeOrder="50">
+		<itemFrostcloud id="arcticmobs:frostcloud" treeOrder="100"/>
+		<itemFrostfire id="arcticmobs:frostfire" treeOrder="110"/>
+		<itemFrostweb id="arcticmobs:frostweb" treeOrder="120"/>
+		<itemIcefire id="arcticmobs:icefire" treeOrder="130"/>
 	</nonItems>
 </stuff>

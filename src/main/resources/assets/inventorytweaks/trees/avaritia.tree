@@ -26,14 +26,14 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordUnsorted>
-							<itemSkullfireSword id="avaritia:skullfire_sword"/>
-							<itemSwordoftheCosmos id="avaritia:infinity_sword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordUnsorted treeOrder="170">
+							<itemSkullfireSword id="avaritia:skullfire_sword" treeOrder="100"/>
+							<itemSwordoftheCosmos id="avaritia:infinity_sword" treeOrder="110"/>
 						</swordUnsorted>
 					</sword>
 				</sword>

@@ -26,18 +26,18 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<storageupgrades>
-					<itemBlankUpgrade id="ironbackpacks:upgrade" damage="0"/>
-					<itemDamageBarUpgrade id="ironbackpacks:upgrade" damage="0"/>
-					<itemEverlastingUpgrade id="ironbackpacks:upgrade" damage="0"/>
-					<itemExtraUpgradePoint id="ironbackpacks:upgrade" damage="0"/>
-					<itemLatchUpgrade id="ironbackpacks:upgrade" damage="0"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<storageupgrades treeOrder="80">
+					<itemBlankUpgrade id="ironbackpacks:upgrade" damage="0" treeOrder="540"/>
+					<itemDamageBarUpgrade id="ironbackpacks:upgrade" damage="0" treeOrder="550"/>
+					<itemEverlastingUpgrade id="ironbackpacks:upgrade" damage="0" treeOrder="560"/>
+					<itemExtraUpgradePoint id="ironbackpacks:upgrade" damage="0" treeOrder="570"/>
+					<itemLatchUpgrade id="ironbackpacks:upgrade" damage="0" treeOrder="580"/>
 				</storageupgrades>
-				<portableStorage>
-					<itemBasicBackpack id="ironbackpacks:backpack"/>
+				<portableStorage treeOrder="90">
+					<itemBasicBackpack id="ironbackpacks:backpack" treeOrder="80"/>
 				</portableStorage>
 			</storage>
 		</utility>

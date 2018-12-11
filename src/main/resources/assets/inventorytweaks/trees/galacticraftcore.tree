@@ -26,84 +26,86 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<CobaltPickLevel>
-						<itemHeavyDutyPickaxe id="galacticraftcore:steel_pickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<CobaltPickLevel treeOrder="80">
+						<itemHeavyDutyPickaxe id="galacticraftcore:steel_pickaxe" treeOrder="100"/>
 					</CobaltPickLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemHeavyDutyShovel id="galacticraftcore:steel_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemHeavyDutyShovel id="galacticraftcore:steel_shovel" treeOrder="970"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemHeavyDutyAxe id="galacticraftcore:steel_axe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemHeavyDutyAxe id="galacticraftcore:steel_axe" treeOrder="970"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemHeavyDutyHoe id="galacticraftcore:steel_hoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemHeavyDutyHoe id="galacticraftcore:steel_hoe" treeOrder="850"/>
 				</hoe>
 			</farmingTool>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemStandardWrench id="galacticraftcore:standard_wrench"/>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemStandardWrench id="galacticraftcore:standard_wrench" treeOrder="270"/>
 			</wrench>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemHeavyDutyHelmet id="galacticraftcore:steel_helmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemHeavyDutyHelmet id="galacticraftcore:steel_helmet" treeOrder="230"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemHeavyDutyChestplate id="galacticraftcore:steel_chestplate"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemHeavyDutyChestplate id="galacticraftcore:steel_chestplate" treeOrder="220"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemHeavyDutyLeggings id="galacticraftcore:steel_leggings"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemHeavyDutyLeggings id="galacticraftcore:steel_leggings" treeOrder="230"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemHeavyDutyBoots id="galacticraftcore:steel_boots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemHeavyDutyBoots id="galacticraftcore:steel_boots" treeOrder="260"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemMoonDungeonBrickStairs id="galacticraftcore:moon_stairs_brick"/>
-						<itemMoonRockStairs id="galacticraftcore:moon_stairs_stone"/>
-						<itemTinDecorationStairs id="galacticraftcore:tin_stairs_1"/>
-						<itemTinDecorationStairs id="galacticraftcore:tin_stairs_2"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemMoonDungeonBrickStairs id="galacticraftcore:moon_stairs_brick" treeOrder="2070"/>
+						<itemMoonRockStairs id="galacticraftcore:moon_stairs_stone" treeOrder="2080"/>
+						<itemTinDecorationStairs id="galacticraftcore:tin_stairs_1" treeOrder="2090"/>
+						<itemTinDecorationStairs id="galacticraftcore:tin_stairs_2" treeOrder="2100"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<basicCrafting>
-				<craftingTables>
-					<itemMagneticCraftingTable id="galacticraftcore:magnetic_table"/>
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<craftingTables treeOrder="10">
+					<itemMagneticCraftingTable id="galacticraftcore:magnetic_table" treeOrder="180"/>
 				</craftingTables>
 			</basicCrafting>
 		</mechanism>
 	</block>
-	<item>
-		<bucket>
-			<itemFuelBucket id="galacticraftcore:bucket_fuel"/>
-			<itemOilBucket id="galacticraftcore:bucket_oil"/>
-		</bucket>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemFuelBucket id="galacticraftcore:bucket_fuel" treeOrder="460"/>
+				<itemOilBucket id="galacticraftcore:bucket_oil" treeOrder="470"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

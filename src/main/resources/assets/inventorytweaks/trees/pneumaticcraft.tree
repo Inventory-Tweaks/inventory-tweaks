@@ -26,16 +26,16 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemPneumaticWrench id="pneumaticcraft:pneumatic_wrench"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemPneumaticWrench id="pneumaticcraft:pneumatic_wrench" treeOrder="290"/>
 			</wrench>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemPneumaticHelmet id="pneumaticcraft:pneumatic_helmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemPneumaticHelmet id="pneumaticcraft:pneumatic_helmet" treeOrder="410"/>
 				</helmetUnsorted>
 			</helmet>
 		</armor>

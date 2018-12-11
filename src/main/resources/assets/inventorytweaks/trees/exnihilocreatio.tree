@@ -26,96 +26,96 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<crushingTools>
-				<crushingHammers mergeChildren="true">
-					<itemDiamondHammer id="exnihilocreatio:hammer_diamond"/>
-					<itemGoldHammer id="exnihilocreatio:hammer_gold"/>
-					<itemIronHammer id="exnihilocreatio:hammer_iron"/>
-					<itemStoneHammer id="exnihilocreatio:hammer_stone"/>
-					<itemWoodenHammer id="exnihilocreatio:hammer_wood"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<crushingTools treeOrder="200">
+				<crushingHammers mergeChildren="true" treeOrder="20">
+					<itemDiamondHammer id="exnihilocreatio:hammer_diamond" treeOrder="10"/>
+					<itemGoldHammer id="exnihilocreatio:hammer_gold" treeOrder="90"/>
+					<itemIronHammer id="exnihilocreatio:hammer_iron" treeOrder="100"/>
+					<itemStoneHammer id="exnihilocreatio:hammer_stone" treeOrder="110"/>
+					<itemWoodenHammer id="exnihilocreatio:hammer_wood" treeOrder="120"/>
 				</crushingHammers>
 			</crushingTools>
 		</tool>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<dustBlock>
-				<itemDust id="exnihilocreatio:block_dust"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<dustBlock treeOrder="40">
+				<itemDust id="exnihilocreatio:block_dust" treeOrder="10"/>
 			</dustBlock>
-			<gravel>
-				<itemCrushedEndstone id="exnihilocreatio:block_endstone_crushed"/>
-				<itemCrushedNetherrack id="exnihilocreatio:block_netherrack_crushed"/>
-				<itemCrushedSkyStone id="exnihilocreatio:block_skystone_crushed"/>
+			<gravel treeOrder="60">
+				<itemCrushedEndstone id="exnihilocreatio:block_endstone_crushed" treeOrder="80"/>
+				<itemCrushedNetherrack id="exnihilocreatio:block_netherrack_crushed" treeOrder="90"/>
+				<itemCrushedSkyStone id="exnihilocreatio:block_skystone_crushed" treeOrder="100"/>
 			</gravel>
-			<liquid>
-				<itemizedFluids>
-					<itemWitchWater id="exnihilocreatio:witchwater"/>
+			<liquid treeOrder="200">
+				<itemizedFluids treeOrder="70">
+					<itemWitchWater id="exnihilocreatio:witchwater" treeOrder="180"/>
 				</itemizedFluids>
 			</liquid>
 		</naturalBlock>
-		<manufacturedBlock>
-			<itemBlock>
-				<itemSieve id="exnihilocreatio:block_sieve"/>
-				<itemWoodenCrucible id="exnihilocreatio:block_crucible_wood"/>
-				<itemUnfiredCrucible id="exnihilocreatio:block_crucible"/>
-				<itemWaterwheel id="exnihilocreatio:block_waterwheel"/>
-				<itemStoneAxle id="exnihilocreatio:block_axle_stone"/>
-				<itemWoodenBarrel id="exnihilocreatio:block_barrel0"/>
-				<itemStoneBarrel id="exnihilocreatio:block_barrel1"/>
-				<itemGrinderWIPDoesnothingyet id="exnihilocreatio:block_grinder"/>
+		<manufacturedBlock treeOrder="50">
+			<itemBlock treeOrder="90">
+				<itemSieve id="exnihilocreatio:block_sieve" treeOrder="90"/>
+				<itemWoodenCrucible id="exnihilocreatio:block_crucible_wood" treeOrder="110"/>
+				<itemUnfiredCrucible id="exnihilocreatio:block_crucible" treeOrder="130"/>
+				<itemWaterwheel id="exnihilocreatio:block_waterwheel" treeOrder="140"/>
+				<itemStoneAxle id="exnihilocreatio:block_axle_stone" treeOrder="150"/>
+				<itemWoodenBarrel id="exnihilocreatio:block_barrel0" treeOrder="160"/>
+				<itemStoneBarrel id="exnihilocreatio:block_barrel1" treeOrder="170"/>
+				<itemGrinderWIPDoesnothingyet id="exnihilocreatio:block_grinder" treeOrder="180"/>
 			</itemBlock>
-			<itemFilter>
-				<itemStringMesh id="exnihilocreatio:item_mesh"/>
+			<itemFilter treeOrder="100">
+				<itemStringMesh id="exnihilocreatio:item_mesh" treeOrder="10"/>
 			</itemFilter>
 		</manufacturedBlock>
-		<mechanism>
-			<machines>
-				<randomMachines>
-					<itemAutoSifter id="exnihilocreatio:block_auto_sifter"/>
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<randomMachines treeOrder="200">
+					<itemAutoSifter id="exnihilocreatio:block_auto_sifter" treeOrder="300"/>
 				</randomMachines>
 			</machines>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<orePiece>
-				<itemStonePebble id="exnihilocreatio:item_pebble"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<orePiece treeOrder="60">
+				<itemStonePebble id="exnihilocreatio:item_pebble" treeOrder="10"/>
 			</orePiece>
 		</miningResources>
 	</resources>
-	<item>
-		<utility>
-			<spawnerDolls>
-				<itemPorcelainDoll id="exnihilocreatio:item_material" damage="5"/>
-				<itemBlazingDoll id="exnihilocreatio:item_doll"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerDolls treeOrder="210">
+				<itemPorcelainDoll id="exnihilocreatio:item_material" damage="5" treeOrder="10"/>
+				<itemBlazingDoll id="exnihilocreatio:item_doll" treeOrder="20"/>
 			</spawnerDolls>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemCookedSilkworm id="exnihilocreatio:item_cooked_silkworm" damage="0"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemCookedSilkworm id="exnihilocreatio:item_cooked_silkworm" damage="0" treeOrder="440"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemSilkworm id="exnihilocreatio:item_material" damage="2"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemSilkworm id="exnihilocreatio:item_material" damage="2" treeOrder="410"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<unedibleFood>
-				<cakes>
-					<itemEndCake id="exnihilocreatio:block_end_cake"/>
+			<unedibleFood treeOrder="50">
+				<cakes treeOrder="130">
+					<itemEndCake id="exnihilocreatio:block_end_cake" treeOrder="350"/>
 				</cakes>
 			</unedibleFood>
 		</food>
-		<plant>
-			<leaves id="leaves">
-				<itemInfestedLeaves id="exnihilocreatio:block_infested_leaves"/>
-				<itemInfestedLeaves id="exnihilocreatio:block_infesting_leaves"/>
+		<plant treeOrder="160">
+			<leaves id="leaves" treeOrder="30">
+				<itemInfestedLeaves id="exnihilocreatio:block_infested_leaves" treeOrder="120"/>
+				<itemInfestedLeaves id="exnihilocreatio:block_infesting_leaves" treeOrder="130"/>
 			</leaves>
-			<seed>
-				<itemAncientSpores id="exnihilocreatio:item_material" damage="3"/>
+			<seed treeOrder="60">
+				<itemAncientSpores id="exnihilocreatio:item_material" damage="3" treeOrder="30"/>
 			</seed>
 		</plant>
 	</item>

@@ -26,56 +26,69 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordUnsorted>
-							<itemBoneSword id="tp:bone_sword"/>
-							<itemDiamondNetherrackSword id="tp:nether_diamond_sword"/>
-							<itemEmeraldSword id="tp:emerald_sword"/>
-							<itemFlintSword id="tp:flint_sword"/>
-							<itemGoldenNetherrackSword id="tp:nether_gold_sword"/>
-							<itemIronNetherrackSword id="tp:nether_iron_sword"/>
-							<itemNetherrackSword id="tp:nether_sword"/>
-							<itemObsidianSword id="tp:obsidian_sword"/>
-							<itemWubSword id="tp:wub_sword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordUnsorted treeOrder="170">
+							<itemBoneSword id="tp:bone_sword" treeOrder="510"/>
+							<itemDiamondNetherrackSword id="tp:nether_diamond_sword" treeOrder="520"/>
+							<itemEmeraldSword id="tp:emerald_sword" treeOrder="530"/>
+							<itemFlintSword id="tp:flint_sword" treeOrder="540"/>
+							<itemGoldenNetherrackSword id="tp:nether_gold_sword" treeOrder="550"/>
+							<itemIronNetherrackSword id="tp:nether_iron_sword" treeOrder="560"/>
+							<itemNetherrackSword id="tp:nether_sword" treeOrder="570"/>
+							<itemObsidianSword id="tp:obsidian_sword" treeOrder="580"/>
+							<itemWubSword id="tp:wub_sword" treeOrder="590"/>
 						</swordUnsorted>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<farmingTool>
-				<otherFarmingTools>
-					<itemReinforcedWateringCan id="tp:watering_can_upgrade"/>
-					<itemWateringCan id="tp:watering_can"/>
+		<tool treeOrder="20">
+			<farmingTool treeOrder="50">
+				<otherFarmingTools treeOrder="60">
+					<itemReinforcedWateringCan id="tp:watering_can_upgrade" treeOrder="80"/>
+					<itemWateringCan id="tp:watering_can" treeOrder="110"/>
 				</otherFarmingTools>
 			</farmingTool>
-			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
-				<itemDiamondShears id="tp:diamond_shears"/>
-				<itemEmeraldShears id="tp:emerald_shears"/>
-				<itemFlintShears id="tp:flint_shears"/>
-				<itemGoldenShears id="tp:golden_shears"/>
-				<itemStoneShears id="tp:stone_shears"/>
-				<itemWoodenShears id="tp:wooden_shears"/>
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true" treeOrder="60">
+				<itemDiamondShears id="tp:diamond_shears" treeOrder="440"/>
+				<itemEmeraldShears id="tp:emerald_shears" treeOrder="450"/>
+				<itemFlintShears id="tp:flint_shears" treeOrder="460"/>
+				<itemGoldenShears id="tp:golden_shears" treeOrder="470"/>
+				<itemStoneShears id="tp:stone_shears" treeOrder="480"/>
+				<itemWoodenShears id="tp:wooden_shears" treeOrder="490"/>
 			</shears>
 		</tool>
 	</equipment>
-	<item>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<pizza>
-						<itemBamsPineapplePizza id="tp:bams_pizza"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<cobbleCreators treeOrder="120">
+					<itemCobblestoneGenerator id="tp:cobblegen_block" treeOrder="40"/>
+					<itemCobblestoneGeneratorTier2 id="tp:iron_cobblegen_block" treeOrder="50"/>
+					<itemCobblestoneGeneratorTier3 id="tp:diamond_cobblegen_block" treeOrder="60"/>
+					<itemCobblestoneGeneratorTier4 id="tp:blaze_cobblegen_block" treeOrder="70"/>
+					<itemCobblestoneGeneratorTier5 id="tp:emerald_cobblegen_block" treeOrder="80"/>
+				</cobbleCreators>
+			</machines>
+		</mechanism>
+	</block>
+	<item treeOrder="40">
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<pizza treeOrder="140">
+						<itemBamsPineapplePizza id="tp:bams_pizza" treeOrder="40"/>
 					</pizza>
-					<sandwich>
-						<itemBaconandEggSandwich id="tp:bacon_eggs_sandwhich"/>
-						<itemBaconSandwich id="tp:bacon_sandwhich"/>
-						<itemBeefSandwich id="tp:beef_sandwhich"/>
-						<itemChickenSandwich id="tp:chicken_sandwhich"/>
-						<itemRabbitSandwich id="tp:rabbit_sandwhich"/>
+					<sandwich treeOrder="190">
+						<itemBaconandEggSandwich id="tp:bacon_eggs_sandwhich" treeOrder="190"/>
+						<itemBaconSandwich id="tp:bacon_sandwhich" treeOrder="200"/>
+						<itemBeefSandwich id="tp:beef_sandwhich" treeOrder="210"/>
+						<itemChickenSandwich id="tp:chicken_sandwhich" treeOrder="220"/>
+						<itemRabbitSandwich id="tp:rabbit_sandwhich" treeOrder="230"/>
 					</sandwich>
 				</preparedFood>
 			</edibleFood>

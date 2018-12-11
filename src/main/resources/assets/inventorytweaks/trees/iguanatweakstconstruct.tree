@@ -26,29 +26,31 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
-				<itemArditeSaw id="iguanatweakstconstruct:sawardite"/>
-				<itemCobaltSaw id="iguanatweakstconstruct:sawcobalt"/>
-				<itemManyullynSaw id="iguanatweakstconstruct:sawmanyullyn"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}" treeOrder="90">
+				<itemArditeSaw id="iguanatweakstconstruct:sawardite" treeOrder="60"/>
+				<itemCobaltSaw id="iguanatweakstconstruct:sawcobalt" treeOrder="70"/>
+				<itemManyullynSaw id="iguanatweakstconstruct:sawmanyullyn" treeOrder="80"/>
 			</saws>
 		</tool>
 	</equipment>
-	<item>
-		<bucket>
-			<itemIguanaTweakstconstruct_clayBucketUnfired id="iguanatweakstconstruct:claybucketunfired"/>
-			<itemIguanaTweakstconstruct_clayBucketFired id="iguanatweakstconstruct:claybucketfired"/>
-			<itemIguanaTweakstconstruct_clayBucketWater id="iguanatweakstconstruct:claybucketwater"/>
-			<itemIguanaTweakstconstruct_clayBucketLava id="iguanatweakstconstruct:claybucketlava"/>
-			<itemIguanaTweakstconstruct_clayBucketsTinkers id="iguanatweakstconstruct:claybucketstinkers"/>
-		</bucket>
-		<decoration>
-			<head>
-				<itemITEndermanHead id="iguanatweakstconstruct:skullitem" damage="0"/>
-				<itemBlazeHead id="iguanatweakstconstruct:skullitem" damage="2"/>
-				<itemBlizzHead id="iguanatweakstconstruct:skullitem" damage="3"/>
-				<itemPigmanHead id="iguanatweakstconstruct:skullitem" damage="1"/>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemIguanaTweakstconstruct_clayBucketUnfired id="iguanatweakstconstruct:claybucketunfired" treeOrder="20"/>
+				<itemIguanaTweakstconstruct_clayBucketFired id="iguanatweakstconstruct:claybucketfired" treeOrder="50"/>
+				<itemIguanaTweakstconstruct_clayBucketWater id="iguanatweakstconstruct:claybucketwater" treeOrder="70"/>
+				<itemIguanaTweakstconstruct_clayBucketLava id="iguanatweakstconstruct:claybucketlava" treeOrder="90"/>
+				<itemIguanaTweakstconstruct_clayBucketsTinkers id="iguanatweakstconstruct:claybucketstinkers" treeOrder="400"/>
+			</bucket>
+		</fluidPortableStorage>
+		<decoration treeOrder="120">
+			<head treeOrder="420">
+				<itemITEndermanHead id="iguanatweakstconstruct:skullitem" damage="0" treeOrder="90"/>
+				<itemBlazeHead id="iguanatweakstconstruct:skullitem" damage="2" treeOrder="250"/>
+				<itemBlizzHead id="iguanatweakstconstruct:skullitem" damage="3" treeOrder="290"/>
+				<itemPigmanHead id="iguanatweakstconstruct:skullitem" damage="1" treeOrder="1350"/>
 			</head>
 		</decoration>
 	</item>

@@ -26,87 +26,89 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<Level5>
-						<itemTitaniumPickaxe id="galacticraftplanets:titanium_pickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<Level5 treeOrder="60">
+						<itemTitaniumPickaxe id="galacticraftplanets:titanium_pickaxe" treeOrder="30"/>
 					</Level5>
-					<CobaltPickLevel>
-						<itemDeshPickaxe id="galacticraftplanets:desh_pick"/>
-						<itemStickyDeshPickaxe id="galacticraftplanets:desh_pick_slime"/>
+					<CobaltPickLevel treeOrder="80">
+						<itemDeshPickaxe id="galacticraftplanets:desh_pick" treeOrder="40"/>
+						<itemStickyDeshPickaxe id="galacticraftplanets:desh_pick_slime" treeOrder="140"/>
 					</CobaltPickLevel>
-					<ObsidianLevel>
-						<itemVolcanicPickaxe id="galacticraftplanets:volcanic_pickaxe"/>
+					<ObsidianLevel treeOrder="90">
+						<itemVolcanicPickaxe id="galacticraftplanets:volcanic_pickaxe" treeOrder="230"/>
 					</ObsidianLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemDeshShovel id="galacticraftplanets:desh_spade"/>
-					<itemTitaniumShovel id="galacticraftplanets:titanium_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemDeshShovel id="galacticraftplanets:desh_spade" treeOrder="980"/>
+					<itemTitaniumShovel id="galacticraftplanets:titanium_shovel" treeOrder="990"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemDeshAxe id="galacticraftplanets:desh_axe"/>
-					<itemTitaniumAxe id="galacticraftplanets:titanium_axe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemDeshAxe id="galacticraftplanets:desh_axe" treeOrder="980"/>
+					<itemTitaniumAxe id="galacticraftplanets:titanium_axe" treeOrder="990"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemDeshHoe id="galacticraftplanets:desh_hoe"/>
-					<itemTitaniumHoe id="galacticraftplanets:titanium_hoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemDeshHoe id="galacticraftplanets:desh_hoe" treeOrder="860"/>
+					<itemTitaniumHoe id="galacticraftplanets:titanium_hoe" treeOrder="870"/>
 				</hoe>
 			</farmingTool>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemDeshHelmet id="galacticraftplanets:desh_helmet"/>
-					<itemTitaniumHelmet id="galacticraftplanets:titanium_helmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemDeshHelmet id="galacticraftplanets:desh_helmet" treeOrder="110"/>
+					<itemTitaniumHelmet id="galacticraftplanets:titanium_helmet" treeOrder="630"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemDeshChestplate id="galacticraftplanets:desh_chestplate"/>
-						<itemIsothermalChestpiece id="galacticraftplanets:thermal_padding_t2"/>
-						<itemTitaniumChestplate id="galacticraftplanets:titanium_chestplate"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemDeshChestplate id="galacticraftplanets:desh_chestplate" treeOrder="120"/>
+						<itemIsothermalChestpiece id="galacticraftplanets:thermal_padding_t2" treeOrder="260"/>
+						<itemTitaniumChestplate id="galacticraftplanets:titanium_chestplate" treeOrder="680"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemDeshLeggings id="galacticraftplanets:desh_leggings"/>
-					<itemTitaniumLeggings id="galacticraftplanets:titanium_leggings"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemDeshLeggings id="galacticraftplanets:desh_leggings" treeOrder="110"/>
+					<itemTitaniumLeggings id="galacticraftplanets:titanium_leggings" treeOrder="610"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemDeshBoots id="galacticraftplanets:desh_boots"/>
-					<itemTitaniumBoots id="galacticraftplanets:titanium_boots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemDeshBoots id="galacticraftplanets:desh_boots" treeOrder="140"/>
+					<itemTitaniumBoots id="galacticraftplanets:titanium_boots" treeOrder="690"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemMarsCobblestoneStairs id="galacticraftplanets:mars_stairs_cobblestone"/>
-						<itemMarsDungeonBrickStairs id="galacticraftplanets:mars_stairs_brick"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemMarsCobblestoneStairs id="galacticraftplanets:mars_stairs_cobblestone" treeOrder="2110"/>
+						<itemMarsDungeonBrickStairs id="galacticraftplanets:mars_stairs_brick" treeOrder="2120"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<bucket>
-			<itemBacterialSludgeBucket id="galacticraftplanets:bucket_sludge"/>
-			<itemSulfuricAcidBucket id="galacticraftplanets:bucket_sulphuric_acid"/>
-		</bucket>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemBacterialSludgeBucket id="galacticraftplanets:bucket_sludge" treeOrder="480"/>
+				<itemSulfuricAcidBucket id="galacticraftplanets:bucket_sulphuric_acid" treeOrder="490"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

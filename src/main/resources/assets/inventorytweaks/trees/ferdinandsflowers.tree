@@ -26,184 +26,184 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<stainedGlass>
-					<itemDyedGlass id="ferdinandsflowers:block_dye_glass"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<stainedGlass treeOrder="50">
+					<itemDyedGlass id="ferdinandsflowers:block_dye_glass" treeOrder="10"/>
 				</stainedGlass>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<lighting>
-				<stoneLights>
-					<itemStoneLight id="ferdinandsflowers:block_stone_light"/>
-					<itemCobblestoneLight id="ferdinandsflowers:block_cobble_light"/>
+		<mechanism treeOrder="60">
+			<lighting treeOrder="30">
+				<stoneLights treeOrder="110">
+					<itemStoneLight id="ferdinandsflowers:block_stone_light" treeOrder="10"/>
+					<itemCobblestoneLight id="ferdinandsflowers:block_cobble_light" treeOrder="20"/>
 				</stoneLights>
-				<woodLights>
-					<itemOakLogLight id="ferdinandsflowers:block_log_light"/>
-					<itemOakPlankLight id="ferdinandsflowers:block_plank_light"/>
+				<woodLights treeOrder="120">
+					<itemOakLogLight id="ferdinandsflowers:block_log_light" treeOrder="10"/>
+					<itemOakPlankLight id="ferdinandsflowers:block_plank_light" treeOrder="20"/>
 				</woodLights>
-				<blockLights>
-					<itemDirtLight id="ferdinandsflowers:block_dirt_light"/>
-					<itemGravelLight id="ferdinandsflowers:block_gravel_light"/>
-					<itemIronBlockLight id="ferdinandsflowers:block_metal_light"/>
-					<itemSandLight id="ferdinandsflowers:block_sand_light"/>
+				<blockLights treeOrder="130">
+					<itemDirtLight id="ferdinandsflowers:block_dirt_light" treeOrder="10"/>
+					<itemGravelLight id="ferdinandsflowers:block_gravel_light" treeOrder="20"/>
+					<itemIronBlockLight id="ferdinandsflowers:block_metal_light" treeOrder="30"/>
+					<itemSandLight id="ferdinandsflowers:block_sand_light" treeOrder="40"/>
 				</blockLights>
-				<lightBricks id="minefactoryreloaded:brick" damage="1">
-					<itemStoneBrickLight id="ferdinandsflowers:block_stonebrick_light"/>
+				<lightBricks id="minefactoryreloaded:brick" damage="1" treeOrder="140">
+					<itemStoneBrickLight id="ferdinandsflowers:block_stonebrick_light" treeOrder="20"/>
 				</lightBricks>
 			</lighting>
 		</mechanism>
 	</block>
-	<item>
-		<food>
-			<unedibleFood>
-				<cakes>
-					<itemBirthdayCake id="ferdinandsflowers:block_birthday"/>
+	<item treeOrder="40">
+		<food treeOrder="150">
+			<unedibleFood treeOrder="50">
+				<cakes treeOrder="130">
+					<itemBirthdayCake id="ferdinandsflowers:block_birthday" treeOrder="50"/>
 				</cakes>
 			</unedibleFood>
 		</food>
-		<plant>
-			<flower>
-				<flowerWhite>
-					<itemCallaLily id="ferdinandsflowers:block_cff_flowersd" damage="6"/>
-					<itemLilyoftheValley id="ferdinandsflowers:block_cff_flowersb" damage="8"/>
-					<itemMendocinoPoppy id="ferdinandsflowers:block_cff_doublesb" damage="1"/>
-					<itemOrchid id="ferdinandsflowers:block_cff_flowersd" damage="8"/>
-					<itemTallCallaLily id="ferdinandsflowers:block_cff_doublesb" damage="0"/>
-					<itemWhiteDaffodil id="ferdinandsflowers:block_cff_flowers" damage="13"/>
-					<itemWhiteTinselFlower id="ferdinandsflowers:block_cff_desert" damage="11"/>
+		<plant treeOrder="160">
+			<flower treeOrder="10">
+				<flowerWhite treeOrder="20">
+					<itemCallaLily id="ferdinandsflowers:block_cff_flowersd" damage="6" treeOrder="10"/>
+					<itemLilyoftheValley id="ferdinandsflowers:block_cff_flowersb" damage="8" treeOrder="30"/>
+					<itemMendocinoPoppy id="ferdinandsflowers:block_cff_doublesb" damage="1" treeOrder="40"/>
+					<itemOrchid id="ferdinandsflowers:block_cff_flowersd" damage="8" treeOrder="50"/>
+					<itemTallCallaLily id="ferdinandsflowers:block_cff_doublesb" damage="0" treeOrder="60"/>
+					<itemWhiteDaffodil id="ferdinandsflowers:block_cff_flowers" damage="13" treeOrder="80"/>
+					<itemWhiteTinselFlower id="ferdinandsflowers:block_cff_desert" damage="11" treeOrder="90"/>
 				</flowerWhite>
-				<flowerOrange>
-					<itemAnotherDayLily id="ferdinandsflowers:block_cff_flowersb" damage="2"/>
-					<itemCaliforniaPoppy id="ferdinandsflowers:block_cff_flowers" damage="6"/>
-					<itemCapeAloe id="ferdinandsflowers:block_cff_doublesd" damage="5"/>
-					<itemDayLily id="ferdinandsflowers:block_cff_flowersb" damage="1"/>
-					<itemDesertPaintbrush id="ferdinandsflowers:block_cff_desert" damage="12"/>
-					<itemLantana id="ferdinandsflowers:block_cff_flowers" damage="1"/>
-					<itemOrangeAustralianFlamePea id="ferdinandsflowers:block_cff_desert" damage="5"/>
-					<itemOrangeCosmos id="ferdinandsflowers:block_cff_flowersd" damage="4"/>
-					<itemOrangeFreesia id="ferdinandsflowers:block_cff_flowersb" damage="4"/>
-					<itemOrangeGladiola id="ferdinandsflowers:block_cff_doublesc" damage="2"/>
-					<itemOrangeLupin id="ferdinandsflowers:block_cff_flowersb" damage="9"/>
-					<itemPeachGladiola id="ferdinandsflowers:block_cff_doublesc" damage="1"/>
-					<itemStickyMonkey id="ferdinandsflowers:block_cff_flowersc" damage="1"/>
-					<itemTallOrangeCosmos id="ferdinandsflowers:block_cff_doublesc" damage="3"/>
+				<flowerOrange treeOrder="30">
+					<itemAnotherDayLily id="ferdinandsflowers:block_cff_flowersb" damage="2" treeOrder="10"/>
+					<itemCaliforniaPoppy id="ferdinandsflowers:block_cff_flowers" damage="6" treeOrder="30"/>
+					<itemCapeAloe id="ferdinandsflowers:block_cff_doublesd" damage="5" treeOrder="40"/>
+					<itemDayLily id="ferdinandsflowers:block_cff_flowersb" damage="1" treeOrder="50"/>
+					<itemDesertPaintbrush id="ferdinandsflowers:block_cff_desert" damage="12" treeOrder="60"/>
+					<itemLantana id="ferdinandsflowers:block_cff_flowers" damage="1" treeOrder="70"/>
+					<itemOrangeAustralianFlamePea id="ferdinandsflowers:block_cff_desert" damage="5" treeOrder="90"/>
+					<itemOrangeCosmos id="ferdinandsflowers:block_cff_flowersd" damage="4" treeOrder="110"/>
+					<itemOrangeFreesia id="ferdinandsflowers:block_cff_flowersb" damage="4" treeOrder="120"/>
+					<itemOrangeGladiola id="ferdinandsflowers:block_cff_doublesc" damage="2" treeOrder="130"/>
+					<itemOrangeLupin id="ferdinandsflowers:block_cff_flowersb" damage="9" treeOrder="140"/>
+					<itemPeachGladiola id="ferdinandsflowers:block_cff_doublesc" damage="1" treeOrder="150"/>
+					<itemStickyMonkey id="ferdinandsflowers:block_cff_flowersc" damage="1" treeOrder="160"/>
+					<itemTallOrangeCosmos id="ferdinandsflowers:block_cff_doublesc" damage="3" treeOrder="170"/>
 				</flowerOrange>
-				<flowerMagenta>
-					<itemCosmos id="ferdinandsflowers:block_cff_flowers" damage="8"/>
-					<itemFuchsia id="ferdinandsflowers:block_cff_flowers" damage="0"/>
-					<itemMagentaClover id="ferdinandsflowers:block_cff_flowersc" damage="10"/>
-					<itemMagentaOrchid id="ferdinandsflowers:block_cff_flowersd" damage="15"/>
-					<itemMaroonMallow id="ferdinandsflowers:block_cff_flowersd" damage="0"/>
-					<itemPinkGeranium id="ferdinandsflowers:block_cff_flowersc" damage="11"/>
+				<flowerMagenta treeOrder="40">
+					<itemCosmos id="ferdinandsflowers:block_cff_flowers" damage="8" treeOrder="10"/>
+					<itemFuchsia id="ferdinandsflowers:block_cff_flowers" damage="0" treeOrder="20"/>
+					<itemMagentaClover id="ferdinandsflowers:block_cff_flowersc" damage="10" treeOrder="30"/>
+					<itemMagentaOrchid id="ferdinandsflowers:block_cff_flowersd" damage="15" treeOrder="40"/>
+					<itemMaroonMallow id="ferdinandsflowers:block_cff_flowersd" damage="0" treeOrder="50"/>
+					<itemPinkGeranium id="ferdinandsflowers:block_cff_flowersc" damage="11" treeOrder="60"/>
 				</flowerMagenta>
-				<flowerLightBlue>
-					<itemAnotherPerriwinkle id="ferdinandsflowers:block_cff_flowersc" damage="15"/>
-					<itemAustralianCornflower id="ferdinandsflowers:block_cff_desert" damage="8"/>
-					<itemCloudBlueCorydalis id="ferdinandsflowers:block_cff_flowersd" damage="11"/>
-					<itemForgetMeNot id="ferdinandsflowers:block_cff_flowers" damage="15"/>
-					<itemHimalayanBluePoppy id="ferdinandsflowers:block_cff_doublesc" damage="5"/>
-					<itemLightBlueForgetMeNot id="ferdinandsflowers:block_cff_flowersd" damage="12"/>
-					<itemPerriwinkle id="ferdinandsflowers:block_cff_flowersc" damage="14"/>
+				<flowerLightBlue treeOrder="50">
+					<itemAnotherPerriwinkle id="ferdinandsflowers:block_cff_flowersc" damage="15" treeOrder="10"/>
+					<itemAustralianCornflower id="ferdinandsflowers:block_cff_desert" damage="8" treeOrder="20"/>
+					<itemCloudBlueCorydalis id="ferdinandsflowers:block_cff_flowersd" damage="11" treeOrder="30"/>
+					<itemForgetMeNot id="ferdinandsflowers:block_cff_flowers" damage="15" treeOrder="40"/>
+					<itemHimalayanBluePoppy id="ferdinandsflowers:block_cff_doublesc" damage="5" treeOrder="50"/>
+					<itemLightBlueForgetMeNot id="ferdinandsflowers:block_cff_flowersd" damage="12" treeOrder="70"/>
+					<itemPerriwinkle id="ferdinandsflowers:block_cff_flowersc" damage="14" treeOrder="90"/>
 				</flowerLightBlue>
-				<flowerYellow>
-					<itemAustralianFlamePea id="ferdinandsflowers:block_cff_desert" damage="4"/>
-					<itemCorydalis id="ferdinandsflowers:block_cff_flowersc" damage="7"/>
-					<itemNarcissus id="ferdinandsflowers:block_cff_flowersb" damage="12"/>
-					<itemNasturtium id="ferdinandsflowers:block_cff_flowersb" damage="13"/>
-					<itemYellowCosmos id="ferdinandsflowers:block_cff_flowersd" damage="5"/>
-					<itemYellowCrocus id="ferdinandsflowers:block_cff_flowers" damage="11"/>
-					<itemYellowDaffodil id="ferdinandsflowers:block_cff_flowers" damage="12"/>
-					<itemYellowFreesia id="ferdinandsflowers:block_cff_flowersb" damage="6"/>
-					<itemYellowLupin id="ferdinandsflowers:block_cff_flowersb" damage="11"/>
-					<itemYellows id="ferdinandsflowers:block_cff_desert" damage="3"/>
+				<flowerYellow treeOrder="60">
+					<itemAustralianFlamePea id="ferdinandsflowers:block_cff_desert" damage="4" treeOrder="20"/>
+					<itemCorydalis id="ferdinandsflowers:block_cff_flowersc" damage="7" treeOrder="30"/>
+					<itemNarcissus id="ferdinandsflowers:block_cff_flowersb" damage="12" treeOrder="50"/>
+					<itemNasturtium id="ferdinandsflowers:block_cff_flowersb" damage="13" treeOrder="60"/>
+					<itemYellowCosmos id="ferdinandsflowers:block_cff_flowersd" damage="5" treeOrder="70"/>
+					<itemYellowCrocus id="ferdinandsflowers:block_cff_flowers" damage="11" treeOrder="80"/>
+					<itemYellowDaffodil id="ferdinandsflowers:block_cff_flowers" damage="12" treeOrder="90"/>
+					<itemYellowFreesia id="ferdinandsflowers:block_cff_flowersb" damage="6" treeOrder="100"/>
+					<itemYellowLupin id="ferdinandsflowers:block_cff_flowersb" damage="11" treeOrder="110"/>
+					<itemYellows id="ferdinandsflowers:block_cff_desert" damage="3" treeOrder="120"/>
 				</flowerYellow>
-				<flowerLime>
-					<itemChrysanthemum id="ferdinandsflowers:block_cff_flowersd" damage="7"/>
+				<flowerLime treeOrder="70">
+					<itemChrysanthemum id="ferdinandsflowers:block_cff_flowersd" damage="7" treeOrder="10"/>
 				</flowerLime>
-				<flowerPink>
-					<itemAfricanDaisy id="ferdinandsflowers:block_cff_flowers" damage="3"/>
-					<itemBleedingHeart id="ferdinandsflowers:block_cff_flowers" damage="5"/>
-					<itemCosmosMix id="ferdinandsflowers:block_cff_flowersd" damage="3"/>
-					<itemEchinacea id="ferdinandsflowers:block_cff_flowersb" damage="3"/>
-					<itemGladiola id="ferdinandsflowers:block_cff_doublesc" damage="0"/>
-					<itemHawthorne id="ferdinandsflowers:block_cff_doublesb" damage="3"/>
-					<itemLewisia id="ferdinandsflowers:block_cff_flowersc" damage="0"/>
-					<itemLightPinkGeranium id="ferdinandsflowers:block_cff_flowersc" damage="12"/>
-					<itemOrnamentalCherry id="ferdinandsflowers:block_cff_doublesb" damage="2"/>
-					<itemPinkClover id="ferdinandsflowers:block_cff_flowersc" damage="9"/>
-					<itemPinkDesertSandVerbena id="ferdinandsflowers:block_cff_desert" damage="7"/>
-					<itemPinkPetticoat id="ferdinandsflowers:block_cff_flowersc" damage="3"/>
-					<itemQuince id="ferdinandsflowers:block_cff_doublesb" damage="4"/>
-					<itemTallCosmos id="ferdinandsflowers:block_cff_doubles" damage="0"/>
+				<flowerPink treeOrder="80">
+					<itemAfricanDaisy id="ferdinandsflowers:block_cff_flowers" damage="3" treeOrder="10"/>
+					<itemBleedingHeart id="ferdinandsflowers:block_cff_flowers" damage="5" treeOrder="20"/>
+					<itemCosmosMix id="ferdinandsflowers:block_cff_flowersd" damage="3" treeOrder="30"/>
+					<itemEchinacea id="ferdinandsflowers:block_cff_flowersb" damage="3" treeOrder="40"/>
+					<itemGladiola id="ferdinandsflowers:block_cff_doublesc" damage="0" treeOrder="50"/>
+					<itemHawthorne id="ferdinandsflowers:block_cff_doublesb" damage="3" treeOrder="60"/>
+					<itemLewisia id="ferdinandsflowers:block_cff_flowersc" damage="0" treeOrder="70"/>
+					<itemLightPinkGeranium id="ferdinandsflowers:block_cff_flowersc" damage="12" treeOrder="80"/>
+					<itemOrnamentalCherry id="ferdinandsflowers:block_cff_doublesb" damage="2" treeOrder="90"/>
+					<itemPinkClover id="ferdinandsflowers:block_cff_flowersc" damage="9" treeOrder="110"/>
+					<itemPinkDesertSandVerbena id="ferdinandsflowers:block_cff_desert" damage="7" treeOrder="130"/>
+					<itemPinkPetticoat id="ferdinandsflowers:block_cff_flowersc" damage="3" treeOrder="150"/>
+					<itemQuince id="ferdinandsflowers:block_cff_doublesb" damage="4" treeOrder="160"/>
+					<itemTallCosmos id="ferdinandsflowers:block_cff_doubles" damage="0" treeOrder="170"/>
 				</flowerPink>
-				<flowerLightGray>
-					<itemDryShrub id="ferdinandsflowers:block_cff_doublesd" damage="4"/>
+				<flowerLightGray treeOrder="100">
+					<itemDryShrub id="ferdinandsflowers:block_cff_doublesd" damage="4" treeOrder="40"/>
 				</flowerLightGray>
-				<flowerCyan>
-					<itemCyanHyacinth id="ferdinandsflowers:block_cff_flowersd" damage="10"/>
+				<flowerCyan treeOrder="110">
+					<itemCyanHyacinth id="ferdinandsflowers:block_cff_flowersd" damage="10" treeOrder="20"/>
 				</flowerCyan>
-				<flowerPurple>
-					<itemBirdsEyeGilia id="ferdinandsflowers:block_cff_flowersc" damage="4"/>
-					<itemCrocusMix id="ferdinandsflowers:block_cff_flowers" damage="9"/>
-					<itemDahlia id="ferdinandsflowers:block_cff_flowers" damage="14"/>
-					<itemDesertSandVerbena id="ferdinandsflowers:block_cff_desert" damage="6"/>
-					<itemIris id="ferdinandsflowers:block_cff_doubles" damage="2"/>
-					<itemLarkspur id="ferdinandsflowers:block_cff_doubles" damage="1"/>
-					<itemNotchLeafScorpionWeed id="ferdinandsflowers:block_cff_desert" damage="15"/>
-					<itemOwlsClover id="ferdinandsflowers:block_cff_desert" damage="13"/>
-					<itemPansy id="ferdinandsflowers:block_cff_flowersb" damage="14"/>
-					<itemParrotFlower id="ferdinandsflowers:block_cff_flowersd" damage="1"/>
-					<itemPurpleAfricanDaisy id="ferdinandsflowers:block_cff_flowers" damage="2"/>
-					<itemPurpleCallaLily id="ferdinandsflowers:block_cff_flowers" damage="7"/>
-					<itemPurpleCrocus id="ferdinandsflowers:block_cff_flowers" damage="10"/>
-					<itemPurpleFlag id="ferdinandsflowers:block_cff_desert" damage="9"/>
-					<itemPurpleLupin id="ferdinandsflowers:block_cff_flowersb" damage="10"/>
-					<itemSalvia id="ferdinandsflowers:block_cff_flowersd" damage="9"/>
-					<itemTallLupin id="ferdinandsflowers:block_cff_doubles" damage="5"/>
-					<itemViolet id="ferdinandsflowers:block_cff_flowersb" damage="0"/>
-					<itemWolfsBane id="ferdinandsflowers:block_cff_flowersb" damage="15"/>
+				<flowerPurple treeOrder="120">
+					<itemBirdsEyeGilia id="ferdinandsflowers:block_cff_flowersc" damage="4" treeOrder="10"/>
+					<itemCrocusMix id="ferdinandsflowers:block_cff_flowers" damage="9" treeOrder="20"/>
+					<itemDahlia id="ferdinandsflowers:block_cff_flowers" damage="14" treeOrder="30"/>
+					<itemDesertSandVerbena id="ferdinandsflowers:block_cff_desert" damage="6" treeOrder="40"/>
+					<itemIris id="ferdinandsflowers:block_cff_doubles" damage="2" treeOrder="50"/>
+					<itemLarkspur id="ferdinandsflowers:block_cff_doubles" damage="1" treeOrder="60"/>
+					<itemNotchLeafScorpionWeed id="ferdinandsflowers:block_cff_desert" damage="15" treeOrder="80"/>
+					<itemOwlsClover id="ferdinandsflowers:block_cff_desert" damage="13" treeOrder="90"/>
+					<itemPansy id="ferdinandsflowers:block_cff_flowersb" damage="14" treeOrder="100"/>
+					<itemParrotFlower id="ferdinandsflowers:block_cff_flowersd" damage="1" treeOrder="110"/>
+					<itemPurpleAfricanDaisy id="ferdinandsflowers:block_cff_flowers" damage="2" treeOrder="120"/>
+					<itemPurpleCallaLily id="ferdinandsflowers:block_cff_flowers" damage="7" treeOrder="130"/>
+					<itemPurpleCrocus id="ferdinandsflowers:block_cff_flowers" damage="10" treeOrder="140"/>
+					<itemPurpleFlag id="ferdinandsflowers:block_cff_desert" damage="9" treeOrder="150"/>
+					<itemPurpleLupin id="ferdinandsflowers:block_cff_flowersb" damage="10" treeOrder="160"/>
+					<itemSalvia id="ferdinandsflowers:block_cff_flowersd" damage="9" treeOrder="170"/>
+					<itemTallLupin id="ferdinandsflowers:block_cff_doubles" damage="5" treeOrder="180"/>
+					<itemViolet id="ferdinandsflowers:block_cff_flowersb" damage="0" treeOrder="200"/>
+					<itemWolfsBane id="ferdinandsflowers:block_cff_flowersb" damage="15" treeOrder="210"/>
 				</flowerPurple>
-				<flowerBlue>
-					<itemBachelorButton id="ferdinandsflowers:block_cff_flowers" damage="4"/>
-					<itemBlueTinselLily id="ferdinandsflowers:block_cff_desert" damage="10"/>
-					<itemBorage id="ferdinandsflowers:block_cff_flowersc" damage="5"/>
-					<itemCommelina id="ferdinandsflowers:block_cff_flowersd" damage="13"/>
-					<itemGrapeHyacinth id="ferdinandsflowers:block_cff_flowersb" damage="7"/>
-					<itemMojaveIndigoBush id="ferdinandsflowers:block_cff_doublesd" damage="3"/>
-					<itemMorningGlory id="ferdinandsflowers:block_cff_flowersd" damage="14"/>
-					<itemRoyalBlueLobelia id="ferdinandsflowers:block_cff_flowersc" damage="6"/>
+				<flowerBlue treeOrder="130">
+					<itemBachelorButton id="ferdinandsflowers:block_cff_flowers" damage="4" treeOrder="30"/>
+					<itemBlueTinselLily id="ferdinandsflowers:block_cff_desert" damage="10" treeOrder="40"/>
+					<itemBorage id="ferdinandsflowers:block_cff_flowersc" damage="5" treeOrder="50"/>
+					<itemCommelina id="ferdinandsflowers:block_cff_flowersd" damage="13" treeOrder="60"/>
+					<itemGrapeHyacinth id="ferdinandsflowers:block_cff_flowersb" damage="7" treeOrder="70"/>
+					<itemMojaveIndigoBush id="ferdinandsflowers:block_cff_doublesd" damage="3" treeOrder="80"/>
+					<itemMorningGlory id="ferdinandsflowers:block_cff_flowersd" damage="14" treeOrder="90"/>
+					<itemRoyalBlueLobelia id="ferdinandsflowers:block_cff_flowersc" damage="6" treeOrder="100"/>
 				</flowerBlue>
-				<flowerBrown>
-					<itemManzanitaBush id="ferdinandsflowers:block_cff_doubles" damage="3"/>
-					<itemTumbleWeed id="ferdinandsflowers:block_cff_desert" damage="2"/>
+				<flowerBrown treeOrder="140">
+					<itemManzanitaBush id="ferdinandsflowers:block_cff_doubles" damage="3" treeOrder="10"/>
+					<itemTumbleWeed id="ferdinandsflowers:block_cff_desert" damage="2" treeOrder="20"/>
 				</flowerBrown>
-				<flowerGreen>
-					<itemAlbucaNamaquensis id="ferdinandsflowers:block_cff_desert" damage="0"/>
-					<itemCactus id="ferdinandsflowers:block_cff_ouch" damage="0"/>
-					<itemDatura id="ferdinandsflowers:block_cff_doublesc" damage="4"/>
-					<itemEngelmannsHedgehogCactus id="ferdinandsflowers:block_cff_ouch" damage="2"/>
-					<itemParodiaMuricata id="ferdinandsflowers:block_cff_ouch" damage="1"/>
-					<itemPitcherPlant id="ferdinandsflowers:block_cff_flowersc" damage="2"/>
-					<itemTallCactus id="ferdinandsflowers:block_cff_doublesd" damage="1"/>
-					<itemYucca id="ferdinandsflowers:block_cff_desert" damage="14"/>
-					<itemYuccaFlower id="ferdinandsflowers:block_cff_doublesd" damage="0"/>
+				<flowerGreen treeOrder="150">
+					<itemAlbucaNamaquensis id="ferdinandsflowers:block_cff_desert" damage="0" treeOrder="10"/>
+					<itemCactus id="ferdinandsflowers:block_cff_ouch" damage="0" treeOrder="20"/>
+					<itemDatura id="ferdinandsflowers:block_cff_doublesc" damage="4" treeOrder="30"/>
+					<itemEngelmannsHedgehogCactus id="ferdinandsflowers:block_cff_ouch" damage="2" treeOrder="40"/>
+					<itemParodiaMuricata id="ferdinandsflowers:block_cff_ouch" damage="1" treeOrder="50"/>
+					<itemPitcherPlant id="ferdinandsflowers:block_cff_flowersc" damage="2" treeOrder="60"/>
+					<itemTallCactus id="ferdinandsflowers:block_cff_doublesd" damage="1" treeOrder="70"/>
+					<itemYucca id="ferdinandsflowers:block_cff_desert" damage="14" treeOrder="80"/>
+					<itemYuccaFlower id="ferdinandsflowers:block_cff_doublesd" damage="0" treeOrder="90"/>
 				</flowerGreen>
-				<flowerRed>
-					<itemCrimsonGladiola id="ferdinandsflowers:block_cff_doublesb" damage="5"/>
-					<itemDesertSturtPea id="ferdinandsflowers:block_cff_desert" damage="1"/>
-					<itemGloriosaLily id="ferdinandsflowers:block_cff_doubles" damage="4"/>
-					<itemOcotillo id="ferdinandsflowers:block_cff_doublesd" damage="2"/>
-					<itemRedClover id="ferdinandsflowers:block_cff_flowersc" damage="8"/>
-					<itemRedFreesia id="ferdinandsflowers:block_cff_flowersb" damage="5"/>
-					<itemRedGeranium id="ferdinandsflowers:block_cff_flowersc" damage="13"/>
-					<itemRedPoppy id="ferdinandsflowers:block_cff_flowersd" damage="2"/>
+				<flowerRed treeOrder="160">
+					<itemCrimsonGladiola id="ferdinandsflowers:block_cff_doublesb" damage="5" treeOrder="40"/>
+					<itemDesertSturtPea id="ferdinandsflowers:block_cff_desert" damage="1" treeOrder="50"/>
+					<itemGloriosaLily id="ferdinandsflowers:block_cff_doubles" damage="4" treeOrder="60"/>
+					<itemOcotillo id="ferdinandsflowers:block_cff_doublesd" damage="2" treeOrder="70"/>
+					<itemRedClover id="ferdinandsflowers:block_cff_flowersc" damage="8" treeOrder="80"/>
+					<itemRedFreesia id="ferdinandsflowers:block_cff_flowersb" damage="5" treeOrder="90"/>
+					<itemRedGeranium id="ferdinandsflowers:block_cff_flowersc" damage="13" treeOrder="100"/>
+					<itemRedPoppy id="ferdinandsflowers:block_cff_flowersd" damage="2" treeOrder="110"/>
 				</flowerRed>
-				<flowerDecorative>
-					<itemDarkostoTraposto id="ferdinandsflowers:block_cff_dark" damage="1"/>
-					<itemVenusFlyTrap id="ferdinandsflowers:block_cff_dark" damage="0"/>
+				<flowerDecorative treeOrder="200">
+					<itemDarkostoTraposto id="ferdinandsflowers:block_cff_dark" damage="1" treeOrder="80"/>
+					<itemVenusFlyTrap id="ferdinandsflowers:block_cff_dark" damage="0" treeOrder="90"/>
 				</flowerDecorative>
 			</flower>
 		</plant>

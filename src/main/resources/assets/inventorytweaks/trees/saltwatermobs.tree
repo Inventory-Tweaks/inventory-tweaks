@@ -26,24 +26,24 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnAbtu id="saltwatermobs:saltwateregg" damage="3"/>
-				<itemSpawnIka id="saltwatermobs:saltwateregg" damage="2"/>
-				<itemSpawnLacedon id="saltwatermobs:saltwateregg" damage="0"/>
-				<itemSpawnRaiko id="saltwatermobs:saltwateregg" damage="4"/>
-				<itemSpawnSkylus id="saltwatermobs:saltwateregg" damage="1"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnAbtu id="saltwatermobs:saltwateregg" damage="3" treeOrder="640"/>
+				<itemSpawnIka id="saltwatermobs:saltwateregg" damage="2" treeOrder="650"/>
+				<itemSpawnLacedon id="saltwatermobs:saltwateregg" damage="0" treeOrder="660"/>
+				<itemSpawnRaiko id="saltwatermobs:saltwateregg" damage="4" treeOrder="670"/>
+				<itemSpawnSkylus id="saltwatermobs:saltwateregg" damage="1" treeOrder="680"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemsaltwatermobs_ikameatcooked id="saltwatermobs:ikameatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemsaltwatermobs_ikameatcooked id="saltwatermobs:ikameatcooked" treeOrder="240"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemsaltwatermobs_ikameatraw id="saltwatermobs:ikameatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemsaltwatermobs_ikameatraw id="saltwatermobs:ikameatraw" treeOrder="190"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>

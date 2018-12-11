@@ -26,45 +26,45 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<IronLevel>
-						<itemBonePickaxe id="primal_tech:bone_pickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<IronLevel treeOrder="110">
+						<itemBonePickaxe id="primal_tech:bone_pickaxe" treeOrder="20"/>
 					</IronLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemBoneShovel id="primal_tech:bone_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBoneShovel id="primal_tech:bone_shovel" treeOrder="1140"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemBoneAxe id="primal_tech:bone_axe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBoneAxe id="primal_tech:bone_axe" treeOrder="1080"/>
 				</axe>
 			</choppingTool>
-			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
-				<itemFlintSawBlade id="primal_tech:flint_edged_disc"/>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}" treeOrder="90">
+				<itemFlintSawBlade id="primal_tech:flint_edged_disc" treeOrder="210"/>
 			</saws>
-			<itemCraftingRock id="primal_tech:rock"/>
+			<itemCraftingRock id="primal_tech:rock" treeOrder="330"/>
 		</tool>
 	</equipment>
-	<block>
-		<mechanism>
-			<basicCrafting>
-				<craftingTables>
-					<itemWorkStump id="primal_tech:work_stump"/>
-					<itemWorkStumpMk2 id="primal_tech:work_stump_upgraded"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<craftingTables treeOrder="10">
+					<itemWorkStump id="primal_tech:work_stump" treeOrder="200"/>
+					<itemWorkStumpMk2 id="primal_tech:work_stump_upgraded" treeOrder="210"/>
 				</craftingTables>
 			</basicCrafting>
 		</mechanism>
 	</block>
-	<item>
-		<utility>
-			<flintAndSteel id="flint_and_steel">
-				<itemWhittledFireSticks id="primal_tech:fire_sticks"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<flintAndSteel id="flint_and_steel" treeOrder="20">
+				<itemWhittledFireSticks id="primal_tech:fire_sticks" treeOrder="50"/>
 			</flintAndSteel>
 		</utility>
 	</item>

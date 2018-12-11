@@ -26,37 +26,37 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<fence>
-				<woodenFence>
-					<itemIronwoodFence id="rustic:fence_ironwood"/>
-					<itemOliveWoodFence id="rustic:fence_olive"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<fence treeOrder="20">
+				<woodenFence treeOrder="20">
+					<itemIronwoodFence id="rustic:fence_ironwood" treeOrder="250"/>
+					<itemOliveWoodFence id="rustic:fence_olive" treeOrder="260"/>
 				</woodenFence>
-				<fenceGate>
-					<itemIronwoodFenceGate id="rustic:fence_gate_ironwood"/>
-					<itemOliveWoodFenceGate id="rustic:fence_gate_olive"/>
+				<fenceGate treeOrder="250">
+					<itemIronwoodFenceGate id="rustic:fence_gate_ironwood" treeOrder="480"/>
+					<itemOliveWoodFenceGate id="rustic:fence_gate_olive" treeOrder="490"/>
 				</fenceGate>
 			</fence>
-			<stoneWall>
-				<itemClayWall id="rustic:clay_wall"/>
-				<itemCrossedClayWall id="rustic:clay_wall_cross"/>
-				<itemDiagonalClayWall id="rustic:clay_wall_diag"/>
+			<stoneWall treeOrder="40">
+				<itemClayWall id="rustic:clay_wall" treeOrder="450"/>
+				<itemCrossedClayWall id="rustic:clay_wall_cross" treeOrder="460"/>
+				<itemDiagonalClayWall id="rustic:clay_wall_diag" treeOrder="470"/>
 			</stoneWall>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemSlateBrickStairs id="rustic:stairs_slate_brick"/>
-						<itemSlateRoofStairs id="rustic:stairs_slate_roof"/>
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemSlateBrickStairs id="rustic:stairs_slate_brick" treeOrder="890"/>
+						<itemSlateRoofStairs id="rustic:stairs_slate_roof" treeOrder="900"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemAlmanac id="rustic:book"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemAlmanac id="rustic:book" treeOrder="590"/>
 			</readableBooks>
 		</utility>
 	</item>

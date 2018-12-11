@@ -26,16 +26,16 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wands>
-				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable" damage="14"/>
-				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable" damage="13"/>
-				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable" damage="12"/>
-				<itemDiamondWand id="betterbuilderswands:wanddiamond"/>
-				<itemIronWand id="betterbuilderswands:wandiron"/>
-				<itemStoneWand id="betterbuilderswands:wandstone"/>
-				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wands treeOrder="160">
+				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable" damage="14" treeOrder="10"/>
+				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable" damage="13" treeOrder="20"/>
+				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable" damage="12" treeOrder="30"/>
+				<itemDiamondWand id="betterbuilderswands:wanddiamond" treeOrder="50"/>
+				<itemIronWand id="betterbuilderswands:wandiron" treeOrder="100"/>
+				<itemStoneWand id="betterbuilderswands:wandstone" treeOrder="110"/>
+				<itemUnbreakableWand id="betterbuilderswands:wandunbreakable" treeOrder="190"/>
 			</wands>
 		</tool>
 	</equipment>

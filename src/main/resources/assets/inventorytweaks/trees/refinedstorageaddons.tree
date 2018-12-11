@@ -26,22 +26,14 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<machines>
-				<poweredMining>
-					<itemQuarry id="buildcraft|builders:machineblock" damage="0"/>
-				</poweredMining>
-				<poweredDroppers>
-					<itemBuilder id="buildcraft|builders:builderblock"/>
-					<itemFiller id="buildcraft|builders:fillerblock"/>
-				</poweredDroppers>
-			</machines>
-		</mechanism>
-	</block>
-	<item>
-		<patterns>
-			<itemBlueprint id="buildcraft|builders:blueprintitem"/>
-		</patterns>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<portableStorage treeOrder="90">
+					<itemWirelessCraftingGrid id="refinedstorageaddons:wireless_crafting_grid" damage="0" treeOrder="450"/>
+					<itemCreativeWirelessCraftingGrid id="refinedstorageaddons:wireless_crafting_grid" damage="1" treeOrder="490"/>
+				</portableStorage>
+			</storage>
+		</utility>
 	</item>
 </stuff>

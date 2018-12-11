@@ -26,13 +26,37 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<resourceTransfer>
-				<prPipes>
-					<itemItemTransportpipe id="projred|transportation:projectred.transportation.pipe"/>
-				</prPipes>
-			</resourceTransfer>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemBuildCraft_Core_wrenchItem id="buildcraft|core:wrenchitem" treeOrder="170"/>
+			</wrench>
+			<debugTools treeOrder="170">
+				<itemDebugger id="buildcraft|core:debugger" treeOrder="20"/>
+			</debugTools>
+		</tool>
+	</equipment>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<generators treeOrder="370">
+				<creativeGenerators treeOrder="10">
+					<itemBuildCraft_CreativeGenerator id="buildcraft|core:engineblock" damage="3" treeOrder="10"/>
+				</creativeGenerators>
+				<fuelGenerators treeOrder="20">
+					<itemBuildCraft_CombustionGenerator id="buildcraft|core:engineblock" damage="2" treeOrder="10"/>
+					<itemBuildCraft_SterlingGenerator id="buildcraft|core:engineblock" damage="1" treeOrder="50"/>
+				</fuelGenerators>
+				<passiveGenerators treeOrder="50">
+					<itemBuildCraft_RedstoneGenerator id="buildcraft|core:engineblock" damage="0" treeOrder="10"/>
+				</passiveGenerators>
+			</generators>
 		</mechanism>
 	</block>
+	<resources treeOrder="30">
+		<paint treeOrder="60">
+			<paintbrushes treeOrder="10">
+				<itemPaintbrush id="buildcraft|core:paintbrush" treeOrder="10"/>
+			</paintbrushes>
+		</paint>
+	</resources>
 </stuff>

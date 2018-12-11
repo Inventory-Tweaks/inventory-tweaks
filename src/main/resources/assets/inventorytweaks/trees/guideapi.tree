@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<readableBooks>
-				<itemCyclicGuideBook id="guideapi:cyclicmagic-guide"/>
-				<itemModularRoutersGuide id="guideapi:modularrouters-guidebook"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemCyclicGuideBook id="guideapi:cyclicmagic-guide" treeOrder="540"/>
+				<itemModularRoutersGuide id="guideapi:modularrouters-guidebook" treeOrder="550"/>
 			</readableBooks>
 		</utility>
 	</item>

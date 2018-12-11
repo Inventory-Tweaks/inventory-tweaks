@@ -26,22 +26,22 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<storageupgrades>
-					<itemBlankUpgrade id="improvedbackpacks:blank_upgrade" damage="0"/>
-					<itemBoundLeather id="improvedbackpacks:bound_leather" damage="0"/>
-					<itemEnderBackpack id="improvedbackpacks:ender_backpack" damage="0"/>
-					<itemTannedLeather id="improvedbackpacks:tanned_leather" damage="0"/>
-					<itemStorageUpgradeDiamond id="improvedbackpacks:upgrade" damage="4"/>
-					<itemStorageUpgradeGold id="improvedbackpacks:upgrade" damage="3"/>
-					<itemStorageUpgradeIron id="improvedbackpacks:upgrade" damage="2"/>
-					<itemStorageUpgradeStone id="improvedbackpacks:upgrade" damage="1"/>
-					<itemStorageUpgradeWood id="improvedbackpacks:upgrade" damage="0"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<storageupgrades treeOrder="80">
+					<itemBlankUpgrade id="improvedbackpacks:blank_upgrade" damage="0" treeOrder="450"/>
+					<itemBoundLeather id="improvedbackpacks:bound_leather" damage="0" treeOrder="460"/>
+					<itemEnderBackpack id="improvedbackpacks:ender_backpack" damage="0" treeOrder="470"/>
+					<itemTannedLeather id="improvedbackpacks:tanned_leather" damage="0" treeOrder="480"/>
+					<itemStorageUpgradeDiamond id="improvedbackpacks:upgrade" damage="4" treeOrder="490"/>
+					<itemStorageUpgradeGold id="improvedbackpacks:upgrade" damage="3" treeOrder="500"/>
+					<itemStorageUpgradeIron id="improvedbackpacks:upgrade" damage="2" treeOrder="510"/>
+					<itemStorageUpgradeStone id="improvedbackpacks:upgrade" damage="1" treeOrder="520"/>
+					<itemStorageUpgradeWood id="improvedbackpacks:upgrade" damage="0" treeOrder="530"/>
 				</storageupgrades>
-				<portableStorage>
-					<itemBackpack id="improvedbackpacks:backpack"/>
+				<portableStorage treeOrder="90">
+					<itemBackpack id="improvedbackpacks:backpack" treeOrder="70"/>
 				</portableStorage>
 			</storage>
 		</utility>

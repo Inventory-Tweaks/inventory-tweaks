@@ -26,67 +26,69 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<storageupgrades>
-					<itemUpgrade id="bagginses:upgrade"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<storageupgrades treeOrder="80">
+					<itemUpgrade id="bagginses:upgrade" treeOrder="440"/>
 				</storageupgrades>
-				<portableStorage>
-					<bagginses id="bagginses:black">
-						<itemBlackBag id="bagginses:black"/>
-						<itemBlackBag id="bagginses:blackt2"/>
-						<itemBlackBag id="bagginses:blackt3"/>
-						<itemBlueBag id="bagginses:blue"/>
-						<itemBlueBag id="bagginses:bluet2"/>
-						<itemBlueBag id="bagginses:bluet3"/>
-						<itemBrownBag id="bagginses:brown"/>
-						<itemBrownBag id="bagginses:brownt2"/>
-						<itemBrownBag id="bagginses:brownt3"/>
-						<itemCyanBag id="bagginses:cyan"/>
-						<itemCyanBag id="bagginses:cyant2"/>
-						<itemCyanBag id="bagginses:cyant3"/>
-						<itemGrayBag id="bagginses:gray"/>
-						<itemGrayBag id="bagginses:grayt2"/>
-						<itemGrayBag id="bagginses:grayt3"/>
-						<itemGreenBag id="bagginses:green"/>
-						<itemGreenBag id="bagginses:greent2"/>
-						<itemGreenBag id="bagginses:greent3"/>
-						<itemLightBlueBag id="bagginses:lightblue"/>
-						<itemLightBlueBag id="bagginses:lightbluet2"/>
-						<itemLightBlueBag id="bagginses:lightbluet3"/>
-						<itemLimeBag id="bagginses:lime"/>
-						<itemLimeBag id="bagginses:limet2"/>
-						<itemLimeBag id="bagginses:limet3"/>
-						<itemMagentaBag id="bagginses:magenta"/>
-						<itemMagentaBag id="bagginses:magentat2"/>
-						<itemMagentaBag id="bagginses:magentat3"/>
-						<itemOrangeBag id="bagginses:orange"/>
-						<itemOrangeBag id="bagginses:oranget2"/>
-						<itemOrangeBag id="bagginses:oranget3"/>
-						<itemPinkBag id="bagginses:pink"/>
-						<itemPinkBag id="bagginses:pinkt2"/>
-						<itemPinkBag id="bagginses:pinkt3"/>
-						<itemPurpleBag id="bagginses:purple"/>
-						<itemPurpleBag id="bagginses:purplet2"/>
-						<itemPurpleBag id="bagginses:purplet3"/>
-						<itemRedBag id="bagginses:red"/>
-						<itemRedBag id="bagginses:redt2"/>
-						<itemRedBag id="bagginses:redt3"/>
-						<itemSilverBag id="bagginses:silver"/>
-						<itemSilverBag id="bagginses:silvert2"/>
-						<itemSilverBag id="bagginses:silvert3"/>
-						<itemWhiteBag id="bagginses:white"/>
-						<itemWhiteBag id="bagginses:whitet2"/>
-						<itemWhiteBag id="bagginses:whitet3"/>
-						<itemYellowBag id="bagginses:yellow"/>
-						<itemYellowBag id="bagginses:yellowt2"/>
-						<itemYellowBag id="bagginses:yellowt3"/>
-						<itemEnderBag id="bagginses:ender"/>
+				<portableStorage treeOrder="90">
+					<bagginses id="bagginses:black" treeOrder="230">
+						<itemBlackBag id="bagginses:black" treeOrder="10"/>
+						<itemBlackBag id="bagginses:blackt2" treeOrder="20"/>
+						<itemBlackBag id="bagginses:blackt3" treeOrder="30"/>
+						<itemBlueBag id="bagginses:blue" treeOrder="40"/>
+						<itemBlueBag id="bagginses:bluet2" treeOrder="50"/>
+						<itemBlueBag id="bagginses:bluet3" treeOrder="60"/>
+						<itemBrownBag id="bagginses:brown" treeOrder="70"/>
+						<itemBrownBag id="bagginses:brownt2" treeOrder="80"/>
+						<itemBrownBag id="bagginses:brownt3" treeOrder="90"/>
+						<itemCyanBag id="bagginses:cyan" treeOrder="100"/>
+						<itemCyanBag id="bagginses:cyant2" treeOrder="110"/>
+						<itemCyanBag id="bagginses:cyant3" treeOrder="120"/>
+						<itemGrayBag id="bagginses:gray" treeOrder="130"/>
+						<itemGrayBag id="bagginses:grayt2" treeOrder="140"/>
+						<itemGrayBag id="bagginses:grayt3" treeOrder="150"/>
+						<itemGreenBag id="bagginses:green" treeOrder="160"/>
+						<itemGreenBag id="bagginses:greent2" treeOrder="170"/>
+						<itemGreenBag id="bagginses:greent3" treeOrder="180"/>
+						<itemLightBlueBag id="bagginses:lightblue" treeOrder="190"/>
+						<itemLightBlueBag id="bagginses:lightbluet2" treeOrder="200"/>
+						<itemLightBlueBag id="bagginses:lightbluet3" treeOrder="210"/>
+						<itemLimeBag id="bagginses:lime" treeOrder="220"/>
+						<itemLimeBag id="bagginses:limet2" treeOrder="230"/>
+						<itemLimeBag id="bagginses:limet3" treeOrder="240"/>
+						<itemMagentaBag id="bagginses:magenta" treeOrder="250"/>
+						<itemMagentaBag id="bagginses:magentat2" treeOrder="260"/>
+						<itemMagentaBag id="bagginses:magentat3" treeOrder="270"/>
+						<itemOrangeBag id="bagginses:orange" treeOrder="280"/>
+						<itemOrangeBag id="bagginses:oranget2" treeOrder="290"/>
+						<itemOrangeBag id="bagginses:oranget3" treeOrder="300"/>
+						<itemPinkBag id="bagginses:pink" treeOrder="310"/>
+						<itemPinkBag id="bagginses:pinkt2" treeOrder="320"/>
+						<itemPinkBag id="bagginses:pinkt3" treeOrder="330"/>
+						<itemPurpleBag id="bagginses:purple" treeOrder="340"/>
+						<itemPurpleBag id="bagginses:purplet2" treeOrder="350"/>
+						<itemPurpleBag id="bagginses:purplet3" treeOrder="360"/>
+						<itemRedBag id="bagginses:red" treeOrder="370"/>
+						<itemRedBag id="bagginses:redt2" treeOrder="380"/>
+						<itemRedBag id="bagginses:redt3" treeOrder="390"/>
+						<itemSilverBag id="bagginses:silver" treeOrder="400"/>
+						<itemSilverBag id="bagginses:silvert2" treeOrder="410"/>
+						<itemSilverBag id="bagginses:silvert3" treeOrder="420"/>
+						<itemWhiteBag id="bagginses:white" treeOrder="430"/>
+						<itemWhiteBag id="bagginses:whitet2" treeOrder="440"/>
+						<itemWhiteBag id="bagginses:whitet3" treeOrder="450"/>
+						<itemYellowBag id="bagginses:yellow" treeOrder="460"/>
+						<itemYellowBag id="bagginses:yellowt2" treeOrder="470"/>
+						<itemYellowBag id="bagginses:yellowt3" treeOrder="480"/>
+						<itemEnderBag id="bagginses:ender" treeOrder="490"/>
 					</bagginses>
 				</portableStorage>
-				<voidStorage>
-					<itemVoidBag id="bagginses:void"/>
+				<voidStorage treeOrder="110">
+					<voidBags treeOrder="20">
+						<itemVoidBag id="bagginses:void" treeOrder="20"/>
+					</voidBags>
 				</voidStorage>
 			</storage>
 		</utility>

@@ -26,311 +26,321 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<rocketLauncher>
-					<itemSPAMRLauncher id="minefactoryreloaded:rocketlauncher"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<rocketLauncher treeOrder="10">
+					<itemSPAMRLauncher id="minefactoryreloaded:rocketlauncher" treeOrder="10"/>
 				</rocketLauncher>
-				<gun>
-					<itemNeedlegun id="minefactoryreloaded:needlegun"/>
-					<itemSafariNetLauncher id="minefactoryreloaded:safarinet.launcher"/>
-					<itemPotatoCannon id="minefactoryreloaded:potatolauncher"/>
+				<gun treeOrder="20">
+					<itemNeedlegun id="minefactoryreloaded:needlegun" treeOrder="50"/>
+					<itemSafariNetLauncher id="minefactoryreloaded:safarinet.launcher" treeOrder="60"/>
+					<itemPotatoCannon id="minefactoryreloaded:potatolauncher" treeOrder="70"/>
 				</gun>
 			</munition>
-			<bullets>
-				<itemNeedlegunMagazine id="minefactoryreloaded:needlegun.ammo.empty"/>
-				<itemNeedlegunAmmoNeedles id="minefactoryreloaded:needlegun.ammo.standard"/>
-				<itemNeedlegunAmmoFire id="minefactoryreloaded:needlegun.ammo.fire"/>
-				<itemNeedlegunAmmoShrapnel id="minefactoryreloaded:needlegun.ammo.pierce"/>
-				<itemNeedlegunAmmoAnvil id="minefactoryreloaded:needlegun.ammo.anvil"/>
-				<itemNeedlegunAmmoLava id="minefactoryreloaded:needlegun.ammo.lava"/>
-				<itemNeedlegunAmmoSewage id="minefactoryreloaded:needlegun.ammo.sewage"/>
-				<itemNeedlegunAmmoSludge id="minefactoryreloaded:needlegun.ammo.sludge"/>
+			<bullets treeOrder="60">
+				<itemNeedlegunMagazine id="minefactoryreloaded:needlegun.ammo.empty" treeOrder="70"/>
+				<itemNeedlegunAmmoNeedles id="minefactoryreloaded:needlegun.ammo.standard" treeOrder="80"/>
+				<itemNeedlegunAmmoFire id="minefactoryreloaded:needlegun.ammo.fire" treeOrder="90"/>
+				<itemNeedlegunAmmoShrapnel id="minefactoryreloaded:needlegun.ammo.pierce" treeOrder="100"/>
+				<itemNeedlegunAmmoAnvil id="minefactoryreloaded:needlegun.ammo.anvil" treeOrder="110"/>
+				<itemNeedlegunAmmoLava id="minefactoryreloaded:needlegun.ammo.lava" treeOrder="120"/>
+				<itemNeedlegunAmmoSewage id="minefactoryreloaded:needlegun.ammo.sewage" treeOrder="130"/>
+				<itemNeedlegunAmmoSludge id="minefactoryreloaded:needlegun.ammo.sludge" treeOrder="140"/>
 			</bullets>
-			<ammoRockets>
-				<itemSelf-PropelledAntiMaterialRocket id="minefactoryreloaded:rocket"/>
+			<ammoRockets treeOrder="70">
+				<itemSelf-PropelledAntiMaterialRocket id="minefactoryreloaded:rocket" treeOrder="10"/>
 			</ammoRockets>
 		</weapon>
-		<tool>
-			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
-				<itemFishingRod id="minefactoryreloaded:fishingrod"/>
+		<tool treeOrder="20">
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}" treeOrder="70">
+				<itemFishingRod id="minefactoryreloaded:fishingrod" treeOrder="60"/>
 			</fishingRod>
-			<blockMovers>
-				<itemPortaSpawner id="minefactoryreloaded:portaspawner"/>
+			<blockMovers treeOrder="100">
+				<itemPortaSpawner id="minefactoryreloaded:portaspawner" treeOrder="40"/>
 			</blockMovers>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemminefactoryreloaded_hammer id="minefactoryreloaded:hammer"/>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemminefactoryreloaded_hammer id="minefactoryreloaded:hammer" treeOrder="150"/>
 			</wrench>
-			<multimeters>
-				<itemRedNetMeter id="minefactoryreloaded:rednet.meter" damage="0"/>
-				<itemRedNetMultimeter id="minefactoryreloaded:rednet.meter" damage="1"/>
-				<itemPRCMemoryCard id="minefactoryreloaded:rednet.memorycard"/>
+			<multimeters treeOrder="140">
+				<itemRedNetMeter id="minefactoryreloaded:rednet.meter" damage="0" treeOrder="70"/>
+				<itemRedNetMultimeter id="minefactoryreloaded:rednet.meter" damage="1" treeOrder="80"/>
+				<itemPRCMemoryCard id="minefactoryreloaded:rednet.memorycard" treeOrder="90"/>
 			</multimeters>
-			<debugTools>
-				<itemDebugger id="minefactoryreloaded:rednet.meter" damage="2"/>
+			<debugTools treeOrder="170">
+				<itemDebugger id="minefactoryreloaded:rednet.meter" damage="2" treeOrder="50"/>
 			</debugTools>
-			<odometers>
-				<itemRuler id="minefactoryreloaded:ruler"/>
+			<odometers treeOrder="260">
+				<itemRuler id="minefactoryreloaded:ruler" treeOrder="30"/>
 			</odometers>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmet1>
-					<itemPlasticHelmet id="minefactoryreloaded:plastic.helm"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmet1 treeOrder="40">
+					<itemPlasticHelmet id="minefactoryreloaded:plastic.helm" treeOrder="50"/>
 				</helmet1>
-				<eyeGlasses>
-					<itemSunglasses id="minefactoryreloaded:glass.helm"/>
+				<eyeGlasses treeOrder="90">
+					<itemSunglasses id="minefactoryreloaded:glass.helm" treeOrder="90"/>
 				</eyeGlasses>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate2>
-						<itemPlasticBreastplate id="minefactoryreloaded:plastic.chest"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate2 treeOrder="90">
+						<itemPlasticBreastplate id="minefactoryreloaded:plastic.chest" treeOrder="20"/>
 					</chestplate2>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings2>
-					<itemPlasticLeggings id="minefactoryreloaded:plastic.legs"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings2 treeOrder="70">
+					<itemPlasticLeggings id="minefactoryreloaded:plastic.legs" treeOrder="110"/>
 				</leggings2>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots1>
-					<itemPlasticBoots id="minefactoryreloaded:plastic.boots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots1 treeOrder="50">
+					<itemPlasticBoots id="minefactoryreloaded:plastic.boots" treeOrder="180"/>
 				</boots1>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<dirts>
-				<itemFertileSoil id="minefactoryreloaded:farmland" damage="0"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<dirts treeOrder="20">
+				<fertilizedDirt treeOrder="110">
+					<itemFertileSoil id="minefactoryreloaded:farmland" damage="0" treeOrder="20"/>
+				</fertilizedDirt>
 			</dirts>
-			<wood>
-				<itemRubberWood id="minefactoryreloaded:rubberwood.log"/>
+			<wood treeOrder="30">
+				<itemRubberWood id="minefactoryreloaded:rubberwood.log" treeOrder="80"/>
 			</wood>
-			<liquid>
-				<fluids id="enderio:blockfire_water">
-					<itemBioFuel id="minefactoryreloaded:biofuel.still"/>
-					<itemMeat id="minefactoryreloaded:meat.still"/>
-					<itemMilk id="minefactoryreloaded:milk.still"/>
-					<itemEssence id="minefactoryreloaded:mobessence.still"/>
-					<itemPinkSlime id="minefactoryreloaded:pinkslime.still"/>
-					<itemSewage id="minefactoryreloaded:sewage.still"/>
-					<itemSludge id="minefactoryreloaded:sludge.still"/>
-					<itemSteam id="minefactoryreloaded:steam.still"/>
+			<liquid treeOrder="200">
+				<fluids id="enderio:blockfire_water" treeOrder="60">
+					<itemBioFuel id="minefactoryreloaded:biofuel.still" treeOrder="290"/>
+					<itemMeat id="minefactoryreloaded:meat.still" treeOrder="300"/>
+					<itemMilk id="minefactoryreloaded:milk.still" treeOrder="310"/>
+					<itemEssence id="minefactoryreloaded:mobessence.still" treeOrder="320"/>
+					<itemPinkSlime id="minefactoryreloaded:pinkslime.still" treeOrder="330"/>
+					<itemSewage id="minefactoryreloaded:sewage.still" treeOrder="340"/>
+					<itemSludge id="minefactoryreloaded:sludge.still" treeOrder="350"/>
+					<itemSteam id="minefactoryreloaded:steam.still" treeOrder="360"/>
 				</fluids>
-				<itemChocolateMilk id="minefactoryreloaded:chocolatemilk.still"/>
-				<itemMushroomSoup id="minefactoryreloaded:mushroomsoup.still"/>
+				<itemChocolateMilk id="minefactoryreloaded:chocolatemilk.still" treeOrder="120"/>
+				<itemMushroomSoup id="minefactoryreloaded:mushroomsoup.still" treeOrder="130"/>
 			</liquid>
 		</naturalBlock>
-		<manufacturedBlock>
-			<constructionBlock>
-				<bricks>
-					<itemIceBricks id="minefactoryreloaded:brick" damage="0"/>
-					<itemLapisBricks id="minefactoryreloaded:brick" damage="2"/>
-					<itemLargeBricks id="minefactoryreloaded:brick" damage="14"/>
-					<itemLargeGlowstoneBricks id="minefactoryreloaded:brick" damage="7"/>
-					<itemLargeIceBricks id="minefactoryreloaded:brick" damage="6"/>
-					<itemLargeLapisBricks id="minefactoryreloaded:brick" damage="8"/>
-					<itemLargeObsidianBricks id="minefactoryreloaded:brick" damage="9"/>
-					<itemLargePavedStoneBricks id="minefactoryreloaded:brick" damage="10"/>
-					<itemLargeSnowBricks id="minefactoryreloaded:brick" damage="11"/>
-					<itemObsidianBricks id="minefactoryreloaded:brick" damage="3"/>
-					<itemPavedStoneBricks id="minefactoryreloaded:brick" damage="4"/>
-					<itemSnowBricks id="minefactoryreloaded:brick" damage="5"/>
-					<itemLargeBlackstoneBricks id="minefactoryreloaded:stone" damage="4"/>
-					<itemLargeWhitestoneBricks id="minefactoryreloaded:stone" damage="5"/>
-					<itemSmallBlackstoneBricks id="minefactoryreloaded:stone" damage="6"/>
-					<itemSmallWhitestoneBricks id="minefactoryreloaded:stone" damage="7"/>
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<bricks treeOrder="20">
+					<itemIceBricks id="minefactoryreloaded:brick" damage="0" treeOrder="230"/>
+					<itemLapisBricks id="minefactoryreloaded:brick" damage="2" treeOrder="240"/>
+					<itemLargeBricks id="minefactoryreloaded:brick" damage="14" treeOrder="250"/>
+					<itemLargeGlowstoneBricks id="minefactoryreloaded:brick" damage="7" treeOrder="260"/>
+					<itemLargeIceBricks id="minefactoryreloaded:brick" damage="6" treeOrder="270"/>
+					<itemLargeLapisBricks id="minefactoryreloaded:brick" damage="8" treeOrder="280"/>
+					<itemLargeObsidianBricks id="minefactoryreloaded:brick" damage="9" treeOrder="290"/>
+					<itemLargePavedStoneBricks id="minefactoryreloaded:brick" damage="10" treeOrder="300"/>
+					<itemLargeSnowBricks id="minefactoryreloaded:brick" damage="11" treeOrder="310"/>
+					<itemObsidianBricks id="minefactoryreloaded:brick" damage="3" treeOrder="320"/>
+					<itemPavedStoneBricks id="minefactoryreloaded:brick" damage="4" treeOrder="330"/>
+					<itemSnowBricks id="minefactoryreloaded:brick" damage="5" treeOrder="340"/>
+					<itemLargeBlackstoneBricks id="minefactoryreloaded:stone" damage="4" treeOrder="350"/>
+					<itemLargeWhitestoneBricks id="minefactoryreloaded:stone" damage="5" treeOrder="360"/>
+					<itemSmallBlackstoneBricks id="minefactoryreloaded:stone" damage="6" treeOrder="370"/>
+					<itemSmallWhitestoneBricks id="minefactoryreloaded:stone" damage="7" treeOrder="380"/>
 				</bricks>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<rails>
-				<itemCargoDropoffRail id="minefactoryreloaded:rail.cargo.dropoff"/>
-				<itemCargoPickupRail id="minefactoryreloaded:rail.cargo.pickup"/>
-				<itemPassengerDropoffRail id="minefactoryreloaded:rail.passenger.dropoff"/>
-				<itemPassengerPickupRail id="minefactoryreloaded:rail.passenger.pickup"/>
+		<mechanism treeOrder="60">
+			<rails treeOrder="10">
+				<itemCargoDropoffRail id="minefactoryreloaded:rail.cargo.dropoff" treeOrder="140"/>
+				<itemCargoPickupRail id="minefactoryreloaded:rail.cargo.pickup" treeOrder="150"/>
+				<itemPassengerDropoffRail id="minefactoryreloaded:rail.passenger.dropoff" treeOrder="160"/>
+				<itemPassengerPickupRail id="minefactoryreloaded:rail.passenger.pickup" treeOrder="170"/>
 			</rails>
-			<lighting>
-				<lightBricks id="minefactoryreloaded:brick" damage="1">
-					<itemGlowstoneBricks id="minefactoryreloaded:brick" damage="1"/>
+			<lighting treeOrder="30">
+				<lightBricks id="minefactoryreloaded:brick" damage="1" treeOrder="140">
+					<itemGlowstoneBricks id="minefactoryreloaded:brick" damage="1" treeOrder="10"/>
 				</lightBricks>
 			</lighting>
-			<itemRedNoteBlock id="minefactoryreloaded:machine.2" damage="4"/>
-			<resourceTransfer>
-				<groundItemCollector>
-					<itemItemCollector id="minefactoryreloaded:machine.0" damage="6"/>
+			<itemRedNoteBlock id="minefactoryreloaded:machine.2" damage="4" treeOrder="190"/>
+			<resourceTransfer treeOrder="300">
+				<groundItemCollector treeOrder="10">
+					<itemItemCollector id="minefactoryreloaded:machine.0" damage="6" treeOrder="150"/>
 				</groundItemCollector>
-				<redNet>
-					<itemProgrammableRedNetController id="minefactoryreloaded:rednet.logic"/>
-					<itemRedNetHistorian id="minefactoryreloaded:rednet.panel"/>
+				<redNet treeOrder="70">
+					<itemProgrammableRedNetController id="minefactoryreloaded:rednet.logic" treeOrder="30"/>
+					<itemRedNetHistorian id="minefactoryreloaded:rednet.panel" treeOrder="40"/>
 				</redNet>
-				<conveyerBelts>
-					<itemConveyorBelt id="minefactoryreloaded:conveyor"/>
+				<conveyerBelts treeOrder="100">
+					<itemConveyorBelt id="minefactoryreloaded:conveyor" treeOrder="20"/>
 				</conveyerBelts>
 			</resourceTransfer>
-			<basicCrafting>
-				<anvils>
-					<itemAuto-Anvil id="minefactoryreloaded:machine.2" damage="2"/>
+			<basicCrafting treeOrder="360">
+				<anvils treeOrder="40">
+					<itemAuto-Anvil id="minefactoryreloaded:machine.2" damage="2" treeOrder="60"/>
 				</anvils>
 			</basicCrafting>
-			<generators>
-				<liquidFuelGenerators>
-					<itemminefactoryreloaded_BiofuelGenerator id="minefactoryreloaded:machine.1" damage="11"/>
+			<generators treeOrder="370">
+				<liquidFuelGenerators treeOrder="40">
+					<itemminefactoryreloaded_BiofuelGenerator id="minefactoryreloaded:machine.1" damage="11" treeOrder="30"/>
 				</liquidFuelGenerators>
-				<steamGenerators>
-					<itemSteamTurbine id="minefactoryreloaded:machine.2" damage="9"/>
+				<steamGenerators treeOrder="140">
+					<itemSteamTurbine id="minefactoryreloaded:machine.2" damage="9" treeOrder="50"/>
 				</steamGenerators>
-				<steamProducers>
-					<itemSteamBoiler id="minefactoryreloaded:machine.1" damage="6"/>
+				<steamProducers treeOrder="150">
+					<itemSteamBoiler id="minefactoryreloaded:machine.1" damage="6" treeOrder="20"/>
 				</steamProducers>
 			</generators>
-			<machines>
-				<poweredCrafting>
-					<itemLiquiCrafter id="minefactoryreloaded:machine.1" damage="4"/>
+			<machines treeOrder="380">
+				<poweredCrafting treeOrder="10">
+					<itemLiquiCrafter id="minefactoryreloaded:machine.1" damage="4" treeOrder="20"/>
 				</poweredCrafting>
-				<poweredFarming>
-					<itemPlanter id="minefactoryreloaded:machine.0" damage="0"/>
-					<itemHarvester id="minefactoryreloaded:machine.0" damage="2"/>
-					<itemFruitPicker id="minefactoryreloaded:machine.2" damage="6"/>
-					<itemComposter id="minefactoryreloaded:machine.0" damage="11"/>
-					<itemRancher id="minefactoryreloaded:machine.0" damage="3"/>
+				<poweredFarming treeOrder="40">
+					<itemPlanter id="minefactoryreloaded:machine.0" damage="0" treeOrder="20"/>
+					<itemHarvester id="minefactoryreloaded:machine.0" damage="2" treeOrder="30"/>
+					<itemFruitPicker id="minefactoryreloaded:machine.2" damage="6" treeOrder="40"/>
+					<itemComposter id="minefactoryreloaded:machine.0" damage="11" treeOrder="60"/>
+					<itemRancher id="minefactoryreloaded:machine.0" damage="3" treeOrder="70"/>
 				</poweredFarming>
-				<poweredRanching>
-					<itemBreeder id="minefactoryreloaded:machine.0" damage="12"/>
-					<itemChronotyper id="minefactoryreloaded:machine.0" damage="15"/>
-					<itemVeterinaryStation id="minefactoryreloaded:machine.0" damage="5"/>
-					<itemSewer id="minefactoryreloaded:machine.0" damage="10"/>
-					<itemSlaughterhouse id="minefactoryreloaded:machine.1" damage="13"/>
-					<itemMeatPacker id="minefactoryreloaded:machine.1" damage="14"/>
+				<poweredRanching treeOrder="50">
+					<itemChronotyper id="minefactoryreloaded:machine.0" damage="15" treeOrder="10"/>
+					<itemVeterinaryStation id="minefactoryreloaded:machine.0" damage="5" treeOrder="40"/>
+					<itemSewer id="minefactoryreloaded:machine.0" damage="10" treeOrder="50"/>
+					<itemSlaughterhouse id="minefactoryreloaded:machine.1" damage="13" treeOrder="60"/>
+					<itemMeatPacker id="minefactoryreloaded:machine.1" damage="14" treeOrder="70"/>
+					<feeders treeOrder="80">
+						<itemBreeder id="minefactoryreloaded:machine.0" damage="12" treeOrder="10"/>
+					</feeders>
 				</poweredRanching>
-				<poweredFishing>
-					<itemFisher id="minefactoryreloaded:machine.0" damage="1"/>
+				<poweredFishing treeOrder="60">
+					<itemFisher id="minefactoryreloaded:machine.0" damage="1" treeOrder="10"/>
 				</poweredFishing>
-				<poweredSpawners>
-					<itemAuto-Spawner id="minefactoryreloaded:machine.1" damage="9"/>
+				<poweredSpawners treeOrder="70">
+					<itemAuto-Spawner id="minefactoryreloaded:machine.1" damage="9" treeOrder="10"/>
 				</poweredSpawners>
-				<mobKillers>
-					<itemGrinder id="minefactoryreloaded:machine.0" damage="13"/>
-					<itemMobCounter id="minefactoryreloaded:machine.2" damage="8"/>
-					<itemMobRouter id="minefactoryreloaded:machine.2" damage="12"/>
+				<mobKillers treeOrder="80">
+					<itemGrinder id="minefactoryreloaded:machine.0" damage="13" treeOrder="80"/>
+					<itemMobCounter id="minefactoryreloaded:machine.2" damage="8" treeOrder="90"/>
+					<itemMobRouter id="minefactoryreloaded:machine.2" damage="12" treeOrder="100"/>
 				</mobKillers>
-				<poweredEnchantment>
-					<itemAuto-Enchanter id="minefactoryreloaded:machine.0" damage="14"/>
-					<itemAuto-Disenchanter id="minefactoryreloaded:machine.1" damage="12"/>
+				<poweredEnchantment treeOrder="90">
+					<itemAuto-Enchanter id="minefactoryreloaded:machine.0" damage="14" treeOrder="10"/>
+					<itemAuto-Disenchanter id="minefactoryreloaded:machine.1" damage="12" treeOrder="50"/>
 				</poweredEnchantment>
-				<dictionaryBlock>
-					<itemUnifier id="minefactoryreloaded:machine.1" damage="8"/>
+				<dictionaryBlock treeOrder="110">
+					<itemUnifier id="minefactoryreloaded:machine.1" damage="8" treeOrder="10"/>
 				</dictionaryBlock>
-				<poweredMining>
-					<itemBlockBreaker id="minefactoryreloaded:machine.0" damage="7"/>
-					<itemBlockSmasher id="minefactoryreloaded:machine.2" damage="3"/>
-					<itemSludgeBoiler id="minefactoryreloaded:machine.0" damage="9"/>
-					<itemLaserDrill id="minefactoryreloaded:machine.2" damage="0"/>
-					<itemLaserDrillPrecharger id="minefactoryreloaded:machine.2" damage="1"/>
+				<poweredMining treeOrder="130">
+					<itemBlockBreaker id="minefactoryreloaded:machine.0" damage="7" treeOrder="10"/>
+					<itemBlockSmasher id="minefactoryreloaded:machine.2" damage="3" treeOrder="20"/>
+					<itemSludgeBoiler id="minefactoryreloaded:machine.0" damage="9" treeOrder="30"/>
+					<itemLaserDrill id="minefactoryreloaded:machine.2" damage="0" treeOrder="40"/>
+					<itemLaserDrillPrecharger id="minefactoryreloaded:machine.2" damage="1" treeOrder="50"/>
 				</poweredMining>
-				<poweredFluids>
-					<itemLavaFabricator id="minefactoryreloaded:machine.1" damage="5"/>
-					<itemBioReactor id="minefactoryreloaded:machine.1" damage="10"/>
-					<itemWeatherCollector id="minefactoryreloaded:machine.0" damage="8"/>
+				<poweredFluids treeOrder="140">
+					<itemLavaFabricator id="minefactoryreloaded:machine.1" damage="5" treeOrder="10"/>
+					<itemBioReactor id="minefactoryreloaded:machine.1" damage="10" treeOrder="20"/>
+					<itemWeatherCollector id="minefactoryreloaded:machine.0" damage="8" treeOrder="30"/>
 				</poweredFluids>
-				<poweredDroppers>
-					<itemEjector id="minefactoryreloaded:machine.1" damage="0"/>
-					<itemBlockPlacer id="minefactoryreloaded:machine.2" damage="7"/>
-					<itemFountain id="minefactoryreloaded:machine.2" damage="11"/>
+				<poweredDroppers treeOrder="150">
+					<itemEjector id="minefactoryreloaded:machine.1" damage="0" treeOrder="10"/>
+					<itemBlockPlacer id="minefactoryreloaded:machine.2" damage="7" treeOrder="20"/>
+					<itemFountain id="minefactoryreloaded:machine.2" damage="11" treeOrder="30"/>
 				</poweredDroppers>
-				<poweredTransport>
-					<itemEnchantmentRouter id="minefactoryreloaded:machine.1" damage="15"/>
-					<itemItemRouter id="minefactoryreloaded:machine.1" damage="1"/>
-					<itemLiquidRouter id="minefactoryreloaded:machine.1" damage="2"/>
+				<poweredTransport treeOrder="160">
+					<itemEnchantmentRouter id="minefactoryreloaded:machine.1" damage="15" treeOrder="10"/>
+					<itemItemRouter id="minefactoryreloaded:machine.1" damage="1" treeOrder="20"/>
+					<itemLiquidRouter id="minefactoryreloaded:machine.1" damage="2" treeOrder="30"/>
 				</poweredTransport>
-				<chunkLoaders>
-					<itemChunkLoader id="minefactoryreloaded:machine.2" damage="10"/>
+				<chunkLoaders treeOrder="170">
+					<itemChunkLoader id="minefactoryreloaded:machine.2" damage="10" treeOrder="10"/>
 				</chunkLoaders>
 			</machines>
-			<machineupgrades>
-				<augments>
-					<itemMFRUpgradeLapis id="minefactoryreloaded:upgrade.radius"/>
+			<machineupgrades treeOrder="390">
+				<augments treeOrder="30">
+					<itemMFRUpgradeLapis id="minefactoryreloaded:upgrade.radius" treeOrder="110"/>
 				</augments>
-				<quarryUpgrades>
-					<itemLaserFocusWhite id="minefactoryreloaded:laserfocus"/>
+				<quarryUpgrades treeOrder="40">
+					<itemLaserFocusWhite id="minefactoryreloaded:laserfocus" treeOrder="10"/>
 				</quarryUpgrades>
 			</machineupgrades>
 		</mechanism>
 	</block>
-	<item>
-		<utility>
-			<storage>
-				<deepStorage>
-					<itemDeepStorageUnit id="minefactoryreloaded:machine.1" damage="3"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<deepStorage treeOrder="50">
+					<itemDeepStorageUnit id="minefactoryreloaded:machine.1" damage="3" treeOrder="10"/>
 				</deepStorage>
-				<portableStorage>
-					<itemPlasticBag id="minefactoryreloaded:plastic.bag"/>
+				<portableStorage treeOrder="90">
+					<itemPlasticBag id="minefactoryreloaded:plastic.bag" treeOrder="260"/>
 				</portableStorage>
 			</storage>
-			<mobHolder>
-				<itemSafariNetSingle-Use id="minefactoryreloaded:safarinet.singleuse"/>
-				<itemSafariNetReusable id="minefactoryreloaded:safarinet.reusable"/>
-				<itemJailersSafariNet id="minefactoryreloaded:safarinet.jailer"/>
-				<itemGoldenJailersSafariNet id="minefactoryreloaded:safarinet.jailer.fancy"/>
+			<mobHolder treeOrder="240">
+				<itemSafariNetSingle-Use id="minefactoryreloaded:safarinet.singleuse" treeOrder="50"/>
+				<itemSafariNetReusable id="minefactoryreloaded:safarinet.reusable" treeOrder="60"/>
+				<itemJailersSafariNet id="minefactoryreloaded:safarinet.jailer" treeOrder="70"/>
+				<itemGoldenJailersSafariNet id="minefactoryreloaded:safarinet.jailer.fancy" treeOrder="80"/>
 			</mobHolder>
 		</utility>
-		<bucket>
-			<itemminefactoryreloaded_bucket.biofuel id="minefactoryreloaded:bucket.biofuel"/>
-			<itemminefactoryreloaded_bucket.chocolatemilk id="minefactoryreloaded:bucket.chocolatemilk"/>
-			<itemminefactoryreloaded_bucket.essence id="minefactoryreloaded:bucket.essence"/>
-			<itemminefactoryreloaded_bucket.meat id="minefactoryreloaded:bucket.meat"/>
-			<itemminefactoryreloaded_bucket.mushroomsoup id="minefactoryreloaded:bucket.mushroomsoup"/>
-			<itemminefactoryreloaded_bucket.pinkslime id="minefactoryreloaded:bucket.pinkslime"/>
-			<itemminefactoryreloaded_bucket.sewage id="minefactoryreloaded:bucket.sewage"/>
-			<itemminefactoryreloaded_bucket.sludge id="minefactoryreloaded:bucket.sludge"/>
-		</bucket>
-		<fluidStorage>
-			<itemPlasticTank id="minefactoryreloaded:tank" damage="0"/>
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemminefactoryreloaded_bucket.biofuel id="minefactoryreloaded:bucket.biofuel" treeOrder="100"/>
+				<itemminefactoryreloaded_bucket.chocolatemilk id="minefactoryreloaded:bucket.chocolatemilk" treeOrder="170"/>
+				<itemminefactoryreloaded_bucket.essence id="minefactoryreloaded:bucket.essence" treeOrder="190"/>
+				<itemminefactoryreloaded_bucket.meat id="minefactoryreloaded:bucket.meat" treeOrder="270"/>
+				<itemminefactoryreloaded_bucket.mushroomsoup id="minefactoryreloaded:bucket.mushroomsoup" treeOrder="290"/>
+				<itemminefactoryreloaded_bucket.pinkslime id="minefactoryreloaded:bucket.pinkslime" treeOrder="330"/>
+				<itemminefactoryreloaded_bucket.sewage id="minefactoryreloaded:bucket.sewage" treeOrder="360"/>
+				<itemminefactoryreloaded_bucket.sludge id="minefactoryreloaded:bucket.sludge" treeOrder="370"/>
+			</bucket>
+		</fluidPortableStorage>
+		<fluidStorage treeOrder="50">
+			<fluidTanks treeOrder="30">
+				<itemPlasticTank id="minefactoryreloaded:tank" damage="0" treeOrder="110"/>
+			</fluidTanks>
 		</fluidStorage>
-		<parts>
-			<mechanicalParts>
-				<chip>
-					<itemPRCLX-100LogicExpansionCard id="minefactoryreloaded:upgrade.logic" damage="0"/>
-					<itemPRCLX-300LogicExpansionCard id="minefactoryreloaded:upgrade.logic" damage="1"/>
-					<itemPRCLX-500LogicExpansionCard id="minefactoryreloaded:upgrade.logic" damage="2"/>
+		<parts treeOrder="110">
+			<mechanicalParts treeOrder="10">
+				<chip treeOrder="10">
+					<itemPRCLX-100LogicExpansionCard id="minefactoryreloaded:upgrade.logic" damage="0" treeOrder="160"/>
+					<itemPRCLX-300LogicExpansionCard id="minefactoryreloaded:upgrade.logic" damage="1" treeOrder="170"/>
+					<itemPRCLX-500LogicExpansionCard id="minefactoryreloaded:upgrade.logic" damage="2" treeOrder="180"/>
 				</chip>
-				<frames>
-					<itemFactoryMachineBlock id="minefactoryreloaded:machineblock" damage="0"/>
-					<itemProgrammableRedNetControllerHousing id="minefactoryreloaded:machineblock" damage="1"/>
+				<frames treeOrder="110">
+					<itemFactoryMachineBlock id="minefactoryreloaded:machineblock" damage="0" treeOrder="100"/>
+					<itemProgrammableRedNetControllerHousing id="minefactoryreloaded:machineblock" damage="1" treeOrder="110"/>
 				</frames>
 			</mechanicalParts>
 		</parts>
-		<decoration>
-			<musicDisc>
-				<itemBlankRecord id="minefactoryreloaded:record.blank"/>
+		<decoration treeOrder="120">
+			<musicDisc treeOrder="410">
+				<itemBlankRecord id="minefactoryreloaded:record.blank" treeOrder="150"/>
 			</musicDisc>
-			<musicDisc>
-				<itemBlankRecord id="minefactoryreloaded:record.blank"/>
+			<musicDisc treeOrder="430">
+				<itemBlankRecord id="minefactoryreloaded:record.blank" treeOrder="150"/>
 			</musicDisc>
 		</decoration>
-		<plant>
-			<sapling>
-				<itemSacredRubberSapling id="minefactoryreloaded:rubberwood.sapling"/>
+		<plant treeOrder="160">
+			<sapling treeOrder="20">
+				<itemSacredRubberSapling id="minefactoryreloaded:rubberwood.sapling" treeOrder="440"/>
 			</sapling>
-			<leaves id="leaves">
-				<itemDryRubberLeaves id="minefactoryreloaded:rubberwood.leaves"/>
+			<leaves id="leaves" treeOrder="30">
+				<itemDryRubberLeaves id="minefactoryreloaded:rubberwood.leaves" treeOrder="80"/>
 			</leaves>
-			<fertilizer>
-				<itemFertilizer id="minefactoryreloaded:machine.0" damage="4"/>
+			<fertilizer treeOrder="80">
+				<fertilizerDict oreDictName="fertilizer" treeOrder="30">
+					<itemFertilizer id="minefactoryreloaded:machine.0" damage="4" treeOrder="30"/>
+				</fertilizerDict>
 			</fertilizer>
 		</plant>
-		<itemPlasticCup id="minefactoryreloaded:plastic.cup"/>
-		<syringes>
-			<itemEmptySyringe id="minefactoryreloaded:syringe.empty"/>
-			<itemDe-ZombificationSyringe id="minefactoryreloaded:syringe.cure"/>
-			<itemGrowthSyringe id="minefactoryreloaded:syringe.growth"/>
-			<itemHealthSyringe id="minefactoryreloaded:syringe.health"/>
-			<itemSlimeEmbiggeningSyringe id="minefactoryreloaded:syringe.slime"/>
-			<itemZombieSyringe id="minefactoryreloaded:syringe.zombie"/>
+		<itemPlasticCup id="minefactoryreloaded:plastic.cup" treeOrder="220"/>
+		<syringes treeOrder="270">
+			<itemEmptySyringe id="minefactoryreloaded:syringe.empty" treeOrder="10"/>
+			<itemDe-ZombificationSyringe id="minefactoryreloaded:syringe.cure" treeOrder="20"/>
+			<itemGrowthSyringe id="minefactoryreloaded:syringe.growth" treeOrder="30"/>
+			<itemHealthSyringe id="minefactoryreloaded:syringe.health" treeOrder="40"/>
+			<itemSlimeEmbiggeningSyringe id="minefactoryreloaded:syringe.slime" treeOrder="50"/>
+			<itemZombieSyringe id="minefactoryreloaded:syringe.zombie" treeOrder="60"/>
 		</syringes>
 	</item>
 </stuff>

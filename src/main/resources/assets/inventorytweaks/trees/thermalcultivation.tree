@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<farmingTool>
-				<otherFarmingTools>
-					<itemWateringCanBasic id="thermalcultivation:watering_can"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<farmingTool treeOrder="50">
+				<otherFarmingTools treeOrder="60">
+					<itemWateringCanBasic id="thermalcultivation:watering_can" treeOrder="100"/>
 				</otherFarmingTools>
 			</farmingTool>
 		</tool>

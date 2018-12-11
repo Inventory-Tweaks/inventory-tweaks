@@ -26,10 +26,10 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
-				<itemEnergeticShears id="energeticsheep:energetic_shears"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true" treeOrder="60">
+				<itemEnergeticShears id="energeticsheep:energetic_shears" treeOrder="200"/>
 			</shears>
 		</tool>
 	</equipment>

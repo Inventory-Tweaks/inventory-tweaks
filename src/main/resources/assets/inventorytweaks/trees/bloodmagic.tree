@@ -26,84 +26,84 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<UnsortedLevel>
-						<itemBoundPickaxe id="bloodmagic:bound_pickaxe"/>
-						<itemSentientPickaxe id="bloodmagic:sentient_pickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<UnsortedLevel treeOrder="130">
+						<itemBoundPickaxe id="bloodmagic:bound_pickaxe" treeOrder="100"/>
+						<itemSentientPickaxe id="bloodmagic:sentient_pickaxe" treeOrder="110"/>
 					</UnsortedLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemBoundShovel id="bloodmagic:bound_shovel"/>
-					<itemSentientShovel id="bloodmagic:sentient_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBoundShovel id="bloodmagic:bound_shovel" treeOrder="890"/>
+					<itemSentientShovel id="bloodmagic:sentient_shovel" treeOrder="900"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemBoundAxe id="bloodmagic:bound_axe"/>
-					<itemSentientAxe id="bloodmagic:sentient_axe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBoundAxe id="bloodmagic:bound_axe" treeOrder="890"/>
+					<itemSentientAxe id="bloodmagic:sentient_axe" treeOrder="900"/>
 				</axe>
 			</choppingTool>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemLivingHelmet id="bloodmagic:living_armour_helmet"/>
-					<itemSentientHelmet id="bloodmagic:sentient_armour_helmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemLivingHelmet id="bloodmagic:living_armour_helmet" treeOrder="290"/>
+					<itemSentientHelmet id="bloodmagic:sentient_armour_helmet" treeOrder="490"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate8>
-						<itemSentientChestplate id="bloodmagic:itemsentientarmourchest"/>
-						<itemLivingChestplate id="bloodmagic:itemlivingarmourchest"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate8 treeOrder="30">
+						<itemSentientChestplate id="bloodmagic:itemsentientarmourchest" treeOrder="50"/>
+						<itemLivingChestplate id="bloodmagic:itemlivingarmourchest" treeOrder="60"/>
 					</chestplate8>
-					<chestplateUnsorted>
-						<itemLivingChestplate id="bloodmagic:living_armour_chest"/>
-						<itemSentientChestplate id="bloodmagic:sentient_armour_chest"/>
+					<chestplateUnsorted treeOrder="120">
+						<itemLivingChestplate id="bloodmagic:living_armour_chest" treeOrder="290"/>
+						<itemSentientChestplate id="bloodmagic:sentient_armour_chest" treeOrder="500"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemLivingLeggings id="bloodmagic:living_armour_leggings"/>
-					<itemSentientLeggings id="bloodmagic:sentient_armour_leggings"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemLivingLeggings id="bloodmagic:living_armour_leggings" treeOrder="290"/>
+					<itemSentientLeggings id="bloodmagic:sentient_armour_leggings" treeOrder="470"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemLivingBoots id="bloodmagic:living_armour_boots"/>
-					<itemSentientBoots id="bloodmagic:sentient_armour_boots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemLivingBoots id="bloodmagic:living_armour_boots" treeOrder="320"/>
+					<itemSentientBoots id="bloodmagic:sentient_armour_boots" treeOrder="510"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<stoneWall>
-				<itemRawStoneBrickWall id="bloodmagic:demon_wall_1"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<stoneWall treeOrder="40">
+				<itemRawStoneBrickWall id="bloodmagic:demon_wall_1" treeOrder="170"/>
 			</stoneWall>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemCorrosiveStoneStairs id="bloodmagic:demon_stairs_1"/>
-						<itemDestructiveStoneStairs id="bloodmagic:demon_stairs_2"/>
-						<itemRawStoneStairs id="bloodmagic:demon_stairs_1"/>
-						<itemSteadfastStoneStairs id="bloodmagic:demon_stairs_3"/>
-						<itemVengefulStoneStairs id="bloodmagic:demon_stairs_2"/>
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemCorrosiveStoneStairs id="bloodmagic:demon_stairs_1" treeOrder="1420"/>
+						<itemDestructiveStoneStairs id="bloodmagic:demon_stairs_2" treeOrder="1430"/>
+						<itemRawStoneStairs id="bloodmagic:demon_stairs_1" treeOrder="1440"/>
+						<itemSteadfastStoneStairs id="bloodmagic:demon_stairs_3" treeOrder="1450"/>
+						<itemVengefulStoneStairs id="bloodmagic:demon_stairs_2" treeOrder="1460"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemInspectorisScandalum id="bloodmagic:sanguine_book"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemInspectorisScandalum id="bloodmagic:sanguine_book" treeOrder="490"/>
 			</readableBooks>
 		</utility>
 	</item>

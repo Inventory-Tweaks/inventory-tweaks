@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<baubles>
-			<rings>
-				<itemAngelRing id="flyringbaublemod:angelring"/>
-				<itemFlyingRing id="flyringbaublemod:flyingring"/>
+	<equipment treeOrder="10">
+		<baubles treeOrder="40">
+			<rings treeOrder="10">
+				<itemAngelRing id="flyringbaublemod:angelring" treeOrder="100"/>
+				<itemFlyingRing id="flyringbaublemod:flyingring" treeOrder="110"/>
 			</rings>
 		</baubles>
 	</equipment>

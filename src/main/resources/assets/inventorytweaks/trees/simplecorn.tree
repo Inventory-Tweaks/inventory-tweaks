@@ -26,17 +26,17 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<corns>
-						<itemRoastedCorn id="simplecorn:roastedcorn"/>
+	<item treeOrder="40">
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<corns treeOrder="260">
+						<itemRoastedCorn id="simplecorn:roastedcorn" treeOrder="60"/>
 					</corns>
 				</preparedFood>
-				<rawFood>
-					<veggie>
-						<itemEarOfCorn id="simplecorn:corncob"/>
+				<rawFood treeOrder="130">
+					<veggie treeOrder="40">
+						<itemEarOfCorn id="simplecorn:corncob" treeOrder="110"/>
 					</veggie>
 				</rawFood>
 			</edibleFood>

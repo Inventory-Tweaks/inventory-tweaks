@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<roads>
-					<itemAsphaltConcrete id="immersivepetroleum:stone_decoration"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<roads treeOrder="70">
+					<itemAsphaltConcrete id="immersivepetroleum:stone_decoration" treeOrder="60"/>
 				</roads>
 			</constructionBlock>
 		</manufacturedBlock>

@@ -26,68 +26,70 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<naturalBlock>
-			<liquid>
-				<fluids id="enderio:blockfire_water">
-					<itemLiquidSilicon id="extratic:liquidsilicon"/>
-					<itemMoltenAdamantine id="extratic:moltenadamantine."/>
-					<itemMoltenBedrockium id="extratic:moltenbedrockium"/>
-					<itemMoltenBlutonium id="extratic:moltenblutonium"/>
-					<itemMoltenBrass id="extratic:moltenbrass"/>
-					<itemMoltenConductiveIron id="extratic:moltenconductiveiron"/>
-					<itemMoltenDarkSteel id="extratic:moltendarksteel"/>
-					<itemMoltenElectricalSteel id="extratic:moltenelectricalsteel"/>
-					<itemMoltenEnergeticAlloy id="extratic:moltenenergeticalloy"/>
-					<itemMoltenFairy id="extratic:moltenfairy"/>
-					<itemMoltenLudicrite id="extratic:moltenludicrite"/>
-					<itemMoltenPhasedGold id="extratic:moltenphasedgold"/>
-					<itemMoltenPhasedIron id="extratic:moltenphasediron"/>
-					<itemMoltenPokefennium id="extratic:moltenpokefennium"/>
-					<itemMoltenRedAurum id="extratic:moltenredaurum"/>
-					<itemMoltenRedstoneAlloy id="extratic:moltenredstonealloy"/>
-					<itemMoltenSoularium id="extratic:moltensoularium"/>
-					<itemMoltenVoidmetal id="extratic:moltenvoidmetal"/>
-					<itemMoltenZinc id="extratic:moltenzinc"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<liquid treeOrder="200">
+				<fluids id="enderio:blockfire_water" treeOrder="60">
+					<itemLiquidSilicon id="extratic:liquidsilicon" treeOrder="100"/>
+					<itemMoltenAdamantine id="extratic:moltenadamantine." treeOrder="110"/>
+					<itemMoltenBedrockium id="extratic:moltenbedrockium" treeOrder="120"/>
+					<itemMoltenBlutonium id="extratic:moltenblutonium" treeOrder="130"/>
+					<itemMoltenBrass id="extratic:moltenbrass" treeOrder="140"/>
+					<itemMoltenConductiveIron id="extratic:moltenconductiveiron" treeOrder="150"/>
+					<itemMoltenDarkSteel id="extratic:moltendarksteel" treeOrder="160"/>
+					<itemMoltenElectricalSteel id="extratic:moltenelectricalsteel" treeOrder="170"/>
+					<itemMoltenEnergeticAlloy id="extratic:moltenenergeticalloy" treeOrder="180"/>
+					<itemMoltenFairy id="extratic:moltenfairy" treeOrder="190"/>
+					<itemMoltenLudicrite id="extratic:moltenludicrite" treeOrder="200"/>
+					<itemMoltenPhasedGold id="extratic:moltenphasedgold" treeOrder="210"/>
+					<itemMoltenPhasedIron id="extratic:moltenphasediron" treeOrder="220"/>
+					<itemMoltenPokefennium id="extratic:moltenpokefennium" treeOrder="230"/>
+					<itemMoltenRedAurum id="extratic:moltenredaurum" treeOrder="240"/>
+					<itemMoltenRedstoneAlloy id="extratic:moltenredstonealloy" treeOrder="250"/>
+					<itemMoltenSoularium id="extratic:moltensoularium" treeOrder="260"/>
+					<itemMoltenVoidmetal id="extratic:moltenvoidmetal" treeOrder="270"/>
+					<itemMoltenZinc id="extratic:moltenzinc" treeOrder="280"/>
 				</fluids>
 			</liquid>
 		</naturalBlock>
 	</block>
-	<item>
-		<bucket>
-			<itemExtraTiC_extra.bucket id="extratic:extra.bucket"/>
-		</bucket>
-		<parts>
-			<tinkerParts>
-				<itemTICHammerHead id="extratic:hammerhead"/>
-				<itemTICBroadAxeHead id="extratic:lumberaxehead"/>
-				<itemTICExcavatorHead id="extratic:excavatorhead"/>
-				<itemTICScytheHead id="extratic:scythehead"/>
-				<itemTICLargeSwordBlade id="extratic:largeswordblade"/>
-				<itemTICCrossbowBody id="extratic:crossbowbody"/>
-				<itemTICCrossbowLimb id="extratic:crossbowlimb"/>
-				<itemTICPickaxeHead id="extratic:pickaxehead"/>
-				<itemTICShovelHead id="extratic:shovelhead"/>
-				<itemTICAxeHead id="extratic:axehead"/>
-				<itemTICSwordBlade id="extratic:swordblade"/>
-				<itemTICFullGuard id="extratic:fullguard"/>
-				<itemTICLargeGuard id="extratic:largeguard"/>
-				<itemTICMediumGuard id="extratic:mediumguard"/>
-				<itemTICCrossbar id="extratic:crossbar"/>
-				<itemTICKnifeBlade id="extratic:knifeblade"/>
-				<itemTICPanHead id="extratic:frypanhead"/>
-				<itemTICBattleSign id="extratic:battelsign"/>
-				<itemTICChiselHead id="extratic:chiselhead"/>
-				<itemTICBowLimb id="extratic:bowlimb"/>
-				<itemTICArrowhead id="extratic:arrowhead"/>
-				<itemTICBolt id="extratic:blot"/>
-				<itemTICShuriken id="extratic:shuriken"/>
-				<itemTICBinding id="extratic:binding"/>
-				<itemTICToughBinding id="extratic:toughbind"/>
-				<itemTICLargePlate id="extratic:largeplate"/>
-				<itemTICToolRod id="extratic:toolrod"/>
-				<itemTICToughRod id="extratic:toughrod"/>
-				<itemTICChunk id="extratic:chunk"/>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemExtraTiC_extra.bucket id="extratic:extra.bucket" treeOrder="280"/>
+			</bucket>
+		</fluidPortableStorage>
+		<parts treeOrder="110">
+			<tinkerParts treeOrder="20">
+				<itemTICHammerHead id="extratic:hammerhead" treeOrder="20"/>
+				<itemTICBroadAxeHead id="extratic:lumberaxehead" treeOrder="40"/>
+				<itemTICExcavatorHead id="extratic:excavatorhead" treeOrder="60"/>
+				<itemTICScytheHead id="extratic:scythehead" treeOrder="80"/>
+				<itemTICLargeSwordBlade id="extratic:largeswordblade" treeOrder="100"/>
+				<itemTICCrossbowBody id="extratic:crossbowbody" treeOrder="120"/>
+				<itemTICCrossbowLimb id="extratic:crossbowlimb" treeOrder="140"/>
+				<itemTICPickaxeHead id="extratic:pickaxehead" treeOrder="160"/>
+				<itemTICShovelHead id="extratic:shovelhead" treeOrder="180"/>
+				<itemTICAxeHead id="extratic:axehead" treeOrder="200"/>
+				<itemTICSwordBlade id="extratic:swordblade" treeOrder="220"/>
+				<itemTICFullGuard id="extratic:fullguard" treeOrder="240"/>
+				<itemTICLargeGuard id="extratic:largeguard" treeOrder="260"/>
+				<itemTICMediumGuard id="extratic:mediumguard" treeOrder="280"/>
+				<itemTICCrossbar id="extratic:crossbar" treeOrder="300"/>
+				<itemTICKnifeBlade id="extratic:knifeblade" treeOrder="320"/>
+				<itemTICPanHead id="extratic:frypanhead" treeOrder="350"/>
+				<itemTICBattleSign id="extratic:battelsign" treeOrder="370"/>
+				<itemTICChiselHead id="extratic:chiselhead" treeOrder="390"/>
+				<itemTICBowLimb id="extratic:bowlimb" treeOrder="420"/>
+				<itemTICArrowhead id="extratic:arrowhead" treeOrder="460"/>
+				<itemTICBolt id="extratic:blot" treeOrder="510"/>
+				<itemTICShuriken id="extratic:shuriken" treeOrder="530"/>
+				<itemTICBinding id="extratic:binding" treeOrder="550"/>
+				<itemTICToughBinding id="extratic:toughbind" treeOrder="570"/>
+				<itemTICLargePlate id="extratic:largeplate" treeOrder="590"/>
+				<itemTICToolRod id="extratic:toolrod" treeOrder="710"/>
+				<itemTICToughRod id="extratic:toughrod" treeOrder="740"/>
+				<itemTICChunk id="extratic:chunk" treeOrder="780"/>
 			</tinkerParts>
 		</parts>
 	</item>

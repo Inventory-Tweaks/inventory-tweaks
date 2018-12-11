@@ -26,238 +26,244 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage9>
-							<itemAmethystSword id="biomesoplenty:swordamethyst"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage9 treeOrder="80">
+							<itemAmethystSword id="biomesoplenty:swordamethyst" treeOrder="40"/>
 						</swordDamage9>
-						<swordDamage4>
-							<itemMuddySword id="biomesoplenty:swordmud"/>
+						<swordDamage4 treeOrder="130">
+							<itemMuddySword id="biomesoplenty:swordmud" treeOrder="60"/>
 						</swordDamage4>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<CobaltPickLevel>
-						<itemAmethystPickaxe id="biomesoplenty:pickaxeamethyst"/>
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<CobaltPickLevel treeOrder="80">
+						<itemAmethystPickaxe id="biomesoplenty:pickaxeamethyst" treeOrder="20"/>
 					</CobaltPickLevel>
-					<StoneLevel>
-						<itemMuddyPickaxe id="biomesoplenty:pickaxemud"/>
+					<StoneLevel treeOrder="120">
+						<itemMuddyPickaxe id="biomesoplenty:pickaxemud" treeOrder="30"/>
 					</StoneLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemAmethystShovel id="biomesoplenty:shovelamethyst"/>
-					<itemMuddyShovel id="biomesoplenty:shovelmud"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemAmethystShovel id="biomesoplenty:shovelamethyst" treeOrder="20"/>
+					<itemMuddyShovel id="biomesoplenty:shovelmud" treeOrder="370"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemAmethystAxe id="biomesoplenty:axeamethyst"/>
-					<itemMuddyAxe id="biomesoplenty:axemud"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemAmethystAxe id="biomesoplenty:axeamethyst" treeOrder="20"/>
+					<itemMuddyAxe id="biomesoplenty:axemud" treeOrder="430"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<scythe class="Item" data="{ToolClass : &quot;scythe&quot;}" mergeChildren="true">
-					<itemAmethystScythe id="biomesoplenty:scytheamethyst"/>
-					<itemDiamondScythe id="biomesoplenty:scythediamond"/>
-					<itemGoldenScythe id="biomesoplenty:scythegold"/>
-					<itemIronScythe id="biomesoplenty:scytheiron"/>
-					<itemMudScythe id="biomesoplenty:scythemud"/>
-					<itemStoneScythe id="biomesoplenty:scythestone"/>
-					<itemWoodenScythe id="biomesoplenty:scythewood"/>
+			<farmingTool treeOrder="50">
+				<scythe class="Item" data="{ToolClass : &quot;scythe&quot;}" mergeChildren="true" treeOrder="10">
+					<itemAmethystScythe id="biomesoplenty:scytheamethyst" treeOrder="20"/>
+					<itemDiamondScythe id="biomesoplenty:scythediamond" treeOrder="30"/>
+					<itemGoldenScythe id="biomesoplenty:scythegold" treeOrder="40"/>
+					<itemIronScythe id="biomesoplenty:scytheiron" treeOrder="50"/>
+					<itemMudScythe id="biomesoplenty:scythemud" treeOrder="60"/>
+					<itemStoneScythe id="biomesoplenty:scythestone" treeOrder="80"/>
+					<itemWoodenScythe id="biomesoplenty:scythewood" treeOrder="100"/>
 				</scythe>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemAmethystHoe id="biomesoplenty:hoeamethyst"/>
-					<itemMuddyHoe id="biomesoplenty:hoemud"/>
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemAmethystHoe id="biomesoplenty:hoeamethyst" treeOrder="50"/>
+					<itemMuddyHoe id="biomesoplenty:hoemud" treeOrder="360"/>
 				</hoe>
 			</farmingTool>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmet3>
-					<itemAmethystHelmet id="biomesoplenty:helmetamethyst"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmet3 treeOrder="20">
+					<itemAmethystHelmet id="biomesoplenty:helmetamethyst" treeOrder="70"/>
 				</helmet3>
-				<helmet1>
-					<itemMuddyHelmet id="biomesoplenty:helmetmud"/>
+				<helmet1 treeOrder="40">
+					<itemMuddyHelmet id="biomesoplenty:helmetmud" treeOrder="70"/>
 				</helmet1>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate8>
-						<itemAmethystChestplate id="biomesoplenty:chestplateamethyst"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate8 treeOrder="30">
+						<itemAmethystChestplate id="biomesoplenty:chestplateamethyst" treeOrder="70"/>
 					</chestplate8>
-					<chestplate1>
-						<itemMuddyChestplate id="biomesoplenty:chestplatemud"/>
+					<chestplate1 treeOrder="100">
+						<itemMuddyChestplate id="biomesoplenty:chestplatemud" treeOrder="10"/>
 					</chestplate1>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings8>
-					<itemAmethystLeggings id="biomesoplenty:leggingsamethyst"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings8 treeOrder="10">
+					<itemAmethystLeggings id="biomesoplenty:leggingsamethyst" treeOrder="30"/>
 				</leggings8>
-				<leggings1>
-					<itemMuddyLeggings id="biomesoplenty:leggingsmud"/>
+				<leggings1 treeOrder="80">
+					<itemMuddyLeggings id="biomesoplenty:leggingsmud" treeOrder="10"/>
 				</leggings1>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots3>
-					<itemAmethystBoots id="biomesoplenty:bootsamethyst"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots3 treeOrder="30">
+					<itemAmethystBoots id="biomesoplenty:bootsamethyst" treeOrder="70"/>
 				</boots3>
-				<boots1>
-					<itemMuddyBoots id="biomesoplenty:bootsmud"/>
+				<boots1 treeOrder="50">
+					<itemMuddyBoots id="biomesoplenty:bootsmud" treeOrder="200"/>
 				</boots1>
-				<boots0>
-					<itemWadingBoots id="biomesoplenty:wadingboots"/>
+				<boots0 treeOrder="60">
+					<itemWadingBoots id="biomesoplenty:wadingboots" treeOrder="10"/>
 				</boots0>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<dirts>
-				<itemBoPDirt id="biomesoplenty:newbopdirt"/>
-				<itemDriedDirt id="biomesoplenty:drieddirt" damage="0"/>
-				<itemHardenedDirt id="biomesoplenty:harddirt" damage="0"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<dirts treeOrder="20">
+				<dirtDict oreDictName="dirt" treeOrder="90">
+					<itemBoPDirt id="biomesoplenty:newbopdirt" treeOrder="20"/>
+				</dirtDict>
+				<hardDirt treeOrder="100">
+					<itemDriedDirt id="biomesoplenty:drieddirt" damage="0" treeOrder="10"/>
+					<itemHardenedDirt id="biomesoplenty:harddirt" damage="0" treeOrder="20"/>
+				</hardDirt>
 			</dirts>
-			<netherBlock>
-				<netherrack>
-					<itemOvergrownNetherrack id="biomesoplenty:overgrownnetherrack"/>
+			<netherBlock treeOrder="80">
+				<netherrack treeOrder="20">
+					<itemOvergrownNetherrack id="biomesoplenty:overgrownnetherrack" treeOrder="80"/>
 				</netherrack>
 			</netherBlock>
-			<oreBlock>
-				<oreBiomeEssenceOre>
-					<oreBiomeEssenceOreItem id="biomesoplenty:biomeblock" damage="0"/>
+			<oreBlock treeOrder="90">
+				<oreBiomeEssenceOre treeOrder="190">
+					<oreBiomeEssenceOreItem id="biomesoplenty:biomeblock" damage="0" treeOrder="10"/>
 				</oreBiomeEssenceOre>
-				<oreEnderAmethystOreItem id="biomesoplenty:gemore" damage="0"/>
+				<oreEnderAmethystOreItem id="biomesoplenty:gemore" damage="0" treeOrder="490"/>
 			</oreBlock>
-			<grass>
-				<itemLoamyGrassBlock id="biomesoplenty:newbopgrass" damage="0"/>
-				<itemLongGrassBlock id="biomesoplenty:longgrass" damage="0"/>
-				<itemOriginGrassBlock id="biomesoplenty:origingrass" damage="0"/>
-				<itemSandyGrassBlock id="biomesoplenty:newbopgrass" damage="1"/>
-				<itemSiltyGrassBlock id="biomesoplenty:newbopgrass" damage="2"/>
-				<itemSpectralMoss id="biomesoplenty:bopgrass" damage="0"/>
-				<itemSmolderingGrassBlock id="biomesoplenty:bopgrass" damage="1"/>
+			<grass treeOrder="150">
+				<itemLoamyGrassBlock id="biomesoplenty:newbopgrass" damage="0" treeOrder="60"/>
+				<itemLongGrassBlock id="biomesoplenty:longgrass" damage="0" treeOrder="70"/>
+				<itemOriginGrassBlock id="biomesoplenty:origingrass" damage="0" treeOrder="80"/>
+				<itemSandyGrassBlock id="biomesoplenty:newbopgrass" damage="1" treeOrder="90"/>
+				<itemSiltyGrassBlock id="biomesoplenty:newbopgrass" damage="2" treeOrder="100"/>
+				<itemSpectralMoss id="biomesoplenty:bopgrass" damage="0" treeOrder="110"/>
+				<itemSmolderingGrassBlock id="biomesoplenty:bopgrass" damage="1" treeOrder="150"/>
 			</grass>
 		</naturalBlock>
-		<manufacturedBlock>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemMudBricksStairs id="biomesoplenty:mudbricksstairs"/>
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemMudBricksStairs id="biomesoplenty:mudbricksstairs" treeOrder="160"/>
 					</otherStairs>
 				</stairs>
-				<slabs>
-					<doubleSlab>
-						<woodenDoubleSlabs>
-							<itemCherryWoodSlab id="biomesoplenty:woodendoubleslab1"/>
-							<itemHellbarkWoodSlab id="biomesoplenty:woodendoubleslab2"/>
+				<slabs treeOrder="110">
+					<doubleSlab treeOrder="350">
+						<woodenDoubleSlabs treeOrder="10">
+							<itemCherryWoodSlab id="biomesoplenty:woodendoubleslab1" treeOrder="60"/>
+							<itemHellbarkWoodSlab id="biomesoplenty:woodendoubleslab2" treeOrder="70"/>
 						</woodenDoubleSlabs>
 					</doubleSlab>
 				</slabs>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<resources>
-		<miningResources>
-			<oreBlock>
-				<blockAmethystDict oreDictName="blockAmethyst">
-					<itemBlockofAmethyst id="biomesoplenty:gemore" damage="1"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<oreBlock treeOrder="110">
+				<blockAmethystDict oreDictName="blockAmethyst" treeOrder="110">
+					<itemBlockofAmethyst id="biomesoplenty:gemore" damage="1" treeOrder="10"/>
 				</blockAmethystDict>
 			</oreBlock>
-			<gem>
-				<gemEnderAmethyst>
-					<itemEnderAmethyst id="biomesoplenty:gems" damage="0"/>
+			<gem treeOrder="140">
+				<gemEnderAmethyst treeOrder="160">
+					<itemEnderAmethyst id="biomesoplenty:gems" damage="0" treeOrder="10"/>
 				</gemEnderAmethyst>
 			</gem>
 		</miningResources>
 	</resources>
-	<item>
-		<bucket>
-			<itemBiomesOPlenty_bopBucket id="biomesoplenty:bopbucket"/>
-		</bucket>
-		<decoration>
-			<musicDisc>
-				<itemMusicDisc id="biomesoplenty:record_corruption"/>
-				<itemMusicDisc id="biomesoplenty:record_wanderer"/>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemBiomesOPlenty_bopBucket id="biomesoplenty:bopbucket" treeOrder="120"/>
+			</bucket>
+		</fluidPortableStorage>
+		<decoration treeOrder="120">
+			<musicDisc treeOrder="410">
+				<itemMusicDisc id="biomesoplenty:record_corruption" treeOrder="130"/>
+				<itemMusicDisc id="biomesoplenty:record_wanderer" treeOrder="140"/>
 			</musicDisc>
-			<musicDisc>
-				<itemMusicDisc id="biomesoplenty:record_corruption"/>
-				<itemMusicDisc id="biomesoplenty:record_wanderer"/>
+			<musicDisc treeOrder="430">
+				<itemMusicDisc id="biomesoplenty:record_corruption" treeOrder="130"/>
+				<itemMusicDisc id="biomesoplenty:record_wanderer" treeOrder="140"/>
 			</musicDisc>
 		</decoration>
-		<food>
-			<edibleFood>
-				<fruit>
-					<berry>
-						<itemBerry id="biomesoplenty:food" damage="0"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<fruit treeOrder="80">
+					<berry treeOrder="10">
+						<itemBerry id="biomesoplenty:food" damage="0" treeOrder="130"/>
 					</berry>
 				</fruit>
-				<rawFood>
-					<mushroom>
-						<itemBiomesOPlenty_mushrooms id="biomesoplenty:mushrooms"/>
+				<rawFood treeOrder="130">
+					<mushroom treeOrder="30">
+						<itemBiomesOPlenty_mushrooms id="biomesoplenty:mushrooms" treeOrder="30"/>
 					</mushroom>
 				</rawFood>
 			</edibleFood>
 		</food>
-		<plant>
-			<flower>
-				<flowerWhite>
-					<itemLilyoftheValley id="biomesoplenty:flowers2" damage="1"/>
-					<itemWhiteAnemone id="biomesoplenty:flowers" damage="9"/>
+		<plant treeOrder="160">
+			<flower treeOrder="10">
+				<flowerWhite treeOrder="20">
+					<itemLilyoftheValley id="biomesoplenty:flowers2" damage="1" treeOrder="20"/>
+					<itemWhiteAnemone id="biomesoplenty:flowers" damage="9" treeOrder="70"/>
 				</flowerWhite>
-				<flowerOrange>
-					<itemBurningBlossom id="biomesoplenty:flowers2" damage="2"/>
-					<itemOrangeCosmos id="biomesoplenty:flowers" damage="5"/>
+				<flowerOrange treeOrder="30">
+					<itemBurningBlossom id="biomesoplenty:flowers2" damage="2" treeOrder="20"/>
+					<itemOrangeCosmos id="biomesoplenty:flowers" damage="5" treeOrder="100"/>
 				</flowerOrange>
-				<flowerMagenta>
-					<itemWildflower id="biomesoplenty:flowers" damage="7"/>
+				<flowerMagenta treeOrder="40">
+					<itemWildflower id="biomesoplenty:flowers" damage="7" treeOrder="70"/>
 				</flowerMagenta>
-				<flowerLightBlue>
-					<itemIcyIris id="biomesoplenty:flowers2" damage="7"/>
+				<flowerLightBlue treeOrder="50">
+					<itemIcyIris id="biomesoplenty:flowers2" damage="7" treeOrder="60"/>
 				</flowerLightBlue>
-				<flowerYellow>
-					<itemGoldenrod id="biomesoplenty:flowers2" damage="4"/>
+				<flowerYellow treeOrder="60">
+					<itemGoldenrod id="biomesoplenty:flowers2" damage="4" treeOrder="40"/>
 				</flowerYellow>
-				<flowerPink>
-					<itemPinkDaffodil id="biomesoplenty:flowers" damage="6"/>
-					<itemPinkHibiscus id="biomesoplenty:flowers2" damage="0"/>
+				<flowerPink treeOrder="80">
+					<itemPinkDaffodil id="biomesoplenty:flowers" damage="6" treeOrder="120"/>
+					<itemPinkHibiscus id="biomesoplenty:flowers2" damage="0" treeOrder="140"/>
 				</flowerPink>
-				<flowerLightGray>
-					<itemDandelionPuff id="biomesoplenty:flowers" damage="15"/>
+				<flowerLightGray treeOrder="100">
+					<itemDandelionPuff id="biomesoplenty:flowers" damage="15" treeOrder="30"/>
 				</flowerLightGray>
-				<flowerCyan>
-					<itemSwampflower id="biomesoplenty:flowers" damage="1"/>
+				<flowerCyan treeOrder="110">
+					<itemSwampflower id="biomesoplenty:flowers" damage="1" treeOrder="10"/>
 				</flowerCyan>
-				<flowerPurple>
-					<itemLavender id="biomesoplenty:flowers2" damage="3"/>
-					<itemViolet id="biomesoplenty:flowers" damage="8"/>
+				<flowerPurple treeOrder="120">
+					<itemLavender id="biomesoplenty:flowers2" damage="3" treeOrder="70"/>
+					<itemViolet id="biomesoplenty:flowers" damage="8" treeOrder="190"/>
 				</flowerPurple>
-				<flowerBlue>
-					<itemBluebells id="biomesoplenty:flowers2" damage="5"/>
+				<flowerBlue treeOrder="130">
+					<itemBluebells id="biomesoplenty:flowers2" damage="5" treeOrder="10"/>
 				</flowerBlue>
-				<flowerRed>
-					<itemRose id="biomesoplenty:flowers2" damage="8"/>
+				<flowerRed treeOrder="160">
+					<itemRose id="biomesoplenty:flowers2" damage="8" treeOrder="30"/>
 				</flowerRed>
-				<flowerBlack>
-					<itemDeathbloom id="biomesoplenty:flowers" damage="2"/>
+				<flowerBlack treeOrder="170">
+					<itemDeathbloom id="biomesoplenty:flowers" damage="2" treeOrder="10"/>
 				</flowerBlack>
-				<flowerDecorative>
-					<itemClover id="biomesoplenty:flowers" damage="0"/>
-					<itemGlowflower id="biomesoplenty:flowers" damage="3"/>
-					<itemWaterlily id="biomesoplenty:flowers" damage="10"/>
-					<itemEnderlotus id="biomesoplenty:flowers" damage="11"/>
-					<itemBromeliad id="biomesoplenty:flowers" damage="12"/>
-					<itemEyebulb id="biomesoplenty:flowers" damage="13"/>
-					<itemMinersDelight id="biomesoplenty:flowers2" damage="6"/>
+				<flowerDecorative treeOrder="200">
+					<itemClover id="biomesoplenty:flowers" damage="0" treeOrder="10"/>
+					<itemGlowflower id="biomesoplenty:flowers" damage="3" treeOrder="20"/>
+					<itemWaterlily id="biomesoplenty:flowers" damage="10" treeOrder="30"/>
+					<itemEnderlotus id="biomesoplenty:flowers" damage="11" treeOrder="40"/>
+					<itemBromeliad id="biomesoplenty:flowers" damage="12" treeOrder="50"/>
+					<itemEyebulb id="biomesoplenty:flowers" damage="13" treeOrder="60"/>
+					<itemMinersDelight id="biomesoplenty:flowers2" damage="6" treeOrder="70"/>
 				</flowerDecorative>
 			</flower>
 		</plant>

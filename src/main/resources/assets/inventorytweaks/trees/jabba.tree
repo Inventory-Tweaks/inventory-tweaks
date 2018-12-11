@@ -26,28 +26,28 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<blockMovers>
-				<itemJABBA_tuningFork id="jabba:tuningfork"/>
-				<itemDiamondDolly id="jabba:moverdiamond"/>
-				<itemDolly id="jabba:mover"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<blockMovers treeOrder="100">
+				<itemJABBA_tuningFork id="jabba:tuningfork" treeOrder="10"/>
+				<itemDiamondDolly id="jabba:moverdiamond" treeOrder="20"/>
+				<itemDolly id="jabba:mover" treeOrder="30"/>
 			</blockMovers>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemJABBA_hammer id="jabba:hammer"/>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemJABBA_hammer id="jabba:hammer" treeOrder="180"/>
 			</wrench>
 		</tool>
 	</equipment>
-	<item>
-		<utility>
-			<storage>
-				<barrels>
-					<itemJABBA_barrel id="jabba:barrel"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<barrels treeOrder="40">
+					<itemJABBA_barrel id="jabba:barrel" treeOrder="10"/>
 				</barrels>
-				<storageupgrades>
-					<itemJABBA_upgradeStructural id="jabba:upgradestructural"/>
-					<itemJABBA_upgradeCore id="jabba:upgradecore"/>
-					<itemJABBA_upgradeSide id="jabba:upgradeside"/>
+				<storageupgrades treeOrder="80">
+					<itemJABBA_upgradeStructural id="jabba:upgradestructural" treeOrder="370"/>
+					<itemJABBA_upgradeCore id="jabba:upgradecore" treeOrder="380"/>
+					<itemJABBA_upgradeSide id="jabba:upgradeside" treeOrder="390"/>
 				</storageupgrades>
 			</storage>
 		</utility>

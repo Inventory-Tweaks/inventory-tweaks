@@ -26,19 +26,19 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<facades>
-					<itemXNFacade id="xnet:facade"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<facades treeOrder="130">
+					<itemXNFacade id="xnet:facade" treeOrder="90"/>
 				</facades>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemXNetManual id="xnet:xnet_manual"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemXNetManual id="xnet:xnet_manual" treeOrder="470"/>
 			</readableBooks>
 		</utility>
 	</item>

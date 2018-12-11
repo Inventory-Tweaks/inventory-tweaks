@@ -26,23 +26,23 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage6>
-							<itemElectricSword id="neotech:electricsword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage6 treeOrder="110">
+							<itemElectricSword id="neotech:electricsword" treeOrder="260"/>
 						</swordDamage6>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<StoneLevel>
-						<itemElectricPickaxe id="neotech:electricpickaxe"/>
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<StoneLevel treeOrder="120">
+						<itemElectricPickaxe id="neotech:electricpickaxe" treeOrder="70"/>
 					</StoneLevel>
 				</pickaxe>
 			</miningTool>

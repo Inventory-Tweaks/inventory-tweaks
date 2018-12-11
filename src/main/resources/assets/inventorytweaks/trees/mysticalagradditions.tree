@@ -26,18 +26,18 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<paxel mergeChildren="true">
-				<miningTool>
-					<diggingTool>
-						<choppingTool>
-							<farmingTool>
-								<itemInferiumPaxel id="mysticalagradditions:inferium_paxel"/>
-								<itemIntermediumPaxel id="mysticalagradditions:intermedium_paxel"/>
-								<itemPrudentiumPaxel id="mysticalagradditions:prudentium_paxel"/>
-								<itemSuperiumPaxel id="mysticalagradditions:superium_paxel"/>
-								<itemSupremiumPaxel id="mysticalagradditions:supremium_paxel"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<paxel mergeChildren="true" treeOrder="10">
+				<miningTool treeOrder="10">
+					<diggingTool treeOrder="10">
+						<choppingTool treeOrder="10">
+							<farmingTool treeOrder="10">
+								<itemInferiumPaxel id="mysticalagradditions:inferium_paxel" treeOrder="460"/>
+								<itemIntermediumPaxel id="mysticalagradditions:intermedium_paxel" treeOrder="470"/>
+								<itemPrudentiumPaxel id="mysticalagradditions:prudentium_paxel" treeOrder="480"/>
+								<itemSuperiumPaxel id="mysticalagradditions:superium_paxel" treeOrder="490"/>
+								<itemSupremiumPaxel id="mysticalagradditions:supremium_paxel" treeOrder="500"/>
 							</farmingTool>
 						</choppingTool>
 					</diggingTool>
@@ -45,48 +45,59 @@
 			</paxel>
 		</tool>
 	</equipment>
-	<block>
-		<mechanism>
-			<basicCrafting>
-				<tinkerToolCrafting>
-					<itemTinkeringTable id="mysticalagradditions:tinkering_table"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<tinkerToolCrafting treeOrder="20">
+					<itemTinkeringTable id="mysticalagradditions:tinkering_table" treeOrder="200"/>
 				</tinkerToolCrafting>
 			</basicCrafting>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<coals>
-				<coalInsanium>
-					<itemInsaniumCoal id="mysticalagradditions:insanium" damage="5"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<coals treeOrder="100">
+				<coalInsanium treeOrder="120">
+					<itemInsaniumCoal id="mysticalagradditions:insanium" damage="5" treeOrder="10"/>
 				</coalInsanium>
 			</coals>
 		</miningResources>
-		<huntingResources>
-			<itemTier6MobChunk id="mysticalagradditions:insanium" damage="4"/>
+		<huntingResources treeOrder="20">
+			<mobChunks treeOrder="340">
+				<mobChunkHigh treeOrder="20">
+					<itemTier6MobChunk id="mysticalagradditions:insanium" damage="4" treeOrder="10"/>
+				</mobChunkHigh>
+			</mobChunks>
 		</huntingResources>
 	</resources>
-	<item>
-		<plant>
-			<seed>
-				<itemTier6CraftingSeed id="mysticalagradditions:insanium" damage="1"/>
-				<itemInferiumSeeds id="mysticalagradditions:tier6_inferium_seeds"/>
+	<item treeOrder="40">
+		<plant treeOrder="160">
+			<seed treeOrder="60">
+				<itemTier6CraftingSeed id="mysticalagradditions:insanium" damage="1" treeOrder="1160"/>
+				<itemInferiumSeeds id="mysticalagradditions:tier6_inferium_seeds" treeOrder="1220"/>
 			</seed>
-			<seedlings>
-				<mysticalCrops>
-					<itemAwakenedDraconiumCrop id="mysticalagradditions:awakened_draconium_crop"/>
-					<itemDragonEggCrop id="mysticalagradditions:dragon_egg_crop"/>
-					<itemNetherStarCrop id="mysticalagradditions:nether_star_crop"/>
-					<itemTier6InferiumCrop id="mysticalagradditions:tier6_inferium_crop"/>
+			<seedlings treeOrder="70">
+				<mysticalCrops treeOrder="630">
+					<itemAwakenedDraconiumCrop id="mysticalagradditions:awakened_draconium_crop" treeOrder="60"/>
+					<itemDragonEggCrop id="mysticalagradditions:dragon_egg_crop" treeOrder="280"/>
+					<itemNetherStarCrop id="mysticalagradditions:nether_star_crop" treeOrder="700"/>
+					<itemTier6InferiumCrop id="mysticalagradditions:tier6_inferium_crop" treeOrder="1020"/>
 				</mysticalCrops>
 			</seedlings>
 		</plant>
-		<magical>
-			<cropEssence>
-				<baseEssence>
-					<itemCreativeEssence id="mysticalagradditions:stuff" damage="69"/>
-				</baseEssence>
-			</cropEssence>
+		<magical treeOrder="280">
+			<magicalCrops treeOrder="50">
+				<magicalParts treeOrder="20">
+					<itemCharm_MiningAOE id="mysticalagradditions:charm" treeOrder="20"/>
+					<itemAwakenedDraconiumCrux id="mysticalagradditions:special" treeOrder="70"/>
+					<itemNetherStarShard id="mysticalagradditions:stuff" treeOrder="80"/>
+				</magicalParts>
+				<cropEssence treeOrder="30">
+					<baseEssence treeOrder="10">
+						<itemCreativeEssence id="mysticalagradditions:stuff" damage="69" treeOrder="120"/>
+					</baseEssence>
+				</cropEssence>
+			</magicalCrops>
 		</magical>
 	</item>
 </stuff>

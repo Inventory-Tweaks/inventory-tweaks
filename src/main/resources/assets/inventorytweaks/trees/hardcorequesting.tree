@@ -26,15 +26,15 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<treasureContainers>
-					<itemRewardBag id="hardcorequesting:bags"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<treasureContainers treeOrder="100">
+					<itemRewardBag id="hardcorequesting:bags" treeOrder="40"/>
 				</treasureContainers>
 			</storage>
-			<readableBooks>
-				<itemQuestBook id="hardcorequesting:quest_book"/>
+			<readableBooks treeOrder="90">
+				<itemQuestBook id="hardcorequesting:quest_book" treeOrder="150"/>
 			</readableBooks>
 		</utility>
 	</item>

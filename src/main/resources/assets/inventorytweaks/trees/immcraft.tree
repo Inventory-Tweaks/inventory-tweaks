@@ -26,23 +26,23 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<chisel>
-				<itemChisel id="immcraft:chisel"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<chisel treeOrder="180">
+				<itemChisel id="immcraft:chisel" treeOrder="90"/>
 			</chisel>
 		</tool>
 	</equipment>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemImmersiveCraftManual id="immcraft:manual"/>
-				<itemDummyBook id="immcraft:dummybook"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemImmersiveCraftManual id="immcraft:manual" treeOrder="410"/>
+				<itemDummyBook id="immcraft:dummybook" treeOrder="560"/>
 			</readableBooks>
 		</utility>
-		<decoration>
-			<toolRack>
-				<itemBookshelf id="immcraft:bookshelf"/>
+		<decoration treeOrder="120">
+			<toolRack treeOrder="370">
+				<itemBookshelf id="immcraft:bookshelf" treeOrder="60"/>
 			</toolRack>
 		</decoration>
 	</item>

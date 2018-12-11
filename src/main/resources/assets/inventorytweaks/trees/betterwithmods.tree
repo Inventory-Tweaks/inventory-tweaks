@@ -26,101 +26,101 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<CobaltPickLevel>
-						<itemRefinedPickaxe id="betterwithmods:steel_pickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<CobaltPickLevel treeOrder="80">
+						<itemRefinedPickaxe id="betterwithmods:steel_pickaxe" treeOrder="120"/>
 					</CobaltPickLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemRefinedShovel id="betterwithmods:steel_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemRefinedShovel id="betterwithmods:steel_shovel" treeOrder="880"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemRefinedAxe id="betterwithmods:steel_axe"/>
-					<itemRefinedBattleaxe id="betterwithmods:steel_battleaxe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemRefinedAxe id="betterwithmods:steel_axe" treeOrder="870"/>
+					<itemRefinedBattleaxe id="betterwithmods:steel_battleaxe" treeOrder="880"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemRefinedHoe id="betterwithmods:steel_hoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemRefinedHoe id="betterwithmods:steel_hoe" treeOrder="780"/>
 				</hoe>
 			</farmingTool>
-			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
-				<itemRefinedHacksaw id="betterwithmods:steel_hacksaw"/>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}" treeOrder="90">
+				<itemRefinedHacksaw id="betterwithmods:steel_hacksaw" treeOrder="160"/>
 			</saws>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemPlateArmorHelmet id="betterwithmods:steel_helmet"/>
-					<itemTannedLeatherCap id="betterwithmods:leather_tanned_helmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemPlateArmorHelmet id="betterwithmods:steel_helmet" treeOrder="390"/>
+					<itemTannedLeatherCap id="betterwithmods:leather_tanned_helmet" treeOrder="540"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemPlateArmorChest id="betterwithmods:steel_chest"/>
-						<itemTannedLeatherTunic id="betterwithmods:leather_tanned_chest"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemPlateArmorChest id="betterwithmods:steel_chest" treeOrder="400"/>
+						<itemTannedLeatherTunic id="betterwithmods:leather_tanned_chest" treeOrder="550"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemPlateArmorLeggings id="betterwithmods:steel_pants"/>
-					<itemTannedLeatherPants id="betterwithmods:leather_tanned_pants"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemPlateArmorLeggings id="betterwithmods:steel_pants" treeOrder="390"/>
+					<itemTannedLeatherPants id="betterwithmods:leather_tanned_pants" treeOrder="520"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemPlateArmorBoots id="betterwithmods:steel_boots"/>
-					<itemTannedLeatherBoots id="betterwithmods:leather_tanned_boots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemPlateArmorBoots id="betterwithmods:steel_boots" treeOrder="410"/>
+					<itemTannedLeatherBoots id="betterwithmods:leather_tanned_boots" treeOrder="560"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<stoneWall>
-				<itemIronWall id="betterwithmods:iron_wall"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<stoneWall treeOrder="40">
+				<itemIronWall id="betterwithmods:iron_wall" treeOrder="160"/>
 			</stoneWall>
-			<constructionBlock>
-				<slabs>
-					<MicroBlockSlabs>
-						<itembwmWoodSidingSiding id="betterwithmods:siding_wood"/>
-						<itembwmRockSiding.nameSiding id="betterwithmods:siding_rock"/>
-						<itembwmIronSiding.nameSiding id="betterwithmods:siding_iron"/>
-						<itemSiding id="betterwithmods:siding_ground"/>
-						<itemSiding id="betterwithmods:siding_clay"/>
+			<constructionBlock treeOrder="70">
+				<slabs treeOrder="110">
+					<MicroBlockSlabs treeOrder="340">
+						<itembwmWoodSidingSiding id="betterwithmods:siding_wood" treeOrder="30"/>
+						<itembwmRockSiding.nameSiding id="betterwithmods:siding_rock" treeOrder="40"/>
+						<itembwmIronSiding.nameSiding id="betterwithmods:siding_iron" treeOrder="50"/>
+						<itemSiding id="betterwithmods:siding_ground" treeOrder="60"/>
+						<itemSiding id="betterwithmods:siding_clay" treeOrder="70"/>
 					</MicroBlockSlabs>
 				</slabs>
-				<post>
-					<itembwmWoodMoulding id="betterwithmods:moulding_wood"/>
-					<itembwmRockMoulding id="betterwithmods:moulding_rock"/>
-					<itembwmIronMoulding id="betterwithmods:moulding_iron"/>
+				<post treeOrder="150">
+					<itembwmWoodMoulding id="betterwithmods:moulding_wood" treeOrder="20"/>
+					<itembwmRockMoulding id="betterwithmods:moulding_rock" treeOrder="30"/>
+					<itembwmIronMoulding id="betterwithmods:moulding_iron" treeOrder="40"/>
 				</post>
-				<corner>
-					<itembwmWoodCorner id="betterwithmods:corner_wood"/>
-					<itembwmRockCorner id="betterwithmods:corner_rock"/>
-					<itembwmIronCorner id="betterwithmods:corner_iron"/>
+				<corner treeOrder="180">
+					<itembwmWoodCorner id="betterwithmods:corner_wood" treeOrder="20"/>
+					<itembwmRockCorner id="betterwithmods:corner_rock" treeOrder="30"/>
+					<itembwmIronCorner id="betterwithmods:corner_iron" treeOrder="40"/>
 				</corner>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<rails>
-				<itemMechanicalBoosterRail id="betterwithmods:booster"/>
+		<mechanism treeOrder="60">
+			<rails treeOrder="10">
+				<itemMechanicalBoosterRail id="betterwithmods:booster" treeOrder="40"/>
 			</rails>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<rawPottery>
-				<itemUnfiredPottery id="betterwithmods:unfired_pottery"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<rawPottery treeOrder="210">
+				<itemUnfiredPottery id="betterwithmods:unfired_pottery" treeOrder="10"/>
 			</rawPottery>
 		</miningResources>
 	</resources>

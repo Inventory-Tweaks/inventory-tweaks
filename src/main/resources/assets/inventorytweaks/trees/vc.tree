@@ -26,10 +26,10 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<readableBooks>
-				<itemTheViesCraftvol.1 id="vc:guidebook_main"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemTheViesCraftvol.1 id="vc:guidebook_main" treeOrder="600"/>
 			</readableBooks>
 		</utility>
 	</item>

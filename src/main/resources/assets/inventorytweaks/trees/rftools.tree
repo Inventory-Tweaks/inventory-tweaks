@@ -26,21 +26,21 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemSmartWrench id="rftools:smartwrench"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemSmartWrench id="rftools:smartwrench" treeOrder="310"/>
 			</wrench>
-			<wands>
-				<itemShardWand id="rftools:shard_wand"/>
+			<wands treeOrder="160">
+				<itemShardWand id="rftools:shard_wand" treeOrder="280"/>
 			</wands>
 		</tool>
 	</equipment>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemRFToolsManual id="rftools:rftools_manual"/>
-				<itemRFToolsShapeManual id="rftools:rftools_shape_manual"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemRFToolsManual id="rftools:rftools_manual" treeOrder="430"/>
+				<itemRFToolsShapeManual id="rftools:rftools_shape_manual" treeOrder="440"/>
 			</readableBooks>
 		</utility>
 	</item>

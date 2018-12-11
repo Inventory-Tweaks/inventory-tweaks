@@ -26,89 +26,91 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemExtremeWrench id="bigreactors:wrench"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemExtremeWrench id="bigreactors:wrench" treeOrder="200"/>
 			</wrench>
-			<debugTools>
-				<itemBeefTronicDiagnosticsTool id="bigreactors:brdebugtool"/>
+			<debugTools treeOrder="170">
+				<itemBeefTronicDiagnosticsTool id="bigreactors:brdebugtool" treeOrder="10"/>
 			</debugTools>
 		</tool>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<oreBlock>
-				<oreAnglesiteOre>
-					<itemAnglesiteOre id="bigreactors:brore" damage="1"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<oreBlock treeOrder="90">
+				<oreAnglesiteOre treeOrder="100">
+					<itemAnglesiteOre id="bigreactors:brore" damage="1" treeOrder="10"/>
 				</oreAnglesiteOre>
-				<oreBenitoiteOre>
-					<itemBenitoiteOre id="bigreactors:brore" damage="2"/>
+				<oreBenitoiteOre treeOrder="180">
+					<itemBenitoiteOre id="bigreactors:brore" damage="2" treeOrder="10"/>
 				</oreBenitoiteOre>
 			</oreBlock>
-			<liquid>
-				<fluids id="enderio:blockfire_water">
-					<itemFluidYellorium id="bigreactors:tile.fluid.yellorium.still"/>
-					<itemFluidCyanite id="bigreactors:tile.fluid.cyanite.still"/>
+			<liquid treeOrder="200">
+				<fluids id="enderio:blockfire_water" treeOrder="60">
+					<itemFluidYellorium id="bigreactors:tile.fluid.yellorium.still" treeOrder="50"/>
+					<itemFluidCyanite id="bigreactors:tile.fluid.cyanite.still" treeOrder="60"/>
 				</fluids>
 			</liquid>
 		</naturalBlock>
-		<mechanism>
-			<generators>
-				<nuclearGenerators>
-					<itemReactorCasingCoreLegacy id="bigreactors:reactorcasingcores"/>
-					<itemReactorCasingLegacy id="bigreactors:reactorcasing"/>
-					<itemReactorGlassLegacy id="bigreactors:reactorglass"/>
-					<itemReactorControllerLegacy id="bigreactors:reactorcontroller"/>
-					<itemReactorRedstoneFluxPowerTapLegacy id="bigreactors:reactorpowertaprf"/>
-					<itemReactorTeslaPowerTapLegacy id="bigreactors:reactorpowertaptesla"/>
-					<itemReactorAccessPort id="bigreactors:brreactorpart" damage="4"/>
-					<itemReactorAccessPortLegacy id="bigreactors:reactoraccessport"/>
-					<itemReactorControlRodLegacy id="bigreactors:reactorcontrolrod"/>
-					<itemYelloriumFuelRod id="bigreactors:yelloriumfuelrod"/>
-					<itemReactorFuelRodLegacy id="bigreactors:reactorfuelrod"/>
-					<itemReactorCreativeCoolantPortLegacy id="bigreactors:reactorcreativecoolantport"/>
-					<itemReactorCoolantPortLegacy id="bigreactors:reactorcoolantport"/>
-					<itemReactorComputerPortLegacy id="bigreactors:reactorcomputerport"/>
-					<itemReactorRedstonePortLegacy id="bigreactors:reactorredstoneport"/>
-					<itemReactorRedNetPortLegacy id="bigreactors:reactorrednetport"/>
-					<itemBigReactors_CreativeTurbine id="bigreactors:brmultiblockcreativepart" damage="1"/>
+		<mechanism treeOrder="60">
+			<generators treeOrder="370">
+				<nuclearGenerators treeOrder="120">
+					<itemReactorCasingCoreLegacy id="bigreactors:reactorcasingcores" treeOrder="10"/>
+					<itemReactorCasingLegacy id="bigreactors:reactorcasing" treeOrder="30"/>
+					<itemReactorGlassLegacy id="bigreactors:reactorglass" treeOrder="50"/>
+					<itemReactorControllerLegacy id="bigreactors:reactorcontroller" treeOrder="70"/>
+					<itemReactorRedstoneFluxPowerTapLegacy id="bigreactors:reactorpowertaprf" treeOrder="90"/>
+					<itemReactorTeslaPowerTapLegacy id="bigreactors:reactorpowertaptesla" treeOrder="100"/>
+					<itemReactorAccessPort id="bigreactors:brreactorpart" damage="4" treeOrder="110"/>
+					<itemReactorAccessPortLegacy id="bigreactors:reactoraccessport" treeOrder="120"/>
+					<itemReactorControlRodLegacy id="bigreactors:reactorcontrolrod" treeOrder="140"/>
+					<itemYelloriumFuelRod id="bigreactors:yelloriumfuelrod" treeOrder="150"/>
+					<itemReactorFuelRodLegacy id="bigreactors:reactorfuelrod" treeOrder="160"/>
+					<itemReactorCreativeCoolantPortLegacy id="bigreactors:reactorcreativecoolantport" treeOrder="180"/>
+					<itemReactorCoolantPortLegacy id="bigreactors:reactorcoolantport" treeOrder="190"/>
+					<itemReactorComputerPortLegacy id="bigreactors:reactorcomputerport" treeOrder="210"/>
+					<itemReactorRedstonePortLegacy id="bigreactors:reactorredstoneport" treeOrder="230"/>
+					<itemReactorRedNetPortLegacy id="bigreactors:reactorrednetport" treeOrder="250"/>
+					<itemBigReactors_CreativeTurbine id="bigreactors:brmultiblockcreativepart" damage="1" treeOrder="260"/>
 				</nuclearGenerators>
-				<turbineGenerators>
-					<itemTurbineHousingCoreLegacy id="bigreactors:turbinehousingcores"/>
-					<itemTurbineHousingLegacy id="bigreactors:turbinehousing"/>
-					<itemTurbineGlassLegacy id="bigreactors:turbineglass"/>
-					<itemTurbineRotorBearingLegacy id="bigreactors:turbinebearing"/>
-					<itemTurbineControllerLegacy id="bigreactors:turbinecontroller"/>
-					<itemTurbineFluidPortLegacy id="bigreactors:turbinefluidport"/>
-					<itemTurbineRedstoneFluxPowerTapLegacy id="bigreactors:turbinepowertaprf"/>
-					<itemTurbineTeslaPowerTapLegacy id="bigreactors:turbinepowertaptesla"/>
-					<itemTurbineRotorShaftLegacy id="bigreactors:turbinerotorshaft"/>
-					<itemTurbineRotorBladeLegacy id="bigreactors:turbinerotorblade"/>
-					<itemTurbineComputerPort id="bigreactors:brturbinepart" damage="5"/>
-					<itemTurbineComputerPortLegacy id="bigreactors:turbinecomputerport"/>
-					<itemReactorCreativeCoolantPort id="bigreactors:brmultiblockcreativepart" damage="0"/>
-					<itemTurbineCreativeSteamGeneratorLegacy id="bigreactors:turbinecreativesteamgenerator"/>
+				<turbineGenerators treeOrder="130">
+					<itemTurbineHousingCoreLegacy id="bigreactors:turbinehousingcores" treeOrder="10"/>
+					<itemTurbineHousingLegacy id="bigreactors:turbinehousing" treeOrder="30"/>
+					<itemTurbineGlassLegacy id="bigreactors:turbineglass" treeOrder="50"/>
+					<itemTurbineRotorBearingLegacy id="bigreactors:turbinebearing" treeOrder="70"/>
+					<itemTurbineControllerLegacy id="bigreactors:turbinecontroller" treeOrder="90"/>
+					<itemTurbineFluidPortLegacy id="bigreactors:turbinefluidport" treeOrder="110"/>
+					<itemTurbineRedstoneFluxPowerTapLegacy id="bigreactors:turbinepowertaprf" treeOrder="130"/>
+					<itemTurbineTeslaPowerTapLegacy id="bigreactors:turbinepowertaptesla" treeOrder="140"/>
+					<itemTurbineRotorShaftLegacy id="bigreactors:turbinerotorshaft" treeOrder="160"/>
+					<itemTurbineRotorBladeLegacy id="bigreactors:turbinerotorblade" treeOrder="180"/>
+					<itemTurbineComputerPort id="bigreactors:brturbinepart" damage="5" treeOrder="190"/>
+					<itemTurbineComputerPortLegacy id="bigreactors:turbinecomputerport" treeOrder="200"/>
+					<itemReactorCreativeCoolantPort id="bigreactors:brmultiblockcreativepart" damage="0" treeOrder="210"/>
+					<itemTurbineCreativeSteamGeneratorLegacy id="bigreactors:turbinecreativesteamgenerator" treeOrder="220"/>
 				</turbineGenerators>
 			</generators>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<gem>
-				<gemAnglesite>
-					<itemAnglesitePbSO4 id="bigreactors:minerals" damage="0"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<gem treeOrder="140">
+				<gemAnglesite treeOrder="30">
+					<itemAnglesitePbSO4 id="bigreactors:minerals" damage="0" treeOrder="10"/>
 				</gemAnglesite>
-				<gemBenitoite>
-					<itemBenitoiteBaTiSi3O9 id="bigreactors:minerals" damage="1"/>
+				<gemBenitoite treeOrder="50">
+					<itemBenitoiteBaTiSi3O9 id="bigreactors:minerals" damage="1" treeOrder="10"/>
 				</gemBenitoite>
 			</gem>
 		</miningResources>
 	</resources>
-	<item>
-		<bucket>
-			<itemBigReactors_bucketCyanite id="bigreactors:bucketcyanite"/>
-			<itemBigReactors_bucketYellorium id="bigreactors:bucketyellorium"/>
-		</bucket>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemBigReactors_bucketCyanite id="bigreactors:bucketcyanite" treeOrder="210"/>
+				<itemBigReactors_bucketYellorium id="bigreactors:bucketyellorium" treeOrder="220"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

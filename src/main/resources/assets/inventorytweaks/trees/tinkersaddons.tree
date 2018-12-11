@@ -26,14 +26,14 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<parts>
-			<tinkerParts>
-				<tinkerUpgrades>
-					<itemBonusToolModifier id="tinkersaddons:modifier_item" damage="1"/>
-					<itemBonusToolModifier id="tinkersaddons:modifier_item" damage="2"/>
-					<itemBonusToolModifier id="tinkersaddons:modifier_item" damage="3"/>
-					<itemAmeliorationKit id="tinkersaddons:modifier_item" damage="0"/>
+	<item treeOrder="40">
+		<parts treeOrder="110">
+			<tinkerParts treeOrder="20">
+				<tinkerUpgrades treeOrder="820">
+					<itemBonusToolModifier id="tinkersaddons:modifier_item" damage="1" treeOrder="110"/>
+					<itemBonusToolModifier id="tinkersaddons:modifier_item" damage="2" treeOrder="120"/>
+					<itemBonusToolModifier id="tinkersaddons:modifier_item" damage="3" treeOrder="130"/>
+					<itemAmeliorationKit id="tinkersaddons:modifier_item" damage="0" treeOrder="150"/>
 				</tinkerUpgrades>
 			</tinkerParts>
 		</parts>

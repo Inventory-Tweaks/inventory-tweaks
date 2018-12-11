@@ -26,531 +26,539 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<ObsidianLevel>
-						<itemSurvivalistsPickaxe id="forestry:bronzepickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<ObsidianLevel treeOrder="90">
+						<itemSurvivalistsPickaxe id="forestry:bronzepickaxe" treeOrder="200"/>
 					</ObsidianLevel>
 				</pickaxe>
-				<itemBrokenPickaxe id="forestry:broken_bronze_pickaxe"/>
-				<itemPickaxeKit id="forestry:kit_pickaxe"/>
+				<itemBrokenPickaxe id="forestry:broken_bronze_pickaxe" treeOrder="30"/>
+				<itemPickaxeKit id="forestry:kit_pickaxe" treeOrder="40"/>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemSurvivalistsShovel id="forestry:bronzeshovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemSurvivalistsShovel id="forestry:bronzeshovel" treeOrder="660"/>
 				</shovel>
-				<itemBrokenShovel id="forestry:broken_bronze_shovel"/>
-				<itemShovelKit id="forestry:kit_shovel"/>
+				<itemBrokenShovel id="forestry:broken_bronze_shovel" treeOrder="30"/>
+				<itemShovelKit id="forestry:kit_shovel" treeOrder="40"/>
 			</diggingTool>
-			<fluidMovers>
-				<itemPipette id="forestry:pipette"/>
+			<fluidMovers treeOrder="110">
+				<itemPipette id="forestry:pipette" treeOrder="20"/>
 			</fluidMovers>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemWrench id="forestry:wrench"/>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemWrench id="forestry:wrench" treeOrder="190"/>
 			</wrench>
-			<instrument>
-				<compass>
-					<itemHabitatLocator id="forestry:habitat_locator"/>
+			<instrument treeOrder="310">
+				<compass treeOrder="10">
+					<itemHabitatLocator id="forestry:habitat_locator" treeOrder="90"/>
 				</compass>
-				<Analyzers>
-					<itemPortableAnalyzer id="forestry:portable_alyzer"/>
+				<Analyzers treeOrder="30">
+					<itemPortableAnalyzer id="forestry:portable_alyzer" treeOrder="10"/>
 				</Analyzers>
-				<itemBeeSmoker id="forestry:smoker"/>
-				<itemSolderingIron id="forestry:soldering_iron"/>
-				<itemHabitatScreen id="forestry:habitat_screen"/>
-				<itemImprinter id="forestry:imprinter"/>
+				<itemBeeSmoker id="forestry:smoker" treeOrder="40"/>
+				<itemSolderingIron id="forestry:soldering_iron" treeOrder="50"/>
+				<itemHabitatScreen id="forestry:habitat_screen" treeOrder="60"/>
+				<itemImprinter id="forestry:imprinter" treeOrder="70"/>
 			</instrument>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<itemApiaristsHat id="forestry:apiaristhelmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<itemApiaristsHat id="forestry:apiaristhelmet" treeOrder="70"/>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate0>
-						<itemApiaristsShirt id="forestry:apiaristchest"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate0 treeOrder="110">
+						<itemApiaristsShirt id="forestry:apiaristchest" treeOrder="10"/>
 					</chestplate0>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings0>
-					<itemApiaristsPants id="forestry:apiaristlegs"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings0 treeOrder="90">
+					<itemApiaristsPants id="forestry:apiaristlegs" treeOrder="10"/>
 				</leggings0>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots0>
-					<itemApiaristsShoes id="forestry:apiaristboots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots0 treeOrder="60">
+					<itemApiaristsShoes id="forestry:apiaristboots" treeOrder="30"/>
 				</boots0>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<wood>
-				<itemAppleOakWoodPile id="forestry:pile_wood"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<wood treeOrder="30">
+				<itemAppleOakWoodPile id="forestry:pile_wood" treeOrder="130"/>
 			</wood>
-			<ice>
-				<itemIceShard id="forestry:crafting_material" damage="5"/>
+			<ice treeOrder="190">
+				<itemIceShard id="forestry:crafting_material" damage="5" treeOrder="100"/>
 			</ice>
-			<liquid>
-				<itemizedFluids>
-					<itemBiomass id="forestry:fluid.biomass"/>
-					<itemCrushedIce id="forestry:fluid.ice"/>
-					<itemEthanol id="forestry:fluid.bio.ethanol"/>
-					<itemFruitJuice id="forestry:fluid.juice"/>
-					<itemHoney id="forestry:fluid.for.honey"/>
-					<itemLiquidGlass id="forestry:fluid.glass"/>
-					<itemSeedOil id="forestry:fluid.seed.oil"/>
-					<itemShortMead id="forestry:fluid.short.mead"/>
+			<liquid treeOrder="200">
+				<itemizedFluids treeOrder="70">
+					<itemBiomass id="forestry:fluid.biomass" treeOrder="10"/>
+					<itemCrushedIce id="forestry:fluid.ice" treeOrder="40"/>
+					<itemEthanol id="forestry:fluid.bio.ethanol" treeOrder="70"/>
+					<itemFruitJuice id="forestry:fluid.juice" treeOrder="80"/>
+					<itemHoney id="forestry:fluid.for.honey" treeOrder="100"/>
+					<itemLiquidGlass id="forestry:fluid.glass" treeOrder="110"/>
+					<itemSeedOil id="forestry:fluid.seed.oil" treeOrder="140"/>
+					<itemShortMead id="forestry:fluid.short.mead" treeOrder="150"/>
 				</itemizedFluids>
 			</liquid>
 		</naturalBlock>
-		<manufacturedBlock>
-			<constructionBlock>
-				<bricks>
-					<itemAshBricks id="forestry:ash_brick"/>
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<bricks treeOrder="20">
+					<itemAshBricks id="forestry:ash_brick" treeOrder="470"/>
 				</bricks>
-				<stairs>
-					<otherStairs>
-						<itemAshBrickStairs id="forestry:ash_stairs"/>
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemAshBrickStairs id="forestry:ash_stairs" treeOrder="2490"/>
 					</otherStairs>
 				</stairs>
-				<slabs>
-					<doubleSlab>
-						<woodenDoubleSlabs>
-							<itemLarchWoodSlab id="forestry:slabs.double.0"/>
-							<itemKapokWoodSlab id="forestry:slabs.double.1"/>
-							<itemMahoeWoodSlab id="forestry:slabs.double.2"/>
-							<itemGiantSequoiaWoodSlab id="forestry:slabs.double.3"/>
-							<itemOakWoodSlabFireproof id="forestry:slabs.vanilla.double.fireproof.0"/>
-							<itemLarchWoodSlabFireproof id="forestry:slabs.double.fireproof.0"/>
-							<itemKapokWoodSlabFireproof id="forestry:slabs.double.fireproof.1"/>
-							<itemMahoeWoodSlabFireproof id="forestry:slabs.double.fireproof.2"/>
-							<itemGiantSequoiaWoodSlabFireproof id="forestry:slabs.double.fireproof.3"/>
+				<slabs treeOrder="110">
+					<doubleSlab treeOrder="350">
+						<woodenDoubleSlabs treeOrder="10">
+							<itemLarchWoodSlab id="forestry:slabs.double.0" treeOrder="80"/>
+							<itemKapokWoodSlab id="forestry:slabs.double.1" treeOrder="90"/>
+							<itemMahoeWoodSlab id="forestry:slabs.double.2" treeOrder="100"/>
+							<itemGiantSequoiaWoodSlab id="forestry:slabs.double.3" treeOrder="110"/>
+							<itemOakWoodSlabFireproof id="forestry:slabs.vanilla.double.fireproof.0" treeOrder="120"/>
+							<itemLarchWoodSlabFireproof id="forestry:slabs.double.fireproof.0" treeOrder="130"/>
+							<itemKapokWoodSlabFireproof id="forestry:slabs.double.fireproof.1" treeOrder="140"/>
+							<itemMahoeWoodSlabFireproof id="forestry:slabs.double.fireproof.2" treeOrder="150"/>
+							<itemGiantSequoiaWoodSlabFireproof id="forestry:slabs.double.fireproof.3" treeOrder="160"/>
 						</woodenDoubleSlabs>
 					</doubleSlab>
 				</slabs>
-				<sticks oreDictName="endstone">
-					<itemImpregnatedStick id="forestry:oak_stick"/>
+				<sticks treeOrder="230">
+					<itemImpregnatedStick id="forestry:oak_stick" treeOrder="50"/>
 				</sticks>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<lighting>
-				<torch>
-					<itemCandleStump id="forestry:stump"/>
-					<itemUnlitCandle id="forestry:candle"/>
+		<mechanism treeOrder="60">
+			<lighting treeOrder="30">
+				<torch treeOrder="10">
+					<itemCandleStump id="forestry:stump" treeOrder="70"/>
+					<itemUnlitCandle id="forestry:candle" treeOrder="80"/>
 				</torch>
 			</lighting>
-			<resourceTransfer>
-				<forestryPipes>
-					<itemGeneticFilter id="forestry:genetic_filter"/>
+			<resourceTransfer treeOrder="300">
+				<forestryPipes treeOrder="80">
+					<itemGeneticFilter id="forestry:genetic_filter" treeOrder="10"/>
 				</forestryPipes>
 			</resourceTransfer>
-			<basicCrafting>
-				<craftingTables>
-					<itemWorktable id="forestry:worktable"/>
+			<basicCrafting treeOrder="360">
+				<craftingTables treeOrder="10">
+					<itemWorktable id="forestry:worktable" treeOrder="110"/>
 				</craftingTables>
 			</basicCrafting>
-			<generators>
-				<fuelGenerators>
-					<itemPeat-firedEngine id="forestry:engine_peat"/>
+			<generators treeOrder="370">
+				<fuelGenerators treeOrder="20">
+					<itemPeat-firedEngine id="forestry:engine_peat" treeOrder="190"/>
 				</fuelGenerators>
-				<liquidFuelGenerators>
-					<itemBiogasEngine id="forestry:engine_biogas"/>
+				<liquidFuelGenerators treeOrder="40">
+					<itemBiogasEngine id="forestry:engine_biogas" treeOrder="40"/>
 				</liquidFuelGenerators>
-				<solarGenerators>
-					<itemClockworkEngine id="forestry:engine_clockwork"/>
+				<solarGenerators treeOrder="110">
+					<itemClockworkEngine id="forestry:engine_clockwork" treeOrder="70"/>
 				</solarGenerators>
-				<euGenerators>
-					<itemBioGenerator id="forestry:engine_generator"/>
-					<itemElectricalEngine id="forestry:engine_electrical"/>
+				<euGenerators treeOrder="160">
+					<itemBioGenerator id="forestry:engine_generator" treeOrder="10"/>
+					<itemElectricalEngine id="forestry:engine_electrical" treeOrder="20"/>
 				</euGenerators>
 			</generators>
-			<machines>
-				<poweredCrafting>
-					<itemCarpenter id="forestry:carpenter"/>
-					<itemThermionicFabricator id="forestry:fabricator"/>
+			<machines treeOrder="380">
+				<poweredCrafting treeOrder="10">
+					<itemCarpenter id="forestry:carpenter" treeOrder="180"/>
+					<itemThermionicFabricator id="forestry:fabricator" treeOrder="190"/>
 				</poweredCrafting>
-				<poweredFarming>
-					<itemArboretumManaged id="forestry:arboretum"/>
-					<itemEnderFarmManaged id="forestry:farm_ender"/>
-					<itemFarmManaged id="forestry:farm_crops"/>
-					<itemGourdFarmManaged id="forestry:farm_gourd"/>
-					<itemInfernalFarmManaged id="forestry:farm_nether"/>
-					<itemMushroomFarmManaged id="forestry:farm_mushroom"/>
-					<itemPeatBogManaged id="forestry:peat_bog"/>
-					<itemFarmBlock id="forestry:ffarm"/>
-					<itemFermenter id="forestry:fermenter"/>
+				<poweredFarming treeOrder="40">
+					<itemArboretumManaged id="forestry:arboretum" treeOrder="100"/>
+					<itemEnderFarmManaged id="forestry:farm_ender" treeOrder="110"/>
+					<itemFarmManaged id="forestry:farm_crops" treeOrder="120"/>
+					<itemGourdFarmManaged id="forestry:farm_gourd" treeOrder="130"/>
+					<itemInfernalFarmManaged id="forestry:farm_nether" treeOrder="140"/>
+					<itemMushroomFarmManaged id="forestry:farm_mushroom" treeOrder="150"/>
+					<itemPeatBogManaged id="forestry:peat_bog" treeOrder="160"/>
+					<itemFarmBlock id="forestry:ffarm" treeOrder="170"/>
+					<itemFermenter id="forestry:fermenter" treeOrder="180"/>
 				</poweredFarming>
-				<poweredFluids>
-					<itemBottler id="forestry:bottler"/>
-					<itemSqueezer id="forestry:squeezer"/>
-					<itemStill id="forestry:still"/>
+				<poweredFluids treeOrder="140">
+					<itemBottler id="forestry:bottler" treeOrder="100"/>
+					<itemSqueezer id="forestry:squeezer" treeOrder="110"/>
+					<itemStill id="forestry:still" treeOrder="120"/>
 				</poweredFluids>
-				<randomMachines>
-					<itemRainmaker id="forestry:rainmaker"/>
-					<itemCentrifuge id="forestry:centrifuge"/>
-					<itemAnalyzer id="forestry:analyzer"/>
-					<itemDatabase id="forestry:database"/>
-					<itemEscritoire id="forestry:escritoire"/>
-					<itemHabitatFormer id="forestry:habitat_former"/>
-					<itemMailbox id="forestry:mailbox"/>
-					<itemMoistener id="forestry:moistener"/>
-					<itemTradeStation id="forestry:trade_station"/>
+				<randomMachines treeOrder="200">
+					<itemRainmaker id="forestry:rainmaker" treeOrder="210"/>
+					<itemCentrifuge id="forestry:centrifuge" treeOrder="220"/>
+					<itemAnalyzer id="forestry:analyzer" treeOrder="230"/>
+					<itemDatabase id="forestry:database" treeOrder="240"/>
+					<itemEscritoire id="forestry:escritoire" treeOrder="250"/>
+					<itemHabitatFormer id="forestry:habitat_former" treeOrder="260"/>
+					<itemMailbox id="forestry:mailbox" treeOrder="270"/>
+					<itemMoistener id="forestry:moistener" treeOrder="280"/>
+					<itemTradeStation id="forestry:trade_station" treeOrder="290"/>
 				</randomMachines>
 			</machines>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<dust>
-				<itemPulsatingDust id="forestry:crafting_material" damage="0"/>
-				<itemPhosphor id="forestry:phosphor"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<dust treeOrder="40">
+				<itemPulsatingDust id="forestry:crafting_material" damage="0" treeOrder="720"/>
+				<itemPhosphor id="forestry:phosphor" treeOrder="1400"/>
 			</dust>
-			<coals>
-				<brickPeatDict oreDictName="brickPeat">
-					<itemBituminousPeat id="forestry:bituminous_peat"/>
+			<coals treeOrder="100">
+				<brickPeatDict oreDictName="brickPeat" treeOrder="180">
+					<itemBituminousPeat id="forestry:bituminous_peat" treeOrder="10"/>
 				</brickPeatDict>
 			</coals>
-			<oreBlock>
-				<itemBogEarth id="forestry:bog_earth"/>
-				<itemHumus id="forestry:humus"/>
-				<itemLoam id="forestry:loam"/>
+			<oreBlock treeOrder="110">
+				<itemBogEarth id="forestry:bog_earth" treeOrder="1420"/>
+				<itemHumus id="forestry:humus" treeOrder="1430"/>
+				<itemLoam id="forestry:loam" treeOrder="1440"/>
 			</oreBlock>
 		</miningResources>
-		<huntingResources>
-			<itemSilkWisp id="forestry:crafting_material" damage="2"/>
-			<itemWovenSilk id="forestry:crafting_material" damage="3"/>
-			<itemPulsatingMesh id="forestry:crafting_material" damage="1"/>
+		<huntingResources treeOrder="20">
+			<itemSilk treeOrder="130">
+				<itemSilkWisp id="forestry:crafting_material" damage="2" treeOrder="10"/>
+				<itemWovenSilk id="forestry:crafting_material" damage="3" treeOrder="20"/>
+				<itemPulsatingMesh id="forestry:crafting_material" damage="1" treeOrder="30"/>
+			</itemSilk>
 		</huntingResources>
 	</resources>
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<itemApiaristsChest id="forestry:bee_chest"/>
-					<itemLepidopteristsChest id="forestry:butterfly_chest"/>
-					<itemArboristsChest id="forestry:tree_chest"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<itemApiaristsChest id="forestry:bee_chest" treeOrder="400"/>
+					<itemLepidopteristsChest id="forestry:butterfly_chest" treeOrder="410"/>
+					<itemArboristsChest id="forestry:tree_chest" treeOrder="420"/>
 				</chests>
-				<portableStorage>
-					<itemAdventuringBackpack id="forestry:adventurer_bag"/>
-					<itemWovenAdventuringBackpack id="forestry:adventurer_bag_t2"/>
-					<itemApiaristsBackpack id="forestry:apiarist_bag"/>
-					<itemBuildingBackpack id="forestry:builder_bag"/>
-					<itemWovenBuildingBackpack id="forestry:builder_bag_t2"/>
-					<itemDiggingBackpack id="forestry:digger_bag"/>
-					<itemWovenDiggingBackpack id="forestry:digger_bag_t2"/>
-					<itemForestingBackpack id="forestry:forester_bag"/>
-					<itemWovenForestingBackpack id="forestry:forester_bag_t2"/>
-					<itemHuntingBackpack id="forestry:hunter_bag"/>
-					<itemWovenHuntingBackpack id="forestry:hunter_bag_t2"/>
-					<itemLepidopteristsBackpack id="forestry:lepidopterist_bag"/>
-					<itemMiningBackpack id="forestry:miner_bag"/>
-					<itemWovenMiningBackpack id="forestry:miner_bag_t2"/>
+				<portableStorage treeOrder="90">
+					<itemAdventuringBackpack id="forestry:adventurer_bag" treeOrder="90"/>
+					<itemWovenAdventuringBackpack id="forestry:adventurer_bag_t2" treeOrder="100"/>
+					<itemApiaristsBackpack id="forestry:apiarist_bag" treeOrder="110"/>
+					<itemBuildingBackpack id="forestry:builder_bag" treeOrder="120"/>
+					<itemWovenBuildingBackpack id="forestry:builder_bag_t2" treeOrder="130"/>
+					<itemDiggingBackpack id="forestry:digger_bag" treeOrder="140"/>
+					<itemWovenDiggingBackpack id="forestry:digger_bag_t2" treeOrder="150"/>
+					<itemForestingBackpack id="forestry:forester_bag" treeOrder="160"/>
+					<itemWovenForestingBackpack id="forestry:forester_bag_t2" treeOrder="170"/>
+					<itemHuntingBackpack id="forestry:hunter_bag" treeOrder="180"/>
+					<itemWovenHuntingBackpack id="forestry:hunter_bag_t2" treeOrder="190"/>
+					<itemLepidopteristsBackpack id="forestry:lepidopterist_bag" treeOrder="200"/>
+					<itemMiningBackpack id="forestry:miner_bag" treeOrder="210"/>
+					<itemWovenMiningBackpack id="forestry:miner_bag_t2" treeOrder="220"/>
 				</portableStorage>
 			</storage>
-			<readableBooks>
-				<itemCatalogue id="forestry:catalogue"/>
-				<itemForestersManual id="forestry:book_forester"/>
+			<readableBooks treeOrder="90">
+				<itemCatalogue id="forestry:catalogue" treeOrder="200"/>
+				<itemForestersManual id="forestry:book_forester" treeOrder="400"/>
 			</readableBooks>
 		</utility>
-		<itemRainTank id="forestry:raintank"/>
-		<fluidStorage>
-			<itemForestryCan id="forestry:can"/>
-			<itemForestryCapsule id="forestry:capsule"/>
-			<itemIodineCapsule id="forestry:iodine_capsule"/>
-			<itemDissipationCharge id="forestry:crafting_material" damage="4"/>
-			<itemForestryCapsule id="forestry:refractory"/>
-		</fluidStorage>
-		<vehicle>
-			<minecarts>
-				<itemMinecartwithApiary id="forestry:cart.beehouse"/>
+		<fluidPortableStorage treeOrder="20">
+			<itemForestryCan id="forestry:can" treeOrder="90"/>
+			<itemForestryCapsule id="forestry:capsule" treeOrder="100"/>
+			<itemIodineCapsule id="forestry:iodine_capsule" treeOrder="110"/>
+			<itemDissipationCharge id="forestry:crafting_material" damage="4" treeOrder="120"/>
+			<itemForestryCapsule id="forestry:refractory" treeOrder="130"/>
+		</fluidPortableStorage>
+		<itemRainTank id="forestry:raintank" treeOrder="40"/>
+		<vehicle treeOrder="80">
+			<minecarts treeOrder="20">
+				<itemMinecartwithApiary id="forestry:cart.beehouse" treeOrder="200"/>
 			</minecarts>
 		</vehicle>
-		<parts>
-			<mechanicalParts>
-				<chip>
-					<itemIronElectronTube id="forestry:thermionic_tubes"/>
-					<itemBasicCircuitBoard id="forestry:chipsets"/>
+		<parts treeOrder="110">
+			<mechanicalParts treeOrder="10">
+				<chip treeOrder="10">
+					<itemIronElectronTube id="forestry:thermionic_tubes" treeOrder="140"/>
+					<itemBasicCircuitBoard id="forestry:chipsets" treeOrder="150"/>
 				</chip>
-				<otherParts>
-					<itemScentedPaneling id="forestry:crafting_material" damage="6"/>
-					<itemCamouflagedPaneling id="forestry:crafting_material" damage="7"/>
+				<otherParts treeOrder="100">
+					<itemScentedPaneling id="forestry:crafting_material" damage="6" treeOrder="90"/>
+					<itemCamouflagedPaneling id="forestry:crafting_material" damage="7" treeOrder="100"/>
 				</otherParts>
-				<frames>
-					<itemImpregnatedCasing id="forestry:impregnated_casing"/>
-					<itemFlexibleCasing id="forestry:flexible_casing"/>
-					<itemSturdyCasing id="forestry:sturdy_machine"/>
-					<itemHardenedCasing id="forestry:hardened_machine"/>
+				<frames treeOrder="110">
+					<itemImpregnatedCasing id="forestry:impregnated_casing" treeOrder="130"/>
+					<itemFlexibleCasing id="forestry:flexible_casing" treeOrder="140"/>
+					<itemSturdyCasing id="forestry:sturdy_machine" treeOrder="150"/>
+					<itemHardenedCasing id="forestry:hardened_machine" treeOrder="160"/>
 				</frames>
 			</mechanicalParts>
 		</parts>
-		<decoration>
-			<itemDecorativeWoodPile id="forestry:wood_pile_decorative"/>
-			<itemWoodPile id="forestry:wood_pile"/>
+		<decoration treeOrder="120">
+			<itemDecorativeWoodPile id="forestry:wood_pile_decorative" treeOrder="460"/>
+			<itemWoodPile id="forestry:wood_pile" treeOrder="470"/>
 		</decoration>
-		<mail>
-			<itemCarton id="forestry:carton"/>
-			<itemLetter id="forestry:letters"/>
-			<itemStamp1n id="forestry:stamps"/>
-			<itemSengirsNotes id="forestry:research_note"/>
-			<itemStampCollector id="forestry:stamp_collector"/>
-			<itemWaxCast id="forestry:wax_cast"/>
+		<mail treeOrder="130">
+			<itemCarton id="forestry:carton" treeOrder="10"/>
+			<itemLetter id="forestry:letters" treeOrder="20"/>
+			<itemStamp1n id="forestry:stamps" treeOrder="30"/>
+			<itemSengirsNotes id="forestry:research_note" treeOrder="40"/>
+			<itemStampCollector id="forestry:stamp_collector" treeOrder="50"/>
+			<itemWaxCast id="forestry:wax_cast" treeOrder="60"/>
 		</mail>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<breads>
-						<itemHoneyedSlice id="forestry:honeyed_slice"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<breads treeOrder="170">
+						<itemHoneyedSlice id="forestry:honeyed_slice" treeOrder="30"/>
 					</breads>
 				</preparedFood>
 			</edibleFood>
-			<todoFoods>
-				<itemAmbrosia id="forestry:ambrosia"/>
+			<todoFoods treeOrder="20">
+				<itemAmbrosia id="forestry:ambrosia" treeOrder="30"/>
 			</todoFoods>
-			<unedibleFood>
-				<grain>
-					<itemDecayingWheat id="forestry:decaying_wheat"/>
-					<itemMouldyWheat id="forestry:mouldy_wheat"/>
+			<unedibleFood treeOrder="50">
+				<grain treeOrder="10">
+					<itemDecayingWheat id="forestry:decaying_wheat" treeOrder="70"/>
+					<itemMouldyWheat id="forestry:mouldy_wheat" treeOrder="80"/>
 				</grain>
 			</unedibleFood>
 		</food>
-		<plant>
-			<treeBreeding>
-				<itemAcaciaPollen id="forestry:pollen_fertile"/>
-				<itemCrystallinePollenCluster id="forestry:pollen" damage="1"/>
+		<plant treeOrder="160">
+			<treeBreeding treeOrder="40">
+				<itemAcaciaPollen id="forestry:pollen_fertile" treeOrder="20"/>
+				<itemCrystallinePollenCluster id="forestry:pollen" damage="1" treeOrder="30"/>
 			</treeBreeding>
-			<fertilizer>
-				<itemFertilizer id="forestry:fertilizer_compound"/>
-				<itemCompost id="forestry:fertilizer_bio"/>
-				<itemMulch id="forestry:mulch"/>
+			<fertilizer treeOrder="80">
+				<fertilizerDict oreDictName="fertilizer" treeOrder="30">
+					<itemFertilizer id="forestry:fertilizer_compound" treeOrder="20"/>
+				</fertilizerDict>
+				<composts treeOrder="40">
+					<itemCompost id="forestry:fertilizer_bio" treeOrder="10"/>
+				</composts>
+				<mulches treeOrder="50">
+					<itemMulch id="forestry:mulch" treeOrder="20"/>
+				</mulches>
 			</fertilizer>
 		</plant>
-		<bees>
-			<beeQueens>
-				<itemForestQueen id="forestry:beequeenge"/>
-				<itemForestQueen id="forestry:bee_queen_ge"/>
+		<bees treeOrder="170">
+			<beeQueens treeOrder="10">
+				<itemForestQueen id="forestry:beequeenge" treeOrder="20"/>
+				<itemForestQueen id="forestry:bee_queen_ge" treeOrder="30"/>
 			</beeQueens>
-			<beePrincesses>
-				<itemForestPrincess id="forestry:beeprincessge"/>
-				<itemForestPrincess id="forestry:bee_princess_ge"/>
+			<beePrincesses treeOrder="20">
+				<itemForestPrincess id="forestry:beeprincessge" treeOrder="10"/>
+				<itemForestPrincess id="forestry:bee_princess_ge" treeOrder="20"/>
 			</beePrincesses>
-			<beeDrones>
-				<itemForestDrone id="forestry:beedronege"/>
-				<itemForestDrone id="forestry:bee_drone_ge"/>
-				<itemForestLarvae id="forestry:beelarvaege"/>
-				<itemForestLarvae id="forestry:bee_larvae_ge"/>
+			<beeDrones treeOrder="30">
+				<itemForestDrone id="forestry:beedronege" treeOrder="10"/>
+				<itemForestDrone id="forestry:bee_drone_ge" treeOrder="20"/>
+				<itemForestLarvae id="forestry:beelarvaege" treeOrder="40"/>
+				<itemForestLarvae id="forestry:bee_larvae_ge" treeOrder="50"/>
 			</beeDrones>
-			<beeCombs>
-				<itemHoneyCombBlock id="forestry:bee_combs_0"/>
-				<itemMellowCombBlock id="forestry:bee_combs_1"/>
+			<beeCombs treeOrder="40">
+				<itemHoneyCombBlock id="forestry:bee_combs_0" treeOrder="50"/>
+				<itemMellowCombBlock id="forestry:bee_combs_1" treeOrder="90"/>
 			</beeCombs>
-			<beeWax>
-				<itemRefractoryWax id="forestry:refractory_wax"/>
+			<beeWax treeOrder="50">
+				<itemRefractoryWax id="forestry:refractory_wax" treeOrder="40"/>
 			</beeWax>
-			<beePropolis>
-				<itemPropolis id="forestry:propolis"/>
+			<beePropolis treeOrder="60">
+				<itemPropolis id="forestry:propolis" treeOrder="10"/>
 			</beePropolis>
-			<beeHoney>
-				<itemHoneyPot id="forestry:honey_pot"/>
+			<beeHoney treeOrder="70">
+				<itemHoneyPot id="forestry:honey_pot" treeOrder="50"/>
 			</beeHoney>
-			<beeHousing>
-				<itemAlveary id="forestry:alveary.plain"/>
-				<itemApiary id="forestry:apiary"/>
-				<itemBeeHouse id="forestry:bee_house"/>
-				<itemForestHive id="forestry:beehives"/>
+			<beeHousing treeOrder="80">
+				<itemAlveary id="forestry:alveary.plain" treeOrder="10"/>
+				<itemApiary id="forestry:apiary" treeOrder="20"/>
+				<itemBeeHouse id="forestry:bee_house" treeOrder="30"/>
+				<itemForestHive id="forestry:beehives" treeOrder="60"/>
 			</beeHousing>
-			<beeUpgrades>
-				<itemUntreatedFrame id="forestry:frame_untreated"/>
-				<itemImpregnatedFrame id="forestry:frame_impregnated"/>
-				<itemProvenFrame id="forestry:frame_proven"/>
-				<itemAlvearyFan id="forestry:alveary.fan"/>
-				<itemAlvearyHeater id="forestry:alveary.heater"/>
-				<itemAlvearyHygroregulator id="forestry:alveary.hygro"/>
-				<itemAlvearySieve id="forestry:alveary.sieve"/>
-				<itemAlvearyStabiliser id="forestry:alveary.stabiliser"/>
-				<itemAlvearySwarmer id="forestry:alveary.swarmer"/>
+			<beeUpgrades treeOrder="90">
+				<itemUntreatedFrame id="forestry:frame_untreated" treeOrder="10"/>
+				<itemImpregnatedFrame id="forestry:frame_impregnated" treeOrder="20"/>
+				<itemProvenFrame id="forestry:frame_proven" treeOrder="30"/>
+				<itemAlvearyFan id="forestry:alveary.fan" treeOrder="40"/>
+				<itemAlvearyHeater id="forestry:alveary.heater" treeOrder="50"/>
+				<itemAlvearyHygroregulator id="forestry:alveary.hygro" treeOrder="60"/>
+				<itemAlvearySieve id="forestry:alveary.sieve" treeOrder="70"/>
+				<itemAlvearyStabiliser id="forestry:alveary.stabiliser" treeOrder="80"/>
+				<itemAlvearySwarmer id="forestry:alveary.swarmer" treeOrder="90"/>
 			</beeUpgrades>
 		</bees>
-		<butterflies>
-			<itemButterfly id="forestry:butterfly_ge"/>
-			<itemCaterpillar id="forestry:caterpillar_ge"/>
-			<itemCocoon id="forestry:cocoon_ge"/>
-			<itemSerum id="forestry:serum_ge"/>
+		<butterflies treeOrder="180">
+			<itemButterfly id="forestry:butterfly_ge" treeOrder="10"/>
+			<itemCaterpillar id="forestry:caterpillar_ge" treeOrder="20"/>
+			<itemCocoon id="forestry:cocoon_ge" treeOrder="30"/>
+			<itemSerum id="forestry:serum_ge" treeOrder="40"/>
 		</butterflies>
-		<crates>
-			<itemCrate id="forestry:crate"/>
-			<itemCratedAcaciaSapling id="forestry:crated.minecraft.sapling.4"/>
-			<itemCratedAcaciaWood id="forestry:crated.minecraft.log2.0"/>
-			<itemCratedAmaranthSapling id="forestry:crated.natura.overworld_sapling.2"/>
-			<itemCratedAmaranthWood id="forestry:crated.natura.overworld_logs.2"/>
-			<itemCratedAndesite id="forestry:crated.stoneandesite"/>
-			<itemCratedApatite id="forestry:crated.forestry.apatite.0"/>
-			<itemCratedApple id="forestry:crated.minecraft.apple.0"/>
-			<itemCratedAsh id="forestry:crated.forestry.ash.0"/>
-			<itemCratedBarley id="forestry:crated.natura.materials.0"/>
-			<itemCratedBarleyFlour id="forestry:crated.natura.materials.1"/>
-			<itemCratedBarleySeeds id="forestry:crated.natura.overworld_seeds.0"/>
-			<itemCratedBeeswax id="forestry:crated.forestry.beeswax.0"/>
-			<itemCratedBerryMedley id="forestry:crated.natura.soups.9"/>
-			<itemCratedBirchSapling id="forestry:crated.minecraft.sapling.2"/>
-			<itemCratedBirchWood id="forestry:crated.minecraft.log.2"/>
-			<itemCratedBlackberry id="forestry:crated.natura.edibles.4"/>
-			<itemCratedBlightberry id="forestry:crated.natura.edibles.6"/>
-			<itemCratedBloodwood id="forestry:crated.natura.nether_logs2.0"/>
-			<itemCratedBloodwood id="forestry:crated.natura.nether_logs2.15"/>
-			<itemCratedBloodwoodSapling id="forestry:crated.natura.nether_sapling2.0"/>
-			<itemCratedBlueDye id="forestry:crated.natura.materials.8"/>
-			<itemCratedBlueGlowshroom id="forestry:crated.natura.nether_glowshroom.1"/>
-			<itemCratedBlueberry id="forestry:crated.natura.edibles.3"/>
-			<itemCratedBogEarth id="forestry:crated.forestry.bog_earth.0"/>
-			<itemCratedBogEarth id="forestry:crated.forestry.bogearth.0"/>
-			<itemCratedBricks id="forestry:crated.minecraft.brick_block.0"/>
-			<itemCratedBronzeIngot id="forestry:crated.ic2.ingot.1"/>
-			<itemCratedBronzeIngot id="forestry:crated.ingotbronze"/>
-			<itemCratedCactus id="forestry:crated.blockcactus"/>
-			<itemCratedCactus id="forestry:crated.blockcactus"/>
-			<itemCratedCactusJuice id="forestry:crated.natura.edibles.11"/>
-			<itemCratedCarrot id="forestry:crated.cropcarrot"/>
-			<itemCratedCharcoal id="forestry:crated.minecraft.coal.1"/>
-			<itemCratedCherry id="forestry:crated.forestry.fruits.0"/>
-			<itemCratedChestnut id="forestry:crated.forestry.fruits.2"/>
-			<itemCratedClay id="forestry:crated.minecraft.clay_ball.0"/>
-			<itemCratedCoal id="forestry:crated.minecraft.coal.0"/>
-			<itemCratedCobblestone id="forestry:crated.cobblestone"/>
-			<itemCratedCocoaComb id="forestry:crated.forestry.bee_combs.1"/>
-			<itemCratedCocoaComb id="forestry:crated.forestry.beecombs.1"/>
-			<itemCratedCookedImphide id="forestry:crated.natura.edibles.1"/>
-			<itemCratedCookie id="forestry:crated.minecraft.cookie.0"/>
-			<itemCratedCopperIngot id="forestry:crated.ingotcopper"/>
-			<itemCratedCotton id="forestry:crated.natura.materials.3"/>
-			<itemCratedCottonSeeds id="forestry:crated.natura.overworld_seeds.1"/>
-			<itemCratedCrystallinePollenCluster id="forestry:crated.forestry.pollen.1"/>
-			<itemCratedDarkOakSapling id="forestry:crated.minecraft.sapling.5"/>
-			<itemCratedDarkOakWood id="forestry:crated.minecraft.log2.1"/>
-			<itemCratedDarkPrismarine id="forestry:crated.blockprismarinedark"/>
-			<itemCratedDarkwood id="forestry:crated.natura.nether_logs.1"/>
-			<itemCratedDarkwoodSapling id="forestry:crated.natura.nether_sapling.2"/>
-			<itemCratedDate id="forestry:crated.forestry.fruits.5"/>
-			<itemCratedDiorite id="forestry:crated.stonediorite"/>
-			<itemCratedDirt id="forestry:crated.dirt"/>
-			<itemCratedDrippingComb id="forestry:crated.forestry.bee_combs.5"/>
-			<itemCratedDrippingComb id="forestry:crated.forestry.beecombs.5"/>
-			<itemCratedDuskberry id="forestry:crated.natura.edibles.7"/>
-			<itemCratedEucalyptusSapling id="forestry:crated.natura.overworld_sapling2.1"/>
-			<itemCratedEucalyptusWood id="forestry:crated.natura.overworld_logs2.1"/>
-			<itemCratedFertilizer id="forestry:crated.forestry.fertilizer_compound.0"/>
-			<itemCratedFertilizer id="forestry:crated.forestry.fertilizercompound.0"/>
-			<itemCratedFlamestring id="forestry:crated.natura.materials.7"/>
-			<itemCratedFrozenComb id="forestry:crated.forestry.bee_combs.4"/>
-			<itemCratedFrozenComb id="forestry:crated.forestry.beecombs.4"/>
-			<itemCratedFusewood id="forestry:crated.natura.nether_logs.2"/>
-			<itemCratedFusewoodSapling id="forestry:crated.natura.nether_sapling.1"/>
-			<itemCratedGhostwood id="forestry:crated.natura.nether_logs.0"/>
-			<itemCratedGhostwoodFletching id="forestry:crated.natura.materials.5"/>
-			<itemCratedGhostwoodSapling id="forestry:crated.natura.nether_sapling.0"/>
-			<itemCratedGlowstoneDust id="forestry:crated.dustglowstone"/>
-			<itemCratedGranite id="forestry:crated.stonegranite"/>
-			<itemCratedGravel id="forestry:crated.gravel"/>
-			<itemCratedGreenGlowshroom id="forestry:crated.natura.nether_glowshroom.0"/>
-			<itemCratedHoneyComb id="forestry:crated.forestry.bee_combs.0"/>
-			<itemCratedHoneyComb id="forestry:crated.forestry.beecombs.0"/>
-			<itemCratedHoneydew id="forestry:crated.forestry.honeydew.0"/>
-			<itemCratedHopseedSapling id="forestry:crated.natura.overworld_sapling2.2"/>
-			<itemCratedHopseedWood id="forestry:crated.natura.overworld_logs2.2"/>
-			<itemCratedHumus id="forestry:crated.forestry.humus.0"/>
-			<itemCratedImpLeather id="forestry:crated.natura.materials.6"/>
-			<itemCratedJungleSapling id="forestry:crated.minecraft.sapling.3"/>
-			<itemCratedJungleWood id="forestry:crated.minecraft.log.3"/>
-			<itemCratedLapisLazuli id="forestry:crated.minecraft.dye.4"/>
-			<itemCratedLemon id="forestry:crated.forestry.fruits.3"/>
-			<itemCratedMaloberry id="forestry:crated.natura.edibles.5"/>
-			<itemCratedMapleSapling id="forestry:crated.natura.overworld_sapling.0"/>
-			<itemCratedMapleWood id="forestry:crated.natura.overworld_logs.0"/>
-			<itemCratedMellowComb id="forestry:crated.forestry.bee_combs.16"/>
-			<itemCratedMellowComb id="forestry:crated.forestry.beecombs.16"/>
-			<itemCratedMossyComb id="forestry:crated.forestry.bee_combs.15"/>
-			<itemCratedMossyComb id="forestry:crated.forestry.beecombs.15"/>
-			<itemCratedMulch id="forestry:crated.forestry.mulch.0"/>
-			<itemCratedMycelium id="forestry:crated.minecraft.mycelium.0"/>
-			<itemCratedMysteriousComb id="forestry:crated.forestry.bee_combs.8"/>
-			<itemCratedMysteriousComb id="forestry:crated.forestry.beecombs.8"/>
-			<itemCratedNetherBrick id="forestry:crated.minecraft.nether_brick.0"/>
-			<itemCratedNetherWart id="forestry:crated.minecraft.nether_wart.0"/>
-			<itemCratedNetherrack id="forestry:crated.netherrack"/>
-			<itemCratedOakSapling id="forestry:crated.minecraft.sapling.0"/>
-			<itemCratedOakWood id="forestry:crated.minecraft.log.0"/>
-			<itemCratedObsidian id="forestry:crated.obsidian"/>
-			<itemCratedPapaya id="forestry:crated.forestry.fruits.6"/>
-			<itemCratedParchedComb id="forestry:crated.forestry.bee_combs.7"/>
-			<itemCratedParchedComb id="forestry:crated.forestry.beecombs.7"/>
-			<itemCratedPeat id="forestry:crated.forestry.peat.0"/>
-			<itemCratedPhosphor id="forestry:crated.forestry.phosphor.0"/>
-			<itemCratedPlum id="forestry:crated.forestry.fruits.4"/>
-			<itemCratedPodzol id="forestry:crated.minecraft.dirt.2"/>
-			<itemCratedPollenCluster id="forestry:crated.forestry.pollen.0"/>
-			<itemCratedPotashApple id="forestry:crated.natura.edibles.10"/>
-			<itemCratedPotato id="forestry:crated.croppotato"/>
-			<itemCratedPowderyComb id="forestry:crated.forestry.bee_combs.10"/>
-			<itemCratedPowderyComb id="forestry:crated.forestry.beecombs.10"/>
-			<itemCratedPrismarine id="forestry:crated.blockprismarine"/>
-			<itemCratedPrismarineBricks id="forestry:crated.blockprismarinebrick"/>
-			<itemCratedPropolis id="forestry:crated.forestry.propolis.0"/>
-			<itemCratedPurpleGlowshroom id="forestry:crated.natura.nether_glowshroom.2"/>
-			<itemCratedRaspberry id="forestry:crated.natura.edibles.2"/>
-			<itemCratedRawImphide id="forestry:crated.natura.edibles.0"/>
-			<itemCratedRedSand id="forestry:crated.minecraft.sand.1"/>
-			<itemCratedRedstone id="forestry:crated.dustredstone"/>
-			<itemCratedRedwood id="forestry:crated.natura.redwood_logs.1"/>
-			<itemCratedRedwoodBark id="forestry:crated.natura.redwood_logs.0"/>
-			<itemCratedRedwoodRoot id="forestry:crated.natura.redwood_logs.2"/>
-			<itemCratedRedwoodSapling id="forestry:crated.natura.redwood_sapling.0"/>
-			<itemCratedRefractoryWax id="forestry:crated.forestry.refractory_wax.0"/>
-			<itemCratedRefractoryWax id="forestry:crated.forestry.refractorywax.0"/>
-			<itemCratedRoyalJelly id="forestry:crated.forestry.royal_jelly.0"/>
-			<itemCratedRoyalJelly id="forestry:crated.forestry.royaljelly.0"/>
-			<itemCratedRubber id="forestry:crated.itemrubber"/>
-			<itemCratedRubber id="forestry:crated.ic2.crafting.0"/>
-			<itemCratedSaguaroFruit id="forestry:crated.natura.saguaro_fruit_item.0"/>
-			<itemCratedSakuraSapling id="forestry:crated.natura.overworld_sapling2.3"/>
-			<itemCratedSakuraWood id="forestry:crated.natura.overworld_logs2.3"/>
-			<itemCratedSand id="forestry:crated.minecraft.sand.0"/>
-			<itemCratedSandstone id="forestry:crated.minecraft.sandstone.0"/>
-			<itemCratedScrap id="forestry:crated.ic2.crafting.23"/>
-			<itemCratedSeeds id="forestry:crated.minecraft.wheat_seeds.0"/>
-			<itemCratedSilkyComb id="forestry:crated.forestry.bee_combs.6"/>
-			<itemCratedSilkyComb id="forestry:crated.forestry.beecombs.6"/>
-			<itemCratedSilverIngot id="forestry:crated.ingotsilver"/>
-			<itemCratedSilverIngot id="forestry:crated.ic2.ingot.4"/>
-			<itemCratedSilverbellSapling id="forestry:crated.natura.overworld_sapling.1"/>
-			<itemCratedSilverbellWood id="forestry:crated.natura.overworld_logs.1"/>
-			<itemCratedSimmeringComb id="forestry:crated.forestry.bee_combs.2"/>
-			<itemCratedSimmeringComb id="forestry:crated.forestry.beecombs.2"/>
-			<itemCratedSkyberry id="forestry:crated.natura.edibles.8"/>
-			<itemCratedSoulSand id="forestry:crated.minecraft.soul_sand.0"/>
-			<itemCratedSpruceSapling id="forestry:crated.minecraft.sapling.1"/>
-			<itemCratedSpruceWood id="forestry:crated.minecraft.log.1"/>
-			<itemCratedStickyResin id="forestry:crated.ic2.misc_resource.4"/>
-			<itemCratedStingberry id="forestry:crated.natura.edibles.9"/>
-			<itemCratedStone id="forestry:crated.stone"/>
-			<itemCratedStringyComb id="forestry:crated.forestry.bee_combs.3"/>
-			<itemCratedStringyComb id="forestry:crated.forestry.beecombs.3"/>
-			<itemCratedSugarCanes id="forestry:crated.sugarcane"/>
-			<itemCratedSulfur id="forestry:crated.natura.materials.4"/>
-			<itemCratedTigerWood id="forestry:crated.natura.overworld_logs.3"/>
-			<itemCratedTigerwoodSapling id="forestry:crated.natura.overworld_sapling.3"/>
-			<itemCratedTinIngot id="forestry:crated.ingottin"/>
-			<itemCratedUU-Matter id="forestry:crated.ic2.misc_resource.3"/>
-			<itemCratedWalnut id="forestry:crated.forestry.fruits.1"/>
-			<itemCratedWheat id="forestry:crated.cropwheat"/>
-			<itemCratedWheatFlour id="forestry:crated.natura.materials.2"/>
-			<itemCratedWheatenComb id="forestry:crated.forestry.bee_combs.14"/>
-			<itemCratedWheatenComb id="forestry:crated.forestry.beecombs.14"/>
-			<itemCratedWillowSapling id="forestry:crated.natura.overworld_sapling2.0"/>
-			<itemCratedWillowWood id="forestry:crated.natura.overworld_logs2.0"/>
+		<crates treeOrder="240">
+			<itemCrate id="forestry:crate" treeOrder="10"/>
+			<itemCratedAcaciaSapling id="forestry:crated.minecraft.sapling.4" treeOrder="20"/>
+			<itemCratedAcaciaWood id="forestry:crated.minecraft.log2.0" treeOrder="30"/>
+			<itemCratedAmaranthSapling id="forestry:crated.natura.overworld_sapling.2" treeOrder="40"/>
+			<itemCratedAmaranthWood id="forestry:crated.natura.overworld_logs.2" treeOrder="50"/>
+			<itemCratedAndesite id="forestry:crated.stoneandesite" treeOrder="60"/>
+			<itemCratedApatite id="forestry:crated.forestry.apatite.0" treeOrder="70"/>
+			<itemCratedApple id="forestry:crated.minecraft.apple.0" treeOrder="80"/>
+			<itemCratedAsh id="forestry:crated.forestry.ash.0" treeOrder="90"/>
+			<itemCratedBarley id="forestry:crated.natura.materials.0" treeOrder="100"/>
+			<itemCratedBarleyFlour id="forestry:crated.natura.materials.1" treeOrder="110"/>
+			<itemCratedBarleySeeds id="forestry:crated.natura.overworld_seeds.0" treeOrder="120"/>
+			<itemCratedBeeswax id="forestry:crated.forestry.beeswax.0" treeOrder="130"/>
+			<itemCratedBerryMedley id="forestry:crated.natura.soups.9" treeOrder="140"/>
+			<itemCratedBirchSapling id="forestry:crated.minecraft.sapling.2" treeOrder="150"/>
+			<itemCratedBirchWood id="forestry:crated.minecraft.log.2" treeOrder="160"/>
+			<itemCratedBlackberry id="forestry:crated.natura.edibles.4" treeOrder="170"/>
+			<itemCratedBlightberry id="forestry:crated.natura.edibles.6" treeOrder="180"/>
+			<itemCratedBloodwood id="forestry:crated.natura.nether_logs2.0" treeOrder="190"/>
+			<itemCratedBloodwood id="forestry:crated.natura.nether_logs2.15" treeOrder="200"/>
+			<itemCratedBloodwoodSapling id="forestry:crated.natura.nether_sapling2.0" treeOrder="210"/>
+			<itemCratedBlueDye id="forestry:crated.natura.materials.8" treeOrder="220"/>
+			<itemCratedBlueGlowshroom id="forestry:crated.natura.nether_glowshroom.1" treeOrder="230"/>
+			<itemCratedBlueberry id="forestry:crated.natura.edibles.3" treeOrder="240"/>
+			<itemCratedBogEarth id="forestry:crated.forestry.bog_earth.0" treeOrder="250"/>
+			<itemCratedBogEarth id="forestry:crated.forestry.bogearth.0" treeOrder="260"/>
+			<itemCratedBricks id="forestry:crated.minecraft.brick_block.0" treeOrder="270"/>
+			<itemCratedBronzeIngot id="forestry:crated.ic2.ingot.1" treeOrder="280"/>
+			<itemCratedBronzeIngot id="forestry:crated.ingotbronze" treeOrder="290"/>
+			<itemCratedCactus id="forestry:crated.blockcactus" treeOrder="310"/>
+			<itemCratedCactus id="forestry:crated.blockcactus" treeOrder="320"/>
+			<itemCratedCactusJuice id="forestry:crated.natura.edibles.11" treeOrder="330"/>
+			<itemCratedCarrot id="forestry:crated.cropcarrot" treeOrder="340"/>
+			<itemCratedCharcoal id="forestry:crated.minecraft.coal.1" treeOrder="350"/>
+			<itemCratedCherry id="forestry:crated.forestry.fruits.0" treeOrder="360"/>
+			<itemCratedChestnut id="forestry:crated.forestry.fruits.2" treeOrder="370"/>
+			<itemCratedClay id="forestry:crated.minecraft.clay_ball.0" treeOrder="380"/>
+			<itemCratedCoal id="forestry:crated.minecraft.coal.0" treeOrder="390"/>
+			<itemCratedCobblestone id="forestry:crated.cobblestone" treeOrder="400"/>
+			<itemCratedCocoaComb id="forestry:crated.forestry.bee_combs.1" treeOrder="410"/>
+			<itemCratedCocoaComb id="forestry:crated.forestry.beecombs.1" treeOrder="420"/>
+			<itemCratedCookedImphide id="forestry:crated.natura.edibles.1" treeOrder="440"/>
+			<itemCratedCookie id="forestry:crated.minecraft.cookie.0" treeOrder="480"/>
+			<itemCratedCopperIngot id="forestry:crated.ingotcopper" treeOrder="490"/>
+			<itemCratedCotton id="forestry:crated.natura.materials.3" treeOrder="500"/>
+			<itemCratedCottonSeeds id="forestry:crated.natura.overworld_seeds.1" treeOrder="510"/>
+			<itemCratedCrystallinePollenCluster id="forestry:crated.forestry.pollen.1" treeOrder="520"/>
+			<itemCratedDarkOakSapling id="forestry:crated.minecraft.sapling.5" treeOrder="530"/>
+			<itemCratedDarkOakWood id="forestry:crated.minecraft.log2.1" treeOrder="540"/>
+			<itemCratedDarkPrismarine id="forestry:crated.blockprismarinedark" treeOrder="550"/>
+			<itemCratedDarkwood id="forestry:crated.natura.nether_logs.1" treeOrder="560"/>
+			<itemCratedDarkwoodSapling id="forestry:crated.natura.nether_sapling.2" treeOrder="570"/>
+			<itemCratedDate id="forestry:crated.forestry.fruits.5" treeOrder="580"/>
+			<itemCratedDiorite id="forestry:crated.stonediorite" treeOrder="590"/>
+			<itemCratedDirt id="forestry:crated.dirt" treeOrder="600"/>
+			<itemCratedDrippingComb id="forestry:crated.forestry.bee_combs.5" treeOrder="610"/>
+			<itemCratedDrippingComb id="forestry:crated.forestry.beecombs.5" treeOrder="620"/>
+			<itemCratedDuskberry id="forestry:crated.natura.edibles.7" treeOrder="630"/>
+			<itemCratedEucalyptusSapling id="forestry:crated.natura.overworld_sapling2.1" treeOrder="660"/>
+			<itemCratedEucalyptusWood id="forestry:crated.natura.overworld_logs2.1" treeOrder="670"/>
+			<itemCratedFertilizer id="forestry:crated.forestry.fertilizer_compound.0" treeOrder="680"/>
+			<itemCratedFertilizer id="forestry:crated.forestry.fertilizercompound.0" treeOrder="690"/>
+			<itemCratedFlamestring id="forestry:crated.natura.materials.7" treeOrder="700"/>
+			<itemCratedFrozenComb id="forestry:crated.forestry.bee_combs.4" treeOrder="710"/>
+			<itemCratedFrozenComb id="forestry:crated.forestry.beecombs.4" treeOrder="720"/>
+			<itemCratedFusewood id="forestry:crated.natura.nether_logs.2" treeOrder="730"/>
+			<itemCratedFusewoodSapling id="forestry:crated.natura.nether_sapling.1" treeOrder="740"/>
+			<itemCratedGhostwood id="forestry:crated.natura.nether_logs.0" treeOrder="750"/>
+			<itemCratedGhostwoodFletching id="forestry:crated.natura.materials.5" treeOrder="760"/>
+			<itemCratedGhostwoodSapling id="forestry:crated.natura.nether_sapling.0" treeOrder="770"/>
+			<itemCratedGlowstoneDust id="forestry:crated.dustglowstone" treeOrder="780"/>
+			<itemCratedGranite id="forestry:crated.stonegranite" treeOrder="790"/>
+			<itemCratedGravel id="forestry:crated.gravel" treeOrder="800"/>
+			<itemCratedGreenGlowshroom id="forestry:crated.natura.nether_glowshroom.0" treeOrder="810"/>
+			<itemCratedHoneyComb id="forestry:crated.forestry.bee_combs.0" treeOrder="820"/>
+			<itemCratedHoneyComb id="forestry:crated.forestry.beecombs.0" treeOrder="830"/>
+			<itemCratedHoneydew id="forestry:crated.forestry.honeydew.0" treeOrder="840"/>
+			<itemCratedHopseedSapling id="forestry:crated.natura.overworld_sapling2.2" treeOrder="850"/>
+			<itemCratedHopseedWood id="forestry:crated.natura.overworld_logs2.2" treeOrder="860"/>
+			<itemCratedHumus id="forestry:crated.forestry.humus.0" treeOrder="870"/>
+			<itemCratedImpLeather id="forestry:crated.natura.materials.6" treeOrder="880"/>
+			<itemCratedJungleSapling id="forestry:crated.minecraft.sapling.3" treeOrder="900"/>
+			<itemCratedJungleWood id="forestry:crated.minecraft.log.3" treeOrder="910"/>
+			<itemCratedLapisLazuli id="forestry:crated.minecraft.dye.4" treeOrder="920"/>
+			<itemCratedLemon id="forestry:crated.forestry.fruits.3" treeOrder="930"/>
+			<itemCratedMaloberry id="forestry:crated.natura.edibles.5" treeOrder="940"/>
+			<itemCratedMapleSapling id="forestry:crated.natura.overworld_sapling.0" treeOrder="950"/>
+			<itemCratedMapleWood id="forestry:crated.natura.overworld_logs.0" treeOrder="960"/>
+			<itemCratedMellowComb id="forestry:crated.forestry.bee_combs.16" treeOrder="970"/>
+			<itemCratedMellowComb id="forestry:crated.forestry.beecombs.16" treeOrder="980"/>
+			<itemCratedMossyComb id="forestry:crated.forestry.bee_combs.15" treeOrder="990"/>
+			<itemCratedMossyComb id="forestry:crated.forestry.beecombs.15" treeOrder="1000"/>
+			<itemCratedMulch id="forestry:crated.forestry.mulch.0" treeOrder="1010"/>
+			<itemCratedMycelium id="forestry:crated.minecraft.mycelium.0" treeOrder="1020"/>
+			<itemCratedMysteriousComb id="forestry:crated.forestry.bee_combs.8" treeOrder="1030"/>
+			<itemCratedMysteriousComb id="forestry:crated.forestry.beecombs.8" treeOrder="1040"/>
+			<itemCratedNetherBrick id="forestry:crated.minecraft.nether_brick.0" treeOrder="1050"/>
+			<itemCratedNetherWart id="forestry:crated.minecraft.nether_wart.0" treeOrder="1060"/>
+			<itemCratedNetherrack id="forestry:crated.netherrack" treeOrder="1070"/>
+			<itemCratedOakSapling id="forestry:crated.minecraft.sapling.0" treeOrder="1080"/>
+			<itemCratedOakWood id="forestry:crated.minecraft.log.0" treeOrder="1090"/>
+			<itemCratedObsidian id="forestry:crated.obsidian" treeOrder="1100"/>
+			<itemCratedPapaya id="forestry:crated.forestry.fruits.6" treeOrder="1110"/>
+			<itemCratedParchedComb id="forestry:crated.forestry.bee_combs.7" treeOrder="1120"/>
+			<itemCratedParchedComb id="forestry:crated.forestry.beecombs.7" treeOrder="1130"/>
+			<itemCratedPeat id="forestry:crated.forestry.peat.0" treeOrder="1140"/>
+			<itemCratedPhosphor id="forestry:crated.forestry.phosphor.0" treeOrder="1150"/>
+			<itemCratedPlum id="forestry:crated.forestry.fruits.4" treeOrder="1160"/>
+			<itemCratedPodzol id="forestry:crated.minecraft.dirt.2" treeOrder="1170"/>
+			<itemCratedPollenCluster id="forestry:crated.forestry.pollen.0" treeOrder="1180"/>
+			<itemCratedPotashApple id="forestry:crated.natura.edibles.10" treeOrder="1190"/>
+			<itemCratedPotato id="forestry:crated.croppotato" treeOrder="1200"/>
+			<itemCratedPowderyComb id="forestry:crated.forestry.bee_combs.10" treeOrder="1210"/>
+			<itemCratedPowderyComb id="forestry:crated.forestry.beecombs.10" treeOrder="1220"/>
+			<itemCratedPrismarine id="forestry:crated.blockprismarine" treeOrder="1230"/>
+			<itemCratedPrismarineBricks id="forestry:crated.blockprismarinebrick" treeOrder="1240"/>
+			<itemCratedPropolis id="forestry:crated.forestry.propolis.0" treeOrder="1250"/>
+			<itemCratedPurpleGlowshroom id="forestry:crated.natura.nether_glowshroom.2" treeOrder="1260"/>
+			<itemCratedRaspberry id="forestry:crated.natura.edibles.2" treeOrder="1270"/>
+			<itemCratedRawImphide id="forestry:crated.natura.edibles.0" treeOrder="1300"/>
+			<itemCratedRedSand id="forestry:crated.minecraft.sand.1" treeOrder="1340"/>
+			<itemCratedRedstone id="forestry:crated.dustredstone" treeOrder="1350"/>
+			<itemCratedRedwood id="forestry:crated.natura.redwood_logs.1" treeOrder="1360"/>
+			<itemCratedRedwoodBark id="forestry:crated.natura.redwood_logs.0" treeOrder="1370"/>
+			<itemCratedRedwoodRoot id="forestry:crated.natura.redwood_logs.2" treeOrder="1380"/>
+			<itemCratedRedwoodSapling id="forestry:crated.natura.redwood_sapling.0" treeOrder="1390"/>
+			<itemCratedRefractoryWax id="forestry:crated.forestry.refractory_wax.0" treeOrder="1400"/>
+			<itemCratedRefractoryWax id="forestry:crated.forestry.refractorywax.0" treeOrder="1410"/>
+			<itemCratedRoyalJelly id="forestry:crated.forestry.royal_jelly.0" treeOrder="1420"/>
+			<itemCratedRoyalJelly id="forestry:crated.forestry.royaljelly.0" treeOrder="1430"/>
+			<itemCratedRubber id="forestry:crated.itemrubber" treeOrder="1440"/>
+			<itemCratedRubber id="forestry:crated.ic2.crafting.0" treeOrder="1450"/>
+			<itemCratedSaguaroFruit id="forestry:crated.natura.saguaro_fruit_item.0" treeOrder="1460"/>
+			<itemCratedSakuraSapling id="forestry:crated.natura.overworld_sapling2.3" treeOrder="1470"/>
+			<itemCratedSakuraWood id="forestry:crated.natura.overworld_logs2.3" treeOrder="1480"/>
+			<itemCratedSand id="forestry:crated.minecraft.sand.0" treeOrder="1490"/>
+			<itemCratedSandstone id="forestry:crated.minecraft.sandstone.0" treeOrder="1500"/>
+			<itemCratedScrap id="forestry:crated.ic2.crafting.23" treeOrder="1510"/>
+			<itemCratedSeeds id="forestry:crated.minecraft.wheat_seeds.0" treeOrder="1520"/>
+			<itemCratedSilkyComb id="forestry:crated.forestry.bee_combs.6" treeOrder="1530"/>
+			<itemCratedSilkyComb id="forestry:crated.forestry.beecombs.6" treeOrder="1540"/>
+			<itemCratedSilverIngot id="forestry:crated.ingotsilver" treeOrder="1550"/>
+			<itemCratedSilverIngot id="forestry:crated.ic2.ingot.4" treeOrder="1560"/>
+			<itemCratedSilverbellSapling id="forestry:crated.natura.overworld_sapling.1" treeOrder="1570"/>
+			<itemCratedSilverbellWood id="forestry:crated.natura.overworld_logs.1" treeOrder="1580"/>
+			<itemCratedSimmeringComb id="forestry:crated.forestry.bee_combs.2" treeOrder="1590"/>
+			<itemCratedSimmeringComb id="forestry:crated.forestry.beecombs.2" treeOrder="1600"/>
+			<itemCratedSkyberry id="forestry:crated.natura.edibles.8" treeOrder="1610"/>
+			<itemCratedSoulSand id="forestry:crated.minecraft.soul_sand.0" treeOrder="1630"/>
+			<itemCratedSpruceSapling id="forestry:crated.minecraft.sapling.1" treeOrder="1640"/>
+			<itemCratedSpruceWood id="forestry:crated.minecraft.log.1" treeOrder="1650"/>
+			<itemCratedStickyResin id="forestry:crated.ic2.misc_resource.4" treeOrder="1670"/>
+			<itemCratedStingberry id="forestry:crated.natura.edibles.9" treeOrder="1680"/>
+			<itemCratedStone id="forestry:crated.stone" treeOrder="1690"/>
+			<itemCratedStringyComb id="forestry:crated.forestry.bee_combs.3" treeOrder="1700"/>
+			<itemCratedStringyComb id="forestry:crated.forestry.beecombs.3" treeOrder="1710"/>
+			<itemCratedSugarCanes id="forestry:crated.sugarcane" treeOrder="1720"/>
+			<itemCratedSulfur id="forestry:crated.natura.materials.4" treeOrder="1730"/>
+			<itemCratedTigerWood id="forestry:crated.natura.overworld_logs.3" treeOrder="1740"/>
+			<itemCratedTigerwoodSapling id="forestry:crated.natura.overworld_sapling.3" treeOrder="1750"/>
+			<itemCratedTinIngot id="forestry:crated.ingottin" treeOrder="1760"/>
+			<itemCratedUU-Matter id="forestry:crated.ic2.misc_resource.3" treeOrder="1770"/>
+			<itemCratedWalnut id="forestry:crated.forestry.fruits.1" treeOrder="1780"/>
+			<itemCratedWheat id="forestry:crated.cropwheat" treeOrder="1790"/>
+			<itemCratedWheatFlour id="forestry:crated.natura.materials.2" treeOrder="1800"/>
+			<itemCratedWheatenComb id="forestry:crated.forestry.bee_combs.14" treeOrder="1810"/>
+			<itemCratedWheatenComb id="forestry:crated.forestry.beecombs.14" treeOrder="1820"/>
+			<itemCratedWillowSapling id="forestry:crated.natura.overworld_sapling2.0" treeOrder="1830"/>
+			<itemCratedWillowWood id="forestry:crated.natura.overworld_logs2.0" treeOrder="1840"/>
 		</crates>
 	</item>
 </stuff>

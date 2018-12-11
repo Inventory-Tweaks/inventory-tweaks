@@ -26,106 +26,106 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<UnsortedLevel>
-						<itemDiamondMasonPick id="betterwithaddons:diamond_masonpick"/>
-						<itemDiamondMatchpick id="betterwithaddons:diamond_matchpick"/>
-						<itemGoldenMasonPick id="betterwithaddons:gold_masonpick"/>
-						<itemGoldenMatchpick id="betterwithaddons:gold_matchpick"/>
-						<itemIronMasonPick id="betterwithaddons:iron_masonpick"/>
-						<itemIronMatchpick id="betterwithaddons:iron_matchpick"/>
-						<itemRefinedMasonPick id="betterwithaddons:steel_masonpick"/>
-						<itemRefinedMatchpick id="betterwithaddons:steel_matchpick"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<UnsortedLevel treeOrder="130">
+						<itemDiamondMasonPick id="betterwithaddons:diamond_masonpick" treeOrder="20"/>
+						<itemDiamondMatchpick id="betterwithaddons:diamond_matchpick" treeOrder="30"/>
+						<itemGoldenMasonPick id="betterwithaddons:gold_masonpick" treeOrder="40"/>
+						<itemGoldenMatchpick id="betterwithaddons:gold_matchpick" treeOrder="50"/>
+						<itemIronMasonPick id="betterwithaddons:iron_masonpick" treeOrder="60"/>
+						<itemIronMatchpick id="betterwithaddons:iron_matchpick" treeOrder="70"/>
+						<itemRefinedMasonPick id="betterwithaddons:steel_masonpick" treeOrder="80"/>
+						<itemRefinedMatchpick id="betterwithaddons:steel_matchpick" treeOrder="90"/>
 					</UnsortedLevel>
 				</pickaxe>
 			</miningTool>
-			<saws class="Item" data="{ToolClass : &quot;saw&quot;}">
-				<itemDiamondCarpenterSaw id="betterwithaddons:diamond_carpentersaw"/>
-				<itemGoldenCarpenterSaw id="betterwithaddons:gold_carpentersaw"/>
-				<itemIronCarpenterSaw id="betterwithaddons:iron_carpentersaw"/>
-				<itemRefinedCarpenterSaw id="betterwithaddons:steel_carpentersaw"/>
+			<saws class="Item" data="{ToolClass : &quot;saw&quot;}" treeOrder="90">
+				<itemDiamondCarpenterSaw id="betterwithaddons:diamond_carpentersaw" treeOrder="120"/>
+				<itemGoldenCarpenterSaw id="betterwithaddons:gold_carpentersaw" treeOrder="130"/>
+				<itemIronCarpenterSaw id="betterwithaddons:iron_carpentersaw" treeOrder="140"/>
+				<itemRefinedCarpenterSaw id="betterwithaddons:steel_carpentersaw" treeOrder="150"/>
 			</saws>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemPaperHelmet id="betterwithaddons:helmet_paper"/>
-					<itemSamuraiHelmetWIP id="betterwithaddons:helmet_samurai"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemPaperHelmet id="betterwithaddons:helmet_paper" treeOrder="370"/>
+					<itemSamuraiHelmetWIP id="betterwithaddons:helmet_samurai" treeOrder="480"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemPaperChestplate id="betterwithaddons:chest_paper"/>
-						<itemSamuraiChestplateWIP id="betterwithaddons:chest_samurai"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemPaperChestplate id="betterwithaddons:chest_paper" treeOrder="380"/>
+						<itemSamuraiChestplateWIP id="betterwithaddons:chest_samurai" treeOrder="490"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemPaperLeggings id="betterwithaddons:legs_paper"/>
-					<itemSamuraiLeggingsWIP id="betterwithaddons:legs_samurai"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemPaperLeggings id="betterwithaddons:legs_paper" treeOrder="380"/>
+					<itemSamuraiLeggingsWIP id="betterwithaddons:legs_samurai" treeOrder="460"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemPaperBoots id="betterwithaddons:boots_paper"/>
-					<itemSamuraiBootsWIP id="betterwithaddons:boots_samurai"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemPaperBoots id="betterwithaddons:boots_paper" treeOrder="400"/>
+					<itemSamuraiBootsWIP id="betterwithaddons:boots_samurai" treeOrder="500"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<stoneWall>
-				<itemPaperWall id="betterwithaddons:paper_wall"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<stoneWall treeOrder="40">
+				<itemPaperWall id="betterwithaddons:paper_wall" treeOrder="150"/>
 			</stoneWall>
-			<constructionBlock>
-				<bricks>
-					<stoneBricks>
-						<itemStainedBricks id="betterwithaddons:bricks_stained"/>
+			<constructionBlock treeOrder="70">
+				<bricks treeOrder="20">
+					<stoneBricks treeOrder="110">
+						<itemStainedBricks id="betterwithaddons:bricks_stained" treeOrder="80"/>
 					</stoneBricks>
 				</bricks>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<rails>
-				<itemRustedRail id="betterwithaddons:rail_rusted"/>
+		<mechanism treeOrder="60">
+			<rails treeOrder="10">
+				<itemRustedRail id="betterwithaddons:rail_rusted" treeOrder="180"/>
 			</rails>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<bricks>
-				<itemStainedBrick id="betterwithaddons:brick_stained"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<bricks treeOrder="190">
+				<itemStainedBrick id="betterwithaddons:brick_stained" treeOrder="50"/>
 			</bricks>
 		</miningResources>
 	</resources>
-	<item>
-		<plant>
-			<seedbag>
-				<itemBagofSeeds id="betterwithaddons:bag"/>
+	<item treeOrder="40">
+		<plant treeOrder="160">
+			<seedbag treeOrder="50">
+				<itemBagofSeeds id="betterwithaddons:bag" treeOrder="80"/>
 			</seedbag>
 		</plant>
-		<crates>
-			<itemCratedCacti id="betterwithaddons:crate" damage="13"/>
-			<itemCratedCookedChicken id="betterwithaddons:crate" damage="2"/>
-			<itemCratedCookedMutton id="betterwithaddons:crate" damage="6"/>
-			<itemCratedCookedPorkchops id="betterwithaddons:crate" damage="0"/>
-			<itemCratedCookedRabbit id="betterwithaddons:crate" damage="8"/>
-			<itemCratedEggs id="betterwithaddons:crate" damage="10"/>
-			<itemCratedEnderpearls id="betterwithaddons:crate" damage="12"/>
-			<itemCratedInkSacs id="betterwithaddons:crate" damage="14"/>
-			<itemCratedRawBeef id="betterwithaddons:crate" damage="5"/>
-			<itemCratedRawChicken id="betterwithaddons:crate" damage="3"/>
-			<itemCratedRawMutton id="betterwithaddons:crate" damage="7"/>
-			<itemCratedRawPorkchops id="betterwithaddons:crate" damage="1"/>
-			<itemCratedRawRabbit id="betterwithaddons:crate" damage="9"/>
-			<itemCratedSlimeballs id="betterwithaddons:crate" damage="11"/>
-			<itemCratedSteak id="betterwithaddons:crate" damage="4"/>
+		<crates treeOrder="240">
+			<itemCratedCacti id="betterwithaddons:crate" damage="13" treeOrder="300"/>
+			<itemCratedCookedChicken id="betterwithaddons:crate" damage="2" treeOrder="430"/>
+			<itemCratedCookedMutton id="betterwithaddons:crate" damage="6" treeOrder="450"/>
+			<itemCratedCookedPorkchops id="betterwithaddons:crate" damage="0" treeOrder="460"/>
+			<itemCratedCookedRabbit id="betterwithaddons:crate" damage="8" treeOrder="470"/>
+			<itemCratedEggs id="betterwithaddons:crate" damage="10" treeOrder="640"/>
+			<itemCratedEnderpearls id="betterwithaddons:crate" damage="12" treeOrder="650"/>
+			<itemCratedInkSacs id="betterwithaddons:crate" damage="14" treeOrder="890"/>
+			<itemCratedRawBeef id="betterwithaddons:crate" damage="5" treeOrder="1280"/>
+			<itemCratedRawChicken id="betterwithaddons:crate" damage="3" treeOrder="1290"/>
+			<itemCratedRawMutton id="betterwithaddons:crate" damage="7" treeOrder="1310"/>
+			<itemCratedRawPorkchops id="betterwithaddons:crate" damage="1" treeOrder="1320"/>
+			<itemCratedRawRabbit id="betterwithaddons:crate" damage="9" treeOrder="1330"/>
+			<itemCratedSlimeballs id="betterwithaddons:crate" damage="11" treeOrder="1620"/>
+			<itemCratedSteak id="betterwithaddons:crate" damage="4" treeOrder="1660"/>
 		</crates>
 	</item>
 </stuff>

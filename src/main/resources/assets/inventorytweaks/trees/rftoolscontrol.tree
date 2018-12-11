@@ -26,10 +26,10 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<readableBooks>
-				<itemRFToolsControlManual id="rftoolscontrol:rftoolscontrol_manual"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemRFToolsControlManual id="rftoolscontrol:rftoolscontrol_manual" treeOrder="450"/>
 			</readableBooks>
 		</utility>
 	</item>

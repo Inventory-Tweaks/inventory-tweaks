@@ -26,12 +26,31 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<naturalBlock>
-			<liquid>
-				<itemMoltenConductiveRedmetal id="projred|compatibility:projectred.compatibility.liqcondredmetal"/>
-				<itemLiquidRedstone id="projred|compatibility:projectred.compatibility.liqredstone"/>
-			</liquid>
-		</naturalBlock>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<poweredCrafting treeOrder="10">
+					<itemLaser id="buildcraft|silicon:laserblock" damage="0" treeOrder="110"/>
+					<itemAdvancedCraftingTable id="buildcraft|silicon:lasertableblock" damage="1" treeOrder="120"/>
+					<itemAssemblyTable id="buildcraft|silicon:lasertableblock" damage="0" treeOrder="130"/>
+					<itemIntegrationTable id="buildcraft|silicon:lasertableblock" damage="2" treeOrder="140"/>
+					<itemProgrammingTable id="buildcraft|silicon:lasertableblock" damage="4" treeOrder="150"/>
+					<itemStampingTable id="buildcraft|silicon:lasertableblock" damage="5" treeOrder="160"/>
+				</poweredCrafting>
+			</machines>
+		</mechanism>
 	</block>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<portableStorage treeOrder="90">
+					<itemRecipePackager id="buildcraft|silicon:packagerblock" damage="0" treeOrder="410"/>
+					<itemPackage id="buildcraft|silicon:package" treeOrder="420"/>
+				</portableStorage>
+				<powerStorage treeOrder="120">
+					<itemChargingTable id="buildcraft|silicon:lasertableblock" damage="3" treeOrder="230"/>
+				</powerStorage>
+			</storage>
+		</utility>
+	</item>
 </stuff>

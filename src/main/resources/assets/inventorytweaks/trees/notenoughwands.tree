@@ -26,23 +26,23 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wands>
-				<itemAccelerationWand id="notenoughwands:acceleration_wand"/>
-				<itemAdvancedWandCore id="notenoughwands:advanced_wandcore"/>
-				<itemBuildingWand id="notenoughwands:building_wand"/>
-				<itemCapturingWand id="notenoughwands:capturing_wand"/>
-				<itemDisplacementWand id="notenoughwands:displacement_wand"/>
-				<itemFreezingWandWIP id="notenoughwands:freezing_wand"/>
-				<itemIlluminationWand id="notenoughwands:illumination_wand"/>
-				<itemMasterProtectionWand id="notenoughwands:master_protection_wand"/>
-				<itemMovingWand id="notenoughwands:moving_wand"/>
-				<itemPotionWand id="notenoughwands:potion_wand"/>
-				<itemProtectionWand id="notenoughwands:protection_wand"/>
-				<itemSwappingWand id="notenoughwands:swapping_wand"/>
-				<itemTeleportationWand id="notenoughwands:teleportation_wand"/>
-				<itemWandCore id="notenoughwands:wandcore"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wands treeOrder="160">
+				<itemAccelerationWand id="notenoughwands:acceleration_wand" treeOrder="290"/>
+				<itemAdvancedWandCore id="notenoughwands:advanced_wandcore" treeOrder="300"/>
+				<itemBuildingWand id="notenoughwands:building_wand" treeOrder="310"/>
+				<itemCapturingWand id="notenoughwands:capturing_wand" treeOrder="320"/>
+				<itemDisplacementWand id="notenoughwands:displacement_wand" treeOrder="330"/>
+				<itemFreezingWandWIP id="notenoughwands:freezing_wand" treeOrder="340"/>
+				<itemIlluminationWand id="notenoughwands:illumination_wand" treeOrder="350"/>
+				<itemMasterProtectionWand id="notenoughwands:master_protection_wand" treeOrder="360"/>
+				<itemMovingWand id="notenoughwands:moving_wand" treeOrder="370"/>
+				<itemPotionWand id="notenoughwands:potion_wand" treeOrder="380"/>
+				<itemProtectionWand id="notenoughwands:protection_wand" treeOrder="390"/>
+				<itemSwappingWand id="notenoughwands:swapping_wand" treeOrder="400"/>
+				<itemTeleportationWand id="notenoughwands:teleportation_wand" treeOrder="410"/>
+				<itemWandCore id="notenoughwands:wandcore" treeOrder="420"/>
 			</wands>
 		</tool>
 	</equipment>

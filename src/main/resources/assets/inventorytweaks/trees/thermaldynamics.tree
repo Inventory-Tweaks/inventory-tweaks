@@ -26,52 +26,52 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<facades>
-					<itemThermalDynamicsCover id="thermaldynamics:cover"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<facades treeOrder="130">
+					<itemThermalDynamicsCover id="thermaldynamics:cover" treeOrder="100"/>
 				</facades>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<resourceTransfer>
-				<tePipes>
-					<teItemPipes>
-						<itemItemduct id="thermaldynamics:thermaldynamics_32"/>
-						<itemItemduct id="thermaldynamics:duct_32"/>
+		<mechanism treeOrder="60">
+			<resourceTransfer treeOrder="300">
+				<tePipes treeOrder="50">
+					<teItemPipes treeOrder="10">
+						<itemItemduct id="thermaldynamics:thermaldynamics_32" treeOrder="10"/>
+						<itemItemduct id="thermaldynamics:duct_32" treeOrder="20"/>
 					</teItemPipes>
-					<teFluidPipes>
-						<itemFluiduct id="thermaldynamics:thermaldynamics_16"/>
-						<itemFluiduct id="thermaldynamics:duct_16"/>
+					<teFluidPipes treeOrder="20">
+						<itemFluiduct id="thermaldynamics:thermaldynamics_16" treeOrder="10"/>
+						<itemFluiduct id="thermaldynamics:duct_16" treeOrder="20"/>
 					</teFluidPipes>
-					<tePowerPipes>
-						<itemRedstoneEnergyFluxduct id="thermaldynamics:thermaldynamics_0"/>
-						<itemLeadstoneFluxduct id="thermaldynamics:duct_0"/>
+					<tePowerPipes treeOrder="30">
+						<itemRedstoneEnergyFluxduct id="thermaldynamics:thermaldynamics_0" treeOrder="10"/>
+						<itemLeadstoneFluxduct id="thermaldynamics:duct_0" treeOrder="20"/>
 					</tePowerPipes>
-					<itemStructuralductOpaque id="thermaldynamics:thermaldynamics_48" damage="0"/>
-					<itemStructuralduct id="thermaldynamics:duct_48"/>
-					<itemLuxduct id="thermaldynamics:thermaldynamics_48" damage="1"/>
+					<itemStructuralductOpaque id="thermaldynamics:thermaldynamics_48" damage="0" treeOrder="40"/>
+					<itemStructuralduct id="thermaldynamics:duct_48" treeOrder="50"/>
+					<itemLuxduct id="thermaldynamics:thermaldynamics_48" damage="1" treeOrder="60"/>
 				</tePipes>
 			</resourceTransfer>
-			<machines>
-				<remoteAccess>
-					<viaDuct id="thermaldynamics:thermaldynamics_64" damage="2">
-						<itemViaduct id="thermaldynamics:duct_64"/>
-						<itemLongRangeLinkingViaduct id="thermaldynamics:thermaldynamics_64" damage="2"/>
-						<itemLongRangeViaduct id="thermaldynamics:thermaldynamics_64" damage="1"/>
-						<itemViaduct id="thermaldynamics:thermaldynamics_64" damage="0"/>
-						<itemViaductUntreated id="thermaldynamics:thermaldynamics_64" damage="3"/>
+			<machines treeOrder="380">
+				<remoteAccess treeOrder="220">
+					<viaDuct id="thermaldynamics:thermaldynamics_64" damage="2" treeOrder="100">
+						<itemViaduct id="thermaldynamics:duct_64" treeOrder="10"/>
+						<itemLongRangeLinkingViaduct id="thermaldynamics:thermaldynamics_64" damage="2" treeOrder="20"/>
+						<itemLongRangeViaduct id="thermaldynamics:thermaldynamics_64" damage="1" treeOrder="30"/>
+						<itemViaduct id="thermaldynamics:thermaldynamics_64" damage="0" treeOrder="40"/>
+						<itemViaductUntreated id="thermaldynamics:thermaldynamics_64" damage="3" treeOrder="50"/>
 					</viaDuct>
 				</remoteAccess>
 			</machines>
-			<machineupgrades>
-				<transportUpgrades>
-					<tePipeUpgrades>
-						<itemTEPipeServo id="thermaldynamics:servo"/>
-						<itemTEPipeFilter id="thermaldynamics:filter"/>
-						<itemTEPipeRetriever id="thermaldynamics:retriever"/>
-						<itemTEPipeRelay id="thermaldynamics:relay"/>
+			<machineupgrades treeOrder="390">
+				<transportUpgrades treeOrder="20">
+					<tePipeUpgrades treeOrder="30">
+						<itemTEPipeServo id="thermaldynamics:servo" treeOrder="10"/>
+						<itemTEPipeFilter id="thermaldynamics:filter" treeOrder="20"/>
+						<itemTEPipeRetriever id="thermaldynamics:retriever" treeOrder="30"/>
+						<itemTEPipeRelay id="thermaldynamics:relay" treeOrder="40"/>
 					</tePipeUpgrades>
 				</transportUpgrades>
 			</machineupgrades>

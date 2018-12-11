@@ -26,19 +26,19 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<armor>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemBoots id="conarm:boots"/>
+	<equipment treeOrder="10">
+		<armor treeOrder="30">
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemBoots id="conarm:boots" treeOrder="70"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemMaterialsandYou-ArmoryAddendum id="conarm:book"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemMaterialsandYou-ArmoryAddendum id="conarm:book" treeOrder="510"/>
 			</readableBooks>
 		</utility>
 	</item>

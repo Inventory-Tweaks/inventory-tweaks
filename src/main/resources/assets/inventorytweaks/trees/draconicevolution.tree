@@ -26,61 +26,61 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage35>
-							<itemDraconicSword id="draconicevolution:draconic_sword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage35 treeOrder="10">
+							<itemDraconicSword id="draconicevolution:draconic_sword" treeOrder="10"/>
 						</swordDamage35>
-						<swordDamage15>
-							<itemSwordoftheWyvern id="draconicevolution:wyvern_sword"/>
+						<swordDamage15 treeOrder="30">
+							<itemSwordoftheWyvern id="draconicevolution:wyvern_sword" treeOrder="10"/>
 						</swordDamage15>
 					</sword>
 				</sword>
 			</meleeWeapon>
-			<munition>
-				<bow mergeChildren="true">
-					<itemDraconicBow id="draconicevolution:draconic_bow"/>
-					<itemBowoftheWyvern id="draconicevolution:wyvern_bow"/>
+			<munition treeOrder="20">
+				<bow mergeChildren="true" treeOrder="30">
+					<itemDraconicBow id="draconicevolution:draconic_bow" treeOrder="20"/>
+					<itemBowoftheWyvern id="draconicevolution:wyvern_bow" treeOrder="30"/>
 				</bow>
 			</munition>
 		</weapon>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<itemDraconicPickaxe id="draconicevolution:draconic_pick"/>
-					<itemPickaxeoftheWyvern id="draconicevolution:wyvern_pick"/>
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemDraconicPickaxe id="draconicevolution:draconic_pick" treeOrder="20"/>
+					<itemPickaxeoftheWyvern id="draconicevolution:wyvern_pick" treeOrder="30"/>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemDraconicShovel id="draconicevolution:draconic_shovel"/>
-					<itemShoveloftheWyvern id="draconicevolution:wyvern_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemDraconicShovel id="draconicevolution:draconic_shovel" treeOrder="160"/>
+					<itemShoveloftheWyvern id="draconicevolution:wyvern_shovel" treeOrder="620"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemAxeoftheWyvern id="draconicevolution:wyvern_axe"/>
-					<itemDraconicAxe id="draconicevolution:draconic_axe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemAxeoftheWyvern id="draconicevolution:wyvern_axe" treeOrder="100"/>
+					<itemDraconicAxe id="draconicevolution:draconic_axe" treeOrder="230"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemDraconicHoe id="draconicevolution:draconic_hoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemDraconicHoe id="draconicevolution:draconic_hoe" treeOrder="30"/>
 				</hoe>
 			</farmingTool>
-			<magnets>
-				<itemItemDislocator id="draconicevolution:magnet"/>
+			<magnets treeOrder="280">
+				<itemItemDislocator id="draconicevolution:magnet" treeOrder="80"/>
 			</magnets>
 		</tool>
 	</equipment>
-	<item>
-		<utility>
-			<storage>
-				<powerStorage id="enderio:blockcapacitorbank">
-					<itemCreativeFluxCapacitor id="draconicevolution:draconium_capacitor"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<powerStorage treeOrder="120">
+					<itemCreativeFluxCapacitor id="draconicevolution:draconium_capacitor" treeOrder="100"/>
 				</powerStorage>
 			</storage>
 		</utility>

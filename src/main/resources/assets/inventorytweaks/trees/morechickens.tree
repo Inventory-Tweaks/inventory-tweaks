@@ -26,9 +26,9 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<potion>
-			<itemSolidExperience id="morechickens:solidxp"/>
+	<item treeOrder="40">
+		<potion treeOrder="260">
+			<itemSolidExperience id="morechickens:solidxp" treeOrder="120"/>
 		</potion>
 	</item>
 </stuff>

@@ -26,47 +26,49 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<chisel>
-				<itemChisel id="tcomplement:chisel"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<chisel treeOrder="180">
+				<itemChisel id="tcomplement:chisel" treeOrder="100"/>
 			</chisel>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemKnightslimeHelmet id="tcomplement:knightslime_helmet"/>
-					<itemManyullynHelmet id="tcomplement:manyullyn_helmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemKnightslimeHelmet id="tcomplement:knightslime_helmet" treeOrder="280"/>
+					<itemManyullynHelmet id="tcomplement:manyullyn_helmet" treeOrder="310"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemKnightslimeChestplate id="tcomplement:knightslime_chestplate"/>
-						<itemManyullynChestplate id="tcomplement:manyullyn_chestplate"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemKnightslimeChestplate id="tcomplement:knightslime_chestplate" treeOrder="280"/>
+						<itemManyullynChestplate id="tcomplement:manyullyn_chestplate" treeOrder="310"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemKnightslimeLeggings id="tcomplement:knightslime_leggings"/>
-					<itemManyullynLeggings id="tcomplement:manyullyn_leggings"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemKnightslimeLeggings id="tcomplement:knightslime_leggings" treeOrder="280"/>
+					<itemManyullynLeggings id="tcomplement:manyullyn_leggings" treeOrder="310"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemKnightslimeBoots id="tcomplement:knightslime_boots"/>
-					<itemManyullynBoots id="tcomplement:manyullyn_boots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemKnightslimeBoots id="tcomplement:knightslime_boots" treeOrder="310"/>
+					<itemManyullynBoots id="tcomplement:manyullyn_boots" treeOrder="340"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<item>
-		<bucket>
-			<itemStoneBucket id="tcomplement:materials"/>
-		</bucket>
-		<casts>
-			<itemBucketCast id="tcomplement:cast"/>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemStoneBucket id="tcomplement:materials" treeOrder="510"/>
+			</bucket>
+		</fluidPortableStorage>
+		<casts treeOrder="100">
+			<itemBucketCast id="tcomplement:cast" treeOrder="30"/>
 		</casts>
 	</item>
 </stuff>

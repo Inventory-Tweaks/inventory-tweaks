@@ -26,55 +26,57 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<farmingTool>
-				<otherFarmingTools>
-					<itemIronHandRake id="agricraft:handrake" damage="1"/>
-					<itemWoodenHandRake id="agricraft:handrake" damage="0"/>
-					<itemClipper id="agricraft:clipper"/>
-					<itemMagnifyingGlass id="agricraft:magnifyingglass"/>
-					<itemGardeningTrowel id="agricraft:trowel"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<farmingTool treeOrder="50">
+				<otherFarmingTools treeOrder="60">
+					<itemIronHandRake id="agricraft:handrake" damage="1" treeOrder="10"/>
+					<itemWoodenHandRake id="agricraft:handrake" damage="0" treeOrder="20"/>
+					<itemClipper id="agricraft:clipper" treeOrder="30"/>
+					<itemMagnifyingGlass id="agricraft:magnifyingglass" treeOrder="40"/>
+					<itemGardeningTrowel id="agricraft:trowel" treeOrder="50"/>
 				</otherFarmingTools>
 			</farmingTool>
 		</tool>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<fence>
-				<itemagricraftFence id="agricraft:fence"/>
-				<fenceGate>
-					<itemagricraftFenceGate id="agricraft:fencegate"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<fence treeOrder="20">
+				<itemagricraftFence id="agricraft:fence" treeOrder="10"/>
+				<fenceGate treeOrder="250">
+					<itemagricraftFenceGate id="agricraft:fencegate" treeOrder="50"/>
 				</fenceGate>
 			</fence>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<utility>
-			<storage>
-				<drawers>
-					<itemagricraft_seedStorage id="agricraft:seedstorage"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<drawers treeOrder="30">
+					<itemagricraft_seedStorage id="agricraft:seedstorage" treeOrder="110"/>
 				</drawers>
 			</storage>
-			<readableBooks>
-				<itemAgriculturalJournal id="agricraft:journal"/>
+			<readableBooks treeOrder="90">
+				<itemAgriculturalJournal id="agricraft:journal" treeOrder="30"/>
 			</readableBooks>
 		</utility>
-		<fluidStorage>
-			<itemWoodenWaterTank id="agricraft:watertank" damage="0"/>
+		<fluidStorage treeOrder="50">
+			<fluidMultiBlockTanks treeOrder="50">
+				<itemWoodenWaterTank id="agricraft:watertank" damage="0" treeOrder="80"/>
+			</fluidMultiBlockTanks>
 		</fluidStorage>
-		<plant>
-			<crops>
-				<itemCropSticks id="agricraft:cropsitem"/>
-				<itemSeedAnalyzer id="agricraft:seedanalyzer"/>
-				<itemComputerControlledSeedAnalyzer id="agricraft:peripheral"/>
+		<plant treeOrder="160">
+			<crops treeOrder="100">
+				<itemCropSticks id="agricraft:cropsitem" treeOrder="10"/>
+				<itemSeedAnalyzer id="agricraft:seedanalyzer" treeOrder="20"/>
+				<itemComputerControlledSeedAnalyzer id="agricraft:peripheral" treeOrder="30"/>
 			</crops>
-			<irrigation>
-				<itemSprinkler id="agricraft:sprinkler"/>
-				<itemWoodenGrate id="agricraft:grate"/>
-				<itemWoodenChannelValve id="agricraft:channelvalve"/>
-				<itemWoodenIrrigationChannel id="agricraft:waterchannel"/>
-				<itemWoodenIrrigationChannel id="agricraft:waterchannelfull"/>
+			<irrigation treeOrder="110">
+				<itemSprinkler id="agricraft:sprinkler" treeOrder="10"/>
+				<itemWoodenGrate id="agricraft:grate" treeOrder="30"/>
+				<itemWoodenChannelValve id="agricraft:channelvalve" treeOrder="40"/>
+				<itemWoodenIrrigationChannel id="agricraft:waterchannel" treeOrder="50"/>
+				<itemWoodenIrrigationChannel id="agricraft:waterchannelfull" treeOrder="60"/>
 			</irrigation>
 		</plant>
 	</item>

@@ -26,36 +26,36 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnKobold id="plainsmobs:plainsegg" damage="0"/>
-				<itemSpawnMaka id="plainsmobs:plainsegg" damage="2"/>
-				<itemSpawnMakaAlpha id="plainsmobs:plainsegg" damage="3"/>
-				<itemSpawnRoc id="plainsmobs:plainsegg" damage="5"/>
-				<itemSpawnVentoraptor id="plainsmobs:plainsegg" damage="1"/>
-				<itemSpawnZoataur id="plainsmobs:plainsegg" damage="4"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnKobold id="plainsmobs:plainsegg" damage="0" treeOrder="580"/>
+				<itemSpawnMaka id="plainsmobs:plainsegg" damage="2" treeOrder="590"/>
+				<itemSpawnMakaAlpha id="plainsmobs:plainsegg" damage="3" treeOrder="600"/>
+				<itemSpawnRoc id="plainsmobs:plainsegg" damage="5" treeOrder="610"/>
+				<itemSpawnVentoraptor id="plainsmobs:plainsegg" damage="1" treeOrder="620"/>
+				<itemSpawnZoataur id="plainsmobs:plainsegg" damage="4" treeOrder="630"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<sandwich>
-						<itemplainsmobs_bulwarkburger_0 id="plainsmobs:bulwarkburger" damage="0"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<sandwich treeOrder="190">
+						<itemplainsmobs_bulwarkburger_0 id="plainsmobs:bulwarkburger" damage="0" treeOrder="110"/>
 					</sandwich>
 				</preparedFood>
-				<cookedFood>
-					<itemplainsmobs_makameatcooked id="plainsmobs:makameatcooked"/>
+				<cookedFood treeOrder="50">
+					<itemplainsmobs_makameatcooked id="plainsmobs:makameatcooked" treeOrder="260"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemplainsmobs_makameatraw id="plainsmobs:makameatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemplainsmobs_makameatraw id="plainsmobs:makameatraw" treeOrder="210"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemVentoraptorTreat id="plainsmobs:ventoraptortreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemVentoraptorTreat id="plainsmobs:ventoraptortreat" treeOrder="140"/>
 				</taming>
 			</hunting>
 		</food>

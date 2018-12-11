@@ -26,22 +26,22 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<resourceTransfer>
-				<groundItemCollector>
-					<itemAbsorptionHopper id="mob_grinding_utils:absorption_hopper"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<resourceTransfer treeOrder="300">
+				<groundItemCollector treeOrder="10">
+					<itemAbsorptionHopper id="mob_grinding_utils:absorption_hopper" treeOrder="160"/>
 				</groundItemCollector>
 			</resourceTransfer>
-			<machines>
-				<mobKillers>
-					<itemIronSpikes id="mob_grinding_utils:spikes"/>
-					<itemMobMasher id="mob_grinding_utils:saw"/>
+			<machines treeOrder="380">
+				<mobKillers treeOrder="80">
+					<itemIronSpikes id="mob_grinding_utils:spikes" treeOrder="50"/>
+					<itemMobMasher id="mob_grinding_utils:saw" treeOrder="130"/>
 				</mobKillers>
 			</machines>
 		</mechanism>
 	</block>
-	<nonItems>
-		<itemImaginaryNotHereSword id="mob_grinding_utils:null_sword"/>
+	<nonItems treeOrder="50">
+		<itemImaginaryNotHereSword id="mob_grinding_utils:null_sword" treeOrder="150"/>
 	</nonItems>
 </stuff>

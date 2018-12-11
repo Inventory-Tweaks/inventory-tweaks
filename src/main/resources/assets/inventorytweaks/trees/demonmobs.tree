@@ -26,52 +26,52 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<thrownMunitions>
-					<itemDemonicLightningCharge id="demonmobs:demoniclightningcharge"/>
-					<itemDevilstarCharge id="demonmobs:devilstarcharge"/>
-					<itemDoomfireCharge id="demonmobs:doomfirecharge"/>
-					<itemHellfireCharge id="demonmobs:hellfirecharge"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemDemonicLightningCharge id="demonmobs:demoniclightningcharge" treeOrder="80"/>
+					<itemDevilstarCharge id="demonmobs:devilstarcharge" treeOrder="90"/>
+					<itemDoomfireCharge id="demonmobs:doomfirecharge" treeOrder="100"/>
+					<itemHellfireCharge id="demonmobs:hellfirecharge" treeOrder="110"/>
 				</thrownMunitions>
-				<scepters>
-					<itemDemonicLightningScepter id="demonmobs:demoniclightningscepter"/>
-					<itemDevilstarScepter id="demonmobs:devilstarscepter"/>
-					<itemDoomfireScepter id="demonmobs:doomfirescepter"/>
-					<itemHellfireScepter id="demonmobs:hellfirescepter"/>
+				<scepters treeOrder="120">
+					<itemDemonicLightningScepter id="demonmobs:demoniclightningscepter" treeOrder="60"/>
+					<itemDevilstarScepter id="demonmobs:devilstarscepter" treeOrder="70"/>
+					<itemDoomfireScepter id="demonmobs:doomfirescepter" treeOrder="80"/>
+					<itemHellfireScepter id="demonmobs:hellfirescepter" treeOrder="90"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnAstaroth id="demonmobs:demonegg" damage="4"/>
-				<itemSpawnBehemoth id="demonmobs:demonegg" damage="1"/>
-				<itemSpawnBelph id="demonmobs:demonegg" damage="0"/>
-				<itemSpawnCacodemon id="demonmobs:demonegg" damage="6"/>
-				<itemSpawnNetherSoul id="demonmobs:demonegg" damage="5"/>
-				<itemSpawnPinky id="demonmobs:demonegg" damage="2"/>
-				<itemSpawnRahovart id="demonmobs:demonegg" damage="7"/>
-				<itemSpawnTrite id="demonmobs:demonegg" damage="3"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnAstaroth id="demonmobs:demonegg" damage="4" treeOrder="90"/>
+				<itemSpawnBehemoth id="demonmobs:demonegg" damage="1" treeOrder="100"/>
+				<itemSpawnBelph id="demonmobs:demonegg" damage="0" treeOrder="110"/>
+				<itemSpawnCacodemon id="demonmobs:demonegg" damage="6" treeOrder="120"/>
+				<itemSpawnNetherSoul id="demonmobs:demonegg" damage="5" treeOrder="130"/>
+				<itemSpawnPinky id="demonmobs:demonegg" damage="2" treeOrder="140"/>
+				<itemSpawnRahovart id="demonmobs:demonegg" damage="7" treeOrder="150"/>
+				<itemSpawnTrite id="demonmobs:demonegg" damage="3" treeOrder="160"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemdemonmobs_pinkymeatcooked id="demonmobs:pinkymeatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemdemonmobs_pinkymeatcooked id="demonmobs:pinkymeatcooked" treeOrder="270"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemdemonmobs_pinkymeatraw id="demonmobs:pinkymeatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemdemonmobs_pinkymeatraw id="demonmobs:pinkymeatraw" treeOrder="220"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemCacodemonTreat id="demonmobs:cacodemontreat"/>
-					<itemPinkyTreat id="demonmobs:pinkytreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemCacodemonTreat id="demonmobs:cacodemontreat" treeOrder="30"/>
+					<itemPinkyTreat id="demonmobs:pinkytreat" treeOrder="40"/>
 				</taming>
 			</hunting>
 		</food>

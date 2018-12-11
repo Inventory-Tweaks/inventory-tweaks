@@ -177,24 +177,28 @@ public class InvTweaksConfigManager {
             InvTweaks.logInGameStatic(InvTweaksConst.CONFIG_TREE_FILE + " " +
                     I18n.format("invtweaks.loadconfig.filemissing"));
         }
-        
+        File baseTreeFile = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, "minecraft.tree");
+        //Extract all of the files if the folder is there but the main tree file is missing.
+        //This is so if the user deletes any of the others, they aren't forced to have it.
         if (InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists()) {
-            try {
-                //mc.getResourceManager().getAllResources(location)
-                List<ResourceLocation> treeFiles = getResourceNames("trees");
-                for(ResourceLocation srcTreeFile: treeFiles) {
-                    //log.info(srcTreeFile.getResourcePath());
-                    String fileName = srcTreeFile.getResourcePath().substring(6);
-                    File realTreeFile = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, fileName);
-                    //log.info(realTreeFile.getAbsolutePath());
-                    if (!realTreeFile.exists()) {
-                        extractFile(srcTreeFile, realTreeFile);
+            if (!baseTreeFile.exists()) {
+                try {
+                    //mc.getResourceManager().getAllResources(location)
+                    List<ResourceLocation> treeFiles = getResourceNames("trees");
+                    for(ResourceLocation srcTreeFile: treeFiles) {
+                        //log.info(srcTreeFile.getResourcePath());
+                        String fileName = srcTreeFile.getResourcePath().substring(6);
+                        File realTreeFile = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, fileName);
+                        //log.info(realTreeFile.getAbsolutePath());
+                        if (!realTreeFile.exists()) {
+                            extractFile(srcTreeFile, realTreeFile);
+                        }
                     }
+                } catch (Exception e) {
+                    log.error("Error extracting merge tree files: " + e);
                 }
-            } catch (Exception e) {
-                log.error("Error extracting merge tree files: " + e);
             }
-
+            
             InvTweaksItemTreeBuilder.buildNewTree();
         }
 

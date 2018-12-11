@@ -26,12 +26,12 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<farmingTool>
-				<otherFarmingTools>
-					<crook class="Item" data="{ToolClass : &quot;crook&quot;}" mergeChildren="true">
-						<itemStoneCrook id="stoneblockutilities:crook_stone"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<farmingTool treeOrder="50">
+				<otherFarmingTools treeOrder="60">
+					<crook class="Item" data="{ToolClass : &quot;crook&quot;}" mergeChildren="true" treeOrder="120">
+						<itemStoneCrook id="stoneblockutilities:crook_stone" treeOrder="10"/>
 					</crook>
 				</otherFarmingTools>
 			</farmingTool>

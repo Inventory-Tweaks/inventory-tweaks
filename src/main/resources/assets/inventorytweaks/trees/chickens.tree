@@ -26,18 +26,43 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSmartChicken id="chickens:spawn_egg"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<instrument treeOrder="310">
+				<Analyzers treeOrder="30">
+					<itemChickenAnalyzer id="chickens:analyzer" treeOrder="20"/>
+				</Analyzers>
+			</instrument>
+		</tool>
+	</equipment>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<poweredRanching treeOrder="50">
+					<nesting treeOrder="100">
+						<itemAcaciaHenhouse id="chickens:henhouse_acacia" treeOrder="20"/>
+						<itemBirchHenhouse id="chickens:henhouse_birch" treeOrder="30"/>
+						<itemDarkOakHenhouse id="chickens:henhouse_dark_oak" treeOrder="40"/>
+						<itemHenhouse id="chickens:henhouse" treeOrder="50"/>
+						<itemJungleHenhouse id="chickens:henhouse_jungle" treeOrder="60"/>
+						<itemSpruceHenhouse id="chickens:henhouse_spruce" treeOrder="70"/>
+					</nesting>
+				</poweredRanching>
+			</machines>
+		</mechanism>
+	</block>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSmartChicken id="chickens:spawn_egg" treeOrder="850"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<rawFood>
-					<rawEgg mergeChildren="true">
-						<itemBoneWhiteChickenEgg id="chickens:colored_egg"/>
-						<itemSmartChicken id="chickens:spawn_egg"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<rawFood treeOrder="130">
+					<rawEgg mergeChildren="true" treeOrder="10">
+						<itemBoneWhiteChickenEgg id="chickens:colored_egg" treeOrder="20"/>
+						<itemSmartChicken id="chickens:spawn_egg" treeOrder="30"/>
 					</rawEgg>
 				</rawFood>
 			</edibleFood>

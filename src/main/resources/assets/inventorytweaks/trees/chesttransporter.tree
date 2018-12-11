@@ -26,17 +26,17 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<blockMovers>
-				<itemDiamondChestTransporter id="chesttransporter:chesttransporter_diamond"/>
-				<itemObsidianChestTransporter id="chesttransporter:chesttransporter_obsidian"/>
-				<itemGoldenChestTransporter id="chesttransporter:chesttransporter_gold"/>
-				<itemSilverChestTransporter id="chesttransporter:chesttransporter_silver"/>
-				<itemIronChestTransporter id="chesttransporter:chesttransporter_iron"/>
-				<itemCopperChestTransporter id="chesttransporter:chesttransporter_copper"/>
-				<itemTinChestTransporter id="chesttransporter:chesttransporter_tin"/>
-				<itemWoodenChestTransporter id="chesttransporter:chesttransporter"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<blockMovers treeOrder="100">
+				<itemDiamondChestTransporter id="chesttransporter:chesttransporter_diamond" treeOrder="50"/>
+				<itemObsidianChestTransporter id="chesttransporter:chesttransporter_obsidian" treeOrder="60"/>
+				<itemGoldenChestTransporter id="chesttransporter:chesttransporter_gold" treeOrder="70"/>
+				<itemSilverChestTransporter id="chesttransporter:chesttransporter_silver" treeOrder="80"/>
+				<itemIronChestTransporter id="chesttransporter:chesttransporter_iron" treeOrder="90"/>
+				<itemCopperChestTransporter id="chesttransporter:chesttransporter_copper" treeOrder="100"/>
+				<itemTinChestTransporter id="chesttransporter:chesttransporter_tin" treeOrder="110"/>
+				<itemWoodenChestTransporter id="chesttransporter:chesttransporter" treeOrder="120"/>
 			</blockMovers>
 		</tool>
 	</equipment>

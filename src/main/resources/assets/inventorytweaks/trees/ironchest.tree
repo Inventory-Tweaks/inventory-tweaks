@@ -26,57 +26,57 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<ironChests id="ironchest:iron_chest"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<ironChests id="ironchest:iron_chest" treeOrder="210"/>
 				</chests>
-				<storageupgrades>
-					<itemIronChest_woodCopperUpgrade id="ironchest:woodcopperupgrade"/>
-					<itemWoodtoCopperChestUpgrade id="ironchest:wood_copper_chest_upgrade"/>
-					<itemIronChest_woodIronUpgrade id="ironchest:woodironupgrade"/>
-					<itemWoodtoIronChestUpgrade id="ironchest:wood_iron_chest_upgrade"/>
-					<itemIronChest_copperIronUpgrade id="ironchest:copperironupgrade"/>
-					<itemCoppertoIronChestUpgrade id="ironchest:copper_iron_chest_upgrade"/>
-					<itemIronChest_copperSilverUpgrade id="ironchest:coppersilverupgrade"/>
-					<itemCoppertoSilverChestUpgrade id="ironchest:copper_silver_chest_upgrade"/>
-					<itemIronChest_silverGoldUpgrade id="ironchest:silvergoldupgrade"/>
-					<itemSilvertoGoldChestUpgrade id="ironchest:silver_gold_chest_upgrade"/>
-					<itemIronChest_ironGoldUpgrade id="ironchest:irongoldupgrade"/>
-					<itemIrontoGoldChestUpgrade id="ironchest:iron_gold_chest_upgrade"/>
-					<itemIronChest_goldDiamondUpgrade id="ironchest:golddiamondupgrade"/>
-					<itemGoldtoDiamondChestUpgrade id="ironchest:gold_diamond_chest_upgrade"/>
-					<itemIronChest_diamondCrystalUpgrade id="ironchest:diamondcrystalupgrade"/>
-					<itemDiamondtoCrystalChestUpgrade id="ironchest:diamond_crystal_chest_upgrade"/>
-					<itemIronChest_diamondObsidianUpgrade id="ironchest:diamondobsidianupgrade"/>
-					<itemDiamondtoObsidianChestUpgrade id="ironchest:diamond_obsidian_chest_upgrade"/>
-					<IronChestShulkerUpgrades>
-						<itemVanillatoCopperShulkerBoxUpgrade id="ironchest:vanilla_copper_shulker_upgrade"/>
-						<itemVanillatoIronShulkerBoxUpgrade id="ironchest:vanilla_iron_shulker_upgrade"/>
-						<itemCoppertoIronShulkerBoxUpgrade id="ironchest:copper_iron_shulker_upgrade"/>
-						<itemCoppertoSilverShulkerBoxUpgrade id="ironchest:copper_silver_shulker_upgrade"/>
-						<itemSilvertoGoldShulkerBoxUpgrade id="ironchest:silver_gold_shulker_upgrade"/>
-						<itemIrontoGoldShulkerBoxUpgrade id="ironchest:iron_gold_shulker_upgrade"/>
-						<itemGoldtoDiamondShulkerBoxUpgrade id="ironchest:gold_diamond_shulker_upgrade"/>
-						<itemDiamondtoCrystalShulkerBoxUpgrade id="ironchest:diamond_crystal_shulker_upgrade"/>
-						<itemDiamondtoObsidianShulkerBoxUpgrade id="ironchest:diamond_obsidian_shulker_upgrade"/>
-						<itemBlackIronShulkerBox id="ironchest:iron_shulker_box_black"/>
-						<itemBlueIronShulkerBox id="ironchest:iron_shulker_box_blue"/>
-						<itemBrownIronShulkerBox id="ironchest:iron_shulker_box_brown"/>
-						<itemCyanIronShulkerBox id="ironchest:iron_shulker_box_cyan"/>
-						<itemGrayIronShulkerBox id="ironchest:iron_shulker_box_gray"/>
-						<itemGreenIronShulkerBox id="ironchest:iron_shulker_box_green"/>
-						<itemLightBlueIronShulkerBox id="ironchest:iron_shulker_box_light_blue"/>
-						<itemLimeIronShulkerBox id="ironchest:iron_shulker_box_lime"/>
-						<itemMagentaIronShulkerBox id="ironchest:iron_shulker_box_magenta"/>
-						<itemOrangeIronShulkerBox id="ironchest:iron_shulker_box_orange"/>
-						<itemPinkIronShulkerBox id="ironchest:iron_shulker_box_pink"/>
-						<itemPurpleIronShulkerBox id="ironchest:iron_shulker_box_purple"/>
-						<itemRedIronShulkerBox id="ironchest:iron_shulker_box_red"/>
-						<itemWhiteIronShulkerBox id="ironchest:iron_shulker_box_white"/>
-						<itemYellowIronShulkerBox id="ironchest:iron_shulker_box_yellow"/>
-						<itemSilverIronShulkerBox id="ironchest:iron_shulker_box_silver"/>
+				<storageupgrades treeOrder="80">
+					<itemIronChest_woodCopperUpgrade id="ironchest:woodcopperupgrade" treeOrder="10"/>
+					<itemWoodtoCopperChestUpgrade id="ironchest:wood_copper_chest_upgrade" treeOrder="20"/>
+					<itemIronChest_woodIronUpgrade id="ironchest:woodironupgrade" treeOrder="30"/>
+					<itemWoodtoIronChestUpgrade id="ironchest:wood_iron_chest_upgrade" treeOrder="40"/>
+					<itemIronChest_copperIronUpgrade id="ironchest:copperironupgrade" treeOrder="50"/>
+					<itemCoppertoIronChestUpgrade id="ironchest:copper_iron_chest_upgrade" treeOrder="60"/>
+					<itemIronChest_copperSilverUpgrade id="ironchest:coppersilverupgrade" treeOrder="70"/>
+					<itemCoppertoSilverChestUpgrade id="ironchest:copper_silver_chest_upgrade" treeOrder="80"/>
+					<itemIronChest_silverGoldUpgrade id="ironchest:silvergoldupgrade" treeOrder="90"/>
+					<itemSilvertoGoldChestUpgrade id="ironchest:silver_gold_chest_upgrade" treeOrder="100"/>
+					<itemIronChest_ironGoldUpgrade id="ironchest:irongoldupgrade" treeOrder="110"/>
+					<itemIrontoGoldChestUpgrade id="ironchest:iron_gold_chest_upgrade" treeOrder="120"/>
+					<itemIronChest_goldDiamondUpgrade id="ironchest:golddiamondupgrade" treeOrder="130"/>
+					<itemGoldtoDiamondChestUpgrade id="ironchest:gold_diamond_chest_upgrade" treeOrder="140"/>
+					<itemIronChest_diamondCrystalUpgrade id="ironchest:diamondcrystalupgrade" treeOrder="150"/>
+					<itemDiamondtoCrystalChestUpgrade id="ironchest:diamond_crystal_chest_upgrade" treeOrder="160"/>
+					<itemIronChest_diamondObsidianUpgrade id="ironchest:diamondobsidianupgrade" treeOrder="170"/>
+					<itemDiamondtoObsidianChestUpgrade id="ironchest:diamond_obsidian_chest_upgrade" treeOrder="180"/>
+					<IronChestShulkerUpgrades treeOrder="190">
+						<itemVanillatoCopperShulkerBoxUpgrade id="ironchest:vanilla_copper_shulker_upgrade" treeOrder="10"/>
+						<itemVanillatoIronShulkerBoxUpgrade id="ironchest:vanilla_iron_shulker_upgrade" treeOrder="20"/>
+						<itemCoppertoIronShulkerBoxUpgrade id="ironchest:copper_iron_shulker_upgrade" treeOrder="30"/>
+						<itemCoppertoSilverShulkerBoxUpgrade id="ironchest:copper_silver_shulker_upgrade" treeOrder="40"/>
+						<itemSilvertoGoldShulkerBoxUpgrade id="ironchest:silver_gold_shulker_upgrade" treeOrder="50"/>
+						<itemIrontoGoldShulkerBoxUpgrade id="ironchest:iron_gold_shulker_upgrade" treeOrder="60"/>
+						<itemGoldtoDiamondShulkerBoxUpgrade id="ironchest:gold_diamond_shulker_upgrade" treeOrder="70"/>
+						<itemDiamondtoCrystalShulkerBoxUpgrade id="ironchest:diamond_crystal_shulker_upgrade" treeOrder="80"/>
+						<itemDiamondtoObsidianShulkerBoxUpgrade id="ironchest:diamond_obsidian_shulker_upgrade" treeOrder="90"/>
+						<itemBlackIronShulkerBox id="ironchest:iron_shulker_box_black" treeOrder="100"/>
+						<itemBlueIronShulkerBox id="ironchest:iron_shulker_box_blue" treeOrder="110"/>
+						<itemBrownIronShulkerBox id="ironchest:iron_shulker_box_brown" treeOrder="120"/>
+						<itemCyanIronShulkerBox id="ironchest:iron_shulker_box_cyan" treeOrder="130"/>
+						<itemGrayIronShulkerBox id="ironchest:iron_shulker_box_gray" treeOrder="140"/>
+						<itemGreenIronShulkerBox id="ironchest:iron_shulker_box_green" treeOrder="150"/>
+						<itemLightBlueIronShulkerBox id="ironchest:iron_shulker_box_light_blue" treeOrder="160"/>
+						<itemLimeIronShulkerBox id="ironchest:iron_shulker_box_lime" treeOrder="170"/>
+						<itemMagentaIronShulkerBox id="ironchest:iron_shulker_box_magenta" treeOrder="180"/>
+						<itemOrangeIronShulkerBox id="ironchest:iron_shulker_box_orange" treeOrder="190"/>
+						<itemPinkIronShulkerBox id="ironchest:iron_shulker_box_pink" treeOrder="200"/>
+						<itemPurpleIronShulkerBox id="ironchest:iron_shulker_box_purple" treeOrder="210"/>
+						<itemRedIronShulkerBox id="ironchest:iron_shulker_box_red" treeOrder="220"/>
+						<itemWhiteIronShulkerBox id="ironchest:iron_shulker_box_white" treeOrder="230"/>
+						<itemYellowIronShulkerBox id="ironchest:iron_shulker_box_yellow" treeOrder="240"/>
+						<itemSilverIronShulkerBox id="ironchest:iron_shulker_box_silver" treeOrder="250"/>
 					</IronChestShulkerUpgrades>
 				</storageupgrades>
 			</storage>

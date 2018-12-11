@@ -26,27 +26,29 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<ObsidianLevel>
-						<itemEnderPickaxe id="enderutilities:endertool"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<ObsidianLevel treeOrder="90">
+						<itemEnderPickaxe id="enderutilities:endertool" treeOrder="90"/>
 					</ObsidianLevel>
-					<itemVoidPickaxe id="enderutilities:void_pickaxe"/>
+					<itemVoidPickaxe id="enderutilities:void_pickaxe" treeOrder="140"/>
 				</pickaxe>
 			</miningTool>
-			<wands>
-				<itemWandoftheLazyBuilder id="enderutilities:builderswand"/>
-				<itemChairWand id="enderutilities:chairwand"/>
-				<itemCheatyWaterWand id="enderutilities:icemelter"/>
-				<itemSuperCheatyWaterWand id="enderutilities:icemelter"/>
+			<wands treeOrder="160">
+				<itemWandoftheLazyBuilder id="enderutilities:builderswand" treeOrder="240"/>
+				<itemChairWand id="enderutilities:chairwand" treeOrder="250"/>
+				<itemCheatyWaterWand id="enderutilities:icemelter" treeOrder="260"/>
+				<itemSuperCheatyWaterWand id="enderutilities:icemelter" treeOrder="270"/>
 			</wands>
 		</tool>
 	</equipment>
-	<item>
-		<bucket>
-			<itemEnderBucket id="enderutilities:enderbucket"/>
-		</bucket>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemEnderBucket id="enderutilities:enderbucket" treeOrder="650"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

@@ -26,110 +26,116 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemBigMetalBar id="openblocks:wrench"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemBigMetalBar id="openblocks:wrench" treeOrder="140"/>
 			</wrench>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<eyeGlasses>
-					<itemSonicGlasses id="openblocks:sonicglasses"/>
-					<itemAmazingTechnicolorGlasses id="openblocks:technicolorglasses"/>
-					<itemBadassGlasses id="openblocks:seriousglasses"/>
-					<itemPencilGlasses id="openblocks:pencilglasses"/>
-					<itemBadassGlasses id="openblocks:seriousglasses"/>
-					<itemCrayonGlasses id="openblocks:crayonglasses"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<eyeGlasses treeOrder="90">
+					<itemSonicGlasses id="openblocks:sonicglasses" treeOrder="10"/>
+					<itemAmazingTechnicolorGlasses id="openblocks:technicolorglasses" treeOrder="20"/>
+					<itemBadassGlasses id="openblocks:seriousglasses" treeOrder="30"/>
+					<itemPencilGlasses id="openblocks:pencilglasses" treeOrder="40"/>
+					<itemBadassGlasses id="openblocks:seriousglasses" treeOrder="110"/>
+					<itemCrayonGlasses id="openblocks:crayonglasses" treeOrder="120"/>
 				</eyeGlasses>
 			</helmet>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<ladder>
-				<itemJadedLadder id="openblocks:ladder"/>
-				<itemRopeLadder id="openblocks:ropeladder"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<ladder treeOrder="10">
+				<itemJadedLadder id="openblocks:ladder" treeOrder="40"/>
+				<itemRopeLadder id="openblocks:ropeladder" treeOrder="50"/>
 			</ladder>
-			<constructionBlock>
-				<constructionUtility>
-					<itemScaffolding id="openblocks:scaffolding"/>
+			<constructionBlock treeOrder="70">
+				<constructionUtility treeOrder="90">
+					<itemScaffolding id="openblocks:scaffolding" treeOrder="50"/>
 				</constructionUtility>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<buttons>
-				<itemBigButton id="openblocks:bigbutton" damage="0"/>
+		<mechanism treeOrder="60">
+			<buttons treeOrder="70">
+				<itemBigButton id="openblocks:bigbutton" damage="0" treeOrder="40"/>
 			</buttons>
-			<resourceTransfer>
-				<groundItemCollector>
-					<itemVacuumHopper id="openblocks:vacuumhopper"/>
+			<resourceTransfer treeOrder="300">
+				<groundItemCollector treeOrder="10">
+					<itemVacuumHopper id="openblocks:vacuumhopper" treeOrder="60"/>
 				</groundItemCollector>
 			</resourceTransfer>
-			<basicCrafting>
-				<anvils>
-					<itemAutoAnvil id="openblocks:autoanvil"/>
+			<basicCrafting treeOrder="360">
+				<anvils treeOrder="40">
+					<itemAutoAnvil id="openblocks:autoanvil" treeOrder="50"/>
 				</anvils>
 			</basicCrafting>
-			<machines>
-				<decorationMachines>
-					<itemPaintMixer id="openblocks:paintmixer"/>
+			<machines treeOrder="380">
+				<decorationMachines treeOrder="180">
+					<itemPaintMixer id="openblocks:paintmixer" treeOrder="70"/>
 				</decorationMachines>
-				<remoteAccess>
-					<itemElevator id="openblocks:elevator"/>
-					<itemRotatingElevator id="openblocks:elevator_rotating"/>
+				<remoteAccess treeOrder="220">
+					<itemElevator id="openblocks:elevator" treeOrder="30"/>
+					<itemRotatingElevator id="openblocks:elevator_rotating" treeOrder="40"/>
 				</remoteAccess>
 			</machines>
 		</mechanism>
 	</block>
-	<resources>
-		<paint>
-			<paintbrushes>
-				<itemPaintBrush id="openblocks:paintbrush"/>
+	<resources treeOrder="30">
+		<paint treeOrder="60">
+			<paintbrushes treeOrder="10">
+				<itemPaintBrush id="openblocks:paintbrush" treeOrder="30"/>
 			</paintbrushes>
-			<itemPaintCan id="openblocks:paintcan"/>
+			<itemPaintCan id="openblocks:paintcan" treeOrder="20"/>
 		</paint>
 	</resources>
-	<item>
-		<utility>
-			<storage>
-				<portableStorage>
-					<itemLuggage id="openblocks:luggage"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<portableStorage treeOrder="90">
+					<itemLuggage id="openblocks:luggage" treeOrder="10"/>
 				</portableStorage>
-				<voidStorage>
-					<itemdevnull id="openblocks:devnull"/>
+				<voidStorage treeOrder="110">
+					<voidBags treeOrder="20">
+						<itemdevnull id="openblocks:devnull" treeOrder="10"/>
+					</voidBags>
 				</voidStorage>
 			</storage>
-			<beds>
-				<itemSleepingBag id="openblocks:sleepingbag"/>
+			<beds treeOrder="80">
+				<itemSleepingBag id="openblocks:sleepingbag" treeOrder="40"/>
 			</beds>
-			<readableBooks>
-				<itemWorldDominationwithOpenBlocks id="openblocks:infobook"/>
+			<readableBooks treeOrder="90">
+				<itemWorldDominationwithOpenBlocks id="openblocks:infobook" treeOrder="250"/>
 			</readableBooks>
 		</utility>
-		<bucket>
-			<itemOpenBlocks_filledbucket id="openblocks:filledbucket"/>
-		</bucket>
-		<fluidStorage>
-			<itemOpenTank id="openblocks:tank"/>
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemOpenBlocks_filledbucket id="openblocks:filledbucket" treeOrder="390"/>
+			</bucket>
+		</fluidPortableStorage>
+		<fluidStorage treeOrder="50">
+			<fluidTanks treeOrder="30">
+				<itemOpenTank id="openblocks:tank" treeOrder="10"/>
+			</fluidTanks>
 		</fluidStorage>
-		<food>
-			<edibleFood>
-				<dessert>
-					<chocolate>
-						<itemTastyClay id="openblocks:tastyclay"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<dessert treeOrder="100">
+					<chocolate treeOrder="40">
+						<itemTastyClay id="openblocks:tastyclay" treeOrder="170"/>
 					</chocolate>
 				</dessert>
 			</edibleFood>
-			<hunting>
-				<traps>
-					<itemBearTrap id="openblocks:beartrap"/>
+			<hunting treeOrder="60">
+				<traps treeOrder="10">
+					<itemBearTrap id="openblocks:beartrap" treeOrder="30"/>
 				</traps>
 			</hunting>
 		</food>
-		<plant>
-			<irrigation>
-				<itemSprinkler id="openblocks:sprinkler"/>
+		<plant treeOrder="160">
+			<irrigation treeOrder="110">
+				<itemSprinkler id="openblocks:sprinkler" treeOrder="20"/>
 			</irrigation>
 		</plant>
 	</item>

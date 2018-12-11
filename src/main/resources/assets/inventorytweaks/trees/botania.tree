@@ -26,74 +26,74 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordUnsorted>
-							<itemElementiumSword id="botania:elementiumsword"/>
-							<itemManasteelSword id="botania:manasteelsword"/>
-							<itemStarcaller id="botania:starsword"/>
-							<itemTerraBlade id="botania:terrasword"/>
-							<itemThundercaller id="botania:thundersword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordUnsorted treeOrder="170">
+							<itemElementiumSword id="botania:elementiumsword" treeOrder="120"/>
+							<itemManasteelSword id="botania:manasteelsword" treeOrder="130"/>
+							<itemStarcaller id="botania:starsword" treeOrder="140"/>
+							<itemTerraBlade id="botania:terrasword" treeOrder="150"/>
+							<itemThundercaller id="botania:thundersword" treeOrder="160"/>
 						</swordUnsorted>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
-				<itemElementiumShears id="botania:elementiumshears"/>
-				<itemManasteelShears id="botania:manasteelshears"/>
+		<tool treeOrder="20">
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true" treeOrder="60">
+				<itemElementiumShears id="botania:elementiumshears" treeOrder="150"/>
+				<itemManasteelShears id="botania:manasteelshears" treeOrder="160"/>
 			</shears>
-			<wands>
-				<itemWandoftheForest id="botania:twigwand"/>
+			<wands treeOrder="160">
+				<itemWandoftheForest id="botania:twigwand" treeOrder="430"/>
 			</wands>
-			<magnets>
-				<itemRingofMagnetization id="botania:magnetring"/>
-				<itemGreaterRingofMagnetization id="botania:magnetringgreater"/>
+			<magnets treeOrder="280">
+				<itemRingofMagnetization id="botania:magnetring" treeOrder="40"/>
+				<itemGreaterRingofMagnetization id="botania:magnetringgreater" treeOrder="50"/>
 			</magnets>
 		</tool>
-		<armor>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate6>
-						<itemTerrasteelChestplate id="botania:terrasteelchest"/>
+		<armor treeOrder="30">
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate6 treeOrder="50">
+						<itemTerrasteelChestplate id="botania:terrasteelchest" treeOrder="100"/>
 					</chestplate6>
-					<chestplate5>
-						<itemManasteelChestplate id="botania:manasteelchest"/>
-						<itemElementiumChestplate id="botania:elementiumchest"/>
+					<chestplate5 treeOrder="60">
+						<itemManasteelChestplate id="botania:manasteelchest" treeOrder="50"/>
+						<itemElementiumChestplate id="botania:elementiumchest" treeOrder="60"/>
 					</chestplate5>
-					<chestplate2>
-						<itemManaweaveRobeTop id="botania:manaweavechest"/>
+					<chestplate2 treeOrder="90">
+						<itemManaweaveRobeTop id="botania:manaweavechest" treeOrder="10"/>
 					</chestplate2>
 				</chestplateArmor>
 			</chestplate>
 		</armor>
-		<baubles>
-			<rings>
-				<itemBandofAura id="botania:auraring"/>
-				<itemBandofMana id="botania:manaring"/>
-				<itemGreatFairyRing id="botania:pixiering"/>
-				<itemGreaterBandofAura id="botania:auraringgreater"/>
-				<itemGreaterBandofMana id="botania:manaringgreater"/>
-				<itemRingofChordata id="botania:waterring"/>
-				<itemRingofCorrection id="botania:swapring"/>
-				<itemRingofDexterousMotion id="botania:dodgering"/>
-				<itemRingofFarReach id="botania:reachring"/>
-				<itemRingofLoki id="botania:lokiring"/>
-				<itemRingofOdin id="botania:odinring"/>
-				<itemRingoftheMantle id="botania:miningring"/>
-				<itemRingofThor id="botania:thorring"/>
+		<baubles treeOrder="40">
+			<rings treeOrder="10">
+				<itemBandofAura id="botania:auraring" treeOrder="210"/>
+				<itemBandofMana id="botania:manaring" treeOrder="220"/>
+				<itemGreatFairyRing id="botania:pixiering" treeOrder="230"/>
+				<itemGreaterBandofAura id="botania:auraringgreater" treeOrder="240"/>
+				<itemGreaterBandofMana id="botania:manaringgreater" treeOrder="250"/>
+				<itemRingofChordata id="botania:waterring" treeOrder="260"/>
+				<itemRingofCorrection id="botania:swapring" treeOrder="270"/>
+				<itemRingofDexterousMotion id="botania:dodgering" treeOrder="280"/>
+				<itemRingofFarReach id="botania:reachring" treeOrder="290"/>
+				<itemRingofLoki id="botania:lokiring" treeOrder="300"/>
+				<itemRingofOdin id="botania:odinring" treeOrder="310"/>
+				<itemRingoftheMantle id="botania:miningring" treeOrder="320"/>
+				<itemRingofThor id="botania:thorring" treeOrder="330"/>
 			</rings>
 		</baubles>
 	</equipment>
-	<resources>
-		<huntingResources>
-			<string id="string">
-				<itemRedString id="botania:manaresource" damage="12"/>
-				<itemManaInfusedString id="botania:manaresource" damage="16"/>
+	<resources treeOrder="30">
+		<huntingResources treeOrder="20">
+			<string id="string" treeOrder="90">
+				<itemRedString id="botania:manaresource" damage="12" treeOrder="40"/>
+				<itemManaInfusedString id="botania:manaresource" damage="16" treeOrder="50"/>
 			</string>
 		</huntingResources>
 	</resources>

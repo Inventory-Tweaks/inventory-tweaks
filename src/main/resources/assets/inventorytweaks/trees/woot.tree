@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<resources>
-		<miningResources>
-			<ingot>
-				<ingotStygianIron>
-					<itemStygianIronIngot id="woot:stygianironingot" damage="0"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<ingot treeOrder="120">
+				<ingotStygianIron treeOrder="2030">
+					<itemStygianIronIngot id="woot:stygianironingot" damage="0" treeOrder="10"/>
 				</ingotStygianIron>
 			</ingot>
 		</miningResources>

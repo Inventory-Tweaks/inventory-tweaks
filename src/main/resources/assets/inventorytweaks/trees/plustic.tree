@@ -26,46 +26,46 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<katana>
-						<itemKatana id="plustic:katana"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<katana treeOrder="100">
+						<itemKatana id="plustic:katana" treeOrder="10"/>
 					</katana>
 				</sword>
 			</meleeWeapon>
-			<munition>
-				<gun>
-					<itemLaserGun id="plustic:laser_gun"/>
+			<munition treeOrder="20">
+				<gun treeOrder="20">
+					<itemLaserGun id="plustic:laser_gun" treeOrder="30"/>
 				</gun>
 			</munition>
 		</weapon>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<liquid>
-				<itemMoltenAlumite id="plustic:plustic.molten_alumite"/>
-				<itemMoltenElementium id="plustic:plustic.molten_elementium"/>
-				<itemMoltenInfinity id="plustic:plustic.molten_infinity"/>
-				<itemMoltenManasteel id="plustic:plustic.molten_manasteel"/>
-				<itemMoltenMirion id="plustic:plustic.molten_mirion"/>
-				<itemMoltenOsgloglas id="plustic:plustic.molten_osgloglas"/>
-				<itemMoltenOsmiridium id="plustic:plustic.molten_osmiridium"/>
-				<itemMoltenOsmium id="plustic:plustic.molten_osmium"/>
-				<itemMoltenPsimetal id="plustic:plustic.molten_psimetal"/>
-				<itemMoltenRefinedObsidian id="plustic:plustic.molten_refinedobsidian"/>
-				<itemMoltenTerrasteel id="plustic:plustic.molten_terrasteel"/>
-				<itemRefinedGlowstone id="plustic:plustic.molten_refinedglowstone"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<liquid treeOrder="200">
+				<itemMoltenAlumite id="plustic:plustic.molten_alumite" treeOrder="430"/>
+				<itemMoltenElementium id="plustic:plustic.molten_elementium" treeOrder="440"/>
+				<itemMoltenInfinity id="plustic:plustic.molten_infinity" treeOrder="450"/>
+				<itemMoltenManasteel id="plustic:plustic.molten_manasteel" treeOrder="460"/>
+				<itemMoltenMirion id="plustic:plustic.molten_mirion" treeOrder="470"/>
+				<itemMoltenOsgloglas id="plustic:plustic.molten_osgloglas" treeOrder="480"/>
+				<itemMoltenOsmiridium id="plustic:plustic.molten_osmiridium" treeOrder="490"/>
+				<itemMoltenOsmium id="plustic:plustic.molten_osmium" treeOrder="500"/>
+				<itemMoltenPsimetal id="plustic:plustic.molten_psimetal" treeOrder="510"/>
+				<itemMoltenRefinedObsidian id="plustic:plustic.molten_refinedobsidian" treeOrder="520"/>
+				<itemMoltenTerrasteel id="plustic:plustic.molten_terrasteel" treeOrder="530"/>
+				<itemRefinedGlowstone id="plustic:plustic.molten_refinedglowstone" treeOrder="540"/>
 			</liquid>
 		</naturalBlock>
 	</block>
-	<item>
-		<parts>
-			<tinkerParts>
-				<itemPipePiece id="plustic:pipe_piece"/>
-				<itemLaserMedium id="plustic:laser_medium"/>
-				<itemBatteryCell id="plustic:battery_cell"/>
+	<item treeOrder="40">
+		<parts treeOrder="110">
+			<tinkerParts treeOrder="20">
+				<itemPipePiece id="plustic:pipe_piece" treeOrder="790"/>
+				<itemLaserMedium id="plustic:laser_medium" treeOrder="800"/>
+				<itemBatteryCell id="plustic:battery_cell" treeOrder="810"/>
 			</tinkerParts>
 		</parts>
 	</item>

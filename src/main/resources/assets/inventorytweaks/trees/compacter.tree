@@ -26,40 +26,13 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<resourceTransfer>
-				<groundItemCollector>
-					<itemChute id="buildcraft|factory:blockhopper"/>
-				</groundItemCollector>
-			</resourceTransfer>
-			<basicCrafting>
-				<craftingTables>
-					<itemAutoWorkbench id="buildcraft|factory:autoworkbenchblock" damage="0"/>
-				</craftingTables>
-			</basicCrafting>
-			<machines>
-				<poweredMining>
-					<itemMiningWell id="buildcraft|factory:miningwellblock"/>
-				</poweredMining>
-				<poweredFluids>
-					<itemPump id="buildcraft|factory:pumpblock"/>
-					<itemRefinery id="buildcraft|factory:refineryblock"/>
-				</poweredFluids>
-				<poweredDroppers>
-					<itemFloodGate id="buildcraft|factory:floodgateblock"/>
-				</poweredDroppers>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<cobbleCreators treeOrder="120">
+					<itemCreativeCobbleGenerator id="compacter:cobbler" treeOrder="90"/>
+				</cobbleCreators>
 			</machines>
-			<machineupgrades>
-				<quarryUpgrades>
-					<itemMiningPipe id="buildcraft|factory:plainpipeblock"/>
-				</quarryUpgrades>
-			</machineupgrades>
 		</mechanism>
 	</block>
-	<item>
-		<fluidStorage>
-			<itemTank id="buildcraft|factory:tankblock" damage="0"/>
-		</fluidStorage>
-	</item>
 </stuff>

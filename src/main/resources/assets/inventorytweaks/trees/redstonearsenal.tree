@@ -26,79 +26,79 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage9>
-							<itemFlux-InfusedSword id="redstonearsenal:tool.swordflux"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage9 treeOrder="80">
+							<itemFlux-InfusedSword id="redstonearsenal:tool.swordflux" treeOrder="30"/>
 						</swordDamage9>
-						<swordUnsorted>
-							<itemFlux-InfusedSword id="redstonearsenal:tool.sword_flux"/>
+						<swordUnsorted treeOrder="170">
+							<itemFlux-InfusedSword id="redstonearsenal:tool.sword_flux" treeOrder="380"/>
 						</swordUnsorted>
 					</sword>
 				</sword>
 			</meleeWeapon>
-			<munition>
-				<bow mergeChildren="true">
-					<itemFlux-InfusedBow id="redstonearsenal:tool.bowflux"/>
+			<munition treeOrder="20">
+				<bow mergeChildren="true" treeOrder="30">
+					<itemFlux-InfusedBow id="redstonearsenal:tool.bowflux" treeOrder="100"/>
 				</bow>
 			</munition>
 		</weapon>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<CobaltPickLevel>
-						<itemFlux-InfusedPickaxe id="redstonearsenal:tool.pickaxeflux"/>
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<CobaltPickLevel treeOrder="80">
+						<itemFlux-InfusedPickaxe id="redstonearsenal:tool.pickaxeflux" treeOrder="90"/>
 					</CobaltPickLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemFlux-InfusedShovel id="redstonearsenal:tool.shovelflux"/>
-					<itemFlux-InfusedShovel id="redstonearsenal:tool.shovelflux"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemFlux-InfusedShovel id="redstonearsenal:tool.shovelflux" treeOrder="280"/>
+					<itemFlux-InfusedShovel id="redstonearsenal:tool.shovelflux" treeOrder="290"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemFlux-InfusedAxe id="redstonearsenal:tool.axeflux"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemFlux-InfusedAxe id="redstonearsenal:tool.axeflux" treeOrder="340"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true">
-					<itemFlux-InfusedSickle id="redstonearsenal:tool.sickleflux"/>
+			<farmingTool treeOrder="50">
+				<sickle class="Item" data="{ToolClass : &quot;sickle&quot;}" mergeChildren="true" treeOrder="20">
+					<itemFlux-InfusedSickle id="redstonearsenal:tool.sickleflux" treeOrder="10"/>
 				</sickle>
 			</farmingTool>
-			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
-				<itemFlux-InfusedFishingRod id="redstonearsenal:tool.fishingrodflux"/>
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}" treeOrder="70">
+				<itemFlux-InfusedFishingRod id="redstonearsenal:tool.fishingrodflux" treeOrder="70"/>
 			</fishingRod>
-			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}">
-				<itemRedstoneArsenal_tool.battleWrenchFlux id="redstonearsenal:tool.battlewrenchflux"/>
-				<itemRedstoneArsenal_tool.wrenchFlux id="redstonearsenal:tool.wrenchflux"/>
+			<wrench class="Item" data="{ToolClass : &quot;wrench&quot;}" treeOrder="130">
+				<itemRedstoneArsenal_tool.battleWrenchFlux id="redstonearsenal:tool.battlewrenchflux" treeOrder="10"/>
+				<itemRedstoneArsenal_tool.wrenchFlux id="redstonearsenal:tool.wrenchflux" treeOrder="160"/>
 			</wrench>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmet3>
-					<itemFlux-InfusedHelm id="redstonearsenal:armor.helmetflux"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmet3 treeOrder="20">
+					<itemFlux-InfusedHelm id="redstonearsenal:armor.helmetflux" treeOrder="40"/>
 				</helmet3>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate8>
-						<itemFlux-InfusedChestplate id="redstonearsenal:armor.plateflux"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate8 treeOrder="30">
+						<itemFlux-InfusedChestplate id="redstonearsenal:armor.plateflux" treeOrder="20"/>
 					</chestplate8>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings6>
-					<itemFlux-InfusedLeggings id="redstonearsenal:armor.legsflux"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings6 treeOrder="30">
+					<itemFlux-InfusedLeggings id="redstonearsenal:armor.legsflux" treeOrder="20"/>
 				</leggings6>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots3>
-					<itemFlux-InfusedBoots id="redstonearsenal:armor.bootsflux"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots3 treeOrder="30">
+					<itemFlux-InfusedBoots id="redstonearsenal:armor.bootsflux" treeOrder="40"/>
 				</boots3>
 			</boots>
 		</armor>

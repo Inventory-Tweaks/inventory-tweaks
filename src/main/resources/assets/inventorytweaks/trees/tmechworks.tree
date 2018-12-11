@@ -26,14 +26,14 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<machines>
-				<randomMachines>
-					<itemDrawbridge id="tmechworks:redstonemachine" damage="0"/>
-					<itemAdvancedDrawbridge id="tmechworks:redstonemachine" damage="2"/>
-					<itemExtendedDrawbridge id="tmechworks:redstonemachine" damage="3"/>
-					<itemIgniter id="tmechworks:redstonemachine" damage="1"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<randomMachines treeOrder="200">
+					<itemDrawbridge id="tmechworks:redstonemachine" damage="0" treeOrder="160"/>
+					<itemAdvancedDrawbridge id="tmechworks:redstonemachine" damage="2" treeOrder="170"/>
+					<itemExtendedDrawbridge id="tmechworks:redstonemachine" damage="3" treeOrder="180"/>
+					<itemIgniter id="tmechworks:redstonemachine" damage="1" treeOrder="190"/>
 				</randomMachines>
 			</machines>
 		</mechanism>

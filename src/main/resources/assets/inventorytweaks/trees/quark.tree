@@ -26,72 +26,72 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<fence>
-				<fenceGate>
-					<itemNetherBrickFenceGate id="quark:nether_brick_fence_gate"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<fence treeOrder="20">
+				<fenceGate treeOrder="250">
+					<itemNetherBrickFenceGate id="quark:nether_brick_fence_gate" treeOrder="470"/>
 				</fenceGate>
 			</fence>
-			<stoneWall>
-				<itemBiotiteWall id="quark:biotite_wall"/>
-				<itemBrickWall id="quark:brick_wall"/>
-				<itemDuskboundWall id="quark:duskbound_block_wall"/>
-				<itemEndBrickWall id="quark:end_bricks_wall"/>
-				<itemMidoriWall id="quark:midori_block_wall"/>
-				<itemPaperWall id="quark:paper_wall"/>
-				<itemNetherwroughtBrickWall id="quark:polished_netherrack_bricks_wall"/>
-				<itemPrismarineWall id="quark:prismarine_rough_wall"/>
-				<itemPurpurWall id="quark:purpur_block_wall"/>
-				<itemQuartzWall id="quark:quartz_wall"/>
-				<itemRedSandstoneWall id="quark:red_sandstone_wall"/>
-				<itemSandstoneWall id="quark:sandstone_wall"/>
-				<itemAndesiteBrickWall id="quark:stone_andesite_bricks_wall"/>
-				<itemAndesiteWall id="quark:stone_andesite_wall"/>
-				<itemDioriteBrickWall id="quark:stone_diorite_bricks_wall"/>
-				<itemDioriteWall id="quark:stone_diorite_wall"/>
-				<itemGraniteBrickWall id="quark:stone_granite_bricks_wall"/>
-				<itemGraniteWall id="quark:stone_granite_wall"/>
-				<itemStoneWall id="quark:stone_wall"/>
-				<itemStoneBrickWall id="quark:stonebrick_wall"/>
+			<stoneWall treeOrder="40">
+				<itemBiotiteWall id="quark:biotite_wall" treeOrder="250"/>
+				<itemBrickWall id="quark:brick_wall" treeOrder="260"/>
+				<itemDuskboundWall id="quark:duskbound_block_wall" treeOrder="270"/>
+				<itemEndBrickWall id="quark:end_bricks_wall" treeOrder="280"/>
+				<itemMidoriWall id="quark:midori_block_wall" treeOrder="290"/>
+				<itemPaperWall id="quark:paper_wall" treeOrder="300"/>
+				<itemNetherwroughtBrickWall id="quark:polished_netherrack_bricks_wall" treeOrder="310"/>
+				<itemPrismarineWall id="quark:prismarine_rough_wall" treeOrder="320"/>
+				<itemPurpurWall id="quark:purpur_block_wall" treeOrder="330"/>
+				<itemQuartzWall id="quark:quartz_wall" treeOrder="340"/>
+				<itemRedSandstoneWall id="quark:red_sandstone_wall" treeOrder="350"/>
+				<itemSandstoneWall id="quark:sandstone_wall" treeOrder="360"/>
+				<itemAndesiteBrickWall id="quark:stone_andesite_bricks_wall" treeOrder="370"/>
+				<itemAndesiteWall id="quark:stone_andesite_wall" treeOrder="380"/>
+				<itemDioriteBrickWall id="quark:stone_diorite_bricks_wall" treeOrder="390"/>
+				<itemDioriteWall id="quark:stone_diorite_wall" treeOrder="400"/>
+				<itemGraniteBrickWall id="quark:stone_granite_bricks_wall" treeOrder="410"/>
+				<itemGraniteWall id="quark:stone_granite_wall" treeOrder="420"/>
+				<itemStoneWall id="quark:stone_wall" treeOrder="430"/>
+				<itemStoneBrickWall id="quark:stonebrick_wall" treeOrder="440"/>
 			</stoneWall>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemAndesiteBrickStairs id="quark:stone_andesite_bricks_stairs"/>
-						<itemAndesiteStairs id="quark:stone_andesite_stairs"/>
-						<itemBiotiteStairs id="quark:biotite_stairs"/>
-						<itemBlackTerracottaShingleStairs id="quark:stained_clay_tiles_black_stairs"/>
-						<itemBlueTerracottaShingleStairs id="quark:stained_clay_tiles_blue_stairs"/>
-						<itemBrownTerracottaShingleStairs id="quark:stained_clay_tiles_brown_stairs"/>
-						<itemCharredNetherBrickStairs id="quark:charred_nether_brick_stairs"/>
-						<itemCyanTerracottaShingleStairs id="quark:stained_clay_tiles_cyan_stairs"/>
-						<itemDarkPrismarineStairs id="quark:prismarine_dark_stairs"/>
-						<itemDioriteBrickStairs id="quark:stone_diorite_bricks_stairs"/>
-						<itemDioriteStairs id="quark:stone_diorite_stairs"/>
-						<itemDuskboundStairs id="quark:duskbound_block_stairs"/>
-						<itemEndBrickStairs id="quark:end_bricks_stairs"/>
-						<itemGraniteBrickStairs id="quark:stone_granite_bricks_stairs"/>
-						<itemGraniteStairs id="quark:stone_granite_stairs"/>
-						<itemGrayTerracottaShingleStairs id="quark:stained_clay_tiles_gray_stairs"/>
-						<itemGreenTerracottaShingleStairs id="quark:stained_clay_tiles_green_stairs"/>
-						<itemLightBlueTerracottaShingleStairs id="quark:stained_clay_tiles_light_blue_stairs"/>
-						<itemLightGrayTerracottaShingleStairs id="quark:stained_clay_tiles_silver_stairs"/>
-						<itemLimeTerracottaShingleStairs id="quark:stained_clay_tiles_lime_stairs"/>
-						<itemMagentaTerracottaShingleStairs id="quark:stained_clay_tiles_magenta_stairs"/>
-						<itemMagmaBrickStairs id="quark:magma_bricks_stairs"/>
-						<itemMidoriStairs id="quark:midori_block_stairs"/>
-						<itemNetherwroughtBrickStairs id="quark:polished_netherrack_bricks_stairs"/>
-						<itemOrangeTerracottaShingleStairs id="quark:stained_clay_tiles_orange_stairs"/>
-						<itemPinkTerracottaShingleStairs id="quark:stained_clay_tiles_pink_stairs"/>
-						<itemPrismarineBrickStairs id="quark:prismarine_bricks_stairs"/>
-						<itemPurpleTerracottaShingleStairs id="quark:stained_clay_tiles_purple_stairs"/>
-						<itemRedNetherBrickStairs id="quark:red_nether_brick_stairs"/>
-						<itemRedTerracottaShingleStairs id="quark:stained_clay_tiles_red_stairs"/>
-						<itemStoneStairs id="quark:stone_stairs"/>
-						<itemTerracottaShingleStairs id="quark:hardened_clay_tiles_stairs"/>
-						<itemWhiteTerracottaShingleStairs id="quark:stained_clay_tiles_white_stairs"/>
-						<itemYellowTerracottaShingleStairs id="quark:stained_clay_tiles_yellow_stairs"/>
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemAndesiteBrickStairs id="quark:stone_andesite_bricks_stairs" treeOrder="550"/>
+						<itemAndesiteStairs id="quark:stone_andesite_stairs" treeOrder="560"/>
+						<itemBiotiteStairs id="quark:biotite_stairs" treeOrder="570"/>
+						<itemBlackTerracottaShingleStairs id="quark:stained_clay_tiles_black_stairs" treeOrder="580"/>
+						<itemBlueTerracottaShingleStairs id="quark:stained_clay_tiles_blue_stairs" treeOrder="590"/>
+						<itemBrownTerracottaShingleStairs id="quark:stained_clay_tiles_brown_stairs" treeOrder="600"/>
+						<itemCharredNetherBrickStairs id="quark:charred_nether_brick_stairs" treeOrder="610"/>
+						<itemCyanTerracottaShingleStairs id="quark:stained_clay_tiles_cyan_stairs" treeOrder="620"/>
+						<itemDarkPrismarineStairs id="quark:prismarine_dark_stairs" treeOrder="630"/>
+						<itemDioriteBrickStairs id="quark:stone_diorite_bricks_stairs" treeOrder="640"/>
+						<itemDioriteStairs id="quark:stone_diorite_stairs" treeOrder="650"/>
+						<itemDuskboundStairs id="quark:duskbound_block_stairs" treeOrder="660"/>
+						<itemEndBrickStairs id="quark:end_bricks_stairs" treeOrder="670"/>
+						<itemGraniteBrickStairs id="quark:stone_granite_bricks_stairs" treeOrder="680"/>
+						<itemGraniteStairs id="quark:stone_granite_stairs" treeOrder="690"/>
+						<itemGrayTerracottaShingleStairs id="quark:stained_clay_tiles_gray_stairs" treeOrder="700"/>
+						<itemGreenTerracottaShingleStairs id="quark:stained_clay_tiles_green_stairs" treeOrder="710"/>
+						<itemLightBlueTerracottaShingleStairs id="quark:stained_clay_tiles_light_blue_stairs" treeOrder="720"/>
+						<itemLightGrayTerracottaShingleStairs id="quark:stained_clay_tiles_silver_stairs" treeOrder="730"/>
+						<itemLimeTerracottaShingleStairs id="quark:stained_clay_tiles_lime_stairs" treeOrder="740"/>
+						<itemMagentaTerracottaShingleStairs id="quark:stained_clay_tiles_magenta_stairs" treeOrder="750"/>
+						<itemMagmaBrickStairs id="quark:magma_bricks_stairs" treeOrder="760"/>
+						<itemMidoriStairs id="quark:midori_block_stairs" treeOrder="770"/>
+						<itemNetherwroughtBrickStairs id="quark:polished_netherrack_bricks_stairs" treeOrder="780"/>
+						<itemOrangeTerracottaShingleStairs id="quark:stained_clay_tiles_orange_stairs" treeOrder="790"/>
+						<itemPinkTerracottaShingleStairs id="quark:stained_clay_tiles_pink_stairs" treeOrder="800"/>
+						<itemPrismarineBrickStairs id="quark:prismarine_bricks_stairs" treeOrder="810"/>
+						<itemPurpleTerracottaShingleStairs id="quark:stained_clay_tiles_purple_stairs" treeOrder="820"/>
+						<itemRedNetherBrickStairs id="quark:red_nether_brick_stairs" treeOrder="830"/>
+						<itemRedTerracottaShingleStairs id="quark:stained_clay_tiles_red_stairs" treeOrder="840"/>
+						<itemStoneStairs id="quark:stone_stairs" treeOrder="850"/>
+						<itemTerracottaShingleStairs id="quark:hardened_clay_tiles_stairs" treeOrder="860"/>
+						<itemWhiteTerracottaShingleStairs id="quark:stained_clay_tiles_white_stairs" treeOrder="870"/>
+						<itemYellowTerracottaShingleStairs id="quark:stained_clay_tiles_yellow_stairs" treeOrder="880"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>

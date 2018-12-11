@@ -26,18 +26,20 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<resources>
-		<huntingResources>
-			<itemBoundLeather id="backpack:boundleather"/>
-			<itemTannedLeather id="backpack:tannedleather"/>
+	<resources treeOrder="30">
+		<huntingResources treeOrder="20">
+			<leather id="leather" treeOrder="20">
+				<itemBoundLeather id="backpack:boundleather" treeOrder="10"/>
+				<itemTannedLeather id="backpack:tannedleather" treeOrder="20"/>
+			</leather>
 		</huntingResources>
 	</resources>
-	<item>
-		<utility>
-			<storage>
-				<portableStorage>
-					<itemBackpack id="backpack:backpack"/>
-					<itemWorkbenchBackpack id="backpack:workbenchbackpack"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<portableStorage treeOrder="90">
+					<itemBackpack id="backpack:backpack" treeOrder="60"/>
+					<itemWorkbenchBackpack id="backpack:workbenchbackpack" treeOrder="240"/>
 				</portableStorage>
 			</storage>
 		</utility>

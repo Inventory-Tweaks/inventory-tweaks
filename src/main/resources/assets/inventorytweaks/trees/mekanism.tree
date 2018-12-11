@@ -26,32 +26,32 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<bow mergeChildren="true">
-					<itemElectricBow id="mekanism:electricbow"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<bow mergeChildren="true" treeOrder="30">
+					<itemElectricBow id="mekanism:electricbow" treeOrder="60"/>
 				</bow>
 			</munition>
 		</weapon>
-		<armor>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<armoredJetpacks>
-					<itemArmoredJetpack id="mekanism:armoredjetpack"/>
+		<armor treeOrder="30">
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<armoredJetpacks treeOrder="10">
+					<itemArmoredJetpack id="mekanism:armoredjetpack" treeOrder="20"/>
 				</armoredJetpacks>
 			</chestplate>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<fence>
-				<itemBlackPlasticBarrier id="mekanism:plasticfence"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<fence treeOrder="20">
+				<itemBlackPlasticBarrier id="mekanism:plasticfence" treeOrder="170"/>
 			</fence>
 		</manufacturedBlock>
-		<mechanism>
-			<machines>
-				<poweredGrinders>
-					<itemPrecisionSawmill id="mekanism:machineblock2" damage="5"/>
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<poweredGrinders treeOrder="30">
+					<itemPrecisionSawmill id="mekanism:machineblock2" damage="5" treeOrder="80"/>
 				</poweredGrinders>
 			</machines>
 		</mechanism>

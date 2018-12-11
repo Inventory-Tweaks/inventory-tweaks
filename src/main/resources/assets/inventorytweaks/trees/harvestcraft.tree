@@ -26,332 +26,340 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmet2>
-					<itemHardenedLeatherHelm id="harvestcraft:hardenedleatherhelmitem"/>
+	<equipment treeOrder="10">
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmet2 treeOrder="30">
+					<itemHardenedLeatherHelm id="harvestcraft:hardenedleatherhelmitem" treeOrder="120"/>
 				</helmet2>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate6>
-						<itemHardenedLeatherChest id="harvestcraft:hardenedleatherchestitem"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate6 treeOrder="50">
+						<itemHardenedLeatherChest id="harvestcraft:hardenedleatherchestitem" treeOrder="150"/>
 					</chestplate6>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings5>
-					<itemHardenedLeatherLeggings id="harvestcraft:hardenedleatherleggingsitem"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings5 treeOrder="40">
+					<itemHardenedLeatherLeggings id="harvestcraft:hardenedleatherleggingsitem" treeOrder="120"/>
 				</leggings5>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots2>
-					<itemHardenedLeatherBoots id="harvestcraft:hardenedleatherbootsitem"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots2 treeOrder="40">
+					<itemHardenedLeatherBoots id="harvestcraft:hardenedleatherbootsitem" treeOrder="80"/>
 				</boots2>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<oreBlock>
-				<oreSalt>
-					<itemSaltOre id="harvestcraft:salt"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<oreBlock treeOrder="90">
+				<oreSalt treeOrder="1790">
+					<itemSaltOre id="harvestcraft:salt" treeOrder="10"/>
 				</oreSalt>
 			</oreBlock>
 		</naturalBlock>
-		<mechanism>
-			<lighting>
-				<torch>
-					<itemBlackCandle id="harvestcraft:candledeco16"/>
-					<itemBlueCandle id="harvestcraft:candledeco12"/>
-					<itemBrownCandle id="harvestcraft:candledeco13"/>
-					<itemCyanCandle id="harvestcraft:candledeco10"/>
-					<itemDarkGreyCandle id="harvestcraft:candledeco8"/>
-					<itemGreenCandle id="harvestcraft:candledeco14"/>
-					<itemLightBlueCandle id="harvestcraft:candledeco4"/>
-					<itemLightGreyCandle id="harvestcraft:candledeco9"/>
-					<itemLimeCandle id="harvestcraft:candledeco6"/>
-					<itemMagentaCandle id="harvestcraft:candledeco3"/>
-					<itemOrangeCandle id="harvestcraft:candledeco2"/>
-					<itemPinkCandle id="harvestcraft:candledeco7"/>
-					<itemPurpleCandle id="harvestcraft:candledeco11"/>
-					<itemRedCandle id="harvestcraft:candledeco15"/>
-					<itemWhiteCandle id="harvestcraft:candledeco1"/>
-					<itemYellowCandle id="harvestcraft:candledeco5"/>
+		<mechanism treeOrder="60">
+			<lighting treeOrder="30">
+				<torch treeOrder="10">
+					<itemBlackCandle id="harvestcraft:candledeco16" treeOrder="90"/>
+					<itemBlueCandle id="harvestcraft:candledeco12" treeOrder="100"/>
+					<itemBrownCandle id="harvestcraft:candledeco13" treeOrder="110"/>
+					<itemCyanCandle id="harvestcraft:candledeco10" treeOrder="120"/>
+					<itemDarkGreyCandle id="harvestcraft:candledeco8" treeOrder="130"/>
+					<itemGreenCandle id="harvestcraft:candledeco14" treeOrder="140"/>
+					<itemLightBlueCandle id="harvestcraft:candledeco4" treeOrder="150"/>
+					<itemLightGreyCandle id="harvestcraft:candledeco9" treeOrder="160"/>
+					<itemLimeCandle id="harvestcraft:candledeco6" treeOrder="170"/>
+					<itemMagentaCandle id="harvestcraft:candledeco3" treeOrder="180"/>
+					<itemOrangeCandle id="harvestcraft:candledeco2" treeOrder="190"/>
+					<itemPinkCandle id="harvestcraft:candledeco7" treeOrder="200"/>
+					<itemPurpleCandle id="harvestcraft:candledeco11" treeOrder="210"/>
+					<itemRedCandle id="harvestcraft:candledeco15" treeOrder="220"/>
+					<itemWhiteCandle id="harvestcraft:candledeco1" treeOrder="230"/>
+					<itemYellowCandle id="harvestcraft:candledeco5" treeOrder="240"/>
 				</torch>
 			</lighting>
+			<basicCrafting treeOrder="360">
+				<kitchen treeOrder="50">
+					<itemChurn id="harvestcraft:churn" treeOrder="200"/>
+					<itemOven id="harvestcraft:oven" treeOrder="210"/>
+					<itemPresser id="harvestcraft:presser" treeOrder="220"/>
+					<itemQuern id="harvestcraft:quern" treeOrder="230"/>
+					<itemtile.quernon.name id="harvestcraft:quernon" treeOrder="240"/>
+					<itemtile.churnon.name id="harvestcraft:churnon" treeOrder="250"/>
+					<itemtile.ovenon.name id="harvestcraft:ovenon" treeOrder="260"/>
+				</kitchen>
+				<shoppingBlocks treeOrder="60">
+					<itemMarket id="harvestcraft:market" treeOrder="10"/>
+				</shoppingBlocks>
+			</basicCrafting>
 		</mechanism>
 	</block>
-	<resources>
-		<huntingResources>
-			<itemHardenedLeather id="harvestcraft:hardenedleatheritem"/>
+	<resources treeOrder="30">
+		<huntingResources treeOrder="20">
+			<leather id="leather" treeOrder="20">
+				<itemHardenedLeather id="harvestcraft:hardenedleatheritem" treeOrder="30"/>
+			</leather>
 		</huntingResources>
 	</resources>
-	<item>
-		<itemWaterBarrel id="harvestcraft:sink"/>
-		<cookingTool>
-			<itemPot id="harvestcraft:pot"/>
-			<itemCuttingBoard id="harvestcraft:cuttingboard"/>
-			<cookingBlocks>
-				<itemChurn id="harvestcraft:churn"/>
-				<itemMarket id="harvestcraft:market"/>
-				<itemOven id="harvestcraft:oven"/>
-				<itemPresser id="harvestcraft:presser"/>
-				<itemQuern id="harvestcraft:quern"/>
-				<itemtile.quernon.name id="harvestcraft:quernon"/>
-				<itemtile.churnon.name id="harvestcraft:churnon"/>
-				<itemtile.ovenon.name id="harvestcraft:ovenon"/>
-			</cookingBlocks>
+	<item treeOrder="40">
+		<itemWaterBarrel id="harvestcraft:sink" treeOrder="30"/>
+		<cookingTool treeOrder="140">
+			<itemPot id="harvestcraft:pot" treeOrder="40"/>
+			<itemCuttingBoard id="harvestcraft:cuttingboard" treeOrder="100"/>
 		</cookingTool>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<taco>
-						<itemharvestcraft_randomtacoItem id="harvestcraft:randomtacoitem"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<taco treeOrder="210">
+						<itemharvestcraft_randomtacoItem id="harvestcraft:randomtacoitem" treeOrder="20"/>
 					</taco>
 				</preparedFood>
-				<cookedFood>
-					<cookedPotato>
-						<itemharvestcraft_bakedsweetpotatoItem id="harvestcraft:bakedsweetpotatoitem"/>
+				<cookedFood treeOrder="50">
+					<cookedPotato treeOrder="480">
+						<itemharvestcraft_bakedsweetpotatoItem id="harvestcraft:bakedsweetpotatoitem" treeOrder="190"/>
 					</cookedPotato>
 				</cookedFood>
-				<fruit>
-					<apple>
-						<itemApple id="harvestcraft:pamapple"/>
+				<fruit treeOrder="80">
+					<apple treeOrder="30">
+						<cropAppleDict oreDictName="cropApple" treeOrder="10">
+							<itemApple id="harvestcraft:pamapple" treeOrder="20"/>
+						</cropAppleDict>
 					</apple>
-					<Other>
-						<itemAlmond id="harvestcraft:pamalmond"/>
-						<itemApricot id="harvestcraft:pamapricot"/>
-						<itemAvocado id="harvestcraft:pamavocado"/>
-						<itemBanana id="harvestcraft:pambanana"/>
-						<itemBreadfruit id="harvestcraft:pambreadfruit"/>
-						<itemCashew id="harvestcraft:pamcashew"/>
-						<itemCherry id="harvestcraft:pamcherry"/>
-						<itemChestnut id="harvestcraft:pamchestnut"/>
-						<itemCoconut id="harvestcraft:pamcoconut"/>
-						<itemDate id="harvestcraft:pamdate"/>
-						<itemDragonfruit id="harvestcraft:pamdragonfruit"/>
-						<itemDurian id="harvestcraft:pamdurian"/>
-						<itemFig id="harvestcraft:pamfig"/>
-						<itemGoosberry id="harvestcraft:pamgooseberry"/>
-						<itemGrapefruit id="harvestcraft:pamgrapefruit"/>
-						<itemGuava id="harvestcraft:pamguava"/>
-						<itemHazelnut id="harvestcraft:hazelnutitem"/>
-						<itemHazelnut id="harvestcraft:pamhazelnut"/>
-						<itemJackfruit id="harvestcraft:pamjackfruit"/>
-						<itemLemon id="harvestcraft:pamlemon"/>
-						<itemLime id="harvestcraft:pamlime"/>
-						<itemLychee id="harvestcraft:pamlychee"/>
-						<itemMango id="harvestcraft:pammango"/>
-						<itemNutmeg id="harvestcraft:pamnutmeg"/>
-						<itemOlive id="harvestcraft:pamolive"/>
-						<itemOrange id="harvestcraft:pamorange"/>
-						<itemPapaya id="harvestcraft:pampapaya"/>
-						<itemPassionfruit id="harvestcraft:pampassionfruit"/>
-						<itemPawpaw id="harvestcraft:pampawpaw"/>
-						<itemPeach id="harvestcraft:pampeach"/>
-						<itemPear id="harvestcraft:pampear"/>
-						<itemPecan id="harvestcraft:pampecan"/>
-						<itemPeppercorn id="harvestcraft:pampeppercorn"/>
-						<itemPersimmon id="harvestcraft:pampersimmon"/>
-						<itemPistachio id="harvestcraft:pampistachio"/>
-						<itemPlum id="harvestcraft:pamplum"/>
-						<itemPomegranate id="harvestcraft:pampomegranate"/>
-						<itemRambutan id="harvestcraft:pamrambutan"/>
-						<itemSoursop id="harvestcraft:pamsoursop"/>
-						<itemSpiderWeb id="harvestcraft:pamspiderweb"/>
-						<itemStarfruit id="harvestcraft:pamstarfruit"/>
-						<itemTamarind id="harvestcraft:pamtamarind"/>
-						<itemVanillaBean id="harvestcraft:pamvanillabean"/>
-						<itemWalnut id="harvestcraft:pamwalnut"/>
+					<Other treeOrder="40">
+						<itemAlmond id="harvestcraft:pamalmond" treeOrder="20"/>
+						<itemApricot id="harvestcraft:pamapricot" treeOrder="40"/>
+						<itemAvocado id="harvestcraft:pamavocado" treeOrder="60"/>
+						<itemBanana id="harvestcraft:pambanana" treeOrder="80"/>
+						<itemBreadfruit id="harvestcraft:pambreadfruit" treeOrder="90"/>
+						<itemCashew id="harvestcraft:pamcashew" treeOrder="120"/>
+						<itemCherry id="harvestcraft:pamcherry" treeOrder="140"/>
+						<itemChestnut id="harvestcraft:pamchestnut" treeOrder="150"/>
+						<itemCoconut id="harvestcraft:pamcoconut" treeOrder="170"/>
+						<itemDate id="harvestcraft:pamdate" treeOrder="200"/>
+						<itemDragonfruit id="harvestcraft:pamdragonfruit" treeOrder="220"/>
+						<itemDurian id="harvestcraft:pamdurian" treeOrder="230"/>
+						<itemFig id="harvestcraft:pamfig" treeOrder="270"/>
+						<itemGoosberry id="harvestcraft:pamgooseberry" treeOrder="280"/>
+						<itemGrapefruit id="harvestcraft:pamgrapefruit" treeOrder="300"/>
+						<itemGuava id="harvestcraft:pamguava" treeOrder="310"/>
+						<itemHazelnut id="harvestcraft:hazelnutitem" treeOrder="320"/>
+						<itemHazelnut id="harvestcraft:pamhazelnut" treeOrder="330"/>
+						<itemJackfruit id="harvestcraft:pamjackfruit" treeOrder="340"/>
+						<itemLemon id="harvestcraft:pamlemon" treeOrder="360"/>
+						<itemLime id="harvestcraft:pamlime" treeOrder="370"/>
+						<itemLychee id="harvestcraft:pamlychee" treeOrder="380"/>
+						<itemMango id="harvestcraft:pammango" treeOrder="400"/>
+						<itemNutmeg id="harvestcraft:pamnutmeg" treeOrder="420"/>
+						<itemOlive id="harvestcraft:pamolive" treeOrder="440"/>
+						<itemOrange id="harvestcraft:pamorange" treeOrder="460"/>
+						<itemPapaya id="harvestcraft:pampapaya" treeOrder="480"/>
+						<itemPassionfruit id="harvestcraft:pampassionfruit" treeOrder="490"/>
+						<itemPawpaw id="harvestcraft:pampawpaw" treeOrder="500"/>
+						<itemPeach id="harvestcraft:pampeach" treeOrder="520"/>
+						<itemPear id="harvestcraft:pampear" treeOrder="540"/>
+						<itemPecan id="harvestcraft:pampecan" treeOrder="550"/>
+						<itemPeppercorn id="harvestcraft:pampeppercorn" treeOrder="560"/>
+						<itemPersimmon id="harvestcraft:pampersimmon" treeOrder="590"/>
+						<itemPistachio id="harvestcraft:pampistachio" treeOrder="610"/>
+						<itemPlum id="harvestcraft:pamplum" treeOrder="630"/>
+						<itemPomegranate id="harvestcraft:pampomegranate" treeOrder="650"/>
+						<itemRambutan id="harvestcraft:pamrambutan" treeOrder="660"/>
+						<itemSoursop id="harvestcraft:pamsoursop" treeOrder="690"/>
+						<itemSpiderWeb id="harvestcraft:pamspiderweb" treeOrder="700"/>
+						<itemStarfruit id="harvestcraft:pamstarfruit" treeOrder="720"/>
+						<itemTamarind id="harvestcraft:pamtamarind" treeOrder="740"/>
+						<itemVanillaBean id="harvestcraft:pamvanillabean" treeOrder="760"/>
+						<itemWalnut id="harvestcraft:pamwalnut" treeOrder="780"/>
 					</Other>
 				</fruit>
 			</edibleFood>
-			<unedibleFood>
-				<cakes>
-					<itemharvestcraft_carrotcakeItem id="harvestcraft:carrotcakeitem"/>
-					<itemharvestcraft_pamcarrotCake id="harvestcraft:pamcarrotcake"/>
-					<itemharvestcraft_pamcheeseCake id="harvestcraft:pamcheesecake"/>
-					<itemharvestcraft_cheesecakeItem id="harvestcraft:cheesecakeitem"/>
-					<itemharvestcraft_pamcherrycheeseCake id="harvestcraft:pamcherrycheesecake"/>
-					<itemharvestcraft_cherrycheesecakeItem id="harvestcraft:cherrycheesecakeitem"/>
-					<itemharvestcraft_chocolatesprinklecakeItem id="harvestcraft:chocolatesprinklecakeitem"/>
-					<itemharvestcraft_pamchocolatesprinkleCake id="harvestcraft:pamchocolatesprinklecake"/>
-					<itemharvestcraft_holidaycakeItem id="harvestcraft:holidaycakeitem"/>
-					<itemharvestcraft_pamholidayCake id="harvestcraft:pamholidaycake"/>
-					<itemharvestcraft_lamingtonItem id="harvestcraft:lamingtonitem"/>
-					<itemharvestcraft_pamlamingtonCake id="harvestcraft:pamlamingtoncake"/>
-					<itemharvestcraft_pampineappleupsidedownCake id="harvestcraft:pampineappleupsidedowncake"/>
-					<itemharvestcraft_pineappleupsidedowncakeItem id="harvestcraft:pineappleupsidedowncakeitem"/>
-					<itemharvestcraft_pampavlovaCake id="harvestcraft:pampavlovacake"/>
-					<itemharvestcraft_pavlovaItem id="harvestcraft:pavlovaitem"/>
-					<itemharvestcraft_pampumpkincheeseCake id="harvestcraft:pampumpkincheesecake"/>
-					<itemharvestcraft_pumpkincheesecakeItem id="harvestcraft:pumpkincheesecakeitem"/>
-					<itemharvestcraft_pamredvelvetCake id="harvestcraft:pamredvelvetcake"/>
-					<itemharvestcraft_redvelvetcakeItem id="harvestcraft:redvelvetcakeitem"/>
+			<unedibleFood treeOrder="50">
+				<cakes treeOrder="130">
+					<itemharvestcraft_carrotcakeItem id="harvestcraft:carrotcakeitem" treeOrder="150"/>
+					<itemharvestcraft_pamcarrotCake id="harvestcraft:pamcarrotcake" treeOrder="160"/>
+					<itemharvestcraft_pamcheeseCake id="harvestcraft:pamcheesecake" treeOrder="170"/>
+					<itemharvestcraft_cheesecakeItem id="harvestcraft:cheesecakeitem" treeOrder="180"/>
+					<itemharvestcraft_pamcherrycheeseCake id="harvestcraft:pamcherrycheesecake" treeOrder="190"/>
+					<itemharvestcraft_cherrycheesecakeItem id="harvestcraft:cherrycheesecakeitem" treeOrder="200"/>
+					<itemharvestcraft_chocolatesprinklecakeItem id="harvestcraft:chocolatesprinklecakeitem" treeOrder="210"/>
+					<itemharvestcraft_pamchocolatesprinkleCake id="harvestcraft:pamchocolatesprinklecake" treeOrder="220"/>
+					<itemharvestcraft_holidaycakeItem id="harvestcraft:holidaycakeitem" treeOrder="230"/>
+					<itemharvestcraft_pamholidayCake id="harvestcraft:pamholidaycake" treeOrder="240"/>
+					<itemharvestcraft_lamingtonItem id="harvestcraft:lamingtonitem" treeOrder="250"/>
+					<itemharvestcraft_pamlamingtonCake id="harvestcraft:pamlamingtoncake" treeOrder="260"/>
+					<itemharvestcraft_pampineappleupsidedownCake id="harvestcraft:pampineappleupsidedowncake" treeOrder="270"/>
+					<itemharvestcraft_pineappleupsidedowncakeItem id="harvestcraft:pineappleupsidedowncakeitem" treeOrder="280"/>
+					<itemharvestcraft_pampavlovaCake id="harvestcraft:pampavlovacake" treeOrder="290"/>
+					<itemharvestcraft_pavlovaItem id="harvestcraft:pavlovaitem" treeOrder="300"/>
+					<itemharvestcraft_pampumpkincheeseCake id="harvestcraft:pampumpkincheesecake" treeOrder="310"/>
+					<itemharvestcraft_pumpkincheesecakeItem id="harvestcraft:pumpkincheesecakeitem" treeOrder="320"/>
+					<itemharvestcraft_pamredvelvetCake id="harvestcraft:pamredvelvetcake" treeOrder="330"/>
+					<itemharvestcraft_redvelvetcakeItem id="harvestcraft:redvelvetcakeitem" treeOrder="340"/>
 				</cakes>
 			</unedibleFood>
-			<hunting>
-				<traps>
-					<itemAnimalTrap id="harvestcraft:animaltrap"/>
-					<itemFishTrap id="harvestcraft:fishtrap"/>
+			<hunting treeOrder="60">
+				<traps treeOrder="10">
+					<itemAnimalTrap id="harvestcraft:animaltrap" treeOrder="10"/>
+					<itemFishTrap id="harvestcraft:fishtrap" treeOrder="20"/>
 				</traps>
-				<bait>
-					<itemFishTrapBait id="harvestcraft:fishtrapbaititem"/>
-					<itemFruitBait id="harvestcraft:fruitbaititem"/>
-					<itemGrainBait id="harvestcraft:grainbaititem"/>
-					<itemVeggieBait id="harvestcraft:veggiebaititem"/>
+				<bait treeOrder="20">
+					<itemFishTrapBait id="harvestcraft:fishtrapbaititem" treeOrder="20"/>
+					<itemFruitBait id="harvestcraft:fruitbaititem" treeOrder="40"/>
+					<itemGrainBait id="harvestcraft:grainbaititem" treeOrder="60"/>
+					<itemVeggieBait id="harvestcraft:veggiebaititem" treeOrder="80"/>
 				</bait>
 			</hunting>
 		</food>
-		<plant>
-			<sapling>
-				<itemAlmondSapling id="harvestcraft:pamalmondsapling"/>
-				<itemAppleSapling id="harvestcraft:pamapplesapling"/>
-				<itemApricotSapling id="harvestcraft:pamapricotsapling"/>
-				<itemAvocadoSapling id="harvestcraft:pamavocadosapling"/>
-				<itemBananaSapling id="harvestcraft:pambananasapling"/>
-				<itemCashewSapling id="harvestcraft:pamcashewsapling"/>
-				<itemCherrySapling id="harvestcraft:pamcherrysapling"/>
-				<itemChestnutSapling id="harvestcraft:pamchestnutsapling"/>
-				<itemCinnamonSapling id="harvestcraft:pamcinnamonsapling"/>
-				<itemCoconutSapling id="harvestcraft:pamcoconutsapling"/>
-				<itemDateSapling id="harvestcraft:pamdatesapling"/>
-				<itemDragonfruitSapling id="harvestcraft:pamdragonfruitsapling"/>
-				<itemDurianSapling id="harvestcraft:pamduriansapling"/>
-				<itemFigSapling id="harvestcraft:pamfigsapling"/>
-				<itemGooseberrySapling id="harvestcraft:pamgooseberrysapling"/>
-				<itemGrapefruitSapling id="harvestcraft:pamgrapefruitsapling"/>
-				<itemLemonSapling id="harvestcraft:pamlemonsapling"/>
-				<itemLimeSapling id="harvestcraft:pamlimesapling"/>
-				<itemMangoSapling id="harvestcraft:pammangosapling"/>
-				<itemMapleSapling id="harvestcraft:pammaplesapling"/>
-				<itemNutmegSapling id="harvestcraft:pamnutmegsapling"/>
-				<itemOliveSapling id="harvestcraft:pamolivesapling"/>
-				<itemOrangeSapling id="harvestcraft:pamorangesapling"/>
-				<itemPapayaSapling id="harvestcraft:pampapayasapling"/>
-				<itemPaperbarkSapling id="harvestcraft:pampaperbarksapling"/>
-				<itemPeachSapling id="harvestcraft:pampeachsapling"/>
-				<itemPearSapling id="harvestcraft:pampearsapling"/>
-				<itemPecanSapling id="harvestcraft:pampecansapling"/>
-				<itemPeppercornSapling id="harvestcraft:pampeppercornsapling"/>
-				<itemPersimmonSapling id="harvestcraft:pampersimmonsapling"/>
-				<itemPistachioSapling id="harvestcraft:pampistachiosapling"/>
-				<itemPlumSapling id="harvestcraft:pamplumsapling"/>
-				<itemPomegranateSapling id="harvestcraft:pampomegranatesapling"/>
-				<itemStarfruitSapling id="harvestcraft:pamstarfruitsapling"/>
-				<itemVanillaSapling id="harvestcraft:pamvanillabeansapling"/>
-				<itemWalnutSapling id="harvestcraft:pamwalnutsapling"/>
-				<itemAvocadoSapling id="harvestcraft:avocado_sapling"/>
-				<itemSpiderWebSapling id="harvestcraft:spiderweb_sapling"/>
-				<itemWalnutSapling id="harvestcraft:walnut_sapling"/>
+		<plant treeOrder="160">
+			<sapling treeOrder="20">
+				<itemAlmondSapling id="harvestcraft:pamalmondsapling" treeOrder="80"/>
+				<itemAppleSapling id="harvestcraft:pamapplesapling" treeOrder="90"/>
+				<itemApricotSapling id="harvestcraft:pamapricotsapling" treeOrder="100"/>
+				<itemAvocadoSapling id="harvestcraft:pamavocadosapling" treeOrder="110"/>
+				<itemBananaSapling id="harvestcraft:pambananasapling" treeOrder="120"/>
+				<itemCashewSapling id="harvestcraft:pamcashewsapling" treeOrder="130"/>
+				<itemCherrySapling id="harvestcraft:pamcherrysapling" treeOrder="140"/>
+				<itemChestnutSapling id="harvestcraft:pamchestnutsapling" treeOrder="150"/>
+				<itemCinnamonSapling id="harvestcraft:pamcinnamonsapling" treeOrder="160"/>
+				<itemCoconutSapling id="harvestcraft:pamcoconutsapling" treeOrder="170"/>
+				<itemDateSapling id="harvestcraft:pamdatesapling" treeOrder="180"/>
+				<itemDragonfruitSapling id="harvestcraft:pamdragonfruitsapling" treeOrder="190"/>
+				<itemDurianSapling id="harvestcraft:pamduriansapling" treeOrder="200"/>
+				<itemFigSapling id="harvestcraft:pamfigsapling" treeOrder="210"/>
+				<itemGooseberrySapling id="harvestcraft:pamgooseberrysapling" treeOrder="220"/>
+				<itemGrapefruitSapling id="harvestcraft:pamgrapefruitsapling" treeOrder="230"/>
+				<itemLemonSapling id="harvestcraft:pamlemonsapling" treeOrder="240"/>
+				<itemLimeSapling id="harvestcraft:pamlimesapling" treeOrder="250"/>
+				<itemMangoSapling id="harvestcraft:pammangosapling" treeOrder="260"/>
+				<itemMapleSapling id="harvestcraft:pammaplesapling" treeOrder="270"/>
+				<itemNutmegSapling id="harvestcraft:pamnutmegsapling" treeOrder="280"/>
+				<itemOliveSapling id="harvestcraft:pamolivesapling" treeOrder="290"/>
+				<itemOrangeSapling id="harvestcraft:pamorangesapling" treeOrder="300"/>
+				<itemPapayaSapling id="harvestcraft:pampapayasapling" treeOrder="310"/>
+				<itemPaperbarkSapling id="harvestcraft:pampaperbarksapling" treeOrder="320"/>
+				<itemPeachSapling id="harvestcraft:pampeachsapling" treeOrder="330"/>
+				<itemPearSapling id="harvestcraft:pampearsapling" treeOrder="340"/>
+				<itemPecanSapling id="harvestcraft:pampecansapling" treeOrder="350"/>
+				<itemPeppercornSapling id="harvestcraft:pampeppercornsapling" treeOrder="360"/>
+				<itemPersimmonSapling id="harvestcraft:pampersimmonsapling" treeOrder="370"/>
+				<itemPistachioSapling id="harvestcraft:pampistachiosapling" treeOrder="380"/>
+				<itemPlumSapling id="harvestcraft:pamplumsapling" treeOrder="390"/>
+				<itemPomegranateSapling id="harvestcraft:pampomegranatesapling" treeOrder="400"/>
+				<itemStarfruitSapling id="harvestcraft:pamstarfruitsapling" treeOrder="410"/>
+				<itemVanillaSapling id="harvestcraft:pamvanillabeansapling" treeOrder="420"/>
+				<itemWalnutSapling id="harvestcraft:pamwalnutsapling" treeOrder="430"/>
+				<itemAvocadoSapling id="harvestcraft:avocado_sapling" treeOrder="460"/>
+				<itemSpiderWebSapling id="harvestcraft:spiderweb_sapling" treeOrder="470"/>
+				<itemWalnutSapling id="harvestcraft:walnut_sapling" treeOrder="480"/>
 			</sapling>
-			<seedlings>
-				<itemArtichokeCrop id="harvestcraft:pamartichokecrop"/>
-				<itemAsparagusCrop id="harvestcraft:pamasparaguscrop"/>
-				<itemBambooCrop id="harvestcraft:pambambooshootcrop"/>
-				<itemBarleyCrop id="harvestcraft:pambarleycrop"/>
-				<itemBeanCrop id="harvestcraft:pambeancrop"/>
-				<itemBeetCrop id="harvestcraft:pambeetcrop"/>
-				<itemBellPepperCrop id="harvestcraft:pambellpeppercrop"/>
-				<itemBlackberryCrop id="harvestcraft:pamblackberrycrop"/>
-				<itemBlueberryCrop id="harvestcraft:pamblueberrycrop"/>
-				<itemBroccoliCrop id="harvestcraft:pambroccolicrop"/>
-				<itemBrusselSproutCrop id="harvestcraft:pambrusselsproutcrop"/>
-				<itemCabbageCrop id="harvestcraft:pamcabbagecrop"/>
-				<itemCactusFruitCrop id="harvestcraft:pamcactusfruitcrop"/>
-				<itemCandleberryCrop id="harvestcraft:pamcandleberrycrop"/>
-				<itemCantaloupeCrop id="harvestcraft:pamcantaloupecrop"/>
-				<itemCauliflowerCrop id="harvestcraft:pamcauliflowercrop"/>
-				<itemCeleryCrop id="harvestcraft:pamcelerycrop"/>
-				<itemChiliPepperCrop id="harvestcraft:pamchilipeppercrop"/>
-				<itemCoffeeBeanCrop id="harvestcraft:pamcoffeebeancrop"/>
-				<itemCornCrop id="harvestcraft:pamcorncrop"/>
-				<itemCottonCrop id="harvestcraft:pamcottoncrop"/>
-				<itemCranberryCrop id="harvestcraft:pamcranberrycrop"/>
-				<itemCucumberCrop id="harvestcraft:pamcucumbercrop"/>
-				<itemCurryLeafCrop id="harvestcraft:pamcurryleafcrop"/>
-				<itemEggplantCrop id="harvestcraft:pameggplantcrop"/>
-				<itemGarlicCrop id="harvestcraft:pamgarliccrop"/>
-				<itemGingerCrop id="harvestcraft:pamgingercrop"/>
-				<itemGrapeCrop id="harvestcraft:pamgrapecrop"/>
-				<itemKiwiCrop id="harvestcraft:pamkiwicrop"/>
-				<itemLeekCrop id="harvestcraft:pamleekcrop"/>
-				<itemLettuceCrop id="harvestcraft:pamlettucecrop"/>
-				<itemMustardSeedsCrop id="harvestcraft:pammustardseedscrop"/>
-				<itemOatsCrop id="harvestcraft:pamoatscrop"/>
-				<itemOkraCrop id="harvestcraft:pamokracrop"/>
-				<itemOnionCrop id="harvestcraft:pamonioncrop"/>
-				<itemParsnipCrop id="harvestcraft:pamparsnipcrop"/>
-				<itemPeanutCrop id="harvestcraft:pampeanutcrop"/>
-				<itemPeasCrop id="harvestcraft:pampeascrop"/>
-				<itemPineappleCrop id="harvestcraft:pampineapplecrop"/>
-				<itemRadishCrop id="harvestcraft:pamradishcrop"/>
-				<itemRaspberryCrop id="harvestcraft:pamraspberrycrop"/>
-				<itemRhubarbCrop id="harvestcraft:pamrhubarbcrop"/>
-				<itemRiceCrop id="harvestcraft:pamricecrop"/>
-				<itemRutabagaCrop id="harvestcraft:pamrutabagacrop"/>
-				<itemRyeCrop id="harvestcraft:pamryecrop"/>
-				<itemScallionCrop id="harvestcraft:pamscallioncrop"/>
-				<itemSeaweedCrop id="harvestcraft:pamseaweedcrop"/>
-				<itemSesameSeedsCrop id="harvestcraft:pamsesameseedscrop"/>
-				<itemSoybeanCrop id="harvestcraft:pamsoybeancrop"/>
-				<itemSpiceLeafCrop id="harvestcraft:pamspiceleafcrop"/>
-				<itemSpinachCrop id="harvestcraft:pamspinachcrop"/>
-				<itemStrawberryCrop id="harvestcraft:pamstrawberrycrop"/>
-				<itemSweetPotatoCrop id="harvestcraft:pamsweetpotatocrop"/>
-				<itemTeaLeafCrop id="harvestcraft:pamtealeafcrop"/>
-				<itemTomatoCrop id="harvestcraft:pamtomatocrop"/>
-				<itemTurnipCrop id="harvestcraft:pamturnipcrop"/>
-				<itemWaterChestnutCrop id="harvestcraft:pamwaterchestnutcrop"/>
-				<itemWhiteMushroomCrop id="harvestcraft:pamwhitemushroomcrop"/>
-				<itemWinterSquashCrop id="harvestcraft:pamwintersquashcrop"/>
-				<itemZucchiniCrop id="harvestcraft:pamzucchinicrop"/>
+			<seedlings treeOrder="70">
+				<itemArtichokeCrop id="harvestcraft:pamartichokecrop" treeOrder="10"/>
+				<itemAsparagusCrop id="harvestcraft:pamasparaguscrop" treeOrder="20"/>
+				<itemBambooCrop id="harvestcraft:pambambooshootcrop" treeOrder="30"/>
+				<itemBarleyCrop id="harvestcraft:pambarleycrop" treeOrder="40"/>
+				<itemBeanCrop id="harvestcraft:pambeancrop" treeOrder="50"/>
+				<itemBeetCrop id="harvestcraft:pambeetcrop" treeOrder="60"/>
+				<itemBellPepperCrop id="harvestcraft:pambellpeppercrop" treeOrder="70"/>
+				<itemBlackberryCrop id="harvestcraft:pamblackberrycrop" treeOrder="80"/>
+				<itemBlueberryCrop id="harvestcraft:pamblueberrycrop" treeOrder="90"/>
+				<itemBroccoliCrop id="harvestcraft:pambroccolicrop" treeOrder="100"/>
+				<itemBrusselSproutCrop id="harvestcraft:pambrusselsproutcrop" treeOrder="110"/>
+				<itemCabbageCrop id="harvestcraft:pamcabbagecrop" treeOrder="120"/>
+				<itemCactusFruitCrop id="harvestcraft:pamcactusfruitcrop" treeOrder="130"/>
+				<itemCandleberryCrop id="harvestcraft:pamcandleberrycrop" treeOrder="140"/>
+				<itemCantaloupeCrop id="harvestcraft:pamcantaloupecrop" treeOrder="150"/>
+				<itemCauliflowerCrop id="harvestcraft:pamcauliflowercrop" treeOrder="160"/>
+				<itemCeleryCrop id="harvestcraft:pamcelerycrop" treeOrder="170"/>
+				<itemChiliPepperCrop id="harvestcraft:pamchilipeppercrop" treeOrder="180"/>
+				<itemCoffeeBeanCrop id="harvestcraft:pamcoffeebeancrop" treeOrder="190"/>
+				<itemCornCrop id="harvestcraft:pamcorncrop" treeOrder="200"/>
+				<itemCottonCrop id="harvestcraft:pamcottoncrop" treeOrder="210"/>
+				<itemCranberryCrop id="harvestcraft:pamcranberrycrop" treeOrder="220"/>
+				<itemCucumberCrop id="harvestcraft:pamcucumbercrop" treeOrder="230"/>
+				<itemCurryLeafCrop id="harvestcraft:pamcurryleafcrop" treeOrder="240"/>
+				<itemEggplantCrop id="harvestcraft:pameggplantcrop" treeOrder="250"/>
+				<itemGarlicCrop id="harvestcraft:pamgarliccrop" treeOrder="260"/>
+				<itemGingerCrop id="harvestcraft:pamgingercrop" treeOrder="270"/>
+				<itemGrapeCrop id="harvestcraft:pamgrapecrop" treeOrder="280"/>
+				<itemKiwiCrop id="harvestcraft:pamkiwicrop" treeOrder="290"/>
+				<itemLeekCrop id="harvestcraft:pamleekcrop" treeOrder="300"/>
+				<itemLettuceCrop id="harvestcraft:pamlettucecrop" treeOrder="310"/>
+				<itemMustardSeedsCrop id="harvestcraft:pammustardseedscrop" treeOrder="320"/>
+				<itemOatsCrop id="harvestcraft:pamoatscrop" treeOrder="330"/>
+				<itemOkraCrop id="harvestcraft:pamokracrop" treeOrder="340"/>
+				<itemOnionCrop id="harvestcraft:pamonioncrop" treeOrder="350"/>
+				<itemParsnipCrop id="harvestcraft:pamparsnipcrop" treeOrder="360"/>
+				<itemPeanutCrop id="harvestcraft:pampeanutcrop" treeOrder="370"/>
+				<itemPeasCrop id="harvestcraft:pampeascrop" treeOrder="380"/>
+				<itemPineappleCrop id="harvestcraft:pampineapplecrop" treeOrder="390"/>
+				<itemRadishCrop id="harvestcraft:pamradishcrop" treeOrder="400"/>
+				<itemRaspberryCrop id="harvestcraft:pamraspberrycrop" treeOrder="410"/>
+				<itemRhubarbCrop id="harvestcraft:pamrhubarbcrop" treeOrder="420"/>
+				<itemRiceCrop id="harvestcraft:pamricecrop" treeOrder="430"/>
+				<itemRutabagaCrop id="harvestcraft:pamrutabagacrop" treeOrder="440"/>
+				<itemRyeCrop id="harvestcraft:pamryecrop" treeOrder="450"/>
+				<itemScallionCrop id="harvestcraft:pamscallioncrop" treeOrder="460"/>
+				<itemSeaweedCrop id="harvestcraft:pamseaweedcrop" treeOrder="470"/>
+				<itemSesameSeedsCrop id="harvestcraft:pamsesameseedscrop" treeOrder="480"/>
+				<itemSoybeanCrop id="harvestcraft:pamsoybeancrop" treeOrder="490"/>
+				<itemSpiceLeafCrop id="harvestcraft:pamspiceleafcrop" treeOrder="500"/>
+				<itemSpinachCrop id="harvestcraft:pamspinachcrop" treeOrder="510"/>
+				<itemStrawberryCrop id="harvestcraft:pamstrawberrycrop" treeOrder="520"/>
+				<itemSweetPotatoCrop id="harvestcraft:pamsweetpotatocrop" treeOrder="530"/>
+				<itemTeaLeafCrop id="harvestcraft:pamtealeafcrop" treeOrder="540"/>
+				<itemTomatoCrop id="harvestcraft:pamtomatocrop" treeOrder="550"/>
+				<itemTurnipCrop id="harvestcraft:pamturnipcrop" treeOrder="560"/>
+				<itemWaterChestnutCrop id="harvestcraft:pamwaterchestnutcrop" treeOrder="570"/>
+				<itemWhiteMushroomCrop id="harvestcraft:pamwhitemushroomcrop" treeOrder="580"/>
+				<itemWinterSquashCrop id="harvestcraft:pamwintersquashcrop" treeOrder="590"/>
+				<itemZucchiniCrop id="harvestcraft:pamzucchinicrop" treeOrder="600"/>
 			</seedlings>
-			<groundCover>
-				<foodGardens>
-					<itemAridGarden id="harvestcraft:aridgarden"/>
-					<itemBerryGarden id="harvestcraft:berrygarden"/>
-					<itemDesertGarden id="harvestcraft:desertgarden"/>
-					<itemFrostGarden id="harvestcraft:frostgarden"/>
-					<itemGourdGarden id="harvestcraft:gourdgarden"/>
-					<itemGrassGarden id="harvestcraft:grassgarden"/>
-					<itemGroundGarden id="harvestcraft:groundgarden"/>
-					<itemHerbGarden id="harvestcraft:herbgarden"/>
-					<itemLeafyGarden id="harvestcraft:leafygarden"/>
-					<itemMushroomGarden id="harvestcraft:mushroomgarden"/>
-					<itemShadedGarden id="harvestcraft:shadedgarden"/>
-					<itemSoggyGarden id="harvestcraft:soggygarden"/>
-					<itemStalkGarden id="harvestcraft:stalkgarden"/>
-					<itemTextileGarden id="harvestcraft:textilegarden"/>
-					<itemTropicalGarden id="harvestcraft:tropicalgarden"/>
-					<itemWaterGarden id="harvestcraft:watergarden"/>
-					<itemWindyGarden id="harvestcraft:windygarden"/>
+			<groundCover treeOrder="220">
+				<foodGardens treeOrder="90">
+					<itemAridGarden id="harvestcraft:aridgarden" treeOrder="10"/>
+					<itemBerryGarden id="harvestcraft:berrygarden" treeOrder="20"/>
+					<itemDesertGarden id="harvestcraft:desertgarden" treeOrder="30"/>
+					<itemFrostGarden id="harvestcraft:frostgarden" treeOrder="40"/>
+					<itemGourdGarden id="harvestcraft:gourdgarden" treeOrder="50"/>
+					<itemGrassGarden id="harvestcraft:grassgarden" treeOrder="60"/>
+					<itemGroundGarden id="harvestcraft:groundgarden" treeOrder="70"/>
+					<itemHerbGarden id="harvestcraft:herbgarden" treeOrder="80"/>
+					<itemLeafyGarden id="harvestcraft:leafygarden" treeOrder="90"/>
+					<itemMushroomGarden id="harvestcraft:mushroomgarden" treeOrder="100"/>
+					<itemShadedGarden id="harvestcraft:shadedgarden" treeOrder="110"/>
+					<itemSoggyGarden id="harvestcraft:soggygarden" treeOrder="120"/>
+					<itemStalkGarden id="harvestcraft:stalkgarden" treeOrder="130"/>
+					<itemTextileGarden id="harvestcraft:textilegarden" treeOrder="140"/>
+					<itemTropicalGarden id="harvestcraft:tropicalgarden" treeOrder="150"/>
+					<itemWaterGarden id="harvestcraft:watergarden" treeOrder="160"/>
+					<itemWindyGarden id="harvestcraft:windygarden" treeOrder="170"/>
 				</foodGardens>
 			</groundCover>
 		</plant>
-		<bees>
-			<beeQueens>
-				<itemQueenBee id="harvestcraft:queenbeeitem" damage="18"/>
-				<itemQueenBee id="harvestcraft:queenbeeitem"/>
+		<bees treeOrder="170">
+			<beeQueens treeOrder="10">
+				<itemQueenBee id="harvestcraft:queenbeeitem" damage="18" treeOrder="40"/>
+				<itemQueenBee id="harvestcraft:queenbeeitem" treeOrder="50"/>
 			</beeQueens>
-			<beeCombs>
-				<itemWaxcomb id="harvestcraft:waxcombitem"/>
-				<itemHoneycomb id="harvestcraft:honeycombitem"/>
-				<itemHoneycombBlock id="harvestcraft:honeycomb"/>
-				<itemWaxcombBlock id="harvestcraft:waxcomb"/>
+			<beeCombs treeOrder="40">
+				<itemWaxcomb id="harvestcraft:waxcombitem" treeOrder="40"/>
+				<itemHoneycomb id="harvestcraft:honeycombitem" treeOrder="60"/>
+				<itemHoneycombBlock id="harvestcraft:honeycomb" treeOrder="70"/>
+				<itemWaxcombBlock id="harvestcraft:waxcomb" treeOrder="80"/>
 			</beeCombs>
-			<beeWax>
-				<itemPressedWaxBlock id="harvestcraft:pressedwax"/>
+			<beeWax treeOrder="50">
+				<itemPressedWaxBlock id="harvestcraft:pressedwax" treeOrder="30"/>
 			</beeWax>
-			<beeHoney>
-				<itemRoyalJelly id="harvestcraft:royaljellyitem"/>
-				<itemHoneyBlock id="harvestcraft:honey"/>
+			<beeHoney treeOrder="70">
+				<itemRoyalJelly id="harvestcraft:royaljellyitem" treeOrder="40"/>
+				<itemHoneyBlock id="harvestcraft:honey" treeOrder="60"/>
 			</beeHoney>
-			<beeHousing>
-				<itemApiary id="harvestcraft:apiary"/>
-				<itemBeehive id="harvestcraft:beehive"/>
+			<beeHousing treeOrder="80">
+				<itemApiary id="harvestcraft:apiary" treeOrder="40"/>
+				<itemBeehive id="harvestcraft:beehive" treeOrder="50"/>
 			</beeHousing>
 		</bees>
 	</item>

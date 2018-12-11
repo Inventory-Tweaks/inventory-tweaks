@@ -26,12 +26,12 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<drawers>
-					<drawerTrim>
-						<itemBloodTrim id="storagedrawersnatura:trim"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<drawers treeOrder="30">
+					<drawerTrim treeOrder="120">
+						<itemBloodTrim id="storagedrawersnatura:trim" treeOrder="40"/>
 					</drawerTrim>
 				</drawers>
 			</storage>

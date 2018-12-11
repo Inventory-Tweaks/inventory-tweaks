@@ -26,10 +26,10 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<readableBooks>
-				<itemMantle_item.mantle.manual.test.name id="mantle:mantlebook"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemMantle_item.mantle.manual.test.name id="mantle:mantlebook" treeOrder="120"/>
 			</readableBooks>
 		</utility>
 	</item>

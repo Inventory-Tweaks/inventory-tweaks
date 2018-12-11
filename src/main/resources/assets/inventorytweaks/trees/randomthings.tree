@@ -26,112 +26,114 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage8>
-							<itemSpectreSword id="randomthings:spectresword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage8 treeOrder="90">
+							<itemSpectreSword id="randomthings:spectresword" treeOrder="20"/>
 						</swordDamage8>
-						<swordUnsorted>
-							<itemCreativeSword id="randomthings:creativesword"/>
+						<swordUnsorted treeOrder="170">
+							<itemCreativeSword id="randomthings:creativesword" treeOrder="600"/>
 						</swordUnsorted>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<keys>
-				<itemSpectreKey id="randomthings:spectrekey"/>
-				<itemOpSpectreKey id="randomthings:opspectrekey"/>
+		<tool treeOrder="20">
+			<keys treeOrder="210">
+				<itemSpectreKey id="randomthings:spectrekey" treeOrder="60"/>
+				<itemOpSpectreKey id="randomthings:opspectrekey" treeOrder="70"/>
 			</keys>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmet3>
-					<itemSpectreHelmet id="randomthings:spectrehelmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmet3 treeOrder="20">
+					<itemSpectreHelmet id="randomthings:spectrehelmet" treeOrder="120"/>
 				</helmet3>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate9>
-						<itemSpectreChestplate id="randomthings:spectrechestplate"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate9 treeOrder="20">
+						<itemSpectreChestplate id="randomthings:spectrechestplate" treeOrder="10"/>
 					</chestplate9>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings7>
-					<itemSpectreLeggings id="randomthings:spectreleggings"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings7 treeOrder="20">
+					<itemSpectreLeggings id="randomthings:spectreleggings" treeOrder="10"/>
 				</leggings7>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots3>
-					<itemSpectreBoots id="randomthings:spectreboots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots3 treeOrder="30">
+					<itemSpectreBoots id="randomthings:spectreboots" treeOrder="90"/>
 				</boots3>
 			</boots>
 		</armor>
-		<baubles>
-			<rings>
-				<itemObsidianSkullRing id="randomthings:obsidianskullring"/>
+		<baubles treeOrder="40">
+			<rings treeOrder="10">
+				<itemObsidianSkullRing id="randomthings:obsidianskullring" treeOrder="360"/>
 			</rings>
 		</baubles>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<dirts>
-				<itemFertilizedDirt id="randomthings:fertilizeddirt"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<dirts treeOrder="20">
+				<fertilizedDirt treeOrder="110">
+					<itemFertilizedDirt id="randomthings:fertilizeddirt" treeOrder="10"/>
+				</fertilizedDirt>
 			</dirts>
 		</naturalBlock>
-		<mechanism>
-			<lighting>
-				<torch>
-					<itemPeaceCandle id="randomthings:peacecandle"/>
+		<mechanism treeOrder="60">
+			<lighting treeOrder="30">
+				<torch treeOrder="10">
+					<itemPeaceCandle id="randomthings:peacecandle" treeOrder="250"/>
 				</torch>
 			</lighting>
-			<lever>
-				<itemWirelessLever id="randomthings:wirelesslever" damage="0"/>
+			<lever treeOrder="50">
+				<itemWirelessLever id="randomthings:wirelesslever" damage="0" treeOrder="30"/>
 			</lever>
-			<resourceTransfer>
-				<groundItemCollector>
-					<itemItemCollector id="randomthings:itemcollector"/>
-					<itemAdvancedItemCollector id="randomthings:advanceditemcollector"/>
+			<resourceTransfer treeOrder="300">
+				<groundItemCollector treeOrder="10">
+					<itemItemCollector id="randomthings:itemcollector" treeOrder="100"/>
+					<itemAdvancedItemCollector id="randomthings:advanceditemcollector" treeOrder="110"/>
 				</groundItemCollector>
 			</resourceTransfer>
-			<machines>
-				<decorationMachines>
-					<itemDyeingMachine id="randomthings:dyeingmachine" damage="0"/>
+			<machines treeOrder="380">
+				<decorationMachines treeOrder="180">
+					<itemDyeingMachine id="randomthings:dyeingmachine" damage="0" treeOrder="50"/>
 				</decorationMachines>
-				<randomMachines>
-					<itemBiomePainter id="randomthings:biomepainter"/>
+				<randomMachines treeOrder="200">
+					<itemBiomePainter id="randomthings:biomepainter" treeOrder="80"/>
 				</randomMachines>
 			</machines>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<ingot>
-				<itemSpectreIngot id="randomthings:ingredient" damage="3"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<ingot treeOrder="120">
+				<itemSpectreIngot id="randomthings:ingredient" damage="3" treeOrder="1970"/>
 			</ingot>
 		</miningResources>
-		<huntingResources>
-			<string id="string">
-				<itemSpectreString id="randomthings:ingredient" damage="12"/>
+		<huntingResources treeOrder="20">
+			<string id="string" treeOrder="90">
+				<itemSpectreString id="randomthings:ingredient" damage="12" treeOrder="70"/>
 			</string>
 		</huntingResources>
 	</resources>
-	<item>
-		<utility>
-			<flintAndSteel id="flint_and_steel">
-				<itemBlazeandSteel id="randomthings:blazeandsteel"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<flintAndSteel id="flint_and_steel" treeOrder="20">
+				<itemBlazeandSteel id="randomthings:blazeandsteel" treeOrder="30"/>
 			</flintAndSteel>
 		</utility>
-		<experienceStorage>
-			<itemExperienceImbue id="randomthings:imbue"/>
+		<experienceStorage treeOrder="60">
+			<itemExperienceImbue id="randomthings:imbue" treeOrder="60"/>
 		</experienceStorage>
-		<parts>
-			<tinkerParts>
-				<itemObsidianStick id="randomthings:ingredient" damage="1"/>
+		<parts treeOrder="110">
+			<tinkerParts treeOrder="20">
+				<itemObsidianStick id="randomthings:ingredient" damage="1" treeOrder="720"/>
 			</tinkerParts>
 		</parts>
 	</item>

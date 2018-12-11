@@ -26,91 +26,93 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage6>
-							<itemBronzeSword id="ic2:bronze_sword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage6 treeOrder="110">
+							<itemBronzeSword id="ic2:bronze_sword" treeOrder="60"/>
 						</swordDamage6>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<paxel mergeChildren="true">
-				<miningTool>
-					<diggingTool>
-						<choppingTool>
-							<farmingTool>
-								<itemIridiumDrill id="ic2:iridium_drill"/>
-								<itemDiamondDrill id="ic2:diamond_drill"/>
-								<itemMiningDrill id="ic2:drill"/>
+		<tool treeOrder="20">
+			<paxel mergeChildren="true" treeOrder="10">
+				<miningTool treeOrder="10">
+					<diggingTool treeOrder="10">
+						<choppingTool treeOrder="10">
+							<farmingTool treeOrder="10">
+								<itemIridiumDrill id="ic2:iridium_drill" treeOrder="20"/>
+								<itemDiamondDrill id="ic2:diamond_drill" treeOrder="40"/>
+								<itemMiningDrill id="ic2:drill" treeOrder="50"/>
 							</farmingTool>
 						</choppingTool>
 					</diggingTool>
 				</miningTool>
 			</paxel>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<DiamondPickLevel>
-						<itemBronzePickaxe id="ic2:bronze_pickaxe"/>
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<DiamondPickLevel treeOrder="100">
+						<itemBronzePickaxe id="ic2:bronze_pickaxe" treeOrder="70"/>
 					</DiamondPickLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemBronzeShovel id="ic2:bronze_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBronzeShovel id="ic2:bronze_shovel" treeOrder="70"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemBronzeAxe id="ic2:bronze_axe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBronzeAxe id="ic2:bronze_axe" treeOrder="140"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemBronzeHoe id="ic2:bronze_hoe"/>
-					<itemElectricHoe id="ic2:electric_hoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemBronzeHoe id="ic2:bronze_hoe" treeOrder="70"/>
+					<itemElectricHoe id="ic2:electric_hoe" treeOrder="160"/>
 				</hoe>
-				<otherFarmingTools>
-					<treeTap>
-						<itemElectricTreetap id="ic2:electric_treetap"/>
-						<itemTreetap id="ic2:treetap"/>
+				<otherFarmingTools treeOrder="60">
+					<treeTap treeOrder="150">
+						<itemElectricTreetap id="ic2:electric_treetap" treeOrder="20"/>
+						<itemTreetap id="ic2:treetap" treeOrder="30"/>
 					</treeTap>
 				</otherFarmingTools>
 			</farmingTool>
 		</tool>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<constructionUtility>
-					<itemScaffold id="ic2:scaffold"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<constructionUtility treeOrder="90">
+					<itemScaffold id="ic2:scaffold" treeOrder="40"/>
 				</constructionUtility>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<resources>
-		<miningResources>
-			<ingot>
-				<ingotMixedMetalDict oreDictName="ingotMixedMetal">
-					<itemMixedMetalIngot id="ic2:ingot" damage="0"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<ingot treeOrder="120">
+				<ingotMixedMetalDict oreDictName="ingotMixedMetal" treeOrder="1470">
+					<itemMixedMetalIngot id="ic2:ingot" damage="0" treeOrder="10"/>
 				</ingotMixedMetalDict>
 			</ingot>
 		</miningResources>
 	</resources>
-	<item>
-		<fluidStorage>
-			<itemIC2Cell id="ic2:fluid_cell"/>
+	<item treeOrder="40">
+		<fluidStorage treeOrder="50">
+			<fluidCells treeOrder="60">
+				<itemIC2Cell id="ic2:fluid_cell" treeOrder="10"/>
+			</fluidCells>
 		</fluidStorage>
-		<vehicle>
-			<boat id="boat">
-				<itemCarbonFiberCanoe id="ic2:boat"/>
-				<itemElectricBoat id="ic2:boat"/>
-				<itemRubberDinghy id="ic2:boat"/>
-				<itemDamagedRubberDinghy id="ic2:boat"/>
+		<vehicle treeOrder="80">
+			<boat id="boat" treeOrder="10">
+				<itemCarbonFiberCanoe id="ic2:boat" treeOrder="60"/>
+				<itemElectricBoat id="ic2:boat" treeOrder="70"/>
+				<itemRubberDinghy id="ic2:boat" treeOrder="80"/>
+				<itemDamagedRubberDinghy id="ic2:boat" treeOrder="90"/>
 			</boat>
 		</vehicle>
 	</item>

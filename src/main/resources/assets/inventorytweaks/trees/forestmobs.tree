@@ -26,44 +26,44 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<thrownMunitions>
-					<itemLifeDrainCharge id="forestmobs:lifedraincharge"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemLifeDrainCharge id="forestmobs:lifedraincharge" treeOrder="130"/>
 				</thrownMunitions>
-				<scepters>
-					<itemLifeDrainScepter id="forestmobs:lifedrainscepter"/>
+				<scepters treeOrder="120">
+					<itemLifeDrainScepter id="forestmobs:lifedrainscepter" treeOrder="110"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnArisaur id="forestmobs:forestegg" damage="3"/>
-				<itemSpawnEnt id="forestmobs:forestegg" damage="0"/>
-				<itemSpawnShambler id="forestmobs:forestegg" damage="2"/>
-				<itemSpawnSpriggan id="forestmobs:forestegg" damage="4"/>
-				<itemSpawnTrent id="forestmobs:forestegg" damage="1"/>
-				<itemSpawnWarg id="forestmobs:forestegg" damage="5"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnArisaur id="forestmobs:forestegg" damage="3" treeOrder="250"/>
+				<itemSpawnEnt id="forestmobs:forestegg" damage="0" treeOrder="260"/>
+				<itemSpawnShambler id="forestmobs:forestegg" damage="2" treeOrder="270"/>
+				<itemSpawnSpriggan id="forestmobs:forestegg" damage="4" treeOrder="280"/>
+				<itemSpawnTrent id="forestmobs:forestegg" damage="1" treeOrder="290"/>
+				<itemSpawnWarg id="forestmobs:forestegg" damage="5" treeOrder="300"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemforestmobs_arisaurmeatcooked id="forestmobs:arisaurmeatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemforestmobs_arisaurmeatcooked id="forestmobs:arisaurmeatcooked" treeOrder="190"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemforestmobs_arisaurmeatraw id="forestmobs:arisaurmeatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemforestmobs_arisaurmeatraw id="forestmobs:arisaurmeatraw" treeOrder="150"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemShamblerTreat id="forestmobs:shamblertreat"/>
-					<itemWargTreat id="forestmobs:wargtreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemShamblerTreat id="forestmobs:shamblertreat" treeOrder="70"/>
+					<itemWargTreat id="forestmobs:wargtreat" treeOrder="80"/>
 				</taming>
 			</hunting>
 		</food>

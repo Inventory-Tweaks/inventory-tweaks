@@ -26,23 +26,23 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordUnsorted>
-							<itemPsimetalSword id="psi:psimetal_sword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordUnsorted treeOrder="170">
+							<itemPsimetalSword id="psi:psimetal_sword" treeOrder="370"/>
 						</swordUnsorted>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<UnsortedLevel>
-						<itemPsimetalPickaxe id="psi:psimetal_pickaxe"/>
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<UnsortedLevel treeOrder="130">
+						<itemPsimetalPickaxe id="psi:psimetal_pickaxe" treeOrder="190"/>
 					</UnsortedLevel>
 				</pickaxe>
 			</miningTool>

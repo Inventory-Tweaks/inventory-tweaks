@@ -26,32 +26,32 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemBronzeHelmet id="contenttweaker:bronze_head"/>
-					<itemCopperHelmet id="contenttweaker:copper_head"/>
+	<equipment treeOrder="10">
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemBronzeHelmet id="contenttweaker:bronze_head" treeOrder="70"/>
+					<itemCopperHelmet id="contenttweaker:copper_head" treeOrder="90"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemBronzeChestplate id="contenttweaker:bronze_chest"/>
-						<itemCopperChestplate id="contenttweaker:copper_chest"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemBronzeChestplate id="contenttweaker:bronze_chest" treeOrder="70"/>
+						<itemCopperChestplate id="contenttweaker:copper_chest" treeOrder="100"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemBronzeLeggings id="contenttweaker:bronze_legs"/>
-					<itemCopperLeggings id="contenttweaker:copper_legs"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemBronzeLeggings id="contenttweaker:bronze_legs" treeOrder="70"/>
+					<itemCopperLeggings id="contenttweaker:copper_legs" treeOrder="90"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemBronzeBoots id="contenttweaker:bronze_feet"/>
-					<itemCopperBoots id="contenttweaker:copper_feet"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemBronzeBoots id="contenttweaker:bronze_feet" treeOrder="100"/>
+					<itemCopperBoots id="contenttweaker:copper_feet" treeOrder="120"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>

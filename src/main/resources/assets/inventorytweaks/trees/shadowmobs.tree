@@ -26,46 +26,46 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<thrownMunitions>
-					<itemBloodleechCharge id="shadowmobs:bloodleechcharge"/>
-					<itemSpectralBoltCharge id="shadowmobs:spectralboltcharge"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemBloodleechCharge id="shadowmobs:bloodleechcharge" treeOrder="230"/>
+					<itemSpectralBoltCharge id="shadowmobs:spectralboltcharge" treeOrder="240"/>
 				</thrownMunitions>
-				<scepters>
-					<itemBloodleechScepter id="shadowmobs:bloodleechscepter"/>
-					<itemSpectralBoltScepter id="shadowmobs:spectralboltscepter"/>
+				<scepters treeOrder="120">
+					<itemBloodleechScepter id="shadowmobs:bloodleechscepter" treeOrder="190"/>
+					<itemSpectralBoltScepter id="shadowmobs:spectralboltscepter" treeOrder="200"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnChupacabra id="shadowmobs:shadowegg" damage="4"/>
-				<itemSpawnEpion id="shadowmobs:shadowegg" damage="2"/>
-				<itemSpawnGeist id="shadowmobs:shadowegg" damage="3"/>
-				<itemSpawnGrue id="shadowmobs:shadowegg" damage="0"/>
-				<itemSpawnPhantom id="shadowmobs:shadowegg" damage="1"/>
-				<itemSpawnShade id="shadowmobs:shadowegg" damage="5"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnChupacabra id="shadowmobs:shadowegg" damage="4" treeOrder="690"/>
+				<itemSpawnEpion id="shadowmobs:shadowegg" damage="2" treeOrder="700"/>
+				<itemSpawnGeist id="shadowmobs:shadowegg" damage="3" treeOrder="710"/>
+				<itemSpawnGrue id="shadowmobs:shadowegg" damage="0" treeOrder="720"/>
+				<itemSpawnPhantom id="shadowmobs:shadowegg" damage="1" treeOrder="730"/>
+				<itemSpawnShade id="shadowmobs:shadowegg" damage="5" treeOrder="740"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemshadowmobs_chupacabrameatcooked id="shadowmobs:chupacabrameatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemshadowmobs_chupacabrameatcooked id="shadowmobs:chupacabrameatcooked" treeOrder="220"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemshadowmobs_chupacabrameatraw id="shadowmobs:chupacabrameatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemshadowmobs_chupacabrameatraw id="shadowmobs:chupacabrameatraw" treeOrder="170"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemChupacabraTreat id="shadowmobs:chupacabratreat"/>
-					<itemShadeTreat id="shadowmobs:shadetreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemChupacabraTreat id="shadowmobs:chupacabratreat" treeOrder="150"/>
+					<itemShadeTreat id="shadowmobs:shadetreat" treeOrder="160"/>
 				</taming>
 			</hunting>
 		</food>

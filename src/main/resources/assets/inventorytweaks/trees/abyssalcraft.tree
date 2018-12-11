@@ -26,154 +26,154 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<Level8>
-						<itemEthaxiumPickaxe id="abyssalcraft:ethaxiumpickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<Level8 treeOrder="40">
+						<itemEthaxiumPickaxe id="abyssalcraft:ethaxiumpickaxe" treeOrder="10"/>
 					</Level8>
-					<Level6>
-						<itemDreadiumPickaxe id="abyssalcraft:dreadiumpickaxe"/>
+					<Level6 treeOrder="50">
+						<itemDreadiumPickaxe id="abyssalcraft:dreadiumpickaxe" treeOrder="20"/>
 					</Level6>
-					<Level5>
-						<itemRefinedCoraliumPickaxe id="abyssalcraft:corpick"/>
+					<Level5 treeOrder="60">
+						<itemRefinedCoraliumPickaxe id="abyssalcraft:corpick" treeOrder="10"/>
 					</Level5>
-					<CobaltPickLevel>
-						<itemAbyssalnitePickaxe id="abyssalcraft:apick"/>
+					<CobaltPickLevel treeOrder="80">
+						<itemAbyssalnitePickaxe id="abyssalcraft:apick" treeOrder="10"/>
 					</CobaltPickLevel>
-					<IronLevel>
-						<itemDarkstonePickaxe id="abyssalcraft:dpick"/>
+					<IronLevel treeOrder="110">
+						<itemDarkstonePickaxe id="abyssalcraft:dpick" treeOrder="60"/>
 					</IronLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemAbyssalniteShovel id="abyssalcraft:ashovel"/>
-					<itemRefinedCoraliumShovel id="abyssalcraft:corshovel"/>
-					<itemDreadiumShovel id="abyssalcraft:dreadiumshovel"/>
-					<itemDarkstoneShovel id="abyssalcraft:dshovel"/>
-					<itemEthaxiumShovel id="abyssalcraft:ethaxiumshovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemAbyssalniteShovel id="abyssalcraft:ashovel" treeOrder="720"/>
+					<itemRefinedCoraliumShovel id="abyssalcraft:corshovel" treeOrder="730"/>
+					<itemDreadiumShovel id="abyssalcraft:dreadiumshovel" treeOrder="740"/>
+					<itemDarkstoneShovel id="abyssalcraft:dshovel" treeOrder="750"/>
+					<itemEthaxiumShovel id="abyssalcraft:ethaxiumshovel" treeOrder="760"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemAbyssalniteAxe id="abyssalcraft:aaxe"/>
-					<itemRefinedCoraliumAxe id="abyssalcraft:coraxe"/>
-					<itemDarkstoneAxe id="abyssalcraft:daxe"/>
-					<itemDreadiumAxe id="abyssalcraft:dreadiumaxe"/>
-					<itemEthaxiumAxe id="abyssalcraft:ethaxiumaxe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemAbyssalniteAxe id="abyssalcraft:aaxe" treeOrder="710"/>
+					<itemRefinedCoraliumAxe id="abyssalcraft:coraxe" treeOrder="720"/>
+					<itemDarkstoneAxe id="abyssalcraft:daxe" treeOrder="730"/>
+					<itemDreadiumAxe id="abyssalcraft:dreadiumaxe" treeOrder="740"/>
+					<itemEthaxiumAxe id="abyssalcraft:ethaxiumaxe" treeOrder="750"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemAbyssalniteHoe id="abyssalcraft:ahoe"/>
-					<itemRefinedCoraliumHoe id="abyssalcraft:corhoe"/>
-					<itemDarkstoneHoe id="abyssalcraft:dhoe"/>
-					<itemDreadiumHoe id="abyssalcraft:dreadiumhoe"/>
-					<itemEthaxiumHoe id="abyssalcraft:ethaxiumhoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemAbyssalniteHoe id="abyssalcraft:ahoe" treeOrder="640"/>
+					<itemRefinedCoraliumHoe id="abyssalcraft:corhoe" treeOrder="650"/>
+					<itemDarkstoneHoe id="abyssalcraft:dhoe" treeOrder="660"/>
+					<itemDreadiumHoe id="abyssalcraft:dreadiumhoe" treeOrder="670"/>
+					<itemEthaxiumHoe id="abyssalcraft:ethaxiumhoe" treeOrder="680"/>
 				</hoe>
 			</farmingTool>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemAbyssalniteHelmet id="abyssalcraft:ahelmet"/>
-					<itemDreadedAbyssalniteHelmet id="abyssalcraft:dhelmet"/>
-					<itemDreadiumHelmet id="abyssalcraft:dreadiumhelmet"/>
-					<itemDreadiumSamuraiHelmet id="abyssalcraft:dreadiumsamuraihelmet"/>
-					<itemEthaxiumHelmet id="abyssalcraft:ethaxiumhelmet"/>
-					<itemPlatedCoraliumHelmet id="abyssalcraft:corhelmetp"/>
-					<itemRefinedCoraliumHelmet id="abyssalcraft:corhelmet"/>
-					<itemVisageofTheDepths id="abyssalcraft:depthshelmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemAbyssalniteHelmet id="abyssalcraft:ahelmet" treeOrder="10"/>
+					<itemDreadedAbyssalniteHelmet id="abyssalcraft:dhelmet" treeOrder="130"/>
+					<itemDreadiumHelmet id="abyssalcraft:dreadiumhelmet" treeOrder="140"/>
+					<itemDreadiumSamuraiHelmet id="abyssalcraft:dreadiumsamuraihelmet" treeOrder="150"/>
+					<itemEthaxiumHelmet id="abyssalcraft:ethaxiumhelmet" treeOrder="190"/>
+					<itemPlatedCoraliumHelmet id="abyssalcraft:corhelmetp" treeOrder="400"/>
+					<itemRefinedCoraliumHelmet id="abyssalcraft:corhelmet" treeOrder="450"/>
+					<itemVisageofTheDepths id="abyssalcraft:depthshelmet" treeOrder="660"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemAbyssalniteChestplate id="abyssalcraft:aplate"/>
-						<itemChestplateofTheDepths id="abyssalcraft:depthsplate"/>
-						<itemDreadedAbyssalniteChestplate id="abyssalcraft:dplate"/>
-						<itemDreadiumChestplate id="abyssalcraft:dreadiumplate"/>
-						<itemDreadiumSamuraiChestplate id="abyssalcraft:dreadiumsamuraiplate"/>
-						<itemEthaxiumChestplate id="abyssalcraft:ethaxiumplate"/>
-						<itemPlatedCoraliumChestplate id="abyssalcraft:corplatep"/>
-						<itemRefinedCoraliumChestplate id="abyssalcraft:corplate"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemAbyssalniteChestplate id="abyssalcraft:aplate" treeOrder="10"/>
+						<itemChestplateofTheDepths id="abyssalcraft:depthsplate" treeOrder="80"/>
+						<itemDreadedAbyssalniteChestplate id="abyssalcraft:dplate" treeOrder="140"/>
+						<itemDreadiumChestplate id="abyssalcraft:dreadiumplate" treeOrder="150"/>
+						<itemDreadiumSamuraiChestplate id="abyssalcraft:dreadiumsamuraiplate" treeOrder="160"/>
+						<itemEthaxiumChestplate id="abyssalcraft:ethaxiumplate" treeOrder="180"/>
+						<itemPlatedCoraliumChestplate id="abyssalcraft:corplatep" treeOrder="410"/>
+						<itemRefinedCoraliumChestplate id="abyssalcraft:corplate" treeOrder="450"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemAbyssalniteLeggings id="abyssalcraft:alegs"/>
-					<itemDreadedAbyssalniteLeggings id="abyssalcraft:dlegs"/>
-					<itemDreadiumLeggings id="abyssalcraft:dreadiumlegs"/>
-					<itemDreadiumSamuraiLeggings id="abyssalcraft:dreadiumsamurailegs"/>
-					<itemEthaxiumLeggings id="abyssalcraft:ethaxiumlegs"/>
-					<itemPlatedCoraliumLeggings id="abyssalcraft:corlegsp"/>
-					<itemRefinedCoraliumLeggings id="abyssalcraft:corlegs"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemAbyssalniteLeggings id="abyssalcraft:alegs" treeOrder="10"/>
+					<itemDreadedAbyssalniteLeggings id="abyssalcraft:dlegs" treeOrder="130"/>
+					<itemDreadiumLeggings id="abyssalcraft:dreadiumlegs" treeOrder="140"/>
+					<itemDreadiumSamuraiLeggings id="abyssalcraft:dreadiumsamurailegs" treeOrder="150"/>
+					<itemEthaxiumLeggings id="abyssalcraft:ethaxiumlegs" treeOrder="190"/>
+					<itemPlatedCoraliumLeggings id="abyssalcraft:corlegsp" treeOrder="400"/>
+					<itemRefinedCoraliumLeggings id="abyssalcraft:corlegs" treeOrder="440"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemAbyssalniteBoots id="abyssalcraft:aboots"/>
-					<itemBootsofTheDepths id="abyssalcraft:depthsboots"/>
-					<itemDreadedAbyssalniteBoots id="abyssalcraft:dboots"/>
-					<itemDreadiumBoots id="abyssalcraft:dreadiumboots"/>
-					<itemDreadiumSamuraiBoots id="abyssalcraft:dreadiumsamuraiboots"/>
-					<itemEthaxiumBoots id="abyssalcraft:ethaxiumboots"/>
-					<itemPlatedCoraliumBoots id="abyssalcraft:corbootsp"/>
-					<itemRefinedCoraliumBoots id="abyssalcraft:corboots"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemAbyssalniteBoots id="abyssalcraft:aboots" treeOrder="10"/>
+					<itemBootsofTheDepths id="abyssalcraft:depthsboots" treeOrder="80"/>
+					<itemDreadedAbyssalniteBoots id="abyssalcraft:dboots" treeOrder="160"/>
+					<itemDreadiumBoots id="abyssalcraft:dreadiumboots" treeOrder="170"/>
+					<itemDreadiumSamuraiBoots id="abyssalcraft:dreadiumsamuraiboots" treeOrder="180"/>
+					<itemEthaxiumBoots id="abyssalcraft:ethaxiumboots" treeOrder="220"/>
+					<itemPlatedCoraliumBoots id="abyssalcraft:corbootsp" treeOrder="420"/>
+					<itemRefinedCoraliumBoots id="abyssalcraft:corboots" treeOrder="460"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<fence>
-				<woodenFence>
-					<itemDarklandsOakWoodFence id="abyssalcraft:dltfence"/>
-					<itemDreadlandsWoodFence id="abyssalcraft:drtfence"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<fence treeOrder="20">
+				<woodenFence treeOrder="20">
+					<itemDarklandsOakWoodFence id="abyssalcraft:dltfence" treeOrder="90"/>
+					<itemDreadlandsWoodFence id="abyssalcraft:drtfence" treeOrder="100"/>
 				</woodenFence>
-				<itemAbyssalniteStoneBrickFence id="abyssalcraft:abydreadbrickfence"/>
-				<itemAbyssalStoneBrickFence id="abyssalcraft:abyfence"/>
-				<itemCoraliumBrickFence id="abyssalcraft:cstonebrickfence"/>
-				<itemDarkEthaxiumBrickFence id="abyssalcraft:darkethaxiumbrickfence"/>
-				<itemDreadstoneBrickFence id="abyssalcraft:dreadbrickfence"/>
-				<itemDarkstoneBrickFence id="abyssalcraft:dsbfence"/>
-				<itemEthaxiumBrickFence id="abyssalcraft:ethaxiumfence"/>
+				<itemAbyssalniteStoneBrickFence id="abyssalcraft:abydreadbrickfence" treeOrder="80"/>
+				<itemAbyssalStoneBrickFence id="abyssalcraft:abyfence" treeOrder="90"/>
+				<itemCoraliumBrickFence id="abyssalcraft:cstonebrickfence" treeOrder="100"/>
+				<itemDarkEthaxiumBrickFence id="abyssalcraft:darkethaxiumbrickfence" treeOrder="110"/>
+				<itemDreadstoneBrickFence id="abyssalcraft:dreadbrickfence" treeOrder="120"/>
+				<itemDarkstoneBrickFence id="abyssalcraft:dsbfence" treeOrder="130"/>
+				<itemEthaxiumBrickFence id="abyssalcraft:ethaxiumfence" treeOrder="140"/>
 			</fence>
-			<stoneWall>
-				<itemAbyssalCobblestoneWall id="abyssalcraft:abyssalcobblestonewall"/>
-				<itemAbyssalniteCobblestoneWall id="abyssalcraft:abyssalnitecobblestonewall"/>
-				<itemCoraliumCobblestoneWall id="abyssalcraft:coraliumcobblestonewall"/>
-				<itemDreadstoneCobblestoneWall id="abyssalcraft:dreadstonecobblestonewall"/>
-				<itemDarkstoneCobblestoneWall id="abyssalcraft:dscwall"/>
+			<stoneWall treeOrder="40">
+				<itemAbyssalCobblestoneWall id="abyssalcraft:abyssalcobblestonewall" treeOrder="50"/>
+				<itemAbyssalniteCobblestoneWall id="abyssalcraft:abyssalnitecobblestonewall" treeOrder="60"/>
+				<itemCoraliumCobblestoneWall id="abyssalcraft:coraliumcobblestonewall" treeOrder="70"/>
+				<itemDreadstoneCobblestoneWall id="abyssalcraft:dreadstonecobblestonewall" treeOrder="80"/>
+				<itemDarkstoneCobblestoneWall id="abyssalcraft:dscwall" treeOrder="90"/>
 			</stoneWall>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemAbyssalCobblestoneStairs id="abyssalcraft:abyssalcobblestonestairs"/>
-						<itemAbyssalStoneBrickStairs id="abyssalcraft:abystairs"/>
-						<itemAbyssalniteCobblestoneStairs id="abyssalcraft:abyssalnitecobblestonestairs"/>
-						<itemAbyssalniteStoneBrickStairs id="abyssalcraft:abydreadbrickstairs"/>
-						<itemCoraliumBrickStairs id="abyssalcraft:cstonebrickstairs"/>
-						<itemCoraliumCobblestoneStairs id="abyssalcraft:coraliumcobblestonestairs"/>
-						<itemDarkEthaxiumBrickStairs id="abyssalcraft:darkethaxiumbrickstairs"/>
-						<itemDarkstoneBrickStairs id="abyssalcraft:dbstairs"/>
-						<itemDarkstoneCobblestoneStairs id="abyssalcraft:dcstairs"/>
-						<itemDreadstoneBrickStairs id="abyssalcraft:dreadbrickstairs"/>
-						<itemDreadstoneCobblestoneStairs id="abyssalcraft:dreadstonecobblestonestairs"/>
-						<itemEthaxiumBrickStairs id="abyssalcraft:ethaxiumbrickstairs"/>
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemAbyssalCobblestoneStairs id="abyssalcraft:abyssalcobblestonestairs" treeOrder="1240"/>
+						<itemAbyssalStoneBrickStairs id="abyssalcraft:abystairs" treeOrder="1250"/>
+						<itemAbyssalniteCobblestoneStairs id="abyssalcraft:abyssalnitecobblestonestairs" treeOrder="1260"/>
+						<itemAbyssalniteStoneBrickStairs id="abyssalcraft:abydreadbrickstairs" treeOrder="1270"/>
+						<itemCoraliumBrickStairs id="abyssalcraft:cstonebrickstairs" treeOrder="1280"/>
+						<itemCoraliumCobblestoneStairs id="abyssalcraft:coraliumcobblestonestairs" treeOrder="1290"/>
+						<itemDarkEthaxiumBrickStairs id="abyssalcraft:darkethaxiumbrickstairs" treeOrder="1300"/>
+						<itemDarkstoneBrickStairs id="abyssalcraft:dbstairs" treeOrder="1310"/>
+						<itemDarkstoneCobblestoneStairs id="abyssalcraft:dcstairs" treeOrder="1320"/>
+						<itemDreadstoneBrickStairs id="abyssalcraft:dreadbrickstairs" treeOrder="1330"/>
+						<itemDreadstoneCobblestoneStairs id="abyssalcraft:dreadstonecobblestonestairs" treeOrder="1340"/>
+						<itemEthaxiumBrickStairs id="abyssalcraft:ethaxiumbrickstairs" treeOrder="1350"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<itemWoodenCrate id="abyssalcraft:crate"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<itemWoodenCrate id="abyssalcraft:crate" treeOrder="430"/>
 				</chests>
 			</storage>
 		</utility>

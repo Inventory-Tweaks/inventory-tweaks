@@ -26,65 +26,125 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true">
-				<itemClayShears id="ceramics:clay_shears"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<shears class="Item" data="{ToolClass : &quot;shears&quot;}" mergeChildren="true" treeOrder="60">
+				<itemClayShears id="ceramics:clay_shears" treeOrder="170"/>
+				<itemUnfiredClayShears id="ceramics:unfired_clay" damage="1" treeOrder="520"/>
 			</shears>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmetUnsorted>
-					<itemClayHelmet id="ceramics:clay_helmet"/>
-					<itemUnfiredClayHelmet id="ceramics:clay_helmet_raw"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmetUnsorted treeOrder="60">
+					<itemClayHelmet id="ceramics:clay_helmet" treeOrder="80"/>
+					<itemUnfiredClayHelmet id="ceramics:clay_helmet_raw" treeOrder="640"/>
 				</helmetUnsorted>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplateUnsorted>
-						<itemClayChestplate id="ceramics:clay_chestplate"/>
-						<itemUnfiredClayChestplate id="ceramics:clay_chestplate_raw"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplateUnsorted treeOrder="120">
+						<itemClayChestplate id="ceramics:clay_chestplate" treeOrder="90"/>
+						<itemUnfiredClayChestplate id="ceramics:clay_chestplate_raw" treeOrder="690"/>
 					</chestplateUnsorted>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggingsUnsorted>
-					<itemClayLeggings id="ceramics:clay_leggings"/>
-					<itemUnfiredClayLeggings id="ceramics:clay_leggings_raw"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggingsUnsorted treeOrder="100">
+					<itemClayLeggings id="ceramics:clay_leggings" treeOrder="80"/>
+					<itemUnfiredClayLeggings id="ceramics:clay_leggings_raw" treeOrder="620"/>
 				</leggingsUnsorted>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemClayBoots id="ceramics:clay_boots"/>
-					<itemUnfiredClayBoots id="ceramics:clay_boots_raw"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemClayBoots id="ceramics:clay_boots" treeOrder="110"/>
+					<itemUnfiredClayBoots id="ceramics:clay_boots_raw" treeOrder="700"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<stoneWall>
-				<itemBricksWall id="ceramics:clay_wall"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<clayBlock id="clay" treeOrder="70">
+				<itemUnfiredPorcelain id="ceramics:clay_soft" treeOrder="10"/>
+			</clayBlock>
+		</naturalBlock>
+		<manufacturedBlock treeOrder="50">
+			<stoneWall treeOrder="40">
+				<itemBricksWall id="ceramics:clay_wall" treeOrder="180"/>
 			</stoneWall>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemDarkBricksStairs id="ceramics:dark_bricks_stairs"/>
-						<itemDragonBricksStairs id="ceramics:dragon_bricks_stairs"/>
-						<itemGoldenBricksStairs id="ceramics:golden_bricks_stairs"/>
-						<itemLavaBricksStairs id="ceramics:lava_bricks_stairs"/>
-						<itemMarineBricksStairs id="ceramics:marine_bricks_stairs"/>
-						<itemPorcelainBricksStairs id="ceramics:porcelain_bricks_stairs"/>
-						<itemRainbowBricksStairs id="ceramics:rainbow_bricks_stairs"/>
+			<constructionBlock treeOrder="70">
+				<hardenedClay treeOrder="30">
+					<stainedClay treeOrder="40">
+						<itemWhitePorcelain id="ceramics:porcelain" treeOrder="350"/>
+						<itemRainbowPorcelain id="ceramics:rainbow_clay" treeOrder="360"/>
+					</stainedClay>
+					<bricksClayDict oreDictName="bricksClay" treeOrder="50">
+						<itemPorcelainBricks id="ceramics:clay_hard" treeOrder="10"/>
+					</bricksClayDict>
+				</hardenedClay>
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemDarkBricksStairs id="ceramics:dark_bricks_stairs" treeOrder="1470"/>
+						<itemDragonBricksStairs id="ceramics:dragon_bricks_stairs" treeOrder="1480"/>
+						<itemGoldenBricksStairs id="ceramics:golden_bricks_stairs" treeOrder="1490"/>
+						<itemLavaBricksStairs id="ceramics:lava_bricks_stairs" treeOrder="1500"/>
+						<itemMarineBricksStairs id="ceramics:marine_bricks_stairs" treeOrder="1510"/>
+						<itemPorcelainBricksStairs id="ceramics:porcelain_bricks_stairs" treeOrder="1520"/>
+						<itemRainbowBricksStairs id="ceramics:rainbow_bricks_stairs" treeOrder="1530"/>
 					</otherStairs>
 				</stairs>
+				<slabs treeOrder="110">
+					<slabClay treeOrder="230">
+						<itemPorcelainBricksSlab id="ceramics:clay_slab" treeOrder="40"/>
+					</slabClay>
+				</slabs>
 			</constructionBlock>
 		</manufacturedBlock>
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<furnaces treeOrder="30">
+					<tinkerSmeltry treeOrder="40">
+						<castingFaucets treeOrder="40">
+							<itemPorcelainFaucet id="ceramics:faucet" treeOrder="40"/>
+						</castingFaucets>
+						<castingChannels treeOrder="50">
+							<itemPorcelainChannel id="ceramics:channel" treeOrder="20"/>
+						</castingChannels>
+					</tinkerSmeltry>
+				</furnaces>
+			</basicCrafting>
+		</mechanism>
 	</block>
-	<item>
-		<bucket>
-			<itemUnfiredClayBucket id="ceramics:unfired_clay"/>
-			<itemClayBucket id="ceramics:clay_bucket"/>
-		</bucket>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<bricks treeOrder="190">
+				<clayBrick id="brick" treeOrder="20">
+					<itemPorcelainBrick id="ceramics:unfired_clay" damage="5" treeOrder="10"/>
+				</clayBrick>
+			</bricks>
+		</miningResources>
+	</resources>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemUnfiredClayBucket id="ceramics:unfired_clay" damage="0" treeOrder="30"/>
+				<itemUnfiredClayBucket id="ceramics:clay_bucket_block" treeOrder="40"/>
+				<itemClayBucket id="ceramics:clay_bucket" treeOrder="500"/>
+			</bucket>
+		</fluidPortableStorage>
+		<fluidStorage treeOrder="50">
+			<barrelDict oreDictName="barrel" treeOrder="10">
+				<itemUnfiredClayBarrel id="ceramics:clay_barrel_unfired" treeOrder="10"/>
+				<itemUnfiredPorcelainBarrel id="ceramics:clay_barrel_unfired" treeOrder="20"/>
+				<itemClayBarrel id="ceramics:clay_barrel" damage="0" treeOrder="30"/>
+				<itemWhiteClayBarrel id="ceramics:clay_barrel_stained" treeOrder="40"/>
+				<itemWhitePorcelainBarrel id="ceramics:porcelain_barrel" treeOrder="50"/>
+				<itemClayBarrelExtension id="ceramics:clay_barrel" damage="1" treeOrder="60"/>
+				<itemUnfiredClayBarrelExtension id="ceramics:clay_barrel_unfired" treeOrder="70"/>
+				<itemWhiteClayBarrelExtension id="ceramics:clay_barrel_stained_extension" treeOrder="80"/>
+				<itemUnfiredPorcelainBarrelExtension id="ceramics:clay_barrel_unfired" treeOrder="90"/>
+				<itemWhitePorcelainBarrelExtension id="ceramics:porcelain_barrel_extension" treeOrder="100"/>
+			</barrelDict>
+		</fluidStorage>
 	</item>
 </stuff>

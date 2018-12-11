@@ -26,59 +26,59 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<thrownMunitions>
-					<itemMudshotCharge id="desertmobs:mudshotcharge"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemMudshotCharge id="desertmobs:mudshotcharge" treeOrder="120"/>
 				</thrownMunitions>
-				<scepters>
-					<itemMudshotScepter id="desertmobs:mudshotscepter"/>
+				<scepters treeOrder="120">
+					<itemMudshotScepter id="desertmobs:mudshotscepter" treeOrder="100"/>
 				</scepters>
 			</munition>
 		</weapon>
-		<tool>
-			<farmingTool>
-				<scythe class="Item" data="{ToolClass : &quot;scythe&quot;}" mergeChildren="true">
-					<itemScytheScepter id="desertmobs:scythescepter"/>
-					<itemThrowingScythe id="desertmobs:throwingscythe"/>
+		<tool treeOrder="20">
+			<farmingTool treeOrder="50">
+				<scythe class="Item" data="{ToolClass : &quot;scythe&quot;}" mergeChildren="true" treeOrder="10">
+					<itemScytheScepter id="desertmobs:scythescepter" treeOrder="70"/>
+					<itemThrowingScythe id="desertmobs:throwingscythe" treeOrder="90"/>
 				</scythe>
 			</farmingTool>
 		</tool>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnClink id="desertmobs:desertegg" damage="2"/>
-				<itemSpawnCrusk id="desertmobs:desertegg" damage="1"/>
-				<itemSpawnCryptZombie id="desertmobs:desertegg" damage="0"/>
-				<itemSpawnErepede id="desertmobs:desertegg" damage="5"/>
-				<itemSpawnGorgomite id="desertmobs:desertegg" damage="6"/>
-				<itemSpawnJoust id="desertmobs:desertegg" damage="3"/>
-				<itemSpawnJoustAlpha id="desertmobs:desertegg" damage="4"/>
-				<itemSpawnManticore id="desertmobs:desertegg" damage="7"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnClink id="desertmobs:desertegg" damage="2" treeOrder="170"/>
+				<itemSpawnCrusk id="desertmobs:desertegg" damage="1" treeOrder="180"/>
+				<itemSpawnCryptZombie id="desertmobs:desertegg" damage="0" treeOrder="190"/>
+				<itemSpawnErepede id="desertmobs:desertegg" damage="5" treeOrder="200"/>
+				<itemSpawnGorgomite id="desertmobs:desertegg" damage="6" treeOrder="210"/>
+				<itemSpawnJoust id="desertmobs:desertegg" damage="3" treeOrder="220"/>
+				<itemSpawnJoustAlpha id="desertmobs:desertegg" damage="4" treeOrder="230"/>
+				<itemSpawnManticore id="desertmobs:desertegg" damage="7" treeOrder="240"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemdesertmobs_joustmeatcooked id="desertmobs:joustmeatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemdesertmobs_joustmeatcooked id="desertmobs:joustmeatcooked" treeOrder="250"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemdesertmobs_joustmeatraw id="desertmobs:joustmeatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemdesertmobs_joustmeatraw id="desertmobs:joustmeatraw" treeOrder="200"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<unedibleFood>
-				<cakes>
-					<itemdesertmobs_ambercake id="desertmobs:ambercake"/>
+			<unedibleFood treeOrder="50">
+				<cakes treeOrder="130">
+					<itemdesertmobs_ambercake id="desertmobs:ambercake" treeOrder="140"/>
 				</cakes>
 			</unedibleFood>
-			<hunting>
-				<taming>
-					<itemCruskTreat id="desertmobs:crusktreat"/>
-					<itemErepedeTreat id="desertmobs:erepedetreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemCruskTreat id="desertmobs:crusktreat" treeOrder="50"/>
+					<itemErepedeTreat id="desertmobs:erepedetreat" treeOrder="60"/>
 				</taming>
 			</hunting>
 		</food>

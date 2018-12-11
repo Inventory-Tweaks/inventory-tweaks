@@ -26,15 +26,15 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<resources>
-		<farmingResources>
-			<itemPrintedPage id="computercraft:printout"/>
+	<resources treeOrder="30">
+		<farmingResources treeOrder="30">
+			<itemPrintedPage id="computercraft:printout" treeOrder="40"/>
 		</farmingResources>
 	</resources>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemPrintedBook id="computercraft:printout" damage="2"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemPrintedBook id="computercraft:printout" damage="2" treeOrder="140"/>
 			</readableBooks>
 		</utility>
 	</item>

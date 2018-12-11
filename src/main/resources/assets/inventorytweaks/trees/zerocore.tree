@@ -26,13 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<parts>
-			<mechanicalParts>
-				<chip>
-					<itemRedstoneBoard id="buildcraft|robotics:redstone_board"/>
-				</chip>
-			</mechanicalParts>
-		</parts>
-	</item>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<debugTools treeOrder="170">
+				<itemDebugTool id="zerocore:debugtool" treeOrder="60"/>
+			</debugTools>
+		</tool>
+	</equipment>
 </stuff>

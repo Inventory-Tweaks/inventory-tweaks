@@ -26,24 +26,24 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<paxel mergeChildren="true">
-				<miningTool>
-					<diggingTool>
-						<choppingTool>
-							<farmingTool>
-								<itemBearClawPaxel id="animalium:bear_claw_paxel"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<paxel mergeChildren="true" treeOrder="10">
+				<miningTool treeOrder="10">
+					<diggingTool treeOrder="10">
+						<choppingTool treeOrder="10">
+							<farmingTool treeOrder="10">
+								<itemBearClawPaxel id="animalium:bear_claw_paxel" treeOrder="450"/>
 							</farmingTool>
 						</choppingTool>
 					</diggingTool>
 				</miningTool>
 			</paxel>
 		</tool>
-		<armor>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<bootsUnsorted>
-					<itemWildDogPeltBoots id="animalium:dog_boots"/>
+		<armor treeOrder="30">
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<bootsUnsorted treeOrder="70">
+					<itemWildDogPeltBoots id="animalium:dog_boots" treeOrder="730"/>
 				</bootsUnsorted>
 			</boots>
 		</armor>

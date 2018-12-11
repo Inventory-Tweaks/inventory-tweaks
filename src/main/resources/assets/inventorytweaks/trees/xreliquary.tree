@@ -26,112 +26,112 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<gun>
-					<itemHuntersHandgun id="xreliquary:handgun"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<gun treeOrder="20">
+					<itemHuntersHandgun id="xreliquary:handgun" treeOrder="40"/>
 				</gun>
 			</munition>
-			<bullets>
-				<itemXenoMagazine id="xreliquary:magazine"/>
-				<itemXenoRounds id="xreliquary:bullet"/>
+			<bullets treeOrder="60">
+				<itemXenoMagazine id="xreliquary:magazine" treeOrder="30"/>
+				<itemXenoRounds id="xreliquary:bullet" treeOrder="40"/>
 			</bullets>
 		</weapon>
-		<tool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemPhoenixDown id="xreliquary:phoenix_down"/>
+		<tool treeOrder="20">
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemPhoenixDown id="xreliquary:phoenix_down" treeOrder="450"/>
 				</hoe>
 			</farmingTool>
 		</tool>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<itemBlock>
-				<itemApothecaryCauldron id="xreliquary:apothecary_cauldron"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<itemBlock treeOrder="90">
+				<itemApothecaryCauldron id="xreliquary:apothecary_cauldron" treeOrder="30"/>
 			</itemBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<lighting>
-				<torch>
-					<itemInterdictionTorch id="xreliquary:interdiction_torch"/>
+		<mechanism treeOrder="60">
+			<lighting treeOrder="30">
+				<torch treeOrder="10">
+					<itemInterdictionTorch id="xreliquary:interdiction_torch" treeOrder="10"/>
 				</torch>
-				<mobWarding id="enderio:blockspawnguard">
-					<itemInterdictionTorch id="xreliquary:interdiction_torch"/>
+				<mobWarding id="enderio:blockspawnguard" treeOrder="150">
+					<itemInterdictionTorch id="xreliquary:interdiction_torch" treeOrder="20"/>
 				</mobWarding>
 			</lighting>
 		</mechanism>
 	</block>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemTomeofAlkahestry id="xreliquary:alkahest_tome"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemTomeofAlkahestry id="xreliquary:alkahest_tome" treeOrder="230"/>
 			</readableBooks>
 		</utility>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<breads>
-						<glowingBread id="xreliquary:glowing_bread"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<breads treeOrder="170">
+						<glowingBread id="xreliquary:glowing_bread" treeOrder="20"/>
 					</breads>
 				</preparedFood>
 			</edibleFood>
 		</food>
-		<itemEmptyVial id="xreliquary:condensed_potion" damage="11"/>
-		<potion>
-			<drinkablePotion>
-				<neutralPotion>
-					<itemVialofOrdinaryWater id="xreliquary:condensed_potion" damage="29"/>
-					<itemCondensedSolvent id="xreliquary:condensed_potion" damage="12"/>
+		<itemEmptyVial id="xreliquary:condensed_potion" damage="11" treeOrder="230"/>
+		<potion treeOrder="260">
+			<drinkablePotion treeOrder="10">
+				<neutralPotion treeOrder="10">
+					<itemVialofOrdinaryWater id="xreliquary:condensed_potion" damage="29" treeOrder="40"/>
+					<itemCondensedSolvent id="xreliquary:condensed_potion" damage="12" treeOrder="60"/>
 				</neutralPotion>
-				<positivePotion>
-					<regenerationPotion>
-						<itemGrandPanacea id="xreliquary:condensed_potion" damage="27"/>
-						<itemElixirofRegeneration id="xreliquary:condensed_potion" damage="18"/>
+				<positivePotion treeOrder="20">
+					<regenerationPotion treeOrder="10">
+						<itemGrandPanacea id="xreliquary:condensed_potion" damage="27" treeOrder="10"/>
+						<itemElixirofRegeneration id="xreliquary:condensed_potion" damage="18" treeOrder="50"/>
 					</regenerationPotion>
-					<swiftnessPotion>
-						<itemAlchemicalCelerity id="xreliquary:condensed_potion" damage="26"/>
-						<itemElixirofSpeed id="xreliquary:condensed_potion" damage="13"/>
+					<swiftnessPotion treeOrder="20">
+						<itemAlchemicalCelerity id="xreliquary:condensed_potion" damage="26" treeOrder="40"/>
+						<itemElixirofSpeed id="xreliquary:condensed_potion" damage="13" treeOrder="50"/>
 					</swiftnessPotion>
-					<fireResistancePotion>
-						<itemAblativeProtection id="xreliquary:condensed_potion" damage="24"/>
-						<itemElixirofFireWarding id="xreliquary:condensed_potion" damage="20"/>
+					<fireResistancePotion treeOrder="30">
+						<itemAblativeProtection id="xreliquary:condensed_potion" damage="24" treeOrder="30"/>
+						<itemElixirofFireWarding id="xreliquary:condensed_potion" damage="20" treeOrder="40"/>
 					</fireResistancePotion>
-					<healingPotion>
-						<itemGrandPanacea id="xreliquary:condensed_potion" damage="27"/>
-						<itemElixirofHealing id="xreliquary:condensed_potion" damage="16"/>
+					<healingPotion treeOrder="40">
+						<itemGrandPanacea id="xreliquary:condensed_potion" damage="27" treeOrder="10"/>
+						<itemElixirofHealing id="xreliquary:condensed_potion" damage="16" treeOrder="40"/>
 					</healingPotion>
-					<strengthPotion>
-						<itemAlchemicalPotency id="xreliquary:condensed_potion" damage="25"/>
-						<itemElixirofStrength id="xreliquary:condensed_potion" damage="15"/>
+					<strengthPotion treeOrder="50">
+						<itemAlchemicalPotency id="xreliquary:condensed_potion" damage="25" treeOrder="40"/>
+						<itemElixirofStrength id="xreliquary:condensed_potion" damage="15" treeOrder="50"/>
 					</strengthPotion>
-					<nightVisionPotion>
-						<itemElixirofInfravision id="xreliquary:condensed_potion" damage="23"/>
+					<nightVisionPotion treeOrder="60">
+						<itemElixirofInfravision id="xreliquary:condensed_potion" damage="23" treeOrder="30"/>
 					</nightVisionPotion>
-					<invisibilityPotion>
-						<itemElixirofInvisibility id="xreliquary:condensed_potion" damage="22"/>
+					<invisibilityPotion treeOrder="70">
+						<itemElixirofInvisibility id="xreliquary:condensed_potion" damage="22" treeOrder="30"/>
 					</invisibilityPotion>
 				</positivePotion>
 			</drinkablePotion>
-			<splashPotion>
-				<itemCondensedSplashSerum id="xreliquary:condensed_potion" damage="0"/>
-				<negativeSplashPotion>
-					<poisonSplashPotion>
-						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9"/>
-						<itemSplashPoisonSerum id="xreliquary:condensed_potion" damage="2"/>
+			<splashPotion treeOrder="20">
+				<itemCondensedSplashSerum id="xreliquary:condensed_potion" damage="0" treeOrder="70"/>
+				<negativeSplashPotion treeOrder="90">
+					<poisonSplashPotion treeOrder="10">
+						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9" treeOrder="40"/>
+						<itemSplashPoisonSerum id="xreliquary:condensed_potion" damage="2" treeOrder="50"/>
 					</poisonSplashPotion>
-					<weaknessSplashPotion>
-						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9"/>
-						<itemSplashWeaknessSerum id="xreliquary:condensed_potion" damage="6"/>
+					<weaknessSplashPotion treeOrder="20">
+						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9" treeOrder="30"/>
+						<itemSplashWeaknessSerum id="xreliquary:condensed_potion" damage="6" treeOrder="40"/>
 					</weaknessSplashPotion>
-					<slownessSplashPotion>
-						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9"/>
-						<itemSplashSlowingSerum id="xreliquary:condensed_potion" damage="5"/>
+					<slownessSplashPotion treeOrder="30">
+						<itemSplashRuinationSerum id="xreliquary:condensed_potion" damage="9" treeOrder="30"/>
+						<itemSplashSlowingSerum id="xreliquary:condensed_potion" damage="5" treeOrder="40"/>
 					</slownessSplashPotion>
 				</negativeSplashPotion>
 			</splashPotion>
-			<otherVials id="xreliquary:condensed_potion"/>
+			<otherVials id="xreliquary:condensed_potion" treeOrder="70"/>
 		</potion>
 	</item>
 </stuff>

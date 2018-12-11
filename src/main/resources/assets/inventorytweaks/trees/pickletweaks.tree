@@ -26,34 +26,34 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<DiamondPickLevel>
-						<itemBronzePickaxe id="pickletweaks:bronze_pickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<DiamondPickLevel treeOrder="100">
+						<itemBronzePickaxe id="pickletweaks:bronze_pickaxe" treeOrder="50"/>
 					</DiamondPickLevel>
-					<IronLevel>
-						<itemCopperPickaxe id="pickletweaks:copper_pickaxe"/>
+					<IronLevel treeOrder="110">
+						<itemCopperPickaxe id="pickletweaks:copper_pickaxe" treeOrder="50"/>
 					</IronLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemBronzeShovel id="pickletweaks:bronze_shovel"/>
-					<itemCopperShovel id="pickletweaks:copper_shovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBronzeShovel id="pickletweaks:bronze_shovel" treeOrder="1060"/>
+					<itemCopperShovel id="pickletweaks:copper_shovel" treeOrder="1070"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemBronzeAxe id="pickletweaks:bronze_axe"/>
-					<itemCopperAxe id="pickletweaks:copper_axe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBronzeAxe id="pickletweaks:bronze_axe" treeOrder="1060"/>
+					<itemCopperAxe id="pickletweaks:copper_axe" treeOrder="1070"/>
 				</axe>
 			</choppingTool>
-			<farmingTool>
-				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true">
-					<itemBronzeHoe id="pickletweaks:bronze_hoe"/>
-					<itemCopperHoe id="pickletweaks:copper_hoe"/>
+			<farmingTool treeOrder="50">
+				<hoe class="Item" data="{ToolClass : &quot;hoe&quot;}" mergeChildren="true" treeOrder="50">
+					<itemBronzeHoe id="pickletweaks:bronze_hoe" treeOrder="940"/>
+					<itemCopperHoe id="pickletweaks:copper_hoe" treeOrder="950"/>
 				</hoe>
 			</farmingTool>
 		</tool>

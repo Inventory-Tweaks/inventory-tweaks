@@ -26,242 +26,244 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage4>
-							<itemSilverSword id="witchery:silversword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage4 treeOrder="130">
+							<itemSilverSword id="witchery:silversword" treeOrder="70"/>
 						</swordDamage4>
-						<swordDamage1>
-							<itemCaneSword id="witchery:canesword"/>
+						<swordDamage1 treeOrder="160">
+							<itemCaneSword id="witchery:canesword" treeOrder="10"/>
 						</swordDamage1>
 					</sword>
 				</sword>
 			</meleeWeapon>
-			<munition>
-				<bow mergeChildren="true">
-					<itemWitchHunterPistolCrossbow id="witchery:handbow"/>
+			<munition treeOrder="20">
+				<bow mergeChildren="true" treeOrder="30">
+					<itemWitchHunterPistolCrossbow id="witchery:handbow" treeOrder="260"/>
 				</bow>
 			</munition>
 		</weapon>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<ObsidianLevel>
-						<itemKobolditePickaxe id="witchery:kobolditepickaxe"/>
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<ObsidianLevel treeOrder="90">
+						<itemKobolditePickaxe id="witchery:kobolditepickaxe" treeOrder="140"/>
 					</ObsidianLevel>
 				</pickaxe>
 			</miningTool>
-			<keys>
-				<itemRowanDoorKey id="witchery:ingredient" damage="54"/>
-				<itemRowanKeyring id="witchery:ingredient" damage="84"/>
+			<keys treeOrder="210">
+				<itemRowanDoorKey id="witchery:ingredient" damage="54" treeOrder="20"/>
+				<itemRowanKeyring id="witchery:ingredient" damage="84" treeOrder="140"/>
 			</keys>
-			<instrument>
-				<compass>
-					<itemPlayerCompass id="witchery:playercompass"/>
-					<itemPoppetShelfCompass id="witchery:shelfcompass"/>
+			<instrument treeOrder="310">
+				<compass treeOrder="10">
+					<itemPlayerCompass id="witchery:playercompass" treeOrder="60"/>
+					<itemPoppetShelfCompass id="witchery:shelfcompass" treeOrder="70"/>
 				</compass>
 			</instrument>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmet2>
-					<itemVampireHelmet id="witchery:vampirehelmet"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmet2 treeOrder="30">
+					<itemVampireHelmet id="witchery:vampirehelmet" treeOrder="100"/>
 				</helmet2>
-				<hat>
-					<itemVampireTopHat id="witchery:vampirehat"/>
-					<itemWitchHunterDawnHat id="witchery:hunterhatgarlicked"/>
-					<itemWitchHunterHat id="witchery:hunterhat"/>
-					<itemWitchHunterHatSilvered id="witchery:hunterhatsilvered"/>
-					<itemWitchesHat id="witchery:witchhat"/>
-					<itemBabaYagasHat id="witchery:babashat"/>
+				<hat treeOrder="80">
+					<itemVampireTopHat id="witchery:vampirehat" treeOrder="10"/>
+					<itemWitchHunterDawnHat id="witchery:hunterhatgarlicked" treeOrder="20"/>
+					<itemWitchHunterHat id="witchery:hunterhat" treeOrder="30"/>
+					<itemWitchHunterHatSilvered id="witchery:hunterhatsilvered" treeOrder="40"/>
+					<itemWitchesHat id="witchery:witchhat" treeOrder="50"/>
+					<itemBabaYagasHat id="witchery:babashat" treeOrder="60"/>
 				</hat>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate6>
-						<itemDeathsRobe id="witchery:deathsrobe"/>
-						<itemVampireChainCoat id="witchery:vampirechaincoat"/>
-						<itemVampireChainCoatLadies id="witchery:vampirechaincoat_female"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate6 treeOrder="50">
+						<itemDeathsRobe id="witchery:deathsrobe" treeOrder="30"/>
+						<itemVampireChainCoat id="witchery:vampirechaincoat" treeOrder="130"/>
+						<itemVampireChainCoatLadies id="witchery:vampirechaincoat_female" treeOrder="140"/>
 					</chestplate6>
-					<chestplate4>
-						<itemNecromancerRobes id="witchery:necromancerrobe"/>
+					<chestplate4 treeOrder="70">
+						<itemNecromancerRobes id="witchery:necromancerrobe" treeOrder="50"/>
 					</chestplate4>
-					<chestplate3>
-						<itemVampireDressCoat id="witchery:vampirecoat"/>
-						<itemVampireDressJacketLadies id="witchery:vampirecoat_female"/>
-						<itemWitchHunterCoat id="witchery:huntercoat"/>
-						<itemWitchHunterCoatSilvered id="witchery:huntercoatsilvered"/>
-						<itemWitchHunterDawnCoat id="witchery:huntercoatgarlicked"/>
-						<itemWitchesRobes id="witchery:witchrobe"/>
+					<chestplate3 treeOrder="80">
+						<itemVampireDressCoat id="witchery:vampirecoat" treeOrder="20"/>
+						<itemVampireDressJacketLadies id="witchery:vampirecoat_female" treeOrder="30"/>
+						<itemWitchHunterCoat id="witchery:huntercoat" treeOrder="40"/>
+						<itemWitchHunterCoatSilvered id="witchery:huntercoatsilvered" treeOrder="50"/>
+						<itemWitchHunterDawnCoat id="witchery:huntercoatgarlicked" treeOrder="60"/>
+						<itemWitchesRobes id="witchery:witchrobe" treeOrder="100"/>
 					</chestplate3>
 				</chestplateArmor>
-				<itemBarkBelt id="witchery:barkbelt"/>
-				<itemBitingBelt id="witchery:bitingbelt"/>
+				<itemBarkBelt id="witchery:barkbelt" treeOrder="60"/>
+				<itemBitingBelt id="witchery:bitingbelt" treeOrder="70"/>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings2>
-					<itemVampireSkirtedTrousers id="witchery:vampirelegs_kilt"/>
-					<itemVampireTrousers id="witchery:vampirelegs"/>
-					<itemWitchHunterDawnTrousers id="witchery:hunterlegsgarlicked"/>
-					<itemWitchHunterTrousers id="witchery:hunterlegs"/>
-					<itemWitchHunterTrousersSilvered id="witchery:hunterlegssilvered"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings2 treeOrder="70">
+					<itemVampireSkirtedTrousers id="witchery:vampirelegs_kilt" treeOrder="40"/>
+					<itemVampireTrousers id="witchery:vampirelegs" treeOrder="50"/>
+					<itemWitchHunterDawnTrousers id="witchery:hunterlegsgarlicked" treeOrder="60"/>
+					<itemWitchHunterTrousers id="witchery:hunterlegs" treeOrder="70"/>
+					<itemWitchHunterTrousersSilvered id="witchery:hunterlegssilvered" treeOrder="80"/>
 				</leggings2>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots1>
-					<itemVampireOxfordBoots id="witchery:vampireboots"/>
-					<itemWitchHunterBoots id="witchery:hunterboots"/>
-					<itemWitchHunterBootsSilvered id="witchery:hunterbootssilvered"/>
-					<itemWitchHunterDawnBoots id="witchery:hunterbootsgarlicked"/>
-					<itemIcySlippers id="witchery:iceslippers"/>
-					<itemRubySlippers id="witchery:rubyslippers"/>
-					<itemSeepingShoes id="witchery:seepingshoes"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots1 treeOrder="50">
+					<itemVampireOxfordBoots id="witchery:vampireboots" treeOrder="60"/>
+					<itemWitchHunterBoots id="witchery:hunterboots" treeOrder="70"/>
+					<itemWitchHunterBootsSilvered id="witchery:hunterbootssilvered" treeOrder="80"/>
+					<itemWitchHunterDawnBoots id="witchery:hunterbootsgarlicked" treeOrder="90"/>
+					<itemIcySlippers id="witchery:iceslippers" treeOrder="150"/>
+					<itemRubySlippers id="witchery:rubyslippers" treeOrder="160"/>
+					<itemSeepingShoes id="witchery:seepingshoes" treeOrder="170"/>
 				</boots1>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<naturalBlock>
-			<dirts>
-				<itemDirt id="witchery:pitdirt" damage="0"/>
-				<itemSolidifyingBrewDirt id="witchery:ingredient" damage="117"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<dirts treeOrder="20">
+				<itemDirt id="witchery:pitdirt" damage="0" treeOrder="120"/>
+				<itemSolidifyingBrewDirt id="witchery:ingredient" damage="117" treeOrder="130"/>
 			</dirts>
-			<grass>
-				<itemGrass id="witchery:pitgrass" damage="0"/>
+			<grass treeOrder="150">
+				<itemGrass id="witchery:pitgrass" damage="0" treeOrder="50"/>
 			</grass>
 		</naturalBlock>
-		<manufacturedBlock>
-			<ladder>
-				<itemWitchsLadder id="witchery:witchsladder"/>
-				<itemWitchsLadderShrieking id="witchery:witchsladder"/>
+		<manufacturedBlock treeOrder="50">
+			<ladder treeOrder="10">
+				<itemWitchsLadder id="witchery:witchsladder" treeOrder="70"/>
+				<itemWitchsLadderShrieking id="witchery:witchsladder" treeOrder="80"/>
 			</ladder>
-			<fence>
-				<itemIceFence id="witchery:icefence"/>
-				<fenceGate>
-					<itemIceGate id="witchery:icefencegate"/>
+			<fence treeOrder="20">
+				<itemIceFence id="witchery:icefence" treeOrder="40"/>
+				<fenceGate treeOrder="250">
+					<itemIceGate id="witchery:icefencegate" treeOrder="210"/>
 				</fenceGate>
 			</fence>
-			<constructionBlock>
-				<stairs>
-					<iceStairs>
-						<itemSnowStairs id="witchery:snowstairs"/>
-						<itemIceStairs id="witchery:icestairs"/>
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<iceStairs treeOrder="50">
+						<itemSnowStairs id="witchery:snowstairs" treeOrder="10"/>
+						<itemIceStairs id="witchery:icestairs" treeOrder="20"/>
 					</iceStairs>
 				</stairs>
 			</constructionBlock>
-			<itemBlock>
-				<itemWitchsCauldron id="witchery:cauldron"/>
-				<itemBloodCrucible id="witchery:bloodcrucible" damage="0"/>
+			<itemBlock treeOrder="90">
+				<itemWitchsCauldron id="witchery:cauldron" treeOrder="20"/>
+				<itemBloodCrucible id="witchery:bloodcrucible" damage="0" treeOrder="40"/>
 			</itemBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<pressurePlates>
-				<itemIcePressurePlate id="witchery:icepressureplate" damage="0"/>
-				<itemSnowPressurePlate id="witchery:snowpressureplate" damage="0"/>
+		<mechanism treeOrder="60">
+			<pressurePlates treeOrder="60">
+				<itemIcePressurePlate id="witchery:icepressureplate" damage="0" treeOrder="160"/>
+				<itemSnowPressurePlate id="witchery:snowpressureplate" damage="0" treeOrder="300"/>
 			</pressurePlates>
-			<doors>
-				<woodenDoor>
-					<itemAlderWoodDoor id="witchery:ingredient" damage="53"/>
-					<itemRowanWoodDoor id="witchery:ingredient" damage="52"/>
+			<doors treeOrder="80">
+				<woodenDoor treeOrder="10">
+					<itemAlderWoodDoor id="witchery:ingredient" damage="53" treeOrder="70"/>
+					<itemRowanWoodDoor id="witchery:ingredient" damage="52" treeOrder="150"/>
 				</woodenDoor>
-				<itemAlderWoodDoor id="witchery:ingredient" damage="53"/>
-				<itemIceDoor id="witchery:ingredient" damage="152"/>
-				<itemRowanWoodDoor id="witchery:ingredient" damage="52"/>
+				<itemAlderWoodDoor id="witchery:ingredient" damage="53" treeOrder="70"/>
+				<itemIceDoor id="witchery:ingredient" damage="152" treeOrder="130"/>
+				<itemRowanWoodDoor id="witchery:ingredient" damage="52" treeOrder="160"/>
 			</doors>
 		</mechanism>
 	</block>
-	<resources>
-		<miningResources>
-			<dust>
-				<dustKoboldite id="witchery:ingredient" damage="148"/>
+	<resources treeOrder="30">
+		<miningResources treeOrder="10">
+			<dust treeOrder="40">
+				<dustKoboldite id="witchery:ingredient" damage="148" treeOrder="1020"/>
 			</dust>
-			<ingot>
-				<ingotKoboldite id="witchery:ingredient" damage="150"/>
+			<ingot treeOrder="120">
+				<ingotKoboldite id="witchery:ingredient" damage="150" treeOrder="1290"/>
 			</ingot>
-			<nugget>
-				<nuggetKoboldite id="witchery:ingredient" damage="149"/>
+			<nugget treeOrder="130">
+				<nuggetKoboldite id="witchery:ingredient" damage="149" treeOrder="710"/>
 			</nugget>
 		</miningResources>
 	</resources>
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<itemLeechChest id="witchery:leechchest"/>
-					<itemwitchery_refillingchest id="witchery:refillingchest"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<itemLeechChest id="witchery:leechchest" treeOrder="340"/>
+					<itemwitchery_refillingchest id="witchery:refillingchest" treeOrder="350"/>
 				</chests>
 			</storage>
-			<beds>
-				<coffin id="witchery:coffin"/>
+			<beds treeOrder="80">
+				<coffin id="witchery:coffin" treeOrder="30"/>
 			</beds>
-			<readableBooks>
-				<itemBookofBiomes id="witchery:ingredient" damage="106"/>
-				<itemBookofBiomesExtendedEdition id="witchery:bookbiomes2" damage="0"/>
-				<itemWitchcraft_BrewsInfusions id="witchery:ingredient" damage="49"/>
-				<itemWitchcraft_CircleMagic id="witchery:ingredient" damage="48"/>
-				<itemWitchcraft_CollectingFumes id="witchery:ingredient" damage="46"/>
-				<itemWitchcraft_ConjurationFetishes id="witchery:ingredient" damage="127"/>
-				<itemWitchcraft_Distilling id="witchery:ingredient" damage="47"/>
-				<itemWitchcraft_Herbology id="witchery:ingredient" damage="81"/>
-				<itemWitchcraft_Symbology id="witchery:ingredient" damage="107"/>
-				<itemWitchesBrews id="witchery:cauldronbook"/>
-				<itemObservationsofanImmortal id="witchery:vampirebook"/>
+			<readableBooks treeOrder="90">
+				<itemBookofBiomes id="witchery:ingredient" damage="106" treeOrder="60"/>
+				<itemBookofBiomesExtendedEdition id="witchery:bookbiomes2" damage="0" treeOrder="70"/>
+				<itemWitchcraft_BrewsInfusions id="witchery:ingredient" damage="49" treeOrder="260"/>
+				<itemWitchcraft_CircleMagic id="witchery:ingredient" damage="48" treeOrder="270"/>
+				<itemWitchcraft_CollectingFumes id="witchery:ingredient" damage="46" treeOrder="280"/>
+				<itemWitchcraft_ConjurationFetishes id="witchery:ingredient" damage="127" treeOrder="290"/>
+				<itemWitchcraft_Distilling id="witchery:ingredient" damage="47" treeOrder="300"/>
+				<itemWitchcraft_Herbology id="witchery:ingredient" damage="81" treeOrder="310"/>
+				<itemWitchcraft_Symbology id="witchery:ingredient" damage="107" treeOrder="320"/>
+				<itemWitchesBrews id="witchery:cauldronbook" treeOrder="330"/>
+				<itemObservationsofanImmortal id="witchery:vampirebook" treeOrder="350"/>
 			</readableBooks>
 		</utility>
-		<bucket>
-			<itemwitchery_buckethollowtears id="witchery:buckethollowtears"/>
-			<itemwitchery_bucketspirit id="witchery:bucketspirit"/>
-		</bucket>
-		<instrument>
-			<itemPlayerCompass id="witchery:playercompass"/>
-			<itemPoppetShelfCompass id="witchery:shelfcompass"/>
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemwitchery_buckethollowtears id="witchery:buckethollowtears" treeOrder="240"/>
+				<itemwitchery_bucketspirit id="witchery:bucketspirit" treeOrder="380"/>
+			</bucket>
+		</fluidPortableStorage>
+		<instrument treeOrder="70">
+			<itemPlayerCompass id="witchery:playercompass" treeOrder="70"/>
+			<itemPoppetShelfCompass id="witchery:shelfcompass" treeOrder="80"/>
 		</instrument>
-		<decoration>
-			<coffin id="witchery:coffin"/>
-			<door>
-				<itemAlderWoodDoor id="witchery:ingredient" damage="53"/>
-				<itemIceDoor id="witchery:ingredient" damage="152"/>
-				<itemRowanWoodDoor id="witchery:ingredient" damage="52"/>
+		<decoration treeOrder="120">
+			<coffin id="witchery:coffin" treeOrder="30"/>
+			<door treeOrder="40">
+				<itemAlderWoodDoor id="witchery:ingredient" damage="53" treeOrder="70"/>
+				<itemIceDoor id="witchery:ingredient" damage="152" treeOrder="130"/>
+				<itemRowanWoodDoor id="witchery:ingredient" damage="52" treeOrder="160"/>
 			</door>
-			<head>
-				<itemAlluringSkull id="witchery:alluringskull" damage="0"/>
-				<itemBinkysSkull id="witchery:ingredient" damage="129"/>
+			<head treeOrder="420">
+				<itemAlluringSkull id="witchery:alluringskull" damage="0" treeOrder="10"/>
+				<itemBinkysSkull id="witchery:ingredient" damage="129" treeOrder="130"/>
 			</head>
 		</decoration>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<soup>
-						<itemwitchery_stew id="witchery:stew"/>
-						<itemwitchery_stewraw id="witchery:stewraw"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<soup treeOrder="150">
+						<itemwitchery_stew id="witchery:stew" treeOrder="190"/>
+						<itemwitchery_stewraw id="witchery:stewraw" treeOrder="200"/>
 					</soup>
 				</preparedFood>
-				<cookedFood>
-					<cookedPorkchopQ id="witchery:ingredient" damage="51"/>
-					<itemwitchery_ingredient_159 id="witchery:ingredient" damage="159"/>
+				<cookedFood treeOrder="50">
+					<cookedPorkchopQ id="witchery:ingredient" damage="51" treeOrder="30"/>
+					<itemwitchery_ingredient_159 id="witchery:ingredient" damage="159" treeOrder="70"/>
 				</cookedFood>
-				<fruit>
-					<apple>
-						<appleWorm id="witchery:ingredient" damage="91"/>
-						<appleSleep id="witchery:ingredient" damage="98"/>
+				<fruit treeOrder="80">
+					<apple treeOrder="30">
+						<appleWorm id="witchery:ingredient" damage="91" treeOrder="20"/>
+						<appleSleep id="witchery:ingredient" damage="98" treeOrder="30"/>
 					</apple>
 				</fruit>
-				<rawFood>
-					<rawMeat>
-						<rawPork>
-							<rawPorkchopQ id="witchery:ingredient" damage="50"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<rawPork treeOrder="10">
+							<rawPorkchopQ id="witchery:ingredient" damage="50" treeOrder="30"/>
 						</rawPork>
-						<itemwitchery_ingredient_158 id="witchery:ingredient" damage="158"/>
+						<itemwitchery_ingredient_158 id="witchery:ingredient" damage="158" treeOrder="50"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<traps>
-					<itemBeartrap id="witchery:beartrap"/>
-					<itemWolftrap id="witchery:wolftrap"/>
+			<hunting treeOrder="60">
+				<traps treeOrder="10">
+					<itemBeartrap id="witchery:beartrap" treeOrder="40"/>
+					<itemWolftrap id="witchery:wolftrap" treeOrder="50"/>
 				</traps>
 			</hunting>
 		</food>

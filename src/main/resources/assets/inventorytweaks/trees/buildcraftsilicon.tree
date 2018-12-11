@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<facades>
-					<itemBCFacade id="buildcraftsilicon:plug_facade"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<facades treeOrder="130">
+					<itemBCFacade id="buildcraftsilicon:plug_facade" treeOrder="60"/>
 				</facades>
 			</constructionBlock>
 		</manufacturedBlock>

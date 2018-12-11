@@ -26,111 +26,113 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordDamage12>
-							<itemBoundBlade id="awwayoftime:energysword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordDamage12 treeOrder="50">
+							<itemBoundBlade id="awwayoftime:energysword" treeOrder="10"/>
 						</swordDamage12>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<ObsidianLevel>
-						<itemBoundPickaxe id="awwayoftime:boundpickaxe"/>
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<ObsidianLevel treeOrder="90">
+						<itemBoundPickaxe id="awwayoftime:boundpickaxe" treeOrder="20"/>
 					</ObsidianLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemBoundShovel id="awwayoftime:boundshovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBoundShovel id="awwayoftime:boundshovel" treeOrder="60"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemBoundAxe id="awwayoftime:boundaxe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemBoundAxe id="awwayoftime:boundaxe" treeOrder="130"/>
 				</axe>
 			</choppingTool>
-			<keys>
-				<itemKeyofBinding id="awwayoftime:itemkeyofdiablo"/>
+			<keys treeOrder="210">
+				<itemKeyofBinding id="awwayoftime:itemkeyofdiablo" treeOrder="40"/>
 			</keys>
 		</tool>
-		<armor>
-			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}">
-				<helmet5>
-					<itemEarthOmegaHelmet id="awwayoftime:boundhelmetearth"/>
-					<itemFireOmegaHelmet id="awwayoftime:boundhelmetfire"/>
-					<itemWaterOmegaHelmet id="awwayoftime:boundhelmetwater"/>
-					<itemWindOmegaHelmet id="awwayoftime:boundhelmetwind"/>
+		<armor treeOrder="30">
+			<helmet class="ItemArmor" data="{ArmorType : &quot;head&quot;}" treeOrder="20">
+				<helmet5 treeOrder="10">
+					<itemEarthOmegaHelmet id="awwayoftime:boundhelmetearth" treeOrder="10"/>
+					<itemFireOmegaHelmet id="awwayoftime:boundhelmetfire" treeOrder="20"/>
+					<itemWaterOmegaHelmet id="awwayoftime:boundhelmetwater" treeOrder="30"/>
+					<itemWindOmegaHelmet id="awwayoftime:boundhelmetwind" treeOrder="40"/>
 				</helmet5>
-				<helmet3>
-					<itemBoundHelmet id="awwayoftime:boundhelmet"/>
-					<itemSanguineHelmet id="awwayoftime:sanguinehelmet"/>
+				<helmet3 treeOrder="20">
+					<itemBoundHelmet id="awwayoftime:boundhelmet" treeOrder="50"/>
+					<itemSanguineHelmet id="awwayoftime:sanguinehelmet" treeOrder="60"/>
 				</helmet3>
 			</helmet>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate8>
-						<itemBoundPlate id="awwayoftime:boundplate"/>
-						<itemSanguineRobes id="awwayoftime:sanguinerobe"/>
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate8 treeOrder="30">
+						<itemBoundPlate id="awwayoftime:boundplate" treeOrder="30"/>
+						<itemSanguineRobes id="awwayoftime:sanguinerobe" treeOrder="40"/>
 					</chestplate8>
-					<chestplate5>
-						<itemEarthOmegaPlate id="awwayoftime:boundplateearth"/>
-						<itemFireOmegaPlate id="awwayoftime:boundplatefire"/>
-						<itemWaterOmegaPlate id="awwayoftime:boundplatewater"/>
-						<itemWindOmegaPlate id="awwayoftime:boundplatewind"/>
+					<chestplate5 treeOrder="60">
+						<itemEarthOmegaPlate id="awwayoftime:boundplateearth" treeOrder="10"/>
+						<itemFireOmegaPlate id="awwayoftime:boundplatefire" treeOrder="20"/>
+						<itemWaterOmegaPlate id="awwayoftime:boundplatewater" treeOrder="30"/>
+						<itemWindOmegaPlate id="awwayoftime:boundplatewind" treeOrder="40"/>
 					</chestplate5>
 				</chestplateArmor>
 			</chestplate>
-			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}">
-				<leggings6>
-					<itemBoundLeggings id="awwayoftime:boundleggings"/>
-					<itemSanguineLeggings id="awwayoftime:sanguinepants"/>
+			<leggings class="ItemArmor" data="{ArmorType:&quot;legs&quot;}" treeOrder="40">
+				<leggings6 treeOrder="30">
+					<itemBoundLeggings id="awwayoftime:boundleggings" treeOrder="30"/>
+					<itemSanguineLeggings id="awwayoftime:sanguinepants" treeOrder="40"/>
 				</leggings6>
-				<leggings5>
-					<itemEarthOmegaLeggings id="awwayoftime:boundleggingsearth"/>
-					<itemFireOmegaLeggings id="awwayoftime:boundleggingsfire"/>
-					<itemWaterOmegaLeggings id="awwayoftime:boundleggingswater"/>
-					<itemWindOmegaLeggings id="awwayoftime:boundleggingswind"/>
+				<leggings5 treeOrder="40">
+					<itemEarthOmegaLeggings id="awwayoftime:boundleggingsearth" treeOrder="10"/>
+					<itemFireOmegaLeggings id="awwayoftime:boundleggingsfire" treeOrder="20"/>
+					<itemWaterOmegaLeggings id="awwayoftime:boundleggingswater" treeOrder="30"/>
+					<itemWindOmegaLeggings id="awwayoftime:boundleggingswind" treeOrder="40"/>
 				</leggings5>
 			</leggings>
-			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}">
-				<boots5>
-					<itemEarthOmegaBoots id="awwayoftime:boundbootsearth"/>
-					<itemFireOmegaBoots id="awwayoftime:boundbootsfire"/>
-					<itemWaterOmegaBoots id="awwayoftime:boundbootswater"/>
-					<itemWindOmegaBoots id="awwayoftime:boundbootswind"/>
+			<boots class="ItemArmor" data="{ArmorType:&quot;feet&quot;}" treeOrder="50">
+				<boots5 treeOrder="10">
+					<itemEarthOmegaBoots id="awwayoftime:boundbootsearth" treeOrder="10"/>
+					<itemFireOmegaBoots id="awwayoftime:boundbootsfire" treeOrder="20"/>
+					<itemWaterOmegaBoots id="awwayoftime:boundbootswater" treeOrder="30"/>
+					<itemWindOmegaBoots id="awwayoftime:boundbootswind" treeOrder="40"/>
 				</boots5>
-				<boots3>
-					<itemSanguineBoots id="awwayoftime:sanguineboots"/>
-					<itemBoundBoots id="awwayoftime:boundboots"/>
+				<boots3 treeOrder="30">
+					<itemSanguineBoots id="awwayoftime:sanguineboots" treeOrder="50"/>
+					<itemBoundBoots id="awwayoftime:boundboots" treeOrder="60"/>
 				</boots3>
 			</boots>
 		</armor>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<itemBlock>
-				<itemIncenseCrucible id="awwayoftime:blockcrucible" damage="0"/>
-				<itemAlchemicChemistrySet id="awwayoftime:blockwritingtable" damage="0"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<itemBlock treeOrder="90">
+				<itemIncenseCrucible id="awwayoftime:blockcrucible" damage="0" treeOrder="60"/>
+				<itemAlchemicChemistrySet id="awwayoftime:blockwritingtable" damage="0" treeOrder="80"/>
 			</itemBlock>
 		</manufacturedBlock>
 	</block>
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<itemAWWayofTime_blockDemonChest id="awwayoftime:blockdemonchest"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<itemAWWayofTime_blockDemonChest id="awwayoftime:blockdemonchest" treeOrder="300"/>
 				</chests>
 			</storage>
 		</utility>
-		<bucket>
-			<itemAWWayofTime_bucketLife id="awwayoftime:bucketlife"/>
-		</bucket>
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemAWWayofTime_bucketLife id="awwayoftime:bucketlife" treeOrder="140"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

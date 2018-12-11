@@ -26,12 +26,12 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<slabs>
-					<doubleSlab>
-						<itemStoneSlab id="advanced_solar_panels:double_stone_slab"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<slabs treeOrder="110">
+					<doubleSlab treeOrder="350">
+						<itemStoneSlab id="advanced_solar_panels:double_stone_slab" treeOrder="30"/>
 					</doubleSlab>
 				</slabs>
 			</constructionBlock>

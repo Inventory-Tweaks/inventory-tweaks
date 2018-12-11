@@ -26,21 +26,23 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<naturalBlock>
-			<liquid>
-				<fluids id="enderio:blockfire_water">
-					<itemFuel id="buildcraft|energy:blockfuel"/>
-					<itemOil id="buildcraft|energy:blockoil"/>
-					<itemtile.blockRedPlasma.name id="buildcraft|energy:blockredplasma"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<liquid treeOrder="200">
+				<fluids id="enderio:blockfire_water" treeOrder="60">
+					<itemFuel id="buildcraft|energy:blockfuel" treeOrder="70"/>
+					<itemOil id="buildcraft|energy:blockoil" treeOrder="80"/>
+					<itemtile.blockRedPlasma.name id="buildcraft|energy:blockredplasma" treeOrder="90"/>
 				</fluids>
 			</liquid>
 		</naturalBlock>
 	</block>
-	<item>
-		<bucket>
-			<itemBuildCraft_Energy_bucketFuel id="buildcraft|energy:bucketfuel"/>
-			<itemBuildCraft_Energy_bucketOil id="buildcraft|energy:bucketoil"/>
-		</bucket>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemBuildCraft_Energy_bucketFuel id="buildcraft|energy:bucketfuel" treeOrder="230"/>
+				<itemBuildCraft_Energy_bucketOil id="buildcraft|energy:bucketoil" treeOrder="310"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

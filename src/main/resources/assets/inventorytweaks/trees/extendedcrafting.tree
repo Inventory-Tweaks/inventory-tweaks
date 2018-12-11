@@ -26,22 +26,22 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<portableCrafting>
-				<itemHandheldCraftingTable id="extendedcrafting:handheld_table"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<portableCrafting treeOrder="320">
+				<itemHandheldCraftingTable id="extendedcrafting:handheld_table" treeOrder="30"/>
 			</portableCrafting>
 		</tool>
 	</equipment>
-	<block>
-		<mechanism>
-			<basicCrafting>
-				<craftingTables>
-					<itemCraftingTable id="extendedcrafting:crafting_table"/>
-					<itemAdvancedCraftingTable id="extendedcrafting:table_advanced"/>
-					<itemBasicCraftingTable id="extendedcrafting:table_basic"/>
-					<itemEliteCraftingTable id="extendedcrafting:table_elite"/>
-					<itemUltimateCraftingTable id="extendedcrafting:table_ultimate"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<craftingTables treeOrder="10">
+					<itemCraftingTable id="extendedcrafting:crafting_table" treeOrder="130"/>
+					<itemAdvancedCraftingTable id="extendedcrafting:table_advanced" treeOrder="140"/>
+					<itemBasicCraftingTable id="extendedcrafting:table_basic" treeOrder="150"/>
+					<itemEliteCraftingTable id="extendedcrafting:table_elite" treeOrder="160"/>
+					<itemUltimateCraftingTable id="extendedcrafting:table_ultimate" treeOrder="170"/>
 				</craftingTables>
 			</basicCrafting>
 		</mechanism>

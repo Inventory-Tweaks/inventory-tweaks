@@ -26,18 +26,24 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<chests>
-					<itemCrate id="quantumstorage:crate"/>
-					<itemIronStorageCrate id="quantumstorage:chest_iron"/>
-					<itemGoldStorageCrate id="quantumstorage:chest_gold"/>
-					<itemDiamondStorageCrate id="quantumstorage:chest_diamond"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<chests treeOrder="10">
+					<itemCrate id="quantumstorage:crate" treeOrder="500"/>
+					<itemIronStorageCrate id="quantumstorage:chest_iron" treeOrder="510"/>
+					<itemGoldStorageCrate id="quantumstorage:chest_gold" treeOrder="520"/>
+					<itemDiamondStorageCrate id="quantumstorage:chest_diamond" treeOrder="530"/>
 				</chests>
-				<deepStorage>
-					<itemQuantumStorageUnit id="quantumstorage:quantum_storage_unit"/>
+				<deepStorage treeOrder="50">
+					<itemQuantumStorageUnit id="quantumstorage:quantum_storage_unit" treeOrder="20"/>
 				</deepStorage>
+				<voidStorage treeOrder="110">
+					<voidBlocks treeOrder="10">
+						<itemFluidTrashCan id="quantumstorage:trashcanfluid" treeOrder="80"/>
+						<itemTrashCan id="quantumstorage:trashcan" treeOrder="90"/>
+					</voidBlocks>
+				</voidStorage>
 			</storage>
 		</utility>
 	</item>

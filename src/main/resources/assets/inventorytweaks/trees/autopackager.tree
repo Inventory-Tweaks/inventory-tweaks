@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<machines>
-				<poweredCrafting>
-					<itemAutoPackager id="autopackager:packagerblock"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<poweredCrafting treeOrder="10">
+					<itemAutoPackager id="autopackager:packagerblock" treeOrder="10"/>
 				</poweredCrafting>
 			</machines>
 		</mechanism>

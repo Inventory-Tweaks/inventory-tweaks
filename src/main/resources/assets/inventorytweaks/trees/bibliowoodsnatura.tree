@@ -26,103 +26,103 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<manufacturedBlock>
-			<sign>
-				<itemNaturaFancySign id="bibliowoodsnatura:bibliowoodfancysign"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<sign treeOrder="50">
+				<itemNaturaFancySign id="bibliowoodsnatura:bibliowoodfancysign" treeOrder="40"/>
 			</sign>
 		</manufacturedBlock>
-		<mechanism>
-			<basicCrafting>
-				<craftingTables>
-					<itemNaturaBiblioWorkbench id="bibliowoodsnatura:bibliowoodfancyworkbench"/>
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<craftingTables treeOrder="10">
+					<itemNaturaBiblioWorkbench id="bibliowoodsnatura:bibliowoodfancyworkbench" treeOrder="40"/>
 				</craftingTables>
 			</basicCrafting>
 		</mechanism>
 	</block>
-	<item>
-		<decoration>
-			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt0"/>
-			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt1"/>
-			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt2"/>
-			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt3"/>
-			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt4"/>
-			<sign>
-				<itemNaturaFancySign id="bibliowoodsnatura:bibliowoodfancysign"/>
+	<item treeOrder="40">
+		<decoration treeOrder="120">
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt0" treeOrder="110"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt1" treeOrder="120"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt2" treeOrder="130"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt3" treeOrder="140"/>
+			<itemBloodwoodPaintingFrame id="bibliowoodsnatura:bibliowoodpaintingt4" treeOrder="150"/>
+			<sign treeOrder="210">
+				<itemNaturaFancySign id="bibliowoodsnatura:bibliowoodfancysign" treeOrder="40"/>
 			</sign>
-			<bookcase>
-				<itemAmaranthBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="7"/>
-				<itemBloodwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="0"/>
-				<itemDarkwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="1"/>
-				<itemEucalyptusBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="2"/>
-				<itemFusewoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="3"/>
-				<itemGhostwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="4"/>
-				<itemHopseedBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="5"/>
-				<itemMapleBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="6"/>
-				<itemRedwoodNaturaBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="8"/>
-				<itemSakuraBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="10"/>
-				<itemSilverbellBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="9"/>
-				<itemTigerBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="11"/>
-				<itemWillowNaturaBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="12"/>
+			<bookcase treeOrder="230">
+				<itemAmaranthBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="7" treeOrder="30"/>
+				<itemBloodwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="0" treeOrder="60"/>
+				<itemDarkwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="1" treeOrder="110"/>
+				<itemEucalyptusBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="2" treeOrder="130"/>
+				<itemFusewoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="3" treeOrder="170"/>
+				<itemGhostwoodBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="4" treeOrder="180"/>
+				<itemHopseedBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="5" treeOrder="200"/>
+				<itemMapleBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="6" treeOrder="270"/>
+				<itemRedwoodNaturaBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="8" treeOrder="330"/>
+				<itemSakuraBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="10" treeOrder="350"/>
+				<itemSilverbellBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="9" treeOrder="360"/>
+				<itemTigerBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="11" treeOrder="390"/>
+				<itemWillowNaturaBookcase id="bibliowoodsnatura:bibliowoodbookcase" damage="12" treeOrder="410"/>
 			</bookcase>
-			<clocks>
-				<itemBloodwoodClock id="bibliowoodsnatura:bibliowoodclock"/>
+			<clocks treeOrder="300">
+				<itemBloodwoodClock id="bibliowoodsnatura:bibliowoodclock" treeOrder="40"/>
 			</clocks>
-			<desks>
-				<itemAmaranthDesk id="bibliowoodsnatura:bibliowooddesk"/>
+			<desks treeOrder="330">
+				<itemAmaranthDesk id="bibliowoodsnatura:bibliowooddesk" treeOrder="30"/>
 			</desks>
-			<tables>
-				<itemBloodwoodTable id="bibliowoodsnatura:bibliowoodtable"/>
+			<tables treeOrder="340">
+				<itemBloodwoodTable id="bibliowoodsnatura:bibliowoodtable" treeOrder="30"/>
 			</tables>
-			<seating>
-				<seats>
-					<itemBloodwoodSeat id="bibliowoodsnatura:bibliowoodseat"/>
+			<seating treeOrder="350">
+				<seats treeOrder="10">
+					<itemBloodwoodSeat id="bibliowoodsnatura:bibliowoodseat" treeOrder="30"/>
 				</seats>
-				<seatbacks>
-					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback1"/>
-					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback2"/>
-					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback3"/>
-					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback4"/>
-					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback5"/>
+				<seatbacks treeOrder="20">
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback1" treeOrder="120"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback2" treeOrder="130"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback3" treeOrder="140"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback4" treeOrder="150"/>
+					<itemBloodwoodSeatBack id="bibliowoodsnatura:seatback5" treeOrder="160"/>
 				</seatbacks>
 			</seating>
-			<case>
-				<itemBloodwoodMapFrame id="bibliowoodsnatura:bibliowoodmapframe"/>
-				<itemNaturaLabel id="bibliowoodsnatura:bibliowoodlabel"/>
-				<itemNaturaCase id="bibliowoodsnatura:bibliowoodcase0"/>
+			<case treeOrder="360">
+				<itemBloodwoodMapFrame id="bibliowoodsnatura:bibliowoodmapframe" treeOrder="60"/>
+				<itemNaturaLabel id="bibliowoodsnatura:bibliowoodlabel" treeOrder="90"/>
+				<itemNaturaCase id="bibliowoodsnatura:bibliowoodcase0" treeOrder="130"/>
 			</case>
-			<toolRack>
-				<itemNaturaToolRack id="bibliowoodsnatura:bibliowoodrack"/>
+			<toolRack treeOrder="370">
+				<itemNaturaToolRack id="bibliowoodsnatura:bibliowoodrack" treeOrder="30"/>
 			</toolRack>
-			<shelf>
-				<itemAmaranthShelf id="bibliowoodsnatura:bibliowoodshelf" damage="7"/>
-				<itemBloodwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="0"/>
-				<itemDarkwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="1"/>
-				<itemEucalyptusShelf id="bibliowoodsnatura:bibliowoodshelf" damage="2"/>
-				<itemFusewoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="3"/>
-				<itemGhostwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="4"/>
-				<itemHopseedShelf id="bibliowoodsnatura:bibliowoodshelf" damage="5"/>
-				<itemMapleShelf id="bibliowoodsnatura:bibliowoodshelf" damage="6"/>
-				<itemRedwoodNaturaShelf id="bibliowoodsnatura:bibliowoodshelf" damage="8"/>
-				<itemSakuraShelf id="bibliowoodsnatura:bibliowoodshelf" damage="10"/>
-				<itemSilverbellShelf id="bibliowoodsnatura:bibliowoodshelf" damage="9"/>
-				<itemTigerShelf id="bibliowoodsnatura:bibliowoodshelf" damage="11"/>
-				<itemWillowNaturaShelf id="bibliowoodsnatura:bibliowoodshelf" damage="12"/>
+			<shelf treeOrder="380">
+				<itemAmaranthShelf id="bibliowoodsnatura:bibliowoodshelf" damage="7" treeOrder="20"/>
+				<itemBloodwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="0" treeOrder="40"/>
+				<itemDarkwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="1" treeOrder="80"/>
+				<itemEucalyptusShelf id="bibliowoodsnatura:bibliowoodshelf" damage="2" treeOrder="100"/>
+				<itemFusewoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="3" treeOrder="130"/>
+				<itemGhostwoodShelf id="bibliowoodsnatura:bibliowoodshelf" damage="4" treeOrder="140"/>
+				<itemHopseedShelf id="bibliowoodsnatura:bibliowoodshelf" damage="5" treeOrder="160"/>
+				<itemMapleShelf id="bibliowoodsnatura:bibliowoodshelf" damage="6" treeOrder="220"/>
+				<itemRedwoodNaturaShelf id="bibliowoodsnatura:bibliowoodshelf" damage="8" treeOrder="270"/>
+				<itemSakuraShelf id="bibliowoodsnatura:bibliowoodshelf" damage="10" treeOrder="290"/>
+				<itemSilverbellShelf id="bibliowoodsnatura:bibliowoodshelf" damage="9" treeOrder="300"/>
+				<itemTigerShelf id="bibliowoodsnatura:bibliowoodshelf" damage="11" treeOrder="320"/>
+				<itemWillowNaturaShelf id="bibliowoodsnatura:bibliowoodshelf" damage="12" treeOrder="340"/>
 			</shelf>
-			<potionShelf>
-				<itemAmaranthPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="7"/>
-				<itemBloodwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="0"/>
-				<itemDarkwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="1"/>
-				<itemEucalyptusPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="2"/>
-				<itemFusewoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="3"/>
-				<itemGhostwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="4"/>
-				<itemHopseedPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="5"/>
-				<itemMaplePotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="6"/>
-				<itemRedwoodPotionNaturaShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="8"/>
-				<itemSakuraPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="10"/>
-				<itemSilverbellPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="9"/>
-				<itemTigerPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="11"/>
-				<itemWillowPotionNauraShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="12"/>
+			<potionShelf treeOrder="390">
+				<itemAmaranthPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="7" treeOrder="20"/>
+				<itemBloodwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="0" treeOrder="40"/>
+				<itemDarkwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="1" treeOrder="80"/>
+				<itemEucalyptusPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="2" treeOrder="100"/>
+				<itemFusewoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="3" treeOrder="130"/>
+				<itemGhostwoodPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="4" treeOrder="140"/>
+				<itemHopseedPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="5" treeOrder="160"/>
+				<itemMaplePotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="6" treeOrder="220"/>
+				<itemRedwoodPotionNaturaShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="8" treeOrder="270"/>
+				<itemSakuraPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="10" treeOrder="290"/>
+				<itemSilverbellPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="9" treeOrder="300"/>
+				<itemTigerPotionShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="11" treeOrder="320"/>
+				<itemWillowPotionNauraShelf id="bibliowoodsnatura:bibliowoodpotshelf" damage="12" treeOrder="340"/>
 			</potionShelf>
 		</decoration>
 	</item>

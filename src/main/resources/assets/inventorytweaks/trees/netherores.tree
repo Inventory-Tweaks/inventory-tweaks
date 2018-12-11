@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<naturalBlock>
-			<netherBlock>
-				<netherrack>
-					<itemNetherrackHellFish id="netherores:netheroresblockhellfish"/>
+	<block treeOrder="20">
+		<naturalBlock treeOrder="10">
+			<netherBlock treeOrder="80">
+				<netherrack treeOrder="20">
+					<itemNetherrackHellFish id="netherores:netheroresblockhellfish" treeOrder="110"/>
 				</netherrack>
 			</netherBlock>
 		</naturalBlock>

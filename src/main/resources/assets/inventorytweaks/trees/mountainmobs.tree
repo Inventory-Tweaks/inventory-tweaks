@@ -26,45 +26,45 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<thrownMunitions>
-					<itemArcaneLaserStormCharge id="mountainmobs:arcanelaserstormcharge"/>
-					<itemBoulderBlastCharge id="mountainmobs:boulderblastcharge"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemArcaneLaserStormCharge id="mountainmobs:arcanelaserstormcharge" treeOrder="210"/>
+					<itemBoulderBlastCharge id="mountainmobs:boulderblastcharge" treeOrder="220"/>
 				</thrownMunitions>
-				<scepters>
-					<itemArcaneLaserStormScepter id="mountainmobs:arcanelaserstormscepter"/>
-					<itemBoulderBlastScepter id="mountainmobs:boulderblastscepter"/>
+				<scepters treeOrder="120">
+					<itemArcaneLaserStormScepter id="mountainmobs:arcanelaserstormscepter" treeOrder="170"/>
+					<itemBoulderBlastScepter id="mountainmobs:boulderblastscepter" treeOrder="180"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnBarghest id="mountainmobs:mountainegg" damage="5"/>
-				<itemSpawnBeholder id="mountainmobs:mountainegg" damage="4"/>
-				<itemSpawnGeonach id="mountainmobs:mountainegg" damage="3"/>
-				<itemSpawnJabberwock id="mountainmobs:mountainegg" damage="0"/>
-				<itemSpawnTroll id="mountainmobs:mountainegg" damage="1"/>
-				<itemSpawnYale id="mountainmobs:mountainegg" damage="2"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnBarghest id="mountainmobs:mountainegg" damage="5" treeOrder="480"/>
+				<itemSpawnBeholder id="mountainmobs:mountainegg" damage="4" treeOrder="490"/>
+				<itemSpawnGeonach id="mountainmobs:mountainegg" damage="3" treeOrder="500"/>
+				<itemSpawnJabberwock id="mountainmobs:mountainegg" damage="0" treeOrder="510"/>
+				<itemSpawnTroll id="mountainmobs:mountainegg" damage="1" treeOrder="520"/>
+				<itemSpawnYale id="mountainmobs:mountainegg" damage="2" treeOrder="530"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemmountainmobs_yalemeatcooked id="mountainmobs:yalemeatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemmountainmobs_yalemeatcooked id="mountainmobs:yalemeatcooked" treeOrder="290"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemmountainmobs_yalemeatraw id="mountainmobs:yalemeatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemmountainmobs_yalemeatraw id="mountainmobs:yalemeatraw" treeOrder="240"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemBarghestTreat id="mountainmobs:barghesttreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemBarghestTreat id="mountainmobs:barghesttreat" treeOrder="130"/>
 				</taming>
 			</hunting>
 		</food>

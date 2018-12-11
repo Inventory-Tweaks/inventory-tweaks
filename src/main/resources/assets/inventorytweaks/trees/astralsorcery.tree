@@ -26,67 +26,67 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<miningTool>
-				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true">
-					<ObsidianLevel>
-						<itemCrystalPickaxe id="astralsorcery:itemcrystalpickaxe"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<miningTool treeOrder="20">
+				<pickaxe class="Item" data="{ToolClass : &quot;pickaxe&quot;}" mergeChildren="true" treeOrder="20">
+					<ObsidianLevel treeOrder="90">
+						<itemCrystalPickaxe id="astralsorcery:itemcrystalpickaxe" treeOrder="30"/>
 					</ObsidianLevel>
-					<UnsortedLevel>
-						<itemInfusedCrystalPickaxe id="astralsorcery:itemchargedcrystalpickaxe"/>
+					<UnsortedLevel treeOrder="130">
+						<itemInfusedCrystalPickaxe id="astralsorcery:itemchargedcrystalpickaxe" treeOrder="10"/>
 					</UnsortedLevel>
 				</pickaxe>
 			</miningTool>
-			<diggingTool>
-				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true">
-					<itemInfusedCrystalShovel id="astralsorcery:itemchargedcrystalshovel"/>
-					<itemCrystalShovel id="astralsorcery:itemcrystalshovel"/>
+			<diggingTool treeOrder="30">
+				<shovel class="Item" data="{ToolClass : &quot;shovel&quot;}" mergeChildren="true" treeOrder="20">
+					<itemInfusedCrystalShovel id="astralsorcery:itemchargedcrystalshovel" treeOrder="860"/>
+					<itemCrystalShovel id="astralsorcery:itemcrystalshovel" treeOrder="870"/>
 				</shovel>
 			</diggingTool>
-			<choppingTool>
-				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true">
-					<itemInfusedCrystalAxe id="astralsorcery:itemchargedcrystalaxe"/>
-					<itemCrystalAxe id="astralsorcery:itemcrystalaxe"/>
+			<choppingTool treeOrder="40">
+				<axe class="Item" data="{ToolClass : &quot;axe&quot;}" mergeChildren="true" treeOrder="20">
+					<itemInfusedCrystalAxe id="astralsorcery:itemchargedcrystalaxe" treeOrder="850"/>
+					<itemCrystalAxe id="astralsorcery:itemcrystalaxe" treeOrder="860"/>
 				</axe>
 			</choppingTool>
-			<wands>
-				<itemFormationWand id="astralsorcery:itemarchitectwand"/>
-				<itemConversionWand id="astralsorcery:itemexchangewand"/>
-				<itemImpulsionWand id="astralsorcery:itemgrapplewand"/>
-				<itemIlluminationWand id="astralsorcery:itemilluminationwand"/>
-				<itemResonatingWand id="astralsorcery:itemwand"/>
+			<wands treeOrder="160">
+				<itemFormationWand id="astralsorcery:itemarchitectwand" treeOrder="140"/>
+				<itemConversionWand id="astralsorcery:itemexchangewand" treeOrder="150"/>
+				<itemImpulsionWand id="astralsorcery:itemgrapplewand" treeOrder="160"/>
+				<itemIlluminationWand id="astralsorcery:itemilluminationwand" treeOrder="170"/>
+				<itemResonatingWand id="astralsorcery:itemwand" treeOrder="180"/>
 			</wands>
 		</tool>
 	</equipment>
-	<block>
-		<manufacturedBlock>
-			<constructionBlock>
-				<stairs>
-					<otherStairs>
-						<itemMarbleStairs id="astralsorcery:blockmarblestairs"/>
+	<block treeOrder="20">
+		<manufacturedBlock treeOrder="50">
+			<constructionBlock treeOrder="70">
+				<stairs treeOrder="100">
+					<otherStairs treeOrder="40">
+						<itemMarbleStairs id="astralsorcery:blockmarblestairs" treeOrder="1410"/>
 					</otherStairs>
 				</stairs>
 			</constructionBlock>
 		</manufacturedBlock>
-		<mechanism>
-			<basicCrafting>
-				<craftingTables>
-					<itemLuminousCraftingTable id="astralsorcery:blockaltar"/>
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<craftingTables treeOrder="10">
+					<itemLuminousCraftingTable id="astralsorcery:blockaltar" treeOrder="120"/>
 				</craftingTables>
 			</basicCrafting>
 		</mechanism>
 	</block>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemAstralTome id="astralsorcery:itemjournal"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemAstralTome id="astralsorcery:itemjournal" treeOrder="340"/>
 			</readableBooks>
 		</utility>
-		<plant>
-			<flower>
-				<flowerDecorative>
-					<itemFaintAmaranth id="astralsorcery:blockcustomflower"/>
+		<plant treeOrder="160">
+			<flower treeOrder="10">
+				<flowerDecorative treeOrder="200">
+					<itemFaintAmaranth id="astralsorcery:blockcustomflower" treeOrder="300"/>
 				</flowerDecorative>
 			</flower>
 		</plant>

@@ -26,20 +26,20 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<multimeters>
-				<itemMultimeter id="projred|core:projectred.core.wiredebugger"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<multimeters treeOrder="140">
+				<itemMultimeter id="projred|core:projectred.core.wiredebugger" treeOrder="40"/>
 			</multimeters>
 		</tool>
 	</equipment>
-	<item>
-		<parts>
-			<mechanicalParts>
-				<coils>
-					<itemCopperCoil id="projred|core:projectred.core.part" damage="16"/>
-					<itemIronCoil id="projred|core:projectred.core.part" damage="17"/>
-					<itemGoldCoil id="projred|core:projectred.core.part" damage="18"/>
+	<item treeOrder="40">
+		<parts treeOrder="110">
+			<mechanicalParts treeOrder="10">
+				<coils treeOrder="80">
+					<itemCopperCoil id="projred|core:projectred.core.part" damage="16" treeOrder="40"/>
+					<itemIronCoil id="projred|core:projectred.core.part" damage="17" treeOrder="60"/>
+					<itemGoldCoil id="projred|core:projectred.core.part" damage="18" treeOrder="70"/>
 				</coils>
 			</mechanicalParts>
 		</parts>

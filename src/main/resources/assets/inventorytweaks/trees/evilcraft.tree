@@ -26,29 +26,29 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<meleeWeapon>
-				<sword>
-					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true">
-						<swordUnsorted>
-							<itemVeinSword id="evilcraft:vein_sword"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<meleeWeapon treeOrder="10">
+				<sword treeOrder="10">
+					<sword class="ItemSword" data="{toolClass : &quot;&quot;}" mergeChildren="true" treeOrder="110">
+						<swordUnsorted treeOrder="170">
+							<itemVeinSword id="evilcraft:vein_sword" treeOrder="230"/>
 						</swordUnsorted>
 					</sword>
 				</sword>
 			</meleeWeapon>
 		</weapon>
-		<baubles>
-			<rings>
-				<itemEffortlessRing id="evilcraft:effortless_ring"/>
-				<itemVengeanceRing id="evilcraft:vengeance_ring"/>
+		<baubles treeOrder="40">
+			<rings treeOrder="10">
+				<itemEffortlessRing id="evilcraft:effortless_ring" treeOrder="340"/>
+				<itemVengeanceRing id="evilcraft:vengeance_ring" treeOrder="350"/>
 			</rings>
 		</baubles>
 	</equipment>
-	<resources>
-		<huntingResources>
-			<string id="string">
-				<itemGoldenString id="evilcraft:golden_string"/>
+	<resources treeOrder="30">
+		<huntingResources treeOrder="20">
+			<string id="string" treeOrder="90">
+				<itemGoldenString id="evilcraft:golden_string" treeOrder="30"/>
 			</string>
 		</huntingResources>
 	</resources>

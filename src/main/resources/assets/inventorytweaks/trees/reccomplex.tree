@@ -26,10 +26,10 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<readableBooks>
-				<itemBookGenerationTag id="reccomplex:book_generation_tag"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemBookGenerationTag id="reccomplex:book_generation_tag" treeOrder="580"/>
 			</readableBooks>
 		</utility>
 	</item>

@@ -26,10 +26,36 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<readableBooks>
-				<itemCookingforBlockheads id="cookingforblockheads:recipe_book"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<basicCrafting treeOrder="360">
+				<kitchen treeOrder="50">
+					<itemCookingTable id="cookingforblockheads:cooking_table" treeOrder="10"/>
+					<itemMilkJar id="cookingforblockheads:milk_jar" treeOrder="20"/>
+					<itemCowinaJar id="cookingforblockheads:cow_jar" treeOrder="30"/>
+					<itemCuttingBoard id="cookingforblockheads:cutting_board" treeOrder="40"/>
+					<itemFridge id="cookingforblockheads:fridge" treeOrder="50"/>
+					<itemFruitBasket id="cookingforblockheads:fruit_basket" treeOrder="60"/>
+					<itemHeatingUnit id="cookingforblockheads:heating_unit" treeOrder="70"/>
+					<itemIceUnit id="cookingforblockheads:ice_unit" treeOrder="80"/>
+					<itemKitchenCabinet id="cookingforblockheads:cabinet" treeOrder="90"/>
+					<itemKitchenCorner id="cookingforblockheads:corner" treeOrder="100"/>
+					<itemKitchenCounter id="cookingforblockheads:counter" treeOrder="110"/>
+					<itemKitchenFloor id="cookingforblockheads:kitchen_floor" treeOrder="120"/>
+					<itemOven id="cookingforblockheads:oven" treeOrder="130"/>
+					<itemPreservationChamber id="cookingforblockheads:preservation_chamber" treeOrder="140"/>
+					<itemSink id="cookingforblockheads:sink" treeOrder="150"/>
+					<itemSpiceRack id="cookingforblockheads:spice_rack" treeOrder="160"/>
+					<itemToaster id="cookingforblockheads:toaster" treeOrder="170"/>
+					<itemToolRack id="cookingforblockheads:tool_rack" treeOrder="180"/>
+				</kitchen>
+			</basicCrafting>
+		</mechanism>
+	</block>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemCookingforBlockheads id="cookingforblockheads:recipe_book" treeOrder="520"/>
 			</readableBooks>
 		</utility>
 	</item>

@@ -26,17 +26,19 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<storage>
-				<digitalstorage>
-					<upgrades>
-						<itemInfinityBoosterCard id="wct:infinity_booster_card"/>
-						<itemMagnetCard id="wct:magnet_card"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<storage treeOrder="30">
+				<digitalstorage treeOrder="70">
+					<upgrades treeOrder="40">
+						<meUpgrades treeOrder="10">
+							<itemInfinityBoosterCard id="wct:infinity_booster_card" treeOrder="120"/>
+							<itemMagnetCard id="wct:magnet_card" treeOrder="130"/>
+						</meUpgrades>
 					</upgrades>
 				</digitalstorage>
-				<portableStorage>
-					<itemWirelessCraftingTerminal id="wct:wct"/>
+				<portableStorage treeOrder="90">
+					<itemWirelessCraftingTerminal id="wct:wct" treeOrder="320"/>
 				</portableStorage>
 			</storage>
 		</utility>

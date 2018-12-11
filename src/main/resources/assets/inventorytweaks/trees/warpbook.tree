@@ -26,15 +26,15 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<resources>
-		<farmingResources>
-			<itemWarpPage id="warpbook:warppage"/>
+	<resources treeOrder="30">
+		<farmingResources treeOrder="30">
+			<itemWarpPage id="warpbook:warppage" treeOrder="30"/>
 		</farmingResources>
 	</resources>
-	<item>
-		<utility>
-			<readableBooks>
-				<itemWarpBook id="warpbook:warpbook"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<readableBooks treeOrder="90">
+				<itemWarpBook id="warpbook:warpbook" treeOrder="240"/>
 			</readableBooks>
 		</utility>
 	</item>

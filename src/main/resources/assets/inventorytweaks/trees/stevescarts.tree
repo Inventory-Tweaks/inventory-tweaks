@@ -26,11 +26,11 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<rails>
-				<itemJunctionRail id="stevescarts:blockjunction"/>
-				<itemAdvancedDetectorRail id="stevescarts:blockadvdetector"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<rails treeOrder="10">
+				<itemJunctionRail id="stevescarts:blockjunction" treeOrder="20"/>
+				<itemAdvancedDetectorRail id="stevescarts:blockadvdetector" treeOrder="60"/>
 			</rails>
 		</mechanism>
 	</block>

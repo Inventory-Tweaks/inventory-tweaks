@@ -26,22 +26,24 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}">
-				<itemDiamondFishingRod id="jaff:diamond_fishing_rod"/>
-				<itemGoldFishingRod id="jaff:golden_fishing_rod"/>
-				<itemIronFishingRod id="jaff:iron_fishing_rod"/>
-				<itemWoodenFishingRod id="jaff:wooden_fishing_rod"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<fishingRod class="Item" data="{ToolClass : &quot;fishingrod&quot;}" treeOrder="70">
+				<itemDiamondFishingRod id="jaff:diamond_fishing_rod" treeOrder="130"/>
+				<itemGoldFishingRod id="jaff:golden_fishing_rod" treeOrder="140"/>
+				<itemIronFishingRod id="jaff:iron_fishing_rod" treeOrder="150"/>
+				<itemWoodenFishingRod id="jaff:wooden_fishing_rod" treeOrder="160"/>
 			</fishingRod>
 		</tool>
 	</equipment>
-	<item>
-		<bucket>
-			<itemBucketwithClownfish id="jaff:fish_bucket_clownfish"/>
-			<itemBucketwithCod id="jaff:fish_bucket_cod"/>
-			<itemBucketwithPufferfish id="jaff:fish_bucket_pufferfish"/>
-			<itemBucketwithSalmon id="jaff:fish_bucket_salmon"/>
-		</bucket>
+	<item treeOrder="40">
+		<fluidPortableStorage treeOrder="20">
+			<bucket treeOrder="10">
+				<itemBucketwithClownfish id="jaff:fish_bucket_clownfish" treeOrder="420"/>
+				<itemBucketwithCod id="jaff:fish_bucket_cod" treeOrder="430"/>
+				<itemBucketwithPufferfish id="jaff:fish_bucket_pufferfish" treeOrder="440"/>
+				<itemBucketwithSalmon id="jaff:fish_bucket_salmon" treeOrder="450"/>
+			</bucket>
+		</fluidPortableStorage>
 	</item>
 </stuff>

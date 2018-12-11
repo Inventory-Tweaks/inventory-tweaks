@@ -26,12 +26,12 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<armor>
-			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}">
-				<chestplateArmor>
-					<chestplate6>
-						<itemRadiationSuitChestplateWIP id="deepresonance:chest"/>
+	<equipment treeOrder="10">
+		<armor treeOrder="30">
+			<chestplate class="ItemArmor" data="{ArmorType:&quot;chest&quot;}" treeOrder="30">
+				<chestplateArmor treeOrder="20">
+					<chestplate6 treeOrder="50">
+						<itemRadiationSuitChestplateWIP id="deepresonance:chest" treeOrder="160"/>
 					</chestplate6>
 				</chestplateArmor>
 			</chestplate>

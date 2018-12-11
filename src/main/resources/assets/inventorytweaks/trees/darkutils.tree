@@ -26,19 +26,19 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<resourceTransfer>
-				<groundItemCollector>
-					<itemEnderHopper id="darkutils:ender_hopper"/>
-					<itemPearledEnderHopper id="darkutils:ender_pearl_hopper"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<resourceTransfer treeOrder="300">
+				<groundItemCollector treeOrder="10">
+					<itemEnderHopper id="darkutils:ender_hopper" treeOrder="130"/>
+					<itemPearledEnderHopper id="darkutils:ender_pearl_hopper" treeOrder="140"/>
 				</groundItemCollector>
 			</resourceTransfer>
 		</mechanism>
 	</block>
-	<item>
-		<experienceStorage>
-			<itemMonolithofExperience id="darkutils:monolith"/>
+	<item treeOrder="40">
+		<experienceStorage treeOrder="60">
+			<itemMonolithofExperience id="darkutils:monolith" treeOrder="30"/>
 		</experienceStorage>
 	</item>
 </stuff>

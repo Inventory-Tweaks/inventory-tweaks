@@ -26,17 +26,17 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<block>
-		<mechanism>
-			<pressurePlates>
-				<itemPressurePlate0 id="obsidiplates:obsidianpressureplate" damage="0"/>
-				<itemPressurePlate4 id="obsidiplates:obsidianpressureplate" damage="4"/>
-				<itemPressurePlateShroudedSilent10 id="obsidiplates:obsidianpressureplate" damage="10"/>
-				<itemPressurePlateShroudedSilent14 id="obsidiplates:obsidianpressureplate" damage="14"/>
-				<itemPressurePlateShrouded8 id="obsidiplates:obsidianpressureplate" damage="8"/>
-				<itemPressurePlateShrouded12 id="obsidiplates:obsidianpressureplate" damage="12"/>
-				<itemPressurePlateSilent2 id="obsidiplates:obsidianpressureplate" damage="2"/>
-				<itemPressurePlateSilent6 id="obsidiplates:obsidianpressureplate" damage="6"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<pressurePlates treeOrder="60">
+				<itemPressurePlate0 id="obsidiplates:obsidianpressureplate" damage="0" treeOrder="190"/>
+				<itemPressurePlate4 id="obsidiplates:obsidianpressureplate" damage="4" treeOrder="200"/>
+				<itemPressurePlateShroudedSilent10 id="obsidiplates:obsidianpressureplate" damage="10" treeOrder="210"/>
+				<itemPressurePlateShroudedSilent14 id="obsidiplates:obsidianpressureplate" damage="14" treeOrder="220"/>
+				<itemPressurePlateShrouded8 id="obsidiplates:obsidianpressureplate" damage="8" treeOrder="230"/>
+				<itemPressurePlateShrouded12 id="obsidiplates:obsidianpressureplate" damage="12" treeOrder="240"/>
+				<itemPressurePlateSilent2 id="obsidiplates:obsidianpressureplate" damage="2" treeOrder="250"/>
+				<itemPressurePlateSilent6 id="obsidiplates:obsidianpressureplate" damage="6" treeOrder="260"/>
 			</pressurePlates>
 		</mechanism>
 	</block>

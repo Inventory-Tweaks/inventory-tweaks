@@ -26,43 +26,43 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<scepters>
-					<itemPoisonRayScepter id="swampmobs:poisonrayscepter"/>
-					<itemVenomShotScepter id="swampmobs:venomshotscepter"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<scepters treeOrder="120">
+					<itemPoisonRayScepter id="swampmobs:poisonrayscepter" treeOrder="210"/>
+					<itemVenomShotScepter id="swampmobs:venomshotscepter" treeOrder="220"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnAspid id="swampmobs:swampegg" damage="5"/>
-				<itemSpawnDweller id="swampmobs:swampegg" damage="1"/>
-				<itemSpawnEttin id="swampmobs:swampegg" damage="2"/>
-				<itemSpawnEyewig id="swampmobs:swampegg" damage="4"/>
-				<itemSpawnGhoulZombie id="swampmobs:swampegg" damage="0"/>
-				<itemSpawnLurker id="swampmobs:swampegg" damage="3"/>
-				<itemSpawnRemobra id="swampmobs:swampegg" damage="6"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnAspid id="swampmobs:swampegg" damage="5" treeOrder="750"/>
+				<itemSpawnDweller id="swampmobs:swampegg" damage="1" treeOrder="760"/>
+				<itemSpawnEttin id="swampmobs:swampegg" damage="2" treeOrder="770"/>
+				<itemSpawnEyewig id="swampmobs:swampegg" damage="4" treeOrder="780"/>
+				<itemSpawnGhoulZombie id="swampmobs:swampegg" damage="0" treeOrder="790"/>
+				<itemSpawnLurker id="swampmobs:swampegg" damage="3" treeOrder="800"/>
+				<itemSpawnRemobra id="swampmobs:swampegg" damage="6" treeOrder="810"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemswampmobs_aspidmeatcooked id="swampmobs:aspidmeatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemswampmobs_aspidmeatcooked id="swampmobs:aspidmeatcooked" treeOrder="200"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemswampmobs_aspidmeatraw id="swampmobs:aspidmeatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemswampmobs_aspidmeatraw id="swampmobs:aspidmeatraw" treeOrder="160"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemEyewigTreat id="swampmobs:eyewigtreat"/>
-					<itemLurkerTreat id="swampmobs:lurkertreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemEyewigTreat id="swampmobs:eyewigtreat" treeOrder="170"/>
+					<itemLurkerTreat id="swampmobs:lurkertreat" treeOrder="180"/>
 				</taming>
 			</hunting>
 		</food>

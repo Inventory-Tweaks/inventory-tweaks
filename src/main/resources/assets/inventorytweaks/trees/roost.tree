@@ -26,11 +26,29 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemChicken id="roost:chicken"/>
+	<block treeOrder="20">
+		<mechanism treeOrder="60">
+			<machines treeOrder="380">
+				<poweredRanching treeOrder="50">
+					<breeders treeOrder="90">
+						<itemChickenBreeder id="roost:breeder" treeOrder="10"/>
+					</breeders>
+					<nesting treeOrder="100">
+						<itemRoost id="roost:roost" treeOrder="80"/>
+						<itemRoostCollector id="roost:collector" treeOrder="90"/>
+					</nesting>
+				</poweredRanching>
+			</machines>
+		</mechanism>
+	</block>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemChicken id="roost:chicken" treeOrder="860"/>
 			</spawnerEggs>
+			<mobHolder treeOrder="240">
+				<itemChickenCatcher id="roost:catcher" treeOrder="110"/>
+			</mobHolder>
 		</utility>
 	</item>
 </stuff>

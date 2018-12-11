@@ -26,41 +26,41 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<weapon>
-			<munition>
-				<thrownMunitions>
-					<itemAquaPulseCharge id="freshwatermobs:aquapulsecharge"/>
+	<equipment treeOrder="10">
+		<weapon treeOrder="10">
+			<munition treeOrder="20">
+				<thrownMunitions treeOrder="70">
+					<itemAquaPulseCharge id="freshwatermobs:aquapulsecharge" treeOrder="140"/>
 				</thrownMunitions>
-				<scepters>
-					<itemAquaPulseScepter id="freshwatermobs:aquapulsescepter"/>
+				<scepters treeOrder="120">
+					<itemAquaPulseScepter id="freshwatermobs:aquapulsescepter" treeOrder="120"/>
 				</scepters>
 			</munition>
 		</weapon>
 	</equipment>
-	<item>
-		<utility>
-			<spawnerEggs>
-				<itemSpawnJengu id="freshwatermobs:freshwateregg" damage="0"/>
-				<itemSpawnSilex id="freshwatermobs:freshwateregg" damage="3"/>
-				<itemSpawnStrider id="freshwatermobs:freshwateregg" damage="2"/>
-				<itemSpawnZephyr id="freshwatermobs:freshwateregg" damage="1"/>
+	<item treeOrder="40">
+		<utility treeOrder="10">
+			<spawnerEggs treeOrder="200">
+				<itemSpawnJengu id="freshwatermobs:freshwateregg" damage="0" treeOrder="310"/>
+				<itemSpawnSilex id="freshwatermobs:freshwateregg" damage="3" treeOrder="320"/>
+				<itemSpawnStrider id="freshwatermobs:freshwateregg" damage="2" treeOrder="330"/>
+				<itemSpawnZephyr id="freshwatermobs:freshwateregg" damage="1" treeOrder="340"/>
 			</spawnerEggs>
 		</utility>
-		<food>
-			<edibleFood>
-				<cookedFood>
-					<itemfreshwatermobs_silexmeatcooked id="freshwatermobs:silexmeatcooked"/>
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<cookedFood treeOrder="50">
+					<itemfreshwatermobs_silexmeatcooked id="freshwatermobs:silexmeatcooked" treeOrder="280"/>
 				</cookedFood>
-				<rawFood>
-					<rawMeat>
-						<itemfreshwatermobs_silexmeatraw id="freshwatermobs:silexmeatraw"/>
+				<rawFood treeOrder="130">
+					<rawMeat treeOrder="20">
+						<itemfreshwatermobs_silexmeatraw id="freshwatermobs:silexmeatraw" treeOrder="230"/>
 					</rawMeat>
 				</rawFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemStriderTreat id="freshwatermobs:stridertreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemStriderTreat id="freshwatermobs:stridertreat" treeOrder="90"/>
 				</taming>
 			</hunting>
 		</food>

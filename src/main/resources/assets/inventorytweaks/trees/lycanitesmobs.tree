@@ -26,25 +26,25 @@
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
 <stuff treeVersion="1.12.2">
-	<equipment>
-		<tool>
-			<keys>
-				<itemSoulkey id="lycanitesmobs:soulkey"/>
+	<equipment treeOrder="10">
+		<tool treeOrder="20">
+			<keys treeOrder="210">
+				<itemSoulkey id="lycanitesmobs:soulkey" treeOrder="50"/>
 			</keys>
 		</tool>
 	</equipment>
-	<item>
-		<food>
-			<edibleFood>
-				<preparedFood>
-					<taco>
-						<itemlycanitesmobs_battleburrito id="lycanitesmobs:battleburrito"/>
+	<item treeOrder="40">
+		<food treeOrder="150">
+			<edibleFood treeOrder="10">
+				<preparedFood treeOrder="30">
+					<taco treeOrder="210">
+						<itemlycanitesmobs_battleburrito id="lycanitesmobs:battleburrito" treeOrder="70"/>
 					</taco>
 				</preparedFood>
 			</edibleFood>
-			<hunting>
-				<taming>
-					<itemHalloweenTreat id="lycanitesmobs:halloweentreat"/>
+			<hunting treeOrder="60">
+				<taming treeOrder="30">
+					<itemHalloweenTreat id="lycanitesmobs:halloweentreat" treeOrder="120"/>
 				</taming>
 			</hunting>
 		</food>
