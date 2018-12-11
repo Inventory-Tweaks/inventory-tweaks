@@ -134,28 +134,30 @@ public class InvTweaksItemTreeBuilder {
         return false;
     }
     
-    private int getTreeOrder(Element element) {
+    private int getTreeOrder(Element element, int previousOrder) {
         String treeOrder = element.getAttribute(InvTweaksItemTreeLoader.ATTR_TREE_ORDER);
         if (treeOrder.length() == 0) {
-            return Integer.MAX_VALUE;
+            return previousOrder;
         }
         else {
             try {
                 return Integer.parseInt(treeOrder);
             } catch (NumberFormatException e) {
-                //It really isn't the end of the world, just move on.
-                return Integer.MAX_VALUE;
+                //It really isn't the end of the world, just pretend it is the same as the previous node.
+                return previousOrder;
             }
         }
     }
     
     //The assumed point is that existing and other are the same logical node.
     private void combine(Element existing, Element other) {
+        int prevOtherChildNodeOrder = Integer.MAX_VALUE;
         for (Node otherChildNode = other.getFirstChild(); otherChildNode != null; otherChildNode = otherChildNode.getNextSibling()) {
-            @Nullable Element newChild = null;
+            @Nullable Element newChild = null;            
             if (otherChildNode.getNodeType() == Node.ELEMENT_NODE) {                
-                Element otherChildElement = (Element)otherChildNode;                
-                int otherChildOrder = getTreeOrder(otherChildElement);
+                Element otherChildElement = (Element)otherChildNode;            
+                int otherChildOrder = getTreeOrder(otherChildElement, prevOtherChildNodeOrder);
+                prevOtherChildNodeOrder = otherChildOrder;
                 
                 List<Element> matches = getChildrenByTagName(existing, otherChildElement.getTagName());
                 for(Element candidate: matches) {
@@ -171,13 +173,15 @@ public class InvTweaksItemTreeBuilder {
 
                     @Nullable Node addBeforeNode = null;
                     //Try to find where this node should go.
+                    int prevMainChildOrder = Integer.MAX_VALUE;
                     for (Node mainChildNode = existing.getFirstChild(); mainChildNode != null; mainChildNode = mainChildNode.getNextSibling()) {
                         //Comments and other Non-Elements will be ignored.
                         //We are of course, assuming the main file does not have anything out of order.
                         //All other files will happen to get fixed though.
                         int mainChildOrder = 0;  
                         if (mainChildNode.getNodeType() == Node.ELEMENT_NODE) {
-                            mainChildOrder = getTreeOrder((Element)mainChildNode); 
+                            mainChildOrder = getTreeOrder((Element)mainChildNode, prevMainChildOrder);
+                            prevMainChildOrder = mainChildOrder;
                             if (mainChildOrder > otherChildOrder) {
                                 addBeforeNode = mainChildNode;
                                 break;
