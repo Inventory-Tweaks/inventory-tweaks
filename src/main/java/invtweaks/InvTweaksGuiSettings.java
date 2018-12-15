@@ -201,8 +201,7 @@ public class InvTweaksGuiSettings extends InvTweaksGuiSettingsAbstract {
             //Replace the current tree file with the modded tree file.
             case ID_MODDEDTREE:
                 try {                    
-                    InvTweaks.getConfigManager().ExtractModdedTreeFile();
-                    InvTweaks.getConfigManager().makeSureConfigurationIsLoaded();
+                    Desktop.getDesktop().browse(new URL(InvTweaksConst.TREE_URL).toURI());
                 } catch (Exception e) {
                     InvTweaks.logInGameErrorStatic("invtweaks.settings.moddedtreefile.error", e);
                 }

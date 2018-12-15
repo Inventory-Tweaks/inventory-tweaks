@@ -28,19 +28,19 @@ public class InvTweaksItemTreeBuilder {
 
     private static final Logger log = InvTweaks.log;
     
-    public static void buildNewTree() {
+    public static boolean buildNewTree() {
         
         //If we don't have the folder, then we don't want to rebuild from the parts.
-        if (!InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists()) return;
+        if (!InvTweaksConst.INVTWEAKS_TREES_DIR.exists()) return false;
         
         //Try to get our root tree.
-        File base = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, "minecraft.tree");
+        File base = new File(InvTweaksConst.INVTWEAKS_TREES_DIR, "minecraft.tree");
         if (!base.exists())
             base = InvTweaksConst.CONFIG_TREE_FILE;
 
         //There just isn't any hope left.
         if (!base.exists())
-            return;
+            return false;
         
         try {
             log.info("Merging tree files.");
@@ -67,15 +67,26 @@ public class InvTweaksItemTreeBuilder {
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
             //This isn't working perfectly, it likes to be off by one indent.
 
-            File treeFile = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, "InvTweaksTree.txt");
+            File treeFile = null;
+            if (InvTweaksConst.TEMP_DIR.exists()) {
+                //Hide the output file so the user is unlikely to think the may edit it.
+                treeFile = InvTweaksConst.MERGED_TREE_FILE;
+                log.info("Saving merged tree in TEMP folder.");
+            } else {
+                //This will put it in the trees folder.
+                treeFile = InvTweaksConst.MERGED_TREE_FILE_ALT;
+                log.info("Saving merged tree in 'trees' folder.");
+            }
             Result output = new StreamResult(treeFile);
             Source input = new DOMSource(newTree.newDoc);
             
             transformer.transform(input, output);
             log.info("Merged tree files.");
+            return true;
             
         } catch (Exception e) {
             log.error("Fail Building New Tree: " + e.getMessage());
+            return false;
         }
     }
 
@@ -173,19 +184,19 @@ public class InvTweaksItemTreeBuilder {
 
                     @Nullable Node addBeforeNode = null;
                     //Try to find where this node should go.
-                    int prevMainChildOrder = Integer.MAX_VALUE;
+                    int prevMainChildOrder = 0;
                     for (Node mainChildNode = existing.getFirstChild(); mainChildNode != null; mainChildNode = mainChildNode.getNextSibling()) {
                         //Comments and other Non-Elements will be ignored.
                         //We are of course, assuming the main file does not have anything out of order.
                         //All other files will happen to get fixed though.
-                        int mainChildOrder = 0;  
+                        int mainChildOrder = prevMainChildOrder;  
                         if (mainChildNode.getNodeType() == Node.ELEMENT_NODE) {
                             mainChildOrder = getTreeOrder((Element)mainChildNode, prevMainChildOrder);
                             prevMainChildOrder = mainChildOrder;
-                            if (mainChildOrder > otherChildOrder) {
-                                addBeforeNode = mainChildNode;
-                                break;
-                            }
+                        }
+                        if (mainChildOrder > otherChildOrder) {
+                            addBeforeNode = mainChildNode;
+                            break;
                         }
                     }
                     //If null, insertBefore appends to the end.

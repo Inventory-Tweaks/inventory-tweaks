@@ -54,9 +54,9 @@ public class InvTweaksConfigManager {
 
     private static long computeConfigLastModified() {
         long sum = Long.MIN_VALUE;
-        if (InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists())
+        if (InvTweaksConst.INVTWEAKS_TREES_DIR.exists())
         {
-            File[] treeFiles = InvTweaksConst.INVTWEAKS_CONFIG_DIR.listFiles();
+            File[] treeFiles = InvTweaksConst.INVTWEAKS_TREES_DIR.listFiles();
             
             for(File tree: treeFiles) {
                 //Make sure it is the type of file we want.
@@ -142,6 +142,18 @@ public class InvTweaksConfigManager {
         if(!configDir.exists()) {
             configDir.mkdir();
         }
+        
+        //Create the Config file directory.
+        if (!InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists()) {
+            InvTweaksConst.INVTWEAKS_CONFIG_DIR.mkdir();
+        }
+        
+        if (!InvTweaksConst.INVTWEAKS_TREES_DIR.exists()) {
+            if (InvTweaksConst.INVTWEAKS_TREES_DIR.mkdir()) {
+                extractFile(new ResourceLocation(InvTweaksConst.INVTWEAKS_RESOURCE_DOMAIN, "tree_readme.txt"),
+                    new File(InvTweaksConst.INVTWEAKS_TREES_DIR, "readme.txt"));
+            }
+        }
        
         // Compatibility: Tree version check
         try {
@@ -177,29 +189,10 @@ public class InvTweaksConfigManager {
             InvTweaks.logInGameStatic(InvTweaksConst.CONFIG_TREE_FILE + " " +
                     I18n.format("invtweaks.loadconfig.filemissing"));
         }
-        File baseTreeFile = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, "minecraft.tree");
-        //Extract all of the files if the folder is there but the main tree file is missing.
-        //This is so if the user deletes any of the others, they aren't forced to have it.
-        if (InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists()) {
-            if (!baseTreeFile.exists()) {
-                try {
-                    //mc.getResourceManager().getAllResources(location)
-                    List<ResourceLocation> treeFiles = getResourceNames("trees");
-                    for(ResourceLocation srcTreeFile: treeFiles) {
-                        //log.info(srcTreeFile.getResourcePath());
-                        String fileName = srcTreeFile.getResourcePath().substring(6);
-                        File realTreeFile = new File(InvTweaksConst.INVTWEAKS_CONFIG_DIR, fileName);
-                        //log.info(realTreeFile.getAbsolutePath());
-                        if (!realTreeFile.exists()) {
-                            extractFile(srcTreeFile, realTreeFile);
-                        }
-                    }
-                } catch (Exception e) {
-                    log.error("Error extracting merge tree files: " + e);
-                }
-            }
-            
-            InvTweaksItemTreeBuilder.buildNewTree();
+
+        boolean treeBuilt = false;
+        if (InvTweaksConst.INVTWEAKS_TREES_DIR.exists()) {            
+            treeBuilt = InvTweaksItemTreeBuilder.buildNewTree();
         }
 
         storedConfigLastModified = computeConfigLastModified();
@@ -213,8 +206,10 @@ public class InvTweaksConfigManager {
 
             // Configuration creation
             if(config == null) {
-                if (InvTweaksConst.MERGED_TREE_FILE.exists()) {
+                if (treeBuilt & InvTweaksConst.MERGED_TREE_FILE.exists()) {
                     config = new InvTweaksConfig(InvTweaksConst.CONFIG_RULES_FILE, InvTweaksConst.MERGED_TREE_FILE);
+                } else if (treeBuilt & InvTweaksConst.MERGED_TREE_FILE_ALT.exists()) {
+                    config = new InvTweaksConfig(InvTweaksConst.CONFIG_RULES_FILE, InvTweaksConst.MERGED_TREE_FILE_ALT);
                 } else {
                     config = new InvTweaksConfig(InvTweaksConst.CONFIG_RULES_FILE, InvTweaksConst.CONFIG_TREE_FILE);
                 }
@@ -252,6 +247,7 @@ public class InvTweaksConfigManager {
                 backupFile(InvTweaksConst.CONFIG_RULES_FILE);
                 backupFile(InvTweaksConst.CONFIG_PROPS_FILE);
 
+                //Intentionally not trying to use the merged file.
                 extractFile(InvTweaksConst.DEFAULT_CONFIG_FILE, InvTweaksConst.CONFIG_RULES_FILE);
                 extractFile(InvTweaksConst.DEFAULT_CONFIG_TREE_FILE, InvTweaksConst.CONFIG_TREE_FILE);
 
@@ -281,16 +277,6 @@ public class InvTweaksConfigManager {
         }
     }
     
-    public void ExtractModdedTreeFile()
-    {
-        //Create the tree file directory, this enables the merging system.
-        if (!InvTweaksConst.INVTWEAKS_CONFIG_DIR.exists()) {
-            InvTweaksConst.INVTWEAKS_CONFIG_DIR.mkdir();
-        }
-        //This file change will trigger the loader to execute.
-        extractFile(InvTweaksConst.MODDED_CONFIG_TREE_FILE, InvTweaksConst.CONFIG_TREE_FILE);
-    }
-
     private boolean extractFile(@NotNull ResourceLocation resource, @NotNull File destination) {
         try(@NotNull InputStream input = mc.getResourceManager().getResource(resource).getInputStream()) {
             try {
@@ -306,45 +292,6 @@ public class InvTweaksConfigManager {
             log.error("Cannot extract " + resource + " file: " + e.getMessage());
             return false;
         }
-    }
-    
-    private List<ResourceLocation> getResourceNames(String inPath) {
-        ArrayList<ResourceLocation> fileList = new ArrayList<>();
-        String workingPath = "/assets/" + InvTweaksConst.INVTWEAKS_RESOURCE_DOMAIN + "/" + inPath;
-        FileSystem filesystem = null;
-        URL url = InvTweaks.class.getResource(workingPath);
-        try
-        {
-            if (url != null)
-            {
-                URI uri = url.toURI();
-                Path path = null;
-
-                if ("file".equals(uri.getScheme()))
-                {
-                    path = Paths.get(InvTweaks.class.getResource(workingPath).toURI());
-                }
-                else
-                {
-                    filesystem = FileSystems.newFileSystem(uri, Collections.emptyMap());
-                    path = filesystem.getPath(workingPath);
-                }
-                
-                Iterator<Path> it = Files.walk(path).iterator();
-                
-                while(it.hasNext()) {
-                    Path instance = it.next();
-                    if (instance.toFile().isFile())
-                        fileList.add(new ResourceLocation(InvTweaksConst.INVTWEAKS_RESOURCE_DOMAIN, inPath + "/" + instance.getFileName()));
-                }
-            }
-        }
-        catch (Exception e)
-        {
-            log.error(e);
-        }
-        
-        return fileList;
-    }
+    }    
 
 }
