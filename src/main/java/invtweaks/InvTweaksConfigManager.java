@@ -12,16 +12,6 @@ import org.jetbrains.annotations.Nullable;
 import invtweaks.integration.ItemListSorter;
 
 import java.io.*;
-import java.net.URI;
-import java.net.URL;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 /**
