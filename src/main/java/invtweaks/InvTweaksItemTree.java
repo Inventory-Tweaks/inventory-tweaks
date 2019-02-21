@@ -1,6 +1,5 @@
 package invtweaks;
 
-
 import invtweaks.api.IItemTree;
 import invtweaks.api.IItemTreeCategory;
 import invtweaks.api.IItemTreeItem;
@@ -12,6 +11,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTUtil;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.OreDictionary;
@@ -19,7 +19,13 @@ import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Random;
 
 /**
  * Contains the whole hierarchy of categories and items, as defined in the XML item tree. Is used to recognize keywords
@@ -356,10 +362,10 @@ public class InvTweaksItemTree implements IItemTree {
                 boolean doIt = true;
                 if(extraData != null) {
                     if(doIt && extraData.hasKey("toolclass")) {
-                        String tclass = extraData.getString("toolclass");
+                        ToolType toolType = ToolType.get(extraData.getString("toolclass"));
                         //We don't want the set, we want the one we will use during comparisons.
                         //An empty toolclass will match non-tools.                        
-                        doIt = tclass.equals(InvTweaks.getToolClass(stack, item));
+                        doIt = toolType.equals(InvTweaks.getToolType(stack, item));
                     }
                     if(doIt && extraData.hasKey("armortype") && item instanceof ItemArmor) {
                         ItemArmor armor = (ItemArmor) item;

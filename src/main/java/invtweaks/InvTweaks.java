@@ -101,6 +101,44 @@ public class InvTweaks extends InvTweaksObfuscation {
     private String mostRecentComparison = "";
     private boolean debugTree = false;
 
+    // add hoe, fishing rod, and shears to ToolTypes now
+    // TODO: may be added to ToolType class in the future as their omission
+    //  seems like an oversight
+    public static class ToolTypeWrapper {
+
+        public static final ToolType HOE = ToolType.get("hoe");
+        public static final ToolType FISHING_ROD = ToolType.get("fishing_rod");
+        public static final ToolType SHEARS = ToolType.get("shears");
+
+        public static LinkedList<ToolType> getToolTypes(@NotNull ItemStack itemStack) {
+            LinkedList<ToolType> toolTypes = new LinkedList<>(itemStack.getToolTypes());
+            Item item = itemStack.getItem();
+            if (item instanceof ItemHoe) {
+                toolTypes.add(HOE);
+            } else if (item instanceof ItemFishingRod) {
+                toolTypes.add(FISHING_ROD);
+            } else if (item instanceof ItemShears) {
+                toolTypes.add(SHEARS);
+            }
+            toolTypes.sort(Comparator.comparing(PRIORITY_MAP::get));
+            return toolTypes;
+        }
+
+        public static int compare(@NotNull ToolType toolType1, @NotNull ToolType toolType2) {
+            return toolType1.getName().compareTo(toolType2.getName());
+        }
+
+        private static final HashMap<ToolType, Integer> PRIORITY_MAP = new HashMap<>();
+        static {
+            PRIORITY_MAP.put(ToolType.PICKAXE, 1);
+            PRIORITY_MAP.put(ToolType.AXE, 2);
+            PRIORITY_MAP.put(ToolType.SHOVEL, 3);
+            PRIORITY_MAP.put(HOE, 4);
+            PRIORITY_MAP.put(SHEARS, 5);
+            PRIORITY_MAP.put(FISHING_ROD, 6); // TODO: was wrench? for another mod?
+        }
+    }
+
     /**
      * Creates an instance of the mod, and loads the configuration from the files, creating them if necessary.
      */
@@ -211,37 +249,23 @@ public class InvTweaks extends InvTweaksObfuscation {
         }
     }
 
-    public static String getToolClass(ItemStack itemStack, Item item) {
+    /**
+     * Returns the most prominent ToolType associated with the given ItemStack.
+     * See InvTweaks#ToolTypeWrapper for more information.
+     *
+     * @param itemStack the ItemStack.
+     * @param item the Item corresponding to the given ItemStack.
+     * @return the most prominent ToolType.
+     */
+    public static ToolType getToolType(ItemStack itemStack, Item item) {
         if (itemStack == null || item == null) {
-            return "";
-        } else if (item instanceof ItemHoe) {
-            return "hoe";
-        } else if (item instanceof ItemShears) {
-            return "shears";
-        } else if (item instanceof ItemFishingRod) {
-            return "fishingrod";
+            return null;
         }
-        Set<String> toolClassSet = item.getToolTypes(itemStack)
-                                       .stream()
-                                       .map(ToolType::getName)
-                                       .filter(name -> !name.contains("sword"))
-                                       .collect(Collectors.toSet());
-        if (toolClassSet.isEmpty()) {
-            return "";
-        } else if (toolClassSet.size() == 1) {
-            return (String) toolClassSet.toArray()[0];
+        LinkedList<ToolType> toolTypes = ToolTypeWrapper.getToolTypes(itemStack);
+        if (toolTypes.isEmpty()) {
+            return null;
         }
-
-        //We have a preferred type to list tools under, primarily the pickaxe for harvest level.
-        String[] prefOrder = {"pickaxe", "axe", "shovel", "hoe", "shears", "wrench"};
-        for (String toolType : prefOrder) {
-            if (toolClassSet.contains(toolType)) {
-                return toolType;
-            }
-        }
-
-        //Whatever happens to be the first thing:
-        return (String) toolClassSet.toArray()[0];
+        return toolTypes.get(0);
     }
 
     public void addScheduledTask(Runnable task) {
@@ -538,23 +562,23 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
 
     private int compareTools(ItemStack i, ItemStack j, Item iItem, Item jItem) {
-        String toolClass1 = getToolClass(i, iItem);
-        String toolClass2 = getToolClass(j, jItem);
+        ToolType toolType1 = getToolType(i, iItem);
+        ToolType toolType2 = getToolType(j, jItem);
 
-        if(debugTree) { mostRecentComparison += ", ToolClass (" + toolClass1 + ", " + toolClass2 + ")"; }
-        boolean isTool1 = toolClass1 != "";
-        boolean isTool2 = toolClass2 != "";
+        if(debugTree) { mostRecentComparison += ", ToolClass (" + toolType1 + ", " + toolType2 + ")"; }
+        boolean isTool1 = toolType1 != null;
+        boolean isTool2 = toolType2 != null;
         if(!isTool1 || !isTool2) {
             //This should catch any instances where one of the stacks is null.
             return Boolean.compare(isTool2, isTool1);
         } else {
-            int toolClassComparison = toolClass1.compareTo(toolClass2);
+            int toolClassComparison = ToolTypeWrapper.compare(toolType1, toolType2);
             if(toolClassComparison != 0) {
                 return toolClassComparison;
             }
             // If they were the same type, sort with the better harvest level first.
-            int harvestLevel1 = iItem.getHarvestLevel(i, ToolType.get(toolClass1), null, null);
-            int harvestLevel2 = jItem.getHarvestLevel(j, ToolType.get(toolClass2), null, null);
+            int harvestLevel1 = iItem.getHarvestLevel(i, toolType1, null, null);
+            int harvestLevel2 = jItem.getHarvestLevel(j, toolType2, null, null);
             int toolLevelComparison = harvestLevel2 - harvestLevel1;
             if(debugTree) { mostRecentComparison += ", HarvestLevel (" + harvestLevel1 + ", " + harvestLevel2 + ")"; }
             if(toolLevelComparison != 0) {
