@@ -11,7 +11,7 @@ import invtweaks.container.IContainerManager;
 import invtweaks.forge.InvTweaksMod;
 import invtweaks.integration.ItemListChecker;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraft.client.audio.SimpleSound;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -30,14 +30,12 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.*;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.ToolType;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.lwjgl.LWJGLException;
-import org.lwjgl.input.Keyboard;
-import org.lwjgl.input.Mouse;
-import org.lwjgl.opengl.Display;
+import org.lwjgl.glfw.GLFW;
 
 import java.util.*;
 import java.util.logging.Level;
@@ -204,9 +202,9 @@ public class InvTweaks extends InvTweaksObfuscation {
 
     private static int compareCurDamage(ItemStack i, ItemStack j) {
         //Use remaining durability to sort, favoring more damaged.
-        int curDamage1 = i.getItemDamage();
-        int curDamage2 = j.getItemDamage();
-        if(i.isItemStackDamageable() && !getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_INVERT_TOOL_DAMAGE).equals(InvTweaksConfig.VALUE_TRUE)) {
+        int curDamage1 = i.getDamage();
+        int curDamage2 = j.getDamage();
+        if(i.isDamageable() && !getConfigManager().getConfig().getProperty(InvTweaksConfig.PROP_INVERT_TOOL_DAMAGE).equals(InvTweaksConfig.VALUE_TRUE)) {
             return curDamage2 - curDamage1;
         } else {
             return curDamage1 - curDamage2;
@@ -214,30 +212,33 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
 
     public static String getToolClass(ItemStack itemStack, Item item) {
-        if(itemStack == null || item == null) { return ""; }
-        Set<String> toolClassSet = item.getToolClasses(itemStack);
-
-        if(toolClassSet.contains("sword")) {
-            //Swords are not "tools".
-            Set<String> newClassSet = new HashSet<String>();
-            for(String toolClass : toolClassSet) { if(toolClass != "sword") { newClassSet.add(toolClass); } }
-            toolClassSet = newClassSet;
-        }
-
-        //Minecraft hoes, shears, and fishing rods don't have tool class names.
-        if(toolClassSet.isEmpty()) {
-            if(item instanceof ItemHoe) { return "hoe"; }
-            if(item instanceof ItemShears) { return "shears"; }
-            if(item instanceof ItemFishingRod) { return "fishingrod"; }
+        if (itemStack == null || item == null) {
             return "";
+        } else if (item instanceof ItemHoe) {
+            return "hoe";
+        } else if (item instanceof ItemShears) {
+            return "shears";
+        } else if (item instanceof ItemFishingRod) {
+            return "fishingrod";
         }
-
-        //Get the only thing.
-        if(toolClassSet.size() == 1) { return (String) toolClassSet.toArray()[0]; }
+        Set<String> toolClassSet = item.getToolTypes(itemStack)
+                                       .stream()
+                                       .map(ToolType::getName)
+                                       .filter(name -> !name.contains("sword"))
+                                       .collect(Collectors.toSet());
+        if (toolClassSet.isEmpty()) {
+            return "";
+        } else if (toolClassSet.size() == 1) {
+            return (String) toolClassSet.toArray()[0];
+        }
 
         //We have a preferred type to list tools under, primarily the pickaxe for harvest level.
         String[] prefOrder = {"pickaxe", "axe", "shovel", "hoe", "shears", "wrench"};
-        for(int i = 0; i < prefOrder.length; i++) { if(toolClassSet.contains(prefOrder[i])) { return prefOrder[i]; } }
+        for (String toolType : prefOrder) {
+            if (toolClassSet.contains(toolType)) {
+                return toolType;
+            }
+        }
 
         //Whatever happens to be the first thing:
         return (String) toolClassSet.toArray()[0];
@@ -267,7 +268,7 @@ public class InvTweaks extends InvTweaksObfuscation {
      * To be called on each tick when a menu is open. Handles the GUI additions and the middle clicking.
      */
     public void onTickInGUI(GuiScreen guiScreen) {
-        if(mc.playerController.isSpectator()) {
+        if(mc.playerController.isSpectatorMode()) {
             onTick();
             return;
         }
@@ -297,7 +298,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 
             // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
             storedStackId = (currentStack.isEmpty()) ? null : currentStack.getItem().getRegistryName().toString();
-            storedStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getItemDamage();
+            storedStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getDamage();
             if(!wasInGUI) {
                 wasInGUI = true;
             }
@@ -363,7 +364,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                 @NotNull ItemStack stack = containerMgr.getItemStack(currentSlot);
 
                 // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-                List<IItemTreeItem> items = tree.getItems(stack.getItem().getRegistryName().toString(), stack.getItemDamage());
+                List<IItemTreeItem> items = tree.getItems(stack.getItem().getRegistryName().toString(), stack.getDamage());
 
                 List<Integer> preferredPositions = config.getRules().stream().filter(rule -> tree.matches(items, rule.getKeyword())).flatMapToInt(e -> Arrays.stream(e.getPreferredSlots())).boxed().collect(Collectors.toList());
 
@@ -514,8 +515,8 @@ public class InvTweaks extends InvTweaksObfuscation {
     private int compareNames(ItemStack i, ItemStack j) {
         boolean iHasName = i.hasDisplayName();
         boolean jHasName = j.hasDisplayName();
-        @NotNull String iDisplayName = i.getDisplayName();
-        @NotNull String jDisplayName = j.getDisplayName();
+        @NotNull String iDisplayName = i.getDisplayName().getString();
+        @NotNull String jDisplayName = j.getDisplayName().getString();
 
         //Custom named items come first.
         if(iHasName || jHasName) {
@@ -552,8 +553,8 @@ public class InvTweaks extends InvTweaksObfuscation {
                 return toolClassComparison;
             }
             // If they were the same type, sort with the better harvest level first.
-            int harvestLevel1 = iItem.getHarvestLevel(i, toolClass1, null, null);
-            int harvestLevel2 = jItem.getHarvestLevel(j, toolClass2, null, null);
+            int harvestLevel1 = iItem.getHarvestLevel(i, ToolType.get(toolClass1), null, null);
+            int harvestLevel2 = jItem.getHarvestLevel(j, ToolType.get(toolClass2), null, null);
             int toolLevelComparison = harvestLevel2 - harvestLevel1;
             if(debugTree) { mostRecentComparison += ", HarvestLevel (" + harvestLevel1 + ", " + harvestLevel2 + ")"; }
             if(toolLevelComparison != 0) {
@@ -614,12 +615,12 @@ public class InvTweaks extends InvTweaksObfuscation {
         } else {
             ItemArmor a1 = (ItemArmor) iItem;
             ItemArmor a2 = (ItemArmor) jItem;
-            if(a1.armorType != a2.armorType) {
-                return a2.armorType.compareTo(a1.armorType);
-            } else if(a1.damageReduceAmount != a2.damageReduceAmount) {
-                return a2.damageReduceAmount - a1.damageReduceAmount;
-            } else if(a1.toughness != a2.toughness) {
-                return a2.toughness > a1.toughness ? -1 : 1;
+            if(a1.getEquipmentSlot()!= a2.getEquipmentSlot()) {
+                return a2.getEquipmentSlot().compareTo(a1.getEquipmentSlot());
+            } else if(a1.getDamageReduceAmount() != a2.getDamageReduceAmount()) {
+                return a2.getDamageReduceAmount() - a1.getDamageReduceAmount();
+            } else if(a1.getToughness() != a2.getToughness()) {
+                return a2.getToughness() > a1.getToughness() ? -1 : 1;
             }
             return compareMaxDamage(i, j);
         }
@@ -728,7 +729,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 
         tickNumber++;
 
-        if(mc.playerController.isSpectator()) {
+        if(mc.playerController.isSpectatorMode()) {
             return false;
         }
 
@@ -775,35 +776,35 @@ public class InvTweaks extends InvTweaksObfuscation {
         if(isSortingShortcutDown() && switchMapping != null) {
             @Nullable String newRuleset = null;
             int pressedKey = switchMapping.getKeyCodes().get(0);
-            if(pressedKey >= Keyboard.KEY_1 && pressedKey <= Keyboard.KEY_9) {
-                newRuleset = config.switchConfig(pressedKey - Keyboard.KEY_1);
+            if(pressedKey >= GLFW.GLFW_KEY_1 && pressedKey <= GLFW.GLFW_KEY_9) {
+                newRuleset = config.switchConfig(pressedKey - GLFW.GLFW_KEY_1);
             } else {
                 switch(pressedKey) {
-                    case Keyboard.KEY_NUMPAD1:
+                    case GLFW.GLFW_KEY_KP_1:
                         newRuleset = config.switchConfig(0);
                         break;
-                    case Keyboard.KEY_NUMPAD2:
+                    case GLFW.GLFW_KEY_KP_2:
                         newRuleset = config.switchConfig(1);
                         break;
-                    case Keyboard.KEY_NUMPAD3:
+                    case GLFW.GLFW_KEY_KP_3:
                         newRuleset = config.switchConfig(2);
                         break;
-                    case Keyboard.KEY_NUMPAD4:
+                    case GLFW.GLFW_KEY_KP_4:
                         newRuleset = config.switchConfig(3);
                         break;
-                    case Keyboard.KEY_NUMPAD5:
+                    case GLFW.GLFW_KEY_KP_5:
                         newRuleset = config.switchConfig(4);
                         break;
-                    case Keyboard.KEY_NUMPAD6:
+                    case GLFW.GLFW_KEY_KP_6:
                         newRuleset = config.switchConfig(5);
                         break;
-                    case Keyboard.KEY_NUMPAD7:
+                    case GLFW.GLFW_KEY_KP_7:
                         newRuleset = config.switchConfig(6);
                         break;
-                    case Keyboard.KEY_NUMPAD8:
+                    case GLFW.GLFW_KEY_KP_8:
                         newRuleset = config.switchConfig(7);
                         break;
-                    case Keyboard.KEY_NUMPAD9:
+                    case GLFW.GLFW_KEY_KP_9:
                         newRuleset = config.switchConfig(8);
                         break;
                 }
@@ -891,7 +892,7 @@ public class InvTweaks extends InvTweaksObfuscation {
         // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
         @Nullable String currentStackId = (currentStack.isEmpty()) ? null : currentStack.getItem().getRegistryName().toString();
 
-        int currentStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getItemDamage();
+        int currentStackDamage = (currentStack.isEmpty()) ? 0 : currentStack.getDamage();
         int focusedSlot = getFocusedSlot() + 27; // Convert to container slots index
         @Nullable InvTweaksConfig config = cfgManager.getConfig();
 
@@ -940,7 +941,7 @@ public class InvTweaks extends InvTweaksObfuscation {
     }
 
     private void handleMiddleClick(GuiScreen guiScreen) {
-        if(Mouse.isButtonDown(2)) {
+        if(GLFW.GLFW_PRESS == GLFW.glfwGetMouseButton(guiScreen.mc.mainWindow.getHandle(), GLFW.GLFW_MOUSE_BUTTON_MIDDLE)) {
 
             if(!cfgManager.makeSureConfigurationIsLoaded()) {
                 return;
@@ -1035,9 +1036,9 @@ public class InvTweaks extends InvTweaksObfuscation {
     // See note above
     private boolean isRecipeBookVisible(@NotNull GuiContainer guiContainer) {
         if(guiContainer instanceof GuiInventory) {
-            return ((GuiInventory) guiContainer).recipeBookGui.isVisible();
+            return ((GuiInventory) guiContainer).func_194310_f().isVisible(); // TODO
         } else if(guiContainer instanceof GuiCrafting) {
-            return ((GuiCrafting) guiContainer).recipeBookGui.isVisible();
+            return ((GuiCrafting) guiContainer).func_194310_f().isVisible(); // TODO
         } else {
             return false;
         }
@@ -1084,7 +1085,7 @@ public class InvTweaks extends InvTweaksObfuscation {
                 // Check for custom button texture
                 boolean customTextureAvailable = hasTexture(new ResourceLocation("inventorytweaks", "textures/gui/button10px.png"));
 
-                int id = InvTweaksConst.JIMEOWAN_ID, x = guiContainer.guiLeft + guiContainer.xSize - 16, y = guiContainer.guiTop + 5;
+                int id = InvTweaksConst.JIMEOWAN_ID, x = guiContainer.getGuiLeft() + guiContainer.getXSize() - 16, y = guiContainer.getGuiTop() + 5;
                 // Inventory button
                 if(!isValidChest) {
                     /*if(hasRecipeButton(guiContainer)) {
@@ -1156,7 +1157,9 @@ public class InvTweaks extends InvTweaksObfuscation {
         }
 
         // Configurable shortcuts
-        if(Mouse.isButtonDown(0) || Mouse.isButtonDown(1)) {
+        boolean leftClick = GLFW.GLFW_PRESS == GLFW.glfwGetMouseButton(mc.mainWindow.getHandle(), GLFW.GLFW_MOUSE_BUTTON_LEFT);
+        boolean rightClick = GLFW.GLFW_PRESS == GLFW.glfwGetMouseButton(mc.mainWindow.getHandle(), GLFW.GLFW_MOUSE_BUTTON_RIGHT);
+        if(leftClick || rightClick) {
             if(!mouseWasDown) {
                 mouseWasDown = true;
 
@@ -1174,17 +1177,18 @@ public class InvTweaks extends InvTweaksObfuscation {
 
     private int getItemOrder(@NotNull ItemStack itemStack) {
         // TODO: It looks like Mojang changed the internal name type to ResourceLocation. Evaluate how much of a pain that will be.
-        List<IItemTreeItem> items = cfgManager.getConfig().getTree().getItems(itemStack.getItem().getRegistryName().toString(), itemStack.getItemDamage(), itemStack.getTagCompound());
+        List<IItemTreeItem> items = cfgManager.getConfig().getTree().getItems(itemStack.getItem().getRegistryName().toString(), itemStack.getDamage(), itemStack.getTag());
         return (items.size() > 0) ? items.get(0).getOrder() : Integer.MAX_VALUE;
     }
 
     private boolean isSortingShortcutDown() {
+        long handle = mc.mainWindow.getHandle();
         if(sortKeyEnabled && !textboxMode) {
             int keyCode = cfgManager.getConfig().getSortKeyCode();
             if(keyCode > 0) {
-                return Keyboard.isKeyDown(keyCode);
+                return GLFW.GLFW_PRESS == GLFW.glfwGetKey(handle, keyCode);
             } else {
-                return Mouse.isButtonDown(100 + keyCode);
+                return GLFW.GLFW_PRESS == GLFW.glfwGetMouseButton(handle, 100 + keyCode);
             }
         } else {
             return false;
@@ -1201,10 +1205,10 @@ public class InvTweaks extends InvTweaksObfuscation {
     /**
      * When Minecraft gains focus, reset all pressed keys to avoid the "stuck keys" bug.
      */
+    /* // TODO necessary in LWJGL 3?
     private void unlockKeysIfNecessary() {
-        boolean hasFocus = Display.isActive();
+        boolean hasFocus = mc.isGameFocused();
         if(!hadFocus && hasFocus) {
-            Keyboard.destroy();
             boolean firstTry = true;
             while(!Keyboard.isCreated()) {
                 try {
@@ -1221,7 +1225,7 @@ public class InvTweaks extends InvTweaksObfuscation {
             }
         }
         hadFocus = hasFocus;
-    }
+    }*/
 
     /**
      * Allows to maintain a clone of the hotbar contents to track changes (especially needed by the "on pickup"
@@ -1236,7 +1240,7 @@ public class InvTweaks extends InvTweaksObfuscation {
 
     private void playClick() {
         if(!cfgManager.getConfig().getProperty(InvTweaksConfig.PROP_ENABLE_SOUNDS).equals(InvTweaksConfig.VALUE_FALSE)) {
-            mc.getSoundHandler().playSound(PositionedSoundRecord.getMasterRecord(SoundEvents.UI_BUTTON_CLICK, 1.0F));
+            mc.getSoundHandler().play(SimpleSound.master(SoundEvents.UI_BUTTON_CLICK, 1.0f));
         }
     }
 
